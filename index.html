@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="assets/css/lightbox.css" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/custom-styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   </head>
 
   <body>
@@ -67,6 +68,16 @@
         </div>
       </div>
 
+      <!-- Selector de tema claro/oscuro -->
+      <div class="theme-switch-wrapper">
+        <span class="theme-icon"><i class="fas fa-sun"></i></span>
+        <label class="theme-switch">
+          <input type="checkbox">
+          <span class="slider"></span>
+        </label>
+        <span class="theme-icon"><i class="fas fa-moon"></i></span>
+      </div>
+
       <section class="section about-me" data-section="section1">
         <div class="container">
           <div class="section-heading">
@@ -94,9 +105,6 @@
                     que resuelven problemas reales. Mi enfoque combina la innovación técnica 
                     con un diseño centrado en el usuario."]
                   </p>
-                  <div class="white-button">
-                    <a href="#section3">Ver Proyectos</a>
-                  </div>
                 </div>
               </div>
             </div>
@@ -111,9 +119,6 @@
                     Menciona certificaciones importantes, cursos especializados o 
                     logros destacados. Mantén este texto breve pero informativo.]
                   </p>
-                  <div class="white-button">
-                    <a href="#section2">Mis Habilidades</a>
-                  </div>
                 </div>
               </div>
               <div class="col-md-6">
@@ -196,76 +201,182 @@
               que demuestran mis habilidades en desarrollo web, automatización y aplicaciones."]
             </span>
           </div>
-          <div class="row">
-            <div class="isotope-wrapper">
-              <form class="isotope-toolbar">
-                <label><input type="radio" data-type="*" checked="" name="isotope-filter" />
-                <span>todos</span></label>
-                <label><input type="radio" data-type="web" name="isotope-filter" />
-                <span>web</span></label>
-                <label><input type="radio" data-type="scraping" name="isotope-filter" />
-                <span>scraping</span></label>
-                <label><input type="radio" data-type="desktop" name="isotope-filter" />
-                <span>desktop</span></label>
-              </form>
-              <div class="isotope-box">
-                <!-- Proyecto 1: Web Scraping -->
-                <div class="isotope-item" data-type="scraping">
-                  <figure class="snip1321">
-                    <img src="assets/images/portfolio-01.jpg" alt="Scraping de Productos" />
-                    <figcaption>
-                      <a href="proyectos/scraping-productos.html" data-lightbox="image-1" data-title="Scraping de Productos">
-                        <i class="fa fa-search"></i>
-                      </a>
-                      <h4>Scraping de Productos</h4>
-                      <span>Amazon y MercadoLibre</span>
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <!-- Proyecto 2: Mouse Remoto -->
-                <div class="isotope-item" data-type="desktop">
-                  <figure class="snip1321">
-                    <img src="assets/images/portfolio-02.jpg" alt="Mouse Remoto" />
-                    <figcaption>
-                      <a href="proyectos/mouse-remoto.html" data-lightbox="image-1" data-title="Mouse Remoto">
-                        <i class="fa fa-search"></i>
-                      </a>
-                      <h4>Mouse Remoto</h4>
-                      <span>Control remoto para presentaciones</span>
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <!-- Proyecto 3: Social Media Downloader -->
-                <div class="isotope-item" data-type="web">
-                  <figure class="snip1321">
-                    <img src="assets/images/portfolio-03.jpg" alt="Social Media Downloader" />
-                    <figcaption>
-                      <a href="proyectos/social-media-downloader.html" data-lightbox="image-1" data-title="Social Media Downloader">
-                        <i class="fa fa-search"></i>
-                      </a>
-                      <h4>Social Media Downloader</h4>
-                      <span>Descarga videos de redes sociales</span>
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <!-- Proyecto 4: Proyecto Futuro -->
-                <div class="isotope-item" data-type="web">
-                  <figure class="snip1321">
-                    <img src="assets/images/portfolio-04.jpg" alt="Proyecto Futuro" />
-                    <figcaption>
-                      <a href="proyectos/proyecto-futuro.html" data-lightbox="image-1" data-title="Proyecto Futuro">
-                        <i class="fa fa-search"></i>
-                      </a>
-                      <h4>Proyecto Futuro</h4>
-                      <span>Próximamente</span>
-                    </figcaption>
-                  </figure>
-                </div>
+          
+          <!-- Filtros de proyectos -->
+          <div class="filters">
+            <div class="filters-content">
+              <div class="item-filter">
+                <input type="radio" name="filter" id="all" checked>
+                <label for="all">Todos</label>
+              </div>
+              <div class="item-filter">
+                <input type="radio" name="filter" id="web">
+                <label for="web">Web</label>
+              </div>
+              <div class="item-filter">
+                <input type="radio" name="filter" id="scraping">
+                <label for="scraping">Scraping</label>
+              </div>
+              <div class="item-filter">
+                <input type="radio" name="filter" id="desktop">
+                <label for="desktop">Escritorio</label>
+              </div>
+              <div class="item-filter">
+                <input type="radio" name="filter" id="mobile">
+                <label for="mobile">Móvil</label>
               </div>
             </div>
+          </div>
+          
+          <!-- Proyectos - Página 1 -->
+          <div class="isotope-box" id="page-1">
+            <!-- Proyecto 1 -->
+            <div class="isotope-item" data-type="scraping">
+              <figure class="snip1321">
+                <img src="assets/images/portfolio-01.jpg" alt="Scraping de Productos" />
+                <figcaption>
+                  <h4>Scraping de Productos</h4>
+                  <span>Amazon y MercadoLibre</span>
+                  <a href="proyectos/scraping-productos.html" class="project-btn">Ver Proyecto</a>
+                </figcaption>
+                <div class="tech-tags">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">BeautifulSoup</span>
+                  <span class="tech-tag">Flask</span>
+                </div>
+              </figure>
+            </div>
+
+            <!-- Proyecto 2 -->
+            <div class="isotope-item" data-type="desktop">
+              <figure class="snip1321">
+                <img src="assets/images/portfolio-02.jpg" alt="Mouse Remoto" />
+                <figcaption>
+                  <h4>Mouse Remoto</h4>
+                  <span>Control remoto para presentaciones</span>
+                  <a href="proyectos/mouse-remoto.html" class="project-btn">Ver Proyecto</a>
+                </figcaption>
+                <div class="tech-tags">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Socket.io</span>
+                  <span class="tech-tag">PyQt</span>
+                </div>
+              </figure>
+            </div>
+
+            <!-- Proyecto 3 -->
+            <div class="isotope-item" data-type="web">
+              <figure class="snip1321">
+                <img src="assets/images/portfolio-03.jpg" alt="Social Media Downloader" />
+                <figcaption>
+                  <h4>Social Media Downloader</h4>
+                  <span>Descarga videos de redes sociales</span>
+                  <a href="proyectos/social-media-downloader.html" class="project-btn">Ver Proyecto</a>
+                </figcaption>
+                <div class="tech-tags">
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">Express</span>
+                </div>
+              </figure>
+            </div>
+
+            <!-- Proyecto 4 -->
+            <div class="isotope-item" data-type="mobile">
+              <figure class="snip1321">
+                <img src="assets/images/portfolio-04.jpg" alt="App de Notas" />
+                <figcaption>
+                  <h4>App de Notas</h4>
+                  <span>Aplicación móvil para notas</span>
+                  <a href="proyectos/app-notas.html" class="project-btn">Ver Proyecto</a>
+                </figcaption>
+                <div class="tech-tags">
+                  <span class="tech-tag">React Native</span>
+                  <span class="tech-tag">Firebase</span>
+                </div>
+              </figure>
+            </div>
+          </div>
+          
+          <!-- Proyectos - Página 2 (inicialmente oculta) -->
+          <div class="isotope-box" id="page-2" style="display: none;">
+            <!-- Proyecto 5 -->
+            <div class="isotope-item" data-type="web">
+              <figure class="snip1321">
+                <img src="assets/images/portfolio-05.jpg" alt="Dashboard Admin" />
+                <figcaption>
+                  <h4>Dashboard Admin</h4>
+                  <span>Panel de administración web</span>
+                  <a href="proyectos/dashboard-admin.html" class="project-btn">Ver Proyecto</a>
+                </figcaption>
+                <div class="tech-tags">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">Redux</span>
+                  <span class="tech-tag">MongoDB</span>
+                </div>
+              </figure>
+            </div>
+
+            <!-- Proyecto 6 -->
+            <div class="isotope-item" data-type="scraping">
+              <figure class="snip1321">
+                <img src="assets/images/portfolio-06.jpg" alt="Análisis de Precios" />
+                <figcaption>
+                  <h4>Análisis de Precios</h4>
+                  <span>Seguimiento de precios en tiendas</span>
+                  <a href="proyectos/analisis-precios.html" class="project-btn">Ver Proyecto</a>
+                </figcaption>
+                <div class="tech-tags">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Selenium</span>
+                  <span class="tech-tag">Pandas</span>
+                </div>
+              </figure>
+            </div>
+
+            <!-- Proyecto 7 -->
+            <div class="isotope-item" data-type="desktop">
+              <figure class="snip1321">
+                <img src="assets/images/portfolio-07.jpg" alt="Gestor de Inventario" />
+                <figcaption>
+                  <h4>Gestor de Inventario</h4>
+                  <span>Aplicación de escritorio para inventario</span>
+                  <a href="proyectos/gestor-inventario.html" class="project-btn">Ver Proyecto</a>
+                </figcaption>
+                <div class="tech-tags">
+                  <span class="tech-tag">C#</span>
+                  <span class="tech-tag">.NET</span>
+                  <span class="tech-tag">SQLite</span>
+                </div>
+              </figure>
+            </div>
+
+            <!-- Proyecto 8 -->
+            <div class="isotope-item" data-type="mobile">
+              <figure class="snip1321">
+                <img src="assets/images/portfolio-08.jpg" alt="App de Fitness" />
+                <figcaption>
+                  <h4>App de Fitness</h4>
+                  <span>Seguimiento de rutinas de ejercicio</span>
+                  <a href="proyectos/app-fitness.html" class="project-btn">Ver Proyecto</a>
+                </figcaption>
+                <div class="tech-tags">
+                  <span class="tech-tag">Flutter</span>
+                  <span class="tech-tag">Dart</span>
+                  <span class="tech-tag">Firebase</span>
+                </div>
+              </figure>
+            </div>
+          </div>
+          
+          <!-- Paginación -->
+          <div class="pagination-container">
+            <ul class="pagination">
+              <li class="pagination-prev"><a href="#" id="prev-page"><i class="fas fa-chevron-left"></i></a></li>
+              <li class="active"><a href="#" data-page="1">1</a></li>
+              <li><a href="#" data-page="2">2</a></li>
+              <li class="pagination-next"><a href="#" id="next-page"><i class="fas fa-chevron-right"></i></a></li>
+            </ul>
           </div>
         </div>
       </section>
@@ -359,55 +470,156 @@
     <script src="assets/js/owl-carousel.js"></script>
     <script src="assets/js/lightbox.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script src="assets/js/theme-switcher.js"></script>
     
     <script>
-      // Menú de navegación
-      $(".main-menu li:first").addClass("active");
+      $(document).ready(function() {
+        // Menú de navegación
+        $(".main-menu li:first").addClass("active");
 
-      var showSection = function showSection(section, isAnimate) {
-        var direction = section.replace(/#/, ""),
-          reqSection = $(".section").filter(
-            '[data-section="' + direction + '"]'
-          ),
-          reqSectionPos = reqSection.offset().top - 0;
+        var showSection = function showSection(section, isAnimate) {
+          var direction = section.replace(/#/, ""),
+            reqSection = $(".section").filter(
+              '[data-section="' + direction + '"]'
+            ),
+            reqSectionPos = reqSection.offset().top - 0;
 
-        if (isAnimate) {
-          $("body, html").animate(
-            {
-              scrollTop: reqSectionPos
-            },
-            800
-          );
-        } else {
-          $("body, html").scrollTop(reqSectionPos);
-        }
-      };
+          if (isAnimate) {
+            $("body, html").animate(
+              {
+                scrollTop: reqSectionPos
+              },
+              800
+            );
+          } else {
+            $("body, html").scrollTop(reqSectionPos);
+          }
+        };
 
-      var checkSection = function checkSection() {
-        $(".section").each(function() {
-          var $this = $(this),
-            topEdge = $this.offset().top - 80,
-            bottomEdge = topEdge + $this.height(),
-            wScroll = $(window).scrollTop();
-          if (topEdge < wScroll && bottomEdge > wScroll) {
-            var currentId = $this.data("section"),
-              reqLink = $("a").filter("[href*=\\#" + currentId + "]");
-            reqLink
-              .closest("li")
-              .addClass("active")
-              .siblings()
-              .removeClass("active");
+        var checkSection = function checkSection() {
+          $(".section").each(function() {
+            var $this = $(this),
+              topEdge = $this.offset().top - 80,
+              bottomEdge = topEdge + $this.height(),
+              wScroll = $(window).scrollTop();
+            if (topEdge < wScroll && bottomEdge > wScroll) {
+              var currentId = $this.data("section"),
+                reqLink = $("a").filter("[href*=\\#" + currentId + "]");
+              reqLink
+                .closest("li")
+                .addClass("active")
+                .siblings()
+                .removeClass("active");
+            }
+          });
+        };
+
+        $(".main-menu").on("click", "a", function(e) {
+          e.preventDefault();
+          showSection($(this).attr("href"), true);
+        });
+
+        $(window).scroll(function() {
+          checkSection();
+        });
+        
+        // Filtrado de proyectos
+        $('.item-filter input').on('change', function() {
+          var filterValue = this.id;
+          
+          if (filterValue === 'all') {
+            $('.isotope-box:visible .isotope-item').show();
+          } else {
+            $('.isotope-box:visible .isotope-item').hide();
+            $('.isotope-box:visible .isotope-item[data-type="' + filterValue + '"]').show();
+          }
+          
+          // Efecto visual para los botones
+          $('.item-filter label').removeClass('active');
+          $(this).next('label').addClass('active');
+          
+          // Reorganizar el grid después de filtrar
+          reorganizeGrid();
+        });
+        
+        // Paginación
+        $('.pagination a[data-page]').on('click', function(e) {
+          e.preventDefault();
+          var pageNum = $(this).data('page');
+          showPage(pageNum);
+        });
+        
+        $('#prev-page').on('click', function(e) {
+          e.preventDefault();
+          var currentPage = $('.pagination li.active a').data('page');
+          if (currentPage > 1) {
+            showPage(currentPage - 1);
           }
         });
-      };
-
-      $(".main-menu").on("click", "a", function(e) {
-        e.preventDefault();
-        showSection($(this).attr("href"), true);
-      });
-
-      $(window).scroll(function() {
-        checkSection();
+        
+        $('#next-page').on('click', function(e) {
+          e.preventDefault();
+          var currentPage = $('.pagination li.active a').data('page');
+          var totalPages = $('.pagination a[data-page]').length;
+          if (currentPage < totalPages) {
+            showPage(currentPage + 1);
+          }
+        });
+        
+        function showPage(pageNum) {
+          // Ocultar todas las páginas
+          $('.isotope-box').hide();
+          
+          // Mostrar la página seleccionada
+          $('#page-' + pageNum).show();
+          
+          // Actualizar la paginación activa
+          $('.pagination li').removeClass('active');
+          $('.pagination a[data-page="' + pageNum + '"]').parent().addClass('active');
+          
+          // Aplicar filtro actual si hay uno seleccionado
+          var currentFilter = $('.item-filter input:checked').attr('id');
+          if (currentFilter && currentFilter !== 'all') {
+            $('#page-' + pageNum + ' .isotope-item').hide();
+            $('#page-' + pageNum + ' .isotope-item[data-type="' + currentFilter + '"]').show();
+          } else {
+            $('#page-' + pageNum + ' .isotope-item').show();
+          }
+          
+          // Reorganizar el grid después de cambiar de página
+          reorganizeGrid();
+        }
+        
+        // Función para reorganizar el grid
+        function reorganizeGrid() {
+          // Asegurarse de que los elementos visibles estén distribuidos correctamente
+          var visibleItems = $('.isotope-box:visible .isotope-item:visible');
+          
+          // Si no hay elementos visibles, no hacer nada
+          if (visibleItems.length === 0) return;
+          
+          // Mostrar mensaje si no hay proyectos que coincidan con el filtro
+          if (visibleItems.length === 0) {
+            if (!$('.no-projects-message').length) {
+              $('.isotope-box:visible').append('<div class="no-projects-message">No hay proyectos que coincidan con este filtro.</div>');
+            }
+          } else {
+            $('.no-projects-message').remove();
+          }
+        }
+        
+        // Inicializar la página
+        showPage(1);
+        
+        // Añadir efecto hover a las etiquetas de tecnologías
+        $('.tech-tag').hover(
+          function() {
+            $(this).addClass('hover');
+          },
+          function() {
+            $(this).removeClass('hover');
+          }
+        );
       });
     </script>
   </body>
