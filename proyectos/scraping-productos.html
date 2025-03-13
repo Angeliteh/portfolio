@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="Proyecto de scraping de productos de Amazon y MercadoLibre" />
+    <meta name="author" content="Tu Nombre" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,700,900"
+      rel="stylesheet"
+    />
+
+    <title>Scraping de Productos - Mi Portafolio</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="../assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="../assets/css/templatemo-style.css" />
+    <link rel="stylesheet" href="../assets/css/owl.css" />
+    <link rel="stylesheet" href="../assets/css/lightbox.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/custom-styles.css" />
+    <style>
+      .project-detail {
+        padding: 50px 0;
+      }
+      .project-image {
+        border-radius: 5px;
+        overflow: hidden;
+        margin-bottom: 30px;
+      }
+      .project-image img {
+        width: 100%;
+        height: auto;
+      }
+      .project-info h2 {
+        margin-bottom: 20px;
+      }
+      .project-info .tech-stack {
+        margin: 20px 0;
+      }
+      .tech-tag {
+        display: inline-block;
+        background-color: var(--accent-color);
+        color: white;
+        padding: 5px 10px;
+        border-radius: 4px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+      }
+      .project-links {
+        margin-top: 30px;
+      }
+      .project-link {
+        display: inline-block;
+        background-color: var(--button-bg);
+        color: white;
+        padding: 10px 15px;
+        border-radius: 5px;
+        margin-right: 15px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+      }
+      .project-link:hover {
+        background-color: var(--button-hover);
+        color: white;
+        text-decoration: none;
+      }
+      .back-link {
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="page-wraper">
+      <!-- Sidebar Menu -->
+      <div class="responsive-nav">
+        <i class="fa fa-bars" id="menu-toggle"></i>
+        <div id="menu" class="menu">
+          <i class="fa fa-times" id="menu-close"></i>
+          <div class="container">
+            <div class="author-content">
+              <h4>Tu Nombre</h4>
+              <span>Desarrollador Full-Stack</span>
+            </div>
+            <nav class="main-nav" role="navigation">
+              <ul class="main-menu">
+                <li><a href="../index.html#section1">Sobre Mí</a></li>
+                <li><a href="../index.html#section2">Habilidades</a></li>
+                <li><a href="../index.html#section3">Mis Proyectos</a></li>
+                <li><a href="../index.html#section4">Contacto</a></li>
+              </ul>
+            </nav>
+            <div class="social-network">
+              <ul class="soial-icons">
+                <li>
+                  <a href="https://github.com/tu-username" target="_blank"><i class="fa fa-github"></i></a>
+                </li>
+                <li>
+                  <a href="https://linkedin.com/in/tu-username" target="_blank"><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href="mailto:tuemail@ejemplo.com"><i class="fa fa-envelope"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="copyright-text">
+              <p>&copy; 2023 Tu Nombre</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="section project-detail">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Scraping de Productos</h2>
+            <div class="line-dec"></div>
+            <span>
+              Aplicación web que extrae y compara precios de tarjetas RTX en tiempo real
+              desde Amazon y MercadoLibre, permitiendo encontrar las mejores ofertas.
+            </span>
+          </div>
+          
+          <div class="row">
+            <div class="col-md-6">
+              <div class="project-image">
+                <img src="../assets/images/portfolio-01.jpg" alt="Scraping de Productos" />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="project-info">
+                <h3>Descripción del Proyecto</h3>
+                <p>
+                  Este proyecto es una aplicación web que utiliza técnicas de web scraping para extraer 
+                  información de productos, específicamente tarjetas gráficas RTX, desde Amazon y MercadoLibre. 
+                  La aplicación permite a los usuarios comparar precios, características y disponibilidad 
+                  en tiempo real, ayudándoles a encontrar las mejores ofertas.
+                </p>
+                
+                <h4>Características Principales</h4>
+                <ul>
+                  <li>Extracción de datos en tiempo real de Amazon y MercadoLibre</li>
+                  <li>Filtrado por modelo, precio y características</li>
+                  <li>Comparación lado a lado de productos similares</li>
+                  <li>Notificaciones de cambios de precio</li>
+                  <li>Historial de precios para análisis de tendencias</li>
+                </ul>
+                
+                <h4>Tecnologías Utilizadas</h4>
+                <div class="tech-stack">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">BeautifulSoup</span>
+                  <span class="tech-tag">Selenium</span>
+                  <span class="tech-tag">Flask</span>
+                  <span class="tech-tag">MongoDB</span>
+                  <span class="tech-tag">HTML/CSS</span>
+                  <span class="tech-tag">JavaScript</span>
+                </div>
+                
+                <h4>Desafíos y Soluciones</h4>
+                <p>
+                  Uno de los principales desafíos fue manejar los cambios frecuentes en la estructura de las 
+                  páginas web objetivo. Para solucionar esto, implementé un sistema de selectores dinámicos 
+                  que se adapta automáticamente a los cambios en el DOM. También utilicé Selenium para 
+                  interactuar con páginas que cargan contenido dinámicamente mediante JavaScript.
+                </p>
+                
+                <div class="project-links">
+                  <a href="#" class="project-link"><i class="fa fa-github"></i> Ver Código</a>
+                  <a href="#" class="project-link"><i class="fa fa-globe"></i> Demo en Vivo</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row mt-5">
+            <div class="col-md-12">
+              <h3>Proceso de Desarrollo</h3>
+              <p>
+                El desarrollo de este proyecto siguió un enfoque iterativo, comenzando con un MVP 
+                que extraía datos básicos de una sola fuente. Gradualmente, fui añadiendo más 
+                funcionalidades y mejorando la precisión de los datos extraídos.
+              </p>
+              
+              <h4>Arquitectura del Sistema</h4>
+              <p>
+                La aplicación está estructurada en tres componentes principales:
+              </p>
+              <ol>
+                <li><strong>Módulo de Scraping:</strong> Responsable de extraer datos de las fuentes web.</li>
+                <li><strong>API Backend:</strong> Procesa, almacena y sirve los datos extraídos.</li>
+                <li><strong>Interfaz de Usuario:</strong> Permite a los usuarios interactuar con los datos de manera intuitiva.</li>
+              </ol>
+              
+              <h4>Resultados y Aprendizajes</h4>
+              <p>
+                Este proyecto me permitió profundizar mis conocimientos en web scraping, manejo de datos 
+                y desarrollo de APIs. Aprendí a superar desafíos como la detección de bots, los cambios 
+                en la estructura de las páginas y el procesamiento eficiente de grandes volúmenes de datos.
+              </p>
+              
+              <div class="back-link">
+                <a href="../index.html#section3" class="project-link"><i class="fa fa-arrow-left"></i> Volver a Proyectos</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="../assets/js/isotope.min.js"></script>
+    <script src="../assets/js/owl-carousel.js"></script>
+    <script src="../assets/js/lightbox.js"></script>
+    <script src="../assets/js/custom.js"></script>
+    
+    <script>
+      // Menú de navegación
+      var toggle = document.getElementById("menu-toggle");
+      var menu = document.getElementById("menu");
+      var close = document.getElementById("menu-close");
+
+      toggle.addEventListener("click", function(e) {
+        if (menu.classList.contains("open")) {
+          menu.classList.remove("open");
+        } else {
+          menu.classList.add("open");
+        }
+      });
+
+      close.addEventListener("click", function(e) {
+        menu.classList.remove("open");
+      });
+
+      // Close menu after click on smaller screens
+      $(window).on("resize", function() {
+        if ($(window).width() < 846) {
+          $(".main-menu a").on("click", function() {
+            menu.classList.remove("open");
+          });
+        }
+      });
+    </script>
+  </body>
+</html> 
