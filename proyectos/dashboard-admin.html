@@ -6,14 +6,14 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <meta name="description" content="Detalle del proyecto Scraper de Tarjetas RTX" />
+    <meta name="description" content="Detalle del proyecto Scraper de Excel" />
     <meta name="author" content="Angel" />
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,700,900"
       rel="stylesheet"
     />
 
-    <title>Scraper de Tarjetas RTX - Detalle del Proyecto</title>
+    <title>Scraper de Excel - Detalle del Proyecto</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
@@ -81,36 +81,36 @@
       <section class="section project-details">
         <div class="container">
           <div class="section-heading">
-            <h2>Scraper de Tarjetas RTX</h2>
+            <h2>Scraper de Excel</h2>
             <div class="line-dec"></div>
             <span>
-              Comparador de precios de tarjetas gráficas RTX entre Amazon y MercadoLibre
+              Consolidación automática de datos de múltiples archivos Excel
             </span>
           </div>
           
           <div class="project-main-image">
-            <img src="../assets/images/portfolio-01.jpg" alt="Scraper de Tarjetas RTX" />
+            <img src="../assets/images/portfolio-05.jpg" alt="Scraper de Excel" />
           </div>
           
           <div class="project-section">
             <h3>Descripción del Proyecto</h3>
             <p>
-              Una aplicación web que extrae y compara precios de tarjetas gráficas RTX de Amazon y MercadoLibre, mostrando las mejores ofertas y permitiendo filtrar por modelo y precio.
+              Un script en Python para sumar y consolidar datos de múltiples archivos Excel en un solo archivo concentrado. Es una herramienta útil para la automatización de la gestión de datos en entornos empresariales.
             </p>
             <p>
-              Este proyecto surgió de la necesidad de encontrar el mejor precio para componentes de PC en diferentes plataformas de e-commerce. Desarrollé un sistema automatizado que extrae datos en tiempo real, permitiendo a los usuarios comparar precios y características sin tener que visitar múltiples sitios web.
+              Este proyecto surgió de la necesidad de un departamento financiero que recibía diariamente decenas de informes en formato Excel con estructuras similares pero no idénticas. El proceso manual de consolidación tomaba varias horas diarias y estaba sujeto a errores humanos. Mi solución automatizó completamente este proceso, reduciendo el tiempo a menos de 5 minutos y eliminando los errores.
             </p>
           </div>
           
           <div class="project-section">
             <h3>Características Principales</h3>
             <ul>
-              <li>Extracción de datos en tiempo real de Amazon y MercadoLibre</li>
-              <li>Filtrado por modelo específico de tarjeta gráfica (3060, 3070, 3080, etc.)</li>
-              <li>Comparación de precios con visualización clara de la mejor oferta</li>
-              <li>Historial de precios para seguir tendencias</li>
-              <li>Alertas por correo electrónico cuando hay ofertas significativas</li>
-              <li>Interfaz web responsive para acceso desde cualquier dispositivo</li>
+              <li>Procesamiento de múltiples archivos Excel (XLSX, XLS, CSV)</li>
+              <li>Detección inteligente de estructuras de datos similares</li>
+              <li>Consolidación de datos en un único archivo maestro</li>
+              <li>Generación automática de resúmenes y gráficos</li>
+              <li>Interfaz gráfica simple para usuarios no técnicos</li>
+              <li>Programación de ejecuciones automáticas</li>
             </ul>
           </div>
           
@@ -118,35 +118,34 @@
             <h3>Tecnologías Utilizadas</h3>
             <div class="tech-stack">
               <span class="tech-badge">Python</span>
-              <span class="tech-badge">Selenium</span>
-              <span class="tech-badge">BeautifulSoup</span>
-              <span class="tech-badge">Flask</span>
-              <span class="tech-badge">SQLite</span>
-              <span class="tech-badge">HTML/CSS/JavaScript</span>
-              <span class="tech-badge">Bootstrap</span>
+              <span class="tech-badge">Pandas</span>
+              <span class="tech-badge">Openpyxl</span>
+              <span class="tech-badge">NumPy</span>
+              <span class="tech-badge">Matplotlib</span>
+              <span class="tech-badge">Tkinter</span>
             </div>
           </div>
           
           <div class="project-section">
             <h3>Desafíos y Soluciones</h3>
             <div class="challenge-box">
-              <h5>Desafío: Bloqueo de scraping por parte de los sitios web</h5>
+              <h5>Desafío: Variaciones en la estructura de los archivos</h5>
               <p>
-                Tanto Amazon como MercadoLibre implementan medidas anti-scraping que dificultan la extracción automatizada de datos.
+                Aunque los archivos seguían un patrón general, existían variaciones significativas en nombres de columnas, formatos de celdas y ubicación de los datos relevantes.
               </p>
               <h5>Solución:</h5>
               <p>
-                Implementé un sistema de rotación de proxies y user-agents, junto con patrones de navegación que imitan el comportamiento humano. También establecí intervalos aleatorios entre solicitudes para evitar patrones de acceso que pudieran ser detectados como automatizados.
+                Desarrollé un algoritmo de reconocimiento de patrones que identifica datos similares independientemente de su ubicación o etiqueta exacta. El sistema utiliza una combinación de análisis de encabezados, tipos de datos y posición relativa para mapear correctamente los campos entre diferentes archivos.
               </p>
             </div>
             <div class="challenge-box">
-              <h5>Desafío: Cambios frecuentes en la estructura de las páginas</h5>
+              <h5>Desafío: Rendimiento con grandes volúmenes de datos</h5>
               <p>
-                Las plataformas de e-commerce actualizan constantemente su estructura HTML, lo que rompe los selectores utilizados para extraer datos.
+                Algunos archivos contenían decenas de miles de filas, lo que ralentizaba significativamente el procesamiento.
               </p>
               <h5>Solución:</h5>
               <p>
-                Desarrollé un sistema modular con selectores alternativos y un mecanismo de detección de cambios que alerta cuando la estructura de la página ha cambiado. El sistema puede adaptarse automáticamente a ciertos cambios y notificar cuando se requiere una actualización manual.
+                Implementé técnicas de optimización como procesamiento por lotes, uso eficiente de memoria con generadores de Python, y paralelización de tareas para aprovechar múltiples núcleos del procesador. Estas mejoras redujeron el tiempo de procesamiento en un 80%.
               </p>
             </div>
           </div>
@@ -154,10 +153,10 @@
           <div class="project-section">
             <h3>Resultados y Aprendizajes</h3>
             <p>
-              Este proyecto me permitió profundizar en técnicas avanzadas de web scraping y en el manejo de datos en tiempo real. La aplicación ha ayudado a numerosos usuarios a encontrar las mejores ofertas, ahorrando tiempo y dinero en sus compras de hardware.
+              La herramienta ha sido implementada en tres departamentos diferentes de la empresa, ahorrando aproximadamente 20 horas-persona por semana. Los informes generados automáticamente han mejorado la toma de decisiones al proporcionar datos consolidados de manera más rápida y confiable.
             </p>
             <p>
-              Aprendí la importancia de diseñar sistemas robustos que puedan adaptarse a cambios externos, así como técnicas para evitar bloqueos al realizar scraping de manera ética y responsable. También mejoré mis habilidades en el procesamiento y visualización de datos para presentar información compleja de manera clara y útil.
+              Este proyecto me permitió profundizar en el manejo eficiente de datos tabulares con Pandas y en técnicas de reconocimiento de patrones. También aprendí sobre la importancia de crear interfaces sencillas para herramientas técnicas, permitiendo que usuarios sin conocimientos de programación puedan aprovechar el poder de la automatización.
             </p>
           </div>
           
@@ -174,11 +173,11 @@
           </div>
           
           <div class="project-navigation">
-            <a href="../index.html#section3" class="prev-project">
-              <i class="fas fa-arrow-left"></i> Volver a Proyectos
+            <a href="app-notas.html" class="prev-project">
+              <i class="fas fa-arrow-left"></i> Proyecto Anterior: Calculadora de Distancias
             </a>
-            <a href="mouse-remoto.html" class="next-project">
-              Siguiente Proyecto: Remote Mouse <i class="fas fa-arrow-right"></i>
+            <a href="scraping-productos.html" class="next-project">
+              Siguiente Proyecto: Scraper de Tarjetas RTX <i class="fas fa-arrow-right"></i>
             </a>
           </div>
         </div>
@@ -226,5 +225,4 @@
       });
     </script>
   </body>
-</html> 
 </html> 

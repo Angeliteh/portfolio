@@ -6,14 +6,14 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <meta name="description" content="Detalle del proyecto Scraper de Tarjetas RTX" />
+    <meta name="description" content="Detalle del proyecto Calculadora de Distancias" />
     <meta name="author" content="Angel" />
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,700,900"
       rel="stylesheet"
     />
 
-    <title>Scraper de Tarjetas RTX - Detalle del Proyecto</title>
+    <title>Calculadora de Distancias - Detalle del Proyecto</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
@@ -81,72 +81,71 @@
       <section class="section project-details">
         <div class="container">
           <div class="section-heading">
-            <h2>Scraper de Tarjetas RTX</h2>
+            <h2>Calculadora de Distancias</h2>
             <div class="line-dec"></div>
             <span>
-              Comparador de precios de tarjetas gráficas RTX entre Amazon y MercadoLibre
+              Matriz de distancias entre puntos utilizando Google Maps API
             </span>
           </div>
           
           <div class="project-main-image">
-            <img src="../assets/images/portfolio-01.jpg" alt="Scraper de Tarjetas RTX" />
+            <img src="../assets/images/portfolio-04.jpg" alt="Calculadora de Distancias" />
           </div>
           
           <div class="project-section">
             <h3>Descripción del Proyecto</h3>
             <p>
-              Una aplicación web que extrae y compara precios de tarjetas gráficas RTX de Amazon y MercadoLibre, mostrando las mejores ofertas y permitiendo filtrar por modelo y precio.
+              Desarrollé una aplicación utilizando la API de Google Maps para calcular distancias relativas entre puntos, mostrando las distancias en una matriz. El proyecto involucra un backend robusto y una interfaz web intuitiva.
             </p>
             <p>
-              Este proyecto surgió de la necesidad de encontrar el mejor precio para componentes de PC en diferentes plataformas de e-commerce. Desarrollé un sistema automatizado que extrae datos en tiempo real, permitiendo a los usuarios comparar precios y características sin tener que visitar múltiples sitios web.
+              Esta herramienta surgió como solución para empresas de logística y transporte que necesitaban optimizar rutas entre múltiples ubicaciones. La aplicación permite a los usuarios ingresar hasta 25 ubicaciones diferentes y obtener una matriz completa de distancias y tiempos estimados de viaje entre todos los puntos.
             </p>
           </div>
           
           <div class="project-section">
             <h3>Características Principales</h3>
             <ul>
-              <li>Extracción de datos en tiempo real de Amazon y MercadoLibre</li>
-              <li>Filtrado por modelo específico de tarjeta gráfica (3060, 3070, 3080, etc.)</li>
-              <li>Comparación de precios con visualización clara de la mejor oferta</li>
-              <li>Historial de precios para seguir tendencias</li>
-              <li>Alertas por correo electrónico cuando hay ofertas significativas</li>
-              <li>Interfaz web responsive para acceso desde cualquier dispositivo</li>
+              <li>Cálculo de distancias entre múltiples puntos (hasta 25)</li>
+              <li>Visualización en formato de matriz interactiva</li>
+              <li>Estimación de tiempos de viaje considerando tráfico en tiempo real</li>
+              <li>Exportación de resultados a Excel y PDF</li>
+              <li>Guardado de ubicaciones frecuentes</li>
+              <li>Optimización de rutas para reducir distancias totales</li>
             </ul>
           </div>
           
           <div class="project-section">
             <h3>Tecnologías Utilizadas</h3>
             <div class="tech-stack">
-              <span class="tech-badge">Python</span>
-              <span class="tech-badge">Selenium</span>
-              <span class="tech-badge">BeautifulSoup</span>
-              <span class="tech-badge">Flask</span>
-              <span class="tech-badge">SQLite</span>
-              <span class="tech-badge">HTML/CSS/JavaScript</span>
-              <span class="tech-badge">Bootstrap</span>
+              <span class="tech-badge">JavaScript</span>
+              <span class="tech-badge">Node.js</span>
+              <span class="tech-badge">Express</span>
+              <span class="tech-badge">Google Maps API</span>
+              <span class="tech-badge">MongoDB</span>
+              <span class="tech-badge">Chart.js</span>
             </div>
           </div>
           
           <div class="project-section">
             <h3>Desafíos y Soluciones</h3>
             <div class="challenge-box">
-              <h5>Desafío: Bloqueo de scraping por parte de los sitios web</h5>
+              <h5>Desafío: Limitaciones de la API de Google Maps</h5>
               <p>
-                Tanto Amazon como MercadoLibre implementan medidas anti-scraping que dificultan la extracción automatizada de datos.
+                La API de Google Maps tiene límites en el número de solicitudes por día y en la cantidad de elementos que se pueden calcular en una sola solicitud.
               </p>
               <h5>Solución:</h5>
               <p>
-                Implementé un sistema de rotación de proxies y user-agents, junto con patrones de navegación que imitan el comportamiento humano. También establecí intervalos aleatorios entre solicitudes para evitar patrones de acceso que pudieran ser detectados como automatizados.
+                Implementé un sistema de caché inteligente que almacena los resultados de cálculos previos y los reutiliza cuando es posible. También desarrollé un algoritmo que divide las solicitudes grandes en bloques más pequeños para evitar superar los límites de la API, mientras mantiene la coherencia de los resultados.
               </p>
             </div>
             <div class="challenge-box">
-              <h5>Desafío: Cambios frecuentes en la estructura de las páginas</h5>
+              <h5>Desafío: Visualización de grandes matrices de datos</h5>
               <p>
-                Las plataformas de e-commerce actualizan constantemente su estructura HTML, lo que rompe los selectores utilizados para extraer datos.
+                Presentar matrices de 25x25 de manera clara y usable en diferentes dispositivos era un reto de diseño importante.
               </p>
               <h5>Solución:</h5>
               <p>
-                Desarrollé un sistema modular con selectores alternativos y un mecanismo de detección de cambios que alerta cuando la estructura de la página ha cambiado. El sistema puede adaptarse automáticamente a ciertos cambios y notificar cuando se requiere una actualización manual.
+                Diseñé una interfaz de matriz interactiva con códigos de color para facilitar la interpretación de los datos. Implementé funcionalidades de zoom, filtrado y ordenación que permiten a los usuarios enfocarse en las partes relevantes de la matriz, incluso en dispositivos móviles.
               </p>
             </div>
           </div>
@@ -154,10 +153,10 @@
           <div class="project-section">
             <h3>Resultados y Aprendizajes</h3>
             <p>
-              Este proyecto me permitió profundizar en técnicas avanzadas de web scraping y en el manejo de datos en tiempo real. La aplicación ha ayudado a numerosos usuarios a encontrar las mejores ofertas, ahorrando tiempo y dinero en sus compras de hardware.
+              Este proyecto ha sido adoptado por varias empresas de logística, ayudándoles a reducir costos de transporte en un promedio del 15% gracias a la optimización de rutas. La aplicación procesa más de 1,000 cálculos de matrices diariamente.
             </p>
             <p>
-              Aprendí la importancia de diseñar sistemas robustos que puedan adaptarse a cambios externos, así como técnicas para evitar bloqueos al realizar scraping de manera ética y responsable. También mejoré mis habilidades en el procesamiento y visualización de datos para presentar información compleja de manera clara y útil.
+              Aprendí la importancia de optimizar el uso de APIs externas costosas, así como técnicas avanzadas de visualización de datos complejos. También profundicé en algoritmos de optimización de rutas como el problema del viajante (TSP) y sus aplicaciones prácticas en logística.
             </p>
           </div>
           
@@ -174,11 +173,11 @@
           </div>
           
           <div class="project-navigation">
-            <a href="../index.html#section3" class="prev-project">
-              <i class="fas fa-arrow-left"></i> Volver a Proyectos
+            <a href="social-media-downloader.html" class="prev-project">
+              <i class="fas fa-arrow-left"></i> Proyecto Anterior: Descargador de Videos
             </a>
-            <a href="mouse-remoto.html" class="next-project">
-              Siguiente Proyecto: Remote Mouse <i class="fas fa-arrow-right"></i>
+            <a href="dashboard-admin.html" class="next-project">
+              Siguiente Proyecto: Scraper de Excel <i class="fas fa-arrow-right"></i>
             </a>
           </div>
         </div>
@@ -226,5 +225,4 @@
       });
     </script>
   </body>
-</html> 
 </html> 

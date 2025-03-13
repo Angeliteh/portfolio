@@ -6,14 +6,14 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <meta name="description" content="Detalle del proyecto Scraper de Tarjetas RTX" />
+    <meta name="description" content="Detalle del proyecto Remote Mouse" />
     <meta name="author" content="Angel" />
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,700,900"
       rel="stylesheet"
     />
 
-    <title>Scraper de Tarjetas RTX - Detalle del Proyecto</title>
+    <title>Remote Mouse - Detalle del Proyecto</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
@@ -81,72 +81,71 @@
       <section class="section project-details">
         <div class="container">
           <div class="section-heading">
-            <h2>Scraper de Tarjetas RTX</h2>
+            <h2>Remote Mouse</h2>
             <div class="line-dec"></div>
             <span>
-              Comparador de precios de tarjetas gráficas RTX entre Amazon y MercadoLibre
+              Control remoto de PC desde dispositivos móviles con baja latencia
             </span>
           </div>
           
           <div class="project-main-image">
-            <img src="../assets/images/portfolio-01.jpg" alt="Scraper de Tarjetas RTX" />
+            <img src="../assets/images/portfolio-02.jpg" alt="Remote Mouse" />
           </div>
           
           <div class="project-section">
             <h3>Descripción del Proyecto</h3>
             <p>
-              Una aplicación web que extrae y compara precios de tarjetas gráficas RTX de Amazon y MercadoLibre, mostrando las mejores ofertas y permitiendo filtrar por modelo y precio.
+              Una aplicación móvil desarrollada en Flutter que permite controlar el mouse de un PC remotamente, con menor latencia y más características que las aplicaciones tradicionales. El servidor está implementado en Python.
             </p>
             <p>
-              Este proyecto surgió de la necesidad de encontrar el mejor precio para componentes de PC en diferentes plataformas de e-commerce. Desarrollé un sistema automatizado que extrae datos en tiempo real, permitiendo a los usuarios comparar precios y características sin tener que visitar múltiples sitios web.
+              Este proyecto surgió de la frustración con las aplicaciones existentes que presentaban alta latencia o funcionalidades limitadas. Mi objetivo fue crear una solución que ofreciera una experiencia fluida y responsiva, especialmente útil para presentaciones, control multimedia y uso general desde la comodidad del sofá.
             </p>
           </div>
           
           <div class="project-section">
             <h3>Características Principales</h3>
             <ul>
-              <li>Extracción de datos en tiempo real de Amazon y MercadoLibre</li>
-              <li>Filtrado por modelo específico de tarjeta gráfica (3060, 3070, 3080, etc.)</li>
-              <li>Comparación de precios con visualización clara de la mejor oferta</li>
-              <li>Historial de precios para seguir tendencias</li>
-              <li>Alertas por correo electrónico cuando hay ofertas significativas</li>
-              <li>Interfaz web responsive para acceso desde cualquier dispositivo</li>
+              <li>Control preciso del cursor con baja latencia (menos de 50ms)</li>
+              <li>Gestos multitáctiles para funciones avanzadas</li>
+              <li>Teclado virtual con atajos personalizables</li>
+              <li>Modo presentación con controles específicos para diapositivas</li>
+              <li>Conexión segura mediante cifrado de extremo a extremo</li>
+              <li>Funciona en redes locales sin necesidad de internet</li>
             </ul>
           </div>
           
           <div class="project-section">
             <h3>Tecnologías Utilizadas</h3>
             <div class="tech-stack">
+              <span class="tech-badge">Flutter</span>
+              <span class="tech-badge">Dart</span>
               <span class="tech-badge">Python</span>
-              <span class="tech-badge">Selenium</span>
-              <span class="tech-badge">BeautifulSoup</span>
-              <span class="tech-badge">Flask</span>
-              <span class="tech-badge">SQLite</span>
-              <span class="tech-badge">HTML/CSS/JavaScript</span>
-              <span class="tech-badge">Bootstrap</span>
+              <span class="tech-badge">Socket.io</span>
+              <span class="tech-badge">PyAutoGUI</span>
+              <span class="tech-badge">WebSockets</span>
             </div>
           </div>
           
           <div class="project-section">
             <h3>Desafíos y Soluciones</h3>
             <div class="challenge-box">
-              <h5>Desafío: Bloqueo de scraping por parte de los sitios web</h5>
+              <h5>Desafío: Reducir la latencia en la comunicación</h5>
               <p>
-                Tanto Amazon como MercadoLibre implementan medidas anti-scraping que dificultan la extracción automatizada de datos.
+                La principal queja de los usuarios con aplicaciones similares era la alta latencia que hacía frustrante el uso.
               </p>
               <h5>Solución:</h5>
               <p>
-                Implementé un sistema de rotación de proxies y user-agents, junto con patrones de navegación que imitan el comportamiento humano. También establecí intervalos aleatorios entre solicitudes para evitar patrones de acceso que pudieran ser detectados como automatizados.
+                Implementé un protocolo de comunicación optimizado basado en WebSockets que reduce al mínimo el tamaño de los paquetes y utiliza un sistema de predicción de movimiento para compensar los retrasos en la red.
               </p>
             </div>
             <div class="challenge-box">
-              <h5>Desafío: Cambios frecuentes en la estructura de las páginas</h5>
+              <h5>Desafío: Compatibilidad entre diferentes sistemas operativos</h5>
               <p>
-                Las plataformas de e-commerce actualizan constantemente su estructura HTML, lo que rompe los selectores utilizados para extraer datos.
+                Lograr que la aplicación funcionara de manera consistente en Windows, macOS y Linux presentaba desafíos debido a las diferencias en cómo cada sistema maneja los eventos del mouse.
               </p>
               <h5>Solución:</h5>
               <p>
-                Desarrollé un sistema modular con selectores alternativos y un mecanismo de detección de cambios que alerta cuando la estructura de la página ha cambiado. El sistema puede adaptarse automáticamente a ciertos cambios y notificar cuando se requiere una actualización manual.
+                Desarrollé una capa de abstracción en Python que normaliza los comandos del mouse y teclado, adaptándolos automáticamente al sistema operativo detectado, lo que permite una experiencia uniforme independientemente de la plataforma.
               </p>
             </div>
           </div>
@@ -154,10 +153,10 @@
           <div class="project-section">
             <h3>Resultados y Aprendizajes</h3>
             <p>
-              Este proyecto me permitió profundizar en técnicas avanzadas de web scraping y en el manejo de datos en tiempo real. La aplicación ha ayudado a numerosos usuarios a encontrar las mejores ofertas, ahorrando tiempo y dinero en sus compras de hardware.
+              Este proyecto me permitió profundizar en el desarrollo multiplataforma con Flutter y en la optimización de comunicaciones en tiempo real. La aplicación ha sido bien recibida por usuarios que necesitan controlar sus presentaciones o sistemas multimedia de forma remota.
             </p>
             <p>
-              Aprendí la importancia de diseñar sistemas robustos que puedan adaptarse a cambios externos, así como técnicas para evitar bloqueos al realizar scraping de manera ética y responsable. También mejoré mis habilidades en el procesamiento y visualización de datos para presentar información compleja de manera clara y útil.
+              Aprendí la importancia de la optimización a bajo nivel para aplicaciones que requieren respuesta en tiempo real, así como técnicas avanzadas de gestión de estado en Flutter para mantener una interfaz fluida incluso durante operaciones intensivas de red.
             </p>
           </div>
           
@@ -174,11 +173,11 @@
           </div>
           
           <div class="project-navigation">
-            <a href="../index.html#section3" class="prev-project">
-              <i class="fas fa-arrow-left"></i> Volver a Proyectos
+            <a href="scraping-productos.html" class="prev-project">
+              <i class="fas fa-arrow-left"></i> Proyecto Anterior: Scraper de Tarjetas RTX
             </a>
-            <a href="mouse-remoto.html" class="next-project">
-              Siguiente Proyecto: Remote Mouse <i class="fas fa-arrow-right"></i>
+            <a href="social-media-downloader.html" class="next-project">
+              Siguiente Proyecto: Descargador de Videos <i class="fas fa-arrow-right"></i>
             </a>
           </div>
         </div>
@@ -226,5 +225,4 @@
       });
     </script>
   </body>
-</html> 
 </html> 

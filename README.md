@@ -1,176 +1,143 @@
-# Mi Portfolio Personal
+# Portafolio Personal - Desarrollador Full-Stack
 
-Este es un portfolio personal moderno y responsive, diseñado para mostrar proyectos y habilidades de manera atractiva.
+Un portafolio moderno y responsive para mostrar tus proyectos y habilidades como desarrollador. Incluye secciones para información personal, habilidades, proyectos y contacto.
 
 ## Características
 
-- Diseño responsive que se adapta a todos los dispositivos
-- Sección "Sobre Mí" para presentarte profesionalmente
-- Sección "Mis Trabajos" con filtrado por categorías
-- Proyectos organizados en un grid 2x2 para mejor visualización
-- Etiquetas de tecnologías para cada proyecto
-- Botón de acceso directo a la página detallada de cada proyecto
-- Paginación de proyectos
-- Efecto de transparencia para un aspecto moderno
-- Selector de tema claro/oscuro con persistencia
-- Páginas detalladas para cada proyecto
-- Formulario de contacto
-- Integración con redes sociales
+- **Diseño Responsive**: Se adapta a cualquier dispositivo (móvil, tablet, escritorio)
+- **Sección "Sobre Mí"**: Presenta tu perfil profesional y enfoque de trabajo
+- **Sección de Habilidades**: Muestra tus competencias técnicas organizadas por categorías
+- **Filtrado de Proyectos**: Permite filtrar proyectos por categoría
+- **Etiquetas de Tecnologías**: Cada proyecto muestra las tecnologías utilizadas
+- **Paginación**: Muestra los proyectos de forma organizada
+- **Selector de Tema**: Permite cambiar entre modo claro y oscuro
+- **Páginas de Detalle**: Cada proyecto tiene su propia página con información detallada
+- **Formulario de Contacto**: Incluye un formulario para que los visitantes puedan contactarte
+- **Integración con Redes Sociales**: Enlaces a tus perfiles profesionales
 
 ## Estructura del Proyecto
 
 ```
-portfolio/
+portafolio/
+│
 ├── index.html                  # Página principal
-├── assets/
-│   ├── css/
+├── README.md                   # Documentación
+│
+├── assets/                     # Recursos estáticos
+│   ├── css/                    # Hojas de estilo
+│   │   ├── templatemo-style.css # Estilos principales
 │   │   ├── custom-styles.css   # Estilos personalizados
 │   │   └── ...                 # Otros archivos CSS
-│   ├── js/
-│   │   ├── theme-switcher.js   # Script para cambio de tema
-│   │   └── ...                 # Otros archivos JavaScript
-│   └── images/                 # Imágenes del portfolio
+│   │
+│   ├── js/                     # Scripts de JavaScript
+│   │   ├── custom.js           # Funcionalidades principales
+│   │   ├── theme-switcher.js   # Selector de tema claro/oscuro
+│   │   └── ...                 # Otros archivos JS
+│   │
+│   └── images/                 # Imágenes del sitio
+│
 ├── vendor/                     # Bibliotecas de terceros
-└── proyectos/                  # Páginas detalladas de proyectos
-    ├── plantilla-proyecto.html # Plantilla para nuevos proyectos
-    └── ...                     # Páginas de proyectos individuales
+│   ├── bootstrap/              # Framework Bootstrap
+│   ├── jquery/                 # Biblioteca jQuery
+│   └── ...                     # Otras bibliotecas
+│
+└── proyectos/                  # Páginas de detalle de proyectos
+    ├── scraping-productos.html # Proyecto: Scraper de Tarjetas RTX
+    ├── mouse-remoto.html       # Proyecto: Remote Mouse
+    ├── social-media-downloader.html # Proyecto: Descargador de Videos
+    ├── app-notas.html          # Proyecto: Calculadora de Distancias
+    └── dashboard-admin.html    # Proyecto: Scraper de Excel
 ```
 
-## Cómo Personalizar
+## Personalización
 
 ### Información Personal
 
-Edita el archivo `index.html` para actualizar:
+Para personalizar la sección "Sobre Mí", edita el archivo `index.html` y busca la sección con el id `section1`. Aquí puedes modificar:
 
-- Tu nombre y profesión
-- Descripción "Sobre Mí"
-- Habilidades
-- Enlaces a redes sociales
+- Tu nombre y título profesional
+- Descripción personal y enfoque profesional
+- Foto de perfil (reemplaza las imágenes en `assets/images/`)
 
-### Añadir Nuevos Proyectos
+### Habilidades
 
-Para añadir un nuevo proyecto a la sección "Mis Trabajos":
+La sección de habilidades está organizada en categorías:
+- Automatización y Web Scraping
+- Desarrollo Backend
+- Desarrollo Frontend y Móvil
+- Herramientas y DevOps
+- Habilidades Adicionales
 
-1. Añade una nueva imagen para el proyecto en `assets/images/`
-2. Edita el archivo `index.html` y añade un nuevo elemento en la sección "Mis Trabajos":
+Para modificar estas categorías, edita la sección con id `section2` en `index.html`.
 
-```html
-<div class="isotope-item" data-type="CATEGORÍA">
-  <figure class="snip1321">
-    <img src="assets/images/tu-imagen.jpg" alt="Nombre del Proyecto">
-    <figcaption>
-      <h4>Nombre del Proyecto</h4>
-      <span>Breve descripción</span>
-      <a href="proyectos/nombre-proyecto.html" class="project-btn">Ver Proyecto</a>
-    </figcaption>
-    <div class="tech-tags">
-      <span class="tech-tag">Tecnología 1</span>
-      <span class="tech-tag">Tecnología 2</span>
-      <span class="tech-tag">Tecnología 3</span>
-    </div>
-  </figure>
-</div>
+### Proyectos
+
+Los proyectos se muestran en una cuadrícula con filtrado por categorías. Para añadir un nuevo proyecto:
+
+1. Añade un nuevo elemento HTML en la sección con id `section3` siguiendo la estructura existente
+2. Asigna las categorías correspondientes (data-filter)
+3. Añade una imagen representativa en `assets/images/`
+4. Incluye las etiquetas de tecnologías utilizadas
+5. Crea una página de detalle en la carpeta `proyectos/`
+
+#### Etiquetas de Tecnologías
+
+Cada proyecto muestra las tecnologías utilizadas. Para añadir o modificar estas etiquetas, edita el div con clase `tech-tags` dentro de cada proyecto.
+
+#### Paginación
+
+Los proyectos se muestran en una cuadrícula de 2x2 por página. La paginación se gestiona automáticamente en función del número de proyectos.
+
+### Páginas de Detalle de Proyectos
+
+Cada proyecto tiene su propia página de detalle con secciones para:
+- Descripción del proyecto
+- Características principales
+- Tecnologías utilizadas
+- Desafíos y soluciones
+- Resultados y aprendizajes
+- Enlaces al código y demo
+
+Para crear una nueva página de detalle, copia una existente en la carpeta `proyectos/` y personaliza su contenido.
+
+### Colores y Fuentes
+
+El portafolio incluye un selector de tema claro/oscuro. Los colores principales se definen como variables CSS en `assets/css/custom-styles.css`:
+
+```css
+:root {
+  --primary-color: #f5a425;
+  --background-color: #fff;
+  --text-color: #2a2a2a;
+  --card-bg: #f7f7f7;
+  --border-color: #eee;
+  /* ... más variables ... */
+}
+
+[data-theme="dark"] {
+  --primary-color: #f5a425;
+  --background-color: #1e1e1e;
+  --text-color: #fff;
+  --card-bg: #2d2d2d;
+  --border-color: #444;
+  /* ... más variables ... */
+}
 ```
 
-3. Si necesitas añadir una nueva página de proyectos, crea un nuevo contenedor con el ID correspondiente:
+Para cambiar la fuente principal, modifica la importación de Google Fonts en el `<head>` de `index.html` y actualiza las referencias en CSS.
 
-```html
-<div class="isotope-box" id="page-3" style="display: none;">
-  <!-- Nuevos proyectos aquí -->
-</div>
-```
+### Formulario de Contacto
 
-4. Actualiza la paginación añadiendo un nuevo número de página:
+El formulario de contacto está configurado para funcionar con un servicio como FormSubmit. Para configurarlo:
 
-```html
-<li><a href="#" data-page="3">3</a></li>
-```
-
-5. Crea una página detallada para el proyecto:
-   - Copia `proyectos/plantilla-proyecto.html` a un nuevo archivo
-   - Personaliza el contenido con los detalles de tu proyecto
-   - Incluye imágenes, descripciones, desafíos y aprendizajes
-
-### Categorías de Proyectos
-
-Las categorías disponibles para filtrar proyectos son:
-
-- `web`: Proyectos de desarrollo web
-- `scraping`: Proyectos de web scraping
-- `desktop`: Aplicaciones de escritorio
-- `mobile`: Aplicaciones móviles
-
-Para añadir una nueva categoría:
-
-1. Edita el archivo `index.html` y añade un nuevo filtro en la sección de filtros:
-
-```html
-<div class="item-filter">
-  <input type="radio" name="filter" id="nueva-categoria">
-  <label for="nueva-categoria">Nueva Categoría</label>
-</div>
-```
-
-2. Asigna la nueva categoría a tus proyectos usando el atributo `data-type`:
-
-```html
-<div class="isotope-item" data-type="nueva-categoria">
-  <!-- Contenido del proyecto -->
-</div>
-```
-
-### Etiquetas de Tecnologías
-
-Cada proyecto muestra las tecnologías utilizadas mediante etiquetas debajo de la imagen. Para personalizar estas etiquetas:
-
-1. Edita el elemento `tech-tags` dentro de cada proyecto:
-
-```html
-<div class="tech-tags">
-  <span class="tech-tag">Tecnología 1</span>
-  <span class="tech-tag">Tecnología 2</span>
-  <span class="tech-tag">Tecnología 3</span>
-</div>
-```
-
-2. Puedes añadir tantas etiquetas como necesites, pero se recomienda no más de 3-4 para mantener un diseño limpio.
-
-### Paginación
-
-El portfolio incluye un sistema de paginación que muestra proyectos en formato de cuadrícula. Para gestionar la paginación:
-
-1. Cada página de proyectos debe tener un ID único (`page-1`, `page-2`, etc.)
-2. La navegación entre páginas se maneja automáticamente con el script incluido
-3. Si añades nuevas páginas, asegúrate de actualizar la paginación en el HTML
-
-### Personalizar Colores y Fuentes
-
-Los colores y fuentes se pueden personalizar en el archivo `assets/css/custom-styles.css`:
-
-- Modifica las variables CSS en `:root` para cambiar los colores del tema claro
-- Modifica las variables en `[data-theme="dark"]` para cambiar los colores del tema oscuro
-- Cambia las fuentes importadas y sus aplicaciones
-
-### Selector de Tema Claro/Oscuro
-
-El portfolio incluye un selector de tema que permite al usuario cambiar entre modo claro y oscuro:
-
-- El tema seleccionado se guarda en localStorage para persistir entre visitas
-- Por defecto, se respeta la preferencia del sistema del usuario
-- El selector está disponible en todas las páginas
-
-### Configurar el Formulario de Contacto
-
-Para que el formulario de contacto funcione, necesitarás configurar un servicio de backend:
-
-1. Edita el atributo `action` del formulario en `index.html`
-2. Configura el método de envío (GET/POST)
-3. Asegúrate de que los campos del formulario coincidan con lo que espera tu backend
+1. Edita el atributo `action` del formulario en la sección con id `section4`
+2. Personaliza los campos según tus necesidades
+3. Añade validación adicional si es necesario
 
 ## Créditos
 
-Esta plantilla está basada en [Reflux Template](https://templatemo.com/tm-531-reflux) con modificaciones personalizadas.
+Esta plantilla está basada en el tema Reflux de TemplateMo, con modificaciones sustanciales para añadir nuevas funcionalidades como el selector de tema, paginación, etiquetas de tecnologías y páginas de detalle de proyectos.
 
 ## Licencia
 
-Este proyecto está disponible como código abierto bajo la licencia MIT. 
+Este proyecto está disponible bajo la licencia MIT. Puedes utilizarlo libremente para tu portafolio personal o profesional. 
