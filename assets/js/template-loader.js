@@ -32,7 +32,27 @@ class TemplateLoader {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  TemplateLoader.loadSidebar();
+  // Ajustar las rutas de navegación según la ubicación actual
+  function adjustNavLinks() {
+    const isProjectPage = window.location.pathname.includes('/proyectos/');
+    const navLinks = document.querySelectorAll('.nav-link');
+    
+    navLinks.forEach(link => {
+      const section = link.getAttribute('href').split('#')[1];
+      if (isProjectPage) {
+        // Si estamos en una página de proyecto, añadir la ruta relativa al index
+        link.href = `../index.html#${section}`;
+      } else {
+        // Si estamos en la página principal, usar enlaces locales
+        link.href = `#${section}`;
+      }
+    });
+  }
+
+  // Cargar el sidebar y ajustar los enlaces
+  TemplateLoader.loadSidebar().then(() => {
+    adjustNavLinks();
+  });
 });
 
 // Después de cargar el sidebar
@@ -56,4 +76,5 @@ $(document).ready(function() {
     // Llamar a la función después de cargar el sidebar
     adjustNavLinks();
 });
+
 

@@ -1,41 +1,29 @@
 $(document).ready(function() {
-  // Función para actualizar los botones de idioma
   function updateLanguageButtons(currentLang) {
-    $('.language-switch').removeClass('active');
-    $(`.language-switch[data-lang="${currentLang}"]`).addClass('active');
+    $('.lang-btn').removeClass('active');
+    $(`.lang-btn[data-lang="${currentLang}"]`).addClass('active');
   }
 
-  // Manejar el clic en los botones de idioma
-  $('.language-switch').on('click', function() {
-    const lang = $(this).data('lang');
-    
-    // Cambiar el idioma usando i18next
-    i18next.changeLanguage(lang, function(err) {
-      if (err) {
-        console.error('Error changing language:', err);
-        return;
-      }
-      
-      // Actualizar botones
-      updateLanguageButtons(lang);
-      
-      // Guardar preferencia
-      localStorage.setItem('language', lang);
-      
-      // Traducir la página
-      $('body').localize();
-    });
-  });
-
-  // Establecer idioma inicial
+  // Inicializar con el idioma guardado o el predeterminado
   const savedLang = localStorage.getItem('language') || 'es';
-  i18next.changeLanguage(savedLang, function(err) {
-    if (err) {
-      console.error('Error setting initial language:', err);
-      return;
-    }
+  i18next.changeLanguage(savedLang, function() {
     updateLanguageButtons(savedLang);
     $('body').localize();
   });
-window.initializeLanguageSwitcher = initializeLanguageSwitcher;
+
+  // Manejar clicks en los botones de idioma
+  $(document).on('click', '.lang-btn', function() {
+    const lang = $(this).data('lang');
+    
+    i18next.changeLanguage(lang, function(err) {
+      if (err) {
+        console.error('Error al cambiar idioma:', err);
+        return;
+      }
+      
+      updateLanguageButtons(lang);
+      localStorage.setItem('language', lang);
+      $('body').localize();
+    });
+  });
 });

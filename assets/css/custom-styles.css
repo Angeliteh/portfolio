@@ -1,48 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@500;600;700&display=swap');
 
 :root {
-  /* Modo claro - Paleta moderna y profesional */
-  --text-color: #2d3436;
-  --bg-color: rgba(245, 248, 255, 0.7);
-  --primary-color: #0984e3;
-  --secondary-color: #00b894;
-  --accent-color: #6c5ce7;
+  /* Modo claro - Nueva paleta más suave y profesional */
+  --text-color: #2c3e50;
+  --bg-color: rgba(246, 248, 250, 0.95);
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --accent-color: #9b59b6;
   
-  /* Variables para el diseño */
-  --header-bg: rgba(255, 255, 255, 0.9);
-  --sidebar-bg: rgba(9, 132, 227, 0.95);
-  --section-bg: rgba(255, 255, 255, 0.9);
-  --card-bg: rgba(255, 255, 255, 0.95);
-  --button-bg: #0984e3;
-  --button-hover: #00b894;
-  --line-dec-color: #6c5ce7;
-  --border-color: rgba(9, 132, 227, 0.2);
-  --tech-tag-bg: #0984e3;
+  /* Variables para el diseño en modo claro */
+  --header-bg: rgba(255, 255, 255, 0.98);
+  --sidebar-bg: rgba(52, 152, 219, 0.95);
+  --section-bg: rgba(255, 255, 255, 0.98);
+  --card-bg: #ffffff;
+  --button-bg: #3498db;
+  --button-hover: #2ecc71;
+  --line-dec-color: #9b59b6;
+  --border-color: rgba(52, 152, 219, 0.2);
+  --tech-tag-bg: #3498db;
   --tech-tag-text: #ffffff;
-  --gradient-bg: linear-gradient(135deg, #0984e3, #6c5ce7);
-  --hover-bg: rgba(74, 144, 226, 0.1);
-  --border-color: rgba(0, 0, 0, 0.1);
+  --gradient-bg: linear-gradient(135deg, #3498db, #9b59b6);
+  --hover-bg: rgba(52, 152, 219, 0.1);
 }
 
-/* Estilos para modo oscuro */
+/* Modo oscuro - Mantener los colores actuales que funcionan bien */
 [data-theme="dark"] {
-  --text-color: #dfe6e9;
-  --bg-color: rgba(45, 52, 54, 0.1);
-  --primary-color: #74b9ff;
-  --secondary-color: #00b894;
-  --accent-color: #a29bfe;
+  --text-color: #e2e8f0;
+  --bg-color: rgba(26, 32, 44, 0.95);
+  --primary-color: #63b3ed;
+  --secondary-color: #4fd1c5;
+  --accent-color: #7f9cf5;
   
-  --header-bg: rgba(45, 52, 54, 0.8);
-  --sidebar-bg: rgba(9, 132, 227, 0.95);
-  --section-bg: rgba(45, 52, 54, 0.1);
-  --card-bg: rgba(45, 52, 54, 0.2);
-  --button-bg: #74b9ff;
-  --button-hover: #00b894;
+  --header-bg: rgba(26, 32, 44, 0.95);
+  --sidebar-bg: rgba(26, 32, 44, 0.98);
+  --section-bg: rgba(26, 32, 44, 0.95);
+  --card-bg: rgba(45, 55, 72, 0.95);
+  --button-bg: #63b3ed;
+  --button-hover: #4fd1c5;
   --border-color: rgba(255, 255, 255, 0.1);
-  --tech-tag-bg: #74b9ff;
-  --gradient-bg: linear-gradient(135deg, #0984e3, #6c5ce7);
-  --hover-bg: rgba(100, 181, 246, 0.1);
-  --border-color: rgba(255, 255, 255, 0.1);
+  --tech-tag-bg: #63b3ed;
+  --tech-tag-text: #ffffff;
+  --gradient-bg: linear-gradient(135deg, #2d3748, #4a5568);
+  --hover-bg: rgba(99, 179, 237, 0.1);
 }
 
 /* Estilos para modo oscuro usando media query (respaldo automático) */
@@ -220,10 +219,24 @@ small {font-size: 0.750rem;} /* 12px */
 /* Personalización de la plantilla Reflux */
 /* Mejoras en el sidebar */
 .responsive-nav {
-  background: var(--sidebar-bg);
+  width: 280px;
   height: 100vh;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  border-radius: 0 24px 24px 0; /* Bordes redondeados en el lado derecho */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidad */
+}
+
+/* Ajustar los elementos internos para que respeten los bordes redondeados */
+.sidebar-content {
+  padding: 1.5rem;
+  height: 100%;
   display: flex;
   flex-direction: column;
+  overflow: hidden; /* Evita que el contenido sobresalga de los bordes redondeados */
 }
 
 .menu .container {
@@ -1199,39 +1212,84 @@ figure.snip1321 {
 /* Estilos para el selector de idioma en el sidebar */
 .sidebar-language-switch {
   padding: 20px;
-  margin-top: auto; /* Empuja el selector hacia abajo */
+  margin-top: auto;
   text-align: center;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.language-label {
+  display: block;
+  color: #ffffff;
+  margin-bottom: 12px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.8;
 }
 
 .language-options {
   display: flex;
   justify-content: center;
-  gap: 15px;
-  margin-top: 10px;
+  gap: 12px;
 }
 
 .language-switch {
-  padding: 5px 15px;
-  border-radius: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
   cursor: pointer;
   transition: all 0.3s ease;
-  color: #fff;
-  opacity: 0.7;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 
 .language-switch:hover {
-  opacity: 1;
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .language-switch.active {
-  background-color: var(--accent-color);
+  background: var(--accent-color);
+  box-shadow: 0 4px 15px rgba(108, 92, 231, 0.3);
+}
+
+.flag-icon {
+  font-size: 1.2rem;
+}
+
+.lang-text {
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+/* Efecto hover suave */
+.language-switch::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.language-switch:hover::after {
   opacity: 1;
 }
 
-.language-icon {
-  color: var(--accent-color);
-  font-size: 1.2em;
+/* Asegurarse que los íconos de Font Awesome sean visibles */
+.fas, .fa {
+  display: inline-block;
+  line-height: 1;
 }
 
 /* Ajustes responsive */
@@ -1239,6 +1297,32 @@ figure.snip1321 {
   .sidebar-language-switch {
     padding: 15px;
   }
+  
+  .language-switch {
+    padding: 6px 12px;
+  }
+}
+
+/* Animación suave al cambiar de idioma */
+.language-switch.active {
+  animation: selectLanguage 0.3s ease;
+}
+
+@keyframes selectLanguage {
+  0% {
+    transform: scale(0.95);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Efecto de presión al hacer clic */
+.language-switch:active {
+  transform: scale(0.95);
 }
 
 /* Ajustes de colores para el sidebar */
@@ -1344,8 +1428,45 @@ figure.snip1321 {
   top: 0;
   height: 100vh;
   z-index: 999;
-  background: var(--sidebar-bg);
   overflow-y: auto;
+}
+
+.menu {
+  background: var(--sidebar-bg);
+  margin: 20px;
+  border-radius: 24px;
+  padding: 20px;
+  height: calc(100vh - 40px);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 2rem 10rem; 
+}
+
+/* Estilizar los elementos internos */
+.nav-link {
+  border-radius: 12px;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateX(5px);
+}
+
+/* Ajustes responsive */
+@media screen and (max-width: 845px) {
+  .menu {
+    margin: 0;
+    border-radius: 0;
+   
+  }
 }
 
 /* Ajuste del contenido principal */
@@ -1613,7 +1734,7 @@ figure.snip1321 {
 }
 /* Contenedor para los controles del sidebar */
 .sidebar-controls {
-  margin-top: auto;
+  margin-bottom: 5rem;
   padding: 20px;
   border-top: 1px solid var(--border-color);
 }
@@ -1698,4 +1819,397 @@ input:checked + .slider:before {
   .sidebar-controls {
     padding: 15px;
   }
+}
+/* Estilos base para el menú */
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem; /* Espacio entre items de navegación */
+}
+
+.main-nav ul li {
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav ul li a {
+  display: block;
+  padding: 15px 20px;
+  color: rgba(255, 255, 255, 0.856); /* Color más suave */
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+  margin: 5px 0;
+}
+
+.main-nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateX(5px);
+}
+
+.main-nav ul li.active a {
+  background-color: #00c9ff4d;
+  color: #ffffff;
+}
+
+/* Asegurarse que los menús sean visibles cuando corresponda */
+.main-menu, .project-menu {
+  display: block !important;
+}
+
+/* Contenedor del menú */
+.menu {
+  background: var(--sidebar-bg);
+  padding: 20px 0;
+  width: 300px;
+}
+
+/* Ajustes para el contenedor del autor */
+.author-content {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.author-content h4 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .menu {
+    width: 250px;
+  }
+  
+  .main-nav ul li a {
+    padding: 12px 15px;
+    font-size: 0.9rem;
+  }
+}
+
+
+.sidebar-content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1.5rem;
+}
+
+/* Perfil */
+.profile-section {
+  margin-bottom: 2 rem;
+}
+
+.profile-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.profile-icon {
+  font-size: 1.5rem;
+  color: var(--accent-color);
+}
+
+.name {
+  font-size: 1.25rem;
+  color: var(--text-color);
+  margin: 0;
+}
+
+.role {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--text-color);
+  opacity: 0.8;
+}
+
+.status-indicator {
+  width: 8px;
+  height: 8px;
+  background: var(--secondary-color);
+  border-radius: 50%;
+}
+
+/* Navegación */
+.nav-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  margin-bottom: 0.5rem;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  color: var(--text-color);
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  background: var(--hover-bg);
+  transform: translateX(5px);
+}
+
+.nav-link i {
+  font-size: 1.25rem;
+  color: var(--accent-color);
+}
+
+/* Social Links */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: auto;
+  margin-bottom: 3rem;
+}
+
+.social-link {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: var(--hover-bg);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  background: var(--accent-color);
+  color: white;
+  transform: translateY(-3px);
+}
+
+/* Controles del Sidebar */
+.sidebar-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-color);
+}
+
+/* Selector de Idioma */
+.language-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.lang-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background: var(--hover-bg);
+  color: var(--text-color);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.lang-btn:hover {
+  background: var(--accent-color);
+  color: white;
+}
+
+.lang-btn.active {
+  background: var(--accent-color);
+  color: white;
+}
+
+/* Theme Toggle */
+.theme-toggle {
+  position: relative;
+}
+
+.theme-switch {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  background: var(--hover-bg);
+  color: var(--text-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-switch:hover {
+  background: var(--accent-color);
+  color: white;
+}
+
+.theme-switch i {
+  font-size: 1.25rem;
+}
+
+/* Estado inicial de los íconos */
+.theme-switch .fa-sun {
+  display: none;
+  color: var(--accent-color);
+}
+
+.theme-switch .fa-moon {
+  display: inline-block;
+  color: var(--accent-color);
+}
+
+/* Estado de los íconos en modo oscuro */
+[data-theme="dark"] .theme-switch .fa-sun {
+  display: inline-block;
+}
+
+[data-theme="dark"] .theme-switch .fa-moon {
+  display: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .responsive-nav {
+    width: 100%;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  .responsive-nav.active {
+    transform: translateX(0);
+  }
+}
+/* Asegurar buen contraste en los textos */
+.section p, 
+.content-text p, 
+.service-item p {
+  color: var(--text-color);
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.service-item h4, 
+.content-text h4 {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+/* Mejorar visibilidad de enlaces */
+a {
+  color: var(--primary-color);
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+/* Mejorar contraste en cards */
+.card, 
+.project-preview, 
+.service-item {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Mejorar visibilidad de botones */
+.button, 
+.btn {
+  background: var(--button-bg);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.button:hover, 
+.btn:hover {
+  background: var(--button-hover);
+  transform: translateY(-2px);
+}
+/* Estilos del botón de tema */
+.theme-switch {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+/* Estilos de los íconos */
+.theme-switch .fa-sun,
+.theme-switch .fa-moon {
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+/* Modo claro (default) */
+.theme-switch .fa-sun {
+    display: none;
+}
+
+.theme-switch .fa-moon {
+    display: block;
+}
+
+/* Modo oscuro */
+[data-theme="dark"] .theme-switch .fa-sun {
+    display: block;
+}
+
+[data-theme="dark"] .theme-switch .fa-moon {
+    display: none;
+}
+
+/* Variables del tema claro */
+:root {
+    --text-color: #333333;
+    --bg-color: #f8f9fa;
+    --primary-color: #0d6efd;
+    --secondary-color: #6c757d;
+    --accent-color: #198754;
+    --header-bg: #ffffff;
+    --sidebar-bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --button-bg: #0d6efd;
+    --button-hover: #0b5ed7;
+}
+
+/* Variables del tema oscuro */
+[data-theme="dark"] {
+    --text-color: #e9ecef;
+    --bg-color: #212529;
+    --primary-color: #0d6efd;
+    --secondary-color: #6c757d;
+    --accent-color: #198754;
+    --header-bg: #343a40;
+    --sidebar-bg: #212529;
+    --card-bg: #343a40;
+    --button-bg: #0d6efd;
+    --button-hover: #0b5ed7;
 }

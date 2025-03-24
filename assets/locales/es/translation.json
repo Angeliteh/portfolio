@@ -6,6 +6,9 @@
     "projects": "Proyectos",
     "contact": "Contacto"
   },
+  "language": {
+    "select": "Idioma"
+  },
   "about": {
     "title": "Sobre Mí",
     "subtitle": "Desarrollador especializado en automatización y soluciones eficientes",
@@ -97,6 +100,7 @@
     }
   }
 }
+
 
 
 

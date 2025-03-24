@@ -31,33 +31,7 @@
   <body>
     <div id="page-wraper">
       <!-- Sidebar -->
-      <div class="responsive-nav">
-        <i class="fa fa-bars" id="menu-toggle"></i>
-        <div id="menu" class="menu">
-          <i class="fa fa-times" id="menu-close"></i>
-          <div class="container">
-            <div class="author-content">
-              <h4>Angel Espinoza</h4>
-              <span data-i18n="role">Desarrollador Full-Stack</span>
-            </div>
-            <nav class="main-nav" role="navigation">
-              <ul class="main-menu">
-                <li><a href="#section1" data-i18n="nav.about">Sobre Mí</a></li>
-                <li><a href="#section2" data-i18n="nav.skills">Habilidades</a></li>
-                <li><a href="#section3" data-i18n="nav.projects">Proyectos</a></li>
-                <li><a href="#section4" data-i18n="nav.contact">Contacto</a></li>
-              </ul>
-            </nav>
-            <div class="sidebar-language-switch">
-              <span class="language-icon"><i class="fas fa-globe"></i></span>
-              <div class="language-options">
-                <span class="language-switch active" data-lang="es">ES</span>
-                <span class="language-switch" data-lang="en">EN</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div id="sidebar-container"></div>
 
       <!-- Sección Sobre Mí -->
       <div class="section" id="section1" data-section="section1">
@@ -416,24 +390,15 @@
     </div>
 
     <!-- Scripts -->
-    <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/template-loader.js"></script>
-    <script src="assets/js/isotope.min.js"></script>
-    <script src="assets/js/owl-carousel.js"></script>
-    <script src="assets/js/lightbox.js"></script>
-    
-    <!-- i18next scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/22.4.9/i18next.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-i18next/1.2.1/jquery-i18next.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next-http-backend/2.1.1/i18nextHttpBackend.min.js"></script>
-    
-    <!-- Custom scripts -->
     <script src="assets/js/i18n-config.js"></script>
-    <script src="assets/js/custom.js"></script>
-    <script src="assets/js/theme-switcher.js"></script>
     <script src="assets/js/language-switcher.js"></script>
+    <script src="assets/js/theme-switcher.js"></script>
+    <script src="assets/js/custom.js"></script>
     
     <script>
       $(document).ready(function() {
@@ -506,21 +471,21 @@
         });
         
         // Paginación
-        $('.pagination a[data-page]').on('click', function(e) {
-          e.preventDefault();
+        $('.pagination a[data-page]').off('click').on('click', function(e) {
+          e.preventDefault(); // Prevenir el comportamiento por defecto
           var pageNum = $(this).data('page');
           showPage(pageNum);
         });
-        
-        $('#prev-page').on('click', function(e) {
+
+        $('#prev-page').off('click').on('click', function(e) {
           e.preventDefault();
           var currentPage = $('.pagination li.active a').data('page');
           if (currentPage > 1) {
             showPage(currentPage - 1);
           }
         });
-        
-        $('#next-page').on('click', function(e) {
+
+        $('#next-page').off('click').on('click', function(e) {
           e.preventDefault();
           var currentPage = $('.pagination li.active a').data('page');
           var totalPages = $('.pagination a[data-page]').length;
@@ -528,7 +493,7 @@
             showPage(currentPage + 1);
           }
         });
-        
+
         function showPage(pageNum) {
           // Ocultar todas las páginas
           $('.isotope-box').hide();
@@ -550,7 +515,9 @@
           }
           
           // Reorganizar el grid después de cambiar de página
-          reorganizeGrid();
+          if (typeof reorganizeGrid === 'function') {
+            reorganizeGrid();
+          }
         }
         
         // Función para reorganizar el grid

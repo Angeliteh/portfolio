@@ -1,47 +1,93 @@
 <div class="responsive-nav">
-  <i class="fa fa-bars" id="menu-toggle"></i>
   <div id="menu" class="menu">
-    <i class="fa fa-times" id="menu-close"></i>
-    <div class="container">
-      <div class="author-content">
-        <h4>Angel Espinoza</h4>
-        <span data-i18n="role">Desarrollador Full-Stack</span>
+    <div class="sidebar-content">
+      <!-- Perfil minimalista -->
+      <div class="profile-section">
+        <div class="profile-info">
+          <div class="profile-title">
+            <i class="fas fa-code profile-icon"></i>
+            <h4 class="name">Angel Espinoza</h4>
+          </div>
+          <div class="role">
+            <span class="role-text" data-i18n="role">Desarrollador Full-Stack</span>
+            <span class="status-indicator"></span>
+          </div>
+        </div>
       </div>
 
+      <!-- Navegación Principal -->
       <nav class="main-nav" role="navigation">
-        <ul class="main-menu">
-          <li><a href="#section1" class="nav-link" data-i18n="about.title">Sobre Mí</a></li>
-          <li><a href="#section2" class="nav-link" data-i18n="skills.title">Habilidades</a></li>
-          <li><a href="#section3" class="nav-link" data-i18n="projects.title">Proyectos</a></li>
-          <li><a href="#section4" class="nav-link" data-i18n="contact.title">Contacto</a></li>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#section1" class="nav-link">
+              <i class="fas fa-user-circle"></i>
+              <span data-i18n="nav.about">Sobre Mí</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#section2" class="nav-link">
+              <i class="fas fa-laptop-code"></i>
+              <span data-i18n="nav.skills">Habilidades</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#section3" class="nav-link">
+              <i class="fas fa-project-diagram"></i>
+              <span data-i18n="nav.projects">Proyectos</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#section4" class="nav-link">
+              <i class="fas fa-paper-plane"></i>
+              <span data-i18n="nav.contact">Contacto</span>
+            </a>
+          </li>
         </ul>
       </nav>
 
+      <!-- Social Links -->
+      <div class="social-links">
+        <a href="#" class="social-link" title="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="#" class="social-link" title="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="#" class="social-link" title="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+
+      <!-- Controles -->
       <div class="sidebar-controls">
-        <!-- Selector de idioma -->
-        <div class="sidebar-language-switch">
-          <span class="language-icon"><i class="fas fa-globe"></i></span>
-          <div class="language-options">
-            <span class="language-switch active" data-lang="es">ES</span>
-            <span class="language-switch" data-lang="en">EN</span>
+        <!-- Selector de Idioma -->
+        <div class="language-switcher">
+          <div class="language-buttons">
+            <button class="lang-btn" data-lang="es">
+              <span>ES</span>
+            </button>
+            <button class="lang-btn" data-lang="en">
+              <span>EN</span>
+            </button>
           </div>
         </div>
 
-        <!-- Selector de tema -->
-        <div class="sidebar-theme-switch">
-          <span class="theme-icon"><i class="fas fa-sun"></i></span>
-          <div class="theme-toggle">
-            <label class="theme-switch">
-              <input type="checkbox">
-              <span class="slider round"></span>
-            </label>
-          </div>
-          <span class="theme-icon"><i class="fas fa-moon"></i></span>
+        <!-- Theme Toggle -->
+        <div class="theme-toggle">
+          <button class="theme-switch" type="button" title="Cambiar tema">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+          </button>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+
+
+
+
 
 
 

@@ -1,47 +1,62 @@
-// Función para establecer el tema
-function setTheme(themeName) {
-    localStorage.setItem('theme', themeName);
-    document.documentElement.setAttribute('data-theme', themeName);
-}
-
-// Función para alternar entre temas
-function toggleTheme() {
-    if (localStorage.getItem('theme') === 'dark') {
-        setTheme('light');
-    } else {
-        setTheme('dark');
+function initializeTheme() {
+    const themeToggle = document.querySelector('.theme-switch');
+    
+    if (!themeToggle) {
+        console.error('Theme switch button not found');
+        return;
     }
-}
 
-// Función para inicializar el tema al cargar la página
-function initTheme() {
-    // Verificar si hay un tema guardado en localStorage
-    if (localStorage.getItem('theme')) {
-        setTheme(localStorage.getItem('theme'));
-    } else {
-        // Si no hay tema guardado, verificar preferencia del sistema
-        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            setTheme('dark');
+    // Función para cambiar el tema
+    function setTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+        
+        // Actualizar íconos
+        const sunIcon = themeToggle.querySelector('.fa-sun');
+        const moonIcon = themeToggle.querySelector('.fa-moon');
+        
+        if (theme === 'dark') {
+            sunIcon.style.display = 'inline-block';
+            moonIcon.style.display = 'none';
         } else {
-            setTheme('light');
+            sunIcon.style.display = 'none';
+            moonIcon.style.display = 'inline-block';
         }
     }
-    
-    // Actualizar el estado del interruptor
-    const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-    if (toggleSwitch) {
-        toggleSwitch.checked = localStorage.getItem('theme') === 'dark';
-        
-        // Agregar evento de cambio
-        toggleSwitch.addEventListener('change', function(e) {
-            if (e.target.checked) {
-                setTheme('dark');
-            } else {
-                setTheme('light');
-            }
-        });
-    }
+
+    // Establecer tema inicial
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    setTheme(savedTheme);
+
+    // Manejar click en el botón
+    themeToggle.addEventListener('click', () => {
+        const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+        setTheme(newTheme);
+    });
 }
 
-// Inicializar cuando el DOM esté cargado
-document.addEventListener('DOMContentLoaded', initTheme); 
+// Inicializar cuando se carga el sidebar
+document.addEventListener('DOMContentLoaded', () => {
+    // Si el sidebar ya está cargado
+    if (document.querySelector('.theme-switch')) {
+        initializeTheme();
+    }
+});
+
+// Para cuando el sidebar se carga dinámicamente
+const observer = new MutationObserver((mutations) => {
+    mutations.forEach((mutation) => {
+        if (mutation.addedNodes.length) {
+            if (document.querySelector('.theme-switch')) {
+                initializeTheme();
+                observer.disconnect();
+            }
+        }
+    });
+});
+
+observer.observe(document.body, {
+    childList: true,
+    subtree: true
+}); 
