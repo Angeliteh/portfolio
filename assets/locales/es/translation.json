@@ -1,0 +1,102 @@
+{
+  "role": "Desarrollador Full-Stack",
+  "nav": {
+    "about": "Sobre Mí",
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "subtitle": "Desarrollador especializado en automatización y soluciones eficientes",
+    "who": "Quién soy",
+    "whoText": "Soy un desarrollador con experiencia en automatización, web scraping y desarrollo de aplicaciones eficientes. Me especializo en crear herramientas que optimizan procesos mediante Python y otras tecnologías. Mi enfoque está en la eficiencia, escalabilidad y facilidad de uso, desarrollando soluciones para extracción y análisis de datos, control remoto y aplicaciones web funcionales.",
+    "approach": "Mi enfoque",
+    "approachText": "Me especializo en el desarrollo de herramientas automatizadas y sistemas de scraping adaptables a distintos tipos de datos y plataformas. Busco optimizar procesos y crear soluciones escalables y de fácil integración. Mis proyectos abarcan desde web scraping avanzado hasta el desarrollo de aplicaciones móviles y web, siempre priorizando rendimiento y usabilidad."
+  },
+  "skills": {
+    "title": "Mis Habilidades",
+    "subtitle": "Estas son las tecnologías y habilidades que domino",
+    "automation": "Automatización y Web Scraping",
+    "automationList": {
+      "item1": "Web scraping con Python (Selenium, BeautifulSoup, Scrapy)",
+      "item2": "Automatización con Python (scripts, bots, APIs)",
+      "item3": "Manejo de datos (Pandas, SQL, bases de datos)"
+    },
+    "backend": "Desarrollo Backend",
+    "backendList": {
+      "item1": "Python (FastAPI, Flask, Django)",
+      "item2": "Bases de datos (SQL, SQLite, PostgreSQL)",
+      "item3": "APIs y consumo de datos"
+    },
+    "frontend": "Desarrollo Frontend y Móvil",
+    "frontendList": {
+      "item1": "HTML, CSS, JavaScript (sin frameworks, puro código)",
+      "item2": "Flutter (Desarrollo móvil con Dart)",
+      "item3": "Interacción con APIs y optimización de UI/UX"
+    },
+    "devops": "Herramientas y DevOps",
+    "devopsList": {
+      "item1": "Docker, despliegue de servidores",
+      "item2": "Linux y terminal (automatización de tareas, scripts)",
+      "item3": "Git/GitHub para control de versiones"
+    },
+    "additional": "Habilidades Adicionales",
+    "additionalList": {
+      "item1": "Hacking ético y ciberseguridad básica",
+      "item2": "Desarrollo de scripts personalizados",
+      "item3": "Optimización de procesos y eficiencia en código"
+    }
+  },
+  "projects": {
+    "title": "Mis Proyectos",
+    "subtitle": "Algunos de mis trabajos más recientes",
+    "filters": {
+      "all": "Todos",
+      "web": "Web",
+      "scraping": "Scraping",
+      "desktop": "Escritorio",
+      "mobile": "Móvil"
+    },
+    "viewProject": "Ver Proyecto",
+    "project1": {
+      "name": "RTX Scraper",
+      "title": "Scraper de Tarjetas RTX",
+      "desc": "Herramienta automatizada para el seguimiento de precios de tarjetas gráficas RTX en múltiples tiendas."
+    },
+    "project2": {
+      "name": "Remote Mouse",
+      "title": "Remote Mouse",
+      "desc": "Aplicación móvil para control remoto del cursor con latencia ultra baja. Incluye gestos multitáctiles, teclado virtual y accesos rápidos personalizables."
+    },
+    "project3": {
+      "name": "Social Media Downloader",
+      "title": "Descargador de Videos",
+      "desc": "Plataforma web para descargar videos de redes sociales sin publicidad ni marcas de agua. Soporta múltiples formatos y calidades, con procesamiento en paralelo para mayor velocidad."
+    },
+    "project4": {
+      "name": "Distance Calculator",
+      "title": "Calculadora de Distancias",
+      "desc": "Herramienta web para calcular matrices de distancia entre múltiples puntos usando la API de Google Maps. Ideal para optimización de rutas y logística."
+    },
+    "project5": {
+      "name": "Excel Scraper",
+      "title": "Scraper de Excel",
+      "desc": "Herramienta para consolidación automática de datos desde múltiples archivos Excel. Procesa y combina información de diferentes fuentes."
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "¿Interesado en colaborar en un proyecto o tienes alguna pregunta?",
+    "form": {
+      "name": "Tu nombre",
+      "email": "Tu correo electrónico",
+      "subject": "Asunto",
+      "message": "Mensaje",
+      "send": "Enviar Mensaje"
+    }
+  }
+}
+
+
+

@@ -2,18 +2,10 @@
 <html lang="es">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="Detalle del proyecto Scraper de Tarjetas RTX" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Detalle del proyecto Monitor de Precios GPUs" />
     <meta name="author" content="Angel" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,700,900"
-      rel="stylesheet"
-    />
-
-    <title>Scraper de Tarjetas RTX - Detalle del Proyecto</title>
+    <title>Monitor de Precios GPUs - Detalle del Proyecto</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
@@ -21,210 +13,218 @@
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="../assets/css/fontawesome.css" />
     <link rel="stylesheet" href="../assets/css/templatemo-style.css" />
-    <link rel="stylesheet" href="../assets/css/owl.css" />
-    <link rel="stylesheet" href="../assets/css/lightbox.css" />
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="../assets/css/custom-styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   </head>
 
   <body>
     <div id="page-wraper">
-      <!-- Sidebar Menu -->
-      <div class="responsive-nav">
-        <i class="fa fa-bars" id="menu-toggle"></i>
-        <div id="menu" class="menu">
-          <i class="fa fa-times" id="menu-close"></i>
-          <div class="container">
-            <div class="author-content">
-              <h4>Angel</h4>
-              <span>Desarrollador Full-Stack</span>
-            </div>
-            <nav class="main-nav" role="navigation">
-              <ul class="main-menu">
-                <li><a href="../index.html#section1">Sobre Mí</a></li>
-                <li><a href="../index.html#section2">Habilidades</a></li>
-                <li><a href="../index.html#section3">Mis Proyectos</a></li>
-                <li><a href="../index.html#section4">Contacto</a></li>
-              </ul>
-            </nav>
-            <div class="social-network">
-              <ul class="soial-icons">
-                <li>
-                  <a href="https://github.com/tu-username" target="_blank"><i class="fa fa-github"></i></a>
-                </li>
-                <li>
-                  <a href="https://linkedin.com/in/tu-username" target="_blank"><i class="fa fa-linkedin"></i></a>
-                </li>
-                <li>
-                  <a href="mailto:tuemail@ejemplo.com"><i class="fa fa-envelope"></i></a>
-                </li>
-              </ul>
-            </div>
-            <div class="copyright-text">
-              <p>&copy; 2023 Angel</p>
+      <!-- Contenedor para el sidebar -->
+      <div id="sidebar-container"></div>
+
+      <!-- Scripts -->
+      <script src="../vendor/jquery/jquery.min.js"></script>
+      <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script>
+        // Cargar el sidebar después de que jQuery esté disponible
+        $(document).ready(function() {
+          $("#sidebar-container").load("../templates/sidebar.html", function() {
+            console.log("Sidebar cargado correctamente");
+          });
+        });
+      </script>
+      <script src="../assets/js/template-loader.js"></script>
+      <script src="../assets/js/custom.js"></script>
+      <script src="../assets/js/theme-switcher.js"></script>
+
+      <section class="section project-details">
+        <!-- Project Preview con lazy loading -->
+        <div class="project-preview">
+          <div class="preview-container">
+            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                 data-src="https://via.placeholder.com/1200x800/0984e3/ffffff?text=GPU+Price+Monitor" 
+                 alt="GPU Price Monitor Demo"
+                 class="main-preview lazy"
+                 loading="lazy"/>
+            <div class="metrics-overlay">
+              <div class="metric-card" tabindex="0">
+                <i class="fas fa-chart-line" aria-hidden="true"></i>
+                <span>500+ Productos</span>
+              </div>
+              <div class="metric-card" tabindex="0">
+                <i class="fas fa-store" aria-hidden="true"></i>
+                <span>10+ Tiendas</span>
+              </div>
+              <div class="metric-card" tabindex="0">
+                <i class="fas fa-clock" aria-hidden="true"></i>
+                <span>Actualización 24/7</span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- Selector de tema claro/oscuro -->
-      <div class="theme-switch-wrapper">
-        <span class="theme-icon"><i class="fas fa-sun"></i></span>
-        <label class="theme-switch">
-          <input type="checkbox">
-          <span class="slider"></span>
-        </label>
-        <span class="theme-icon"><i class="fas fa-moon"></i></span>
-      </div>
+        <!-- Project Overview -->
+        <div class="project-section overview">
+          <h3>Descripción General</h3>
+          <p>
+            Monitor de Precios GPUs es una herramienta automatizada para el seguimiento de precios de tarjetas gráficas RTX 
+            en múltiples tiendas. Analiza tendencias, detecta ofertas y genera alertas de precios, incluyendo visualización 
+            de datos históricos y predicciones de precios futuros.
+          </p>
+          <div class="key-features">
+            <div class="feature-item" tabindex="0">
+              <i class="fas fa-robot" aria-hidden="true"></i>
+              <h4>Automatización Total</h4>
+              <p>Monitoreo automático 24/7 de precios y stock</p>
+            </div>
+            <div class="feature-item" tabindex="0">
+              <i class="fas fa-bell" aria-hidden="true"></i>
+              <h4>Sistema de Alertas</h4>
+              <p>Notificaciones instantáneas de ofertas y cambios de precio</p>
+            </div>
+            <div class="feature-item" tabindex="0">
+              <i class="fas fa-chart-bar" aria-hidden="true"></i>
+              <h4>Análisis de Datos</h4>
+              <p>Gráficos históricos y predicciones de tendencias</p>
+            </div>
+          </div>
+        </div>
 
-      <section class="section project-details">
-        <div class="container">
-          <div class="section-heading">
-            <h2>Scraper de Tarjetas RTX</h2>
-            <div class="line-dec"></div>
-            <span>
-              Comparador de precios de tarjetas gráficas RTX entre Amazon y MercadoLibre
-            </span>
-          </div>
-          
-          <div class="project-main-image">
-            <img src="../assets/images/portfolio-01.jpg" alt="Scraper de Tarjetas RTX" />
-          </div>
-          
-          <div class="project-section">
-            <h3>Descripción del Proyecto</h3>
-            <p>
-              Una aplicación web que extrae y compara precios de tarjetas gráficas RTX de Amazon y MercadoLibre, mostrando las mejores ofertas y permitiendo filtrar por modelo y precio.
-            </p>
-            <p>
-              Este proyecto surgió de la necesidad de encontrar el mejor precio para componentes de PC en diferentes plataformas de e-commerce. Desarrollé un sistema automatizado que extrae datos en tiempo real, permitiendo a los usuarios comparar precios y características sin tener que visitar múltiples sitios web.
-            </p>
-          </div>
-          
-          <div class="project-section">
-            <h3>Características Principales</h3>
-            <ul>
-              <li>Extracción de datos en tiempo real de Amazon y MercadoLibre</li>
-              <li>Filtrado por modelo específico de tarjeta gráfica (3060, 3070, 3080, etc.)</li>
-              <li>Comparación de precios con visualización clara de la mejor oferta</li>
-              <li>Historial de precios para seguir tendencias</li>
-              <li>Alertas por correo electrónico cuando hay ofertas significativas</li>
-              <li>Interfaz web responsive para acceso desde cualquier dispositivo</li>
-            </ul>
-          </div>
-          
-          <div class="project-section">
-            <h3>Tecnologías Utilizadas</h3>
-            <div class="tech-stack">
-              <span class="tech-badge">Python</span>
-              <span class="tech-badge">Selenium</span>
-              <span class="tech-badge">BeautifulSoup</span>
-              <span class="tech-badge">Flask</span>
-              <span class="tech-badge">SQLite</span>
-              <span class="tech-badge">HTML/CSS/JavaScript</span>
-              <span class="tech-badge">Bootstrap</span>
+        <!-- Technical Details -->
+        <div class="project-section technical">
+          <h3>Detalles Técnicos</h3>
+          <div class="tech-details-grid">
+            <div class="detail-card architecture">
+              <h4><i class="fas fa-layer-group"></i> Arquitectura</h4>
+              <ul>
+                <li>Scraping distribuido con Scrapy</li>
+                <li>Sistema de colas con RabbitMQ</li>
+                <li>Base de datos SQLite para históricos</li>
+                <li>API REST para consultas</li>
+              </ul>
+            </div>
+            <div class="detail-card security">
+              <h4><i class="fas fa-shield-alt"></i> Optimización</h4>
+              <ul>
+                <li>Rotación de proxies automática</li>
+                <li>Gestión de User-Agents</li>
+                <li>Control de rate limiting</li>
+                <li>Caché inteligente de datos</li>
+              </ul>
             </div>
           </div>
-          
-          <div class="project-section">
-            <h3>Desafíos y Soluciones</h3>
-            <div class="challenge-box">
-              <h5>Desafío: Bloqueo de scraping por parte de los sitios web</h5>
-              <p>
-                Tanto Amazon como MercadoLibre implementan medidas anti-scraping que dificultan la extracción automatizada de datos.
-              </p>
-              <h5>Solución:</h5>
-              <p>
-                Implementé un sistema de rotación de proxies y user-agents, junto con patrones de navegación que imitan el comportamiento humano. También establecí intervalos aleatorios entre solicitudes para evitar patrones de acceso que pudieran ser detectados como automatizados.
-              </p>
+        </div>
+
+        <!-- Tech Stack -->
+        <div class="project-section tech-stack">
+          <h3>Stack Tecnológico</h3>
+          <div class="tech-grid">
+            <div class="tech-category backend">
+              <h4><i class="fas fa-server"></i> Backend</h4>
+              <div class="tech-items">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">Scrapy</span>
+                <span class="tech-badge">SQLite</span>
+                <span class="tech-badge">RabbitMQ</span>
+              </div>
             </div>
-            <div class="challenge-box">
-              <h5>Desafío: Cambios frecuentes en la estructura de las páginas</h5>
-              <p>
-                Las plataformas de e-commerce actualizan constantemente su estructura HTML, lo que rompe los selectores utilizados para extraer datos.
-              </p>
-              <h5>Solución:</h5>
-              <p>
-                Desarrollé un sistema modular con selectores alternativos y un mecanismo de detección de cambios que alerta cuando la estructura de la página ha cambiado. El sistema puede adaptarse automáticamente a ciertos cambios y notificar cuando se requiere una actualización manual.
-              </p>
-            </div>
-          </div>
-          
-          <div class="project-section">
-            <h3>Resultados y Aprendizajes</h3>
-            <p>
-              Este proyecto me permitió profundizar en técnicas avanzadas de web scraping y en el manejo de datos en tiempo real. La aplicación ha ayudado a numerosos usuarios a encontrar las mejores ofertas, ahorrando tiempo y dinero en sus compras de hardware.
-            </p>
-            <p>
-              Aprendí la importancia de diseñar sistemas robustos que puedan adaptarse a cambios externos, así como técnicas para evitar bloqueos al realizar scraping de manera ética y responsable. También mejoré mis habilidades en el procesamiento y visualización de datos para presentar información compleja de manera clara y útil.
-            </p>
-          </div>
-          
-          <div class="project-section">
-            <h3>Enlaces del Proyecto</h3>
-            <div class="project-links">
-              <a href="#" class="btn" style="background-color: var(--button-bg); color: white;">
-                <i class="fab fa-github"></i> Ver Código
-              </a>
-              <a href="#" class="btn" style="background-color: var(--accent-color); color: white;">
-                <i class="fas fa-external-link-alt"></i> Demo en Vivo
-              </a>
+            <div class="tech-category frontend">
+              <h4><i class="fas fa-code"></i> Frontend</h4>
+              <div class="tech-items">
+                <span class="tech-badge">HTML/CSS</span>
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">Chart.js</span>
+                <span class="tech-badge">Bootstrap</span>
+              </div>
             </div>
           </div>
-          
-          <div class="project-navigation">
-            <a href="../index.html#section3" class="prev-project">
-              <i class="fas fa-arrow-left"></i> Volver a Proyectos
+        </div>
+
+        <!-- Challenges and Solutions -->
+        <div class="project-section challenges">
+          <h3>Desafíos y Soluciones</h3>
+          <div class="challenges-grid">
+            <div class="challenge-card">
+              <div class="challenge-header">
+                <i class="fas fa-exclamation-circle"></i>
+                <h4>Anti-Scraping</h4>
+              </div>
+              <div class="challenge-content">
+                <p class="problem">Medidas de protección contra bots en las tiendas.</p>
+                <p class="solution">
+                  <i class="fas fa-check-circle"></i>
+                  Sistema rotativo de proxies y user agents con delays dinámicos.
+                </p>
+              </div>
+            </div>
+            <div class="challenge-card">
+              <div class="challenge-header">
+                <i class="fas fa-exclamation-circle"></i>
+                <h4>Cambios en DOM</h4>
+              </div>
+              <div class="challenge-content">
+                <p class="problem">Estructura cambiante de las páginas web.</p>
+                <p class="solution">
+                  <i class="fas fa-check-circle"></i>
+                  Selectores adaptativos y sistema de fallback automático.
+                </p>
+              </div>
+            </div>
+            <div class="challenge-card">
+              <div class="challenge-header">
+                <i class="fas fa-exclamation-circle"></i>
+                <h4>Escalabilidad</h4>
+              </div>
+              <div class="challenge-content">
+                <p class="problem">Alto volumen de datos y múltiples fuentes.</p>
+                <p class="solution">
+                  <i class="fas fa-check-circle"></i>
+                  Arquitectura distribuida con workers y sistema de colas.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Links and Resources -->
+        <div class="project-section resources">
+          <h3>Enlaces y Recursos</h3>
+          <div class="resources-grid">
+            <a href="https://github.com/yourusername/gpu-price-monitor" class="resource-card github" target="_blank">
+              <i class="fab fa-github"></i>
+              <span>Código Fuente</span>
             </a>
-            <a href="mouse-remoto.html" class="next-project">
-              Siguiente Proyecto: Remote Mouse <i class="fas fa-arrow-right"></i>
+            <a href="#" class="resource-card docs" target="_blank">
+              <i class="fas fa-book"></i>
+              <span>Documentación</span>
+            </a>
+            <a href="#" class="resource-card demo" target="_blank">
+              <i class="fas fa-play-circle"></i>
+              <span>Demo en Vivo</span>
+            </a>
+            <a href="#" class="resource-card api" target="_blank">
+              <i class="fas fa-code"></i>
+              <span>API Reference</span>
             </a>
           </div>
         </div>
       </section>
     </div>
 
+    <nav class="main-menu">
+      <ul>
+        <li><a href="#section1" class="nav-link">Sobre Mí</a></li>
+        <li><a href="#section3" class="nav-link">Proyectos</a></li>
+        <!-- ... -->
+      </ul>
+    </nav>
+
     <!-- Scripts -->
-    <!-- Bootstrap core JavaScript -->
     <script src="../vendor/jquery/jquery.min.js"></script>
     <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <script src="../assets/js/isotope.min.js"></script>
-    <script src="../assets/js/owl-carousel.js"></script>
-    <script src="../assets/js/lightbox.js"></script>
+    <script src="../assets/js/template-loader.js"></script>
     <script src="../assets/js/custom.js"></script>
     <script src="../assets/js/theme-switcher.js"></script>
-    
-    <script>
-      $(document).ready(function() {
-        // Menú de navegación
-        $(".main-menu li:first").addClass("active");
-
-        // Inicializar el selector de tema
-        const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-        const currentTheme = localStorage.getItem('theme');
-
-        if (currentTheme) {
-          document.documentElement.setAttribute('data-theme', currentTheme);
-          if (currentTheme === 'dark') {
-            toggleSwitch.checked = true;
-          }
-        }
-
-        function switchTheme(e) {
-          if (e.target.checked) {
-            document.documentElement.setAttribute('data-theme', 'dark');
-            localStorage.setItem('theme', 'dark');
-          } else {
-            document.documentElement.setAttribute('data-theme', 'light');
-            localStorage.setItem('theme', 'light');
-          }    
-        }
-
-        toggleSwitch.addEventListener('change', switchTheme, false);
-      });
-    </script>
   </body>
 </html> 
 </html> 

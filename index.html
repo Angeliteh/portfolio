@@ -13,7 +13,7 @@
       rel="stylesheet"
     />
 
-    <title>Mi Portafolio Profesional</title>
+    <title data-i18n="site.title">Mi Portafolio Profesional</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
@@ -30,7 +30,7 @@
 
   <body>
     <div id="page-wraper">
-      <!-- Sidebar Menu -->
+      <!-- Sidebar -->
       <div class="responsive-nav">
         <i class="fa fa-bars" id="menu-toggle"></i>
         <div id="menu" class="menu">
@@ -38,70 +38,45 @@
           <div class="container">
             <div class="author-content">
               <h4>Angel Espinoza</h4>
-              <span data-i18n="developer-role">Desarrollador Full-Stack</span>
+              <span data-i18n="role">Desarrollador Full-Stack</span>
             </div>
             <nav class="main-nav" role="navigation">
               <ul class="main-menu">
-                <li><a href="#section1" data-i18n="nav-about">Sobre Mí</a></li>
-                <li><a href="#section2" data-i18n="nav-skills">Habilidades</a></li>
-                <li><a href="#section3" data-i18n="nav-projects">Proyectos</a></li>
-                <li><a href="#section4" data-i18n="nav-contact">Contacto</a></li>
+                <li><a href="#section1" data-i18n="nav.about">Sobre Mí</a></li>
+                <li><a href="#section2" data-i18n="nav.skills">Habilidades</a></li>
+                <li><a href="#section3" data-i18n="nav.projects">Proyectos</a></li>
+                <li><a href="#section4" data-i18n="nav.contact">Contacto</a></li>
               </ul>
             </nav>
-            <div class="social-network">
-              <ul class="soial-icons">
-                <li>
-                  <a href="https://github.com/tu-username" target="_blank"><i class="fa fa-github"></i></a>
-                </li>
-                <li>
-                  <a href="https://linkedin.com/in/tu-username" target="_blank"><i class="fa fa-linkedin"></i></a>
-                </li>
-                <li>
-                  <a href="mailto:tuemail@ejemplo.com"><i class="fa fa-envelope"></i></a>
-                </li>
-              </ul>
-            </div>
-            <div class="copyright-text">
-              <p>&copy; 2025 </p>
+            <div class="sidebar-language-switch">
+              <span class="language-icon"><i class="fas fa-globe"></i></span>
+              <div class="language-options">
+                <span class="language-switch active" data-lang="es">ES</span>
+                <span class="language-switch" data-lang="en">EN</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Selector de tema claro/oscuro -->
-      <div class="theme-switch-wrapper">
-        <span class="theme-icon"><i class="fas fa-sun"></i></span>
-        <label class="theme-switch">
-          <input type="checkbox">
-          <span class="slider"></span>
-        </label>
-        <span class="theme-icon"><i class="fas fa-moon"></i></span>
-      </div>
-
-      <!-- Selector de idioma -->
-      <div class="language-switch-wrapper">
-        <span class="language-icon"><i class="fas fa-globe"></i></span>
-        <span class="language-switch active" data-lang="es">ES</span>
-        <span class="language-switch" data-lang="en">EN</span>
-      </div>
-
-      <section class="section about-me" data-section="section1">
+      <!-- Sección Sobre Mí -->
+      <div class="section" id="section1" data-section="section1">
         <div class="container">
           <div class="section-heading">
-            <h2 data-i18n="about-title">Sobre Mí</h2>
+            <h2 data-i18n="about.title">Sobre Mí</h2>
             <div class="line-dec"></div>
-            <span data-i18n="about-subtitle">Desarrollador especializado en automatización y soluciones eficientes</span>
+            <span data-i18n="about.subtitle">Desarrollador especializado en automatización y soluciones eficientes</span>
           </div>
           <div class="about-content">
             <div class="row">
               <div class="col-md-12">
                 <div class="content-text">
-                  <h4 data-i18n="about-who">Quién soy</h4>
-                  <p class="mb-4" data-i18n="about-who-text">
+                  <h4 data-i18n="about.who">Quién soy</h4>
+                  <p class="mb-4" data-i18n="about.whoText">
                     Soy un desarrollador con experiencia en automatización, web scraping y desarrollo de aplicaciones eficientes. Me especializo en crear herramientas que optimizan procesos mediante Python y otras tecnologías. Mi enfoque está en la eficiencia, escalabilidad y facilidad de uso, desarrollando soluciones para extracción y análisis de datos, control remoto y aplicaciones web funcionales.
                   </p>
-                  <h4 data-i18n="about-approach">Mi enfoque</h4>
-                  <p class="mb-4" data-i18n="about-approach-text">
+                  <h4 data-i18n="about.approach">Mi enfoque</h4>
+                  <p class="mb-4" data-i18n="about.approachText">
                     Me especializo en el desarrollo de herramientas automatizadas y sistemas de scraping adaptables a distintos tipos de datos y plataformas. Busco optimizar procesos y crear soluciones escalables y de fácil integración. Mis proyectos abarcan desde web scraping avanzado hasta el desarrollo de aplicaciones móviles y web, siempre priorizando rendimiento y usabilidad.
                   </p>
                 </div>
@@ -109,122 +84,126 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
-      <section class="section my-services" data-section="section2">
+      <!-- Sección Habilidades -->
+      <div class="section" id="section2" data-section="section2">
         <div class="container">
           <div class="section-heading">
-            <h2 data-i18n="skills-title">Mis Habilidades</h2>
+            <h2 data-i18n="skills.title">Mis Habilidades</h2>
             <div class="line-dec"></div>
-            <span data-i18n="skills-subtitle">Estas son las tecnologías y habilidades que domino</span>
+            <span data-i18n="skills.subtitle">Estas son las tecnologías y habilidades que domino</span>
           </div>
           <div class="row">
             <div class="col-md-6">
               <div class="service-item">
                 <div class="first-service-icon service-icon"></div>
-                <h4 data-i18n="skills-automation">Automatización y Web Scraping</h4>
+                <h4 data-i18n="skills.automation">Automatización y Web Scraping</h4>
                 <ul>
-                  <li>Web scraping con Python (Selenium, BeautifulSoup, Scrapy)</li>
-                  <li>Automatización con Python (scripts, bots, APIs)</li>
-                  <li>Manejo de datos (Pandas, SQL, bases de datos)</li>
+                  <li data-i18n="skills.automationList.item1">Web scraping con Python (Selenium, BeautifulSoup, Scrapy)</li>
+                  <li data-i18n="skills.automationList.item2">Automatización con Python (scripts, bots, APIs)</li>
+                  <li data-i18n="skills.automationList.item3">Manejo de datos (Pandas, SQL, bases de datos)</li>
                 </ul>
               </div>
             </div>
             <div class="col-md-6">
               <div class="service-item">
                 <div class="second-service-icon service-icon"></div>
-                <h4 data-i18n="skills-backend">Desarrollo Backend</h4>
+                <h4 data-i18n="skills.backend">Desarrollo Backend</h4>
                 <ul>
-                  <li>Python (FastAPI, Flask, Django)</li>
-                  <li>Bases de datos (SQL, SQLite, PostgreSQL)</li>
-                  <li>APIs y consumo de datos</li>
+                  <li data-i18n="skills.backendList.item1">Python (FastAPI, Flask, Django)</li>
+                  <li data-i18n="skills.backendList.item2">Bases de datos (SQL, SQLite, PostgreSQL)</li>
+                  <li data-i18n="skills.backendList.item3">APIs y consumo de datos</li>
                 </ul>
               </div>
             </div>
             <div class="col-md-6">
               <div class="service-item">
                 <div class="third-service-icon service-icon"></div>
-                <h4 data-i18n="skills-frontend">Desarrollo Frontend y Móvil</h4>
+                <h4 data-i18n="skills.frontend">Desarrollo Frontend y Móvil</h4>
                 <ul>
-                  <li>HTML, CSS, JavaScript (sin frameworks, puro código)</li>
-                  <li>Flutter (Desarrollo móvil con Dart)</li>
-                  <li>Interacción con APIs y optimización de UI/UX</li>
+                  <li data-i18n="skills.frontendList.item1">HTML, CSS, JavaScript (sin frameworks, puro código)</li>
+                  <li data-i18n="skills.frontendList.item2">Flutter (Desarrollo móvil con Dart)</li>
+                  <li data-i18n="skills.frontendList.item3">Interacción con APIs y optimización de UI/UX</li>
                 </ul>
               </div>
             </div>
             <div class="col-md-6">
               <div class="service-item">
                 <div class="fourth-service-icon service-icon"></div>
-                <h4 data-i18n="skills-devops">Herramientas y DevOps</h4>
+                <h4 data-i18n="skills.devops">Herramientas y DevOps</h4>
                 <ul>
-                  <li>Docker, despliegue de servidores</li>
-                  <li>Linux y terminal (automatización de tareas, scripts)</li>
-                  <li>Git/GitHub para control de versiones</li>
+                  <li data-i18n="skills.devopsList.item1">Docker, despliegue de servidores</li>
+                  <li data-i18n="skills.devopsList.item2">Linux y terminal (automatización de tareas, scripts)</li>
+                  <li data-i18n="skills.devopsList.item3">Git/GitHub para control de versiones</li>
                 </ul>
               </div>
             </div>
             <div class="col-md-6 mx-auto">
               <div class="service-item">
                 <div class="fifth-service-icon service-icon"></div>
-                <h4 data-i18n="skills-additional">Habilidades Adicionales</h4>
+                <h4 data-i18n="skills.additional">Habilidades Adicionales</h4>
                 <ul>
-                  <li>Hacking ético y ciberseguridad básica</li>
-                  <li>Desarrollo de scripts personalizados</li>
-                  <li>Optimización de procesos y eficiencia en código</li>
+                  <li data-i18n="skills.additionalList.item1">Hacking ético y ciberseguridad básica</li>
+                  <li data-i18n="skills.additionalList.item2">Desarrollo de scripts personalizados</li>
+                  <li data-i18n="skills.additionalList.item3">Optimización de procesos y eficiencia en código</li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
-      <section class="section my-work" data-section="section3">
+      <!-- Sección Proyectos -->
+      <div class="section" id="section3" data-section="section3">
         <div class="container">
           <div class="section-heading">
-            <h2 data-i18n="projects-title">Mis Proyectos</h2>
+            <h2 data-i18n="projects.title">Mis Proyectos</h2>
             <div class="line-dec"></div>
-            <span data-i18n="projects-subtitle">Algunos de mis trabajos más recientes</span>
+            <span data-i18n="projects.subtitle">Algunos de mis trabajos más recientes</span>
           </div>
           <div class="filters">
             <div class="filters-content">
               <div class="item-filter">
                 <input type="radio" name="filter" id="all" checked>
-                <label for="all" data-i18n="projects-all">Todos</label>
+                <label for="all" data-i18n="projects.filters.all">Todos</label>
               </div>
               <div class="item-filter">
                 <input type="radio" name="filter" id="web">
-                <label for="web" data-i18n="projects-web">Web</label>
+                <label for="web" data-i18n="projects.filters.web">Web</label>
               </div>
               <div class="item-filter">
                 <input type="radio" name="filter" id="scraping">
-                <label for="scraping" data-i18n="projects-scraping">Scraping</label>
+                <label for="scraping" data-i18n="projects.filters.scraping">Scraping</label>
               </div>
               <div class="item-filter">
                 <input type="radio" name="filter" id="desktop">
-                <label for="desktop" data-i18n="projects-desktop">Escritorio</label>
+                <label for="desktop" data-i18n="projects.filters.desktop">Escritorio</label>
               </div>
               <div class="item-filter">
                 <input type="radio" name="filter" id="mobile">
-                <label for="mobile" data-i18n="projects-mobile">Móvil</label>
+                <label for="mobile" data-i18n="projects.filters.mobile">Móvil</label>
               </div>
             </div>
           </div>
           
-          <!-- Proyectos - Página 1 -->
+          <!-- Proyectos -->
           <div class="isotope-box" id="page-1">
-            <!-- Proyecto 1 -->
             <div class="isotope-item" data-type="scraping">
               <div class="project-container">
                 <figure class="project-card">
-                  <img src="assets/images/portfolio-01.jpg" alt="Scraper de Tarjetas RTX" />
+                  <div class="gradient-preview">
+                    <div class="preview-content">
+                      <i class="fas fa-chart-line"></i>
+                      <span class="preview-title" data-i18n="projects.project1.name">RTX Web Scraper</span>
+                    </div>
+                  </div>
                   <div class="overlay">
-                    <h4 data-i18n="project1-title">Scraper de Tarjetas RTX</h4>
-                    <p class="project-description" data-i18n="project1-desc">
-                      Herramienta automatizada para el seguimiento de precios de tarjetas gráficas RTX en múltiples tiendas. 
-                      Analiza tendencias, detecta ofertas y genera alertas de precios. Incluye visualización de datos históricos 
-                      y predicciones de precios futuros.
+                    <h4 data-i18n="projects.project1.title">Scraper de Tarjetas RTX</h4>
+                    <p class="project-description" data-i18n="projects.project1.desc">
+                      Herramienta automatizada para el seguimiento de precios de tarjetas gráficas RTX en múltiples tiendas.
                     </p>
-                    <a href="proyectos/scraping-productos.html" class="project-btn" data-i18n="project-view">Ver Proyecto</a>
+                    <a href="proyectos/scraping-productos.html" class="project-btn" data-i18n="projects.viewProject">Ver Proyecto</a>
                   </div>
                 </figure>
                 <div class="tech-tags-container">
@@ -239,21 +218,26 @@
             <div class="isotope-item" data-type="mobile">
               <div class="project-container">
                 <figure class="project-card">
-                  <img src="assets/images/portfolio-02.jpg" alt="Remote Mouse" />
+                  <div class="gradient-preview">
+                    <div class="preview-content">
+                      <i class="fas fa-mouse"></i>
+                      <span class="preview-title" data-i18n="projects.project2.name">Remote Mouse</span>
+                    </div>
+                  </div>
                   <div class="overlay">
-                    <h4 data-i18n="project2-title">Remote Mouse</h4>
-                    <p class="project-description" data-i18n="project2-desc">
+                    <h4 data-i18n="projects.project2.title">Remote Mouse</h4>
+                    <p class="project-description" data-i18n="projects.project2.desc">
                       Aplicación móvil para control remoto del cursor con latencia ultra baja. 
                       Incluye gestos multitáctiles, teclado virtual y accesos rápidos personalizables. 
                       Perfecta para presentaciones y control multimedia a distancia.
                     </p>
-                    <a href="proyectos/mouse-remoto.html" class="project-btn" data-i18n="project-view">Ver Proyecto</a>
+                    <a href="proyectos/mouse-remoto.html" class="project-btn" data-i18n="projects.viewProject">Ver Proyecto</a>
                   </div>
                 </figure>
                 <div class="tech-tags-container">
-                  <span class="tech-tag flutter">Flutter</span>
-                  <span class="tech-tag python">Python</span>
-                  <span class="tech-tag api">Socket.io</span>
+                  <span class="tech-tag flutter" data-i18n="tech.flutter">Flutter</span>
+                  <span class="tech-tag python" data-i18n="tech.python">Python</span>
+                  <span class="tech-tag api" data-i18n="tech.socketio">Socket.io</span>
                 </div>
               </div>
             </div>
@@ -262,21 +246,26 @@
             <div class="isotope-item" data-type="web">
               <div class="project-container">
                 <figure class="project-card">
-                  <img src="assets/images/portfolio-03.jpg" alt="Descargador de Videos" />
+                  <div class="gradient-preview">
+                    <div class="preview-content">
+                      <i class="fas fa-download"></i>
+                      <span class="preview-title" data-i18n="projects.project3.name">Social Media Downloader</span>
+                    </div>
+                  </div>
                   <div class="overlay">
-                    <h4 data-i18n="project3-title">Descargador de Videos</h4>
-                    <p class="project-description" data-i18n="project3-desc">
+                    <h4 data-i18n="projects.project3.title">Descargador de Videos</h4>
+                    <p class="project-description" data-i18n="projects.project3.desc">
                       Plataforma web para descargar videos de redes sociales sin publicidad ni marcas de agua. 
                       Soporta múltiples formatos y calidades, con procesamiento en paralelo para mayor velocidad. 
                       Interfaz intuitiva y moderna.
                     </p>
-                    <a href="proyectos/social-media-downloader.html" class="project-btn" data-i18n="project-view">Ver Proyecto</a>
+                    <a href="proyectos/social-media-downloader.html" class="project-btn" data-i18n="projects.viewProject">Ver Proyecto</a>
                   </div>
                 </figure>
                 <div class="tech-tags-container">
-                  <span class="tech-tag javascript">JavaScript</span>
-                  <span class="tech-tag python">Python</span>
-                  <span class="tech-tag react">React</span>
+                  <span class="tech-tag javascript" data-i18n="tech.javascript">JavaScript</span>
+                  <span class="tech-tag python" data-i18n="tech.python">Python</span>
+                  <span class="tech-tag react" data-i18n="tech.react">React</span>
                 </div>
               </div>
             </div>
@@ -285,21 +274,26 @@
             <div class="isotope-item" data-type="web">
               <div class="project-container">
                 <figure class="project-card">
-                  <img src="assets/images/portfolio-04.jpg" alt="Calculadora de Distancias" />
+                  <div class="gradient-preview">
+                    <div class="preview-content">
+                      <i class="fas fa-map-marked-alt"></i>
+                      <span class="preview-title" data-i18n="projects.project4.name">Distance Calculator</span>
+                    </div>
+                  </div>
                   <div class="overlay">
-                    <h4 data-i18n="project4-title">Calculadora de Distancias</h4>
-                    <p class="project-description" data-i18n="project4-desc">
+                    <h4 data-i18n="projects.project4.title">Calculadora de Distancias</h4>
+                    <p class="project-description" data-i18n="projects.project4.desc">
                       Herramienta web para calcular matrices de distancia entre múltiples puntos usando la API de Google Maps. 
                       Ideal para optimización de rutas y logística. Incluye estimaciones de tiempo con tráfico en tiempo real 
                       y exportación a Excel.
                     </p>
-                    <a href="proyectos/app-notas.html" class="project-btn" data-i18n="project-view">Ver Proyecto</a>
+                    <a href="proyectos/calculadora-distancias.html" class="project-btn" data-i18n="projects.viewProject">Ver Proyecto</a>
                   </div>
                 </figure>
                 <div class="tech-tags-container">
-                  <span class="tech-tag javascript">JavaScript</span>
-                  <span class="tech-tag api">Google Maps API</span>
-                  <span class="tech-tag node">Node.js</span>
+                  <span class="tech-tag javascript" data-i18n="tech.javascript">JavaScript</span>
+                  <span class="tech-tag api" data-i18n="tech.googlemaps">Google Maps API</span>
+                  <span class="tech-tag node" data-i18n="tech.nodejs">Node.js</span>
                 </div>
               </div>
             </div>
@@ -319,82 +313,13 @@
                       Procesa y combina información de diferentes fuentes, aplicando reglas de negocio
                       y generando reportes personalizados.
                     </p>
-                    <a href="proyectos/dashboard-admin.html" class="project-btn" data-i18n="project-view">Ver Proyecto</a>
+                    <a href="proyectos/excel-scraper.html" class="project-btn" data-i18n="project-view">Ver Proyecto</a>
                   </div>
                 </figure>
                 <div class="tech-tags-container">
                   <span class="tech-tag python">Python</span>
                   <span class="tech-tag database">Pandas</span>
                   <span class="tech-tag api">Openpyxl</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Proyecto 6 -->
-            <div class="isotope-item" data-type="scraping">
-              <div class="project-container">
-                <figure class="project-card">
-                  <img src="assets/images/portfolio-06.jpg" alt="Análisis de Precios" />
-                  <div class="overlay">
-                    <h4 data-i18n="project6-title">Análisis de Precios</h4>
-                    <p class="project-description" data-i18n="project6-desc">
-                      Sistema automatizado de seguimiento de precios en múltiples tiendas online.
-                      Detecta variaciones de precios, genera alertas y produce informes comparativos
-                      para toma de decisiones.
-                    </p>
-                    <a href="proyectos/analisis-precios.html" class="project-btn" data-i18n="project-view">Ver Proyecto</a>
-                  </div>
-                </figure>
-                <div class="tech-tags-container">
-                  <span class="tech-tag python">Python</span>
-                  <span class="tech-tag web">Selenium</span>
-                  <span class="tech-tag database">Pandas</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Proyecto 7 -->
-            <div class="isotope-item" data-type="desktop">
-              <div class="project-container">
-                <figure class="project-card">
-                  <img src="assets/images/portfolio-07.jpg" alt="Gestor de Inventario" />
-                  <div class="overlay">
-                    <h4 data-i18n="project7-title">Gestor de Inventario</h4>
-                    <p class="project-description" data-i18n="project7-desc">
-                      Aplicación de escritorio para gestión de inventario con interfaz moderna y eficiente.
-                      Incluye control de stock, alertas de reposición, generación de reportes y
-                      seguimiento de movimientos.
-                    </p>
-                    <a href="proyectos/gestor-inventario.html" class="project-btn" data-i18n="project-view">Ver Proyecto</a>
-                  </div>
-                </figure>
-                <div class="tech-tags-container">
-                  <span class="tech-tag desktop">C#</span>
-                  <span class="tech-tag api">.NET</span>
-                  <span class="tech-tag database">SQLite</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Proyecto 8 -->
-            <div class="isotope-item" data-type="mobile">
-              <div class="project-container">
-                <figure class="project-card">
-                  <img src="assets/images/portfolio-08.jpg" alt="App de Fitness" />
-                  <div class="overlay">
-                    <h4 data-i18n="project8-title">App de Fitness</h4>
-                    <p class="project-description" data-i18n="project8-desc">
-                      Aplicación móvil para seguimiento de rutinas de ejercicio y progreso físico.
-                      Incluye planes personalizados, tracking de métricas, recordatorios y
-                      sincronización con dispositivos wearables.
-                    </p>
-                    <a href="proyectos/app-fitness.html" class="project-btn" data-i18n="project-view">Ver Proyecto</a>
-                  </div>
-                </figure>
-                <div class="tech-tags-container">
-                  <span class="tech-tag flutter">Flutter</span>
-                  <span class="tech-tag dart">Dart</span>
-                  <span class="tech-tag api">Firebase</span>
                 </div>
               </div>
             </div>
@@ -410,16 +335,15 @@
             </ul>
           </div>
         </div>
-      </section>
+      </div>
 
-      <section class="section contact-me" data-section="section4">
+      <div class="section" id="section4" data-section="section4">
         <div class="container">
           <div class="section-heading">
-            <h2 data-i18n="contact-title">Contacto</h2>
+            <h2 data-i18n="contact.title">Contacto</h2>
             <div class="line-dec"></div>
-            <span data-i18n="contact-subtitle">
-              ¿Interesado en colaborar en un proyecto o tienes alguna pregunta? 
-              No dudes en contactarme a través del siguiente formulario o por mis redes sociales.
+            <span data-i18n="contact.subtitle">
+              ¿Interesado en colaborar en un proyecto o tienes alguna pregunta?
             </span>
           </div>
           <div class="row">
@@ -434,8 +358,7 @@
                           type="text"
                           class="form-control"
                           id="name"
-                          placeholder="Tu nombre"
-                          data-i18n="contact-name"
+                          data-i18n="[placeholder]contact.form.name"
                           required=""
                         />
                       </fieldset>
@@ -447,8 +370,7 @@
                           type="email"
                           class="form-control"
                           id="email"
-                          placeholder="Tu correo electrónico"
-                          data-i18n="contact-email"
+                          data-i18n="[placeholder]contact.form.email"
                           required=""
                         />
                       </fieldset>
@@ -460,8 +382,7 @@
                           type="text"
                           class="form-control"
                           id="subject"
-                          placeholder="Asunto"
-                          data-i18n="contact-subject"
+                          data-i18n="[placeholder]contact.form.subject"
                           required=""
                         />
                       </fieldset>
@@ -473,15 +394,14 @@
                           rows="6"
                           class="form-control"
                           id="message"
-                          placeholder="Mensaje"
-                          data-i18n="contact-message"
+                          data-i18n="[placeholder]contact.form.message"
                           required=""
                         ></textarea>
                       </fieldset>
                     </div>
                     <div class="col-md-12">
                       <fieldset>
-                        <button type="submit" id="form-submit" class="button" data-i18n="contact-send">
+                        <button type="submit" id="form-submit" class="button" data-i18n="contact.form.send">
                           Enviar Mensaje
                         </button>
                       </fieldset>
@@ -492,17 +412,25 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </div>
 
     <!-- Scripts -->
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+    <script src="assets/js/template-loader.js"></script>
     <script src="assets/js/isotope.min.js"></script>
     <script src="assets/js/owl-carousel.js"></script>
     <script src="assets/js/lightbox.js"></script>
+    
+    <!-- i18next scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/22.4.9/i18next.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-i18next/1.2.1/jquery-i18next.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next-http-backend/2.1.1/i18nextHttpBackend.min.js"></script>
+    
+    <!-- Custom scripts -->
+    <script src="assets/js/i18n-config.js"></script>
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/theme-switcher.js"></script>
     <script src="assets/js/language-switcher.js"></script>

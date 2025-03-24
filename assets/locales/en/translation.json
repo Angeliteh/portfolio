@@ -1,0 +1,103 @@
+{
+  "role": "Full-Stack Developer",
+  "nav": {
+    "about": "About Me",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "Developer specialized in automation and efficient solutions",
+    "who": "Who I am",
+    "whoText": "I'm a developer with experience in automation, web scraping, and efficient application development. I specialize in creating tools that optimize processes using Python and other technologies. My focus is on efficiency, scalability, and ease of use, developing solutions for data extraction and analysis, remote control, and functional web applications.",
+    "approach": "My Approach",
+    "approachText": "I specialize in developing automated tools and scraping systems adaptable to different types of data and platforms. I seek to optimize processes and create scalable solutions that are easy to integrate. My projects range from advanced web scraping to mobile and web application development, always prioritizing performance and usability."
+  },
+  "skills": {
+    "title": "My Skills",
+    "subtitle": "These are the technologies and skills I master",
+    "automation": "Automation and Web Scraping",
+    "automationList": {
+      "item1": "Web scraping with Python (Selenium, BeautifulSoup, Scrapy)",
+      "item2": "Automation with Python (scripts, bots, APIs)",
+      "item3": "Data handling (Pandas, SQL, databases)"
+    },
+    "backend": "Backend Development",
+    "backendList": {
+      "item1": "Python (FastAPI, Flask, Django)",
+      "item2": "Databases (SQL, SQLite, PostgreSQL)",
+      "item3": "APIs and data consumption"
+    },
+    "frontend": "Frontend and Mobile Development",
+    "frontendList": {
+      "item1": "HTML, CSS, JavaScript (no frameworks, pure code)",
+      "item2": "Flutter (Mobile development with Dart)",
+      "item3": "API interaction and UI/UX optimization"
+    },
+    "devops": "Tools and DevOps",
+    "devopsList": {
+      "item1": "Docker, server deployment",
+      "item2": "Linux and terminal (task automation, scripts)",
+      "item3": "Git/GitHub for version control"
+    },
+    "additional": "Additional Skills",
+    "additionalList": {
+      "item1": "Ethical hacking and basic cybersecurity",
+      "item2": "Custom script development",
+      "item3": "Process optimization and code efficiency"
+    }
+  },
+  "projects": {
+    "title": "My Projects",
+    "subtitle": "Some of my most recent work",
+    "filters": {
+      "all": "All",
+      "web": "Web",
+      "scraping": "Scraping",
+      "desktop": "Desktop",
+      "mobile": "Mobile"
+    },
+    "viewProject": "View Project",
+    "project1": {
+      "name": "RTX Scraper",
+      "title": "RTX Cards Scraper",
+      "desc": "Automated tool for tracking RTX graphics card prices across multiple stores."
+    },
+    "project2": {
+      "name": "Remote Mouse",
+      "title": "Remote Mouse",
+      "desc": "Mobile application for remote cursor control with ultra-low latency. Includes multi-touch gestures, virtual keyboard and customizable shortcuts."
+    },
+    "project3": {
+      "name": "Social Media Downloader",
+      "title": "Video Downloader",
+      "desc": "Web platform for downloading social media videos without ads or watermarks. Supports multiple formats and qualities, with parallel processing for higher speed."
+    },
+    "project4": {
+      "name": "Distance Calculator",
+      "title": "Distance Calculator",
+      "desc": "Web tool for calculating distance matrices between multiple points using Google Maps API. Ideal for route optimization and logistics."
+    },
+    "project5": {
+      "name": "Excel Scraper",
+      "title": "Excel Scraper",
+      "desc": "Tool for automatic data consolidation from multiple Excel files. Processes and combines information from different sources."
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Interested in collaborating on a project or have a question?",
+    "form": {
+      "name": "Your name",
+      "email": "Your email",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send Message"
+    }
+  }
+}
+
+
+
+

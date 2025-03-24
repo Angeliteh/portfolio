@@ -813,3 +813,38 @@ section.contact-me {
         margin-bottom: 20px;
     }
 }
+
+/* Estilos para el selector de idioma */
+.language-switch-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+  padding: 8px;
+  background: var(--sidebar-bg-color);
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
+}
+
+.language-icon {
+  color: var(--text-color);
+}
+
+.language-switch {
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 15px;
+  color: var(--text-color);
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
+.language-switch:hover {
+  background-color: var(--hover-color);
+}
+
+.language-switch.active {
+  background-color: var(--primary-color);
+  color: var(--text-color-inverse);
+}

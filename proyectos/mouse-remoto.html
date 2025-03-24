@@ -29,45 +29,10 @@
   </head>
 
   <body>
-    <div id="page-wraper">
-      <!-- Sidebar Menu -->
-      <div class="responsive-nav">
-        <i class="fa fa-bars" id="menu-toggle"></i>
-        <div id="menu" class="menu">
-          <i class="fa fa-times" id="menu-close"></i>
-          <div class="container">
-            <div class="author-content">
-              <h4>Angel</h4>
-              <span>Desarrollador Full-Stack</span>
-            </div>
-            <nav class="main-nav" role="navigation">
-              <ul class="main-menu">
-                <li><a href="../index.html#section1">Sobre Mí</a></li>
-                <li><a href="../index.html#section2">Habilidades</a></li>
-                <li><a href="../index.html#section3">Mis Proyectos</a></li>
-                <li><a href="../index.html#section4">Contacto</a></li>
-              </ul>
-            </nav>
-            <div class="social-network">
-              <ul class="soial-icons">
-                <li>
-                  <a href="https://github.com/tu-username" target="_blank"><i class="fa fa-github"></i></a>
-                </li>
-                <li>
-                  <a href="https://linkedin.com/in/tu-username" target="_blank"><i class="fa fa-linkedin"></i></a>
-                </li>
-                <li>
-                  <a href="mailto:tuemail@ejemplo.com"><i class="fa fa-envelope"></i></a>
-                </li>
-              </ul>
-            </div>
-            <div class="copyright-text">
-              <p>&copy; 2023 Angel</p>
-            </div>
-          </div>
-        </div>
-      </div>
+    <!-- Sidebar fuera del page-wraper -->
+    <div id="sidebar-container"></div>
 
+    <div id="page-wraper">
       <!-- Selector de tema claro/oscuro -->
       <div class="theme-switch-wrapper">
         <span class="theme-icon"><i class="fas fa-sun"></i></span>
@@ -83,101 +48,189 @@
           <div class="section-heading">
             <h2>Remote Mouse</h2>
             <div class="line-dec"></div>
-            <span>
-              Control remoto de PC desde dispositivos móviles con baja latencia
-            </span>
+            <span>Control remoto de PC desde dispositivos móviles con latencia ultra-baja</span>
           </div>
-          
-          <div class="project-main-image">
-            <img src="../assets/images/portfolio-02.jpg" alt="Remote Mouse" />
-          </div>
-          
-          <div class="project-section">
-            <h3>Descripción del Proyecto</h3>
-            <p>
-              Una aplicación móvil desarrollada en Flutter que permite controlar el mouse de un PC remotamente, con menor latencia y más características que las aplicaciones tradicionales. El servidor está implementado en Python.
-            </p>
-            <p>
-              Este proyecto surgió de la frustración con las aplicaciones existentes que presentaban alta latencia o funcionalidades limitadas. Mi objetivo fue crear una solución que ofreciera una experiencia fluida y responsiva, especialmente útil para presentaciones, control multimedia y uso general desde la comodidad del sofá.
-            </p>
-          </div>
-          
-          <div class="project-section">
-            <h3>Características Principales</h3>
-            <ul>
-              <li>Control preciso del cursor con baja latencia (menos de 50ms)</li>
-              <li>Gestos multitáctiles para funciones avanzadas</li>
-              <li>Teclado virtual con atajos personalizables</li>
-              <li>Modo presentación con controles específicos para diapositivas</li>
-              <li>Conexión segura mediante cifrado de extremo a extremo</li>
-              <li>Funciona en redes locales sin necesidad de internet</li>
-            </ul>
-          </div>
-          
-          <div class="project-section">
-            <h3>Tecnologías Utilizadas</h3>
-            <div class="tech-stack">
-              <span class="tech-badge">Flutter</span>
-              <span class="tech-badge">Dart</span>
-              <span class="tech-badge">Python</span>
-              <span class="tech-badge">Socket.io</span>
-              <span class="tech-badge">PyAutoGUI</span>
-              <span class="tech-badge">WebSockets</span>
+
+          <!-- Project Preview con lazy loading -->
+          <div class="project-preview">
+            <div class="preview-container">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                   data-src="https://via.placeholder.com/1200x800/0984e3/ffffff?text=Remote+Mouse+Demo" 
+                   alt="Remote Mouse Demo"
+                   class="main-preview lazy"
+                   loading="lazy"/>
+              <div class="metrics-overlay">
+                <div class="metric-card" tabindex="0">
+                  <i class="fas fa-bolt" aria-hidden="true"></i>
+                  <span>Latencia < 100ms</span>
+                </div>
+                <div class="metric-card" tabindex="0">
+                  <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+                  <span>Android 5.0+ / iOS 11.0+</span>
+                </div>
+                <div class="metric-card" tabindex="0">
+                  <i class="fas fa-laptop" aria-hidden="true"></i>
+                  <span>Windows/Linux/Mac</span>
+                </div>
+              </div>
             </div>
           </div>
-          
-          <div class="project-section">
+
+          <!-- Project Overview -->
+          <div class="project-section overview">
+            <h3>Descripción General</h3>
+            <p>
+              Remote Mouse es una solución innovadora que permite controlar tu PC desde cualquier dispositivo móvil.
+              Diseñado para ofrecer una experiencia fluida y profesional con latencia ultra-baja.
+            </p>
+            <div class="key-features">
+              <div class="feature-item" tabindex="0">
+                <i class="fas fa-hand-pointer" aria-hidden="true"></i>
+                <h4>Control Gestual</h4>
+                <p>Sistema avanzado de gestos multitáctiles para control preciso</p>
+              </div>
+              <div class="feature-item" tabindex="0">
+                <i class="fas fa-bolt" aria-hidden="true"></i>
+                <h4>Baja Latencia</h4>
+                <p>Respuesta instantánea con menos de 100ms de latencia</p>
+              </div>
+              <div class="feature-item" tabindex="0">
+                <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                <h4>Conexión Segura</h4>
+                <p>Cifrado de extremo a extremo en todas las comunicaciones</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Technical Details -->
+          <div class="project-section technical">
+            <h3>Detalles Técnicos</h3>
+            <div class="tech-details-grid">
+              <div class="detail-card architecture">
+                <h4><i class="fas fa-layer-group"></i> Arquitectura</h4>
+                <ul>
+                  <li>Aplicación Flutter multiplataforma</li>
+                  <li>Servidor Python con WebSockets</li>
+                  <li>Sistema de eventos optimizado</li>
+                  <li>Caché de conexiones frecuentes</li>
+                </ul>
+              </div>
+              <div class="detail-card security">
+                <h4><i class="fas fa-shield-alt"></i> Seguridad</h4>
+                <ul>
+                  <li>Autenticación de dispositivos</li>
+                  <li>Cifrado E2E en tiempo real</li>
+                  <li>Validación de comandos</li>
+                  <li>Protección contra ataques MITM</li>
+                </ul>
+              </div>
+              <div class="detail-card features">
+                <h4><i class="fas fa-star"></i> Características Avanzadas</h4>
+                <ul>
+                  <li>Gestos personalizables</li>
+                  <li>Modo presentación</li>
+                  <li>Atajos de teclado</li>
+                  <li>Control multimedia</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tech Stack -->
+          <div class="project-section tech-stack">
+            <h3>Stack Tecnológico</h3>
+            <div class="tech-grid">
+              <div class="tech-category backend">
+                <h4><i class="fas fa-server"></i> Backend</h4>
+                <div class="tech-items">
+                  <span class="tech-badge">Python</span>
+                  <span class="tech-badge">WebSockets</span>
+                  <span class="tech-badge">SQLite</span>
+                  <span class="tech-badge">Docker</span>
+                </div>
+              </div>
+              <div class="tech-category frontend">
+                <h4><i class="fas fa-code"></i> Frontend</h4>
+                <div class="tech-items">
+                  <span class="tech-badge">Flutter</span>
+                  <span class="tech-badge">Dart</span>
+                  <span class="tech-badge">Material Design</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Challenges and Solutions -->
+          <div class="project-section challenges">
             <h3>Desafíos y Soluciones</h3>
-            <div class="challenge-box">
-              <h5>Desafío: Reducir la latencia en la comunicación</h5>
-              <p>
-                La principal queja de los usuarios con aplicaciones similares era la alta latencia que hacía frustrante el uso.
-              </p>
-              <h5>Solución:</h5>
-              <p>
-                Implementé un protocolo de comunicación optimizado basado en WebSockets que reduce al mínimo el tamaño de los paquetes y utiliza un sistema de predicción de movimiento para compensar los retrasos en la red.
-              </p>
-            </div>
-            <div class="challenge-box">
-              <h5>Desafío: Compatibilidad entre diferentes sistemas operativos</h5>
-              <p>
-                Lograr que la aplicación funcionara de manera consistente en Windows, macOS y Linux presentaba desafíos debido a las diferencias en cómo cada sistema maneja los eventos del mouse.
-              </p>
-              <h5>Solución:</h5>
-              <p>
-                Desarrollé una capa de abstracción en Python que normaliza los comandos del mouse y teclado, adaptándolos automáticamente al sistema operativo detectado, lo que permite una experiencia uniforme independientemente de la plataforma.
-              </p>
+            <div class="challenges-grid">
+              <div class="challenge-card">
+                <div class="challenge-header">
+                  <i class="fas fa-exclamation-circle"></i>
+                  <h4>Latencia</h4>
+                </div>
+                <div class="challenge-content">
+                  <p class="problem">Retraso en la transmisión de eventos del mouse.</p>
+                  <p class="solution">
+                    <i class="fas fa-check-circle"></i>
+                    Implementación de WebSockets y optimización de eventos.
+                  </p>
+                </div>
+              </div>
+              <div class="challenge-card">
+                <div class="challenge-header">
+                  <i class="fas fa-exclamation-circle"></i>
+                  <h4>Compatibilidad</h4>
+                </div>
+                <div class="challenge-content">
+                  <p class="problem">Diferentes sistemas operativos y resoluciones.</p>
+                  <p class="solution">
+                    <i class="fas fa-check-circle"></i>
+                    Sistema de abstracción y calibración automática.
+                  </p>
+                </div>
+              </div>
+              <div class="challenge-card">
+                <div class="challenge-header">
+                  <i class="fas fa-exclamation-circle"></i>
+                  <h4>Seguridad</h4>
+                </div>
+                <div class="challenge-content">
+                  <p class="problem">Protección contra accesos no autorizados.</p>
+                  <p class="solution">
+                    <i class="fas fa-check-circle"></i>
+                    Cifrado E2E y sistema de emparejamiento seguro.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-          
-          <div class="project-section">
-            <h3>Resultados y Aprendizajes</h3>
-            <p>
-              Este proyecto me permitió profundizar en el desarrollo multiplataforma con Flutter y en la optimización de comunicaciones en tiempo real. La aplicación ha sido bien recibida por usuarios que necesitan controlar sus presentaciones o sistemas multimedia de forma remota.
-            </p>
-            <p>
-              Aprendí la importancia de la optimización a bajo nivel para aplicaciones que requieren respuesta en tiempo real, así como técnicas avanzadas de gestión de estado en Flutter para mantener una interfaz fluida incluso durante operaciones intensivas de red.
-            </p>
-          </div>
-          
-          <div class="project-section">
-            <h3>Enlaces del Proyecto</h3>
-            <div class="project-links">
-              <a href="#" class="btn" style="background-color: var(--button-bg); color: white;">
-                <i class="fab fa-github"></i> Ver Código
+
+          <!-- Links and Resources -->
+          <div class="project-section resources">
+            <h3>Enlaces y Recursos</h3>
+            <div class="resources-grid">
+              <a href="#" class="resource-card github">
+                <i class="fab fa-github"></i>
+                <span>Código Fuente</span>
               </a>
-              <a href="#" class="btn" style="background-color: var(--accent-color); color: white;">
-                <i class="fas fa-external-link-alt"></i> Demo en Vivo
+              <a href="#" class="resource-card docs">
+                <i class="fas fa-book"></i>
+                <span>Documentación</span>
+              </a>
+              <a href="#" class="resource-card demo">
+                <i class="fas fa-play-circle"></i>
+                <span>Demo en Vivo</span>
               </a>
             </div>
           </div>
-          
+
+          <!-- Project Navigation -->
           <div class="project-navigation">
-            <a href="scraping-productos.html" class="prev-project">
-              <i class="fas fa-arrow-left"></i> Proyecto Anterior: Scraper de Tarjetas RTX
-            </a>
+            <a href="calculadora-distancias.html" class="prev-project">
+              <i class="fas fa-arrow-left"></i> Proyecto Anterior: Calculadora de Distancias
             <a href="social-media-downloader.html" class="next-project">
-              Siguiente Proyecto: Descargador de Videos <i class="fas fa-arrow-right"></i>
+              Siguiente Proyecto: Social Media Downloader <i class="fas fa-arrow-right"></i>
             </a>
           </div>
         </div>
@@ -194,6 +247,7 @@
     <script src="../assets/js/lightbox.js"></script>
     <script src="../assets/js/custom.js"></script>
     <script src="../assets/js/theme-switcher.js"></script>
+    <script src="../assets/js/template-loader.js"></script>
     
     <script>
       $(document).ready(function() {
