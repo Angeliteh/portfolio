@@ -1,21 +1,17 @@
 class TemplateLoader {
   static async loadSidebar() {
     try {
-      // Determinar la ruta base
       const isGitHubPages = window.location.hostname.includes('github.io');
       const isProjectPage = window.location.pathname.includes('/proyectos/');
       
-      // Construir la ruta absoluta del sidebar
       let sidebarPath;
       if (isGitHubPages) {
-        // Para GitHub Pages, usar ruta absoluta
         sidebarPath = '/portfolio/templates/sidebar.html';
       } else {
-        // Para desarrollo local
         sidebarPath = isProjectPage ? '../templates/sidebar.html' : './templates/sidebar.html';
       }
 
-      console.log('Intentando cargar sidebar desde:', sidebarPath); // Debug
+      console.log('Intentando cargar sidebar desde:', sidebarPath);
 
       const response = await fetch(sidebarPath);
       if (!response.ok) {
@@ -30,10 +26,9 @@ class TemplateLoader {
       }
     } catch (error) {
       console.error('Error cargando sidebar:', error);
-      // Intento de fallback
-      const fallbackPath = '/portfolio/templates/sidebar.html';
-      console.log('Intentando fallback:', fallbackPath);
       try {
+        const fallbackPath = '/portfolio/templates/sidebar.html';
+        console.log('Intentando fallback:', fallbackPath);
         const response = await fetch(fallbackPath);
         if (response.ok) {
           const html = await response.text();
@@ -61,10 +56,8 @@ class TemplateLoader {
         const href = link.getAttribute('href');
 
         if (isProjectPage) {
-          // Si estamos en una página de proyecto, volver a la página principal
           window.location.href = `${baseUrl}/index.html${href}`;
         } else {
-          // Si estamos en la página principal, hacer scroll
           const targetSection = document.querySelector(`[data-section="${href.replace('#', '')}"]`);
           if (targetSection) {
             targetSection.scrollIntoView({ behavior: 'smooth' });
@@ -82,16 +75,20 @@ class TemplateLoader {
     
     document.querySelectorAll('link[rel="stylesheet"]').forEach(link => {
       const href = link.getAttribute('href');
-      if (!href.startsWith('http') && !href.startsWith('//')) {
+      if (href && !href.startsWith('http') && !href.startsWith('//')) {
         link.href = `${baseUrl}/${href.replace(/^\//, '')}`;
       }
     });
   }
 }
 
+// Exportar la clase para uso global
+window.TemplateLoader = TemplateLoader;
+
 // Inicializar cuando el DOM esté listo
 document.addEventListener('DOMContentLoaded', () => {
   TemplateLoader.loadSidebar();
   TemplateLoader.updateCSSPaths();
 });
+
 

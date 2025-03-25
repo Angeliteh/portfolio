@@ -232,15 +232,13 @@
     <script src="../assets/js/template-loader.js"></script>
     
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // Inicializar TemplateLoader
-        TemplateLoader.loadSidebar().catch(error => {
-          console.error('Error al cargar el sidebar:', error);
-        });
-        
-        // Actualizar rutas CSS si es necesario
-        if (typeof TemplateLoader.updateCSSPaths === 'function') {
-          TemplateLoader.updateCSSPaths();
+      document.addEventListener('DOMContentLoaded', async function() {
+        try {
+          console.log('Iniciando carga de componentes...');
+          await TemplateLoader.loadSidebar();
+          await TemplateLoader.updateCSSPaths();
+        } catch (error) {
+          console.error('Error durante la inicialización:', error);
         }
       });
     </script>
