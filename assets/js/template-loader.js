@@ -1,24 +1,17 @@
 class TemplateLoader {
   static getBasePath() {
-    // Simplifica la lógica para obtener el base path
-    if (window.location.hostname.includes('github.io')) {
-      return '/portfolio';
+    const isGitHubPages = window.location.hostname.includes('github.io');
+    if (!isGitHubPages) {
+      return ''; // En local, no necesitamos base path
     }
-    return '';
+    // Solo para GitHub Pages
+    return '/portfolio';
   }
 
   static async loadSidebar() {
     try {
       const basePath = this.getBasePath();
-      const isProjectPage = window.location.pathname.includes('/proyectos/');
-      
-      let sidebarPath;
-      if (isProjectPage) {
-        sidebarPath = `${basePath}/templates/sidebar.html`;
-      } else {
-        sidebarPath = `${basePath}/templates/sidebar.html`;
-      }
-
+      const sidebarPath = `${basePath}/templates/sidebar.html`;
       console.log('Intentando cargar sidebar desde:', sidebarPath);
 
       const response = await fetch(sidebarPath);
@@ -102,23 +95,30 @@ class TemplateLoader {
 
   static updateCSSPaths() {
     const basePath = this.getBasePath();
+    const isGitHubPages = window.location.hostname.includes('github.io');
     const isProjectPage = window.location.pathname.includes('/proyectos/');
-    
+
+    if (!isGitHubPages) {
+      return; // No modificar rutas en local
+    }
+
     document.querySelectorAll('link[rel="stylesheet"]').forEach(link => {
       const href = link.getAttribute('href');
       if (href && !href.startsWith('http') && !href.startsWith('//')) {
         let newHref;
         if (isProjectPage) {
-          // Si estamos en una página de proyecto, ajusta la ruta relativa
+          // Para páginas de proyectos
           newHref = href.startsWith('../') ? 
             `${basePath}/${href.replace('../', '')}` : 
             `${basePath}/${href}`;
         } else {
-          // Si estamos en la página principal
+          // Para la página principal
           newHref = href.startsWith('/') ? 
             `${basePath}${href}` : 
             `${basePath}/${href}`;
         }
+        // Asegurarse de que no haya doble 'portfolio' en la ruta
+        newHref = newHref.replace('/portfolio/portfolio/', '/portfolio/');
         link.href = newHref;
       }
     });
@@ -136,5 +136,12 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   TemplateLoader.updateCSSPaths();
 });
+
+// Debugging helper
+if (window.location.hostname.includes('github.io')) {
+  console.log('GitHub Pages detected');
+  console.log('Base path:', TemplateLoader.getBasePath());
+  console.log('Current pathname:', window.location.pathname);
+}
 
 
