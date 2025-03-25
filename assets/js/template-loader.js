@@ -99,25 +99,28 @@ class TemplateLoader {
       if (!href || 
           href.startsWith('http') || 
           href.startsWith('//') || 
-          href.startsWith('/portfolio/portfolio/')) return;
-
-      // Si ya tiene /portfolio/, no hacer nada
-      if (href.startsWith('/portfolio/')) return;
+          href.startsWith(basePath)) return;
 
       // Limpiar la ruta
-      let newHref = href;
-      // Remover ../ o / inicial
-      newHref = newHref.replace(/^\.\.\/|^\//, '');
-      // Construir la ruta final
-      newHref = `${basePath}/${newHref}`;
+      let newHref = href.replace(/^\.\.\//, '');  // Remover ../
+      newHref = newHref.replace(/^\//, '');       // Remover / inicial
+      newHref = `${basePath}/${newHref}`;         // Añadir basePath
       
-      console.log(`Actualizando ruta CSS: ${href} -> ${newHref}`);
+      console.log(`Actualizando ruta CSS de: ${href} a: ${newHref}`);
       link.href = newHref;
     });
   }
 }
 
-// No inicializar automáticamente
-// Solo exportar la clase para uso global
+// Debugging helper
+if (window.location.hostname.includes('github.io')) {
+  console.log('GitHub Pages detected');
+  console.log('Base path:', TemplateLoader.getBasePath());
+  console.log('Current pathname:', window.location.pathname);
+  console.log('Full URL:', window.location.href);
+}
+
+// Exportar para uso global
 window.TemplateLoader = TemplateLoader;
+
 
