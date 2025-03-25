@@ -1,10 +1,10 @@
 class TemplateLoader {
   static getBasePath() {
-    const isGitHubPages = window.location.hostname.includes('github.io');
-    // Obtén el nombre del repositorio del path
-    const pathSegments = window.location.pathname.split('/');
-    const repoName = pathSegments[1]; // Esto obtendrá 'portfolio' o como se llame tu repo
-    return isGitHubPages ? `/${repoName}` : '';
+    // Simplifica la lógica para obtener el base path
+    if (window.location.hostname.includes('github.io')) {
+      return '/portfolio';
+    }
+    return '';
   }
 
   static async loadSidebar() {
@@ -108,12 +108,16 @@ class TemplateLoader {
       const href = link.getAttribute('href');
       if (href && !href.startsWith('http') && !href.startsWith('//')) {
         let newHref;
-        if (href.startsWith('/')) {
-          newHref = basePath + href;
-        } else if (isProjectPage && !href.startsWith('../')) {
-          newHref = basePath + '/' + href;
+        if (isProjectPage) {
+          // Si estamos en una página de proyecto, ajusta la ruta relativa
+          newHref = href.startsWith('../') ? 
+            `${basePath}/${href.replace('../', '')}` : 
+            `${basePath}/${href}`;
         } else {
-          newHref = basePath + '/' + href.replace('../', '');
+          // Si estamos en la página principal
+          newHref = href.startsWith('/') ? 
+            `${basePath}${href}` : 
+            `${basePath}/${href}`;
         }
         link.href = newHref;
       }
@@ -132,4 +136,5 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   TemplateLoader.updateCSSPaths();
 });
+
 
