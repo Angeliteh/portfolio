@@ -11,7 +11,7 @@ class TemplateLoader {
   static updateCSSPaths() {
     document.querySelectorAll('link[rel="stylesheet"]').forEach(link => {
       const originalHref = link.getAttribute('href');
-      if (originalHref.startsWith('/assets/')) {
+      if (originalHref && originalHref.startsWith('/assets/')) {
         link.href = this.getAssetPath(originalHref);
       }
     });
@@ -83,6 +83,7 @@ $(document).ready(function() {
     // Llamar a la función después de cargar el sidebar
     adjustNavLinks();
 });
+
 
 
 
