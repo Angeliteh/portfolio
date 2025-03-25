@@ -1,61 +1,30 @@
-document.addEventListener('DOMContentLoaded', function() {
-  // Configuración inicial de i18next
-  const i18nextConfig = {
-    debug: false, // Cambiar a false en producción
-    fallbackLng: 'es',
-    resources: {
-      es: {
-        translation: {
-          // Añadir todas las traducciones aquí
-          about: {
-            title: "Sobre Mí",
-            subtitle: "Desarrollador especializado en automatización y soluciones eficientes",
-            // ... resto de traducciones
-          },
-          // ... resto de secciones
+document.addEventListener('DOMContentLoaded', async function() {
+  // Esperar a que se carguen las traducciones antes de inicializar
+  try {
+    const response = await fetch(`${TemplateLoader.baseUrl}/assets/locales/es/translation.json`);
+    const translations = await response.json();
+
+    // Configuración de i18next
+    await i18next.init({
+      debug: false,
+      fallbackLng: 'es',
+      resources: {
+        es: {
+          translation: translations
         }
+      },
+      interpolation: {
+        escapeValue: false
       }
-    },
-    interpolation: {
-      escapeValue: false
-    }
-  };
-
-  // Inicializar i18next
-  i18next
-    .init(i18nextConfig)
-    .then(function(t) {
-      jqueryI18next.init(i18next, $);
-      $('[data-i18n]').localize();
     });
 
-  function setupLanguageButtons() {
-    // Marcar el botón del idioma actual como activo
-    $('.language-switch').removeClass('active');
-    $(`.language-switch[data-lang="${i18next.language}"]`).addClass('active');
-
-    // Manejar el cambio de idioma
-    $('.language-switch').on('click', function() {
-      const newLang = $(this).data('lang');
-      
-      i18next.changeLanguage(newLang, function(err) {
-        if (err) {
-          console.error('Error changing language:', err);
-          return;
-        }
-
-        // Actualizar el estado activo de los botones
-        $('.language-switch').removeClass('active');
-        $(`.language-switch[data-lang="${newLang}"]`).addClass('active');
-
-        // Guardar la preferencia
-        localStorage.setItem('language', newLang);
-
-        // Traducir la página
-        $('body').localize();
-      });
-    });
+    // Inicializar jquery-i18next después de cargar las traducciones
+    jqueryI18next.init(i18next, $);
+    
+    // Aplicar traducciones
+    $('[data-i18n]').localize();
+  } catch (error) {
+    console.error('Error loading translations:', error);
   }
 });
-
 

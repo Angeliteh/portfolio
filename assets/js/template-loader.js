@@ -4,6 +4,19 @@ class TemplateLoader {
     return isGitHubPages ? '/portfolio' : '';
   }
 
+  static getAssetPath(path) {
+    return `${this.baseUrl}${path}`;
+  }
+
+  static updateCSSPaths() {
+    document.querySelectorAll('link[rel="stylesheet"]').forEach(link => {
+      const originalHref = link.getAttribute('href');
+      if (originalHref.startsWith('/assets/')) {
+        link.href = this.getAssetPath(originalHref);
+      }
+    });
+  }
+
   static async loadSidebar() {
     try {
       const sidebarPath = `${this.baseUrl}/templates/sidebar.html`;
@@ -17,6 +30,7 @@ class TemplateLoader {
       if (sidebarContainer) {
         sidebarContainer.innerHTML = html;
         this.initSidebarEvents();
+        this.updateCSSPaths();
       }
     } catch (error) {
       console.error('Error loading sidebar:', error);
@@ -69,6 +83,7 @@ $(document).ready(function() {
     // Llamar a la función después de cargar el sidebar
     adjustNavLinks();
 });
+
 
 
 
