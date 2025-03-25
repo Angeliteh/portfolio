@@ -5,39 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mouse Remoto - Proyecto</title>
     
-    <!-- Mover el CSP aquí y actualizarlo -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' https:; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https:; connect-src 'self' https:;">
-    
-    <!-- Update CSS paths to use relative paths -->
-    <link rel="stylesheet" href="../assets/css/fontawesome.css">
-    <link rel="stylesheet" href="../assets/css/templatemo-style.css">
-    <link rel="stylesheet" href="../assets/css/owl.css">
-    <link rel="stylesheet" href="../assets/css/lightbox.css">
-    <link rel="stylesheet" href="../assets/css/custom-styles.css">
+    <!-- CSS Base -->
+    <link rel="stylesheet" href="/portfolio/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/portfolio/assets/css/fontawesome.css">
+    <link rel="stylesheet" href="/portfolio/assets/css/templatemo-style.css">
+    <link rel="stylesheet" href="/portfolio/assets/css/owl.css">
+    <link rel="stylesheet" href="/portfolio/assets/css/lightbox.css">
+    <link rel="stylesheet" href="/portfolio/assets/css/custom-styles.css">
   </head>
   <body>
     <div id="page-wraper">
       <div id="sidebar-container"></div>
-      <!-- Tu contenido aquí -->
+      <!-- Contenido -->
     </div>
 
-    <!-- Scripts -->
-    <script src="../vendor/jquery/jquery.min.js"></script>
-    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <script src="../assets/js/isotope.min.js"></script>
-    <script src="../assets/js/owl-carousel.js"></script>
-    <script src="../assets/js/lightbox.js"></script>
-    <script src="../assets/js/custom.js"></script>
-    <script src="../assets/js/theme-switcher.js"></script>
-    <script src="../assets/js/template-loader.js"></script>
+    <!-- Core Scripts - Incluir en orden -->
+    <script src="/portfolio/vendor/jquery/jquery.min.js"></script>
+    <script src="/portfolio/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Template Loader debe ir primero -->
+    <script src="/portfolio/assets/js/template-loader.js"></script>
+    
+    <!-- Otros scripts -->
+    <script src="/portfolio/assets/js/isotope.min.js"></script>
+    <script src="/portfolio/assets/js/owl-carousel.js"></script>
+    <script src="/portfolio/assets/js/lightbox.js"></script>
+    <script src="/portfolio/assets/js/custom.js"></script>
+    <script src="/portfolio/assets/js/theme-switcher.js"></script>
     
     <script>
-      document.addEventListener('DOMContentLoaded', async function() {
+      document.addEventListener('DOMContentLoaded', async () => {
         try {
-          console.log('Iniciando carga de componentes...');
           await TemplateLoader.loadSidebar();
-          await TemplateLoader.updateCSSPaths();
+          // No necesitamos updateCSSPaths() porque ahora usamos rutas absolutas
         } catch (error) {
           console.error('Error durante la inicialización:', error);
         }
