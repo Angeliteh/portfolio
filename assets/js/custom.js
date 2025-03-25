@@ -1,45 +1,18 @@
 (function($) {
-  // Cargar la sidebar
-  function loadSidebar() {
-    const isProjectPage = window.location.pathname.includes('/proyectos/');
-    const sidebarPath = isProjectPage ? '../../templates/sidebar.html' : 'templates/sidebar.html';
-    
-    return $.get(sidebarPath).then(function(sidebar) {
-      $('#sidebar-container').html(sidebar);
-      
-      // Mostrar el menú correcto según la página
-      if (isProjectPage) {
-        $('.project-menu').show();
-        $('.main-menu').hide();
-      } else {
-        $('.main-menu').show();
-        $('.project-menu').hide();
-      }
-      
-      initializeSidebarEvents();
-    });
-  }
+  const isProjectPage = window.location.pathname.includes('/proyectos/');
 
-  // Inicializar eventos de la sidebar
-  function initializeSidebarEvents() {
-    const isProjectPage = window.location.pathname.includes('/proyectos/');
-    
-    // Toggle del menú móvil
-    $("#menu-toggle").on("click", function() {
-      $("#menu").addClass("open");
-    });
-
-    $("#menu-close").on("click", function() {
-      $("#menu").removeClass("open");
-    });
-
-    // Navegación del menú
+  function initializeNavigation() {
     $(".main-nav a").on("click", function(e) {
+      e.preventDefault();
       const href = $(this).attr('href');
       
-      // Si es un enlace interno y estamos en la página principal
-      if (!isProjectPage && href.startsWith('#')) {
-        e.preventDefault();
+      if (isProjectPage) {
+        // Redirigir a la página principal
+        location.href = location.origin + href;
+        return;
+      }
+      
+      if (href.startsWith('#')) {
         const section = href.split('#')[1];
         scrollToSection(section);
         
@@ -53,29 +26,6 @@
         $('#menu').removeClass('open');
       }
     });
-
-    // Actualizar menú activo al hacer scroll (solo en index)
-    if (!isProjectPage) {
-      $(window).on('scroll', function() {
-        $(".section").each(function() {
-          const $section = $(this);
-          const topEdge = $section.offset().top - 80;
-          const bottomEdge = topEdge + $section.height();
-          const wScroll = $(window).scrollTop();
-          
-          if (topEdge < wScroll && bottomEdge > wScroll) {
-            const currentId = $section.data("section");
-            const $reqLink = $(`a[href="#${currentId}"]`);
-            
-            $reqLink
-              .closest("li")
-              .addClass('active')
-              .siblings()
-              .removeClass('active');
-          }
-        });
-      });
-    }
   }
 
   // Función para scroll suave
@@ -90,6 +40,16 @@
 
   // Inicializar cuando el documento esté listo
   $(document).ready(function() {
-    loadSidebar();
+    initializeNavigation();
+    
+    // Toggle del menú móvil
+    $("#menu-toggle").on("click", function() {
+      $("#menu").addClass("open");
+    });
+
+    $("#menu-close").on("click", function() {
+      $("#menu").removeClass("open");
+    });
   });
+
 })(jQuery);

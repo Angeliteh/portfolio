@@ -1,44 +1,71 @@
-// Definir TemplateLoader inmediatamente
-window.TemplateLoader = class TemplateLoader {
-    static get baseUrl() {
-        const isGitHubPages = window.location.hostname.includes('github.io');
-        const isProjectPage = window.location.pathname.includes('/proyectos/');
-        return isGitHubPages ? (isProjectPage ? '..' : '/portfolio') : (isProjectPage ? '..' : '');
+class TemplateLoader {
+  static get baseUrl() {
+    const isGitHubPages = window.location.hostname.includes('github.io');
+    const isProjectPage = window.location.pathname.includes('/proyectos/');
+    if (isGitHubPages) {
+      return isProjectPage ? '..' : '/portfolio';
     }
+    return isProjectPage ? '..' : '';
+  }
 
-    static getAssetPath(path) {
-        const isProjectPage = window.location.pathname.includes('/proyectos/');
-        return isProjectPage ? path.replace(/^\//, '../') : `${this.baseUrl}${path}`;
+  static getAssetPath(path) {
+    const isProjectPage = window.location.pathname.includes('/proyectos/');
+    if (isProjectPage) {
+      return path.replace(/^\//, '../');
     }
+    return `${this.baseUrl}${path}`;
+  }
 
-    static async loadSidebar() {
-        try {
-            const response = await fetch(`${this.baseUrl}/templates/sidebar.html`);
-            const html = await response.text();
-            document.querySelector('#sidebar-container').innerHTML = html;
-            return true;
-        } catch (error) {
-            console.error('Error loading sidebar:', error);
-            return false;
+  static async loadSidebar() {
+    try {
+      const isProjectPage = window.location.pathname.includes('/proyectos/');
+      const sidebarPath = isProjectPage 
+        ? '../templates/sidebar.html' 
+        : 'templates/sidebar.html';
+      
+      const response = await fetch(sidebarPath);
+      if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+      const html = await response.text();
+      
+      const sidebarContainer = document.getElementById('sidebar-container');
+      if (sidebarContainer) {
+        sidebarContainer.innerHTML = html;
+        this.initSidebarEvents();
+      }
+    } catch (error) {
+      console.error('Error loading sidebar:', error);
+    }
+  }
+
+  static initSidebarEvents() {
+    const isProjectPage = window.location.pathname.includes('/proyectos/');
+    
+    // Manejar clics en enlaces del sidebar
+    document.querySelectorAll('.main-nav a').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const href = link.getAttribute('href');
+        
+        if (isProjectPage && href.startsWith('#')) {
+          // Si estamos en una página de proyecto, volver al index
+          window.location.href = '../index.html' + href;
+        } else if (href.startsWith('#')) {
+          // Si estamos en el index, hacer scroll
+          const targetSection = document.querySelector(`[data-section="${href.substring(1)}"]`);
+          if (targetSection) {
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+          }
         }
-    }
-
-    static updateCSSPaths() {
-        document.querySelectorAll('link[rel="stylesheet"]').forEach(link => {
-            const href = link.getAttribute('href');
-            if (href && href.startsWith('/')) {
-                link.href = this.getAssetPath(href);
-            }
-        });
-    }
-};
+      });
+    });
+  }
+}
 
 // Inicializar cuando el DOM esté listo
-document.addEventListener('DOMContentLoaded', async () => {
-    await TemplateLoader.loadSidebar();
-    TemplateLoader.updateCSSPaths();
+document.addEventListener('DOMContentLoaded', () => {
+  // Solo cargar el sidebar
+  TemplateLoader.loadSidebar();
 });
-
 
 
 
