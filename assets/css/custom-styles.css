@@ -2188,42 +2188,201 @@ a:hover {
 
 /* Variables del tema claro */
 :root {
-    --text-color: #333333;
-    --bg-color: #f8f9fa;
-    --primary-color: #0d6efd;
-    --secondary-color: #6c757d;
-    --accent-color: #198754;
-    --header-bg: #ffffff;
-    --sidebar-bg: #f8f9fa;
-    --card-bg: #ffffff;
-    --button-bg: #0d6efd;
-    --button-hover: #0b5ed7;
+    /* Colores base de la paleta */
+    --coral: #ff7477;
+    --rose: #e69597;
+    --mauve: #ceb5b7;
+    --teal-light: #b5d6d6;
+    --teal-bright: #9cf6f6;
+    
+    /* Nueva distribución de colores */
+    --bg-color: #f5f8f8;            /* Fondo principal suave turquesa-gris */
+    --bg-secondary: #e8f0f0;        /* Fondo secundario */
+    --text-color: #2c3e50;          /* Texto principal azul oscuro */
+    --text-secondary: #526475;      /* Texto secundario */
+    
+    /* Contenedores y elementos principales */
+    --card-bg: #ffffff;             /* Fondo de tarjetas */
+    --sidebar-bg: #ceb5b7;          /* Sidebar en malva */
+    --header-bg: #b5d6d6;           /* Header en turquesa suave */
+    
+    /* Elementos interactivos */
+    --primary-color: #ff7477;       /* Botones y elementos principales en coral */
+    --secondary-color: #e69597;     /* Elementos secundarios en rosa suave */
+    --accent-color: #9cf6f6;        /* Acentos en turquesa brillante */
+    
+    /* Estados y bordes */
+    --border-color: #ceb5b7;        /* Bordes en malva */
+    --hover-bg: rgba(255, 116, 119, 0.1); /* Hover con coral transparente */
+    --active-bg: rgba(156, 246, 246, 0.2); /* Active con turquesa transparente */
+    
+    /* Enlaces */
+    --link-color: #ff7477;          /* Enlaces en coral */
+    --link-hover: #e69597;          /* Hover en rosa suave */
+    
+    /* Estados */
+    --success-color: #b5d6d6;
+    --error-color: #ff7477;
+    --warning-color: #ffd3d3;
+    
+    /* Sombras refinadas */
+    --shadow-sm: 0 2px 4px rgba(206, 181, 183, 0.1);
+    --shadow-md: 0 4px 6px rgba(206, 181, 183, 0.15);
+    --shadow-lg: 0 8px 16px rgba(206, 181, 183, 0.2);
 }
 
-/* Variables del tema oscuro */
+/* Variables del tema oscuro (mantenemos las existentes pero las incluyo para referencia) */
 [data-theme="dark"] {
     --text-color: #e9ecef;
-    --bg-color: #212529;
-    --primary-color: #0d6efd;
-    --secondary-color: #6c757d;
-    --accent-color: #198754;
-    --header-bg: #343a40;
-    --sidebar-bg: #212529;
-    --card-bg: #343a40;
-    --button-bg: #0d6efd;
-    --button-hover: #0b5ed7;
+    --bg-color: #1a202c;
+    --primary-color: #4299e1;
+    --secondary-color: #a0aec0;
+    --accent-color: #63b3ed;
+    --header-bg: #2d3748;
+    --sidebar-bg: #1a202c;
+    --card-bg: #2d3748;
+    --hover-bg: #2d3748;
+    --button-bg: #4299e1;
+    --button-hover: #3182ce;
+    --border-color: #4a5568;
+    --text-muted: #a0aec0;
+    --text-light: #e2e8f0;
+    --text-dark: #f7fafc;
 }
 
-/* Actualizar rutas de recursos */
-.background-image {
-    background-image: url('/assets/images/bg.jpg');
+/* Aplicación de las nuevas variables */
+body {
+    color: var(--text-color);
+    background-color: var(--bg-color);
 }
 
-/* Para GitHub Pages */
-@media (max-width: 768px) {
-    .background-image {
-        background-image: url('/portafolio/assets/images/bg.jpg');
-    }
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-dark);
+}
+
+.section-heading h2 {
+    color: var(--text-dark);
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.service-item h4, 
+.content-text h4 {
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+.service-item p {
+    color: var(--text-color);
+}
+
+/* Enlaces */
+a {
+    color: var(--link-color);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--link-hover);
+}
+
+/* Cards y contenedores */
+.card, 
+.project-preview, 
+.service-item {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+}
+
+.card:hover, 
+.project-preview:hover, 
+.service-item:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+}
+
+/* Botones */
+.button, 
+.btn {
+    background: var(--button-bg);
+    color: white;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+}
+
+.button:hover, 
+.btn:hover {
+    background: var(--button-hover);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+/* Texto secundario */
+.text-muted {
+    color: var(--text-muted) !important;
+}
+
+/* Sidebar y navegación */
+.sidebar-content {
+    background: var(--sidebar-bg);
+    border-right: 1px solid var(--border-color);
+}
+
+.main-nav ul li a {
+    color: var(--text-color);
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.main-nav ul li a:hover {
+    color: var(--accent-color);
+    background: var(--hover-bg);
+}
+
+/* Mejoras para los botones de idioma y tema */
+.lang-btn {
+    background: var(--hover-bg);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.lang-btn:hover,
+.lang-btn.active {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+.theme-switch {
+    background: var(--hover-bg);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.theme-switch:hover {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+/* Mejoras para elementos de texto */
+.project-description,
+.service-description {
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Mejoras para elementos interactivos */
+.hover-effect:hover {
+    background: var(--hover-bg);
+    transition: background-color 0.3s ease;
 }
 /* Estilos base del sidebar */
 .responsive-nav {
