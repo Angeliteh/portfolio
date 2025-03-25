@@ -1,37 +1,32 @@
 document.addEventListener('DOMContentLoaded', function() {
   // Configuración inicial de i18next
-  i18next
-    .use(i18nextHttpBackend)
-    .init({
-      debug: true,
-      fallbackLng: 'es',
-      defaultNS: 'translation',
-      ns: 'translation',
-      lng: localStorage.getItem('language') || 'es',
-      backend: {
-        loadPath: function(lngs, namespaces) {
-          // Ajustar la ruta según si estamos en una página de proyecto o en la principal
-          const isProjectPage = window.location.pathname.includes('/proyectos/');
-          const basePath = isProjectPage ? '../../assets/locales/{{lng}}/{{ns}}.json' : 'assets/locales/{{lng}}/{{ns}}.json';
-          return basePath.replace('{{lng}}', lngs[0]).replace('{{ns}}', namespaces[0]);
+  const i18nextConfig = {
+    debug: false, // Cambiar a false en producción
+    fallbackLng: 'es',
+    resources: {
+      es: {
+        translation: {
+          // Añadir todas las traducciones aquí
+          about: {
+            title: "Sobre Mí",
+            subtitle: "Desarrollador especializado en automatización y soluciones eficientes",
+            // ... resto de traducciones
+          },
+          // ... resto de secciones
         }
       }
-    }, function(err, t) {
-      if (err) {
-        console.error('Error initializing i18next:', err);
-        return;
-      }
+    },
+    interpolation: {
+      escapeValue: false
+    }
+  };
 
-      // Inicializar jqueryI18next
-      jqueryI18next.init(i18next, $, {
-        useOptionsAttr: true
-      });
-
-      // Traducir la página inicial
-      $('body').localize();
-
-      // Configurar los botones de idioma
-      setupLanguageButtons();
+  // Inicializar i18next
+  i18next
+    .init(i18nextConfig)
+    .then(function(t) {
+      jqueryI18next.init(i18next, $);
+      $('[data-i18n]').localize();
     });
 
   function setupLanguageButtons() {
@@ -62,4 +57,5 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 });
+
 
