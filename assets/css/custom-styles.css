@@ -2213,3 +2213,15 @@ a:hover {
     --button-bg: #0d6efd;
     --button-hover: #0b5ed7;
 }
+
+/* Actualizar rutas de recursos */
+.background-image {
+    background-image: url('/assets/images/bg.jpg');
+}
+
+/* Para GitHub Pages */
+@media (max-width: 768px) {
+    .background-image {
+        background-image: url('/portafolio/assets/images/bg.jpg');
+    }
+}

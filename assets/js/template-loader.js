@@ -1,7 +1,19 @@
 class TemplateLoader {
+  static get baseUrl() {
+    // Detectar si estamos en GitHub Pages y ajustar la ruta base
+    const isGitHubPages = window.location.hostname.includes('github.io');
+    const projectPath = isGitHubPages ? '/portafolio' : '';
+    
+    // Si estamos en una página de proyecto, ajustar la ruta relativa
+    const isProjectPage = window.location.pathname.includes('/proyectos/');
+    return isGitHubPages ? 
+      (isProjectPage ? `${projectPath}` : projectPath) : 
+      (isProjectPage ? '..' : '');
+  }
+
   static async loadSidebar() {
     try {
-      const response = await fetch('/templates/sidebar.html');
+      const response = await fetch(`${this.baseUrl}/templates/sidebar.html`);
       const html = await response.text();
       document.getElementById('sidebar-container').innerHTML = html;
       
@@ -76,5 +88,7 @@ $(document).ready(function() {
     // Llamar a la función después de cargar el sidebar
     adjustNavLinks();
 });
+
+
 
 
