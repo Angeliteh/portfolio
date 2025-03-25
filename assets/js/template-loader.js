@@ -1,11 +1,7 @@
 class TemplateLoader {
   static getBasePath() {
     const isGitHubPages = window.location.hostname.includes('github.io');
-    if (!isGitHubPages) {
-      return ''; // En local, no necesitamos base path
-    }
-    // Solo para GitHub Pages
-    return '/portfolio';
+    return isGitHubPages ? '/portfolio' : '';
   }
 
   static async loadSidebar() {
@@ -94,33 +90,25 @@ class TemplateLoader {
   }
 
   static updateCSSPaths() {
-    const basePath = this.getBasePath();
     const isGitHubPages = window.location.hostname.includes('github.io');
-    const isProjectPage = window.location.pathname.includes('/proyectos/');
+    if (!isGitHubPages) return; // No modificar rutas en local
 
-    if (!isGitHubPages) {
-      return; // No modificar rutas en local
-    }
-
+    const basePath = this.getBasePath();
+    
     document.querySelectorAll('link[rel="stylesheet"]').forEach(link => {
       const href = link.getAttribute('href');
-      if (href && !href.startsWith('http') && !href.startsWith('//')) {
-        let newHref;
-        if (isProjectPage) {
-          // Para páginas de proyectos
-          newHref = href.startsWith('../') ? 
-            `${basePath}/${href.replace('../', '')}` : 
-            `${basePath}/${href}`;
-        } else {
-          // Para la página principal
-          newHref = href.startsWith('/') ? 
-            `${basePath}${href}` : 
-            `${basePath}/${href}`;
-        }
-        // Asegurarse de que no haya doble 'portfolio' en la ruta
-        newHref = newHref.replace('/portfolio/portfolio/', '/portfolio/');
-        link.href = newHref;
-      }
+      if (!href || href.startsWith('http') || href.startsWith('//')) return;
+
+      // Eliminar cualquier '../' inicial
+      let cleanHref = href.replace(/^\.\.\//, '');
+      // Eliminar cualquier '/' inicial
+      cleanHref = cleanHref.replace(/^\//, '');
+      
+      // Construir la nueva ruta
+      const newHref = `${basePath}/${cleanHref}`;
+      
+      console.log(`Actualizando ruta CSS: ${href} -> ${newHref}`);
+      link.href = newHref;
     });
   }
 }
@@ -143,5 +131,6 @@ if (window.location.hostname.includes('github.io')) {
   console.log('Base path:', TemplateLoader.getBasePath());
   console.log('Current pathname:', window.location.pathname);
 }
+
 
 
