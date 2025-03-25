@@ -9,6 +9,22 @@
   "language": {
     "select": "Idioma"
   },
+  "tech": {
+    "flutter": "Flutter",
+    "python": "Python",
+    "socketio": "Socket.io",
+    "javascript": "JavaScript",
+    "react": "React",
+    "googlemaps": "Google Maps API",
+    "nodejs": "Node.js",
+    "database": "Bases de Datos",
+    "api": "APIs RESTful"
+  },
+  "project5": {
+    "title": "Scraper de Excel",
+    "desc": "Herramienta para consolidación automática de datos desde múltiples archivos Excel. Procesa y combina información de diferentes fuentes, aplicando reglas de negocio y generando reportes personalizados."
+  },
+  "project-view": "Ver Proyecto",
   "about": {
     "title": "Sobre Mí",
     "subtitle": "Desarrollador especializado en automatización y soluciones eficientes",
@@ -100,6 +116,8 @@
     }
   }
 }
+
+
 
 
 

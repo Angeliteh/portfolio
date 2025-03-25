@@ -47,9 +47,7 @@
                     Soy un desarrollador con experiencia en automatización, web scraping y desarrollo de aplicaciones eficientes. Me especializo en crear herramientas que optimizan procesos mediante Python y otras tecnologías. Mi enfoque está en la eficiencia, escalabilidad y facilidad de uso, desarrollando soluciones para extracción y análisis de datos, control remoto y aplicaciones web funcionales.
                   </p>
                   <h4 data-i18n="about.approach">Mi enfoque</h4>
-                  <p class="mb-4" data-i18n="about.approachText">
-                    Me especializo en el desarrollo de herramientas automatizadas y sistemas de scraping adaptables a distintos tipos de datos y plataformas. Busco optimizar procesos y crear soluciones escalables y de fácil integración. Mis proyectos abarcan desde web scraping avanzado hasta el desarrollo de aplicaciones móviles y web, siempre priorizando rendimiento y usabilidad.
-                  </p>
+                  <p data-i18n="about.approachText"></p>
                 </div>
               </div>
             </div>
@@ -206,9 +204,9 @@
                   </div>
                 </figure>
                 <div class="tech-tags-container">
-                  <span class="tech-tag flutter" data-i18n="tech.flutter">Flutter</span>
-                  <span class="tech-tag python" data-i18n="tech.python">Python</span>
-                  <span class="tech-tag api" data-i18n="tech.socketio">Socket.io</span>
+                  <span class="tech-badge" data-i18n="tech.flutter"></span>
+                  <span class="tech-badge" data-i18n="tech.python"></span>
+                  <span class="tech-badge" data-i18n="tech.socketio"></span>
                 </div>
               </div>
             </div>
@@ -234,9 +232,9 @@
                   </div>
                 </figure>
                 <div class="tech-tags-container">
-                  <span class="tech-tag javascript" data-i18n="tech.javascript">JavaScript</span>
-                  <span class="tech-tag python" data-i18n="tech.python">Python</span>
-                  <span class="tech-tag react" data-i18n="tech.react">React</span>
+                  <span class="tech-badge" data-i18n="tech.javascript"></span>
+                  <span class="tech-badge" data-i18n="tech.python"></span>
+                  <span class="tech-badge" data-i18n="tech.react"></span>
                 </div>
               </div>
             </div>
@@ -262,9 +260,9 @@
                   </div>
                 </figure>
                 <div class="tech-tags-container">
-                  <span class="tech-tag javascript" data-i18n="tech.javascript">JavaScript</span>
-                  <span class="tech-tag api" data-i18n="tech.googlemaps">Google Maps API</span>
-                  <span class="tech-tag node" data-i18n="tech.nodejs">Node.js</span>
+                  <span class="tech-badge" data-i18n="tech.javascript"></span>
+                  <span class="tech-badge" data-i18n="tech.googlemaps"></span>
+                  <span class="tech-badge" data-i18n="tech.nodejs"></span>
                 </div>
               </div>
             </div>
@@ -278,8 +276,8 @@
                 <figure class="project-card">
                   <img src="assets/images/portfolio-05.jpg" alt="Scraper de Excel" />
                   <div class="overlay">
-                    <h4 data-i18n="project5-title">Scraper de Excel</h4>
-                    <p class="project-description" data-i18n="project5-desc">
+                    <h4 data-i18n="project5.title"></h4>
+                    <p class="project-description" data-i18n="project5.desc">
                       Herramienta para consolidación automática de datos desde múltiples archivos Excel.
                       Procesa y combina información de diferentes fuentes, aplicando reglas de negocio
                       y generando reportes personalizados.
@@ -288,9 +286,9 @@
                   </div>
                 </figure>
                 <div class="tech-tags-container">
-                  <span class="tech-tag python">Python</span>
-                  <span class="tech-tag database">Pandas</span>
-                  <span class="tech-tag api">Openpyxl</span>
+                  <span class="tech-badge" data-i18n="tech.python"></span>
+                  <span class="tech-badge" data-i18n="tech.database"></span>
+                  <span class="tech-badge" data-i18n="tech.api"></span>
                 </div>
               </div>
             </div>
@@ -389,9 +387,13 @@
     <!-- Scripts -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Cargar TemplateLoader primero -->
+    <script src="assets/js/template-loader.js"></script>
+    <!-- Luego las dependencias de i18n -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/22.4.9/i18next.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-i18next/1.2.1/jquery-i18next.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next-http-backend/2.1.1/i18nextHttpBackend.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-i18next/1.2.1/jquery-i18next.min.js"></script>
+    <!-- Finalmente nuestros scripts personalizados -->
     <script src="assets/js/i18n-config.js"></script>
     <script src="assets/js/language-switcher.js"></script>
     <script src="assets/js/theme-switcher.js"></script>

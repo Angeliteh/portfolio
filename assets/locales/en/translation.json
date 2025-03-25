@@ -9,6 +9,22 @@
   "language": {
     "select": "Language"
   },
+  "tech": {
+    "flutter": "Flutter",
+    "python": "Python",
+    "socketio": "Socket.io",
+    "javascript": "JavaScript",
+    "react": "React",
+    "googlemaps": "Google Maps API",
+    "nodejs": "Node.js",
+    "database": "Databases",
+    "api": "RESTful APIs"
+  },
+  "project5": {
+    "title": "Excel Scraper",
+    "desc": "Tool for automatic data consolidation from multiple Excel files. Processes and combines information from different sources, applying business rules and generating custom reports."
+  },
+  "project-view": "View Project",
   "about": {
     "title": "About Me",
     "subtitle": "Developer specialized in automation and efficient solutions",
@@ -100,6 +116,8 @@
     }
   }
 }
+
+
 
 
 

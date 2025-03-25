@@ -8,12 +8,12 @@
     <!-- Mover el CSP aquí y actualizarlo -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' https:; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https:; connect-src 'self' https:;">
     
-    <!-- Actualizar todas las rutas de CSS -->
-    <link rel="stylesheet" href="/portfolio/assets/css/fontawesome.css">
-    <link rel="stylesheet" href="/portfolio/assets/css/templatemo-style.css">
-    <link rel="stylesheet" href="/portfolio/assets/css/owl.css">
-    <link rel="stylesheet" href="/portfolio/assets/css/lightbox.css">
-    <link rel="stylesheet" href="/portfolio/assets/css/custom-styles.css">
+    <!-- Update CSS paths to use relative paths -->
+    <link rel="stylesheet" href="../assets/css/fontawesome.css">
+    <link rel="stylesheet" href="../assets/css/templatemo-style.css">
+    <link rel="stylesheet" href="../assets/css/owl.css">
+    <link rel="stylesheet" href="../assets/css/lightbox.css">
+    <link rel="stylesheet" href="../assets/css/custom-styles.css">
   </head>
 
   <body>
@@ -32,11 +32,10 @@
             <div class="project-preview">
               <div class="preview-container">
                 <img 
-                  src="https://via.placeholder.com/1200x800/0984e3/ffffff?text=GPU+Price+Monitor" 
+                  src="../assets/images/placeholder.jpg" 
                   alt="GPU Price Monitor Demo"
                   class="main-preview"
                   loading="lazy"
-                  onerror="this.src='../assets/images/placeholder.jpg'"
                 />
                 <div class="metrics-overlay">
                   <div class="metric-card" tabindex="0">
@@ -230,37 +229,35 @@
     <script src="../assets/js/lightbox.js"></script>
     <script src="../assets/js/custom.js"></script>
     <script src="../assets/js/theme-switcher.js"></script>
-    <script src="/portafolio/assets/js/template-loader.js"></script>
+    <script src="../assets/js/template-loader.js"></script>
     
     <script>
-      $(document).ready(function() {
-        // Menú de navegación
-        $(".main-menu li:first").addClass("active");
-
-        // Inicializar el selector de tema
-        const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-        const currentTheme = localStorage.getItem('theme');
-
-        if (currentTheme) {
-          document.documentElement.setAttribute('data-theme', currentTheme);
-          if (currentTheme === 'dark') {
-            toggleSwitch.checked = true;
+      document.addEventListener('DOMContentLoaded', () => {
+          // Inicializar TemplateLoader
+          if (typeof TemplateLoader !== 'undefined') {
+              TemplateLoader.loadSidebar();
+              TemplateLoader.updateCSSPaths();
           }
-        }
-
-        function switchTheme(e) {
-          if (e.target.checked) {
-            document.documentElement.setAttribute('data-theme', 'dark');
-            localStorage.setItem('theme', 'dark');
-          } else {
-            document.documentElement.setAttribute('data-theme', 'light');
-            localStorage.setItem('theme', 'light');
-          }    
-        }
-
-        toggleSwitch.addEventListener('change', switchTheme, false);
+      
+          // Inicializar Isotope solo si el elemento existe
+          const grid = document.querySelector('.isotope-box');
+          if (grid) {
+              const iso = new Isotope(grid, {
+                  itemSelector: '.isotope-item',
+                  layoutMode: 'fitRows'
+              });
+      
+              // Manejar los filtros solo si existen
+              const filterButtons = document.querySelectorAll('.isotope-toolbar input[type="radio"]');
+              filterButtons.forEach(button => {
+                  button.addEventListener('change', function() {
+                      const filterValue = this.getAttribute('data-type');
+                      iso.arrange({ filter: filterValue });
+                  });
+              });
+          }
       });
-    </script>
+      </script>
   </body>
 </html> 
 </html> 

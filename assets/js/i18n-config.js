@@ -1,30 +1,43 @@
-document.addEventListener('DOMContentLoaded', async function() {
-  // Esperar a que se carguen las traducciones antes de inicializar
-  try {
-    const response = await fetch(`${TemplateLoader.baseUrl}/assets/locales/es/translation.json`);
-    const translations = await response.json();
+// Crear una promesa global para el estado de inicialización
+window.i18nextInitialized = new Promise(async (resolve) => {
+    const savedLang = localStorage.getItem('language') || 'es';
+    const baseUrl = window.location.hostname.includes('github.io') ? '/portfolio' : '';
 
-    // Configuración de i18next
-    await i18next.init({
-      debug: false,
-      fallbackLng: 'es',
-      resources: {
-        es: {
-          translation: translations
+    try {
+        // Verificar si i18next ya está inicializado
+        if (!i18next.isInitialized) {
+            await i18next
+                .use(i18nextHttpBackend)
+                .init({
+                    debug: true,
+                    fallbackLng: 'es',
+                    lng: savedLang,
+                    backend: {
+                        loadPath: `${baseUrl}/assets/locales/{{lng}}/translation.json`
+                    },
+                    interpolation: {
+                        escapeValue: false
+                    }
+                });
+
+            // Inicializar jquery-i18next
+            jqueryI18next.init(i18next, $);
         }
-      },
-      interpolation: {
-        escapeValue: false
-      }
-    });
+        
+        // Aplicar traducciones iniciales
+        $('body').localize();
 
-    // Inicializar jquery-i18next después de cargar las traducciones
-    jqueryI18next.init(i18next, $);
-    
-    // Aplicar traducciones
-    $('[data-i18n]').localize();
-  } catch (error) {
-    console.error('Error loading translations:', error);
-  }
+        // Marcar el botón del idioma actual como activo
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+            if (btn.getAttribute('data-lang') === savedLang) {
+                btn.classList.add('active');
+            }
+        });
+
+        resolve();
+    } catch (error) {
+        console.error('Error loading translations:', error);
+        resolve(); // Resolvemos la promesa incluso en caso de error
+    }
 });
 
