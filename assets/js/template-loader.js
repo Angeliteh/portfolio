@@ -9,6 +9,8 @@ class TemplateLoader {
       const baseUrl = this.getBaseUrl();
       const sidebarPath = `${baseUrl}/templates/sidebar.html`;
       
+      console.log('Loading sidebar from:', sidebarPath);
+      
       const response = await fetch(sidebarPath);
       if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
       const html = await response.text();
@@ -16,8 +18,6 @@ class TemplateLoader {
       const sidebarContainer = document.getElementById('sidebar-container');
       if (sidebarContainer) {
         sidebarContainer.innerHTML = html;
-        // Disparar evento cuando el sidebar se carga
-        window.dispatchEvent(new Event('sidebarLoaded'));
       }
     } catch (error) {
       console.error('Error loading sidebar:', error);
@@ -32,12 +32,29 @@ class TemplateLoader {
       const path = element.getAttribute(srcAttr);
       
       if (path && !path.startsWith('http') && !path.startsWith('//')) {
-        const newPath = baseUrl + (path.startsWith('/') ? path : '/' + path);
-        element.setAttribute(srcAttr, newPath);
+        // Convert relative paths (../../) to absolute paths with baseUrl
+        if (path.startsWith('../')) {
+          const newPath = path.replace(/^\.\.\/\.\.\//, baseUrl + '/');
+          element[srcAttr] = newPath;
+        }
       }
     });
   }
 }
 
+// Export for global use
 window.TemplateLoader = TemplateLoader;
+
+// Inicializar cuando el DOM esté listo
+document.addEventListener('DOMContentLoaded', () => {
+  TemplateLoader.loadSidebar();
+  TemplateLoader.updateCSSPaths();
+});
+
+
+
+
+
+
+
 
