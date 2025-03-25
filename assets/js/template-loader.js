@@ -1,14 +1,22 @@
 class TemplateLoader {
+  static getBasePath() {
+    const isGitHubPages = window.location.hostname.includes('github.io');
+    // Obtén el nombre del repositorio del path
+    const pathSegments = window.location.pathname.split('/');
+    const repoName = pathSegments[1]; // Esto obtendrá 'portfolio' o como se llame tu repo
+    return isGitHubPages ? `/${repoName}` : '';
+  }
+
   static async loadSidebar() {
     try {
-      const isGitHubPages = window.location.hostname.includes('github.io');
+      const basePath = this.getBasePath();
       const isProjectPage = window.location.pathname.includes('/proyectos/');
       
       let sidebarPath;
-      if (isGitHubPages) {
-        sidebarPath = '/portfolio/templates/sidebar.html';
+      if (isProjectPage) {
+        sidebarPath = `${basePath}/templates/sidebar.html`;
       } else {
-        sidebarPath = isProjectPage ? '../templates/sidebar.html' : './templates/sidebar.html';
+        sidebarPath = `${basePath}/templates/sidebar.html`;
       }
 
       console.log('Intentando cargar sidebar desde:', sidebarPath);
@@ -26,28 +34,12 @@ class TemplateLoader {
       }
     } catch (error) {
       console.error('Error cargando sidebar:', error);
-      try {
-        const fallbackPath = '/portfolio/templates/sidebar.html';
-        console.log('Intentando fallback:', fallbackPath);
-        const response = await fetch(fallbackPath);
-        if (response.ok) {
-          const html = await response.text();
-          const sidebarContainer = document.getElementById('sidebar-container');
-          if (sidebarContainer) {
-            sidebarContainer.innerHTML = html;
-            this.initSidebarEvents();
-          }
-        }
-      } catch (fallbackError) {
-        console.error('Fallback también falló:', fallbackError);
-      }
     }
   }
 
   static initSidebarEvents() {
     const mainNavLinks = document.querySelectorAll('.main-nav a');
-    const isGitHubPages = window.location.hostname.includes('github.io');
-    const baseUrl = isGitHubPages ? '/portfolio' : '';
+    const basePath = this.getBasePath();
     const isProjectPage = window.location.pathname.includes('/proyectos/');
 
     mainNavLinks.forEach(link => {
@@ -56,43 +48,39 @@ class TemplateLoader {
         const href = link.getAttribute('href');
 
         if (isProjectPage) {
-          window.location.href = `${baseUrl}/index.html${href}`;
+          window.location.href = `${basePath}/index.html${href}`;
         } else {
           const targetSection = document.querySelector(`[data-section="${href.replace('#', '')}"]`);
           if (targetSection) {
             targetSection.scrollIntoView({ behavior: 'smooth' });
-            const newUrl = `${baseUrl}${href}`;
+            const newUrl = `${window.location.pathname}${href}`;
             window.history.pushState({}, '', newUrl);
           }
         }
       });
     });
 
-    // Agregar manejo del sidebar móvil
+    // Manejo del sidebar móvil
     const sidebarToggle = document.getElementById('sidebar-toggle');
     const responsiveNav = document.getElementById('responsive-nav');
     
     if (sidebarToggle && responsiveNav) {
-      // Crear overlay
       const overlay = document.createElement('div');
       overlay.className = 'sidebar-overlay';
       document.body.appendChild(overlay);
 
-      // Toggle del sidebar
       sidebarToggle.addEventListener('click', () => {
         responsiveNav.classList.toggle('active');
         overlay.classList.toggle('active');
         document.body.style.overflow = responsiveNav.classList.contains('active') ? 'hidden' : '';
       });
 
-      // Cerrar al hacer click en el overlay
       overlay.addEventListener('click', () => {
         responsiveNav.classList.remove('active');
         overlay.classList.remove('active');
         document.body.style.overflow = '';
       });
 
-      // Cerrar al hacer click en los enlaces del menú
       const menuLinks = responsiveNav.querySelectorAll('a');
       menuLinks.forEach(link => {
         link.addEventListener('click', () => {
@@ -102,7 +90,6 @@ class TemplateLoader {
         });
       });
 
-      // Manejar el resize de la ventana
       window.addEventListener('resize', () => {
         if (window.innerWidth > 768) {
           responsiveNav.classList.remove('active');
@@ -114,31 +101,19 @@ class TemplateLoader {
   }
 
   static updateCSSPaths() {
-    const isGitHubPages = window.location.hostname.includes('github.io');
-    const baseUrl = isGitHubPages ? '/portfolio' : '';
-    const currentPath = window.location.pathname;
-    const isProjectPage = currentPath.includes('/proyectos/');
+    const basePath = this.getBasePath();
+    const isProjectPage = window.location.pathname.includes('/proyectos/');
     
     document.querySelectorAll('link[rel="stylesheet"]').forEach(link => {
       const href = link.getAttribute('href');
       if (href && !href.startsWith('http') && !href.startsWith('//')) {
         let newHref;
-        if (isGitHubPages) {
-          // Si estamos en GitHub Pages
-          if (href.startsWith('/')) {
-            newHref = baseUrl + href;
-          } else if (isProjectPage && !href.startsWith('../')) {
-            newHref = baseUrl + '/' + href;
-          } else {
-            newHref = baseUrl + '/' + href.replace('../', '');
-          }
+        if (href.startsWith('/')) {
+          newHref = basePath + href;
+        } else if (isProjectPage && !href.startsWith('../')) {
+          newHref = basePath + '/' + href;
         } else {
-          // Si estamos en desarrollo local
-          if (isProjectPage && !href.startsWith('../')) {
-            newHref = '../' + href;
-          } else {
-            newHref = href;
-          }
+          newHref = basePath + '/' + href.replace('../', '');
         }
         link.href = newHref;
       }
@@ -151,13 +126,10 @@ window.TemplateLoader = TemplateLoader;
 
 // Inicializar cuando el DOM esté listo
 document.addEventListener('DOMContentLoaded', () => {
-  TemplateLoader.loadSidebar();
+  console.log('DOM Content Loaded - Iniciando carga...');
+  TemplateLoader.loadSidebar().catch(error => {
+    console.error('Error en la carga inicial:', error);
+  });
   TemplateLoader.updateCSSPaths();
 });
-
-
-
-
-
-
 

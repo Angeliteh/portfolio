@@ -387,8 +387,22 @@
     <!-- Scripts -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- Cargar TemplateLoader primero -->
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/custom.js"></script>
     <script src="assets/js/template-loader.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', async function() {
+        try {
+          console.log('Iniciando carga de componentes...');
+          await TemplateLoader.loadSidebar();
+          await TemplateLoader.updateCSSPaths();
+        } catch (error) {
+          console.error('Error durante la inicialización:', error);
+        }
+      });
+    </script>
     <!-- Luego las dependencias de i18n -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/22.4.9/i18next.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next-http-backend/2.1.1/i18nextHttpBackend.min.js"></script>
