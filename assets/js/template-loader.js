@@ -75,12 +75,23 @@ class TemplateLoader {
       });
     });
   }
+
+  static updateCSSPaths() {
+    const isGitHubPages = window.location.hostname.includes('github.io');
+    const baseUrl = isGitHubPages ? '/portfolio' : '';
+    
+    document.querySelectorAll('link[rel="stylesheet"]').forEach(link => {
+      const href = link.getAttribute('href');
+      if (!href.startsWith('http') && !href.startsWith('//')) {
+        link.href = `${baseUrl}/${href.replace(/^\//, '')}`;
+      }
+    });
+  }
 }
 
 // Inicializar cuando el DOM esté listo
 document.addEventListener('DOMContentLoaded', () => {
   TemplateLoader.loadSidebar();
+  TemplateLoader.updateCSSPaths();
 });
-
-
 

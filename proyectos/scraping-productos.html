@@ -232,32 +232,18 @@
     <script src="../assets/js/template-loader.js"></script>
     
     <script>
-      document.addEventListener('DOMContentLoaded', () => {
-          // Inicializar TemplateLoader
-          if (typeof TemplateLoader !== 'undefined') {
-              TemplateLoader.loadSidebar();
-              TemplateLoader.updateCSSPaths();
-          }
-      
-          // Inicializar Isotope solo si el elemento existe
-          const grid = document.querySelector('.isotope-box');
-          if (grid) {
-              const iso = new Isotope(grid, {
-                  itemSelector: '.isotope-item',
-                  layoutMode: 'fitRows'
-              });
-      
-              // Manejar los filtros solo si existen
-              const filterButtons = document.querySelectorAll('.isotope-toolbar input[type="radio"]');
-              filterButtons.forEach(button => {
-                  button.addEventListener('change', function() {
-                      const filterValue = this.getAttribute('data-type');
-                      iso.arrange({ filter: filterValue });
-                  });
-              });
-          }
+      document.addEventListener('DOMContentLoaded', function() {
+        // Inicializar TemplateLoader
+        TemplateLoader.loadSidebar().catch(error => {
+          console.error('Error al cargar el sidebar:', error);
+        });
+        
+        // Actualizar rutas CSS si es necesario
+        if (typeof TemplateLoader.updateCSSPaths === 'function') {
+          TemplateLoader.updateCSSPaths();
+        }
       });
-      </script>
+    </script>
   </body>
 </html> 
 </html> 
