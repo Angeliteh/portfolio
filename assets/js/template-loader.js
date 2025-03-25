@@ -1,33 +1,19 @@
 class TemplateLoader {
   static get baseUrl() {
-    const isGitHubPages = window.location.hostname.includes('github.io');
-    return isGitHubPages ? '/portfolio' : '';
-  }
-
-  static getProjectBasePath() {
-    const isGitHubPages = window.location.hostname.includes('github.io');
-    const isProjectPage = window.location.pathname.includes('/proyectos/');
-    
-    if (isGitHubPages) {
-      return isProjectPage ? '/portfolio' : '/portfolio';
-    }
-    return isProjectPage ? '..' : '';
+    return window.location.hostname.includes('github.io') ? '/portfolio' : '';
   }
 
   static async loadSidebar() {
     try {
-      const isProjectPage = window.location.pathname.includes('/proyectos/');
       const isGitHubPages = window.location.hostname.includes('github.io');
+      const isProjectPage = window.location.pathname.includes('/proyectos/');
       
+      // Construir la ruta correcta para el sidebar
       let sidebarPath;
       if (isGitHubPages) {
-        sidebarPath = isProjectPage 
-          ? '/portfolio/templates/sidebar.html'
-          : '/portfolio/templates/sidebar.html';
+        sidebarPath = '/portfolio/templates/sidebar.html';
       } else {
-        sidebarPath = isProjectPage 
-          ? '../templates/sidebar.html'
-          : 'templates/sidebar.html';
+        sidebarPath = isProjectPage ? '../templates/sidebar.html' : 'templates/sidebar.html';
       }
       
       const response = await fetch(sidebarPath);
@@ -45,8 +31,8 @@ class TemplateLoader {
   }
 
   static initSidebarEvents() {
-    const isProjectPage = window.location.pathname.includes('/proyectos/');
     const isGitHubPages = window.location.hostname.includes('github.io');
+    const isProjectPage = window.location.pathname.includes('/proyectos/');
     
     document.querySelectorAll('.main-nav a').forEach(link => {
       link.addEventListener('click', (e) => {
@@ -54,18 +40,15 @@ class TemplateLoader {
         const href = link.getAttribute('href');
         
         if (isProjectPage) {
-          // Si estamos en una página de proyecto
-          if (isGitHubPages) {
-            window.location.href = '/portfolio/index.html' + href;
-          } else {
-            window.location.href = '../index.html' + href;
-          }
+          // Redirigir a la página principal con la sección correcta
+          const baseUrl = isGitHubPages ? '/portfolio' : '';
+          window.location.href = `${baseUrl}/index.html${href}`;
         } else if (href.startsWith('#')) {
-          // Si estamos en el index, hacer scroll
+          // Scroll a la sección en la página principal
           const targetSection = document.querySelector(`[data-section="${href.substring(1)}"]`);
           if (targetSection) {
             targetSection.scrollIntoView({ behavior: 'smooth' });
-            // Actualizar la URL sin recargar la página
+            // Actualizar URL manteniendo la base correcta
             const newUrl = isGitHubPages 
               ? `/portfolio/${href}`
               : href;
@@ -81,4 +64,5 @@ class TemplateLoader {
 document.addEventListener('DOMContentLoaded', () => {
   TemplateLoader.loadSidebar();
 });
+
 

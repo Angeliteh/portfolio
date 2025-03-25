@@ -1,33 +1,35 @@
 (function($) {
   const isGitHubPages = window.location.hostname.includes('github.io');
-  const isProjectPage = window.location.pathname.includes('/proyectos/');
-
-  function getBasePath() {
-    return isGitHubPages ? '/portfolio' : '';
-  }
+  const baseUrl = isGitHubPages ? '/portfolio' : '';
 
   function initializeNavigation() {
     $(".main-nav a").on("click", function(e) {
       e.preventDefault();
       const href = $(this).attr('href');
       
-      if (isProjectPage) {
+      if (window.location.pathname.includes('/proyectos/')) {
         // Redirigir a la página principal
-        const basePath = getBasePath();
-        location.href = `${basePath}/index.html${href}`;
+        window.location.href = `${baseUrl}/index.html${href}`;
         return;
       }
       
       if (href.startsWith('#')) {
         const section = href.split('#')[1];
-        scrollToSection(section);
+        const $target = $(`[data-section="${section}"]`);
         
-        // Actualizar URL sin recargar
-        const newUrl = isGitHubPages 
-          ? `/portfolio/${href}`
-          : href;
-        window.history.pushState({}, '', newUrl);
+        if ($target.length) {
+          $('html, body').animate({
+            scrollTop: $target.offset().top
+          }, 800);
+          
+          // Actualizar URL
+          const newUrl = isGitHubPages 
+            ? `/portfolio${href}`
+            : href;
+          window.history.pushState({}, '', newUrl);
+        }
         
+        // Actualizar navegación activa
         $(this).closest('li')
           .addClass('active')
           .siblings()
@@ -38,15 +40,6 @@
         $('#menu').removeClass('open');
       }
     });
-  }
-
-  function scrollToSection(section) {
-    const $target = $(`[data-section="${section}"]`);
-    if ($target.length) {
-      $('html, body').animate({
-        scrollTop: $target.offset().top
-      }, 800);
-    }
   }
 
   $(document).ready(function() {
