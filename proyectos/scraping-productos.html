@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="../assets/css/owl.css" />
     <link rel="stylesheet" href="../assets/css/lightbox.css" />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="../assets/css/custom-styles.css" />
+    <link rel="stylesheet" href="/portafolio/assets/css/custom-styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   </head>
 
@@ -43,11 +43,13 @@
             <!-- Project Preview con lazy loading -->
             <div class="project-preview">
               <div class="preview-container">
-                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                     data-src="https://via.placeholder.com/1200x800/0984e3/ffffff?text=GPU+Price+Monitor" 
-                     alt="GPU Price Monitor Demo"
-                     class="main-preview lazy"
-                     loading="lazy"/>
+                <img 
+                  src="https://via.placeholder.com/1200x800/0984e3/ffffff?text=GPU+Price+Monitor" 
+                  alt="GPU Price Monitor Demo"
+                  class="main-preview"
+                  loading="lazy"
+                  onerror="this.src='../assets/images/placeholder.jpg'"
+                />
                 <div class="metrics-overlay">
                   <div class="metric-card" tabindex="0">
                     <i class="fas fa-chart-line" aria-hidden="true"></i>
@@ -240,7 +242,7 @@
     <script src="../assets/js/lightbox.js"></script>
     <script src="../assets/js/custom.js"></script>
     <script src="../assets/js/theme-switcher.js"></script>
-    <script src="../assets/js/template-loader.js"></script>
+    <script src="/portafolio/assets/js/template-loader.js"></script>
     
     <script>
       $(document).ready(function() {

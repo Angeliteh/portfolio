@@ -7,38 +7,24 @@ class TemplateLoader {
     // Si estamos en una página de proyecto, ajustar la ruta relativa
     const isProjectPage = window.location.pathname.includes('/proyectos/');
     return isGitHubPages ? 
-      (isProjectPage ? `${projectPath}` : projectPath) : 
+      projectPath : 
       (isProjectPage ? '..' : '');
   }
 
   static async loadSidebar() {
     try {
-      const response = await fetch(`${this.baseUrl}/templates/sidebar.html`);
+      // Construir la ruta correcta para el sidebar
+      const sidebarPath = `${this.baseUrl}/templates/sidebar.html`;
+      console.log('Intentando cargar sidebar desde:', sidebarPath); // Debug
+      
+      const response = await fetch(sidebarPath);
+      if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
       const html = await response.text();
       document.getElementById('sidebar-container').innerHTML = html;
       
-      // Inicializar eventos del sidebar
       this.initSidebarEvents();
     } catch (error) {
       console.error('Error cargando el sidebar:', error);
-    }
-  }
-
-  static initSidebarEvents() {
-    const menuToggle = document.getElementById('menu-toggle');
-    const menuClose = document.getElementById('menu-close');
-    const menu = document.getElementById('menu');
-
-    if (menuToggle) {
-      menuToggle.addEventListener('click', () => {
-        menu.classList.add('active');
-      });
-    }
-
-    if (menuClose) {
-      menuClose.addEventListener('click', () => {
-        menu.classList.remove('active');
-      });
     }
   }
 }
@@ -88,6 +74,7 @@ $(document).ready(function() {
     // Llamar a la función después de cargar el sidebar
     adjustNavLinks();
 });
+
 
 
 
