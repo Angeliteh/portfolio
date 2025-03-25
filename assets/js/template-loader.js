@@ -96,53 +96,28 @@ class TemplateLoader {
     
     document.querySelectorAll('link[rel="stylesheet"]').forEach(link => {
       const href = link.getAttribute('href');
-      if (!href || href.startsWith('http') || href.startsWith('//')) return;
+      if (!href || 
+          href.startsWith('http') || 
+          href.startsWith('//') || 
+          href.startsWith('/portfolio/portfolio/')) return;
 
-      // Prevenir la modificación si ya contiene /portfolio/
-      if (href.includes('/portfolio/')) return;
+      // Si ya tiene /portfolio/, no hacer nada
+      if (href.startsWith('/portfolio/')) return;
 
-      // Limpiar y construir la nueva ruta
+      // Limpiar la ruta
       let newHref = href;
-      
-      // Manejar rutas relativas desde subdirectorios (../)
-      if (href.startsWith('../')) {
-        newHref = href.replace(/^\.\.\//, '');
-      }
-      
-      // Eliminar slash inicial si existe
-      newHref = newHref.replace(/^\//, '');
-      
+      // Remover ../ o / inicial
+      newHref = newHref.replace(/^\.\.\/|^\//, '');
       // Construir la ruta final
       newHref = `${basePath}/${newHref}`;
       
-      // Log para debugging
-      console.log(`Actualizando ruta CSS de: ${href} a: ${newHref}`);
-      
+      console.log(`Actualizando ruta CSS: ${href} -> ${newHref}`);
       link.href = newHref;
     });
   }
 }
 
-// Exportar la clase para uso global
+// No inicializar automáticamente
+// Solo exportar la clase para uso global
 window.TemplateLoader = TemplateLoader;
-
-// Inicializar cuando el DOM esté listo
-document.addEventListener('DOMContentLoaded', () => {
-  console.log('DOM Content Loaded - Iniciando carga...');
-  TemplateLoader.loadSidebar().catch(error => {
-    console.error('Error en la carga inicial:', error);
-  });
-  TemplateLoader.updateCSSPaths();
-});
-
-// Debugging helper
-if (window.location.hostname.includes('github.io')) {
-  console.log('GitHub Pages detected');
-  console.log('Base path:', TemplateLoader.getBasePath());
-  console.log('Current pathname:', window.location.pathname);
-  console.log('Full URL:', window.location.href);
-}
-
-
-
 

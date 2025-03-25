@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="assets/css/templatemo-style.css" />
     <link rel="stylesheet" href="assets/css/owl.css" />
     <link rel="stylesheet" href="assets/css/lightbox.css" />
-    <link rel="stylesheet" href="../assets/css/custom-styles.css" />
+    <link rel="stylesheet" href="assets/css/custom-styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">  </head>
 
   <body>
@@ -395,9 +395,10 @@
     <script>
       document.addEventListener('DOMContentLoaded', async function() {
         try {
-          console.log('Iniciando carga de componentes...');
+          // Primero actualizar las rutas CSS
+          TemplateLoader.updateCSSPaths();
+          // Luego cargar el sidebar
           await TemplateLoader.loadSidebar();
-          await TemplateLoader.updateCSSPaths();
         } catch (error) {
           console.error('Error durante la inicialización:', error);
         }
