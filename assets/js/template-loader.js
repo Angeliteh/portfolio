@@ -120,7 +120,11 @@ class TemplateLoader {
     document.querySelectorAll('link[rel="stylesheet"]').forEach(link => {
       const href = link.getAttribute('href');
       if (href && !href.startsWith('http') && !href.startsWith('//')) {
-        link.href = `${baseUrl}/${href.replace(/^\//, '')}`;
+        // Asegurarse de que la ruta comience con baseUrl
+        const newHref = href.startsWith('/') ? 
+          `${baseUrl}${href}` : 
+          `${baseUrl}/${href}`;
+        link.href = newHref;
       }
     });
   }
@@ -134,6 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
   TemplateLoader.loadSidebar();
   TemplateLoader.updateCSSPaths();
 });
+
 
 
 
