@@ -67,6 +67,50 @@ class TemplateLoader {
         }
       });
     });
+
+    // Agregar manejo del sidebar móvil
+    const sidebarToggle = document.getElementById('sidebar-toggle');
+    const responsiveNav = document.getElementById('responsive-nav');
+    
+    if (sidebarToggle && responsiveNav) {
+      // Crear overlay
+      const overlay = document.createElement('div');
+      overlay.className = 'sidebar-overlay';
+      document.body.appendChild(overlay);
+
+      // Toggle del sidebar
+      sidebarToggle.addEventListener('click', () => {
+        responsiveNav.classList.toggle('active');
+        overlay.classList.toggle('active');
+        document.body.style.overflow = responsiveNav.classList.contains('active') ? 'hidden' : '';
+      });
+
+      // Cerrar al hacer click en el overlay
+      overlay.addEventListener('click', () => {
+        responsiveNav.classList.remove('active');
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
+      });
+
+      // Cerrar al hacer click en los enlaces del menú
+      const menuLinks = responsiveNav.querySelectorAll('a');
+      menuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          responsiveNav.classList.remove('active');
+          overlay.classList.remove('active');
+          document.body.style.overflow = '';
+        });
+      });
+
+      // Manejar el resize de la ventana
+      window.addEventListener('resize', () => {
+        if (window.innerWidth > 768) {
+          responsiveNav.classList.remove('active');
+          overlay.classList.remove('active');
+          document.body.style.overflow = '';
+        }
+      });
+    }
   }
 
   static updateCSSPaths() {
@@ -90,5 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
   TemplateLoader.loadSidebar();
   TemplateLoader.updateCSSPaths();
 });
+
+
 
 

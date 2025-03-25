@@ -2225,3 +2225,116 @@ a:hover {
         background-image: url('/portafolio/assets/images/bg.jpg');
     }
 }
+/* Estilos base del sidebar */
+.responsive-nav {
+  transition: transform 0.3s ease;
+  height: 100vh;
+  width: 300px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+/* Estilos para el botón de hamburguesa */
+.sidebar-toggle {
+  display: none;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1000;
+  background: var(--accent-color);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.sidebar-toggle:hover {
+  transform: scale(1.1);
+}
+
+.responsive-nav {
+  transition: transform 0.3s ease;
+}
+
+/* Media queries para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  .sidebar-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Aplicar background solo en modo móvil */
+  .responsive-nav {
+    background: transparent; /* Por defecto transparente */
+    transform: translateX(-100%);
+    width: 80%;
+    max-width: 300px;
+  }
+
+  /* Aplicar background solo cuando está activo en móvil */
+  .responsive-nav.active {
+    transform: translateX(0);
+    background: var(--sidebar-bg); /* Background solo cuando está activo */
+  }
+
+  .sidebar-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+  }
+
+  .sidebar-overlay.active {
+    display: block;
+  }
+
+  /* Asegurar que el contenido del sidebar sea visible en móvil */
+  .sidebar-content {
+    height: 100%;
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    color: var(--text-color);
+  }
+
+  /* Ajustes para el menú móvil */
+  .main-nav ul {
+    margin-top: 2rem;
+  }
+
+  .main-nav ul li a {
+    color: var(--text-color);
+    padding: 1rem 1.5rem;
+    display: block;
+    width: 100%;
+  }
+
+  /* Ajustes para el perfil en móvil */
+  .profile-section {
+    padding-top: 2rem;
+  }
+
+  /* Ajustes para los controles en móvil */
+  .sidebar-controls {
+    margin-top: auto;
+    padding: 1.5rem;
+  }
+}
+
+/* Estilos para pantallas grandes (mantener el diseño original) */
+@media screen and (min-width: 769px) {
+  .responsive-nav {
+    background: transparent;
+  }
+}
