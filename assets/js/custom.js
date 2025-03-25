@@ -24,7 +24,7 @@
           
           // Actualizar URL
           const newUrl = isGitHubPages 
-            ? `/portfolio${href}`
+            ? `/portafolio${href}`
             : href;
           window.history.pushState({}, '', newUrl);
         }
