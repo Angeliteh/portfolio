@@ -116,14 +116,30 @@ class TemplateLoader {
   static updateCSSPaths() {
     const isGitHubPages = window.location.hostname.includes('github.io');
     const baseUrl = isGitHubPages ? '/portfolio' : '';
+    const currentPath = window.location.pathname;
+    const isProjectPage = currentPath.includes('/proyectos/');
     
     document.querySelectorAll('link[rel="stylesheet"]').forEach(link => {
       const href = link.getAttribute('href');
       if (href && !href.startsWith('http') && !href.startsWith('//')) {
-        // Asegurarse de que la ruta comience con baseUrl
-        const newHref = href.startsWith('/') ? 
-          `${baseUrl}${href}` : 
-          `${baseUrl}/${href}`;
+        let newHref;
+        if (isGitHubPages) {
+          // Si estamos en GitHub Pages
+          if (href.startsWith('/')) {
+            newHref = baseUrl + href;
+          } else if (isProjectPage && !href.startsWith('../')) {
+            newHref = baseUrl + '/' + href;
+          } else {
+            newHref = baseUrl + '/' + href.replace('../', '');
+          }
+        } else {
+          // Si estamos en desarrollo local
+          if (isProjectPage && !href.startsWith('../')) {
+            newHref = '../' + href;
+          } else {
+            newHref = href;
+          }
+        }
         link.href = newHref;
       }
     });
@@ -138,6 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
   TemplateLoader.loadSidebar();
   TemplateLoader.updateCSSPaths();
 });
+
 
 
 

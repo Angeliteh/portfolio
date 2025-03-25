@@ -1,9 +1,25 @@
 function setTheme(theme) {
     const root = document.documentElement;
-    if (!root) return; // Evitar error si el elemento no existe
-
+    if (!root) return;
+    
     root.setAttribute('data-theme', theme);
     localStorage.setItem('theme', theme);
+    
+    // Actualizar el ícono del botón si existe
+    const themeButton = document.querySelector('.theme-switch');
+    if (themeButton) {
+        const sunIcon = themeButton.querySelector('.fa-sun');
+        const moonIcon = themeButton.querySelector('.fa-moon');
+        if (sunIcon && moonIcon) {
+            if (theme === 'dark') {
+                sunIcon.style.display = 'block';
+                moonIcon.style.display = 'none';
+            } else {
+                sunIcon.style.display = 'none';
+                moonIcon.style.display = 'block';
+            }
+        }
+    }
 }
 
 function initializeTheme() {
@@ -11,29 +27,22 @@ function initializeTheme() {
     setTheme(savedTheme);
 }
 
-// Observador para cambios en el DOM
-const observer = new MutationObserver((mutations) => {
-    mutations.forEach((mutation) => {
-        if (mutation.type === 'childList') {
-            const themeButtons = document.querySelectorAll('.theme-switch');
-            if (themeButtons.length) {
-                themeButtons.forEach(button => {
-                    if (!button.hasListener) {
-                        button.hasListener = true;
-                        button.addEventListener('click', () => {
-                            const currentTheme = document.documentElement.getAttribute('data-theme');
-                            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-                            setTheme(newTheme);
-                        });
-                    }
-                });
-            }
-        }
-    });
-});
-
-// Inicializar tema cuando el DOM esté listo
 document.addEventListener('DOMContentLoaded', () => {
     initializeTheme();
+    
+    // Esperar a que el sidebar se cargue
+    const observer = new MutationObserver((mutations) => {
+        const themeButton = document.querySelector('.theme-switch');
+        if (themeButton && !themeButton.hasListener) {
+            themeButton.hasListener = true;
+            themeButton.addEventListener('click', () => {
+                const currentTheme = document.documentElement.getAttribute('data-theme');
+                const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+                setTheme(newTheme);
+            });
+            observer.disconnect();
+        }
+    });
+
     observer.observe(document.body, { childList: true, subtree: true });
 }); 
