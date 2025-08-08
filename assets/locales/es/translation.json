@@ -36,44 +36,44 @@
   "project-view": "Ver Proyecto",
   "about": {
     "title": "Sobre Mí",
-    "subtitle": "Desarrollador especializado en automatización y soluciones eficientes",
+    "subtitle": "Desarrollador Full-Stack especializado en soluciones innovadoras y sistemas de alto rendimiento",
     "who": "Quién soy",
-    "whoText": "Soy un desarrollador con experiencia en automatización, web scraping y desarrollo de aplicaciones eficientes. Me especializo en crear herramientas que optimizan procesos mediante Python y otras tecnologías. Mi enfoque está en la eficiencia, escalabilidad y facilidad de uso, desarrollando soluciones para extracción y análisis de datos, control remoto y aplicaciones web funcionales.",
+    "whoText": "Soy un desarrollador full-stack con experiencia demostrada en el desarrollo de soluciones completas desde aplicaciones móviles con comunicación en tiempo real hasta sistemas de IA conversacional en producción. Mi experiencia abarca desarrollo web moderno (React/Flask), aplicaciones móviles nativas, sistemas de escritorio multiplataforma (PyQt), y automatización inteligente con IA. He desarrollado desde herramientas de web scraping y procesamiento multimedia hasta sistemas educativos y médicos que generan impacto real con reducciones de tiempo del 85-95%.",
     "approach": "Mi enfoque",
-    "approachText": "Me especializo en el desarrollo de herramientas automatizadas y sistemas de scraping adaptables a distintos tipos de datos y plataformas. Busco optimizar procesos y crear soluciones escalables y de fácil integración. Mis proyectos abarcan desde web scraping avanzado hasta el desarrollo de aplicaciones móviles y web, siempre priorizando rendimiento y usabilidad."
+    "approachText": "Me especializo en crear arquitecturas escalables y sistemas de alto rendimiento, desde aplicaciones de baja latencia con WebSockets hasta interfaces conversacionales con IA adaptable a múltiples proveedores. Combino diseño UX/UI optimizado con backend robusto, priorizando tanto la experiencia de usuario como la eficiencia técnica. Mi experiencia incluye algoritmos complejos, procesamiento de datos en tiempo real, integración de APIs múltiples, y desarrollo responsive. Cada proyecto está diseñado para ser mantenible, escalable y preparado para evolucionar con nuevas tecnologías."
   },
   "skills": {
     "title": "Mis Habilidades",
-    "subtitle": "Estas son las tecnologías y habilidades que domino",
-    "automation": "Automatización y Web Scraping",
+    "subtitle": "Stack tecnológico completo con experiencia demostrada en proyectos reales",
+    "automation": "Desarrollo Full-Stack y Arquitecturas Modernas",
     "automationList": {
-      "item1": "Web scraping con Python (Selenium, BeautifulSoup, Scrapy)",
-      "item2": "Automatización con Python (scripts, bots, APIs)",
-      "item3": "Manejo de datos (Pandas, SQL, bases de datos)"
+      "item1": "React/Flask para aplicaciones web escalables con APIs REST",
+      "item2": "PyQt5 para aplicaciones de escritorio multiplataforma",
+      "item3": "Arquitecturas con separación de capas y patrones de diseño avanzados"
     },
-    "backend": "Desarrollo Backend",
+    "backend": "Aplicaciones Móviles y Comunicación en Tiempo Real",
     "backendList": {
-      "item1": "Python (FastAPI, Flask, Django)",
-      "item2": "Bases de datos (SQL, SQLite, PostgreSQL)",
-      "item3": "APIs y consumo de datos"
+      "item1": "Desarrollo móvil nativo con comunicación WebSocket de baja latencia",
+      "item2": "Sistemas de tiempo real con gestos multitáctiles y interfaces adaptativas",
+      "item3": "Optimización de rendimiento y experiencia de usuario móvil"
     },
-    "frontend": "Desarrollo Frontend y Móvil",
+    "frontend": "Inteligencia Artificial y Automatización Inteligente",
     "frontendList": {
-      "item1": "HTML, CSS, JavaScript (sin frameworks, puro código)",
-      "item2": "Flutter (Desarrollo móvil con Dart)",
-      "item3": "Interacción con APIs y optimización de UI/UX"
+      "item1": "IA conversacional con múltiples proveedores (Google Gemini, APIs locales)",
+      "item2": "Procesamiento de lenguaje natural y routing inteligente de intenciones",
+      "item3": "Sistemas de reconocimiento de voz y interfaces multimodales"
     },
-    "devops": "Herramientas y DevOps",
+    "devops": "Diseño Web y Experiencia de Usuario",
     "devopsList": {
-      "item1": "Docker, despliegue de servidores",
-      "item2": "Linux y terminal (automatización de tareas, scripts)",
-      "item3": "Git/GitHub para control de versiones"
+      "item1": "Diseño responsive y UX/UI optimizado para conversión",
+      "item2": "Landing pages y sitios corporativos con marketing digital",
+      "item3": "Optimización de rendimiento web y SEO técnico"
     },
-    "additional": "Habilidades Adicionales",
+    "additional": "Automatización y Procesamiento de Datos",
     "additionalList": {
-      "item1": "Hacking ético y ciberseguridad básica",
-      "item2": "Desarrollo de scripts personalizados",
-      "item3": "Optimización de procesos y eficiencia en código"
+      "item1": "Web scraping avanzado y monitoreo automatizado de precios",
+      "item2": "Procesamiento multimedia y descarga de contenido de redes sociales",
+      "item3": "Algoritmos geográficos, matrices de distancia y optimización de rutas"
     }
   },
   "projects": {

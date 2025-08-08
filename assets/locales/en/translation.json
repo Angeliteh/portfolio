@@ -36,44 +36,44 @@
   "project-view": "View Project",
   "about": {
     "title": "About Me",
-    "subtitle": "Developer specialized in automation and efficient solutions",
+    "subtitle": "Full-Stack Developer specialized in innovative solutions and high-performance systems",
     "who": "Who I am",
-    "whoText": "I'm a developer with experience in automation, web scraping, and efficient application development. I specialize in creating tools that optimize processes using Python and other technologies. My focus is on efficiency, scalability, and ease of use, developing solutions for data extraction and analysis, remote control, and functional web applications.",
+    "whoText": "I'm a full-stack developer with proven experience in developing complete solutions from mobile applications with real-time communication to conversational AI systems in production. My expertise spans modern web development (React/Flask), native mobile applications, cross-platform desktop systems (PyQt), and intelligent automation with AI. I've developed everything from web scraping tools and multimedia processing to educational and medical systems that generate real impact with 85-95% time reductions.",
     "approach": "My Approach",
-    "approachText": "I specialize in developing automated tools and scraping systems adaptable to different types of data and platforms. I seek to optimize processes and create scalable solutions that are easy to integrate. My projects range from advanced web scraping to mobile and web application development, always prioritizing performance and usability."
+    "approachText": "I specialize in creating scalable architectures and high-performance systems, from low-latency applications with WebSockets to conversational interfaces with AI adaptable to multiple providers. I combine optimized UX/UI design with robust backend, prioritizing both user experience and technical efficiency. My experience includes complex algorithms, real-time data processing, multiple API integration, and responsive development. Each project is designed to be maintainable, scalable, and ready to evolve with new technologies."
   },
   "skills": {
     "title": "My Skills",
-    "subtitle": "These are the technologies and skills I master",
-    "automation": "Automation and Web Scraping",
+    "subtitle": "Complete technology stack with proven experience in real projects",
+    "automation": "Full-Stack Development and Modern Architectures",
     "automationList": {
-      "item1": "Web scraping with Python (Selenium, BeautifulSoup, Scrapy)",
-      "item2": "Automation with Python (scripts, bots, APIs)",
-      "item3": "Data handling (Pandas, SQL, databases)"
+      "item1": "React/Flask for scalable web applications with REST APIs",
+      "item2": "PyQt5 for cross-platform desktop applications",
+      "item3": "Layered architectures with separation of concerns and advanced design patterns"
     },
-    "backend": "Backend Development",
+    "backend": "Mobile Applications and Real-Time Communication",
     "backendList": {
-      "item1": "Python (FastAPI, Flask, Django)",
-      "item2": "Databases (SQL, SQLite, PostgreSQL)",
-      "item3": "APIs and data consumption"
+      "item1": "Native mobile development with low-latency WebSocket communication",
+      "item2": "Real-time systems with multi-touch gestures and adaptive interfaces",
+      "item3": "Performance optimization and mobile user experience"
     },
-    "frontend": "Frontend and Mobile Development",
+    "frontend": "Artificial Intelligence and Intelligent Automation",
     "frontendList": {
-      "item1": "HTML, CSS, JavaScript (no frameworks, pure code)",
-      "item2": "Flutter (Mobile development with Dart)",
-      "item3": "API interaction and UI/UX optimization"
+      "item1": "Conversational AI with multiple providers (Google Gemini, local APIs)",
+      "item2": "Natural language processing and intelligent intention routing",
+      "item3": "Voice recognition systems and multimodal interfaces"
     },
-    "devops": "Tools and DevOps",
+    "devops": "Web Design and User Experience",
     "devopsList": {
-      "item1": "Docker, server deployment",
-      "item2": "Linux and terminal (task automation, scripts)",
-      "item3": "Git/GitHub for version control"
+      "item1": "Responsive design and UX/UI optimized for conversion",
+      "item2": "Landing pages and corporate sites with digital marketing",
+      "item3": "Web performance optimization and technical SEO"
     },
-    "additional": "Additional Skills",
+    "additional": "Automation and Data Processing",
     "additionalList": {
-      "item1": "Ethical hacking and basic cybersecurity",
-      "item2": "Custom script development",
-      "item3": "Process optimization and code efficiency"
+      "item1": "Advanced web scraping and automated price monitoring",
+      "item2": "Multimedia processing and social media content downloading",
+      "item3": "Geographic algorithms, distance matrices and route optimization"
     }
   },
   "projects": {
