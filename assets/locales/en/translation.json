@@ -22,7 +22,12 @@
     "sqlite": "SQLite",
     "beautifulsoup": "BeautifulSoup",
     "html": "HTML/CSS",
-    "responsive": "Responsive Design"
+    "responsive": "Responsive Design",
+    "docx": "python-docx",
+    "voice": "Voice Recognition",
+    "ai": "Artificial Intelligence",
+    "pyqt": "PyQt5",
+    "gemini": "Google Gemini"
   },
   "project5": {
     "title": "Excel Scraper",
@@ -80,7 +85,8 @@
       "webApps": "Web Applications",
       "webDesign": "Web Design",
       "mobile": "Mobile",
-      "desktop": "Desktop"
+      "desktop": "Desktop",
+      "ai": "Artificial Intelligence"
     },
     "viewProject": "View Project",
     "viewPortfolio": "View Complete Portfolio",
@@ -105,14 +111,24 @@
       "desc": "Web tool for calculating distance matrices between multiple points using Google Maps API. Ideal for route optimization and logistics."
     },
     "project5": {
-      "name": "Excel Scraper",
-      "title": "Excel Scraper",
-      "desc": "Tool for automatic data consolidation from multiple Excel files. Processes and combines information from different sources."
+      "name": "Universal Excel Validation System",
+      "title": "Universal Excel Table Validation and Visualization System",
+      "desc": "Comprehensive platform that automates extraction, combination, validation and presentation of educational Excel tables, with shared architecture between desktop app (PyQt) and modern web interface (React + Flask)."
     },
     "portfolioWebs": {
       "name": "Commercial Web Portfolio",
       "title": "Web Design & Marketing",
       "desc": "Complete collection of commercial websites, landing pages and corporate sites. Specialized in responsive design, UX/UI optimized for conversion and digital marketing. +15 web projects deployed on GitHub Pages."
+    },
+    "project6": {
+      "name": "Medical License System",
+      "title": "Medical License Automation",
+      "desc": "Automation system for filling official medical license forms. Eliminates manual data entry, reduces errors and accelerates document generation process with multiple capture interfaces and voice recognition."
+    },
+    "project7": {
+      "name": "School Certificate System with AI",
+      "title": "School Certificate System with AI",
+      "desc": "Desktop application with AI that automates certificates and school management. Master Interpreter with intelligent routing, PDF generation and natural conversational interface. In production with scalable and robust architecture."
     }
   },
   "contact": {

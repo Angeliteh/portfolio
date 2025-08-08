@@ -23,30 +23,32 @@
             <div class="section-heading">
               <h2>Remote Mouse</h2>
               <div class="line-dec"></div>
-              <span>Control remoto del cursor con latencia ultra baja</span>
+              <span>Control remoto de mouse y teclado desde dispositivos móviles via WebSocket</span>
             </div>
 
             <!-- Project Preview -->
             <div class="project-preview">
               <div class="preview-container">
-                <img 
-                  src="../assets/images/placeholder.jpg" 
-                  alt="Remote Mouse Demo"
+                <!-- TODO: Reemplazar con screenshot de la app móvil conectada al servidor PC -->
+                <!-- Mostrar: Mousepad en móvil, indicador de conexión verde, estadísticas en tiempo real -->
+                <img
+                  src="../assets/images/remote-mouse-preview.jpg"
+                  alt="Remote Mouse App Demo"
                   class="main-preview"
                   loading="lazy"
                 />
                 <div class="metrics-overlay">
                   <div class="metric-card" tabindex="0">
+                    <i class="fas fa-tachometer-alt" aria-hidden="true"></i>
+                    <span>Latencia < 8ms</span>
+                  </div>
+                  <div class="metric-card" tabindex="0">
                     <i class="fas fa-mobile-alt" aria-hidden="true"></i>
-                    <span>Multi-plataforma</span>
+                    <span>6 plataformas</span>
                   </div>
                   <div class="metric-card" tabindex="0">
-                    <i class="fas fa-clock" aria-hidden="true"></i>
-                    <span>Baja Latencia</span>
-                  </div>
-                  <div class="metric-card" tabindex="0">
-                    <i class="fas fa-hand-pointer" aria-hidden="true"></i>
-                    <span>Gestos Táctiles</span>
+                    <i class="fas fa-check-circle" aria-hidden="true"></i>
+                    <span>99.9% precisión</span>
                   </div>
                 </div>
               </div>
@@ -56,26 +58,25 @@
             <div class="project-section overview">
               <h3>Descripción General</h3>
               <p>
-                Remote Mouse es una aplicación móvil que transforma tu smartphone en un control remoto 
-                preciso para tu computadora. Con una latencia ultra baja y características avanzadas como 
-                gestos multitáctiles, teclado virtual y accesos rápidos personalizables, es la herramienta 
-                perfecta para presentaciones y control multimedia a distancia.
+                Aplicación multiplataforma que permite controlar el mouse y teclado de una PC desde un dispositivo móvil usando comunicación WebSocket en tiempo real.
+                Incluye un servidor Python con interfaz gráfica para PC y una aplicación Flutter para dispositivos móviles con soporte para Android, iOS, Web, Windows, macOS y Linux.
+                Ofrece control preciso del cursor, clics, scroll, escritura de texto y combinaciones de teclas con retroalimentación háptica y configuración personalizable.
               </p>
               <div class="key-features">
                 <div class="feature-item" tabindex="0">
-                  <i class="fas fa-tachometer-alt" aria-hidden="true"></i>
-                  <h4>Latencia Ultra Baja</h4>
-                  <p>Respuesta instantánea con optimización de red</p>
-                </div>
-                <div class="feature-item" tabindex="0">
-                  <i class="fas fa-hand-paper" aria-hidden="true"></i>
-                  <h4>Gestos Multitáctiles</h4>
-                  <p>Control intuitivo con gestos personalizables</p>
+                  <i class="fas fa-mouse" aria-hidden="true"></i>
+                  <h4>Control de Mouse Avanzado</h4>
+                  <p>Movimiento preciso con buffer de optimización, clics y scroll con sensibilidad ajustable</p>
                 </div>
                 <div class="feature-item" tabindex="0">
                   <i class="fas fa-keyboard" aria-hidden="true"></i>
-                  <h4>Teclado Virtual</h4>
-                  <p>Teclado optimizado con atajos personalizados</p>
+                  <h4>Teclado Virtual Inteligente</h4>
+                  <p>Escritura en tiempo real, teclas especiales y combinaciones (Ctrl+C, Alt+Tab)</p>
+                </div>
+                <div class="feature-item" tabindex="0">
+                  <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+                  <h4>Interfaz Multiplataforma</h4>
+                  <p>Flutter nativo para móviles y servidor Python GUI, soporte para 6 plataformas</p>
                 </div>
               </div>
             </div>
@@ -87,28 +88,28 @@
                 <div class="detail-card architecture">
                   <h4><i class="fas fa-layer-group"></i> Arquitectura</h4>
                   <ul>
-                    <li>Flutter para UI multiplataforma</li>
-                    <li>WebSocket para comunicación</li>
-                    <li>Python para servidor local</li>
-                    <li>Socket.IO para eventos</li>
+                    <li>Cliente-Servidor con WebSocket</li>
+                    <li>MVC en Flutter con servicios modulares</li>
+                    <li>Separación clara servidor Python/cliente Flutter</li>
+                    <li>Protocolo de comandos personalizado</li>
                   </ul>
                 </div>
                 <div class="detail-card optimization">
                   <h4><i class="fas fa-bolt"></i> Optimización</h4>
                   <ul>
-                    <li>Protocolo personalizado</li>
-                    <li>Compresión de datos</li>
-                    <li>Buffer predictivo</li>
-                    <li>Modo de bajo consumo</li>
+                    <li>Buffer de movimientos con timer de 8ms</li>
+                    <li>WebSocket bidireccional optimizado</li>
+                    <li>Deltas de movimiento acumulados</li>
+                    <li>Configuración persistente local</li>
                   </ul>
                 </div>
                 <div class="detail-card features">
-                  <h4><i class="fas fa-star"></i> Características</h4>
+                  <h4><i class="fas fa-star"></i> Características Avanzadas</h4>
                   <ul>
-                    <li>Perfiles configurables</li>
-                    <li>Modo presentación</li>
-                    <li>Control multimedia</li>
-                    <li>Accesos rápidos</li>
+                    <li>Retroalimentación háptica</li>
+                    <li>Bandeja del sistema</li>
+                    <li>Inicio automático</li>
+                    <li>8 tipos de comandos diferentes</li>
                   </ul>
                 </div>
               </div>
@@ -119,20 +120,93 @@
               <h3>Stack Tecnológico</h3>
               <div class="tech-grid">
                 <div class="tech-category mobile">
-                  <h4><i class="fas fa-mobile-alt"></i> Mobile</h4>
+                  <h4><i class="fas fa-mobile-alt"></i> Frontend</h4>
                   <div class="tech-items">
-                    <span class="tech-badge">Flutter</span>
-                    <span class="tech-badge">Dart</span>
-                    <span class="tech-badge">BLoC</span>
+                    <span class="tech-badge">Flutter/Dart</span>
+                    <span class="tech-badge">Material Design 3</span>
+                    <span class="tech-badge">WebSocket Channel</span>
+                    <span class="tech-badge">HapticFeedback</span>
                   </div>
                 </div>
                 <div class="tech-category backend">
                   <h4><i class="fas fa-server"></i> Backend</h4>
                   <div class="tech-items">
-                    <span class="tech-badge">Python</span>
-                    <span class="tech-badge">Socket.IO</span>
+                    <span class="tech-badge">Python 3.7+</span>
+                    <span class="tech-badge">WebSockets</span>
+                    <span class="tech-badge">asyncio</span>
                     <span class="tech-badge">PyAutoGUI</span>
+                    <span class="tech-badge">Tkinter</span>
                   </div>
+                </div>
+                <div class="tech-category tools">
+                  <h4><i class="fas fa-tools"></i> Herramientas</h4>
+                  <div class="tech-items">
+                    <span class="tech-badge">PyInstaller</span>
+                    <span class="tech-badge">Flutter SDK</span>
+                    <span class="tech-badge">SharedPreferences</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Challenges and Solutions -->
+            <div class="project-section challenges">
+              <h3>Desafíos y Soluciones</h3>
+              <div class="challenges-grid">
+                <div class="challenge-card">
+                  <div class="challenge-header">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <h4>Latencia en Movimientos</h4>
+                  </div>
+                  <div class="challenge-content">
+                    <p class="problem">Los movimientos individuales del mouse generaban demasiados comandos WebSocket.</p>
+                    <p class="solution">
+                      <i class="fas fa-check-circle"></i>
+                      Buffer de movimientos con timer de 8ms para acumular y enviar deltas optimizados.
+                    </p>
+                  </div>
+                </div>
+                <div class="challenge-card">
+                  <div class="challenge-header">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <h4>Sincronización de Texto</h4>
+                  </div>
+                  <div class="challenge-content">
+                    <p class="problem">Detectar cambios de texto (añadir/borrar) sin perder sincronización.</p>
+                    <p class="solution">
+                      <i class="fas fa-check-circle"></i>
+                      Sistema de tracking con comparación de longitudes y envío diferencial de comandos.
+                    </p>
+                  </div>
+                </div>
+                <div class="challenge-card">
+                  <div class="challenge-header">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <h4>Compatibilidad Multiplataforma</h4>
+                  </div>
+                  <div class="challenge-content">
+                    <p class="problem">Diferentes comportamientos de SO para control de mouse/teclado.</p>
+                    <p class="solution">
+                      <i class="fas fa-check-circle"></i>
+                      Abstracción con PyAutoGUI y configuración específica por plataforma.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Video Demo Section -->
+            <div class="project-section video-demo" style="margin-top: 2rem;">
+              <h3>Demo en Video</h3>
+              <div class="video-container" style="text-align: center; padding: 2rem; background: #f8f9fa; border-radius: 10px;">
+                <!-- TODO: Reemplazar con video real (60-90 segundos) -->
+                <!-- 0-10s: Problema - Control de PC desde sofá/cama -->
+                <!-- 10-60s: Demo de conexión, movimiento, clics, scroll, escritura -->
+                <!-- 60-90s: Configuración avanzada y estadísticas del servidor -->
+                <div class="video-placeholder" style="background: #e9ecef; padding: 4rem; border-radius: 8px; border: 2px dashed #6c757d;">
+                  <i class="fas fa-video" style="font-size: 3rem; color: #6c757d; margin-bottom: 1rem;"></i>
+                  <p style="color: #6c757d; margin: 0; font-size: 1.1rem;">Video Demo Próximamente</p>
+                  <small style="color: #6c757d;">Demostración de control remoto en acción desde dispositivo móvil</small>
                 </div>
               </div>
             </div>
@@ -141,27 +215,27 @@
             <div class="project-section resources">
               <h3>Enlaces y Recursos</h3>
               <div class="resources-grid">
-                <a href="#" class="resource-card github">
+                <a href="#" class="resource-card github disabled" title="Repositorio local - C:\Users\anita\Desktop\remote_mouse">
                   <i class="fab fa-github"></i>
-                  <span>Código Fuente</span>
+                  <span>Código Local</span>
                 </a>
                 <a href="#" class="resource-card docs">
                   <i class="fas fa-book"></i>
-                  <span>Documentación</span>
+                  <span>README.md</span>
                 </a>
-                <a href="#" class="resource-card demo">
-                  <i class="fas fa-play-circle"></i>
-                  <span>Demo en Vivo</span>
+                <a href="#" class="resource-card demo disabled" title="Requiere instalación local">
+                  <i class="fas fa-desktop"></i>
+                  <span>Ejecutable (.exe)</span>
                 </a>
               </div>
             </div>
 
             <div class="project-navigation">
               <a href="scraping-productos.html" class="prev-project">
-                <i class="fas fa-arrow-left"></i> Proyecto Anterior
+                <i class="fas fa-arrow-left"></i> Proyecto Anterior: RTX Web Scraper
               </a>
               <a href="social-media-downloader.html" class="next-project">
-                Siguiente Proyecto <i class="fas fa-arrow-right"></i>
+                Siguiente Proyecto: Social Media Downloader <i class="fas fa-arrow-right"></i>
               </a>
             </div>
           </div>

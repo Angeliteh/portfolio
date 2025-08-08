@@ -22,7 +22,12 @@
     "sqlite": "SQLite",
     "beautifulsoup": "BeautifulSoup",
     "html": "HTML/CSS",
-    "responsive": "Responsive Design"
+    "responsive": "Responsive Design",
+    "docx": "python-docx",
+    "voice": "Reconocimiento de Voz",
+    "ai": "Inteligencia Artificial",
+    "pyqt": "PyQt5",
+    "gemini": "Google Gemini"
   },
   "project5": {
     "title": "Scraper de Excel",
@@ -80,7 +85,8 @@
       "webApps": "Aplicaciones Web",
       "webDesign": "Diseño Web",
       "mobile": "Móvil",
-      "desktop": "Escritorio"
+      "desktop": "Escritorio",
+      "ai": "Inteligencia Artificial"
     },
     "viewProject": "Ver Proyecto",
     "viewPortfolio": "Ver Portfolio Completo",
@@ -105,14 +111,24 @@
       "desc": "Herramienta web para calcular matrices de distancia entre múltiples puntos usando la API de Google Maps. Ideal para optimización de rutas y logística."
     },
     "project5": {
-      "name": "Excel Scraper",
-      "title": "Scraper de Excel",
-      "desc": "Herramienta para consolidación automática de datos desde múltiples archivos Excel. Procesa y combina información de diferentes fuentes."
+      "name": "Sistema Universal de Validación Excel",
+      "title": "Sistema Universal de Validación y Visualización de Tablas Excel",
+      "desc": "Plataforma integral que automatiza la extracción, combinación, validación y presentación de tablas educativas en Excel, con arquitectura compartida entre app de escritorio (PyQt) y interfaz web moderna (React + Flask)."
     },
     "portfolioWebs": {
       "name": "Portfolio Webs Comerciales",
       "title": "Diseño Web & Marketing",
       "desc": "Colección completa de sitios web comerciales, landing pages y sitios corporativos. Especializado en diseño responsive, UX/UI optimizado para conversión y marketing digital. +15 proyectos web desplegados en GitHub Pages."
+    },
+    "project6": {
+      "name": "Sistema de Licencias Médicas",
+      "title": "Automatización de Licencias Médicas",
+      "desc": "Sistema de automatización para el llenado de formatos de licencias médicas oficiales. Elimina la captura manual, reduce errores y acelera el proceso de generación de documentos con múltiples interfaces de captura y reconocimiento de voz."
+    },
+    "project7": {
+      "name": "Sistema de Constancias Escolares con IA",
+      "title": "Sistema de Constancias Escolares con IA",
+      "desc": "Aplicación de escritorio con IA que automatiza constancias y gestión escolar. Master Interpreter con routing inteligente, generación PDF y interfaz conversacional natural. En producción con arquitectura escalable y robusta."
     }
   },
   "contact": {

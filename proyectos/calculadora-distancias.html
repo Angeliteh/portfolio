@@ -6,7 +6,7 @@
     <meta name="description" content="Calculadora de distancias con Google Maps - Herramienta profesional para cálculo y optimización de rutas">
     <meta name="author" content="Angel">
     
-    <title>Calculadora de Distancias - Detalle del Proyecto</title>
+    <title>Calculadora de Distancias - Herramienta Web para Mapas</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -27,30 +27,32 @@
             <div class="section-heading">
               <h2>Calculadora de Distancias</h2>
               <div class="line-dec"></div>
-              <span>Herramienta profesional para cálculo y visualización de rutas múltiples con Google Maps</span>
+              <span>Herramienta web para medir distancias entre múltiples puntos en mapas</span>
             </div>
 
             <!-- Project Preview -->
             <div class="project-preview">
               <div class="preview-container">
-                <img 
-                  src="../assets/images/calculadora-distancias-preview.jpg" 
-                  alt="Calculadora de Distancias Demo"
+                <!-- TODO: Reemplazar con screenshot del dashboard con múltiples puntos -->
+                <!-- Mostrar: Mapa con marcadores, matriz de distancias, panel de control -->
+                <img
+                  src="../assets/images/calculadora-distancias-preview.jpg"
+                  alt="Calculadora de Distancias Dashboard Demo"
                   class="main-preview"
                   loading="lazy"
                 />
                 <div class="metrics-overlay">
                   <div class="metric-card" tabindex="0">
                     <i class="fas fa-tachometer-alt" aria-hidden="true"></i>
-                    <span>< 2s carga</span>
+                    <span>< 2s carga inicial</span>
                   </div>
                   <div class="metric-card" tabindex="0">
-                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-                    <span>20+ puntos</span>
+                    <i class="fas fa-globe" aria-hidden="true"></i>
+                    <span>Soporte global</span>
                   </div>
                   <div class="metric-card" tabindex="0">
-                    <i class="fas fa-signal" aria-hidden="true"></i>
-                    <span>99.9% uptime</span>
+                    <i class="fas fa-check-circle" aria-hidden="true"></i>
+                    <span>99% precisión</span>
                   </div>
                 </div>
               </div>
@@ -60,25 +62,25 @@
             <div class="project-section overview">
               <h3>Descripción General</h3>
               <p>
-                Solución web avanzada para el cálculo y visualización de distancias entre múltiples ubicaciones,
-                diseñada específicamente para profesionales de logística, agentes inmobiliarios y usuarios que
-                necesitan planificar rutas complejas de manera eficiente.
+                Aplicación web interactiva que permite a los usuarios establecer un punto de referencia y añadir múltiples destinos para calcular distancias reales por carretera o en línea recta.
+                Incluye funcionalidades avanzadas como matriz de distancias entre todos los puntos, reordenamiento de destinos por prioridad, y visualización de rutas en tiempo real.
+                La aplicación está optimizada para uso tanto con búsqueda de lugares como con coordenadas manuales, ofreciendo una experiencia robusta incluso con limitaciones de API.
               </p>
               <div class="key-features">
                 <div class="feature-item" tabindex="0">
-                  <i class="fas fa-route" aria-hidden="true"></i>
-                  <h4>Rutas Inteligentes</h4>
-                  <p>Cálculo en tiempo real con consideración de tráfico</p>
+                  <i class="fas fa-calculator" aria-hidden="true"></i>
+                  <h4>Cálculo Inteligente de Distancias</h4>
+                  <p>Sistema dual con Google Maps API y cálculo geométrico esférico como respaldo</p>
+                </div>
+                <div class="feature-item" tabindex="0">
+                  <i class="fas fa-mouse-pointer" aria-hidden="true"></i>
+                  <h4>Interfaz Interactiva Avanzada</h4>
+                  <p>Búsqueda de lugares, coordenadas manuales o clics directos con drag-and-drop</p>
                 </div>
                 <div class="feature-item" tabindex="0">
                   <i class="fas fa-table" aria-hidden="true"></i>
-                  <h4>Matriz Interactiva</h4>
-                  <p>Visualización completa de distancias entre puntos</p>
-                </div>
-                <div class="feature-item" tabindex="0">
-                  <i class="fas fa-arrows-alt" aria-hidden="true"></i>
-                  <h4>Reordenamiento</h4>
-                  <p>Sistema drag & drop para optimización de rutas</p>
+                  <h4>Matriz de Distancias Completa</h4>
+                  <p>Tablas completas entre todos los puntos para planificación de rutas complejas</p>
                 </div>
               </div>
             </div>
@@ -90,28 +92,28 @@
                 <div class="detail-card architecture">
                   <h4><i class="fas fa-layer-group"></i> Arquitectura</h4>
                   <ul>
-                    <li>Frontend JavaScript ES6+</li>
-                    <li>APIs de Google Maps</li>
-                    <li>Sistema de temas responsive</li>
-                    <li>Almacenamiento local</li>
+                    <li>Patrón MVC en frontend</li>
+                    <li>Event-driven architecture con listeners</li>
+                    <li>Estado en memoria con objetos JavaScript</li>
+                    <li>Persistencia de tema en localStorage</li>
                   </ul>
                 </div>
                 <div class="detail-card performance">
-                  <h4><i class="fas fa-tachometer-alt"></i> Rendimiento</h4>
+                  <h4><i class="fas fa-bolt"></i> Sistema de Fallback</h4>
                   <ul>
-                    <li>Carga inicial < 2s</li>
-                    <li>Actualización de rutas < 500ms</li>
-                    <li>Soporte hasta 20 puntos</li>
-                    <li>Optimización de recursos</li>
+                    <li>Google Maps API como método principal</li>
+                    <li>Cálculos geométricos esféricos de respaldo</li>
+                    <li>Funcionamiento continuo sin dependencias críticas</li>
+                    <li>Manejo exhaustivo de errores</li>
                   </ul>
                 </div>
                 <div class="detail-card features">
                   <h4><i class="fas fa-star"></i> Características Avanzadas</h4>
                   <ul>
-                    <li>Autocompletado de direcciones</li>
-                    <li>Exportación de datos</li>
-                    <li>Modo offline parcial</li>
-                    <li>Persistencia de sesión</li>
+                    <li>Búsqueda de lugares + coordenadas manuales</li>
+                    <li>Reordenamiento drag-and-drop</li>
+                    <li>Tema claro/oscuro automático</li>
+                    <li>Guía integrada en la aplicación</li>
                   </ul>
                 </div>
               </div>
@@ -124,17 +126,35 @@
                 <div class="tech-category frontend">
                   <h4><i class="fas fa-code"></i> Frontend</h4>
                   <div class="tech-items">
-                    <span class="tech-badge">JavaScript ES6+</span>
                     <span class="tech-badge">HTML5</span>
                     <span class="tech-badge">CSS3</span>
+                    <span class="tech-badge">JavaScript ES6+</span>
+                    <span class="tech-badge">Font Awesome</span>
+                  </div>
+                </div>
+                <div class="tech-category backend">
+                  <h4><i class="fas fa-server"></i> Backend</h4>
+                  <div class="tech-items">
+                    <span class="tech-badge">Python</span>
+                    <span class="tech-badge">HTTP Server</span>
+                    <span class="tech-badge">Servidor Local</span>
                   </div>
                 </div>
                 <div class="tech-category apis">
                   <h4><i class="fas fa-plug"></i> APIs</h4>
                   <div class="tech-items">
-                    <span class="tech-badge">Google Maps</span>
+                    <span class="tech-badge">Google Maps API</span>
                     <span class="tech-badge">Places API</span>
                     <span class="tech-badge">Directions API</span>
+                    <span class="tech-badge">Distance Matrix API</span>
+                  </div>
+                </div>
+                <div class="tech-category tools">
+                  <h4><i class="fas fa-tools"></i> Herramientas</h4>
+                  <div class="tech-items">
+                    <span class="tech-badge">Google Fonts</span>
+                    <span class="tech-badge">Sortable.js</span>
+                    <span class="tech-badge">localStorage</span>
                   </div>
                 </div>
               </div>
@@ -147,41 +167,55 @@
                 <div class="challenge-card">
                   <div class="challenge-header">
                     <i class="fas fa-exclamation-circle"></i>
-                    <h4>Fallos de API</h4>
+                    <h4>Limitaciones de API de Google Maps</h4>
                   </div>
                   <div class="challenge-content">
-                    <p class="problem">Límites de cuota y problemas de conectividad.</p>
+                    <p class="problem">Restricciones de cuota y posibles fallos de conectividad con APIs externas.</p>
                     <p class="solution">
                       <i class="fas fa-check-circle"></i>
-                      Sistema de fallback con cálculos geométricos.
+                      Sistema de fallback automático con cálculos geométricos esféricos manteniendo funcionalidad completa.
                     </p>
                   </div>
                 </div>
                 <div class="challenge-card">
                   <div class="challenge-header">
                     <i class="fas fa-exclamation-circle"></i>
-                    <h4>Rendimiento</h4>
+                    <h4>Gestión de Estado Complejo</h4>
                   </div>
                   <div class="challenge-content">
-                    <p class="problem">Sobrecarga con múltiples rutas simultáneas.</p>
+                    <p class="problem">Sincronización entre múltiples marcadores, rutas, y elementos de UI con reordenamiento dinámico.</p>
                     <p class="solution">
                       <i class="fas fa-check-circle"></i>
-                      Sistema de renderizado optimizado.
+                      Sistema centralizado de actualización que recalcula todas las dependencias cuando se modifica el orden.
                     </p>
                   </div>
                 </div>
                 <div class="challenge-card">
                   <div class="challenge-header">
                     <i class="fas fa-exclamation-circle"></i>
-                    <h4>UX</h4>
+                    <h4>Experiencia de Usuario Robusta</h4>
                   </div>
                   <div class="challenge-content">
-                    <p class="problem">Complejidad en la gestión de múltiples rutas.</p>
+                    <p class="problem">Garantizar funcionamiento intuitivo tanto para usuarios técnicos como no técnicos.</p>
                     <p class="solution">
                       <i class="fas fa-check-circle"></i>
-                      Interfaz intuitiva con feedback visual inmediato.
+                      Interfaz híbrida que soporta búsqueda de lugares, coordenadas manuales, y clics en mapa con guía integrada.
                     </p>
                   </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Video Demo Section -->
+            <div class="project-section video-demo" style="margin-top: 2rem;">
+              <h3>Demo en Video</h3>
+              <div class="video-container" style="text-align: center; padding: 2rem; background: #f8f9fa; border-radius: 10px;">
+                <!-- TODO: Reemplazar con video real (60 segundos) -->
+                <!-- Mostrar: Añadir puntos, matriz de distancias, reordenamiento, tema claro/oscuro -->
+                <div class="video-placeholder" style="background: #e9ecef; padding: 4rem; border-radius: 8px; border: 2px dashed #6c757d;">
+                  <i class="fas fa-video" style="font-size: 3rem; color: #6c757d; margin-bottom: 1rem;"></i>
+                  <p style="color: #6c757d; margin: 0; font-size: 1.1rem;">Video Demo Próximamente</p>
+                  <small style="color: #6c757d;">Demostración completa de cálculo de distancias y matriz interactiva</small>
                 </div>
               </div>
             </div>
@@ -217,17 +251,17 @@
             <div class="project-section resources">
               <h3>Enlaces y Recursos</h3>
               <div class="resources-grid">
-                <a href="#" class="resource-card github">
+                <a href="#" class="resource-card github disabled" title="Pendiente - repositorio local">
                   <i class="fab fa-github"></i>
-                  <span>Código Fuente</span>
+                  <span>Código Local</span>
                 </a>
                 <a href="#" class="resource-card docs">
-                  <i class="fas fa-book"></i>
-                  <span>Documentación</span>
+                  <i class="fas fa-question-circle"></i>
+                  <span>Guía Integrada</span>
                 </a>
-                <a href="#" class="resource-card demo">
-                  <i class="fas fa-play-circle"></i>
-                  <span>Demo en Vivo</span>
+                <a href="http://localhost:8000" class="resource-card demo" target="_blank" title="Requiere servidor local">
+                  <i class="fas fa-desktop"></i>
+                  <span>Demo Local</span>
                 </a>
               </div>
             </div>
@@ -237,8 +271,8 @@
               <a href="social-media-downloader.html" class="prev-project">
                 <i class="fas fa-arrow-left"></i> Proyecto Anterior: Social Media Downloader
               </a>
-              <a href="mouse-remoto.html" class="next-project">
-                Siguiente Proyecto: Remote Mouse <i class="fas fa-arrow-right"></i>
+              <a href="excel-scraper.html" class="next-project">
+                Siguiente Proyecto: Excel Scraper <i class="fas fa-arrow-right"></i>
               </a>
             </div>
           </div>

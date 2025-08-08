@@ -3,9 +3,12 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Videos Downloader - Descargador Universal de Videos</title>
-    
-    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css">
+    <title>Sistema de Automatización de Licencias Médicas</title>
+
+    <!-- Mover el CSP aquí y actualizarlo -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' https:; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https:; connect-src 'self' https:;">
+
+    <!-- Update CSS paths to use relative paths -->
     <link rel="stylesheet" href="../assets/css/fontawesome.css">
     <link rel="stylesheet" href="../assets/css/templatemo-style.css">
     <link rel="stylesheet" href="../assets/css/owl.css">
@@ -13,6 +16,7 @@
     <link rel="stylesheet" href="../assets/css/custom-styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   </head>
+
   <body>
     <div id="page-wraper">
       <div id="sidebar-container"></div>
@@ -20,34 +24,34 @@
         <section class="section project-details">
           <div class="container">
             <div class="section-heading">
-              <h2>Videos Downloader - Descargador Universal de Videos</h2>
+              <h2>Sistema de Automatización de Licencias Médicas</h2>
               <div class="line-dec"></div>
-              <span>Descarga videos de Instagram, TikTok y Facebook con interfaz web</span>
+              <span>Herramienta de automatización para generar licencias médicas oficiales</span>
             </div>
 
             <!-- Project Preview -->
             <div class="project-preview">
               <div class="preview-container">
-                <!-- TODO: Reemplazar con screenshot del dashboard principal -->
-                <!-- Mostrar: Formulario de descarga, historial con videos reales, interfaz responsive -->
-                <img
-                  src="../assets/images/videos-downloader-preview.jpg"
-                  alt="Videos Downloader Dashboard Demo"
+                <!-- TODO: Reemplazar con screenshot del sistema procesando documentos -->
+                <!-- Mostrar: Interfaz de captura, documento Word antes/después, campos completados -->
+                <img 
+                  src="../assets/images/licencias-medicas-preview.jpg" 
+                  alt="Sistema de Automatización de Licencias Médicas Demo"
                   class="main-preview"
                   loading="lazy"
                 />
                 <div class="metrics-overlay">
                   <div class="metric-card" tabindex="0">
-                    <i class="fas fa-tachometer-alt" aria-hidden="true"></i>
-                    <span>< 2s promedio</span>
+                    <i class="fas fa-clock" aria-hidden="true"></i>
+                    <span>95% reducción tiempo</span>
                   </div>
                   <div class="metric-card" tabindex="0">
-                    <i class="fas fa-share-alt" aria-hidden="true"></i>
-                    <span>3 plataformas</span>
+                    <i class="fas fa-list" aria-hidden="true"></i>
+                    <span>18 campos diferentes</span>
                   </div>
                   <div class="metric-card" tabindex="0">
                     <i class="fas fa-check-circle" aria-hidden="true"></i>
-                    <span>99% tasa de éxito</span>
+                    <span>100% sin errores</span>
                   </div>
                 </div>
               </div>
@@ -57,25 +61,25 @@
             <div class="project-section overview">
               <h3>Descripción General</h3>
               <p>
-                Aplicación web desarrollada en Flask que permite descargar videos de las principales redes sociales (Instagram, TikTok, Facebook) con múltiples opciones de calidad.
-                Incluye una interfaz web moderna y responsiva, sistema de historial de descargas, y arquitectura modular con múltiples métodos de descarga para garantizar alta disponibilidad.
-                La aplicación maneja automáticamente la normalización de URLs, expansión de enlaces acortados, y proporciona una API REST completa para integración con aplicaciones móviles.
+                Sistema desarrollado para una oficina del sector salud que automatiza el proceso de llenado de formatos de licencias médicas. 
+                Elimina la captura manual de datos repetitivos, reduce errores humanos y acelera significativamente el proceso de generación de documentos oficiales. 
+                El sistema procesa plantillas de Word con campos predefinidos y genera documentos completos listos para firma y entrega.
               </p>
               <div class="key-features">
                 <div class="feature-item" tabindex="0">
-                  <i class="fas fa-globe" aria-hidden="true"></i>
-                  <h4>Descarga Universal Multi-Plataforma</h4>
-                  <p>Detección automática de plataforma con normalización inteligente de URLs</p>
-                </div>
-                <div class="feature-item" tabindex="0">
-                  <i class="fas fa-shield-alt" aria-hidden="true"></i>
-                  <h4>Sistema de Respaldo Robusto</h4>
-                  <p>Múltiples métodos de descarga con fallback automático en caso de fallo</p>
-                </div>
-                <div class="feature-item" tabindex="0">
                   <i class="fas fa-desktop" aria-hidden="true"></i>
-                  <h4>Interfaz Web Completa</h4>
-                  <p>Dashboard responsivo con historial y API REST para integración móvil</p>
+                  <h4>Múltiples Interfaces de Captura</h4>
+                  <p>Comandos, modo guiado, reconocimiento de voz y diccionarios predefinidos</p>
+                </div>
+                <div class="feature-item" tabindex="0">
+                  <i class="fas fa-file-word" aria-hidden="true"></i>
+                  <h4>Procesamiento Inteligente de Plantillas</h4>
+                  <p>Detección automática de campos con preservación del formato original</p>
+                </div>
+                <div class="feature-item" tabindex="0">
+                  <i class="fas fa-user-md" aria-hidden="true"></i>
+                  <h4>Gestión de Datos Médicos Especializados</h4>
+                  <p>Campos específicos para diagnósticos, períodos y información administrativa</p>
                 </div>
               </div>
             </div>
@@ -87,28 +91,28 @@
                 <div class="detail-card architecture">
                   <h4><i class="fas fa-layer-group"></i> Arquitectura</h4>
                   <ul>
-                    <li>Patrón MVC (Model-View-Controller)</li>
-                    <li>Estructura modular por plataforma</li>
-                    <li>API RESTful con endpoints JSON</li>
-                    <li>Sistema de gestión de archivos</li>
+                    <li>Patrón modular con separación de responsabilidades</li>
+                    <li>Módulos especializados por tipo de interfaz</li>
+                    <li>Procesamiento secuencial con validación</li>
+                    <li>Manejo de diccionarios Python para mapeo</li>
                   </ul>
                 </div>
                 <div class="detail-card optimization">
                   <h4><i class="fas fa-bolt"></i> Optimización</h4>
                   <ul>
-                    <li>Múltiples métodos de respaldo</li>
-                    <li>Normalización automática de URLs</li>
-                    <li>Expansión de enlaces acortados</li>
-                    <li>Historial con límite de 50 entradas</li>
+                    <li>Búsqueda recursiva en elementos del documento</li>
+                    <li>Validación de campos obligatorios vs opcionales</li>
+                    <li>Reemplazo de texto preservando estilos</li>
+                    <li>Funciones centralizadas para procesamiento</li>
                   </ul>
                 </div>
                 <div class="detail-card features">
                   <h4><i class="fas fa-star"></i> Características Avanzadas</h4>
                   <ul>
-                    <li>Detección automática de plataforma</li>
-                    <li>Múltiples opciones de calidad</li>
-                    <li>Fallback automático</li>
-                    <li>Logging detallado de errores</li>
+                    <li>Reconocimiento de voz para accesibilidad</li>
+                    <li>Interfaz adaptada a diferentes niveles técnicos</li>
+                    <li>Preservación completa del formato oficial</li>
+                    <li>Sistema de validación en cada paso</li>
                   </ul>
                 </div>
               </div>
@@ -118,31 +122,26 @@
             <div class="project-section tech-stack">
               <h3>Stack Tecnológico</h3>
               <div class="tech-grid">
-                <div class="tech-category frontend">
-                  <h4><i class="fas fa-code"></i> Frontend</h4>
-                  <div class="tech-items">
-                    <span class="tech-badge">HTML5</span>
-                    <span class="tech-badge">CSS3</span>
-                    <span class="tech-badge">JavaScript ES6+</span>
-                    <span class="tech-badge">Font Awesome 6.4.0</span>
-                  </div>
-                </div>
                 <div class="tech-category backend">
-                  <h4><i class="fas fa-server"></i> Backend</h4>
+                  <h4><i class="fas fa-code"></i> Lenguaje Principal</h4>
                   <div class="tech-items">
                     <span class="tech-badge">Python 3.x</span>
-                    <span class="tech-badge">Flask 2.3.3</span>
-                    <span class="tech-badge">yt-dlp 2023.7.6</span>
-                    <span class="tech-badge">flask-cors 4.0.0</span>
-                    <span class="tech-badge">Werkzeug 2.3.7</span>
                   </div>
                 </div>
                 <div class="tech-category tools">
-                  <h4><i class="fas fa-tools"></i> Herramientas</h4>
+                  <h4><i class="fas fa-tools"></i> Librerías Principales</h4>
                   <div class="tech-items">
-                    <span class="tech-badge">requests 2.31.0</span>
-                    <span class="tech-badge">Vanilla JavaScript</span>
-                    <span class="tech-badge">Responsive Design</span>
+                    <span class="tech-badge">python-docx</span>
+                    <span class="tech-badge">re (regex)</span>
+                    <span class="tech-badge">speech_recognition</span>
+                    <span class="tech-badge">pyttsx3</span>
+                  </div>
+                </div>
+                <div class="tech-category files">
+                  <h4><i class="fas fa-file"></i> Formatos</h4>
+                  <div class="tech-items">
+                    <span class="tech-badge">Microsoft Word (.docx)</span>
+                    <span class="tech-badge">Multiplataforma</span>
                   </div>
                 </div>
               </div>
@@ -155,39 +154,39 @@
                 <div class="challenge-card">
                   <div class="challenge-header">
                     <i class="fas fa-exclamation-circle"></i>
-                    <h4>URLs Acortadas y Variaciones</h4>
+                    <h4>Detección de Campos Complejos</h4>
                   </div>
                   <div class="challenge-content">
-                    <p class="problem">TikTok usa múltiples formatos de URL (vm.tiktok.com, vt.tiktok.com).</p>
+                    <p class="problem">Los campos pueden estar en párrafos o tablas con formato complejo.</p>
                     <p class="solution">
                       <i class="fas fa-check-circle"></i>
-                      Sistema de normalización con expansión automática usando requests.head().
+                      Búsqueda recursiva en todos los elementos del documento (párrafos, tablas, celdas).
                     </p>
                   </div>
                 </div>
                 <div class="challenge-card">
                   <div class="challenge-header">
                     <i class="fas fa-exclamation-circle"></i>
-                    <h4>Confiabilidad Multi-Plataforma</h4>
+                    <h4>Interfaz para Personal No Técnico</h4>
                   </div>
                   <div class="challenge-content">
-                    <p class="problem">APIs de redes sociales cambian frecuentemente, causando fallos.</p>
+                    <p class="problem">El personal médico necesitaba una interfaz simple e intuitiva.</p>
                     <p class="solution">
                       <i class="fas fa-check-circle"></i>
-                      Arquitectura de múltiples métodos de respaldo con fallback automático.
+                      Múltiples interfaces (guiada, por voz, comandos) adaptadas a diferentes niveles.
                     </p>
                   </div>
                 </div>
                 <div class="challenge-card">
                   <div class="challenge-header">
                     <i class="fas fa-exclamation-circle"></i>
-                    <h4>Gestión de Archivos</h4>
+                    <h4>Preservación del Formato</h4>
                   </div>
                   <div class="challenge-content">
-                    <p class="problem">Manejo eficiente de archivos descargados y limpieza de storage.</p>
+                    <p class="problem">Mantener el formato oficial del documento tras el llenado automático.</p>
                     <p class="solution">
                       <i class="fas fa-check-circle"></i>
-                      Sistema de historial JSON con límite de 50 entradas y nombres únicos UUID.
+                      Reemplazo de texto preservando estilos, tablas y estructura original.
                     </p>
                   </div>
                 </div>
@@ -199,13 +198,38 @@
               <h3>Demo en Video</h3>
               <div class="video-container" style="text-align: center; padding: 2rem; background: #f8f9fa; border-radius: 10px;">
                 <!-- TODO: Reemplazar con video real (60-90 segundos) -->
-                <!-- Demostrar descarga desde Instagram, TikTok y Facebook -->
-                <!-- Mostrar diferentes opciones de calidad -->
-                <!-- Visualizar historial y gestión de archivos -->
+                <!-- Mostrar: Diferentes interfaces, procesamiento de documento, antes/después -->
                 <div class="video-placeholder" style="background: #e9ecef; padding: 4rem; border-radius: 8px; border: 2px dashed #6c757d;">
                   <i class="fas fa-video" style="font-size: 3rem; color: #6c757d; margin-bottom: 1rem;"></i>
                   <p style="color: #6c757d; margin: 0; font-size: 1.1rem;">Video Demo Próximamente</p>
-                  <small style="color: #6c757d;">Descarga desde Instagram, TikTok y Facebook con múltiples calidades</small>
+                  <small style="color: #6c757d;">Demostración de automatización de licencias médicas en acción</small>
+                </div>
+              </div>
+            </div>
+
+            <!-- Workflow Section -->
+            <div class="project-section workflow">
+              <h3>Flujo de Trabajo</h3>
+              <div class="workflow-steps">
+                <div class="step">
+                  <i class="fas fa-upload"></i>
+                  <h4>1. Cargar Plantilla</h4>
+                  <p>Documento Word con campos predefinidos</p>
+                </div>
+                <div class="step">
+                  <i class="fas fa-keyboard"></i>
+                  <h4>2. Capturar Datos</h4>
+                  <p>Interfaz guiada, comandos o reconocimiento de voz</p>
+                </div>
+                <div class="step">
+                  <i class="fas fa-cogs"></i>
+                  <h4>3. Procesar Documento</h4>
+                  <p>Llenado automático preservando formato</p>
+                </div>
+                <div class="step">
+                  <i class="fas fa-download"></i>
+                  <h4>4. Generar Resultado</h4>
+                  <p>Documento completo listo para firma</p>
                 </div>
               </div>
             </div>
@@ -214,28 +238,28 @@
             <div class="project-section resources">
               <h3>Enlaces y Recursos</h3>
               <div class="resources-grid">
-                <a href="#" class="resource-card github disabled" title="Pendiente - agregar URL del repositorio">
+                <a href="#" class="resource-card github disabled" title="Proyecto confidencial - sector salud">
                   <i class="fab fa-github"></i>
-                  <span>Código Fuente</span>
+                  <span>Código Confidencial</span>
                 </a>
                 <a href="#" class="resource-card docs">
                   <i class="fas fa-book"></i>
-                  <span>Docstrings Detallados</span>
+                  <span>Documentación Técnica</span>
                 </a>
-                <a href="#" class="resource-card demo disabled" title="Pendiente - agregar URL si está desplegado">
-                  <i class="fas fa-globe"></i>
-                  <span>Demo Web</span>
+                <a href="#" class="resource-card demo disabled" title="Uso interno - sector salud">
+                  <i class="fas fa-hospital"></i>
+                  <span>Uso Interno</span>
                 </a>
               </div>
             </div>
 
             <!-- Project Navigation -->
             <div class="project-navigation">
-              <a href="mouse-remoto.html" class="prev-project">
-                <i class="fas fa-arrow-left"></i> Proyecto Anterior: Remote Mouse
+              <a href="excel-scraper.html" class="prev-project">
+                <i class="fas fa-arrow-left"></i> Proyecto Anterior: Excel Scraper
               </a>
-              <a href="calculadora-distancias.html" class="next-project">
-                Siguiente Proyecto: Calculadora de Distancias <i class="fas fa-arrow-right"></i>
+              <a href="constancias-escolares-ia.html" class="next-project">
+                Siguiente Proyecto: Sistema de Constancias Escolares con IA <i class="fas fa-arrow-right"></i>
               </a>
             </div>
           </div>
@@ -244,15 +268,17 @@
     </div>
 
     <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
     <script src="../vendor/jquery/jquery.min.js"></script>
     <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
     <script src="../assets/js/isotope.min.js"></script>
     <script src="../assets/js/owl-carousel.js"></script>
     <script src="../assets/js/lightbox.js"></script>
     <script src="../assets/js/custom.js"></script>
     <script src="../assets/js/theme-switcher.js"></script>
     <script src="../assets/js/template-loader.js"></script>
-    
+
     <script>
       document.addEventListener('DOMContentLoaded', async function() {
         try {
@@ -265,4 +291,4 @@
       });
     </script>
   </body>
-</html> 
+</html>

@@ -78,6 +78,11 @@ Las siguientes tecnologías están configuradas en los archivos de traducción:
 - `tech.beautifulsoup` → "BeautifulSoup"
 - `tech.html` → "HTML/CSS"
 - `tech.responsive` → "Responsive Design"
+- `tech.docx` → "python-docx"
+- `tech.voice` → "Reconocimiento de Voz"
+- `tech.ai` → "Inteligencia Artificial"
+- `tech.pyqt` → "PyQt5"
+- `tech.gemini` → "Google Gemini"
 
 ## Iconos Recomendados (FontAwesome)
 
@@ -89,6 +94,8 @@ Las siguientes tecnologías están configuradas en los archivos de traducción:
 - `fa-mobile-alt` - Para aplicaciones móviles
 - `fa-globe` - Para aplicaciones web
 - `fa-desktop` - Para aplicaciones de escritorio
+- `fa-file-medical` - Para sistemas médicos/salud
+- `fa-graduation-cap` - Para sistemas educativos/escolares
 
 ## Proceso para Agregar Nuevos Proyectos
 

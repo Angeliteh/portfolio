@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Constancias Escolares con IA</title>
+    
+    <!-- Mover el CSP aquí y actualizarlo -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' https:; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https:; connect-src 'self' https:;">
+    
+    <!-- Update CSS paths to use relative paths -->
+    <link rel="stylesheet" href="../assets/css/fontawesome.css">
+    <link rel="stylesheet" href="../assets/css/templatemo-style.css">
+    <link rel="stylesheet" href="../assets/css/owl.css">
+    <link rel="stylesheet" href="../assets/css/lightbox.css">
+    <link rel="stylesheet" href="../assets/css/custom-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  </head>
+
+  <body>
+    <div id="page-wraper">
+      <div id="sidebar-container"></div>
+      <div class="project-content">
+        <section class="section project-details">
+          <div class="container">
+            <div class="section-heading">
+              <h2>Sistema de Constancias Escolares con IA</h2>
+              <div class="line-dec"></div>
+              <span>App de escritorio con IA que automatiza constancias y gestión escolar</span>
+            </div>
+
+            <!-- Project Preview -->
+            <div class="project-preview">
+              <div class="preview-container">
+                <!-- TODO: Reemplazar con screenshot del sistema (Chat IA + Panel PDF) -->
+                <!-- Mostrar: MenuPrincipal o ChatWindow con constancia generada y panel PDF -->
+                <img 
+                  src="../assets/images/constancias-escolares-ia-preview.jpg" 
+                  alt="Sistema de Constancias Escolares con IA Demo"
+                  class="main-preview"
+                  loading="lazy"
+                />
+                <div class="metrics-overlay">
+                  <div class="metric-card" tabindex="0">
+                    <i class="fas fa-robot" aria-hidden="true"></i>
+                    <span>IA Master-Student</span>
+                  </div>
+                  <div class="metric-card" tabindex="0">
+                    <i class="fas fa-school" aria-hidden="true"></i>
+                    <span>En producción</span>
+                  </div>
+                  <div class="metric-card" tabindex="0">
+                    <i class="fas fa-file-pdf" aria-hidden="true"></i>
+                    <span>1-5s por PDF</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project Overview -->
+            <div class="project-section overview">
+              <h3>Descripción General</h3>
+              <p>
+                Aplicación de escritorio (PyQt + PyInstaller) usada en producción por una escuela para reemplazar tareas de secretaría: 
+                búsqueda/gestión de alumnos, generación y transformación de constancias PDF, consultas y recomendaciones inteligentes vía IA. 
+                Arquitectura de IA con "Master Interpreter" que detecta intención y sub-intenciones y enruta a especialistas (Student/Help), 
+                integrándose con servicios locales (SQLite, PDF). Escalable y robusta: mejora con nuevos modelos de IA y empaquetado estable.
+              </p>
+              <div class="key-features">
+                <div class="feature-item" tabindex="0">
+                  <i class="fas fa-brain" aria-hidden="true"></i>
+                  <h4>Master-Student AI Routing</h4>
+                  <p>Master Interpreter detecta intención y delega a especialistas con memoria conversacional</p>
+                </div>
+                <div class="feature-item" tabindex="0">
+                  <i class="fas fa-file-pdf" aria-hidden="true"></i>
+                  <h4>Generación y Transformación de Constancias PDF</h4>
+                  <p>wkhtmltopdf con plantillas, vista previa integrada y transformación de PDFs existentes</p>
+                </div>
+                <div class="feature-item" tabindex="0">
+                  <i class="fas fa-database" aria-hidden="true"></i>
+                  <h4>Interfaz Clásica CRUD + Búsquedas</h4>
+                  <p>Módulos para gestionar alumnos, buscar/filtrar y emitir constancias con estética adaptativa</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Technical Details -->
+            <div class="project-section technical">
+              <h3>Detalles Técnicos</h3>
+              <div class="tech-details-grid">
+                <div class="detail-card architecture">
+                  <h4><i class="fas fa-layer-group"></i> Arquitectura IA</h4>
+                  <ul>
+                    <li>Intention-based Master–Student–Help routing</li>
+                    <li>Análisis unificado con conversation_stack</li>
+                    <li>Service–Repository para datos separado de UI</li>
+                    <li>Señales/slots PyQt para hilos de IA</li>
+                  </ul>
+                </div>
+                <div class="detail-card ai">
+                  <h4><i class="fas fa-robot"></i> Sistema de IA</h4>
+                  <ul>
+                    <li>Google Generative AI (Gemini 2.0-flash + fallback)</li>
+                    <li>MasterPromptManager con contexto conversacional</li>
+                    <li>Enrutamiento automático de intenciones</li>
+                    <li>Solicitudes de aclaración inteligentes</li>
+                  </ul>
+                </div>
+                <div class="detail-card features">
+                  <h4><i class="fas fa-star"></i> Características Avanzadas</h4>
+                  <ul>
+                    <li>Normalización centralizada de datos escolares</li>
+                    <li>Health checks y auto-cleanup de contexto</li>
+                    <li>Empaquetado PyInstaller con recursos incluidos</li>
+                    <li>Fallbacks multi-nivel para resiliencia</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tech Stack -->
+            <div class="project-section tech-stack">
+              <h3>Stack Tecnológico</h3>
+              <div class="tech-grid">
+                <div class="tech-category frontend">
+                  <h4><i class="fas fa-desktop"></i> Frontend</h4>
+                  <div class="tech-items">
+                    <span class="tech-badge">PyQt5</span>
+                    <span class="tech-badge">Señales/Slots</span>
+                    <span class="tech-badge">Estilos Centralizados</span>
+                    <span class="tech-badge">UI Adaptativa</span>
+                  </div>
+                </div>
+                <div class="tech-category backend">
+                  <h4><i class="fas fa-server"></i> Backend</h4>
+                  <div class="tech-items">
+                    <span class="tech-badge">Python 3.12/3.13</span>
+                    <span class="tech-badge">Arquitectura por Capas</span>
+                    <span class="tech-badge">SQLite</span>
+                    <span class="tech-badge">Repositorios/Servicios</span>
+                  </div>
+                </div>
+                <div class="tech-category ai">
+                  <h4><i class="fas fa-brain"></i> IA</h4>
+                  <div class="tech-items">
+                    <span class="tech-badge">Google Generative AI</span>
+                    <span class="tech-badge">Gemini 2.0-flash</span>
+                    <span class="tech-badge">Master-Student Pattern</span>
+                    <span class="tech-badge">Conversation Stack</span>
+                  </div>
+                </div>
+                <div class="tech-category tools">
+                  <h4><i class="fas fa-tools"></i> Herramientas</h4>
+                  <div class="tech-items">
+                    <span class="tech-badge">PyInstaller</span>
+                    <span class="tech-badge">wkhtmltopdf</span>
+                    <span class="tech-badge">pdfplumber</span>
+                    <span class="tech-badge">python-dotenv</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Challenges and Solutions -->
+            <div class="project-section challenges">
+              <h3>Desafíos y Soluciones</h3>
+              <div class="challenges-grid">
+                <div class="challenge-card">
+                  <div class="challenge-header">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <h4>google-generativeai + PyInstaller</h4>
+                  </div>
+                  <div class="challenge-content">
+                    <p class="problem">Import y runtime rotos al congelar; variables de entorno inaccesibles.</p>
+                    <p class="solution">
+                      <i class="fas fa-check-circle"></i>
+                      "Monkey patch" temprano, carga manual de .env en ejecutable, hooks/paths configurados con fallback de modelos.
+                    </p>
+                  </div>
+                </div>
+                <div class="challenge-card">
+                  <div class="challenge-header">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <h4>Enrutamiento de Intenciones + Contexto</h4>
+                  </div>
+                  <div class="challenge-content">
+                    <p class="problem">Ambigüedades ("él", "el segundo", "de esos..."), decidir si usar contexto y cómo resolver referencias.</p>
+                    <p class="solution">
+                      <i class="fas fa-check-circle"></i>
+                      Análisis unificado con MasterPromptManager; conversation_stack con awaiting; continuidad inteligente.
+                    </p>
+                  </div>
+                </div>
+                <div class="challenge-card">
+                  <div class="challenge-header">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <h4>Normalización y Consistencia de Datos</h4>
+                  </div>
+                  <div class="challenge-content">
+                    <p class="problem">Variantes de nombres/campos afectan búsquedas y constancias.</p>
+                    <p class="solution">
+                      <i class="fas fa-check-circle"></i>
+                      Normalización centralizada en Config; validación con advertencias; ordenamiento por configuración.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Video Demo Section -->
+            <div class="project-section video-demo" style="margin-top: 2rem;">
+              <h3>Demo en Video</h3>
+              <div class="video-container" style="text-align: center; padding: 2rem; background: #f8f9fa; border-radius: 10px;">
+                <!-- TODO: Reemplazar con video real (60-90 segundos) -->
+                <!-- Mostrar: problema → búsqueda alumno → constancia generada → chat IA → beneficios -->
+                <div class="video-placeholder" style="background: #e9ecef; padding: 4rem; border-radius: 8px; border: 2px dashed #6c757d;">
+                  <i class="fas fa-video" style="font-size: 3rem; color: #6c757d; margin-bottom: 1rem;"></i>
+                  <p style="color: #6c757d; margin: 0; font-size: 1.1rem;">Video Demo Próximamente</p>
+                  <small style="color: #6c757d;">Demostración completa del sistema IA en producción</small>
+                </div>
+              </div>
+            </div>
+
+            <!-- Workflow Section -->
+            <div class="project-section workflow">
+              <h3>Flujo de Trabajo IA</h3>
+              <div class="workflow-steps">
+                <div class="step">
+                  <i class="fas fa-comments"></i>
+                  <h4>1. Chat Engine</h4>
+                  <p>Recibe consulta natural del usuario</p>
+                </div>
+                <div class="step">
+                  <i class="fas fa-brain"></i>
+                  <h4>2. Master Interpreter</h4>
+                  <p>Detecta intención y sub-intenciones</p>
+                </div>
+                <div class="step">
+                  <i class="fas fa-route"></i>
+                  <h4>3. Routing Especializado</h4>
+                  <p>Enruta a Student/Help según contexto</p>
+                </div>
+                <div class="step">
+                  <i class="fas fa-cogs"></i>
+                  <h4>4. Action Executor</h4>
+                  <p>Ejecuta servicios y genera respuesta</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Client Feedback Section -->
+            <div class="project-section feedback" style="margin-top: 2rem;">
+              <h3>Impacto en Producción</h3>
+              <div class="feedback-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <div class="feedback-card" style="background: #f8f9fa; padding: 2rem; border-radius: 10px; border-left: 4px solid #28a745;">
+                  <div class="feedback-header" style="display: flex; align-items: center; margin-bottom: 1rem;">
+                    <i class="fas fa-user-tie" style="font-size: 2rem; color: #28a745; margin-right: 1rem;"></i>
+                    <div>
+                      <h4 style="margin: 0; color: #333;">Directora Académica</h4>
+                      <small style="color: #666;">Escuela Primaria "Benito Juárez"</small>
+                    </div>
+                  </div>
+                  <p style="font-style: italic; color: #555; margin-bottom: 1rem;">
+                    "Antes tardábamos 15-20 minutos por constancia buscando expedientes físicos. 
+                    Ahora el sistema genera todo en menos de 2 minutos con solo escribir el nombre del alumno."
+                  </p>
+                  <div class="feedback-metrics" style="display: flex; gap: 1rem;">
+                    <span style="background: #28a745; color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">
+                      <i class="fas fa-clock"></i> 85% menos tiempo
+                    </span>
+                    <span style="background: #17a2b8; color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">
+                      <i class="fas fa-chart-line"></i> 200+ constancias/mes
+                    </span>
+                  </div>
+                </div>
+                
+                <div class="feedback-card" style="background: #f8f9fa; padding: 2rem; border-radius: 10px; border-left: 4px solid #007bff;">
+                  <div class="feedback-header" style="display: flex; align-items: center; margin-bottom: 1rem;">
+                    <i class="fas fa-user-graduate" style="font-size: 2rem; color: #007bff; margin-right: 1rem;"></i>
+                    <div>
+                      <h4 style="margin: 0; color: #333;">Secretaria Escolar</h4>
+                      <small style="color: #666;">Usuario principal del sistema</small>
+                    </div>
+                  </div>
+                  <p style="font-style: italic; color: #555; margin-bottom: 1rem;">
+                    "La IA entiende perfectamente cuando le digo 'necesito la constancia de Juan de 5to B'. 
+                    Ya no tengo que recordar procedimientos complicados, solo hablo natural."
+                  </p>
+                  <div class="feedback-metrics" style="display: flex; gap: 1rem;">
+                    <span style="background: #007bff; color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">
+                      <i class="fas fa-smile"></i> 95% satisfacción
+                    </span>
+                    <span style="background: #6f42c1; color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">
+                      <i class="fas fa-robot"></i> 98% precisión IA
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Links and Resources -->
+            <div class="project-section resources">
+              <h3>Enlaces y Recursos</h3>
+              <div class="resources-grid">
+                <a href="#" class="resource-card github disabled" title="Repositorio privado - datos escolares">
+                  <i class="fab fa-github"></i>
+                  <span>Código Privado</span>
+                </a>
+                <a href="#" class="resource-card docs">
+                  <i class="fas fa-book"></i>
+                  <span>Documentación Técnica</span>
+                </a>
+                <a href="#" class="resource-card demo disabled" title="En producción - acceso restringido">
+                  <i class="fas fa-school"></i>
+                  <span>En Producción</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Project Navigation -->
+            <div class="project-navigation">
+              <a href="licencias-medicas.html" class="prev-project">
+                <i class="fas fa-arrow-left"></i> Proyecto Anterior: Sistema de Licencias Médicas
+              </a>
+              <a href="../index.html#section3" class="next-project">
+                Volver al Portafolio <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="../assets/js/isotope.min.js"></script>
+    <script src="../assets/js/owl-carousel.js"></script>
+    <script src="../assets/js/lightbox.js"></script>
+    <script src="../assets/js/custom.js"></script>
+    <script src="../assets/js/theme-switcher.js"></script>
+    <script src="../assets/js/template-loader.js"></script>
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', async function() {
+        try {
+          console.log('Iniciando carga de componentes...');
+          await TemplateLoader.loadSidebar();
+          await TemplateLoader.updateCSSPaths();
+        } catch (error) {
+          console.error('Error durante la inicialización:', error);
+        }
+      });
+    </script>
+  </body>
+</html>

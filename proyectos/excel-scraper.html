@@ -1,23 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="Detalle del proyecto Procesador de Datos Escolares" />
-    <meta name="author" content="Angel" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,700,900" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Universal de Validación y Visualización de Tablas Excel</title>
 
-    <title>Procesador de Datos Escolares - Detalle del Proyecto</title>
+    <!-- Mover el CSP aquí y actualizarlo -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' https:; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https:; connect-src 'self' https:;">
 
-    <!-- Bootstrap core CSS -->
-    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="../assets/css/fontawesome.css" />
-    <link rel="stylesheet" href="../assets/css/templatemo-style.css" />
-    <link rel="stylesheet" href="../assets/css/owl.css" />
-    <link rel="stylesheet" href="../assets/css/lightbox.css" />
-    <link rel="stylesheet" href="../assets/css/custom-styles.css" />
+    <!-- Update CSS paths to use relative paths -->
+    <link rel="stylesheet" href="../assets/css/fontawesome.css">
+    <link rel="stylesheet" href="../assets/css/templatemo-style.css">
+    <link rel="stylesheet" href="../assets/css/owl.css">
+    <link rel="stylesheet" href="../assets/css/lightbox.css">
+    <link rel="stylesheet" href="../assets/css/custom-styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   </head>
 
@@ -39,31 +35,34 @@
       <section class="section project-details">
         <div class="container">
           <div class="section-heading">
-            <h2>Procesador de Datos Escolares</h2>
+            <h2>Sistema Universal de Validación y Visualización de Tablas Excel</h2>
             <div class="line-dec"></div>
-            <span>Automatización inteligente para el procesamiento de datos educativos</span>
+            <span>Sistema universal de validación y visualización de tablas Excel</span>
           </div>
 
           <!-- Project Preview -->
           <div class="project-preview">
             <div class="preview-container">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                   data-src="https://via.placeholder.com/1200x800/0984e3/ffffff?text=Excel+Scraper" 
-                   alt="Excel Scraper Demo"
-                   class="main-preview lazy"
-                   loading="lazy"/>
+              <!-- TODO: Reemplazar con screenshot del sistema (Desktop + Web) -->
+              <!-- Mostrar: Paso 1 y Paso 4, datos reales, celdas combinadas visibles -->
+              <img
+                src="../assets/images/excel-scraper-preview.jpg"
+                alt="Sistema Universal de Validación Excel Demo"
+                class="main-preview"
+                loading="lazy"
+              />
               <div class="metrics-overlay">
                 <div class="metric-card" tabindex="0">
-                  <i class="fas fa-clock" aria-hidden="true"></i>
-                  <span>95% Reducción de Tiempo</span>
+                  <i class="fas fa-tachometer-alt" aria-hidden="true"></i>
+                  <span>90-95% reducción tiempo</span>
+                </div>
+                <div class="metric-card" tabindex="0">
+                  <i class="fas fa-layer-group" aria-hidden="true"></i>
+                  <span>Multi-archivo y pestaña</span>
                 </div>
                 <div class="metric-card" tabindex="0">
                   <i class="fas fa-check-circle" aria-hidden="true"></i>
-                  <span>Error < 1%</span>
-                </div>
-                <div class="metric-card" tabindex="0">
-                  <i class="fas fa-users" aria-hidden="true"></i>
-                  <span>Adopción 100%</span>
+                  <span>Validaciones universales</span>
                 </div>
               </div>
             </div>
@@ -73,25 +72,26 @@
           <div class="project-section overview">
             <h3>Descripción General</h3>
             <p>
-              El Procesador de Datos Escolares es una solución especializada que automatiza la consolidación
-              y procesamiento de datos estadísticos escolares, transformando múltiples archivos Excel en
-              reportes estandarizados y una base de datos centralizada.
+              Plataforma integral que automatiza la extracción, combinación, validación y presentación de tablas educativas en Excel,
+              con una arquitectura compartida y reusable entre una app de escritorio (PyQt) y una interfaz web moderna (React + Flask).
+              El núcleo implementa un algoritmo bidimensional de detección de celdas combinadas a partir de marcadores [valor],
+              generando spans precisos, datos limpiamente combinados y una base robusta para validaciones universales.
             </p>
             <div class="key-features">
               <div class="feature-item" tabindex="0">
-                <i class="fas fa-bolt" aria-hidden="true"></i>
-                <h4>Procesamiento Rápido</h4>
-                <p>Reduce el tiempo de procesamiento de horas a minutos</p>
+                <i class="fas fa-th" aria-hidden="true"></i>
+                <h4>Algoritmo Bidimensional de Celdas Combinadas</h4>
+                <p>Detecta spans horizontal/vertical basados en marcadores [valor] con limpieza y generación de mergedCells precisos</p>
               </div>
               <div class="feature-item" tabindex="0">
-                <i class="fas fa-shield-alt" aria-hidden="true"></i>
-                <h4>Alta Precisión</h4>
-                <p>Tasa de error menor al 1% en procesamiento de datos</p>
+                <i class="fas fa-layer-group" aria-hidden="true"></i>
+                <h4>Arquitectura Multiplataforma con Core Reutilizable</h4>
+                <p>Desktop (PyQt) y Web (React/Flask) comparten módulos de negocio con controladores especializados</p>
               </div>
               <div class="feature-item" tabindex="0">
-                <i class="fas fa-database" aria-hidden="true"></i>
-                <h4>Almacenamiento Dual</h4>
-                <p>Sistema híbrido SQLite + Excel para máxima compatibilidad</p>
+                <i class="fas fa-check-double" aria-hidden="true"></i>
+                <h4>Validaciones Educativas Sofisticadas y UI de 4 Pasos</h4>
+                <p>Coherencia, subtotales, totales con flujo Paso 1-4 y tabla tipo Excel con selección de rango</p>
               </div>
             </div>
           </div>
@@ -103,28 +103,28 @@
               <div class="detail-card architecture">
                 <h4><i class="fas fa-layer-group"></i> Arquitectura</h4>
                 <ul>
-                  <li>Patrón MVC modificado para desktop</li>
-                  <li>Sistema modular desacoplado</li>
-                  <li>Procesamiento optimizado con Pandas</li>
-                  <li>Interfaz gráfica con PySimpleGUI</li>
+                  <li>Separación por capas con controladores especializados</li>
+                  <li>MVC/MVP híbrido en Desktop, cliente-servidor REST en Web</li>
+                  <li>Core puro sin dependencias de UI</li>
+                  <li>Aislamiento por pestaña y por archivo</li>
                 </ul>
               </div>
-              <div class="detail-card security">
-                <h4><i class="fas fa-shield-alt"></i> Seguridad</h4>
+              <div class="detail-card optimization">
+                <h4><i class="fas fa-bolt"></i> Optimización</h4>
                 <ul>
-                  <li>Validación multinivel de datos</li>
-                  <li>Logging de operaciones críticas</li>
-                  <li>Respaldo automático de datos</li>
-                  <li>Manejo robusto de excepciones</li>
+                  <li>Algoritmo bidimensional de detección de celdas combinadas</li>
+                  <li>Función pura memoizada (useMemo/useCallback) en Web</li>
+                  <li>Sistema de logs "rastreador" con evidencia de estados</li>
+                  <li>Configuración centralizada por periodo y modo</li>
                 </ul>
               </div>
               <div class="detail-card features">
                 <h4><i class="fas fa-star"></i> Características Avanzadas</h4>
                 <ul>
-                  <li>Procesamiento batch de archivos</li>
-                  <li>Normalización automática de datos</li>
-                  <li>Validación en tiempo real</li>
-                  <li>Reportes estandarizados</li>
+                  <li>Validaciones universales (coherencia, subtotales, totales)</li>
+                  <li>UI de 4 pasos con datos crudos como fuente canónica</li>
+                  <li>Interfaz web tipo Excel con selección de rango</li>
+                  <li>Configuración dinámica vía JSON (roadmap)</li>
                 </ul>
               </div>
             </div>
@@ -134,21 +134,38 @@
           <div class="project-section tech-stack">
             <h3>Stack Tecnológico</h3>
             <div class="tech-grid">
-              <div class="tech-category backend">
-                <h4><i class="fas fa-cogs"></i> Core</h4>
+              <div class="tech-category frontend">
+                <h4><i class="fas fa-code"></i> Frontend</h4>
                 <div class="tech-items">
-                  <span class="tech-badge">Python 3.x</span>
-                  <span class="tech-badge">Pandas</span>
-                  <span class="tech-badge">OpenPyXL</span>
-                  <span class="tech-badge">SQLite</span>
+                  <span class="tech-badge">React 18</span>
+                  <span class="tech-badge">CSS Módulos</span>
+                  <span class="tech-badge">Functional Components</span>
+                  <span class="tech-badge">Hooks</span>
                 </div>
               </div>
-              <div class="tech-category frontend">
-                <h4><i class="fas fa-desktop"></i> Interface</h4>
+              <div class="tech-category backend">
+                <h4><i class="fas fa-server"></i> Backend</h4>
                 <div class="tech-items">
-                  <span class="tech-badge">PySimpleGUI</span>
-                  <span class="tech-badge">Matplotlib</span>
-                  <span class="tech-badge">ReportLab</span>
+                  <span class="tech-badge">Flask</span>
+                  <span class="tech-badge">Blueprints</span>
+                  <span class="tech-badge">CORS</span>
+                  <span class="tech-badge">API REST</span>
+                </div>
+              </div>
+              <div class="tech-category desktop">
+                <h4><i class="fas fa-desktop"></i> Desktop</h4>
+                <div class="tech-items">
+                  <span class="tech-badge">PyQt5</span>
+                  <span class="tech-badge">Python 3.8+</span>
+                  <span class="tech-badge">pandas</span>
+                </div>
+              </div>
+              <div class="tech-category tools">
+                <h4><i class="fas fa-tools"></i> Herramientas</h4>
+                <div class="tech-items">
+                  <span class="tech-badge">Node.js/npm</span>
+                  <span class="tech-badge">start_web_development.py</span>
+                  <span class="tech-badge">Modular Architecture</span>
                 </div>
               </div>
             </div>
@@ -161,42 +178,102 @@
               <div class="challenge-card">
                 <div class="challenge-header">
                   <i class="fas fa-exclamation-circle"></i>
-                  <h4>Celdas Combinadas</h4>
+                  <h4>Aislamiento Perfecto entre Pestañas</h4>
                 </div>
                 <div class="challenge-content">
-                  <p class="problem">Manejo complejo de celdas combinadas en Excel.</p>
+                  <p class="problem">La segunda pestaña no detectaba correctamente archivos ya procesados y compartía estado global.</p>
                   <p class="solution">
                     <i class="fas fa-check-circle"></i>
-                    Algoritmo especializado de detección y procesamiento.
+                    Datos específicos por pestaña/archivo en app_controller con verificación dual y guardado de proceso_secuencial_activo.
                   </p>
                 </div>
               </div>
               <div class="challenge-card">
                 <div class="challenge-header">
                   <i class="fas fa-exclamation-circle"></i>
-                  <h4>Formatos Diversos</h4>
+                  <h4>Paso 4 Incorrecto por Fallbacks</h4>
                 </div>
                 <div class="challenge-content">
-                  <p class="problem">Inconsistencia entre formatos de entrada.</p>
+                  <p class="problem">Paso 4 mostraba datos del Paso 3 (fallback a datos_numericos) y mapeos incompletos.</p>
                   <p class="solution">
                     <i class="fas fa-check-circle"></i>
-                    Sistema robusto de normalización de datos.
+                    Priorizar datos_paso4, eliminar fallback problemático y mapeo completo para compatibilidad.
                   </p>
                 </div>
               </div>
               <div class="challenge-card">
                 <div class="challenge-header">
                   <i class="fas fa-exclamation-circle"></i>
-                  <h4>Volumen de Datos</h4>
+                  <h4>Portar Lógica de Combinaciones a Web</h4>
                 </div>
                 <div class="challenge-content">
-                  <p class="problem">Procesamiento de grandes volúmenes de datos.</p>
+                  <p class="problem">Replicar combinación bidimensional sin bucles infinitos ni re-renders en React.</p>
                   <p class="solution">
                     <i class="fas fa-check-circle"></i>
-                    Optimización con Pandas y procesamiento por lotes.
+                    Función pura memoizada (useMemo/useCallback), estructura mergedCells + dataToRender con eventos controlados.
                   </p>
                 </div>
               </div>
+            </div>
+          </div>
+
+          <!-- Video Demo Section -->
+          <div class="project-section video-demo" style="margin-top: 2rem;">
+            <h3>Demo en Video</h3>
+            <div class="video-container" style="text-align: center; padding: 2rem; background: #f8f9fa; border-radius: 10px;">
+              <!-- TODO: Reemplazar con video real (60-90 segundos) -->
+              <!-- Mostrar: problema → extracción + combinación → validaciones → resultados -->
+              <div class="video-placeholder" style="background: #e9ecef; padding: 4rem; border-radius: 8px; border: 2px dashed #6c757d;">
+                <i class="fas fa-video" style="font-size: 3rem; color: #6c757d; margin-bottom: 1rem;"></i>
+                <p style="color: #6c757d; margin: 0; font-size: 1.1rem;">Video Demo Próximamente</p>
+                <small style="color: #6c757d;">Demostración completa del flujo de 4 pasos en Desktop y Web</small>
+              </div>
+            </div>
+          </div>
+
+          <!-- Workflow Section -->
+          <div class="project-section workflow">
+            <h3>Flujo de Trabajo de 4 Pasos</h3>
+            <div class="workflow-steps">
+              <div class="step">
+                <i class="fas fa-eye"></i>
+                <h4>Paso 1: Vista Combinada</h4>
+                <p>Visualización de celdas combinadas detectadas</p>
+              </div>
+              <div class="step">
+                <i class="fas fa-database"></i>
+                <h4>Paso 2: Datos Crudos</h4>
+                <p>Extracción y limpieza de datos originales</p>
+              </div>
+              <div class="step">
+                <i class="fas fa-crop"></i>
+                <h4>Paso 3: Recorte Visual</h4>
+                <p>Selección y ajuste de rangos de datos</p>
+              </div>
+              <div class="step">
+                <i class="fas fa-check-circle"></i>
+                <h4>Paso 4: Datos Finales</h4>
+                <p>Validación y presentación de resultados</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Links and Resources -->
+          <div class="project-section resources">
+            <h3>Enlaces y Recursos</h3>
+            <div class="resources-grid">
+              <a href="#" class="resource-card github disabled" title="Privado / Solicitar acceso">
+                <i class="fab fa-github"></i>
+                <span>Código Privado</span>
+              </a>
+              <a href="#" class="resource-card docs">
+                <i class="fas fa-book"></i>
+                <span>Documentación Técnica</span>
+              </a>
+              <a href="http://localhost:5000" class="resource-card demo" target="_blank" title="Desarrollo local">
+                <i class="fas fa-desktop"></i>
+                <span>Demo Local</span>
+              </a>
             </div>
           </div>
 
@@ -204,8 +281,8 @@
             <a href="analisis-precios.html" class="prev-project">
               <i class="fas fa-arrow-left"></i> Proyecto Anterior
             </a>
-            <a href="gestor-inventario.html" class="next-project">
-              Siguiente Proyecto <i class="fas fa-arrow-right"></i>
+            <a href="licencias-medicas.html" class="next-project">
+              Siguiente Proyecto: Sistema de Licencias Médicas <i class="fas fa-arrow-right"></i>
             </a>
           </div>
         </div>
@@ -213,40 +290,26 @@
     </div>
 
     <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
     <script src="../vendor/jquery/jquery.min.js"></script>
     <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
     <script src="../assets/js/isotope.min.js"></script>
     <script src="../assets/js/owl-carousel.js"></script>
     <script src="../assets/js/lightbox.js"></script>
     <script src="../assets/js/custom.js"></script>
     <script src="../assets/js/theme-switcher.js"></script>
     <script src="../assets/js/template-loader.js"></script>
-    
+
     <script>
-      $(document).ready(function() {
-        $(".main-menu li:first").addClass("active");
-        
-        const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-        const currentTheme = localStorage.getItem('theme');
-
-        if (currentTheme) {
-          document.documentElement.setAttribute('data-theme', currentTheme);
-          if (currentTheme === 'dark') {
-            toggleSwitch.checked = true;
-          }
+      document.addEventListener('DOMContentLoaded', async function() {
+        try {
+          console.log('Iniciando carga de componentes...');
+          await TemplateLoader.loadSidebar();
+          await TemplateLoader.updateCSSPaths();
+        } catch (error) {
+          console.error('Error durante la inicialización:', error);
         }
-
-        function switchTheme(e) {
-          if (e.target.checked) {
-            document.documentElement.setAttribute('data-theme', 'dark');
-            localStorage.setItem('theme', 'dark');
-          } else {
-            document.documentElement.setAttribute('data-theme', 'light');
-            localStorage.setItem('theme', 'light');
-          }    
-        }
-
-        toggleSwitch.addEventListener('change', switchTheme, false);
       });
     </script>
   </body>

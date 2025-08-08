@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GPU Price Monitor - Proyecto</title>
+    <title>RTX Web Scraper - Monitor de Precios de GPUs</title>
     
     <!-- Mover el CSP aquí y actualizarlo -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' https:; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https:; connect-src 'self' https:;">
@@ -24,33 +24,52 @@
         <section class="section project-details">
           <div class="container">
             <div class="section-heading">
-              <h2>RTX Web Scraper</h2>
+              <h2>RTX Web Scraper - Monitor de Precios de GPUs</h2>
               <div class="line-dec"></div>
-              <span>Monitor de precios automatizado para tarjetas gráficas RTX</span>
+              <span>Monitor automático de precios de tarjetas gráficas RTX en tiempo real</span>
             </div>
 
             <!-- Project Preview con lazy loading -->
             <div class="project-preview">
               <div class="preview-container">
-                <img 
-                  src="../assets/images/placeholder.jpg" 
-                  alt="GPU Price Monitor Demo"
+                <!-- TODO: Reemplazar con screenshot real del dashboard (1920x1280px) -->
+                <!-- Mostrar: Grid de productos RTX, precios en MXN, filtros activos, estadísticas -->
+                <img
+                  src="../assets/images/rtx-scraper-preview.jpg"
+                  alt="RTX Web Scraper Dashboard Demo"
                   class="main-preview"
                   loading="lazy"
                 />
                 <div class="metrics-overlay">
                   <div class="metric-card" tabindex="0">
-                    <i class="fas fa-chart-line" aria-hidden="true"></i>
-                    <span>500+ Productos</span>
+                    <i class="fas fa-tachometer-alt" aria-hidden="true"></i>
+                    <span>51 productos en <30s</span>
                   </div>
                   <div class="metric-card" tabindex="0">
                     <i class="fas fa-store" aria-hidden="true"></i>
-                    <span>10+ Tiendas</span>
+                    <span>2 plataformas principales</span>
                   </div>
                   <div class="metric-card" tabindex="0">
-                    <i class="fas fa-clock" aria-hidden="true"></i>
-                    <span>Actualización 24/7</span>
+                    <i class="fas fa-check-circle" aria-hidden="true"></i>
+                    <span>95% precisión</span>
                   </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Video Demo Section -->
+            <div class="project-section video-demo" style="margin-top: 2rem;">
+              <h3>Demo en Video</h3>
+              <div class="video-container" style="text-align: center; padding: 2rem; background: #f8f9fa; border-radius: 10px;">
+                <!-- TODO: Reemplazar con video real (60-90 segundos) -->
+                <!-- 0-15s: Problema (buscar GPU manualmente) -->
+                <!-- 15-45s: Ejecutar scraper, mostrar resultados -->
+                <!-- 45-60s: Navegar interfaz, filtros, historial -->
+                <!-- 60-90s: Gráficos de precios y alertas -->
+                <div class="video-placeholder" style="background: #e9ecef; padding: 4rem; border-radius: 8px; border: 2px dashed #6c757d;">
+                  <i class="fas fa-video" style="font-size: 3rem; color: #6c757d; margin-bottom: 1rem;"></i>
+                  <p style="color: #6c757d; margin: 0; font-size: 1.1rem;">Video Demo Próximamente</p>
+                  <small style="color: #6c757d;">60-90 segundos mostrando scraping → resultados → filtros → historial</small>
                 </div>
               </div>
             </div>
@@ -59,25 +78,25 @@
             <div class="project-section overview">
               <h3>Descripción General</h3>
               <p>
-                RTX Web Scraper es una herramienta automatizada para el seguimiento de precios de tarjetas gráficas RTX 
-                en múltiples tiendas. Analiza tendencias, detecta ofertas y genera alertas de precios, incluyendo visualización 
-                de datos históricos y predicciones de precios futuros.
+                Aplicación web completa que automatiza el monitoreo de precios de tarjetas gráficas NVIDIA RTX en Amazon México y MercadoLibre.
+                Incluye scraping inteligente, base de datos histórica, interfaz web responsiva con filtros avanzados, gráficos de tendencias de precios
+                y sistema de alertas. Diseñada para ayudar a usuarios a encontrar las mejores ofertas y tomar decisiones informadas de compra.
               </p>
               <div class="key-features">
                 <div class="feature-item" tabindex="0">
                   <i class="fas fa-robot" aria-hidden="true"></i>
-                  <h4>Automatización Total</h4>
-                  <p>Sistema de monitoreo automático 24/7 de precios y stock</p>
+                  <h4>Scraping Inteligente</h4>
+                  <p>Extracción automatizada con filtros para eliminar productos irrelevantes</p>
+                </div>
+                <div class="feature-item" tabindex="0">
+                  <i class="fas fa-desktop" aria-hidden="true"></i>
+                  <h4>Interfaz Web Completa</h4>
+                  <p>Dashboard responsivo con filtros, ordenamiento y modo oscuro/claro</p>
                 </div>
                 <div class="feature-item" tabindex="0">
                   <i class="fas fa-bell" aria-hidden="true"></i>
                   <h4>Sistema de Alertas</h4>
-                  <p>Notificaciones instantáneas de ofertas y cambios de precio</p>
-                </div>
-                <div class="feature-item" tabindex="0">
-                  <i class="fas fa-chart-bar" aria-hidden="true"></i>
-                  <h4>Análisis de Datos</h4>
-                  <p>Gráficos históricos y predicciones de tendencias</p>
+                  <p>Notificaciones vía Telegram/Discord cuando los precios bajan >10%</p>
                 </div>
               </div>
             </div>
@@ -89,28 +108,28 @@
                 <div class="detail-card architecture">
                   <h4><i class="fas fa-layer-group"></i> Arquitectura</h4>
                   <ul>
-                    <li>Scraping distribuido con Scrapy</li>
-                    <li>Sistema de colas con RabbitMQ</li>
-                    <li>Base de datos SQLite para históricos</li>
-                    <li>API REST para consultas</li>
+                    <li>Patrón MVC con separación clara</li>
+                    <li>Estructura modular (scrapers/, database/, utils/)</li>
+                    <li>API REST endpoints + interfaz web integrada</li>
+                    <li>SQLite con esquema relacional</li>
                   </ul>
                 </div>
                 <div class="detail-card security">
-                  <h4><i class="fas fa-shield-alt"></i> Optimización</h4>
+                  <h4><i class="fas fa-shield-alt"></i> Anti-Bot Protection</h4>
                   <ul>
-                    <li>Rotación de proxies automática</li>
-                    <li>Gestión de User-Agents</li>
-                    <li>Control de rate limiting</li>
-                    <li>Caché inteligente de datos</li>
+                    <li>User-agents rotativos</li>
+                    <li>Delays aleatorios anti-bloqueo</li>
+                    <li>Headers realistas</li>
+                    <li>Selenium para sitios dinámicos</li>
                   </ul>
                 </div>
                 <div class="detail-card features">
                   <h4><i class="fas fa-star"></i> Características Avanzadas</h4>
                   <ul>
-                    <li>Predicción de precios con ML</li>
-                    <li>Detección de patrones</li>
-                    <li>Alertas personalizables</li>
-                    <li>Dashboard en tiempo real</li>
+                    <li>Filtros inteligentes de productos</li>
+                    <li>Historial completo de precios</li>
+                    <li>Gráficos de tendencias</li>
+                    <li>Alertas configurables</li>
                   </ul>
                 </div>
               </div>
@@ -123,20 +142,30 @@
                 <div class="tech-category backend">
                   <h4><i class="fas fa-server"></i> Backend</h4>
                   <div class="tech-items">
-                    <span class="tech-badge">Python</span>
-                    <span class="tech-badge">Scrapy</span>
+                    <span class="tech-badge">Python 3.13</span>
+                    <span class="tech-badge">Flask 2.3.3</span>
                     <span class="tech-badge">SQLite</span>
-                    <span class="tech-badge">RabbitMQ</span>
-                    <span class="tech-badge">FastAPI</span>
+                    <span class="tech-badge">BeautifulSoup4</span>
+                    <span class="tech-badge">Selenium</span>
                   </div>
                 </div>
                 <div class="tech-category frontend">
                   <h4><i class="fas fa-code"></i> Frontend</h4>
                   <div class="tech-items">
-                    <span class="tech-badge">React</span>
+                    <span class="tech-badge">HTML5</span>
+                    <span class="tech-badge">CSS3</span>
+                    <span class="tech-badge">JavaScript</span>
                     <span class="tech-badge">Chart.js</span>
-                    <span class="tech-badge">Material-UI</span>
-                    <span class="tech-badge">WebSocket</span>
+                    <span class="tech-badge">Bootstrap</span>
+                  </div>
+                </div>
+                <div class="tech-category tools">
+                  <h4><i class="fas fa-tools"></i> Herramientas</h4>
+                  <div class="tech-items">
+                    <span class="tech-badge">Matplotlib</span>
+                    <span class="tech-badge">NumPy</span>
+                    <span class="tech-badge">Telegram Bot</span>
+                    <span class="tech-badge">Discord Webhook</span>
                   </div>
                 </div>
               </div>
@@ -149,41 +178,68 @@
                 <div class="challenge-card">
                   <div class="challenge-header">
                     <i class="fas fa-exclamation-circle"></i>
-                    <h4>Anti-Scraping</h4>
+                    <h4>Anti-Bot Protection</h4>
                   </div>
                   <div class="challenge-content">
-                    <p class="problem">Medidas de protección contra bots en las tiendas.</p>
+                    <p class="problem">Amazon y MercadoLibre bloquean requests automatizados.</p>
                     <p class="solution">
                       <i class="fas fa-check-circle"></i>
-                      Sistema rotativo de proxies y user agents con delays dinámicos.
+                      User-agents rotativos, delays aleatorios, headers realistas y Selenium para sitios complejos.
                     </p>
                   </div>
                 </div>
                 <div class="challenge-card">
                   <div class="challenge-header">
                     <i class="fas fa-exclamation-circle"></i>
-                    <h4>Cambios en DOM</h4>
+                    <h4>Filtrado de Productos</h4>
                   </div>
                   <div class="challenge-content">
-                    <p class="problem">Estructura cambiante de las páginas web.</p>
+                    <p class="problem">Búsquedas devuelven cables, soportes y accesorios no deseados.</p>
                     <p class="solution">
                       <i class="fas fa-check-circle"></i>
-                      Selectores CSS adaptativos y sistema de fallbacks.
+                      Lista de palabras prohibidas configurable y validación por modelo RTX específico.
                     </p>
                   </div>
                 </div>
                 <div class="challenge-card">
                   <div class="challenge-header">
                     <i class="fas fa-exclamation-circle"></i>
-                    <h4>Datos en Tiempo Real</h4>
+                    <h4>Compatibilidad Python 3.13</h4>
                   </div>
                   <div class="challenge-content">
-                    <p class="problem">Mantener datos actualizados sin sobrecargar.</p>
+                    <p class="problem">Python 3.13 no compatible con psycopg2-binary precompilado.</p>
                     <p class="solution">
                       <i class="fas fa-check-circle"></i>
-                      Sistema de caché y actualizaciones incrementales.
+                      Importaciones condicionales y configuración flexible de base de datos.
                     </p>
                   </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Workflow Section -->
+            <div class="project-section workflow">
+              <h3>Flujo de Trabajo</h3>
+              <div class="workflow-steps">
+                <div class="step">
+                  <i class="fas fa-search"></i>
+                  <h4>1. Scraping Automático</h4>
+                  <p>Extracción de datos de Amazon MX y MercadoLibre</p>
+                </div>
+                <div class="step">
+                  <i class="fas fa-filter"></i>
+                  <h4>2. Filtrado Inteligente</h4>
+                  <p>Eliminación de productos irrelevantes</p>
+                </div>
+                <div class="step">
+                  <i class="fas fa-database"></i>
+                  <h4>3. Almacenamiento</h4>
+                  <p>Guardado en base de datos con historial</p>
+                </div>
+                <div class="step">
+                  <i class="fas fa-chart-line"></i>
+                  <h4>4. Visualización</h4>
+                  <p>Dashboard web con gráficos y filtros</p>
                 </div>
               </div>
             </div>
@@ -192,27 +248,27 @@
             <div class="project-section resources">
               <h3>Enlaces y Recursos</h3>
               <div class="resources-grid">
-                <a href="#" class="resource-card github">
+                <a href="https://github.com/tu-usuario/rtx_web_scrap" target="_blank" class="resource-card github">
                   <i class="fab fa-github"></i>
                   <span>Código Fuente</span>
                 </a>
-                <a href="#" class="resource-card docs">
+                <a href="https://github.com/tu-usuario/rtx_web_scrap#readme" target="_blank" class="resource-card docs">
                   <i class="fas fa-book"></i>
                   <span>Documentación</span>
                 </a>
-                <a href="#" class="resource-card demo">
-                  <i class="fas fa-play-circle"></i>
-                  <span>Demo en Vivo</span>
+                <a href="#" class="resource-card demo disabled" title="Demo local - Requiere instalación">
+                  <i class="fas fa-desktop"></i>
+                  <span>Demo Local</span>
                 </a>
               </div>
             </div>
 
             <div class="project-navigation">
-              <a href="app-notas.html" class="prev-project">
-                <i class="fas fa-arrow-left"></i> Proyecto Anterior
+              <a href="../index.html#section3" class="prev-project">
+                <i class="fas fa-arrow-left"></i> Volver al Portafolio
               </a>
-              <a href="social-media-downloader.html" class="next-project">
-                Siguiente Proyecto <i class="fas fa-arrow-right"></i>
+              <a href="mouse-remoto.html" class="next-project">
+                Siguiente Proyecto: Remote Mouse <i class="fas fa-arrow-right"></i>
               </a>
             </div>
           </div>
