@@ -138,27 +138,31 @@
                 <label for="all" data-i18n="projects.filters.all">Todos</label>
               </div>
               <div class="item-filter">
-                <input type="radio" name="filter" id="web">
-                <label for="web" data-i18n="projects.filters.web">Web</label>
+                <input type="radio" name="filter" id="automation">
+                <label for="automation" data-i18n="projects.filters.automation">Automatización</label>
               </div>
               <div class="item-filter">
-                <input type="radio" name="filter" id="scraping">
-                <label for="scraping" data-i18n="projects.filters.scraping">Scraping</label>
+                <input type="radio" name="filter" id="web-apps">
+                <label for="web-apps" data-i18n="projects.filters.webApps">Aplicaciones Web</label>
               </div>
               <div class="item-filter">
-                <input type="radio" name="filter" id="desktop">
-                <label for="desktop" data-i18n="projects.filters.desktop">Escritorio</label>
+                <input type="radio" name="filter" id="web-design">
+                <label for="web-design" data-i18n="projects.filters.webDesign">Diseño Web</label>
               </div>
               <div class="item-filter">
                 <input type="radio" name="filter" id="mobile">
                 <label for="mobile" data-i18n="projects.filters.mobile">Móvil</label>
+              </div>
+              <div class="item-filter">
+                <input type="radio" name="filter" id="desktop">
+                <label for="desktop" data-i18n="projects.filters.desktop">Escritorio</label>
               </div>
             </div>
           </div>
           
           <!-- Proyectos -->
           <div class="isotope-box" id="page-1">
-            <div class="isotope-item" data-type="scraping">
+            <div class="isotope-item" data-type="automation">
               <div class="project-container">
                 <figure class="project-card">
                   <div class="gradient-preview">
@@ -176,9 +180,9 @@
                   </div>
                 </figure>
                 <div class="tech-tags-container">
-                  <span class="tech-tag python">Python</span>
-                  <span class="tech-tag database">SQLite</span>
-                  <span class="tech-tag web">BeautifulSoup</span>
+                  <span class="tech-badge" data-i18n="tech.python">Python</span>
+                  <span class="tech-badge" data-i18n="tech.sqlite">SQLite</span>
+                  <span class="tech-badge" data-i18n="tech.beautifulsoup">BeautifulSoup</span>
                 </div>
               </div>
             </div>
@@ -204,15 +208,15 @@
                   </div>
                 </figure>
                 <div class="tech-tags-container">
-                  <span class="tech-badge" data-i18n="tech.flutter"></span>
-                  <span class="tech-badge" data-i18n="tech.python"></span>
-                  <span class="tech-badge" data-i18n="tech.socketio"></span>
+                  <span class="tech-badge" data-i18n="tech.flutter">Flutter</span>
+                  <span class="tech-badge" data-i18n="tech.python">Python</span>
+                  <span class="tech-badge" data-i18n="tech.socketio">Socket.io</span>
                 </div>
               </div>
             </div>
 
             <!-- Proyecto 3 -->
-            <div class="isotope-item" data-type="web">
+            <div class="isotope-item" data-type="web-apps">
               <div class="project-container">
                 <figure class="project-card">
                   <div class="gradient-preview">
@@ -232,15 +236,15 @@
                   </div>
                 </figure>
                 <div class="tech-tags-container">
-                  <span class="tech-badge" data-i18n="tech.javascript"></span>
-                  <span class="tech-badge" data-i18n="tech.python"></span>
-                  <span class="tech-badge" data-i18n="tech.react"></span>
+                  <span class="tech-badge" data-i18n="tech.javascript">JavaScript</span>
+                  <span class="tech-badge" data-i18n="tech.python">Python</span>
+                  <span class="tech-badge" data-i18n="tech.react">React</span>
                 </div>
               </div>
             </div>
 
             <!-- Proyecto 4 -->
-            <div class="isotope-item" data-type="web">
+            <div class="isotope-item" data-type="web-apps">
               <div class="project-container">
                 <figure class="project-card">
                   <div class="gradient-preview">
@@ -260,9 +264,37 @@
                   </div>
                 </figure>
                 <div class="tech-tags-container">
-                  <span class="tech-badge" data-i18n="tech.javascript"></span>
-                  <span class="tech-badge" data-i18n="tech.googlemaps"></span>
-                  <span class="tech-badge" data-i18n="tech.nodejs"></span>
+                  <span class="tech-badge" data-i18n="tech.javascript">JavaScript</span>
+                  <span class="tech-badge" data-i18n="tech.googlemaps">Google Maps API</span>
+                  <span class="tech-badge" data-i18n="tech.nodejs">Node.js</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Proyecto Portfolio Webs -->
+            <div class="isotope-item" data-type="web-design">
+              <div class="project-container">
+                <figure class="project-card">
+                  <div class="gradient-preview">
+                    <div class="preview-content">
+                      <i class="fas fa-palette"></i>
+                      <span class="preview-title" data-i18n="projects.portfolioWebs.name">Portfolio Webs Comerciales</span>
+                    </div>
+                  </div>
+                  <div class="overlay">
+                    <h4 data-i18n="projects.portfolioWebs.title">Diseño Web & Marketing</h4>
+                    <p class="project-description" data-i18n="projects.portfolioWebs.desc">
+                      Colección completa de sitios web comerciales, landing pages y sitios corporativos.
+                      Especializado en diseño responsive, UX/UI optimizado para conversión y marketing digital.
+                      +15 proyectos web desplegados en GitHub Pages.
+                    </p>
+                    <a href="https://angeliteh.github.io/portfolio_webs/" target="_blank" class="project-btn" data-i18n="projects.viewPortfolio">Ver Portfolio Completo</a>
+                  </div>
+                </figure>
+                <div class="tech-tags-container">
+                  <span class="tech-badge" data-i18n="tech.html">HTML/CSS</span>
+                  <span class="tech-badge" data-i18n="tech.javascript">JavaScript</span>
+                  <span class="tech-badge" data-i18n="tech.responsive">Responsive Design</span>
                 </div>
               </div>
             </div>
@@ -271,24 +303,29 @@
           <!-- Proyectos - Página 2 (inicialmente oculta) -->
           <div class="isotope-box" id="page-2" style="display: none;">
             <!-- Proyecto 5 -->
-            <div class="isotope-item" data-type="scraping">
+            <div class="isotope-item" data-type="automation">
               <div class="project-container">
                 <figure class="project-card">
-                  <img src="assets/images/portfolio-05.jpg" alt="Scraper de Excel" />
+                  <div class="gradient-preview">
+                    <div class="preview-content">
+                      <i class="fas fa-file-excel"></i>
+                      <span class="preview-title" data-i18n="projects.project5.name">Excel Scraper</span>
+                    </div>
+                  </div>
                   <div class="overlay">
-                    <h4 data-i18n="project5.title"></h4>
-                    <p class="project-description" data-i18n="project5.desc">
+                    <h4 data-i18n="projects.project5.title">Scraper de Excel</h4>
+                    <p class="project-description" data-i18n="projects.project5.desc">
                       Herramienta para consolidación automática de datos desde múltiples archivos Excel.
                       Procesa y combina información de diferentes fuentes, aplicando reglas de negocio
                       y generando reportes personalizados.
                     </p>
-                    <a href="proyectos/excel-scraper.html" class="project-btn" data-i18n="project-view">Ver Proyecto</a>
+                    <a href="proyectos/excel-scraper.html" class="project-btn" data-i18n="projects.viewProject">Ver Proyecto</a>
                   </div>
                 </figure>
                 <div class="tech-tags-container">
-                  <span class="tech-badge" data-i18n="tech.python"></span>
-                  <span class="tech-badge" data-i18n="tech.database"></span>
-                  <span class="tech-badge" data-i18n="tech.api"></span>
+                  <span class="tech-badge" data-i18n="tech.python">Python</span>
+                  <span class="tech-badge" data-i18n="tech.database">Bases de Datos</span>
+                  <span class="tech-badge" data-i18n="tech.api">APIs RESTful</span>
                 </div>
               </div>
             </div>

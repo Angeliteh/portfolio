@@ -18,7 +18,11 @@
     "googlemaps": "Google Maps API",
     "nodejs": "Node.js",
     "database": "Bases de Datos",
-    "api": "APIs RESTful"
+    "api": "APIs RESTful",
+    "sqlite": "SQLite",
+    "beautifulsoup": "BeautifulSoup",
+    "html": "HTML/CSS",
+    "responsive": "Responsive Design"
   },
   "project5": {
     "title": "Scraper de Excel",
@@ -72,12 +76,14 @@
     "subtitle": "Algunos de mis trabajos más recientes",
     "filters": {
       "all": "Todos",
-      "web": "Web",
-      "scraping": "Scraping",
-      "desktop": "Escritorio",
-      "mobile": "Móvil"
+      "automation": "Automatización",
+      "webApps": "Aplicaciones Web",
+      "webDesign": "Diseño Web",
+      "mobile": "Móvil",
+      "desktop": "Escritorio"
     },
     "viewProject": "Ver Proyecto",
+    "viewPortfolio": "Ver Portfolio Completo",
     "project1": {
       "name": "RTX Scraper",
       "title": "Scraper de Tarjetas RTX",
@@ -102,6 +108,11 @@
       "name": "Excel Scraper",
       "title": "Scraper de Excel",
       "desc": "Herramienta para consolidación automática de datos desde múltiples archivos Excel. Procesa y combina información de diferentes fuentes."
+    },
+    "portfolioWebs": {
+      "name": "Portfolio Webs Comerciales",
+      "title": "Diseño Web & Marketing",
+      "desc": "Colección completa de sitios web comerciales, landing pages y sitios corporativos. Especializado en diseño responsive, UX/UI optimizado para conversión y marketing digital. +15 proyectos web desplegados en GitHub Pages."
     }
   },
   "contact": {
