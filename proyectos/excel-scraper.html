@@ -35,9 +35,9 @@
       <section class="section project-details">
         <div class="container">
           <div class="section-heading">
-            <h2>Sistema Universal de Validación y Visualización de Tablas Excel</h2>
+            <h2 data-i18n="excelScraperProject.title">Sistema Universal de Validación y Visualización de Tablas Excel</h2>
             <div class="line-dec"></div>
-            <span>Sistema universal de validación y visualización de tablas Excel</span>
+            <span data-i18n="excelScraperProject.subtitle">Sistema universal de validación y visualización de tablas Excel</span>
           </div>
 
           <!-- Project Preview -->
@@ -54,15 +54,15 @@
               <div class="metrics-overlay">
                 <div class="metric-card" tabindex="0">
                   <i class="fas fa-tachometer-alt" aria-hidden="true"></i>
-                  <span>90-95% reducción tiempo</span>
+                  <span data-i18n="excelScraperProject.metrics.timeReduction">90-95% reducción tiempo</span>
                 </div>
                 <div class="metric-card" tabindex="0">
                   <i class="fas fa-layer-group" aria-hidden="true"></i>
-                  <span>Multi-archivo y pestaña</span>
+                  <span data-i18n="excelScraperProject.metrics.multiFile">Multi-archivo y pestaña</span>
                 </div>
                 <div class="metric-card" tabindex="0">
                   <i class="fas fa-check-circle" aria-hidden="true"></i>
-                  <span>Validaciones universales</span>
+                  <span data-i18n="excelScraperProject.metrics.universalValidation">Validaciones universales</span>
                 </div>
               </div>
             </div>
@@ -70,8 +70,8 @@
 
           <!-- Project Overview -->
           <div class="project-section overview">
-            <h3>Descripción General</h3>
-            <p>
+            <h3 data-i18n="excelScraperProject.sections.overview">Descripción General</h3>
+            <p data-i18n="excelScraperProject.sections.overviewText">
               Plataforma integral que automatiza la extracción, combinación, validación y presentación de tablas educativas en Excel,
               con una arquitectura compartida y reusable entre una app de escritorio (PyQt) y una interfaz web moderna (React + Flask).
               El núcleo implementa un algoritmo bidimensional de detección de celdas combinadas a partir de marcadores [valor],
@@ -80,51 +80,51 @@
             <div class="key-features">
               <div class="feature-item" tabindex="0">
                 <i class="fas fa-th" aria-hidden="true"></i>
-                <h4>Algoritmo Bidimensional de Celdas Combinadas</h4>
-                <p>Detecta spans horizontal/vertical basados en marcadores [valor] con limpieza y generación de mergedCells precisos</p>
+                <h4 data-i18n="excelScraperProject.features.bidimensionalAlgorithm.title">Algoritmo Bidimensional de Celdas Combinadas</h4>
+                <p data-i18n="excelScraperProject.features.bidimensionalAlgorithm.desc">Detecta spans horizontal/vertical basados en marcadores [valor] con limpieza y generación de mergedCells precisos</p>
               </div>
               <div class="feature-item" tabindex="0">
                 <i class="fas fa-layer-group" aria-hidden="true"></i>
-                <h4>Arquitectura Multiplataforma con Core Reutilizable</h4>
-                <p>Desktop (PyQt) y Web (React/Flask) comparten módulos de negocio con controladores especializados</p>
+                <h4 data-i18n="excelScraperProject.features.multiplatformArchitecture.title">Arquitectura Multiplataforma con Core Reutilizable</h4>
+                <p data-i18n="excelScraperProject.features.multiplatformArchitecture.desc">Desktop (PyQt) y Web (React/Flask) comparten módulos de negocio con controladores especializados</p>
               </div>
               <div class="feature-item" tabindex="0">
                 <i class="fas fa-check-double" aria-hidden="true"></i>
-                <h4>Validaciones Educativas Sofisticadas y UI de 4 Pasos</h4>
-                <p>Coherencia, subtotales, totales con flujo Paso 1-4 y tabla tipo Excel con selección de rango</p>
+                <h4 data-i18n="excelScraperProject.features.sophisticatedValidations.title">Validaciones Educativas Sofisticadas y UI de 4 Pasos</h4>
+                <p data-i18n="excelScraperProject.features.sophisticatedValidations.desc">Coherencia, subtotales, totales con flujo Paso 1-4 y tabla tipo Excel con selección de rango</p>
               </div>
             </div>
           </div>
 
           <!-- Technical Details -->
           <div class="project-section technical">
-            <h3>Detalles Técnicos</h3>
+            <h3 data-i18n="excelScraperProject.sections.technicalDetails">Detalles Técnicos</h3>
             <div class="tech-details-grid">
               <div class="detail-card architecture">
-                <h4><i class="fas fa-layer-group"></i> Arquitectura</h4>
+                <h4><i class="fas fa-layer-group"></i> <span data-i18n="excelScraperProject.techDetails.architecture.title">Arquitectura</span></h4>
                 <ul>
-                  <li>Separación por capas con controladores especializados</li>
-                  <li>MVC/MVP híbrido en Desktop, cliente-servidor REST en Web</li>
-                  <li>Core puro sin dependencias de UI</li>
-                  <li>Aislamiento por pestaña y por archivo</li>
+                  <li data-i18n="excelScraperProject.techDetails.architecture.items.0">Separación por capas con controladores especializados</li>
+                  <li data-i18n="excelScraperProject.techDetails.architecture.items.1">MVC/MVP híbrido en Desktop, cliente-servidor REST en Web</li>
+                  <li data-i18n="excelScraperProject.techDetails.architecture.items.2">Core puro sin dependencias de UI</li>
+                  <li data-i18n="excelScraperProject.techDetails.architecture.items.3">Aislamiento por pestaña y por archivo</li>
                 </ul>
               </div>
               <div class="detail-card optimization">
-                <h4><i class="fas fa-bolt"></i> Optimización</h4>
+                <h4><i class="fas fa-bolt"></i> <span data-i18n="excelScraperProject.techDetails.optimization.title">Optimización</span></h4>
                 <ul>
-                  <li>Algoritmo bidimensional de detección de celdas combinadas</li>
-                  <li>Función pura memoizada (useMemo/useCallback) en Web</li>
-                  <li>Sistema de logs "rastreador" con evidencia de estados</li>
-                  <li>Configuración centralizada por periodo y modo</li>
+                  <li data-i18n="excelScraperProject.techDetails.optimization.items.0">Algoritmo bidimensional de detección de celdas combinadas</li>
+                  <li data-i18n="excelScraperProject.techDetails.optimization.items.1">Función pura memoizada (useMemo/useCallback) en Web</li>
+                  <li data-i18n="excelScraperProject.techDetails.optimization.items.2">Sistema de logs "rastreador" con evidencia de estados</li>
+                  <li data-i18n="excelScraperProject.techDetails.optimization.items.3">Configuración centralizada por periodo y modo</li>
                 </ul>
               </div>
               <div class="detail-card features">
-                <h4><i class="fas fa-star"></i> Características Avanzadas</h4>
+                <h4><i class="fas fa-star"></i> <span data-i18n="excelScraperProject.techDetails.features.title">Características Avanzadas</span></h4>
                 <ul>
-                  <li>Validaciones universales (coherencia, subtotales, totales)</li>
-                  <li>UI de 4 pasos con datos crudos como fuente canónica</li>
-                  <li>Interfaz web tipo Excel con selección de rango</li>
-                  <li>Configuración dinámica vía JSON (roadmap)</li>
+                  <li data-i18n="excelScraperProject.techDetails.features.items.0">Validaciones universales (coherencia, subtotales, totales)</li>
+                  <li data-i18n="excelScraperProject.techDetails.features.items.1">UI de 4 pasos con datos crudos como fuente canónica</li>
+                  <li data-i18n="excelScraperProject.techDetails.features.items.2">Interfaz web tipo Excel con selección de rango</li>
+                  <li data-i18n="excelScraperProject.techDetails.features.items.3">Configuración dinámica vía JSON (roadmap)</li>
                 </ul>
               </div>
             </div>
@@ -132,10 +132,10 @@
 
           <!-- Tech Stack -->
           <div class="project-section tech-stack">
-            <h3>Stack Tecnológico</h3>
+            <h3 data-i18n="excelScraperProject.sections.techStack">Stack Tecnológico</h3>
             <div class="tech-grid">
               <div class="tech-category frontend">
-                <h4><i class="fas fa-code"></i> Frontend</h4>
+                <h4><i class="fas fa-code"></i> <span data-i18n="excelScraperProject.techCategories.frontend">Frontend</span></h4>
                 <div class="tech-items">
                   <span class="tech-badge">React 18</span>
                   <span class="tech-badge">CSS Módulos</span>
@@ -144,7 +144,7 @@
                 </div>
               </div>
               <div class="tech-category backend">
-                <h4><i class="fas fa-server"></i> Backend</h4>
+                <h4><i class="fas fa-server"></i> <span data-i18n="excelScraperProject.techCategories.backend">Backend</span></h4>
                 <div class="tech-items">
                   <span class="tech-badge">Flask</span>
                   <span class="tech-badge">Blueprints</span>
@@ -153,15 +153,15 @@
                 </div>
               </div>
               <div class="tech-category desktop">
-                <h4><i class="fas fa-desktop"></i> Desktop</h4>
+                <h4><i class="fas fa-desktop"></i> <span data-i18n="excelScraperProject.techCategories.desktop">Desktop</span></h4>
                 <div class="tech-items">
                   <span class="tech-badge">PyQt5</span>
-                  <span class="tech-badge">Python 3.8+</span>
+                  <span class="tech-badge" data-i18n="tech.python">Python 3.8+</span>
                   <span class="tech-badge">pandas</span>
                 </div>
               </div>
               <div class="tech-category tools">
-                <h4><i class="fas fa-tools"></i> Herramientas</h4>
+                <h4><i class="fas fa-tools"></i> <span data-i18n="excelScraperProject.techCategories.tools">Herramientas</span></h4>
                 <div class="tech-items">
                   <span class="tech-badge">Node.js/npm</span>
                   <span class="tech-badge">start_web_development.py</span>
@@ -173,44 +173,44 @@
 
           <!-- Challenges and Solutions -->
           <div class="project-section challenges">
-            <h3>Desafíos y Soluciones</h3>
+            <h3 data-i18n="excelScraperProject.sections.challenges">Desafíos y Soluciones</h3>
             <div class="challenges-grid">
               <div class="challenge-card">
                 <div class="challenge-header">
                   <i class="fas fa-exclamation-circle"></i>
-                  <h4>Aislamiento Perfecto entre Pestañas</h4>
+                  <h4 data-i18n="excelScraperProject.challengesList.tabIsolation.title">Aislamiento Perfecto entre Pestañas</h4>
                 </div>
                 <div class="challenge-content">
-                  <p class="problem">La segunda pestaña no detectaba correctamente archivos ya procesados y compartía estado global.</p>
+                  <p class="problem" data-i18n="excelScraperProject.challengesList.tabIsolation.problem">La segunda pestaña no detectaba correctamente archivos ya procesados y compartía estado global.</p>
                   <p class="solution">
                     <i class="fas fa-check-circle"></i>
-                    Datos específicos por pestaña/archivo en app_controller con verificación dual y guardado de proceso_secuencial_activo.
+                    <span data-i18n="excelScraperProject.challengesList.tabIsolation.solution">Datos específicos por pestaña/archivo en app_controller con verificación dual y guardado de proceso_secuencial_activo.</span>
                   </p>
                 </div>
               </div>
               <div class="challenge-card">
                 <div class="challenge-header">
                   <i class="fas fa-exclamation-circle"></i>
-                  <h4>Paso 4 Incorrecto por Fallbacks</h4>
+                  <h4 data-i18n="excelScraperProject.challengesList.step4Fallbacks.title">Paso 4 Incorrecto por Fallbacks</h4>
                 </div>
                 <div class="challenge-content">
-                  <p class="problem">Paso 4 mostraba datos del Paso 3 (fallback a datos_numericos) y mapeos incompletos.</p>
+                  <p class="problem" data-i18n="excelScraperProject.challengesList.step4Fallbacks.problem">Paso 4 mostraba datos del Paso 3 (fallback a datos_numericos) y mapeos incompletos.</p>
                   <p class="solution">
                     <i class="fas fa-check-circle"></i>
-                    Priorizar datos_paso4, eliminar fallback problemático y mapeo completo para compatibilidad.
+                    <span data-i18n="excelScraperProject.challengesList.step4Fallbacks.solution">Priorizar datos_paso4, eliminar fallback problemático y mapeo completo para compatibilidad.</span>
                   </p>
                 </div>
               </div>
               <div class="challenge-card">
                 <div class="challenge-header">
                   <i class="fas fa-exclamation-circle"></i>
-                  <h4>Portar Lógica de Combinaciones a Web</h4>
+                  <h4 data-i18n="excelScraperProject.challengesList.webLogicPort.title">Portar Lógica de Combinaciones a Web</h4>
                 </div>
                 <div class="challenge-content">
-                  <p class="problem">Replicar combinación bidimensional sin bucles infinitos ni re-renders en React.</p>
+                  <p class="problem" data-i18n="excelScraperProject.challengesList.webLogicPort.problem">Replicar combinación bidimensional sin bucles infinitos ni re-renders en React.</p>
                   <p class="solution">
                     <i class="fas fa-check-circle"></i>
-                    Función pura memoizada (useMemo/useCallback), estructura mergedCells + dataToRender con eventos controlados.
+                    <span data-i18n="excelScraperProject.challengesList.webLogicPort.solution">Función pura memoizada (useMemo/useCallback), estructura mergedCells + dataToRender con eventos controlados.</span>
                   </p>
                 </div>
               </div>
@@ -219,70 +219,70 @@
 
           <!-- Video Demo Section -->
           <div class="project-section video-demo" style="margin-top: 2rem;">
-            <h3>Demo en Video</h3>
+            <h3 data-i18n="excelScraperProject.sections.videoDemo">Demo en Video</h3>
             <div class="video-container" style="text-align: center; padding: 2rem; background: #f8f9fa; border-radius: 10px;">
               <!-- TODO: Reemplazar con video real (60-90 segundos) -->
               <!-- Mostrar: problema → extracción + combinación → validaciones → resultados -->
               <div class="video-placeholder" style="background: #e9ecef; padding: 4rem; border-radius: 8px; border: 2px dashed #6c757d;">
                 <i class="fas fa-video" style="font-size: 3rem; color: #6c757d; margin-bottom: 1rem;"></i>
-                <p style="color: #6c757d; margin: 0; font-size: 1.1rem;">Video Demo Próximamente</p>
-                <small style="color: #6c757d;">Demostración completa del flujo de 4 pasos en Desktop y Web</small>
+                <p style="color: #6c757d; margin: 0; font-size: 1.1rem;" data-i18n="excelScraperProject.sections.videoPlaceholder">Video Demo Próximamente</p>
+                <small style="color: #6c757d;" data-i18n="excelScraperProject.sections.videoDescription">Demostración completa del flujo de 4 pasos en Desktop y Web</small>
               </div>
             </div>
           </div>
 
           <!-- Workflow Section -->
           <div class="project-section workflow">
-            <h3>Flujo de Trabajo de 4 Pasos</h3>
+            <h3 data-i18n="excelScraperProject.sections.workflow">Flujo de Trabajo de 4 Pasos</h3>
             <div class="workflow-steps">
               <div class="step">
                 <i class="fas fa-eye"></i>
-                <h4>Paso 1: Vista Combinada</h4>
-                <p>Visualización de celdas combinadas detectadas</p>
+                <h4 data-i18n="excelScraperProject.workflowSteps.step1.title">Paso 1: Vista Combinada</h4>
+                <p data-i18n="excelScraperProject.workflowSteps.step1.desc">Visualización de celdas combinadas detectadas</p>
               </div>
               <div class="step">
                 <i class="fas fa-database"></i>
-                <h4>Paso 2: Datos Crudos</h4>
-                <p>Extracción y limpieza de datos originales</p>
+                <h4 data-i18n="excelScraperProject.workflowSteps.step2.title">Paso 2: Datos Crudos</h4>
+                <p data-i18n="excelScraperProject.workflowSteps.step2.desc">Extracción y limpieza de datos originales</p>
               </div>
               <div class="step">
                 <i class="fas fa-crop"></i>
-                <h4>Paso 3: Recorte Visual</h4>
-                <p>Selección y ajuste de rangos de datos</p>
+                <h4 data-i18n="excelScraperProject.workflowSteps.step3.title">Paso 3: Recorte Visual</h4>
+                <p data-i18n="excelScraperProject.workflowSteps.step3.desc">Selección y ajuste de rangos de datos</p>
               </div>
               <div class="step">
                 <i class="fas fa-check-circle"></i>
-                <h4>Paso 4: Datos Finales</h4>
-                <p>Validación y presentación de resultados</p>
+                <h4 data-i18n="excelScraperProject.workflowSteps.step4.title">Paso 4: Datos Finales</h4>
+                <p data-i18n="excelScraperProject.workflowSteps.step4.desc">Validación y presentación de resultados</p>
               </div>
             </div>
           </div>
 
           <!-- Links and Resources -->
           <div class="project-section resources">
-            <h3>Enlaces y Recursos</h3>
+            <h3 data-i18n="excelScraperProject.sections.resources">Enlaces y Recursos</h3>
             <div class="resources-grid">
               <a href="#" class="resource-card github disabled" title="Privado / Solicitar acceso">
                 <i class="fab fa-github"></i>
-                <span>Código Privado</span>
+                <span data-i18n="excelScraperProject.resourceLinks.privateCode">Código Privado</span>
               </a>
               <a href="#" class="resource-card docs">
                 <i class="fas fa-book"></i>
-                <span>Documentación Técnica</span>
+                <span data-i18n="excelScraperProject.resourceLinks.technicalDocs">Documentación Técnica</span>
               </a>
               <a href="http://localhost:5000" class="resource-card demo" target="_blank" title="Desarrollo local">
                 <i class="fas fa-desktop"></i>
-                <span>Demo Local</span>
+                <span data-i18n="excelScraperProject.resourceLinks.localDemo">Demo Local</span>
               </a>
             </div>
           </div>
 
           <div class="project-navigation">
-            <a href="analisis-precios.html" class="prev-project">
-              <i class="fas fa-arrow-left"></i> Proyecto Anterior
+            <a href="calculadora-distancias.html" class="prev-project">
+              <i class="fas fa-arrow-left"></i> <span data-i18n="excelScraperProject.navigation.prevProject">Proyecto Anterior: Calculadora de Distancias</span>
             </a>
             <a href="licencias-medicas.html" class="next-project">
-              Siguiente Proyecto: Sistema de Licencias Médicas <i class="fas fa-arrow-right"></i>
+              <span data-i18n="excelScraperProject.navigation.nextProject">Siguiente Proyecto: Sistema de Licencias Médicas</span> <i class="fas fa-arrow-right"></i>
             </a>
           </div>
         </div>
@@ -305,12 +305,22 @@
       document.addEventListener('DOMContentLoaded', async function() {
         try {
           console.log('Iniciando carga de componentes...');
+          // Primero actualizar las rutas CSS
+          TemplateLoader.updateCSSPaths();
+          // Luego cargar el sidebar
           await TemplateLoader.loadSidebar();
-          await TemplateLoader.updateCSSPaths();
         } catch (error) {
           console.error('Error durante la inicialización:', error);
         }
       });
     </script>
+
+    <!-- Scripts de i18n -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/22.4.9/i18next.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next-http-backend/2.1.1/i18nextHttpBackend.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-i18next/1.2.1/jquery-i18next.min.js"></script>
+    <!-- Scripts personalizados de i18n -->
+    <script src="../assets/js/i18n-config.js"></script>
+    <script src="../assets/js/language-switcher.js"></script>
   </body>
 </html>

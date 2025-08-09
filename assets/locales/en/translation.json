@@ -81,12 +81,41 @@
     "subtitle": "Some of my most recent work",
     "filters": {
       "all": "All",
+      "featured": "⭐ Featured",
       "automation": "Automation",
       "webApps": "Web Applications",
       "webDesign": "Web Design",
       "mobile": "Mobile",
       "desktop": "Desktop",
       "ai": "Artificial Intelligence"
+    },
+    "featured": {
+      "title": "⭐ Featured Projects",
+      "subtitle": "The most complex and impactful projects",
+      "badge": "FEATURED",
+      "viewProject": "View Complete Project",
+      "aiProject": {
+        "title": "AI School Certificate System",
+        "description": "Desktop application in production with Master-Student AI architecture. Automates complete school management with natural conversational interface.",
+        "metrics": {
+          "ai": "Advanced AI",
+          "production": "In Production",
+          "time": "85% less time"
+        }
+      },
+      "excelProject": {
+        "title": "Universal Excel Validation System",
+        "description": "Hybrid platform (PyQt + React) that automates extraction, validation and visualization of educational Excel tables with shared architecture.",
+        "metrics": {
+          "automation": "100% Automated",
+          "hybrid": "Hybrid Desktop/Web",
+          "validation": "Intelligent Validation"
+        }
+      }
+    },
+    "allProjects": {
+      "title": "All Projects",
+      "subtitle": "Explore my complete portfolio by categories"
     },
     "viewProject": "View Project",
     "viewPortfolio": "View Complete Portfolio",
@@ -134,12 +163,810 @@
   "contact": {
     "title": "Contact",
     "subtitle": "Interested in collaborating on a project or have a question?",
+    "info": {
+      "title": "Let's Talk!",
+      "description": "I'm always open to discussing new projects, creative opportunities or just chatting about technology.",
+      "email": {
+        "title": "Email"
+      },
+      "response": {
+        "title": "Response Time",
+        "time": "Usually within 24 hours"
+      }
+    },
     "form": {
-      "name": "Your name",
-      "email": "Your email",
-      "subject": "Subject",
-      "message": "Message",
+      "title": "Send Me a Message",
+      "description": "Fill out the form and I'll get back to you as soon as possible.",
+      "labels": {
+        "name": "Full Name",
+        "email": "Email Address",
+        "subject": "Subject",
+        "message": "Message"
+      },
+      "placeholders": {
+        "name": "Your full name",
+        "email": "your.email@example.com",
+        "subject": "What would you like to talk about?",
+        "message": "Tell me about your project or idea..."
+      },
       "send": "Send Message"
+    }
+  },
+  "rtxProject": {
+    "title": "RTX Web Scraper - GPU Price Monitor",
+    "subtitle": "Automated real-time RTX graphics card price monitoring",
+    "metrics": {
+      "products": "51 products in <30s",
+      "platforms": "2 main platforms",
+      "accuracy": "95% accuracy"
+    },
+    "sections": {
+      "videoDemo": "Video Demo",
+      "videoPlaceholder": "Video Demo Coming Soon",
+      "videoDescription": "60-90 seconds showing scraping → results → filters → history",
+      "overview": "Overview",
+      "overviewText": "Complete web application that automates NVIDIA RTX graphics card price monitoring on Amazon Mexico and MercadoLibre. Includes intelligent scraping, historical database, responsive web interface with advanced filters, price trend charts and alert system. Designed to help users find the best deals and make informed purchasing decisions.",
+      "technicalDetails": "Technical Details",
+      "techStack": "Technology Stack",
+      "challenges": "Challenges and Solutions",
+      "workflow": "Workflow",
+      "resources": "Links and Resources"
+    },
+    "features": {
+      "smartScraping": {
+        "title": "Smart Scraping",
+        "desc": "Automated extraction with filters to eliminate irrelevant products"
+      },
+      "webInterface": {
+        "title": "Complete Web Interface",
+        "desc": "Responsive dashboard with filters, sorting and dark/light mode"
+      },
+      "alertSystem": {
+        "title": "Alert System",
+        "desc": "Telegram/Discord notifications when prices drop >10%"
+      }
+    },
+    "techDetails": {
+      "architecture": {
+        "title": "Architecture",
+        "items": [
+          "Clear MVC pattern with separation",
+          "Modular structure (scrapers/, database/, utils/)",
+          "REST API endpoints + integrated web interface",
+          "SQLite with relational schema"
+        ]
+      },
+      "security": {
+        "title": "Anti-Bot Protection",
+        "items": [
+          "Rotating user-agents",
+          "Random anti-blocking delays",
+          "Realistic headers",
+          "Selenium for dynamic sites"
+        ]
+      },
+      "features": {
+        "title": "Advanced Features",
+        "items": [
+          "Smart product filters",
+          "Complete price history",
+          "Trend charts",
+          "Configurable alerts"
+        ]
+      }
+    },
+    "techCategories": {
+      "backend": "Backend",
+      "frontend": "Frontend",
+      "tools": "Tools"
+    },
+    "challengesList": {
+      "antiBotProtection": {
+        "title": "Anti-Bot Protection",
+        "problem": "Amazon and MercadoLibre block automated requests.",
+        "solution": "Rotating user-agents, random delays, realistic headers and Selenium for complex sites."
+      },
+      "productFiltering": {
+        "title": "Product Filtering",
+        "problem": "Searches return unwanted cables, stands and accessories.",
+        "solution": "Configurable blacklist and specific RTX model validation."
+      },
+      "pythonCompatibility": {
+        "title": "Python 3.13 Compatibility",
+        "problem": "Python 3.13 not compatible with precompiled psycopg2-binary.",
+        "solution": "Conditional imports and flexible database configuration."
+      }
+    },
+    "workflowSteps": {
+      "scraping": {
+        "title": "1. Automatic Scraping",
+        "desc": "Data extraction from Amazon MX and MercadoLibre"
+      },
+      "filtering": {
+        "title": "2. Smart Filtering",
+        "desc": "Removal of irrelevant products"
+      },
+      "storage": {
+        "title": "3. Storage",
+        "desc": "Database storage with history"
+      },
+      "visualization": {
+        "title": "4. Visualization",
+        "desc": "Web dashboard with charts and filters"
+      }
+    },
+    "resourceLinks": {
+      "sourceCode": "Source Code",
+      "documentation": "Documentation",
+      "localDemo": "Local Demo"
+    },
+    "navigation": {
+      "backToPortfolio": "Back to Portfolio",
+      "nextProject": "Next Project: Remote Mouse"
+    }
+  },
+  "remoteMouseProject": {
+    "title": "Remote Mouse",
+    "subtitle": "Remote mouse and keyboard control from mobile devices via WebSocket",
+    "metrics": {
+      "latency": "Latency < 8ms",
+      "platforms": "6 platforms",
+      "accuracy": "99.9% accuracy"
+    },
+    "sections": {
+      "videoDemo": "Video Demo",
+      "videoPlaceholder": "Video Demo Coming Soon",
+      "videoDescription": "Remote control demonstration in action from mobile device",
+      "overview": "Overview",
+      "overviewText": "Cross-platform application that allows controlling PC mouse and keyboard from a mobile device using real-time WebSocket communication. Includes a Python server with GUI for PC and a Flutter application for mobile devices with support for Android, iOS, Web, Windows, macOS and Linux. Offers precise cursor control, clicks, scroll, text input and key combinations with haptic feedback and customizable configuration.",
+      "technicalDetails": "Technical Details",
+      "techStack": "Technology Stack",
+      "challenges": "Challenges and Solutions",
+      "resources": "Links and Resources"
+    },
+    "features": {
+      "mouseControl": {
+        "title": "Advanced Mouse Control",
+        "desc": "Precise movement with optimization buffer, clicks and scroll with adjustable sensitivity"
+      },
+      "virtualKeyboard": {
+        "title": "Smart Virtual Keyboard",
+        "desc": "Real-time typing, special keys and combinations (Ctrl+C, Alt+Tab)"
+      },
+      "multiplatform": {
+        "title": "Cross-Platform Interface",
+        "desc": "Native Flutter for mobile and Python GUI server, support for 6 platforms"
+      }
+    },
+    "techDetails": {
+      "architecture": {
+        "title": "Architecture",
+        "items": [
+          "Client-Server with WebSocket",
+          "MVC in Flutter with modular services",
+          "Clear separation Python server/Flutter client",
+          "Custom command protocol"
+        ]
+      },
+      "optimization": {
+        "title": "Optimization",
+        "items": [
+          "Movement buffer with 8ms timer",
+          "Optimized bidirectional WebSocket",
+          "Accumulated movement deltas",
+          "Local persistent configuration"
+        ]
+      },
+      "features": {
+        "title": "Advanced Features",
+        "items": [
+          "Haptic feedback",
+          "System tray",
+          "Auto-start",
+          "8 different command types"
+        ]
+      }
+    },
+    "techCategories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "tools": "Tools"
+    },
+    "challengesList": {
+      "latencyMovements": {
+        "title": "Movement Latency",
+        "problem": "Individual mouse movements generated too many WebSocket commands.",
+        "solution": "Movement buffer with 8ms timer to accumulate and send optimized deltas."
+      },
+      "textSync": {
+        "title": "Text Synchronization",
+        "problem": "Detecting text changes (add/delete) without losing synchronization.",
+        "solution": "Tracking system with length comparison and differential command sending."
+      },
+      "crossPlatform": {
+        "title": "Cross-Platform Compatibility",
+        "problem": "Different OS behaviors for mouse/keyboard control.",
+        "solution": "Abstraction with PyAutoGUI and platform-specific configuration."
+      }
+    },
+    "resourceLinks": {
+      "localCode": "Local Code",
+      "readme": "README.md",
+      "executable": "Executable (.exe)"
+    },
+    "navigation": {
+      "prevProject": "Previous Project: RTX Web Scraper",
+      "nextProject": "Next Project: Social Media Downloader"
+    }
+  },
+  "socialMediaProject": {
+    "title": "Videos Downloader - Universal Video Downloader",
+    "subtitle": "Download videos from Instagram, TikTok and Facebook with web interface",
+    "metrics": {
+      "speed": "< 2s average",
+      "platforms": "3 platforms",
+      "successRate": "99% success rate"
+    },
+    "sections": {
+      "videoDemo": "Video Demo",
+      "videoPlaceholder": "Video Demo Coming Soon",
+      "videoDescription": "Download from Instagram, TikTok and Facebook with multiple qualities",
+      "overview": "Overview",
+      "overviewText": "Flask web application that allows downloading videos from major social networks (Instagram, TikTok, Facebook) with multiple quality options. Includes a modern and responsive web interface, download history system, and modular architecture with multiple download methods to ensure high availability. The application automatically handles URL normalization, shortened link expansion, and provides a complete REST API for mobile application integration.",
+      "technicalDetails": "Technical Details",
+      "techStack": "Technology Stack",
+      "challenges": "Challenges and Solutions",
+      "resources": "Links and Resources"
+    },
+    "features": {
+      "universalDownload": {
+        "title": "Universal Multi-Platform Download",
+        "desc": "Automatic platform detection with intelligent URL normalization"
+      },
+      "robustBackup": {
+        "title": "Robust Backup System",
+        "desc": "Multiple download methods with automatic fallback in case of failure"
+      },
+      "webInterface": {
+        "title": "Complete Web Interface",
+        "desc": "Responsive dashboard with history and REST API for mobile integration"
+      }
+    },
+    "techDetails": {
+      "architecture": {
+        "title": "Architecture",
+        "items": [
+          "MVC (Model-View-Controller) pattern",
+          "Modular structure by platform",
+          "RESTful API with JSON endpoints",
+          "File management system"
+        ]
+      },
+      "optimization": {
+        "title": "Optimization",
+        "items": [
+          "Multiple backup methods",
+          "Automatic URL normalization",
+          "Shortened link expansion",
+          "History with 50 entry limit"
+        ]
+      },
+      "features": {
+        "title": "Advanced Features",
+        "items": [
+          "Automatic platform detection",
+          "Multiple quality options",
+          "Automatic fallback",
+          "Detailed error logging"
+        ]
+      }
+    },
+    "techCategories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "tools": "Tools"
+    },
+    "challengesList": {
+      "urlVariations": {
+        "title": "Shortened URLs and Variations",
+        "problem": "TikTok uses multiple URL formats (vm.tiktok.com, vt.tiktok.com).",
+        "solution": "Normalization system with automatic expansion using requests.head()."
+      },
+      "multiPlatformReliability": {
+        "title": "Multi-Platform Reliability",
+        "problem": "Social media APIs change frequently, causing failures.",
+        "solution": "Multiple backup method architecture with automatic fallback."
+      },
+      "fileManagement": {
+        "title": "File Management",
+        "problem": "Efficient handling of downloaded files and storage cleanup.",
+        "solution": "JSON history system with 50 entry limit and unique UUID names."
+      }
+    },
+    "resourceLinks": {
+      "sourceCode": "Source Code",
+      "documentation": "Detailed Docstrings",
+      "webDemo": "Web Demo"
+    },
+    "navigation": {
+      "prevProject": "Previous Project: Remote Mouse",
+      "nextProject": "Next Project: Distance Calculator"
+    }
+  },
+  "distanceCalculatorProject": {
+    "title": "Distance Calculator",
+    "subtitle": "Web tool for measuring distances between multiple points on maps",
+    "metrics": {
+      "loadTime": "< 2s initial load",
+      "globalSupport": "Global support",
+      "accuracy": "99% accuracy"
+    },
+    "sections": {
+      "videoDemo": "Video Demo",
+      "videoPlaceholder": "Video Demo Coming Soon",
+      "videoDescription": "Complete demonstration of distance calculation and interactive matrix",
+      "overview": "Overview",
+      "overviewText": "Interactive web application that allows users to establish a reference point and add multiple destinations to calculate real road distances or straight-line distances. Includes advanced features such as distance matrix between all points, destination reordering by priority, and real-time route visualization. The application is optimized for use with both place search and manual coordinates, offering a robust experience even with API limitations.",
+      "technicalDetails": "Technical Details",
+      "techStack": "Technology Stack",
+      "challenges": "Challenges and Solutions",
+      "workflow": "Workflow",
+      "resources": "Links and Resources"
+    },
+    "features": {
+      "smartCalculation": {
+        "title": "Smart Distance Calculation",
+        "desc": "Dual system with Google Maps API and spherical geometric calculation as backup"
+      },
+      "interactiveInterface": {
+        "title": "Advanced Interactive Interface",
+        "desc": "Place search, manual coordinates or direct clicks with drag-and-drop"
+      },
+      "distanceMatrix": {
+        "title": "Complete Distance Matrix",
+        "desc": "Complete tables between all points for complex route planning"
+      }
+    },
+    "techDetails": {
+      "architecture": {
+        "title": "Architecture",
+        "items": [
+          "Frontend MVC pattern",
+          "Event-driven architecture with listeners",
+          "In-memory state with JavaScript objects",
+          "Theme persistence in localStorage"
+        ]
+      },
+      "fallbackSystem": {
+        "title": "Fallback System",
+        "items": [
+          "Google Maps API as primary method",
+          "Spherical geometric calculations as backup",
+          "Continuous operation without critical dependencies",
+          "Comprehensive error handling"
+        ]
+      },
+      "features": {
+        "title": "Advanced Features",
+        "items": [
+          "Place search + manual coordinates",
+          "Drag-and-drop reordering",
+          "Automatic light/dark theme",
+          "Integrated application guide"
+        ]
+      }
+    },
+    "techCategories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "apis": "APIs",
+      "tools": "Tools"
+    },
+    "challengesList": {
+      "apiLimitations": {
+        "title": "Google Maps API Limitations",
+        "problem": "Quota restrictions and possible connectivity failures with external APIs.",
+        "solution": "Automatic fallback system with spherical geometric calculations maintaining full functionality."
+      },
+      "stateManagement": {
+        "title": "Complex State Management",
+        "problem": "Synchronization between multiple markers, routes, and UI elements with dynamic reordering.",
+        "solution": "Centralized update system that recalculates all dependencies when order is modified."
+      },
+      "userExperience": {
+        "title": "Robust User Experience",
+        "problem": "Ensuring intuitive operation for both technical and non-technical users.",
+        "solution": "Hybrid interface supporting place search, manual coordinates, and map clicks with integrated guide."
+      }
+    },
+    "workflowSteps": {
+      "referencePoint": {
+        "title": "1. Reference Point",
+        "desc": "Establishment of initial point"
+      },
+      "destinations": {
+        "title": "2. Destinations",
+        "desc": "Addition of additional points"
+      },
+      "visualization": {
+        "title": "3. Visualization",
+        "desc": "Real-time route generation"
+      },
+      "export": {
+        "title": "4. Export",
+        "desc": "Report generation"
+      }
+    },
+    "resourceLinks": {
+      "localCode": "Local Code",
+      "integratedGuide": "Integrated Guide",
+      "localDemo": "Local Demo"
+    },
+    "navigation": {
+      "prevProject": "Previous Project: Social Media Downloader",
+      "nextProject": "Next Project: Excel Scraper"
+    }
+  },
+  "excelScraperProject": {
+    "title": "Universal Excel Table Validation and Visualization System",
+    "subtitle": "Universal system for Excel table validation and visualization",
+    "metrics": {
+      "timeReduction": "90-95% time reduction",
+      "multiFile": "Multi-file and sheet",
+      "universalValidation": "Universal validations"
+    },
+    "sections": {
+      "videoDemo": "Video Demo",
+      "videoPlaceholder": "Video Demo Coming Soon",
+      "videoDescription": "Complete demonstration of 4-step workflow in Desktop and Web",
+      "overview": "Overview",
+      "overviewText": "Comprehensive platform that automates extraction, combination, validation and presentation of educational Excel tables, with a shared and reusable architecture between a desktop app (PyQt) and a modern web interface (React + Flask). The core implements a bidimensional algorithm for merged cell detection from [value] markers, generating precise spans, cleanly combined data and a robust foundation for universal validations.",
+      "technicalDetails": "Technical Details",
+      "techStack": "Technology Stack",
+      "challenges": "Challenges and Solutions",
+      "workflow": "4-Step Workflow",
+      "resources": "Links and Resources"
+    },
+    "features": {
+      "bidimensionalAlgorithm": {
+        "title": "Bidimensional Merged Cell Algorithm",
+        "desc": "Detects horizontal/vertical spans based on [value] markers with cleanup and precise mergedCells generation"
+      },
+      "multiplatformArchitecture": {
+        "title": "Cross-Platform Architecture with Reusable Core",
+        "desc": "Desktop (PyQt) and Web (React/Flask) share business modules with specialized controllers"
+      },
+      "sophisticatedValidations": {
+        "title": "Sophisticated Educational Validations and 4-Step UI",
+        "desc": "Consistency, subtotals, totals with Step 1-4 flow and Excel-like table with range selection"
+      }
+    },
+    "techDetails": {
+      "architecture": {
+        "title": "Architecture",
+        "items": [
+          "Layer separation with specialized controllers",
+          "Hybrid MVC/MVP in Desktop, REST client-server in Web",
+          "Pure core without UI dependencies",
+          "Isolation by sheet and by file"
+        ]
+      },
+      "optimization": {
+        "title": "Optimization",
+        "items": [
+          "Bidimensional merged cell detection algorithm",
+          "Memoized pure function (useMemo/useCallback) in Web",
+          "\"Tracker\" log system with state evidence",
+          "Centralized configuration by period and mode"
+        ]
+      },
+      "features": {
+        "title": "Advanced Features",
+        "items": [
+          "Universal validations (consistency, subtotals, totals)",
+          "4-step UI with raw data as canonical source",
+          "Excel-like web interface with range selection",
+          "Dynamic configuration via JSON (roadmap)"
+        ]
+      }
+    },
+    "techCategories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "desktop": "Desktop",
+      "tools": "Tools"
+    },
+    "challengesList": {
+      "tabIsolation": {
+        "title": "Perfect Tab Isolation",
+        "problem": "Second tab didn't correctly detect already processed files and shared global state.",
+        "solution": "Tab/file-specific data in app_controller with dual verification and proceso_secuencial_activo saving."
+      },
+      "step4Fallbacks": {
+        "title": "Incorrect Step 4 Due to Fallbacks",
+        "problem": "Step 4 showed Step 3 data (fallback to datos_numericos) and incomplete mappings.",
+        "solution": "Prioritize datos_paso4, eliminate problematic fallback and complete mapping for compatibility."
+      },
+      "webLogicPort": {
+        "title": "Port Combination Logic to Web",
+        "problem": "Replicate bidimensional combination without infinite loops or re-renders in React.",
+        "solution": "Memoized pure function (useMemo/useCallback), mergedCells + dataToRender structure with controlled events."
+      }
+    },
+    "workflowSteps": {
+      "step1": {
+        "title": "Step 1: Combined View",
+        "desc": "Visualization of detected merged cells"
+      },
+      "step2": {
+        "title": "Step 2: Raw Data",
+        "desc": "Extraction and cleanup of original data"
+      },
+      "step3": {
+        "title": "Step 3: Visual Crop",
+        "desc": "Selection and adjustment of data ranges"
+      },
+      "step4": {
+        "title": "Step 4: Final Data",
+        "desc": "Validation and presentation of results"
+      }
+    },
+    "resourceLinks": {
+      "privateCode": "Private Code",
+      "technicalDocs": "Technical Documentation",
+      "localDemo": "Local Demo"
+    },
+    "navigation": {
+      "prevProject": "Previous Project: Distance Calculator",
+      "nextProject": "Next Project: Medical License System"
+    }
+  },
+  "medicalLicenseProject": {
+    "title": "Medical License Automation System",
+    "subtitle": "Automation tool for generating official medical licenses",
+    "metrics": {
+      "timeReduction": "95% time reduction",
+      "fields": "18 different fields",
+      "errorFree": "100% error-free"
+    },
+    "sections": {
+      "videoDemo": "Video Demo",
+      "videoPlaceholder": "Video Demo Coming Soon",
+      "videoDescription": "Demonstration of medical license automation in action",
+      "overview": "Overview",
+      "overviewText": "System developed for a health sector office that automates the process of filling medical license forms. Eliminates manual repetitive data entry, reduces human errors and significantly accelerates the process of generating official documents. The system processes Word templates with predefined fields and generates complete documents ready for signature and delivery.",
+      "technicalDetails": "Technical Details",
+      "techStack": "Technology Stack",
+      "challenges": "Challenges and Solutions",
+      "workflow": "Workflow",
+      "resources": "Links and Resources"
+    },
+    "features": {
+      "multipleInterfaces": {
+        "title": "Multiple Capture Interfaces",
+        "desc": "Commands, guided mode, voice recognition and predefined dictionaries"
+      },
+      "intelligentProcessing": {
+        "title": "Intelligent Template Processing",
+        "desc": "Automatic field detection with original format preservation"
+      },
+      "medicalDataManagement": {
+        "title": "Specialized Medical Data Management",
+        "desc": "Specific fields for diagnoses, periods and administrative information"
+      }
+    },
+    "techDetails": {
+      "architecture": {
+        "title": "Architecture",
+        "items": [
+          "Modular pattern with separation of responsibilities",
+          "Specialized modules by interface type",
+          "Sequential processing with validation",
+          "Python dictionary handling for mapping"
+        ]
+      },
+      "optimization": {
+        "title": "Optimization",
+        "items": [
+          "Recursive search in document elements",
+          "Validation of mandatory vs optional fields",
+          "Text replacement preserving styles",
+          "Centralized functions for processing"
+        ]
+      },
+      "features": {
+        "title": "Advanced Features",
+        "items": [
+          "Voice recognition for accessibility",
+          "Interface adapted to different technical levels",
+          "Complete preservation of official format",
+          "Validation system at each step"
+        ]
+      }
+    },
+    "techCategories": {
+      "mainLanguage": "Main Language",
+      "mainLibraries": "Main Libraries",
+      "formats": "Formats"
+    },
+    "challengesList": {
+      "complexFieldDetection": {
+        "title": "Complex Field Detection",
+        "problem": "Fields can be in paragraphs or tables with complex formatting.",
+        "solution": "Recursive search in all document elements (paragraphs, tables, cells)."
+      },
+      "nonTechnicalInterface": {
+        "title": "Interface for Non-Technical Staff",
+        "problem": "Medical staff needed a simple and intuitive interface.",
+        "solution": "Multiple interfaces (guided, voice, commands) adapted to different levels."
+      },
+      "formatPreservation": {
+        "title": "Format Preservation",
+        "problem": "Maintain official document format after automatic filling.",
+        "solution": "Text replacement preserving styles, tables and original structure."
+      }
+    },
+    "workflowSteps": {
+      "loadTemplate": {
+        "title": "1. Load Template",
+        "desc": "Word document with predefined fields"
+      },
+      "captureData": {
+        "title": "2. Capture Data",
+        "desc": "Guided interface, commands or voice recognition"
+      },
+      "processDocument": {
+        "title": "3. Process Document",
+        "desc": "Automatic filling preserving format"
+      },
+      "generateResult": {
+        "title": "4. Generate Result",
+        "desc": "Complete document ready for signature"
+      }
+    },
+    "resourceLinks": {
+      "confidentialCode": "Confidential Code",
+      "technicalDocs": "Technical Documentation",
+      "internalUse": "Internal Use"
+    },
+    "navigation": {
+      "prevProject": "Previous Project: Excel Scraper",
+      "nextProject": "Next Project: AI School Certificate System"
+    }
+  },
+  "schoolCertificateProject": {
+    "title": "AI School Certificate System",
+    "subtitle": "Desktop app with AI that automates certificates and school management",
+    "metrics": {
+      "aiMasterStudent": "AI Master-Student",
+      "inProduction": "In production",
+      "pdfSpeed": "1-5s per PDF"
+    },
+    "sections": {
+      "videoDemo": "Video Demo",
+      "videoPlaceholder": "Video Demo Coming Soon",
+      "videoDescription": "Complete demonstration of AI system in production",
+      "overview": "Overview",
+      "overviewText": "Desktop application (PyQt + PyInstaller) used in production by a school to replace secretarial tasks: student search/management, PDF certificate generation and transformation, intelligent queries and recommendations via AI. AI architecture with \"Master Interpreter\" that detects intention and sub-intentions and routes to specialists (Student/Help), integrating with local services (SQLite, PDF). Scalable and robust: improves with new AI models and stable packaging.",
+      "technicalDetails": "Technical Details",
+      "techStack": "Technology Stack",
+      "challenges": "Challenges and Solutions",
+      "workflow": "AI Workflow",
+      "productionImpact": "Production Impact",
+      "resources": "Links and Resources"
+    },
+    "features": {
+      "masterStudentRouting": {
+        "title": "Master-Student AI Routing",
+        "desc": "Master Interpreter detects intention and delegates to specialists with conversational memory"
+      },
+      "pdfGeneration": {
+        "title": "PDF Certificate Generation and Transformation",
+        "desc": "wkhtmltopdf with templates, integrated preview and transformation of existing PDFs"
+      },
+      "classicInterface": {
+        "title": "Classic CRUD Interface + Searches",
+        "desc": "Modules to manage students, search/filter and issue certificates with adaptive aesthetics"
+      }
+    },
+    "techDetails": {
+      "aiArchitecture": {
+        "title": "AI Architecture",
+        "items": [
+          "Intention-based Master–Student–Help routing",
+          "Unified analysis with conversation_stack",
+          "Service–Repository for data separated from UI",
+          "PyQt signals/slots for AI threads"
+        ]
+      },
+      "aiSystem": {
+        "title": "AI System",
+        "items": [
+          "Google Generative AI (Gemini 2.0-flash + fallback)",
+          "MasterPromptManager with conversational context",
+          "Automatic intention routing",
+          "Intelligent clarification requests"
+        ]
+      },
+      "features": {
+        "title": "Advanced Features",
+        "items": [
+          "Centralized normalization of school data",
+          "Health checks and auto-cleanup of context",
+          "PyInstaller packaging with included resources",
+          "Multi-level fallbacks for resilience"
+        ]
+      }
+    },
+    "techCategories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "ai": "AI",
+      "tools": "Tools"
+    },
+    "challengesList": {
+      "pyinstallerIntegration": {
+        "title": "google-generativeai + PyInstaller",
+        "problem": "Broken import and runtime when freezing; inaccessible environment variables.",
+        "solution": "Early \"monkey patch\", manual .env loading in executable, configured hooks/paths with model fallback."
+      },
+      "intentionRouting": {
+        "title": "Intention Routing + Context",
+        "problem": "Ambiguities (\"he\", \"the second\", \"of those...\"), deciding whether to use context and how to resolve references.",
+        "solution": "Unified analysis with MasterPromptManager; conversation_stack with awaiting; intelligent continuity."
+      },
+      "dataConsistency": {
+        "title": "Data Normalization and Consistency",
+        "problem": "Name/field variants affect searches and certificates.",
+        "solution": "Centralized normalization in Config; validation with warnings; configuration-based sorting."
+      }
+    },
+    "workflowSteps": {
+      "chatEngine": {
+        "title": "1. Chat Engine",
+        "desc": "Receives natural user query"
+      },
+      "masterInterpreter": {
+        "title": "2. Master Interpreter",
+        "desc": "Detects intention and sub-intentions"
+      },
+      "specializedRouting": {
+        "title": "3. Specialized Routing",
+        "desc": "Routes to Student/Help based on context"
+      },
+      "actionExecutor": {
+        "title": "4. Action Executor",
+        "desc": "Executes services and generates response"
+      }
+    },
+    "feedback": {
+      "academicDirector": {
+        "title": "Academic Director",
+        "institution": "\"Benito Juárez\" Elementary School",
+        "quote": "Before we took 15-20 minutes per certificate searching physical files. Now the system generates everything in less than 2 minutes just by typing the student's name.",
+        "metrics": {
+          "timeSaved": "85% less time",
+          "certificates": "200+ certificates/month"
+        }
+      },
+      "schoolSecretary": {
+        "title": "School Secretary",
+        "institution": "Main system user",
+        "quote": "The AI perfectly understands when I say 'I need Juan's certificate from 5th grade B'. I no longer have to remember complicated procedures, I just speak naturally.",
+        "metrics": {
+          "satisfaction": "95% satisfaction",
+          "aiAccuracy": "98% AI accuracy"
+        }
+      }
+    },
+    "resourceLinks": {
+      "privateCode": "Private Code",
+      "technicalDocs": "Technical Documentation",
+      "inProduction": "In Production"
+    },
+    "navigation": {
+      "prevProject": "Previous Project: Medical License System",
+      "backToPortfolio": "Back to Portfolio"
     }
   }
 }

@@ -131,11 +131,116 @@
             <div class="line-dec"></div>
             <span data-i18n="projects.subtitle">Algunos de mis trabajos más recientes</span>
           </div>
+
+          <!-- Sección de Proyectos Destacados -->
+          <div class="featured-projects-section">
+            <div class="featured-heading">
+              <h3 data-i18n="projects.featured.title">⭐ Proyectos Destacados</h3>
+              <p data-i18n="projects.featured.subtitle">Los proyectos más complejos y de mayor impacto</p>
+            </div>
+
+            <div class="featured-projects-grid">
+              <!-- Proyecto IA Destacado -->
+              <div class="featured-project-card ai-project">
+                <div class="featured-badge">
+                  <i class="fas fa-star"></i>
+                  <span data-i18n="projects.featured.badge">DESTACADO</span>
+                </div>
+                <div class="featured-icon">
+                  <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="featured-content">
+                  <h4 data-i18n="projects.featured.aiProject.title">Sistema de Constancias Escolares con IA</h4>
+                  <p data-i18n="projects.featured.aiProject.description">
+                    Aplicación de escritorio en producción con arquitectura IA Master-Student.
+                    Automatiza gestión escolar completa con interfaz conversacional natural.
+                  </p>
+                  <div class="featured-metrics">
+                    <div class="metric">
+                      <i class="fas fa-robot"></i>
+                      <span data-i18n="projects.featured.aiProject.metrics.ai">IA Avanzada</span>
+                    </div>
+                    <div class="metric">
+                      <i class="fas fa-school"></i>
+                      <span data-i18n="projects.featured.aiProject.metrics.production">En Producción</span>
+                    </div>
+                    <div class="metric">
+                      <i class="fas fa-clock"></i>
+                      <span data-i18n="projects.featured.aiProject.metrics.time">85% menos tiempo</span>
+                    </div>
+                  </div>
+                  <div class="featured-tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">PyQt5</span>
+                    <span class="tech-tag">Google Gemini</span>
+                    <span class="tech-tag">Master-Student AI</span>
+                  </div>
+                  <a href="proyectos/constancias-escolares-ia.html" class="featured-btn" data-i18n="projects.featured.viewProject">
+                    <i class="fas fa-arrow-right"></i>
+                    Ver Proyecto Completo
+                  </a>
+                </div>
+              </div>
+
+              <!-- Proyecto Excel Destacado -->
+              <div class="featured-project-card excel-project">
+                <div class="featured-badge">
+                  <i class="fas fa-star"></i>
+                  <span data-i18n="projects.featured.badge">DESTACADO</span>
+                </div>
+                <div class="featured-icon">
+                  <i class="fas fa-file-excel"></i>
+                </div>
+                <div class="featured-content">
+                  <h4 data-i18n="projects.featured.excelProject.title">Sistema Universal de Validación Excel</h4>
+                  <p data-i18n="projects.featured.excelProject.description">
+                    Plataforma híbrida (PyQt + React) que automatiza extracción, validación y
+                    visualización de tablas Excel educativas con arquitectura compartida.
+                  </p>
+                  <div class="featured-metrics">
+                    <div class="metric">
+                      <i class="fas fa-cogs"></i>
+                      <span data-i18n="projects.featured.excelProject.metrics.automation">100% Automatizado</span>
+                    </div>
+                    <div class="metric">
+                      <i class="fas fa-desktop"></i>
+                      <span data-i18n="projects.featured.excelProject.metrics.hybrid">Híbrido Desktop/Web</span>
+                    </div>
+                    <div class="metric">
+                      <i class="fas fa-check-circle"></i>
+                      <span data-i18n="projects.featured.excelProject.metrics.validation">Validación Inteligente</span>
+                    </div>
+                  </div>
+                  <div class="featured-tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">Flask</span>
+                    <span class="tech-tag">PyQt</span>
+                  </div>
+                  <a href="proyectos/excel-scraper.html" class="featured-btn" data-i18n="projects.featured.viewProject">
+                    <i class="fas fa-arrow-right"></i>
+                    Ver Proyecto Completo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Separador y título para todos los proyectos -->
+          <div class="all-projects-heading">
+            <h3 data-i18n="projects.allProjects.title">Todos los Proyectos</h3>
+            <p data-i18n="projects.allProjects.subtitle">Explora mi portafolio completo por categorías</p>
+          </div>
+
           <div class="filters">
             <div class="filters-content">
               <div class="item-filter">
                 <input type="radio" name="filter" id="all" checked>
                 <label for="all" data-i18n="projects.filters.all">Todos</label>
+              </div>
+              <div class="item-filter">
+                <input type="radio" name="filter" id="featured">
+                <label for="featured" data-i18n="projects.filters.featured">⭐ Destacados</label>
               </div>
               <div class="item-filter">
                 <input type="radio" name="filter" id="automation">
@@ -165,8 +270,8 @@
           </div>
           
           <!-- Proyectos -->
-          <div class="isotope-box" id="page-1">
-            <div class="isotope-item" data-type="automation">
+          <div class="isotope-box" id="projects-container">
+            <div class="isotope-item" data-type="automation web-apps desktop">
               <div class="project-container">
                 <figure class="project-card">
                   <div class="gradient-preview">
@@ -192,7 +297,7 @@
             </div>
 
             <!-- Proyecto 2 -->
-            <div class="isotope-item" data-type="mobile">
+            <div class="isotope-item" data-type="mobile desktop">
               <div class="project-container">
                 <figure class="project-card">
                   <div class="gradient-preview">
@@ -220,7 +325,7 @@
             </div>
 
             <!-- Proyecto 3 -->
-            <div class="isotope-item" data-type="web-apps">
+            <div class="isotope-item" data-type="web-apps automation mobile">
               <div class="project-container">
                 <figure class="project-card">
                   <div class="gradient-preview">
@@ -248,7 +353,7 @@
             </div>
 
             <!-- Proyecto 4 -->
-            <div class="isotope-item" data-type="web-apps">
+            <div class="isotope-item" data-type="web-apps mobile">
               <div class="project-container">
                 <figure class="project-card">
                   <div class="gradient-preview">
@@ -276,7 +381,7 @@
             </div>
 
             <!-- Proyecto Portfolio Webs -->
-            <div class="isotope-item" data-type="web-design">
+            <div class="isotope-item" data-type="web-design mobile">
               <div class="project-container">
                 <figure class="project-card">
                   <div class="gradient-preview">
@@ -302,14 +407,15 @@
                 </div>
               </div>
             </div>
-          </div>
-          
-          <!-- Proyectos - Página 2 (inicialmente oculta) -->
-          <div class="isotope-box" id="page-2" style="display: none;">
-            <!-- Proyecto 5 -->
-            <div class="isotope-item" data-type="automation">
+
+            <!-- Proyecto 6 - Excel Scraper -->
+            <div class="isotope-item" data-type="automation desktop web-apps featured">
               <div class="project-container">
                 <figure class="project-card">
+                  <div class="featured-project-badge">
+                    <i class="fas fa-star"></i>
+                    <span>DESTACADO</span>
+                  </div>
                   <div class="gradient-preview">
                     <div class="preview-content">
                       <i class="fas fa-file-excel"></i>
@@ -334,8 +440,8 @@
               </div>
             </div>
 
-            <!-- Proyecto 6 - Sistema de Licencias Médicas -->
-            <div class="isotope-item" data-type="automation">
+            <!-- Proyecto 7 - Sistema de Licencias Médicas -->
+            <div class="isotope-item" data-type="automation desktop ai">
               <div class="project-container">
                 <figure class="project-card">
                   <div class="gradient-preview">
@@ -362,10 +468,14 @@
               </div>
             </div>
 
-            <!-- Proyecto 7 - Sistema de Constancias Escolares con IA -->
-            <div class="isotope-item" data-type="ai">
+            <!-- Proyecto 8 - Sistema de Constancias Escolares con IA -->
+            <div class="isotope-item" data-type="ai desktop automation featured">
               <div class="project-container">
                 <figure class="project-card">
+                  <div class="featured-project-badge">
+                    <i class="fas fa-star"></i>
+                    <span>DESTACADO</span>
+                  </div>
                   <div class="gradient-preview">
                     <div class="preview-content">
                       <i class="fas fa-graduation-cap"></i>
@@ -390,16 +500,7 @@
               </div>
             </div>
           </div>
-          
-          <!-- Paginación -->
-          <div class="pagination-container">
-            <ul class="pagination">
-              <li class="pagination-prev"><a href="#" id="prev-page"><i class="fas fa-chevron-left"></i></a></li>
-              <li class="active"><a href="#" data-page="1">1</a></li>
-              <li><a href="#" data-page="2">2</a></li>
-              <li class="pagination-next"><a href="#" id="next-page"><i class="fas fa-chevron-right"></i></a></li>
-            </ul>
-          </div>
+
         </div>
       </div>
 
@@ -412,68 +513,152 @@
               ¿Interesado en colaborar en un proyecto o tienes alguna pregunta?
             </span>
           </div>
-          <div class="row">
-            <div class="right-content">
-              <div class="container">
-                <form id="contact" action="https://formspree.io/f/tuemail@ejemplo.com" method="POST">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <fieldset>
-                        <input
-                          name="name"
-                          type="text"
-                          class="form-control"
-                          id="name"
-                          data-i18n="[placeholder]contact.form.name"
-                          required=""
-                        />
-                      </fieldset>
+
+          <div class="contact-section">
+            <div class="row">
+              <!-- Información de contacto -->
+              <div class="col-lg-5 col-md-12">
+                <div class="contact-info">
+                  <div class="contact-info-header">
+                    <h3 data-i18n="contact.info.title">¡Hablemos!</h3>
+                    <p data-i18n="contact.info.description">
+                      Estoy siempre abierto a discutir nuevos proyectos, oportunidades creativas
+                      o simplemente charlar sobre tecnología.
+                    </p>
+                  </div>
+
+                  <div class="contact-methods">
+                    <div class="contact-method">
+                      <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                      </div>
+                      <div class="contact-details">
+                        <h4 data-i18n="contact.info.email.title">Email</h4>
+                        <p>tu.email@ejemplo.com</p>
+                      </div>
                     </div>
-                    <div class="col-md-6">
-                      <fieldset>
-                        <input
-                          name="email"
-                          type="email"
-                          class="form-control"
-                          id="email"
-                          data-i18n="[placeholder]contact.form.email"
-                          required=""
-                        />
-                      </fieldset>
+
+                    <div class="contact-method">
+                      <div class="contact-icon">
+                        <i class="fab fa-linkedin"></i>
+                      </div>
+                      <div class="contact-details">
+                        <h4>LinkedIn</h4>
+                        <p>linkedin.com/in/tu-perfil</p>
+                      </div>
                     </div>
-                    <div class="col-md-12">
-                      <fieldset>
-                        <input
-                          name="subject"
-                          type="text"
-                          class="form-control"
-                          id="subject"
-                          data-i18n="[placeholder]contact.form.subject"
-                          required=""
-                        />
-                      </fieldset>
+
+                    <div class="contact-method">
+                      <div class="contact-icon">
+                        <i class="fab fa-github"></i>
+                      </div>
+                      <div class="contact-details">
+                        <h4>GitHub</h4>
+                        <p>github.com/tu-usuario</p>
+                      </div>
                     </div>
-                    <div class="col-md-12">
-                      <fieldset>
-                        <textarea
-                          name="message"
-                          rows="6"
-                          class="form-control"
-                          id="message"
-                          data-i18n="[placeholder]contact.form.message"
-                          required=""
-                        ></textarea>
-                      </fieldset>
-                    </div>
-                    <div class="col-md-12">
-                      <fieldset>
-                        <button type="submit" id="form-submit" class="button" data-i18n="contact.form.send">
-                          Enviar Mensaje
-                        </button>
-                      </fieldset>
+
+                    <div class="contact-method">
+                      <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                      </div>
+                      <div class="contact-details">
+                        <h4 data-i18n="contact.info.response.title">Tiempo de Respuesta</h4>
+                        <p data-i18n="contact.info.response.time">Usualmente dentro de 24 horas</p>
+                      </div>
                     </div>
                   </div>
-                </form>
+                </div>
+              </div>
+
+              <!-- Formulario de contacto -->
+              <div class="col-lg-7 col-md-12">
+                <div class="contact-form-container">
+                  <form id="contact" class="modern-contact-form" action="https://formspree.io/f/tuemail@ejemplo.com" method="POST">
+                    <div class="form-header">
+                      <h3 data-i18n="contact.form.title">Envíame un Mensaje</h3>
+                      <p data-i18n="contact.form.description">
+                        Completa el formulario y me pondré en contacto contigo lo antes posible.
+                      </p>
+                    </div>
+
+                    <div class="form-grid">
+                      <div class="form-group">
+                        <label for="name" data-i18n="contact.form.labels.name">Nombre Completo</label>
+                        <div class="input-wrapper">
+                          <i class="fas fa-user input-icon"></i>
+                          <input
+                            name="name"
+                            type="text"
+                            class="modern-input"
+                            id="name"
+                            data-i18n="[placeholder]contact.form.placeholders.name"
+                            placeholder="Tu nombre completo"
+                            required=""
+                          />
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="email" data-i18n="contact.form.labels.email">Correo Electrónico</label>
+                        <div class="input-wrapper">
+                          <i class="fas fa-envelope input-icon"></i>
+                          <input
+                            name="email"
+                            type="email"
+                            class="modern-input"
+                            id="email"
+                            data-i18n="[placeholder]contact.form.placeholders.email"
+                            placeholder="tu.email@ejemplo.com"
+                            required=""
+                          />
+                        </div>
+                      </div>
+
+                      <div class="form-group full-width">
+                        <label for="subject" data-i18n="contact.form.labels.subject">Asunto</label>
+                        <div class="input-wrapper">
+                          <i class="fas fa-tag input-icon"></i>
+                          <input
+                            name="subject"
+                            type="text"
+                            class="modern-input"
+                            id="subject"
+                            data-i18n="[placeholder]contact.form.placeholders.subject"
+                            placeholder="¿De qué quieres hablar?"
+                            required=""
+                          />
+                        </div>
+                      </div>
+
+                      <div class="form-group full-width">
+                        <label for="message" data-i18n="contact.form.labels.message">Mensaje</label>
+                        <div class="input-wrapper">
+                          <i class="fas fa-comment input-icon textarea-icon"></i>
+                          <textarea
+                            name="message"
+                            rows="6"
+                            class="modern-textarea"
+                            id="message"
+                            data-i18n="[placeholder]contact.form.placeholders.message"
+                            placeholder="Cuéntame sobre tu proyecto o idea..."
+                            required=""
+                          ></textarea>
+                        </div>
+                      </div>
+
+                      <div class="form-group full-width">
+                        <button type="submit" id="form-submit" class="modern-submit-btn">
+                          <i class="fas fa-paper-plane"></i>
+                          <span data-i18n="contact.form.send">Enviar Mensaje</span>
+                          <div class="btn-loading">
+                            <i class="fas fa-spinner fa-spin"></i>
+                          </div>
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
@@ -490,6 +675,15 @@
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/template-loader.js"></script>
     <script>
+      // Agregar easing personalizado tan pronto como jQuery esté disponible
+      $(document).ready(function() {
+        // Definir easing personalizado para animaciones suaves
+        $.easing.easeInOutCubic = function (x, t, b, c, d) {
+          if ((t/=d/2) < 1) return c/2*t*t*t + b;
+          return c/2*((t-=2)*t*t + 2) + b;
+        };
+      });
+
       document.addEventListener('DOMContentLoaded', async function() {
         try {
           // Primero actualizar las rutas CSS
@@ -562,92 +756,35 @@
           checkSection();
         });
         
-        // Filtrado de proyectos
+        // Filtrado de proyectos con soporte para múltiples categorías
         $('.item-filter input').on('change', function() {
           var filterValue = this.id;
-          
+
           if (filterValue === 'all') {
-            $('.isotope-box:visible .isotope-item').show();
+            $('.isotope-item').show();
           } else {
-            $('.isotope-box:visible .isotope-item').hide();
-            $('.isotope-box:visible .isotope-item[data-type="' + filterValue + '"]').show();
+            $('.isotope-item').hide();
+            // Buscar elementos que contengan la categoría en su data-type (separado por espacios)
+            $('.isotope-item').each(function() {
+              var categories = $(this).attr('data-type').split(' ');
+              if (categories.includes(filterValue)) {
+                $(this).show();
+              }
+            });
           }
-          
+
           // Efecto visual para los botones
           $('.item-filter label').removeClass('active');
           $(this).next('label').addClass('active');
-          
-          // Reorganizar el grid después de filtrar
-          reorganizeGrid();
-        });
-        
-        // Paginación
-        $('.pagination a[data-page]').off('click').on('click', function(e) {
-          e.preventDefault(); // Prevenir el comportamiento por defecto
-          var pageNum = $(this).data('page');
-          showPage(pageNum);
-        });
 
-        $('#prev-page').off('click').on('click', function(e) {
-          e.preventDefault();
-          var currentPage = $('.pagination li.active a').data('page');
-          if (currentPage > 1) {
-            showPage(currentPage - 1);
-          }
-        });
-
-        $('#next-page').off('click').on('click', function(e) {
-          e.preventDefault();
-          var currentPage = $('.pagination li.active a').data('page');
-          var totalPages = $('.pagination a[data-page]').length;
-          if (currentPage < totalPages) {
-            showPage(currentPage + 1);
-          }
-        });
-
-        function showPage(pageNum) {
-          // Ocultar todas las páginas
-          $('.isotope-box').hide();
-          
-          // Mostrar la página seleccionada
-          $('#page-' + pageNum).show();
-          
-          // Actualizar la paginación activa
-          $('.pagination li').removeClass('active');
-          $('.pagination a[data-page="' + pageNum + '"]').parent().addClass('active');
-          
-          // Aplicar filtro actual si hay uno seleccionado
-          var currentFilter = $('.item-filter input:checked').attr('id');
-          if (currentFilter && currentFilter !== 'all') {
-            $('#page-' + pageNum + ' .isotope-item').hide();
-            $('#page-' + pageNum + ' .isotope-item[data-type="' + currentFilter + '"]').show();
-          } else {
-            $('#page-' + pageNum + ' .isotope-item').show();
-          }
-          
-          // Reorganizar el grid después de cambiar de página
-          if (typeof reorganizeGrid === 'function') {
-            reorganizeGrid();
-          }
-        }
-        
-        // Función para reorganizar el grid
-        function reorganizeGrid() {
-          // Asegurarse de que los elementos visibles estén distribuidos correctamente
-          var visibleItems = $('.isotope-box:visible .isotope-item:visible');
-          
-          // Si no hay elementos visibles, no hacer nada
-          if (visibleItems.length === 0) return;
-          
           // Mostrar mensaje si no hay proyectos que coincidan con el filtro
+          var visibleItems = $('.isotope-item:visible');
+          $('.no-projects-message').remove();
+
           if (visibleItems.length === 0) {
-            if (!$('.no-projects-message').length) {
-              $('.isotope-box:visible').append('<div class="no-projects-message">No hay proyectos que coincidan con este filtro.</div>');
-            }
-          } else {
-            $('.no-projects-message').remove();
+            $('#projects-container').append('<div class="no-projects-message" style="text-align: center; padding: 2rem; color: #666; font-size: 1.1rem;">No hay proyectos que coincidan con este filtro.</div>');
           }
-        }
+        });
         
         // Inicializar la página
         showPage(1);
@@ -661,6 +798,60 @@
             $(this).removeClass('hover');
           }
         );
+
+        // Mejorar interactividad del formulario de contacto
+        $('#contact').on('submit', function(e) {
+          e.preventDefault();
+
+          const submitBtn = $('#form-submit');
+
+          // Mostrar estado de carga
+          submitBtn.addClass('loading');
+
+          // Simular envío (reemplazar con lógica real)
+          setTimeout(() => {
+            submitBtn.removeClass('loading');
+
+            // Mostrar mensaje de éxito
+            const successMessage = $('<div class="form-success-message" style="background: linear-gradient(135deg, #28a745, #20c997); color: white; padding: 20px; border-radius: 15px; margin-top: 25px; text-align: center; box-shadow: 0 8px 25px rgba(40, 167, 69, 0.3);"><i class="fas fa-check-circle" style="margin-right: 10px; font-size: 1.2rem;"></i>¡Mensaje enviado exitosamente! Te responderé pronto.</div>');
+            $('.contact-form-container').append(successMessage);
+
+            // Limpiar formulario
+            this.reset();
+            $('.input-wrapper').removeClass('focused error');
+            $('.error-message').remove();
+
+            // Remover mensaje después de 5 segundos
+            setTimeout(() => {
+              successMessage.fadeOut(() => successMessage.remove());
+            }, 5000);
+          }, 2000);
+        });
+
+        // Animación de focus en inputs
+        $('.modern-input, .modern-textarea').on('focus', function() {
+          $(this).parent().addClass('focused');
+        }).on('blur', function() {
+          if (!$(this).val()) {
+            $(this).parent().removeClass('focused');
+          }
+        });
+
+        // Validación en tiempo real
+        $('.modern-input[required], .modern-textarea[required]').on('blur', function() {
+          const input = $(this);
+          const wrapper = input.parent();
+
+          if (!input.val().trim()) {
+            wrapper.addClass('error');
+            if (!wrapper.find('.error-message').length) {
+              wrapper.append('<span class="error-message" style="color: #dc3545; font-size: 0.8rem; margin-top: 5px; display: block;">Este campo es obligatorio</span>');
+            }
+          } else {
+            wrapper.removeClass('error');
+            wrapper.find('.error-message').remove();
+          }
+        });
       });
     </script>
   </body>

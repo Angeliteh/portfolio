@@ -81,12 +81,41 @@
     "subtitle": "Algunos de mis trabajos más recientes",
     "filters": {
       "all": "Todos",
+      "featured": "⭐ Destacados",
       "automation": "Automatización",
       "webApps": "Aplicaciones Web",
       "webDesign": "Diseño Web",
       "mobile": "Móvil",
       "desktop": "Escritorio",
       "ai": "Inteligencia Artificial"
+    },
+    "featured": {
+      "title": "⭐ Proyectos Destacados",
+      "subtitle": "Los proyectos más complejos y de mayor impacto",
+      "badge": "DESTACADO",
+      "viewProject": "Ver Proyecto Completo",
+      "aiProject": {
+        "title": "Sistema de Constancias Escolares con IA",
+        "description": "Aplicación de escritorio en producción con arquitectura IA Master-Student. Automatiza gestión escolar completa con interfaz conversacional natural.",
+        "metrics": {
+          "ai": "IA Avanzada",
+          "production": "En Producción",
+          "time": "85% menos tiempo"
+        }
+      },
+      "excelProject": {
+        "title": "Sistema Universal de Validación Excel",
+        "description": "Plataforma híbrida (PyQt + React) que automatiza extracción, validación y visualización de tablas Excel educativas con arquitectura compartida.",
+        "metrics": {
+          "automation": "100% Automatizado",
+          "hybrid": "Híbrido Desktop/Web",
+          "validation": "Validación Inteligente"
+        }
+      }
+    },
+    "allProjects": {
+      "title": "Todos los Proyectos",
+      "subtitle": "Explora mi portafolio completo por categorías"
     },
     "viewProject": "Ver Proyecto",
     "viewPortfolio": "Ver Portfolio Completo",
@@ -134,12 +163,810 @@
   "contact": {
     "title": "Contacto",
     "subtitle": "¿Interesado en colaborar en un proyecto o tienes alguna pregunta?",
+    "info": {
+      "title": "¡Hablemos!",
+      "description": "Estoy siempre abierto a discutir nuevos proyectos, oportunidades creativas o simplemente charlar sobre tecnología.",
+      "email": {
+        "title": "Email"
+      },
+      "response": {
+        "title": "Tiempo de Respuesta",
+        "time": "Usualmente dentro de 24 horas"
+      }
+    },
     "form": {
-      "name": "Tu nombre",
-      "email": "Tu correo electrónico",
-      "subject": "Asunto",
-      "message": "Mensaje",
+      "title": "Envíame un Mensaje",
+      "description": "Completa el formulario y me pondré en contacto contigo lo antes posible.",
+      "labels": {
+        "name": "Nombre Completo",
+        "email": "Correo Electrónico",
+        "subject": "Asunto",
+        "message": "Mensaje"
+      },
+      "placeholders": {
+        "name": "Tu nombre completo",
+        "email": "tu.email@ejemplo.com",
+        "subject": "¿De qué quieres hablar?",
+        "message": "Cuéntame sobre tu proyecto o idea..."
+      },
       "send": "Enviar Mensaje"
+    }
+  },
+  "rtxProject": {
+    "title": "RTX Web Scraper - Monitor de Precios de GPUs",
+    "subtitle": "Monitor automático de precios de tarjetas gráficas RTX en tiempo real",
+    "metrics": {
+      "products": "51 productos en <30s",
+      "platforms": "2 plataformas principales",
+      "accuracy": "95% precisión"
+    },
+    "sections": {
+      "videoDemo": "Demo en Video",
+      "videoPlaceholder": "Video Demo Próximamente",
+      "videoDescription": "60-90 segundos mostrando scraping → resultados → filtros → historial",
+      "overview": "Descripción General",
+      "overviewText": "Aplicación web completa que automatiza el monitoreo de precios de tarjetas gráficas NVIDIA RTX en Amazon México y MercadoLibre. Incluye scraping inteligente, base de datos histórica, interfaz web responsiva con filtros avanzados, gráficos de tendencias de precios y sistema de alertas. Diseñada para ayudar a usuarios a encontrar las mejores ofertas y tomar decisiones informadas de compra.",
+      "technicalDetails": "Detalles Técnicos",
+      "techStack": "Stack Tecnológico",
+      "challenges": "Desafíos y Soluciones",
+      "workflow": "Flujo de Trabajo",
+      "resources": "Enlaces y Recursos"
+    },
+    "features": {
+      "smartScraping": {
+        "title": "Scraping Inteligente",
+        "desc": "Extracción automatizada con filtros para eliminar productos irrelevantes"
+      },
+      "webInterface": {
+        "title": "Interfaz Web Completa",
+        "desc": "Dashboard responsivo con filtros, ordenamiento y modo oscuro/claro"
+      },
+      "alertSystem": {
+        "title": "Sistema de Alertas",
+        "desc": "Notificaciones vía Telegram/Discord cuando los precios bajan >10%"
+      }
+    },
+    "techDetails": {
+      "architecture": {
+        "title": "Arquitectura",
+        "items": [
+          "Patrón MVC con separación clara",
+          "Estructura modular (scrapers/, database/, utils/)",
+          "API REST endpoints + interfaz web integrada",
+          "SQLite con esquema relacional"
+        ]
+      },
+      "security": {
+        "title": "Anti-Bot Protection",
+        "items": [
+          "User-agents rotativos",
+          "Delays aleatorios anti-bloqueo",
+          "Headers realistas",
+          "Selenium para sitios dinámicos"
+        ]
+      },
+      "features": {
+        "title": "Características Avanzadas",
+        "items": [
+          "Filtros inteligentes de productos",
+          "Historial completo de precios",
+          "Gráficos de tendencias",
+          "Alertas configurables"
+        ]
+      }
+    },
+    "techCategories": {
+      "backend": "Backend",
+      "frontend": "Frontend",
+      "tools": "Herramientas"
+    },
+    "challengesList": {
+      "antiBotProtection": {
+        "title": "Anti-Bot Protection",
+        "problem": "Amazon y MercadoLibre bloquean requests automatizados.",
+        "solution": "User-agents rotativos, delays aleatorios, headers realistas y Selenium para sitios complejos."
+      },
+      "productFiltering": {
+        "title": "Filtrado de Productos",
+        "problem": "Búsquedas devuelven cables, soportes y accesorios no deseados.",
+        "solution": "Lista de palabras prohibidas configurable y validación por modelo RTX específico."
+      },
+      "pythonCompatibility": {
+        "title": "Compatibilidad Python 3.13",
+        "problem": "Python 3.13 no compatible con psycopg2-binary precompilado.",
+        "solution": "Importaciones condicionales y configuración flexible de base de datos."
+      }
+    },
+    "workflowSteps": {
+      "scraping": {
+        "title": "1. Scraping Automático",
+        "desc": "Extracción de datos de Amazon MX y MercadoLibre"
+      },
+      "filtering": {
+        "title": "2. Filtrado Inteligente",
+        "desc": "Eliminación de productos irrelevantes"
+      },
+      "storage": {
+        "title": "3. Almacenamiento",
+        "desc": "Guardado en base de datos con historial"
+      },
+      "visualization": {
+        "title": "4. Visualización",
+        "desc": "Dashboard web con gráficos y filtros"
+      }
+    },
+    "resourceLinks": {
+      "sourceCode": "Código Fuente",
+      "documentation": "Documentación",
+      "localDemo": "Demo Local"
+    },
+    "navigation": {
+      "backToPortfolio": "Volver al Portafolio",
+      "nextProject": "Siguiente Proyecto: Remote Mouse"
+    }
+  },
+  "remoteMouseProject": {
+    "title": "Remote Mouse",
+    "subtitle": "Control remoto de mouse y teclado desde dispositivos móviles via WebSocket",
+    "metrics": {
+      "latency": "Latencia < 8ms",
+      "platforms": "6 plataformas",
+      "accuracy": "99.9% precisión"
+    },
+    "sections": {
+      "videoDemo": "Demo en Video",
+      "videoPlaceholder": "Video Demo Próximamente",
+      "videoDescription": "Demostración de control remoto en acción desde dispositivo móvil",
+      "overview": "Descripción General",
+      "overviewText": "Aplicación multiplataforma que permite controlar el mouse y teclado de una PC desde un dispositivo móvil usando comunicación WebSocket en tiempo real. Incluye un servidor Python con interfaz gráfica para PC y una aplicación Flutter para dispositivos móviles con soporte para Android, iOS, Web, Windows, macOS y Linux. Ofrece control preciso del cursor, clics, scroll, escritura de texto y combinaciones de teclas con retroalimentación háptica y configuración personalizable.",
+      "technicalDetails": "Detalles Técnicos",
+      "techStack": "Stack Tecnológico",
+      "challenges": "Desafíos y Soluciones",
+      "resources": "Enlaces y Recursos"
+    },
+    "features": {
+      "mouseControl": {
+        "title": "Control de Mouse Avanzado",
+        "desc": "Movimiento preciso con buffer de optimización, clics y scroll con sensibilidad ajustable"
+      },
+      "virtualKeyboard": {
+        "title": "Teclado Virtual Inteligente",
+        "desc": "Escritura en tiempo real, teclas especiales y combinaciones (Ctrl+C, Alt+Tab)"
+      },
+      "multiplatform": {
+        "title": "Interfaz Multiplataforma",
+        "desc": "Flutter nativo para móviles y servidor Python GUI, soporte para 6 plataformas"
+      }
+    },
+    "techDetails": {
+      "architecture": {
+        "title": "Arquitectura",
+        "items": [
+          "Cliente-Servidor con WebSocket",
+          "MVC en Flutter con servicios modulares",
+          "Separación clara servidor Python/cliente Flutter",
+          "Protocolo de comandos personalizado"
+        ]
+      },
+      "optimization": {
+        "title": "Optimización",
+        "items": [
+          "Buffer de movimientos con timer de 8ms",
+          "WebSocket bidireccional optimizado",
+          "Deltas de movimiento acumulados",
+          "Configuración persistente local"
+        ]
+      },
+      "features": {
+        "title": "Características Avanzadas",
+        "items": [
+          "Retroalimentación háptica",
+          "Bandeja del sistema",
+          "Inicio automático",
+          "8 tipos de comandos diferentes"
+        ]
+      }
+    },
+    "techCategories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "tools": "Herramientas"
+    },
+    "challengesList": {
+      "latencyMovements": {
+        "title": "Latencia en Movimientos",
+        "problem": "Los movimientos individuales del mouse generaban demasiados comandos WebSocket.",
+        "solution": "Buffer de movimientos con timer de 8ms para acumular y enviar deltas optimizados."
+      },
+      "textSync": {
+        "title": "Sincronización de Texto",
+        "problem": "Detectar cambios de texto (añadir/borrar) sin perder sincronización.",
+        "solution": "Sistema de tracking con comparación de longitudes y envío diferencial de comandos."
+      },
+      "crossPlatform": {
+        "title": "Compatibilidad Multiplataforma",
+        "problem": "Diferentes comportamientos de SO para control de mouse/teclado.",
+        "solution": "Abstracción con PyAutoGUI y configuración específica por plataforma."
+      }
+    },
+    "resourceLinks": {
+      "localCode": "Código Local",
+      "readme": "README.md",
+      "executable": "Ejecutable (.exe)"
+    },
+    "navigation": {
+      "prevProject": "Proyecto Anterior: RTX Web Scraper",
+      "nextProject": "Siguiente Proyecto: Social Media Downloader"
+    }
+  },
+  "socialMediaProject": {
+    "title": "Videos Downloader - Descargador Universal de Videos",
+    "subtitle": "Descarga videos de Instagram, TikTok y Facebook con interfaz web",
+    "metrics": {
+      "speed": "< 2s promedio",
+      "platforms": "3 plataformas",
+      "successRate": "99% tasa de éxito"
+    },
+    "sections": {
+      "videoDemo": "Demo en Video",
+      "videoPlaceholder": "Video Demo Próximamente",
+      "videoDescription": "Descarga desde Instagram, TikTok y Facebook con múltiples calidades",
+      "overview": "Descripción General",
+      "overviewText": "Aplicación web desarrollada en Flask que permite descargar videos de las principales redes sociales (Instagram, TikTok, Facebook) con múltiples opciones de calidad. Incluye una interfaz web moderna y responsiva, sistema de historial de descargas, y arquitectura modular con múltiples métodos de descarga para garantizar alta disponibilidad. La aplicación maneja automáticamente la normalización de URLs, expansión de enlaces acortados, y proporciona una API REST completa para integración con aplicaciones móviles.",
+      "technicalDetails": "Detalles Técnicos",
+      "techStack": "Stack Tecnológico",
+      "challenges": "Desafíos y Soluciones",
+      "resources": "Enlaces y Recursos"
+    },
+    "features": {
+      "universalDownload": {
+        "title": "Descarga Universal Multi-Plataforma",
+        "desc": "Detección automática de plataforma con normalización inteligente de URLs"
+      },
+      "robustBackup": {
+        "title": "Sistema de Respaldo Robusto",
+        "desc": "Múltiples métodos de descarga con fallback automático en caso de fallo"
+      },
+      "webInterface": {
+        "title": "Interfaz Web Completa",
+        "desc": "Dashboard responsivo con historial y API REST para integración móvil"
+      }
+    },
+    "techDetails": {
+      "architecture": {
+        "title": "Arquitectura",
+        "items": [
+          "Patrón MVC (Model-View-Controller)",
+          "Estructura modular por plataforma",
+          "API RESTful con endpoints JSON",
+          "Sistema de gestión de archivos"
+        ]
+      },
+      "optimization": {
+        "title": "Optimización",
+        "items": [
+          "Múltiples métodos de respaldo",
+          "Normalización automática de URLs",
+          "Expansión de enlaces acortados",
+          "Historial con límite de 50 entradas"
+        ]
+      },
+      "features": {
+        "title": "Características Avanzadas",
+        "items": [
+          "Detección automática de plataforma",
+          "Múltiples opciones de calidad",
+          "Fallback automático",
+          "Logging detallado de errores"
+        ]
+      }
+    },
+    "techCategories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "tools": "Herramientas"
+    },
+    "challengesList": {
+      "urlVariations": {
+        "title": "URLs Acortadas y Variaciones",
+        "problem": "TikTok usa múltiples formatos de URL (vm.tiktok.com, vt.tiktok.com).",
+        "solution": "Sistema de normalización con expansión automática usando requests.head()."
+      },
+      "multiPlatformReliability": {
+        "title": "Confiabilidad Multi-Plataforma",
+        "problem": "APIs de redes sociales cambian frecuentemente, causando fallos.",
+        "solution": "Arquitectura de múltiples métodos de respaldo con fallback automático."
+      },
+      "fileManagement": {
+        "title": "Gestión de Archivos",
+        "problem": "Manejo eficiente de archivos descargados y limpieza de storage.",
+        "solution": "Sistema de historial JSON con límite de 50 entradas y nombres únicos UUID."
+      }
+    },
+    "resourceLinks": {
+      "sourceCode": "Código Fuente",
+      "documentation": "Docstrings Detallados",
+      "webDemo": "Demo Web"
+    },
+    "navigation": {
+      "prevProject": "Proyecto Anterior: Remote Mouse",
+      "nextProject": "Siguiente Proyecto: Calculadora de Distancias"
+    }
+  },
+  "distanceCalculatorProject": {
+    "title": "Calculadora de Distancias",
+    "subtitle": "Herramienta web para medir distancias entre múltiples puntos en mapas",
+    "metrics": {
+      "loadTime": "< 2s carga inicial",
+      "globalSupport": "Soporte global",
+      "accuracy": "99% precisión"
+    },
+    "sections": {
+      "videoDemo": "Demo en Video",
+      "videoPlaceholder": "Video Demo Próximamente",
+      "videoDescription": "Demostración completa de cálculo de distancias y matriz interactiva",
+      "overview": "Descripción General",
+      "overviewText": "Aplicación web interactiva que permite a los usuarios establecer un punto de referencia y añadir múltiples destinos para calcular distancias reales por carretera o en línea recta. Incluye funcionalidades avanzadas como matriz de distancias entre todos los puntos, reordenamiento de destinos por prioridad, y visualización de rutas en tiempo real. La aplicación está optimizada para uso tanto con búsqueda de lugares como con coordenadas manuales, ofreciendo una experiencia robusta incluso con limitaciones de API.",
+      "technicalDetails": "Detalles Técnicos",
+      "techStack": "Stack Tecnológico",
+      "challenges": "Desafíos y Soluciones",
+      "workflow": "Flujo de Trabajo",
+      "resources": "Enlaces y Recursos"
+    },
+    "features": {
+      "smartCalculation": {
+        "title": "Cálculo Inteligente de Distancias",
+        "desc": "Sistema dual con Google Maps API y cálculo geométrico esférico como respaldo"
+      },
+      "interactiveInterface": {
+        "title": "Interfaz Interactiva Avanzada",
+        "desc": "Búsqueda de lugares, coordenadas manuales o clics directos con drag-and-drop"
+      },
+      "distanceMatrix": {
+        "title": "Matriz de Distancias Completa",
+        "desc": "Tablas completas entre todos los puntos para planificación de rutas complejas"
+      }
+    },
+    "techDetails": {
+      "architecture": {
+        "title": "Arquitectura",
+        "items": [
+          "Patrón MVC en frontend",
+          "Event-driven architecture con listeners",
+          "Estado en memoria con objetos JavaScript",
+          "Persistencia de tema en localStorage"
+        ]
+      },
+      "fallbackSystem": {
+        "title": "Sistema de Fallback",
+        "items": [
+          "Google Maps API como método principal",
+          "Cálculos geométricos esféricos de respaldo",
+          "Funcionamiento continuo sin dependencias críticas",
+          "Manejo exhaustivo de errores"
+        ]
+      },
+      "features": {
+        "title": "Características Avanzadas",
+        "items": [
+          "Búsqueda de lugares + coordenadas manuales",
+          "Reordenamiento drag-and-drop",
+          "Tema claro/oscuro automático",
+          "Guía integrada en la aplicación"
+        ]
+      }
+    },
+    "techCategories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "apis": "APIs",
+      "tools": "Herramientas"
+    },
+    "challengesList": {
+      "apiLimitations": {
+        "title": "Limitaciones de API de Google Maps",
+        "problem": "Restricciones de cuota y posibles fallos de conectividad con APIs externas.",
+        "solution": "Sistema de fallback automático con cálculos geométricos esféricos manteniendo funcionalidad completa."
+      },
+      "stateManagement": {
+        "title": "Gestión de Estado Complejo",
+        "problem": "Sincronización entre múltiples marcadores, rutas, y elementos de UI con reordenamiento dinámico.",
+        "solution": "Sistema centralizado de actualización que recalcula todas las dependencias cuando se modifica el orden."
+      },
+      "userExperience": {
+        "title": "Experiencia de Usuario Robusta",
+        "problem": "Garantizar funcionamiento intuitivo tanto para usuarios técnicos como no técnicos.",
+        "solution": "Interfaz híbrida que soporta búsqueda de lugares, coordenadas manuales, y clics en mapa con guía integrada."
+      }
+    },
+    "workflowSteps": {
+      "referencePoint": {
+        "title": "1. Punto de Referencia",
+        "desc": "Establecimiento del punto inicial"
+      },
+      "destinations": {
+        "title": "2. Destinos",
+        "desc": "Adición de puntos adicionales"
+      },
+      "visualization": {
+        "title": "3. Visualización",
+        "desc": "Generación de rutas en tiempo real"
+      },
+      "export": {
+        "title": "4. Exportación",
+        "desc": "Generación de reportes"
+      }
+    },
+    "resourceLinks": {
+      "localCode": "Código Local",
+      "integratedGuide": "Guía Integrada",
+      "localDemo": "Demo Local"
+    },
+    "navigation": {
+      "prevProject": "Proyecto Anterior: Social Media Downloader",
+      "nextProject": "Siguiente Proyecto: Excel Scraper"
+    }
+  },
+  "excelScraperProject": {
+    "title": "Sistema Universal de Validación y Visualización de Tablas Excel",
+    "subtitle": "Sistema universal de validación y visualización de tablas Excel",
+    "metrics": {
+      "timeReduction": "90-95% reducción tiempo",
+      "multiFile": "Multi-archivo y pestaña",
+      "universalValidation": "Validaciones universales"
+    },
+    "sections": {
+      "videoDemo": "Demo en Video",
+      "videoPlaceholder": "Video Demo Próximamente",
+      "videoDescription": "Demostración completa del flujo de 4 pasos en Desktop y Web",
+      "overview": "Descripción General",
+      "overviewText": "Plataforma integral que automatiza la extracción, combinación, validación y presentación de tablas educativas en Excel, con una arquitectura compartida y reusable entre una app de escritorio (PyQt) y una interfaz web moderna (React + Flask). El núcleo implementa un algoritmo bidimensional de detección de celdas combinadas a partir de marcadores [valor], generando spans precisos, datos limpiamente combinados y una base robusta para validaciones universales.",
+      "technicalDetails": "Detalles Técnicos",
+      "techStack": "Stack Tecnológico",
+      "challenges": "Desafíos y Soluciones",
+      "workflow": "Flujo de Trabajo de 4 Pasos",
+      "resources": "Enlaces y Recursos"
+    },
+    "features": {
+      "bidimensionalAlgorithm": {
+        "title": "Algoritmo Bidimensional de Celdas Combinadas",
+        "desc": "Detecta spans horizontal/vertical basados en marcadores [valor] con limpieza y generación de mergedCells precisos"
+      },
+      "multiplatformArchitecture": {
+        "title": "Arquitectura Multiplataforma con Core Reutilizable",
+        "desc": "Desktop (PyQt) y Web (React/Flask) comparten módulos de negocio con controladores especializados"
+      },
+      "sophisticatedValidations": {
+        "title": "Validaciones Educativas Sofisticadas y UI de 4 Pasos",
+        "desc": "Coherencia, subtotales, totales con flujo Paso 1-4 y tabla tipo Excel con selección de rango"
+      }
+    },
+    "techDetails": {
+      "architecture": {
+        "title": "Arquitectura",
+        "items": [
+          "Separación por capas con controladores especializados",
+          "MVC/MVP híbrido en Desktop, cliente-servidor REST en Web",
+          "Core puro sin dependencias de UI",
+          "Aislamiento por pestaña y por archivo"
+        ]
+      },
+      "optimization": {
+        "title": "Optimización",
+        "items": [
+          "Algoritmo bidimensional de detección de celdas combinadas",
+          "Función pura memoizada (useMemo/useCallback) en Web",
+          "Sistema de logs \"rastreador\" con evidencia de estados",
+          "Configuración centralizada por periodo y modo"
+        ]
+      },
+      "features": {
+        "title": "Características Avanzadas",
+        "items": [
+          "Validaciones universales (coherencia, subtotales, totales)",
+          "UI de 4 pasos con datos crudos como fuente canónica",
+          "Interfaz web tipo Excel con selección de rango",
+          "Configuración dinámica vía JSON (roadmap)"
+        ]
+      }
+    },
+    "techCategories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "desktop": "Desktop",
+      "tools": "Herramientas"
+    },
+    "challengesList": {
+      "tabIsolation": {
+        "title": "Aislamiento Perfecto entre Pestañas",
+        "problem": "La segunda pestaña no detectaba correctamente archivos ya procesados y compartía estado global.",
+        "solution": "Datos específicos por pestaña/archivo en app_controller con verificación dual y guardado de proceso_secuencial_activo."
+      },
+      "step4Fallbacks": {
+        "title": "Paso 4 Incorrecto por Fallbacks",
+        "problem": "Paso 4 mostraba datos del Paso 3 (fallback a datos_numericos) y mapeos incompletos.",
+        "solution": "Priorizar datos_paso4, eliminar fallback problemático y mapeo completo para compatibilidad."
+      },
+      "webLogicPort": {
+        "title": "Portar Lógica de Combinaciones a Web",
+        "problem": "Replicar combinación bidimensional sin bucles infinitos ni re-renders en React.",
+        "solution": "Función pura memoizada (useMemo/useCallback), estructura mergedCells + dataToRender con eventos controlados."
+      }
+    },
+    "workflowSteps": {
+      "step1": {
+        "title": "Paso 1: Vista Combinada",
+        "desc": "Visualización de celdas combinadas detectadas"
+      },
+      "step2": {
+        "title": "Paso 2: Datos Crudos",
+        "desc": "Extracción y limpieza de datos originales"
+      },
+      "step3": {
+        "title": "Paso 3: Recorte Visual",
+        "desc": "Selección y ajuste de rangos de datos"
+      },
+      "step4": {
+        "title": "Paso 4: Datos Finales",
+        "desc": "Validación y presentación de resultados"
+      }
+    },
+    "resourceLinks": {
+      "privateCode": "Código Privado",
+      "technicalDocs": "Documentación Técnica",
+      "localDemo": "Demo Local"
+    },
+    "navigation": {
+      "prevProject": "Proyecto Anterior: Calculadora de Distancias",
+      "nextProject": "Siguiente Proyecto: Sistema de Licencias Médicas"
+    }
+  },
+  "medicalLicenseProject": {
+    "title": "Sistema de Automatización de Licencias Médicas",
+    "subtitle": "Herramienta de automatización para generar licencias médicas oficiales",
+    "metrics": {
+      "timeReduction": "95% reducción tiempo",
+      "fields": "18 campos diferentes",
+      "errorFree": "100% sin errores"
+    },
+    "sections": {
+      "videoDemo": "Demo en Video",
+      "videoPlaceholder": "Video Demo Próximamente",
+      "videoDescription": "Demostración de automatización de licencias médicas en acción",
+      "overview": "Descripción General",
+      "overviewText": "Sistema desarrollado para una oficina del sector salud que automatiza el proceso de llenado de formatos de licencias médicas. Elimina la captura manual de datos repetitivos, reduce errores humanos y acelera significativamente el proceso de generación de documentos oficiales. El sistema procesa plantillas de Word con campos predefinidos y genera documentos completos listos para firma y entrega.",
+      "technicalDetails": "Detalles Técnicos",
+      "techStack": "Stack Tecnológico",
+      "challenges": "Desafíos y Soluciones",
+      "workflow": "Flujo de Trabajo",
+      "resources": "Enlaces y Recursos"
+    },
+    "features": {
+      "multipleInterfaces": {
+        "title": "Múltiples Interfaces de Captura",
+        "desc": "Comandos, modo guiado, reconocimiento de voz y diccionarios predefinidos"
+      },
+      "intelligentProcessing": {
+        "title": "Procesamiento Inteligente de Plantillas",
+        "desc": "Detección automática de campos con preservación del formato original"
+      },
+      "medicalDataManagement": {
+        "title": "Gestión de Datos Médicos Especializados",
+        "desc": "Campos específicos para diagnósticos, períodos y información administrativa"
+      }
+    },
+    "techDetails": {
+      "architecture": {
+        "title": "Arquitectura",
+        "items": [
+          "Patrón modular con separación de responsabilidades",
+          "Módulos especializados por tipo de interfaz",
+          "Procesamiento secuencial con validación",
+          "Manejo de diccionarios Python para mapeo"
+        ]
+      },
+      "optimization": {
+        "title": "Optimización",
+        "items": [
+          "Búsqueda recursiva en elementos del documento",
+          "Validación de campos obligatorios vs opcionales",
+          "Reemplazo de texto preservando estilos",
+          "Funciones centralizadas para procesamiento"
+        ]
+      },
+      "features": {
+        "title": "Características Avanzadas",
+        "items": [
+          "Reconocimiento de voz para accesibilidad",
+          "Interfaz adaptada a diferentes niveles técnicos",
+          "Preservación completa del formato oficial",
+          "Sistema de validación en cada paso"
+        ]
+      }
+    },
+    "techCategories": {
+      "mainLanguage": "Lenguaje Principal",
+      "mainLibraries": "Librerías Principales",
+      "formats": "Formatos"
+    },
+    "challengesList": {
+      "complexFieldDetection": {
+        "title": "Detección de Campos Complejos",
+        "problem": "Los campos pueden estar en párrafos o tablas con formato complejo.",
+        "solution": "Búsqueda recursiva en todos los elementos del documento (párrafos, tablas, celdas)."
+      },
+      "nonTechnicalInterface": {
+        "title": "Interfaz para Personal No Técnico",
+        "problem": "El personal médico necesitaba una interfaz simple e intuitiva.",
+        "solution": "Múltiples interfaces (guiada, por voz, comandos) adaptadas a diferentes niveles."
+      },
+      "formatPreservation": {
+        "title": "Preservación del Formato",
+        "problem": "Mantener el formato oficial del documento tras el llenado automático.",
+        "solution": "Reemplazo de texto preservando estilos, tablas y estructura original."
+      }
+    },
+    "workflowSteps": {
+      "loadTemplate": {
+        "title": "1. Cargar Plantilla",
+        "desc": "Documento Word con campos predefinidos"
+      },
+      "captureData": {
+        "title": "2. Capturar Datos",
+        "desc": "Interfaz guiada, comandos o reconocimiento de voz"
+      },
+      "processDocument": {
+        "title": "3. Procesar Documento",
+        "desc": "Llenado automático preservando formato"
+      },
+      "generateResult": {
+        "title": "4. Generar Resultado",
+        "desc": "Documento completo listo para firma"
+      }
+    },
+    "resourceLinks": {
+      "confidentialCode": "Código Confidencial",
+      "technicalDocs": "Documentación Técnica",
+      "internalUse": "Uso Interno"
+    },
+    "navigation": {
+      "prevProject": "Proyecto Anterior: Excel Scraper",
+      "nextProject": "Siguiente Proyecto: Sistema de Constancias Escolares con IA"
+    }
+  },
+  "schoolCertificateProject": {
+    "title": "Sistema de Constancias Escolares con IA",
+    "subtitle": "App de escritorio con IA que automatiza constancias y gestión escolar",
+    "metrics": {
+      "aiMasterStudent": "IA Master-Student",
+      "inProduction": "En producción",
+      "pdfSpeed": "1-5s por PDF"
+    },
+    "sections": {
+      "videoDemo": "Demo en Video",
+      "videoPlaceholder": "Video Demo Próximamente",
+      "videoDescription": "Demostración completa del sistema IA en producción",
+      "overview": "Descripción General",
+      "overviewText": "Aplicación de escritorio (PyQt + PyInstaller) usada en producción por una escuela para reemplazar tareas de secretaría: búsqueda/gestión de alumnos, generación y transformación de constancias PDF, consultas y recomendaciones inteligentes vía IA. Arquitectura de IA con \"Master Interpreter\" que detecta intención y sub-intenciones y enruta a especialistas (Student/Help), integrándose con servicios locales (SQLite, PDF). Escalable y robusta: mejora con nuevos modelos de IA y empaquetado estable.",
+      "technicalDetails": "Detalles Técnicos",
+      "techStack": "Stack Tecnológico",
+      "challenges": "Desafíos y Soluciones",
+      "workflow": "Flujo de Trabajo IA",
+      "productionImpact": "Impacto en Producción",
+      "resources": "Enlaces y Recursos"
+    },
+    "features": {
+      "masterStudentRouting": {
+        "title": "Master-Student AI Routing",
+        "desc": "Master Interpreter detecta intención y delega a especialistas con memoria conversacional"
+      },
+      "pdfGeneration": {
+        "title": "Generación y Transformación de Constancias PDF",
+        "desc": "wkhtmltopdf con plantillas, vista previa integrada y transformación de PDFs existentes"
+      },
+      "classicInterface": {
+        "title": "Interfaz Clásica CRUD + Búsquedas",
+        "desc": "Módulos para gestionar alumnos, buscar/filtrar y emitir constancias con estética adaptativa"
+      }
+    },
+    "techDetails": {
+      "aiArchitecture": {
+        "title": "Arquitectura IA",
+        "items": [
+          "Intention-based Master–Student–Help routing",
+          "Análisis unificado con conversation_stack",
+          "Service–Repository para datos separado de UI",
+          "Señales/slots PyQt para hilos de IA"
+        ]
+      },
+      "aiSystem": {
+        "title": "Sistema de IA",
+        "items": [
+          "Google Generative AI (Gemini 2.0-flash + fallback)",
+          "MasterPromptManager con contexto conversacional",
+          "Enrutamiento automático de intenciones",
+          "Solicitudes de aclaración inteligentes"
+        ]
+      },
+      "features": {
+        "title": "Características Avanzadas",
+        "items": [
+          "Normalización centralizada de datos escolares",
+          "Health checks y auto-cleanup de contexto",
+          "Empaquetado PyInstaller con recursos incluidos",
+          "Fallbacks multi-nivel para resiliencia"
+        ]
+      }
+    },
+    "techCategories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "ai": "IA",
+      "tools": "Herramientas"
+    },
+    "challengesList": {
+      "pyinstallerIntegration": {
+        "title": "google-generativeai + PyInstaller",
+        "problem": "Import y runtime rotos al congelar; variables de entorno inaccesibles.",
+        "solution": "\"Monkey patch\" temprano, carga manual de .env en ejecutable, hooks/paths configurados con fallback de modelos."
+      },
+      "intentionRouting": {
+        "title": "Enrutamiento de Intenciones + Contexto",
+        "problem": "Ambigüedades (\"él\", \"el segundo\", \"de esos...\"), decidir si usar contexto y cómo resolver referencias.",
+        "solution": "Análisis unificado con MasterPromptManager; conversation_stack con awaiting; continuidad inteligente."
+      },
+      "dataConsistency": {
+        "title": "Normalización y Consistencia de Datos",
+        "problem": "Variantes de nombres/campos afectan búsquedas y constancias.",
+        "solution": "Normalización centralizada en Config; validación con advertencias; ordenamiento por configuración."
+      }
+    },
+    "workflowSteps": {
+      "chatEngine": {
+        "title": "1. Chat Engine",
+        "desc": "Recibe consulta natural del usuario"
+      },
+      "masterInterpreter": {
+        "title": "2. Master Interpreter",
+        "desc": "Detecta intención y sub-intenciones"
+      },
+      "specializedRouting": {
+        "title": "3. Routing Especializado",
+        "desc": "Enruta a Student/Help según contexto"
+      },
+      "actionExecutor": {
+        "title": "4. Action Executor",
+        "desc": "Ejecuta servicios y genera respuesta"
+      }
+    },
+    "feedback": {
+      "academicDirector": {
+        "title": "Directora Académica",
+        "institution": "Escuela Primaria \"Benito Juárez\"",
+        "quote": "Antes tardábamos 15-20 minutos por constancia buscando expedientes físicos. Ahora el sistema genera todo en menos de 2 minutos con solo escribir el nombre del alumno.",
+        "metrics": {
+          "timeSaved": "85% menos tiempo",
+          "certificates": "200+ constancias/mes"
+        }
+      },
+      "schoolSecretary": {
+        "title": "Secretaria Escolar",
+        "institution": "Usuario principal del sistema",
+        "quote": "La IA entiende perfectamente cuando le digo 'necesito la constancia de Juan de 5to B'. Ya no tengo que recordar procedimientos complicados, solo hablo natural.",
+        "metrics": {
+          "satisfaction": "95% satisfacción",
+          "aiAccuracy": "98% precisión IA"
+        }
+      }
+    },
+    "resourceLinks": {
+      "privateCode": "Código Privado",
+      "technicalDocs": "Documentación Técnica",
+      "inProduction": "En Producción"
+    },
+    "navigation": {
+      "prevProject": "Proyecto Anterior: Sistema de Licencias Médicas",
+      "backToPortfolio": "Volver al Portafolio"
     }
   }
 }

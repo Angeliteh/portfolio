@@ -38,11 +38,32 @@ class TemplateLoader {
         if (isProjectPage) {
           window.location.href = `${basePath}/index.html${href}`;
         } else {
-          const targetSection = document.querySelector(`[data-section="${href.replace('#', '')}"]`);
-          if (targetSection) {
-            targetSection.scrollIntoView({ behavior: 'smooth' });
+          // Usar la animación personalizada de custom.js en lugar de scrollIntoView
+          const section = href.replace('#', '');
+          const targetSection = document.querySelector(`[data-section="${section}"]`);
+
+          console.log('Navegando a sección:', section, 'Elemento encontrado:', !!targetSection, 'jQuery disponible:', !!window.jQuery);
+
+          if (targetSection && window.jQuery) {
+            // Prevenir comportamiento por defecto
+            event.preventDefault();
+
+            // Usar jQuery para la animación suave - scrollbar normal
+            window.jQuery('html, body').stop(true, false).animate({
+              scrollTop: window.jQuery(targetSection).offset().top
+            }, {
+              duration: 1200,
+              easing: window.jQuery.easing.easeInOutCubic ? 'easeInOutCubic' : 'swing'
+            });
+
+            // Actualizar URL
             const newUrl = `${window.location.pathname}${href}`;
             window.history.pushState({}, '', newUrl);
+          } else {
+            console.log('Fallback: usando scrollIntoView');
+            if (targetSection) {
+              targetSection.scrollIntoView({ behavior: 'smooth' });
+            }
           }
         }
       });
