@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de Constancias Escolares con IA</title>
-    
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicon.svg">
+
     <!-- Mover el CSP aquí y actualizarlo -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' https:; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https:; connect-src 'self' https:;">
     
@@ -29,17 +34,68 @@
               <span data-i18n="schoolCertificateProject.subtitle">App de escritorio con IA que automatiza constancias y gestión escolar</span>
             </div>
 
-            <!-- Project Preview -->
+            <!-- Project Preview Carousel -->
             <div class="project-preview">
-              <div class="preview-container">
-                <!-- TODO: Reemplazar con screenshot del sistema (Chat IA + Panel PDF) -->
-                <!-- Mostrar: MenuPrincipal o ChatWindow con constancia generada y panel PDF -->
-                <img 
-                  src="../assets/images/constancias-escolares-ia-preview.jpg" 
-                  alt="Sistema de Constancias Escolares con IA Demo"
-                  class="main-preview"
-                  loading="lazy"
-                />
+              <div class="project-carousel">
+                <div class="carousel-container">
+                  <!-- Botón de pantalla completa -->
+                  <button class="carousel-fullscreen" id="carousel-fullscreen" title="Ver en pantalla completa">
+                    <i class="fas fa-expand"></i>
+                  </button>
+
+                  <!-- Contador de imágenes -->
+                  <div class="carousel-counter">
+                    <span id="current-slide">1</span> / <span id="total-slides">5</span>
+                  </div>
+
+                  <!-- Slides del carrusel -->
+                  <div class="carousel-slides" id="carousel-slides">
+                    <div class="carousel-slide active">
+                      <img src="../assets/images/projects/constancias-escolares-ia/image_1.png"
+                           alt="Sistema de Constancias Escolares - Interfaz Principal"
+                           loading="lazy">
+                    </div>
+                    <div class="carousel-slide">
+                      <img src="../assets/images/projects/constancias-escolares-ia/image_2.png"
+                           alt="Sistema de Constancias Escolares - Chat IA"
+                           loading="lazy">
+                    </div>
+                    <div class="carousel-slide">
+                      <img src="../assets/images/projects/constancias-escolares-ia/image_3.png"
+                           alt="Sistema de Constancias Escolares - Gestión de Estudiantes"
+                           loading="lazy">
+                    </div>
+                    <div class="carousel-slide">
+                      <img src="../assets/images/projects/constancias-escolares-ia/image_4.png"
+                           alt="Sistema de Constancias Escolares - Generación de PDFs"
+                           loading="lazy">
+                    </div>
+                    <div class="carousel-slide">
+                      <img src="../assets/images/projects/constancias-escolares-ia/image_5.png"
+                           alt="Sistema de Constancias Escolares - Transformación de Documentos"
+                           loading="lazy">
+                    </div>
+                  </div>
+
+                  <!-- Controles de navegación -->
+                  <button class="carousel-controls carousel-prev" id="carousel-prev">
+                    <i class="fas fa-chevron-left"></i>
+                  </button>
+                  <button class="carousel-controls carousel-next" id="carousel-next">
+                    <i class="fas fa-chevron-right"></i>
+                  </button>
+
+                  <!-- Indicadores -->
+                  <div class="carousel-indicators" id="carousel-indicators">
+                    <button class="carousel-indicator active" data-slide="0"></button>
+                    <button class="carousel-indicator" data-slide="1"></button>
+                    <button class="carousel-indicator" data-slide="2"></button>
+                    <button class="carousel-indicator" data-slide="3"></button>
+                    <button class="carousel-indicator" data-slide="4"></button>
+                  </div>
+                </div>
+
+                <!-- Métricas overlay -->
                 <div class="metrics-overlay">
                   <div class="metric-card" tabindex="0">
                     <i class="fas fa-robot" aria-hidden="true"></i>
@@ -81,6 +137,212 @@
                   <i class="fas fa-database" aria-hidden="true"></i>
                   <h4 data-i18n="schoolCertificateProject.features.classicInterface.title">Interfaz Clásica CRUD + Búsquedas</h4>
                   <p data-i18n="schoolCertificateProject.features.classicInterface.desc">Módulos para gestionar alumnos, buscar/filtrar y emitir constancias con estética adaptativa</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Demo Tabs Section -->
+            <div class="project-section demo-tabs-container">
+              <h3 data-i18n="schoolCertificateProject.sections.demoSection">Demostración del Sistema</h3>
+
+              <!-- Pestañas -->
+              <div class="demo-tabs-header">
+                <button class="demo-tab active" data-tab="video">
+                  <i class="fas fa-play-circle"></i>
+                  <span data-i18n="schoolCertificateProject.tabs.video">Video Demo</span>
+                </button>
+                <button class="demo-tab" data-tab="guide">
+                  <i class="fas fa-book-open"></i>
+                  <span data-i18n="schoolCertificateProject.tabs.guide">Guía Técnica</span>
+                </button>
+              </div>
+
+              <!-- Contenido de las pestañas -->
+              <div class="demo-tabs-content">
+                <!-- Pestaña Video -->
+                <div class="demo-tab-pane active" id="video-pane">
+                  <div class="video-container">
+                    <!-- Video de YouTube embebido -->
+                    <div class="youtube-embed-container">
+                      <iframe
+                        src="https://www.youtube.com/embed/AS7qrYpGMP4?rel=0&modestbranding=1&showinfo=0"
+                        title="Sistema de Constancias Escolares con IA - Demo"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                      </iframe>
+                    </div>
+                    <div class="video-info">
+                      <h4 class="video-title" data-i18n="schoolCertificateProject.video.title">Demostración Completa del Sistema</h4>
+                      <p class="video-description" data-i18n="schoolCertificateProject.video.description">
+                        Observa cómo el sistema de IA automatiza la generación de constancias escolares:
+                        desde la búsqueda inteligente de alumnos hasta la creación de PDFs personalizados,
+                        todo a través de una interfaz conversacional natural.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Pestaña Guía -->
+                <div class="demo-tab-pane" id="guide-pane">
+                  <div class="guide-content">
+                    <!-- Resumen Ejecutivo -->
+                    <div class="guide-section">
+                      <h4><i class="fas fa-eye"></i> <span data-i18n="schoolCertificateProject.guide.executiveOverview.title">Resumen Ejecutivo</span></h4>
+                      <p data-i18n="schoolCertificateProject.guide.executiveOverview.content">
+                        Sistema híbrido listo para producción que combina un asistente de IA conversacional con una interfaz administrativa tradicional.
+                        Los directores consultan en lenguaje natural para búsquedas, estadísticas y constancias oficiales; los administradores mantienen
+                        control total sobre la base de datos y flujos de documentos. El backend es local (SQLite) y la aplicación se compila para distribución.
+                      </p>
+                      <div class="guide-highlight">
+                        <h6 data-i18n="schoolCertificateProject.guide.executiveOverview.highlight.title">Arquitectura Híbrida Única</h6>
+                        <p data-i18n="schoolCertificateProject.guide.executiveOverview.highlight.content">
+                          Combina la eficiencia de la IA conversacional con la seguridad y control de interfaces tradicionales,
+                          manteniendo una única fuente de verdad en base de datos local.
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- Contexto del Sistema -->
+                    <div class="guide-section">
+                      <h4><i class="fas fa-globe"></i> <span data-i18n="schoolCertificateProject.guide.context.title">Contexto del Sistema</span></h4>
+                      <p data-i18n="schoolCertificateProject.guide.context.spanish">
+                        <strong>Interfaz en Español:</strong> Este build fue entregado para una escuela real en México. Las etiquetas y mensajes aparecen en español
+                        (ej: "Transformar", "Buscar", "Constancias"). El sistema está diseñado para ser bilingüe: prompts, ejemplos, strings de UI y plantillas PDF pueden localizarse.
+                      </p>
+                      <div style="background: var(--hover-bg); padding: 1rem; border-radius: 6px; margin: 1rem 0;">
+                        <h6 style="margin: 0 0 0.5rem 0; color: var(--primary-color);" data-i18n="schoolCertificateProject.guide.context.legend.title">Leyenda Rápida (Español → Inglés):</h6>
+                        <ul style="margin: 0; padding-left: 1.5rem; font-size: 0.9rem;">
+                          <li data-i18n="schoolCertificateProject.guide.context.legend.transform">Transformar → Transform documents (PDF → constancia oficial)</li>
+                          <li data-i18n="schoolCertificateProject.guide.context.legend.search">Buscar / Generar Constancias → Search students / Generate certificates</li>
+                          <li data-i18n="schoolCertificateProject.guide.context.legend.management">Gestión / Administración → Full administrative management (CRUD)</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <!-- Arquitectura del Sistema -->
+                    <div class="guide-section">
+                      <h4><i class="fas fa-sitemap"></i> <span data-i18n="schoolCertificateProject.guide.architecture.title">Arquitectura del Sistema</span></h4>
+                      <p data-i18n="schoolCertificateProject.guide.architecture.intro">
+                        Arquitectura de IA híbrida con patrón Master-Specialist que entiende intención del usuario y enruta a especialistas:
+                      </p>
+                      <ul>
+                        <li><strong data-i18n="schoolCertificateProject.guide.architecture.master">Master Interpreter:</strong> <span data-i18n="schoolCertificateProject.guide.architecture.masterDesc">Comprende intención y contexto, enruta solicitudes</span></li>
+                        <li><strong data-i18n="schoolCertificateProject.guide.architecture.student">Student Specialist:</strong> <span data-i18n="schoolCertificateProject.guide.architecture.studentDesc">Mapea solicitudes humanas a SQL y constancias; aplica filtros detectados del lenguaje</span></li>
+                        <li><strong data-i18n="schoolCertificateProject.guide.architecture.help">Help Specialist:</strong> <span data-i18n="schoolCertificateProject.guide.architecture.helpDesc">Explica capacidades y uso guiado</span></li>
+                        <li><strong data-i18n="schoolCertificateProject.guide.architecture.database">Base de datos local (SQLite):</strong> <span data-i18n="schoolCertificateProject.guide.architecture.databaseDesc">Única fuente de verdad</span></li>
+                        <li><strong data-i18n="schoolCertificateProject.guide.architecture.build">Build de producción:</strong> <span data-i18n="schoolCertificateProject.guide.architecture.buildDesc">Ejecutable compilado con parche de compatibilidad para biblioteca de IA de Google</span></li>
+                      </ul>
+                    </div>
+
+                    <!-- Interfaz Dual -->
+                    <div class="guide-section">
+                      <h4><i class="fas fa-layer-group"></i> <span data-i18n="schoolCertificateProject.guide.dualInterface.title">Dos Experiencias Complementarias</span></h4>
+                      <p data-i18n="schoolCertificateProject.guide.dualInterface.intro">
+                        Dos interfaces complementarias que comparten el mismo backend:
+                      </p>
+
+                      <div class="guide-comparison">
+                        <div class="guide-comparison-item">
+                          <h6 data-i18n="schoolCertificateProject.guide.dualInterface.classic.title">Gestión Clásica</h6>
+                          <ul>
+                            <li data-i18n="schoolCertificateProject.guide.dualInterface.classic.crud">CRUD completo sobre base de datos SQLite local</li>
+                            <li data-i18n="schoolCertificateProject.guide.dualInterface.classic.search">Búsqueda y generación de constancias con control deliberado</li>
+                            <li data-i18n="schoolCertificateProject.guide.dualInterface.classic.transform">Transformación de documentos con opciones supervisadas (plantillas/branding/persistencia)</li>
+                          </ul>
+                        </div>
+
+                        <div class="guide-comparison-item">
+                          <h6 data-i18n="schoolCertificateProject.guide.dualInterface.ai.title">Chat IA</h6>
+                          <ul>
+                            <li data-i18n="schoolCertificateProject.guide.dualInterface.ai.natural">Solicitudes en lenguaje natural (ej: "Buscar estudiantes apellido García")</li>
+                            <li data-i18n="schoolCertificateProject.guide.dualInterface.ai.automatic">Listas/filtros/estadísticas automáticas y generación de PDF</li>
+                            <li data-i18n="schoolCertificateProject.guide.dualInterface.ai.readonly">Diálogos de datos de solo lectura para maximizar velocidad</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Flujo de Demostración -->
+                    <div class="guide-section">
+                      <h4><i class="fas fa-play-circle"></i> <span data-i18n="schoolCertificateProject.guide.demoFlow.title">Flujo de Demostración (Refleja el video de 18 minutos)</span></h4>
+
+                      <h5 data-i18n="schoolCertificateProject.guide.demoFlow.partA.title">Parte A — Gestión Clásica (fundación)</h5>
+                      <ol>
+                        <li data-i18n="schoolCertificateProject.guide.demoFlow.partA.step1">Abrir Gestión Clásica</li>
+                        <li data-i18n="schoolCertificateProject.guide.demoFlow.partA.step2">Mostrar registros de estudiantes y abrir una entrada típica (nombre, CURP, matrícula, grado, grupo, turno)</li>
+                        <li data-i18n="schoolCertificateProject.guide.demoFlow.partA.step3">Explicar: esta BD SQLite local es la única fuente de verdad del sistema. Las respuestas de IA y PDFs se basan en estos datos</li>
+                        <li data-i18n="schoolCertificateProject.guide.demoFlow.partA.step4"><strong>Tarjeta: Transformar</strong> - Seleccionar PDF externo; extraer datos; generar constancia formateada correctamente</li>
+                        <li data-i18n="schoolCertificateProject.guide.demoFlow.partA.step5"><strong>Tarjeta: Buscar y Generar Constancias</strong> - Buscar por nombre, grado, grupo, turno, matrícula, CURP</li>
+                        <li data-i18n="schoolCertificateProject.guide.demoFlow.partA.step6"><strong>Tarjeta: Gestión (CRUD)</strong> - Editar/validar/guardar campos con control visual y auditabilidad</li>
+                      </ol>
+
+                      <h5 data-i18n="schoolCertificateProject.guide.demoFlow.partB.title">Parte B — Chat IA (automático)</h5>
+                      <ol>
+                        <li data-i18n="schoolCertificateProject.guide.demoFlow.partB.step1">Abrir Chat IA (tema oscuro)</li>
+                        <li data-i18n="schoolCertificateProject.guide.demoFlow.partB.step2">Búsqueda por nombre: "Buscar estudiantes apellido García" → listar resultados</li>
+                        <li data-i18n="schoolCertificateProject.guide.demoFlow.partB.step3">Continuación contextual: "De esa lista, solo turno vespertino" → resultados filtrados</li>
+                        <li data-i18n="schoolCertificateProject.guide.demoFlow.partB.step4">Refinamiento progresivo: "Ahora tercer grado" → "Ahora grupo A" → resultados refinados</li>
+                        <li data-i18n="schoolCertificateProject.guide.demoFlow.partB.step5">Estadísticas: "¿Cuántos estudiantes hay en tercer grado?" → conteo/distribución</li>
+                        <li data-i18n="schoolCertificateProject.guide.demoFlow.partB.step6">Búsqueda exacta: "Mostrar estudiante con matrícula 2024001" (o por CURP)</li>
+                        <li data-i18n="schoolCertificateProject.guide.demoFlow.partB.step7">Generar constancia: "Generar constancia de estudios para [Nombre Estudiante]" → se abre PDF</li>
+                        <li data-i18n="schoolCertificateProject.guide.demoFlow.partB.step8">Transformar PDF externo: adjuntar muestra → "Transformar este PDF a constancia oficial" → extracción automática + PDF</li>
+                        <li data-i18n="schoolCertificateProject.guide.demoFlow.partB.step9">Ayuda: "¿Qué puedes hacer?" → resumen de capacidades en lenguaje natural</li>
+                      </ol>
+                    </div>
+
+                    <!-- Beneficios y Valor -->
+                    <div class="guide-section">
+                      <h4><i class="fas fa-chart-line"></i> <span data-i18n="schoolCertificateProject.guide.benefits.title">Beneficios y Valor</span></h4>
+
+                      <div class="guide-comparison">
+                        <div class="guide-comparison-item">
+                          <h6 data-i18n="schoolCertificateProject.guide.benefits.directors.title">Para directores y personal</h6>
+                          <ul>
+                            <li data-i18n="schoolCertificateProject.guide.benefits.directors.natural">Lenguaje natural: pedir listas, refinar con filtros, calcular estadísticas y obtener PDFs oficiales en segundos</li>
+                            <li data-i18n="schoolCertificateProject.guide.benefits.directors.noSQL">No necesidad de SQL o navegación compleja de UI</li>
+                          </ul>
+                        </div>
+
+                        <div class="guide-comparison-item">
+                          <h6 data-i18n="schoolCertificateProject.guide.benefits.admins.title">Para administradores</h6>
+                          <ul>
+                            <li data-i18n="schoolCertificateProject.guide.benefits.admins.control">Control total sobre datos y documentos (validación, auditabilidad, plantillas)</li>
+                            <li data-i18n="schoolCertificateProject.guide.benefits.admins.faster">Operaciones diarias más rápidas; menos pasos manuales</li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="guide-highlight">
+                        <h6 data-i18n="schoolCertificateProject.guide.benefits.it.title">Para IT / empresas</h6>
+                        <p data-i18n="schoolCertificateProject.guide.benefits.it.content">
+                          Patrón reutilizable Master → Specialists; prompts modulares y catálogos.
+                          Datos locales (SQLite), pipeline PDF consistente, distribución compilada (PyInstaller).
+                          Fácil de adaptar a otros dominios con la misma arquitectura.
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- Privacidad y Despliegue -->
+                    <div class="guide-section">
+                      <h4><i class="fas fa-shield-alt"></i> <span data-i18n="schoolCertificateProject.guide.privacy.title">Datos, Privacidad y Despliegue</span></h4>
+                      <ul>
+                        <li><strong data-i18n="schoolCertificateProject.guide.privacy.local">Local-first:</strong> <span data-i18n="schoolCertificateProject.guide.privacy.localDesc">los datos de estudiantes permanecen en almacenamiento local (SQLite)</span></li>
+                        <li><strong data-i18n="schoolCertificateProject.guide.privacy.pdfs">PDFs:</strong> <span data-i18n="schoolCertificateProject.guide.privacy.pdfsDesc">generados consistentemente con branding y plantillas de la escuela</span></li>
+                        <li><strong data-i18n="schoolCertificateProject.guide.privacy.distribution">Distribución:</strong> <span data-i18n="schoolCertificateProject.guide.privacy.distributionDesc">ejecutable compilado vía PyInstaller</span></li>
+                        <li><strong data-i18n="schoolCertificateProject.guide.privacy.logging">Logging:</strong> <span data-i18n="schoolCertificateProject.guide.privacy.loggingDesc">logs informativos para troubleshooting (sin datos sensibles en logs de demo)</span></li>
+                      </ul>
+                    </div>
+
+                    <!-- Preparación Bilingüe -->
+                    <div class="guide-section">
+                      <h4><i class="fas fa-language"></i> <span data-i18n="schoolCertificateProject.guide.bilingual.title">Preparación Bilingüe</span></h4>
+                      <ul>
+                        <li data-i18n="schoolCertificateProject.guide.bilingual.current">Build actual: UI en español (entregado a escuela mexicana)</li>
+                        <li data-i18n="schoolCertificateProject.guide.bilingual.ready">Listo para inglés: prompts/ejemplos, strings de UI y plantillas PDF pueden localizarse</li>
+                        <li data-i18n="schoolCertificateProject.guide.bilingual.ai">La IA puede responder en el idioma del usuario manteniendo un esquema interno consistente</li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -208,20 +470,6 @@
               </div>
             </div>
 
-            <!-- Video Demo Section -->
-            <div class="project-section video-demo" style="margin-top: 2rem;">
-              <h3 data-i18n="schoolCertificateProject.sections.videoDemo">Demo en Video</h3>
-              <div class="video-container" style="text-align: center; padding: 2rem; background: #f8f9fa; border-radius: 10px;">
-                <!-- TODO: Reemplazar con video real (60-90 segundos) -->
-                <!-- Mostrar: problema → búsqueda alumno → constancia generada → chat IA → beneficios -->
-                <div class="video-placeholder" style="background: #e9ecef; padding: 4rem; border-radius: 8px; border: 2px dashed #6c757d;">
-                  <i class="fas fa-video" style="font-size: 3rem; color: #6c757d; margin-bottom: 1rem;"></i>
-                  <p style="color: #6c757d; margin: 0; font-size: 1.1rem;" data-i18n="schoolCertificateProject.sections.videoPlaceholder">Video Demo Próximamente</p>
-                  <small style="color: #6c757d;" data-i18n="schoolCertificateProject.sections.videoDescription">Demostración completa del sistema IA en producción</small>
-                </div>
-              </div>
-            </div>
-
             <!-- Workflow Section -->
             <div class="project-section workflow">
               <h3 data-i18n="schoolCertificateProject.sections.workflow">Flujo de Trabajo IA</h3>
@@ -299,22 +547,25 @@
               </div>
             </div>
 
-            <!-- Links and Resources -->
+            <!-- Project Information -->
             <div class="project-section resources">
-              <h3 data-i18n="schoolCertificateProject.sections.resources">Enlaces y Recursos</h3>
+              <h3 data-i18n="schoolCertificateProject.sections.resources">Información del Proyecto</h3>
               <div class="resources-grid">
-                <a href="#" class="resource-card github disabled" title="Repositorio privado - datos escolares">
+                <div class="resource-info github">
                   <i class="fab fa-github"></i>
                   <span data-i18n="schoolCertificateProject.resourceLinks.privateCode">Código Privado</span>
-                </a>
-                <a href="#" class="resource-card docs">
+                  <small data-i18n="schoolCertificateProject.resourceLinks.privateCodeDesc">Repositorio privado por datos escolares sensibles</small>
+                </div>
+                <div class="resource-info docs">
                   <i class="fas fa-book"></i>
                   <span data-i18n="schoolCertificateProject.resourceLinks.technicalDocs">Documentación Técnica</span>
-                </a>
-                <a href="#" class="resource-card demo disabled" title="En producción - acceso restringido">
+                  <small data-i18n="schoolCertificateProject.resourceLinks.technicalDocsDesc">Guía completa de arquitectura y implementación</small>
+                </div>
+                <div class="resource-info production">
                   <i class="fas fa-school"></i>
                   <span data-i18n="schoolCertificateProject.resourceLinks.inProduction">En Producción</span>
-                </a>
+                  <small data-i18n="schoolCertificateProject.resourceLinks.inProductionDesc">Sistema activo en escuela primaria mexicana</small>
+                </div>
               </div>
             </div>
 
@@ -365,5 +616,185 @@
     <!-- Scripts personalizados de i18n -->
     <script src="../assets/js/i18n-config.js"></script>
     <script src="../assets/js/language-switcher.js"></script>
+
+    <!-- Script para las pestañas de demo -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Funcionalidad de pestañas
+        const tabs = document.querySelectorAll('.demo-tab');
+        const panes = document.querySelectorAll('.demo-tab-pane');
+
+        tabs.forEach(tab => {
+          tab.addEventListener('click', function() {
+            const targetTab = this.getAttribute('data-tab');
+
+            // Remover clase active de todas las pestañas y paneles
+            tabs.forEach(t => t.classList.remove('active'));
+            panes.forEach(p => p.classList.remove('active'));
+
+            // Agregar clase active a la pestaña clickeada
+            this.classList.add('active');
+
+            // Mostrar el panel correspondiente
+            const targetPane = document.getElementById(targetTab + '-pane');
+            if (targetPane) {
+              targetPane.classList.add('active');
+            }
+          });
+        });
+
+        // Funcionalidad del carrusel
+        const slides = document.getElementById('carousel-slides');
+        const indicators = document.querySelectorAll('.carousel-indicator');
+        const prevBtn = document.getElementById('carousel-prev');
+        const nextBtn = document.getElementById('carousel-next');
+        const currentSlideSpan = document.getElementById('current-slide');
+        const fullscreenBtn = document.getElementById('carousel-fullscreen');
+        const modal = document.getElementById('carousel-modal');
+        const modalImg = document.getElementById('carousel-modal-img');
+        const modalClose = document.getElementById('carousel-modal-close');
+        const modalPrev = document.getElementById('carousel-modal-prev');
+        const modalNext = document.getElementById('carousel-modal-next');
+        const modalCurrentSlide = document.getElementById('modal-current-slide');
+
+        let currentSlide = 0;
+        const totalSlides = 5;
+
+        // Array con las rutas de las imágenes
+        const imageUrls = [
+          '../assets/images/projects/constancias-escolares-ia/image_1.png',
+          '../assets/images/projects/constancias-escolares-ia/image_2.png',
+          '../assets/images/projects/constancias-escolares-ia/image_3.png',
+          '../assets/images/projects/constancias-escolares-ia/image_4.png',
+          '../assets/images/projects/constancias-escolares-ia/image_5.png'
+        ];
+
+        function updateCarousel() {
+          // Mover slides
+          const translateX = -currentSlide * 20; // 20% por slide
+          slides.style.transform = `translateX(${translateX}%)`;
+
+          // Actualizar indicadores
+          indicators.forEach((indicator, index) => {
+            indicator.classList.toggle('active', index === currentSlide);
+          });
+
+          // Actualizar contador
+          currentSlideSpan.textContent = currentSlide + 1;
+        }
+
+        function nextSlide() {
+          currentSlide = (currentSlide + 1) % totalSlides;
+          updateCarousel();
+        }
+
+        function prevSlide() {
+          currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+          updateCarousel();
+        }
+
+        function goToSlide(slideIndex) {
+          currentSlide = slideIndex;
+          updateCarousel();
+        }
+
+        function updateModalImage() {
+          modalImg.src = imageUrls[currentSlide];
+          modalCurrentSlide.textContent = currentSlide + 1;
+        }
+
+        function openFullscreen() {
+          updateModalImage();
+          modal.classList.add('active');
+
+          // Bloquear scroll completamente
+          document.body.classList.add('modal-open');
+          document.documentElement.classList.add('modal-open');
+        }
+
+        function closeFullscreen() {
+          modal.classList.remove('active');
+          document.body.classList.remove('modal-open');
+          document.documentElement.classList.remove('modal-open');
+        }
+
+        function modalNextSlide() {
+          currentSlide = (currentSlide + 1) % totalSlides;
+          updateCarousel();
+          updateModalImage();
+        }
+
+        function modalPrevSlide() {
+          currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+          updateCarousel();
+          updateModalImage();
+        }
+
+        // Event listeners
+        nextBtn.addEventListener('click', nextSlide);
+        prevBtn.addEventListener('click', prevSlide);
+        fullscreenBtn.addEventListener('click', openFullscreen);
+        modalClose.addEventListener('click', closeFullscreen);
+        modalNext.addEventListener('click', modalNextSlide);
+        modalPrev.addEventListener('click', modalPrevSlide);
+
+        indicators.forEach((indicator, index) => {
+          indicator.addEventListener('click', () => goToSlide(index));
+        });
+
+        // Navegación con teclado
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape') {
+            closeFullscreen();
+          } else if (e.key === 'ArrowLeft') {
+            if (modal.classList.contains('active')) {
+              modalPrevSlide();
+            } else {
+              prevSlide();
+            }
+          } else if (e.key === 'ArrowRight') {
+            if (modal.classList.contains('active')) {
+              modalNextSlide();
+            } else {
+              nextSlide();
+            }
+          }
+        });
+
+        modal.addEventListener('click', (e) => {
+          if (e.target === modal) {
+            closeFullscreen();
+          }
+        });
+
+        // Doble click en imagen para pantalla completa
+        slides.addEventListener('dblclick', openFullscreen);
+
+        // Inicializar carrusel
+        updateCarousel();
+      });
+    </script>
+
+    <!-- Modal de pantalla completa - FUERA de todos los contenedores -->
+    <div class="carousel-modal" id="carousel-modal">
+      <button class="carousel-modal-close" id="carousel-modal-close">
+        <i class="fas fa-times"></i>
+      </button>
+
+      <!-- Controles de navegación en el modal -->
+      <button class="carousel-modal-nav carousel-modal-prev" id="carousel-modal-prev">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button class="carousel-modal-nav carousel-modal-next" id="carousel-modal-next">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+
+      <!-- Contador en el modal -->
+      <div class="carousel-modal-counter" id="carousel-modal-counter">
+        <span id="modal-current-slide">1</span> / <span id="modal-total-slides">5</span>
+      </div>
+
+      <img id="carousel-modal-img" src="" alt="Imagen en pantalla completa">
+    </div>
   </body>
 </html>

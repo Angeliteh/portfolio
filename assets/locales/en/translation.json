@@ -843,9 +843,12 @@
       "pdfSpeed": "1-5s per PDF"
     },
     "sections": {
+      "demoSection": "System Demonstration",
       "videoDemo": "Video Demo",
       "videoPlaceholder": "Video Demo Coming Soon",
       "videoDescription": "Complete demonstration of AI system in production",
+      "demoGuide": "Demo Guide",
+      "resources": "Project Information",
       "overview": "Overview",
       "overviewText": "Desktop application (PyQt + PyInstaller) used in production by a school to replace secretarial tasks: student search/management, PDF certificate generation and transformation, intelligent queries and recommendations via AI. AI architecture with \"Master Interpreter\" that detects intention and sub-intentions and routes to specialists (Student/Help), integrating with local services (SQLite, PDF). Scalable and robust: improves with new AI models and stable packaging.",
       "technicalDetails": "Technical Details",
@@ -961,8 +964,203 @@
     },
     "resourceLinks": {
       "privateCode": "Private Code",
+      "privateCodeDesc": "Proprietary architecture adaptable to any domain",
       "technicalDocs": "Technical Documentation",
-      "inProduction": "In Production"
+      "technicalDocsDesc": "Complete architecture and implementation guide",
+      "inProduction": "In Production",
+      "inProductionDesc": "Active system in Mexican primary school"
+    },
+    "tabs": {
+      "video": "Video Demo",
+      "guide": "Technical Guide"
+    },
+    "carousel": {
+      "slide1": {
+        "title": "Main System Interface",
+        "description": "Overview of the hybrid system with access to classic management and AI chat"
+      },
+      "slide2": {
+        "title": "Conversational AI Chat",
+        "description": "Intelligent chat interface for natural language queries"
+      },
+      "slide3": {
+        "title": "Student Management",
+        "description": "CRUD administration panel for complete school data management"
+      },
+      "slide4": {
+        "title": "PDF Generation",
+        "description": "Automatic system for generating personalized official certificates"
+      },
+      "slide5": {
+        "title": "Document Transformation",
+        "description": "Tool to convert external PDFs into official certificates"
+      }
+    },
+    "video": {
+      "title": "Complete System Demonstration",
+      "description": "Watch how the AI system automates school certificate generation: from intelligent student search to personalized PDF creation, all through a natural conversational interface."
+    },
+    "guide": {
+      "executiveOverview": {
+        "title": "Executive Overview",
+        "content": "Production-ready hybrid system that combines a conversational AI assistant with a traditional administrative interface. Directors ask in natural language for searches, statistics, and official certificates; administrators keep full control over the database and document workflows. The backend is local (SQLite) and the app is compiled for distribution.",
+        "highlight": {
+          "title": "Unique Hybrid Architecture",
+          "content": "Combines the efficiency of conversational AI with the security and control of traditional interfaces, maintaining a single source of truth in local database."
+        }
+      },
+      "context": {
+        "title": "System Context",
+        "spanish": "Spanish Interface: This build was delivered for a real school in Mexico. Labels and helper messages appear in Spanish (e.g., \"Transformar\", \"Buscar\", \"Constancias\"). The system is designed to be bilingual: prompts, examples, UI strings, and PDF templates can be localized.",
+        "legend": {
+          "title": "Quick Legend (Spanish → English):",
+          "transform": "Transformar → Transform documents (PDF → official certificate)",
+          "search": "Buscar / Generar Constancias → Search students / Generate certificates",
+          "management": "Gestión / Administración → Full administrative management (CRUD)"
+        }
+      },
+      "architecture": {
+        "title": "System Architecture",
+        "intro": "Hybrid AI architecture with Master-Specialist pattern that understands user intent and routes to specialists:",
+        "master": "Master Interpreter",
+        "masterDesc": "Understands intent and context, routes requests",
+        "student": "Student Specialist",
+        "studentDesc": "Maps human requests to SQL and certificates; applies filters detected from language",
+        "help": "Help Specialist",
+        "helpDesc": "Explains capabilities and guided usage",
+        "database": "Local database (SQLite)",
+        "databaseDesc": "Single source of truth",
+        "build": "Production build",
+        "buildDesc": "Compiled executable with compatibility patch for Google's AI library"
+      },
+      "dualInterface": {
+        "title": "Two Complementary Experiences",
+        "intro": "Two complementary interfaces sharing the same backend:",
+        "classic": {
+          "title": "Classic Management",
+          "crud": "Full CRUD over local SQLite database",
+          "search": "Search and generate certificates with deliberate control",
+          "transform": "Transform documents with supervised options (templates/branding/persistence)"
+        },
+        "ai": {
+          "title": "AI Chat",
+          "natural": "Natural language requests (e.g., \"Find students named Garcia\")",
+          "automatic": "Automatic lists/filters/statistics and PDF generation",
+          "readonly": "Read-only data dialogs to maximize speed"
+        }
+      },
+      "demoFlow": {
+        "title": "Demo Storyline (mirrors the 18-minute video)",
+        "partA": {
+          "title": "Part A — Classic Management (foundation)",
+          "step1": "Open Classic Management",
+          "step2": "Show student records and open a typical entry (name, CURP, matrícula, grade, group, shift)",
+          "step3": "Explain: this local SQLite DB is the system's single source of truth. AI answers and PDFs are grounded in this data",
+          "step4": "Card: Transform - Pick an external PDF; extract data; generate a properly formatted certificate",
+          "step5": "Card: Search & Generate Certificates - Search by name, grade, group, shift, matrícula, CURP",
+          "step6": "Card: Management (CRUD) - Edit/validate/save fields with visual control and auditability"
+        },
+        "partB": {
+          "title": "Part B — AI Chat (automatic)",
+          "step1": "Open AI Chat (dark theme)",
+          "step2": "Search by name: \"Find students with last name Garcia\" → list results",
+          "step3": "Context continuation: \"From that list, only afternoon shift\" → filtered results",
+          "step4": "Progressive narrowing: \"Now third grade\" → \"Now group A\" → refined results",
+          "step5": "Statistics: \"How many students are in third grade?\" → count/distribution",
+          "step6": "Exact lookup: \"Show the student with matrícula 2024001\" (or by CURP)",
+          "step7": "Generate certificate: \"Generate a certificate of studies for [Student Name]\" → PDF opens",
+          "step8": "Transform external PDF: attach sample → \"Transform this PDF to an official certificate\" → automatic extraction + PDF",
+          "step9": "Help: \"What can you do?\" → capabilities overview in plain language"
+        }
+      },
+      "benefits": {
+        "title": "Benefits and Value",
+        "directors": {
+          "title": "For directors and staff",
+          "natural": "Natural language: ask for lists, refine with filters, compute statistics, and get official PDFs in seconds",
+          "noSQL": "No need for SQL or complex UI navigation"
+        },
+        "admins": {
+          "title": "For administrators",
+          "control": "Full control over data and documents (validation, auditability, templates)",
+          "faster": "Faster daily operations; fewer manual steps"
+        },
+        "it": {
+          "title": "For IT / companies",
+          "content": "Reusable Master → Specialists pattern; modular prompts and catalogs. Local data (SQLite), consistent PDF pipeline, compiled distribution (PyInstaller). Easy to adapt to other domains with the same architecture."
+        }
+      },
+      "privacy": {
+        "title": "Data, Privacy, and Deployment",
+        "local": "Local-first",
+        "localDesc": "student data stays on local storage (SQLite)",
+        "pdfs": "PDFs",
+        "pdfsDesc": "generated consistently with school branding and templates",
+        "distribution": "Distribution",
+        "distributionDesc": "compiled executable via PyInstaller",
+        "logging": "Logging",
+        "loggingDesc": "informative logs for troubleshooting (no sensitive data in demo logs)"
+      },
+      "bilingual": {
+        "title": "Bilingual Readiness",
+        "current": "Today's build: Spanish UI (delivered to a Mexican school)",
+        "ready": "Ready for English: prompts/examples, UI strings, and PDF templates can be localized",
+        "ai": "AI can reply in the user's language while keeping a consistent internal schema"
+      }
+    },
+    "demoGuide": {
+      "title": "Complete Technical Guide",
+      "subtitle": "Structured system documentation for detailed technical analysis",
+      "tocTitle": "Guide Contents",
+      "toc": {
+        "executiveOverview": "Executive Overview",
+        "systemArchitecture": "System Architecture",
+        "dualInterface": "Dual Interface",
+        "demoWorkflow": "Demo Workflow",
+        "businessValue": "Business Value",
+        "deployment": "Deployment & Privacy"
+      },
+      "sections": {
+        "executiveOverview": {
+          "title": "Executive Overview",
+          "content": "Production-ready hybrid system that combines a conversational AI assistant with a traditional administrative interface. Directors ask in natural language for searches, statistics, and official certificates; administrators keep full control over the database and document workflows. The backend is local (SQLite) and the app is compiled for distribution.",
+          "highlight": {
+            "title": "Unique Hybrid Architecture",
+            "content": "Combines the efficiency of conversational AI with the security and control of traditional interfaces, maintaining a single source of truth in local database."
+          }
+        },
+        "systemArchitecture": {
+          "title": "System Architecture",
+          "intro": "Hybrid AI architecture with Master-Specialist pattern that understands user intent and routes to specialists:",
+          "items": [
+            "Master Interpreter: Understands intent and context, routes requests",
+            "Student Specialist: Maps human requests to SQL and certificates; applies filters detected from language",
+            "Help Specialist: Explains capabilities and guided usage",
+            "Local database (SQLite): Single source of truth",
+            "Production build: Compiled executable with compatibility patch for Google's AI library"
+          ]
+        },
+        "dualInterface": {
+          "title": "Two Complementary Experiences",
+          "intro": "Two complementary interfaces sharing the same backend:",
+          "classic": {
+            "title": "Classic Management",
+            "items": [
+              "Full CRUD over local SQLite database",
+              "Search and generate certificates with deliberate control",
+              "Transform documents with supervised options"
+            ]
+          },
+          "ai": {
+            "title": "AI Chat",
+            "items": [
+              "Natural language requests",
+              "Automatic lists/filters/statistics and PDF generation",
+              "Read-only data dialogs to maximize speed"
+            ]
+          }
+        }
+      }
     },
     "navigation": {
       "prevProject": "Previous Project: Medical License System",

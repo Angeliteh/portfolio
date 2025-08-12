@@ -843,9 +843,12 @@
       "pdfSpeed": "1-5s por PDF"
     },
     "sections": {
+      "demoSection": "Demostración del Sistema",
       "videoDemo": "Demo en Video",
       "videoPlaceholder": "Video Demo Próximamente",
       "videoDescription": "Demostración completa del sistema IA en producción",
+      "demoGuide": "Guía de Demostración",
+      "resources": "Información del Proyecto",
       "overview": "Descripción General",
       "overviewText": "Aplicación de escritorio (PyQt + PyInstaller) usada en producción por una escuela para reemplazar tareas de secretaría: búsqueda/gestión de alumnos, generación y transformación de constancias PDF, consultas y recomendaciones inteligentes vía IA. Arquitectura de IA con \"Master Interpreter\" que detecta intención y sub-intenciones y enruta a especialistas (Student/Help), integrándose con servicios locales (SQLite, PDF). Escalable y robusta: mejora con nuevos modelos de IA y empaquetado estable.",
       "technicalDetails": "Detalles Técnicos",
@@ -961,8 +964,203 @@
     },
     "resourceLinks": {
       "privateCode": "Código Privado",
+      "privateCodeDesc": "Arquitectura propietaria adaptable a cualquier dominio",
       "technicalDocs": "Documentación Técnica",
-      "inProduction": "En Producción"
+      "technicalDocsDesc": "Guía completa de arquitectura y implementación",
+      "inProduction": "En Producción",
+      "inProductionDesc": "Sistema activo en escuela primaria mexicana"
+    },
+    "tabs": {
+      "video": "Video Demo",
+      "guide": "Guía Técnica"
+    },
+    "carousel": {
+      "slide1": {
+        "title": "Interfaz Principal del Sistema",
+        "description": "Vista general del sistema híbrido con acceso a gestión clásica y chat IA"
+      },
+      "slide2": {
+        "title": "Chat IA Conversacional",
+        "description": "Interfaz de chat inteligente para consultas en lenguaje natural"
+      },
+      "slide3": {
+        "title": "Gestión de Estudiantes",
+        "description": "Panel de administración CRUD para gestión completa de datos escolares"
+      },
+      "slide4": {
+        "title": "Generación de PDFs",
+        "description": "Sistema automático de generación de constancias oficiales personalizadas"
+      },
+      "slide5": {
+        "title": "Transformación de Documentos",
+        "description": "Herramienta para convertir PDFs externos en constancias oficiales"
+      }
+    },
+    "video": {
+      "title": "Demostración Completa del Sistema",
+      "description": "Observa cómo el sistema de IA automatiza la generación de constancias escolares: desde la búsqueda inteligente de alumnos hasta la creación de PDFs personalizados, todo a través de una interfaz conversacional natural."
+    },
+    "guide": {
+      "executiveOverview": {
+        "title": "Resumen Ejecutivo",
+        "content": "Sistema híbrido listo para producción que combina un asistente de IA conversacional con una interfaz administrativa tradicional. Los directores consultan en lenguaje natural para búsquedas, estadísticas y constancias oficiales; los administradores mantienen control total sobre la base de datos y flujos de documentos. El backend es local (SQLite) y la aplicación se compila para distribución.",
+        "highlight": {
+          "title": "Arquitectura Híbrida Única",
+          "content": "Combina la eficiencia de la IA conversacional con la seguridad y control de interfaces tradicionales, manteniendo una única fuente de verdad en base de datos local."
+        }
+      },
+      "context": {
+        "title": "Contexto del Sistema",
+        "spanish": "Interfaz en Español: Este build fue entregado para una escuela real en México. Las etiquetas y mensajes aparecen en español (ej: \"Transformar\", \"Buscar\", \"Constancias\"). El sistema está diseñado para ser bilingüe: prompts, ejemplos, strings de UI y plantillas PDF pueden localizarse.",
+        "legend": {
+          "title": "Leyenda Rápida (Español → Inglés):",
+          "transform": "Transformar → Transform documents (PDF → constancia oficial)",
+          "search": "Buscar / Generar Constancias → Search students / Generate certificates",
+          "management": "Gestión / Administración → Full administrative management (CRUD)"
+        }
+      },
+      "architecture": {
+        "title": "Arquitectura del Sistema",
+        "intro": "Arquitectura de IA híbrida con patrón Master-Specialist que entiende intención del usuario y enruta a especialistas:",
+        "master": "Master Interpreter",
+        "masterDesc": "Comprende intención y contexto, enruta solicitudes",
+        "student": "Student Specialist",
+        "studentDesc": "Mapea solicitudes humanas a SQL y constancias; aplica filtros detectados del lenguaje",
+        "help": "Help Specialist",
+        "helpDesc": "Explica capacidades y uso guiado",
+        "database": "Base de datos local (SQLite)",
+        "databaseDesc": "Única fuente de verdad",
+        "build": "Build de producción",
+        "buildDesc": "Ejecutable compilado con parche de compatibilidad para biblioteca de IA de Google"
+      },
+      "dualInterface": {
+        "title": "Dos Experiencias Complementarias",
+        "intro": "Dos interfaces complementarias que comparten el mismo backend:",
+        "classic": {
+          "title": "Gestión Clásica",
+          "crud": "CRUD completo sobre base de datos SQLite local",
+          "search": "Búsqueda y generación de constancias con control deliberado",
+          "transform": "Transformación de documentos con opciones supervisadas (plantillas/branding/persistencia)"
+        },
+        "ai": {
+          "title": "Chat IA",
+          "natural": "Solicitudes en lenguaje natural (ej: \"Buscar estudiantes apellido García\")",
+          "automatic": "Listas/filtros/estadísticas automáticas y generación de PDF",
+          "readonly": "Diálogos de datos de solo lectura para maximizar velocidad"
+        }
+      },
+      "demoFlow": {
+        "title": "Flujo de Demostración (Refleja el video de 18 minutos)",
+        "partA": {
+          "title": "Parte A — Gestión Clásica (fundación)",
+          "step1": "Abrir Gestión Clásica",
+          "step2": "Mostrar registros de estudiantes y abrir una entrada típica (nombre, CURP, matrícula, grado, grupo, turno)",
+          "step3": "Explicar: esta BD SQLite local es la única fuente de verdad del sistema. Las respuestas de IA y PDFs se basan en estos datos",
+          "step4": "Tarjeta: Transformar - Seleccionar PDF externo; extraer datos; generar constancia formateada correctamente",
+          "step5": "Tarjeta: Buscar y Generar Constancias - Buscar por nombre, grado, grupo, turno, matrícula, CURP",
+          "step6": "Tarjeta: Gestión (CRUD) - Editar/validar/guardar campos con control visual y auditabilidad"
+        },
+        "partB": {
+          "title": "Parte B — Chat IA (automático)",
+          "step1": "Abrir Chat IA (tema oscuro)",
+          "step2": "Búsqueda por nombre: \"Buscar estudiantes apellido García\" → listar resultados",
+          "step3": "Continuación contextual: \"De esa lista, solo turno vespertino\" → resultados filtrados",
+          "step4": "Refinamiento progresivo: \"Ahora tercer grado\" → \"Ahora grupo A\" → resultados refinados",
+          "step5": "Estadísticas: \"¿Cuántos estudiantes hay en tercer grado?\" → conteo/distribución",
+          "step6": "Búsqueda exacta: \"Mostrar estudiante con matrícula 2024001\" (o por CURP)",
+          "step7": "Generar constancia: \"Generar constancia de estudios para [Nombre Estudiante]\" → se abre PDF",
+          "step8": "Transformar PDF externo: adjuntar muestra → \"Transformar este PDF a constancia oficial\" → extracción automática + PDF",
+          "step9": "Ayuda: \"¿Qué puedes hacer?\" → resumen de capacidades en lenguaje natural"
+        }
+      },
+      "benefits": {
+        "title": "Beneficios y Valor",
+        "directors": {
+          "title": "Para directores y personal",
+          "natural": "Lenguaje natural: pedir listas, refinar con filtros, calcular estadísticas y obtener PDFs oficiales en segundos",
+          "noSQL": "No necesidad de SQL o navegación compleja de UI"
+        },
+        "admins": {
+          "title": "Para administradores",
+          "control": "Control total sobre datos y documentos (validación, auditabilidad, plantillas)",
+          "faster": "Operaciones diarias más rápidas; menos pasos manuales"
+        },
+        "it": {
+          "title": "Para IT / empresas",
+          "content": "Patrón reutilizable Master → Specialists; prompts modulares y catálogos. Datos locales (SQLite), pipeline PDF consistente, distribución compilada (PyInstaller). Fácil de adaptar a otros dominios con la misma arquitectura."
+        }
+      },
+      "privacy": {
+        "title": "Datos, Privacidad y Despliegue",
+        "local": "Local-first",
+        "localDesc": "los datos de estudiantes permanecen en almacenamiento local (SQLite)",
+        "pdfs": "PDFs",
+        "pdfsDesc": "generados consistentemente con branding y plantillas de la escuela",
+        "distribution": "Distribución",
+        "distributionDesc": "ejecutable compilado vía PyInstaller",
+        "logging": "Logging",
+        "loggingDesc": "logs informativos para troubleshooting (sin datos sensibles en logs de demo)"
+      },
+      "bilingual": {
+        "title": "Preparación Bilingüe",
+        "current": "Build actual: UI en español (entregado a escuela mexicana)",
+        "ready": "Listo para inglés: prompts/ejemplos, strings de UI y plantillas PDF pueden localizarse",
+        "ai": "La IA puede responder en el idioma del usuario manteniendo un esquema interno consistente"
+      }
+    },
+    "demoGuide": {
+      "title": "Guía Técnica Completa",
+      "subtitle": "Documentación estructurada del sistema para análisis técnico detallado",
+      "tocTitle": "Contenido de la Guía",
+      "toc": {
+        "executiveOverview": "Resumen Ejecutivo",
+        "systemArchitecture": "Arquitectura del Sistema",
+        "dualInterface": "Interfaz Dual",
+        "demoWorkflow": "Flujo de Demostración",
+        "businessValue": "Valor de Negocio",
+        "deployment": "Despliegue y Privacidad"
+      },
+      "sections": {
+        "executiveOverview": {
+          "title": "Resumen Ejecutivo",
+          "content": "Sistema híbrido listo para producción que combina un asistente de IA conversacional con una interfaz administrativa tradicional. Los directores consultan en lenguaje natural para búsquedas, estadísticas y constancias oficiales; los administradores mantienen control total sobre la base de datos y flujos de documentos. El backend es local (SQLite) y la aplicación se compila para distribución.",
+          "highlight": {
+            "title": "Arquitectura Híbrida Única",
+            "content": "Combina la eficiencia de la IA conversacional con la seguridad y control de interfaces tradicionales, manteniendo una única fuente de verdad en base de datos local."
+          }
+        },
+        "systemArchitecture": {
+          "title": "Arquitectura del Sistema",
+          "intro": "Arquitectura de IA híbrida con patrón Master-Specialist que entiende intención del usuario y enruta a especialistas:",
+          "items": [
+            "Master Interpreter: Comprende intención y contexto, enruta solicitudes",
+            "Student Specialist: Mapea solicitudes humanas a SQL y constancias; aplica filtros detectados del lenguaje",
+            "Help Specialist: Explica capacidades y uso guiado",
+            "Base de datos local (SQLite): Única fuente de verdad",
+            "Build de producción: Ejecutable compilado con parche de compatibilidad para biblioteca de IA de Google"
+          ]
+        },
+        "dualInterface": {
+          "title": "Dos Experiencias Complementarias",
+          "intro": "Dos interfaces complementarias que comparten el mismo backend:",
+          "classic": {
+            "title": "Gestión Clásica",
+            "items": [
+              "CRUD completo sobre base de datos SQLite local",
+              "Búsqueda y generación de constancias con control deliberado",
+              "Transformación de documentos con opciones supervisadas"
+            ]
+          },
+          "ai": {
+            "title": "Chat IA",
+            "items": [
+              "Solicitudes en lenguaje natural",
+              "Listas/filtros/estadísticas automáticas y generación de PDF",
+              "Diálogos de datos de solo lectura para maximizar velocidad"
+            ]
+          }
+        }
+      }
     },
     "navigation": {
       "prevProject": "Proyecto Anterior: Sistema de Licencias Médicas",
