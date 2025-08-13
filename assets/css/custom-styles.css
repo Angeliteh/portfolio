@@ -3391,6 +3391,24 @@ a:hover {
   transition: all 0.3s ease;
 }
 
+/* Asegurar que el video info no ocupe demasiado espacio */
+.video-info {
+  margin-top: 1.5rem;
+}
+
+.video-title {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+.video-description {
+  color: var(--text-muted);
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
 .video-container:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
@@ -3406,6 +3424,10 @@ a:hover {
   border-radius: 8px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   background: #000;
+  /* Optimizaciones para mejor calidad */
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  will-change: transform;
 }
 
 .youtube-embed-container iframe {
@@ -3416,6 +3438,12 @@ a:hover {
   height: 100%;
   border: none;
   border-radius: 8px;
+  /* Mejorar renderización y calidad */
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  transform: translateZ(0); /* Forzar aceleración por hardware */
+  backface-visibility: hidden; /* Optimizar renderización */
+  will-change: transform; /* Optimizar para animaciones */
 }
 
 /* Información del video */
@@ -3476,23 +3504,103 @@ a:hover {
 /* Responsive para videos */
 @media (max-width: 768px) {
   .video-container {
-    padding: 1.5rem;
+    padding: 1rem; /* Reducir padding para más espacio al video */
+    margin: 1rem 0; /* Reducir márgenes */
+  }
+
+  /* Hacer el video más grande en móvil */
+  .youtube-embed-container {
+    padding-bottom: 56.25%; /* Mantener aspect ratio 16:9 */
+    margin-bottom: 1rem; /* Espacio entre video e info */
+    border-radius: 6px; /* Bordes más pequeños en móvil */
+    /* Mejorar calidad en móvil */
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+  }
+
+  .youtube-embed-container iframe {
+    /* Forzar mejor calidad en móvil */
+    image-rendering: auto;
+    image-rendering: -webkit-optimize-contrast;
+    border-radius: 6px;
+  }
+
+  /* Optimizar la información del video */
+  .video-info {
+    padding: 0; /* Eliminar padding extra */
+  }
+
+  .video-title {
+    font-size: 1.1rem; /* Título más pequeño */
+    margin-bottom: 0.5rem; /* Menos espacio */
+    line-height: 1.3; /* Mejor espaciado de líneas */
+  }
+
+  .video-description {
+    font-size: 0.85rem; /* Texto más pequeño */
+    line-height: 1.4; /* Mejor legibilidad */
+    margin-bottom: 0; /* Eliminar margen inferior */
   }
 
   .video-placeholder {
-    padding: 3rem 1.5rem;
+    padding: 2rem 1rem; /* Reducir padding del placeholder */
   }
 
   .video-placeholder i {
     font-size: 2.5rem;
   }
 
+  /* Optimizar las pestañas en móvil */
+  .demo-tabs-content {
+    padding: 0.5rem; /* Menos padding en el contenedor */
+  }
+
+  .demo-tab-pane {
+    padding: 0; /* Eliminar padding extra */
+  }
+
+  /* Hacer que el video ocupe más espacio vertical */
+  .demo-tabs-container {
+    margin: 1rem 0; /* Reducir márgenes del contenedor */
+  }
+}
+
+/* Optimizaciones adicionales para pantallas muy pequeñas */
+@media (max-width: 480px) {
+  .video-container {
+    padding: 0.75rem; /* Aún menos padding en pantallas pequeñas */
+    margin: 0.5rem 0;
+  }
+
+  .youtube-embed-container {
+    border-radius: 4px; /* Bordes aún más pequeños */
+    margin-bottom: 0.75rem;
+  }
+
   .video-title {
-    font-size: 1.1rem;
+    font-size: 1rem; /* Título más pequeño */
+    margin-bottom: 0.4rem;
   }
 
   .video-description {
+    font-size: 0.8rem; /* Texto aún más pequeño */
+    line-height: 1.3;
+  }
+
+  /* Optimizar pestañas para pantallas pequeñas */
+  .demo-tab {
+    padding: 0.8rem 1rem;
     font-size: 0.9rem;
+  }
+
+  .demo-tabs-content {
+    padding: 0.25rem;
+  }
+
+  /* Reducir espaciado general en la sección del proyecto */
+  .project-section {
+    padding: 1rem;
+    margin: 1rem 0;
   }
 }
 
