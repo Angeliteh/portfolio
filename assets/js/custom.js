@@ -55,9 +55,7 @@
           .removeClass('active');
       }
 
-      if ($(window).width() < 846) {
-        $('#menu').removeClass('open');
-      }
+
     });
   }
 
@@ -112,13 +110,6 @@
     // Detectar sección activa al cargar
     setTimeout(updateActiveSection, 500);
 
-    // Toggle del menú móvil
-    $("#menu-toggle").on("click", function() {
-      $("#menu").addClass("open");
-    });
 
-    $("#menu-close").on("click", function() {
-      $("#menu").removeClass("open");
-    });
   });
 })(jQuery);

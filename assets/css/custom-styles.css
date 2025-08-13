@@ -238,7 +238,7 @@ small {font-size: 0.750rem;} /* 12px */
   height: 100%;
   display: flex;
   flex-direction: column;
-  overflow: hidden; /* Evita que el contenido sobresalga de los bordes redondeados */
+  overflow: visible; /* Permitir que el contenido sea visible en móvil */
 }
 
 .menu .container {
@@ -2168,15 +2168,6 @@ figure.snip1321 {
   #page-wraper {
     padding-left: 0;
   }
-
-  .responsive-nav {
-    left: -300px;
-    transition: all 0.3s ease;
-  }
-
-  .responsive-nav.active {
-    left: 0;
-  }
 }
 
 /* Asegurarse que los proyectos estén correctamente espaciados */
@@ -2823,18 +2814,7 @@ input:checked + .slider:before {
   display: none;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .responsive-nav {
-    width: 100%;
-    transform: translateX(-100%);
-    transition: transform 0.3s ease;
-  }
 
-  .responsive-nav.active {
-    transform: translateX(0);
-  }
-}
 /* Asegurar buen contraste en los textos */
 .section p, 
 .content-text p, 
@@ -3132,106 +3112,267 @@ a:hover {
   z-index: 999;
 }
 
-/* Estilos para el botón de hamburguesa */
-.sidebar-toggle {
-  display: none;
-  position: fixed;
-  top: 1rem;
-  left: 1rem;
-  z-index: 1000;
-  background: var(--accent-color);
-  color: white;
-  border: none;
-  border-radius: 50%;
-  width: 3rem;
-  height: 3rem;
-  cursor: pointer;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  transition: all 0.3s ease;
-}
 
-.sidebar-toggle:hover {
-  transform: scale(1.1);
-}
 
 .responsive-nav {
   transition: transform 0.3s ease;
 }
 
-/* Media queries para dispositivos móviles */
-@media screen and (max-width: 768px) {
-  .sidebar-toggle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
 
-  /* Aplicar background solo en modo móvil */
-  .responsive-nav {
-    background: transparent; /* Por defecto transparente */
-    transform: translateX(-100%);
-    width: 80%;
-    max-width: 300px;
-  }
-
-  /* Aplicar background solo cuando está activo en móvil */
-  .responsive-nav.active {
-    transform: translateX(0);
-    background: var(--sidebar-bg); /* Background solo cuando está activo */
-  }
-
-  .sidebar-overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 998;
-  }
-
-  .sidebar-overlay.active {
-    display: block;
-  }
-
-  /* Asegurar que el contenido del sidebar sea visible en móvil */
-  .sidebar-content {
-    height: 100%;
-    padding: 2rem 1.5rem;
-    display: flex;
-    flex-direction: column;
-    color: var(--text-color);
-  }
-
-  /* Ajustes para el menú móvil */
-  .main-nav ul {
-    margin-top: 2rem;
-  }
-
-  .main-nav ul li a {
-    color: var(--text-color);
-    padding: 1rem 1.5rem;
-    display: block;
-    width: 100%;
-  }
-
-  /* Ajustes para el perfil en móvil */
-  .profile-section {
-    padding-top: 2rem;
-  }
-
-  /* Ajustes para los controles en móvil */
-  .sidebar-controls {
-    margin-top: auto;
-    padding: 1.5rem;
-  }
-}
 
 /* Estilos para pantallas grandes (mantener el diseño original) */
 @media screen and (min-width: 769px) {
   .responsive-nav {
     background: transparent;
+  }
+
+  /* Ocultar botón hamburguesa en desktop */
+  .mobile-menu-toggle {
+    display: none !important;
+  }
+
+  .mobile-menu-overlay {
+    display: none !important;
+  }
+}
+
+/* ===== NUEVO SISTEMA DE MENÚ MÓVIL ===== */
+
+/* Botón hamburguesa */
+.mobile-menu-toggle {
+  display: none; /* Oculto por defecto */
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1001;
+  background: var(--accent-color);
+  border: none;
+  border-radius: 8px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.mobile-menu-toggle:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.mobile-menu-toggle:active {
+  transform: scale(0.95);
+}
+
+/* Líneas del hamburguesa */
+.hamburger-line {
+  width: 24px;
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Animación cuando el menú está abierto */
+.mobile-menu-toggle.active .hamburger-line:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+.mobile-menu-toggle.active .hamburger-line:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-menu-toggle.active .hamburger-line:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Overlay para cerrar el menú */
+.mobile-menu-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.mobile-menu-overlay.active {
+  display: block;
+  opacity: 1;
+}
+
+/* Comportamiento del sidebar en móvil */
+@media screen and (max-width: 768px) {
+  /* Mostrar botón hamburguesa */
+  .mobile-menu-toggle {
+    display: flex !important;
+  }
+
+  /* Ocultar sidebar por defecto en móvil */
+  .responsive-nav {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    background: var(--sidebar-bg);
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* Permitir scroll vertical */
+  }
+
+  /* Mostrar sidebar cuando está activo */
+  .responsive-nav.mobile-active {
+    transform: translateX(0);
+  }
+
+  /* Ajustar el ancho del sidebar en móvil */
+  .responsive-nav {
+    width: 280px;
+    max-width: 85vw; /* No más del 85% de la pantalla */
+  }
+
+  /* Arreglar el contenido del sidebar para móvil */
+  .sidebar-content {
+    height: auto !important; /* Permitir altura automática */
+    min-height: 100vh; /* Mínimo altura completa */
+    overflow: visible !important; /* Permitir que el contenido sea visible */
+    padding: 2rem 1.5rem 3rem; /* Más padding abajo para los controles */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; /* Espacio entre secciones */
+  }
+
+  /* Ajustar el menú para que no crezca demasiado */
+  .main-nav {
+    flex-shrink: 0; /* No permitir que se encoja */
+  }
+
+  /* Empujar los controles hacia abajo */
+  .sidebar-controls {
+    margin-top: auto;
+    flex-shrink: 0; /* No permitir que se encoja */
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
+  }
+
+  /* Asegurar que el contenido principal no se vea afectado */
+  body.mobile-menu-open {
+    overflow: hidden;
+  }
+
+  /* Mejorar el scroll del sidebar */
+  .responsive-nav::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .responsive-nav::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+  }
+
+  .responsive-nav::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+  }
+
+  .responsive-nav::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
+  }
+
+  /* Asegurar que los social links sean visibles */
+  .social-links {
+    flex-shrink: 0;
+    margin: 1.5rem 0;
+  }
+
+  /* Asegurar que el perfil sea visible */
+  .profile-section {
+    flex-shrink: 0;
+  }
+
+  /* Mejorar el espaciado de los controles de idioma y tema */
+  .sidebar-language-switch {
+    margin-bottom: 1.5rem;
+  }
+
+  .theme-toggle {
+    margin-top: 1rem;
+  }
+
+  /* Mejorar el espaciado del formulario en móvil */
+  .modern-contact-form {
+    padding: 2rem 1.5rem !important;
+    margin-top: 0 !important;
+  }
+
+  .form-header h3 {
+    font-size: 1.5rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .form-grid {
+    gap: 1rem !important;
+  }
+
+  .modern-input,
+  .modern-textarea {
+    font-size: 16px !important; /* Evitar zoom en iOS */
+  }
+}
+
+/* Estilos generales para el formulario de contacto a ancho completo */
+.contact-form-container {
+  max-width: 800px; /* Ancho máximo para mejor legibilidad */
+  margin: 0 auto; /* Centrar el formulario */
+  width: 100%;
+}
+
+.modern-contact-form {
+  background: var(--card-bg);
+  border-radius: 20px;
+  padding: 3rem 2.5rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--border-color);
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.form-header h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.form-header p {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+}
+
+/* Responsive para el formulario */
+@media (max-width: 768px) {
+  .contact-form-container {
+    margin: 0 15px;
+    max-width: calc(100% - 30px);
+  }
+
+  .modern-contact-form {
+    padding: 2rem 1.5rem;
+  }
+
+  .form-header h3 {
+    font-size: 1.5rem;
+  }
+
+  .form-header p {
+    font-size: 1rem;
   }
 }
 
