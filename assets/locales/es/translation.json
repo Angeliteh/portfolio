@@ -94,6 +94,16 @@
       "subtitle": "Los proyectos más complejos y de mayor impacto",
       "badge": "DESTACADO",
       "viewProject": "Ver Proyecto Completo",
+      "botProject": {
+        "title": "Sistema Multi-Bot Empresarial IA",
+        "description": "Plataforma de IA conversacional multi-bot con arquitectura modular escalable. 4 bots especializados por industria con dashboard maestro, gestión centralizada y ROI 340% promedio.",
+        "liveWebsite": "Sitio en Vivo",
+        "metrics": {
+          "bots": "4 Bots Especializados",
+          "roi": "ROI 340% Promedio",
+          "development": "89% Menos Tiempo Dev"
+        }
+      },
       "aiProject": {
         "title": "Sistema de Constancias Escolares con IA",
         "description": "Aplicación de escritorio en producción con arquitectura IA Master-Student. Automatiza gestión escolar completa con interfaz conversacional natural.",
@@ -155,6 +165,11 @@
       "desc": "Sistema de automatización para el llenado de formatos de licencias médicas oficiales. Elimina la captura manual, reduce errores y acelera el proceso de generación de documentos con múltiples interfaces de captura y reconocimiento de voz."
     },
     "project7": {
+      "name": "Sistema Multi-Bot IA",
+      "title": "Sistema Multi-Bot Empresarial IA",
+      "desc": "Plataforma empresarial con 4 bots especializados por industria, arquitectura modular escalable y dashboard maestro. ROI 340% promedio con reducción 89% en tiempo de desarrollo."
+    },
+    "project8": {
       "name": "Sistema de Constancias Escolares con IA",
       "title": "Sistema de Constancias Escolares con IA",
       "desc": "Aplicación de escritorio con IA que automatiza constancias y gestión escolar. Master Interpreter con routing inteligente, generación PDF y interfaz conversacional natural. En producción con arquitectura escalable y robusta."
@@ -832,6 +847,225 @@
     "navigation": {
       "prevProject": "Proyecto Anterior: Excel Scraper",
       "nextProject": "Siguiente Proyecto: Sistema de Constancias Escolares con IA"
+    }
+  },
+  "botProject": {
+    "title": "Sistema Multi-Bot Empresarial IA",
+    "subtitle": "Plataforma de IA conversacional multi-bot con arquitectura modular escalable para empresas",
+    "metrics": {
+      "bots": "4 Bots Especializados",
+      "roi": "ROI 340% Promedio",
+      "development": "89% Menos Tiempo Dev",
+      "website": "🚀 Ver Sitio en Vivo"
+    },
+    "sections": {
+      "demoSection": "Demostración del Sistema",
+      "overview": "Descripción General",
+      "overviewText": "Plataforma empresarial de IA conversacional con arquitectura modular que gestiona múltiples bots especializados por industria. Sistema desarrollado con Node.js, Express.js, Supabase y Google Gemini AI que permite escalabilidad para 50+ bots con gestión centralizada. Actualmente operando 4 bots especializados (Energía Solar, Desarrollo Web, Inmobiliaria, Restaurante) con dashboard maestro y analytics en tiempo real.",
+      "technicalDetails": "Detalles Técnicos",
+      "techStack": "Stack Tecnológico",
+      "challenges": "Desafíos Técnicos y Soluciones",
+      "workflow": "Flujo de Trabajo Multi-Bot",
+      "productionImpact": "Impacto en Producción",
+      "resources": "Información del Proyecto"
+    },
+    "features": {
+      "architecture": {
+        "title": "Arquitectura Modular Escalable",
+        "desc": "Sistema de detección automática de bots por Page ID con configuración dinámica y rutas auto-generadas para nuevos bots en menos de 2 horas"
+      },
+      "ai": {
+        "title": "IA Especializada por Industria",
+        "desc": "Google Gemini AI con prompts especializados, gestión de contexto persistente y memoria conversacional por usuario y bot"
+      },
+      "dashboard": {
+        "title": "Dashboard Maestro Centralizado",
+        "desc": "Gestión centralizada con métricas en tiempo real, analytics por bot y sistema de testing automatizado completo"
+      }
+    },
+    "tabs": {
+      "video": "Video Demo",
+      "guide": "Guía Técnica"
+    },
+    "video": {
+      "title": "Demostración del Sistema Multi-Bot",
+      "description": "Observa cómo el sistema gestiona múltiples bots especializados desde un dashboard maestro: desde la detección automática por industria hasta la generación de leads y analytics en tiempo real. Incluye demostración de los 4 bots activos y el sistema de testing automatizado."
+    },
+    "guide": {
+      "executiveOverview": {
+        "title": "Resumen Ejecutivo",
+        "content": "Sistema empresarial listo para producción que resuelve la necesidad de múltiples bots especializados con gestión centralizada. Arquitectura modular con Node.js + Express que permite agregar nuevos bots en menos de 2 horas, con ROI promedio del 340% y reducción del 89% en tiempo de desarrollo. Actualmente gestiona 4 bots especializados con capacidad para escalar a 50+.",
+        "highlight": {
+          "title": "Arquitectura Enterprise-Grade",
+          "content": "Combina la especialización por industria con la eficiencia de gestión centralizada, permitiendo escalabilidad empresarial sin comprometer la personalización por vertical de negocio."
+        }
+      },
+      "architecture": {
+        "title": "Arquitectura del Sistema",
+        "core": {
+          "title": "Core Engine (Node.js + Express)",
+          "desc": "Sistema de orquestación multi-bot con detección automática por Page ID, configuración dinámica y rutas auto-generadas"
+        },
+        "data": {
+          "title": "Data Layer (Supabase + PostgreSQL)",
+          "desc": "Persistencia de conversaciones, gestión de clientes, analytics por bot y sistema de contexto con TTL configurable"
+        },
+        "ai": {
+          "title": "AI Integration Layer",
+          "desc": "Google Gemini AI con prompts especializados, gestión de múltiples API keys y failover automático"
+        }
+      },
+      "apiIntegration": {
+        "title": "Integración con APIs Oficiales",
+        "messenger": {
+          "title": "Facebook Messenger API",
+          "desc": "Integración completa con webhooks, gestión de tokens por Page ID y sistema de testing automatizado"
+        },
+        "instagram": {
+          "title": "Instagram Business API",
+          "desc": "Expansión planificada para Q3 2025 con soporte para Instagram Direct y Stories"
+        },
+        "whatsapp": {
+          "title": "WhatsApp Business API",
+          "desc": "Integración planificada para Q3 2025 con soporte para mensajes multimedia y templates"
+        },
+        "status": {
+          "implemented": "✅ Implementado",
+          "planned": "🔄 Roadmap Q3 2025"
+        }
+      }
+    },
+    "technical": {
+      "architecture": {
+        "title": "Arquitectura",
+        "item1": "Sistema modular con detección automática de bots por Page ID",
+        "item2": "Configuración dinámica que soporta escalabilidad para 50+ bots",
+        "item3": "Rutas auto-generadas y assets compartidos con templates reutilizables"
+      },
+      "security": {
+        "title": "Seguridad",
+        "item1": "Verificación de signatures en webhooks de Facebook",
+        "item2": "Gestión segura de múltiples API keys con variables de entorno",
+        "item3": "Rate limiting y protección DDoS con Helmet.js"
+      },
+      "features": {
+        "title": "Características Avanzadas",
+        "item1": "Dashboard dinámico con generación automática de tarjetas por bot",
+        "item2": "Sistema de testing automatizado con simulación de webhooks",
+        "item3": "Analytics en tiempo real con métricas específicas por industria"
+      }
+    },
+    "techStack": {
+      "backend": {
+        "title": "Backend",
+        "nodejs": "Node.js",
+        "express": "Express.js",
+        "render": "Render.com"
+      },
+      "frontend": {
+        "title": "Frontend/Interface",
+        "html5": "HTML5/CSS3",
+        "bootstrap": "Bootstrap 5",
+        "chartjs": "Chart.js"
+      },
+      "ai": {
+        "title": "IA y APIs",
+        "gemini": "Google Gemini AI",
+        "messenger": "Messenger API",
+        "webhooks": "Webhooks"
+      },
+      "database": {
+        "title": "Base de Datos",
+        "supabase": "Supabase",
+        "postgresql": "PostgreSQL",
+        "realtime": "Real-time"
+      }
+    },
+    "challenges": {
+      "challenge1": {
+        "title": "Escalabilidad Multi-Bot",
+        "problem": {
+          "title": "Problema:",
+          "desc": "Necesidad de gestionar múltiples bots especializados sin duplicar código ni infraestructura"
+        },
+        "solution": {
+          "title": "Solución:",
+          "desc": "Arquitectura modular con detección automática por Page ID y configuración dinámica que permite agregar nuevos bots en menos de 2 horas"
+        }
+      },
+      "challenge2": {
+        "title": "Gestión de Contexto Persistente",
+        "problem": {
+          "title": "Problema:",
+          "desc": "Mantener contexto conversacional entre sesiones y gestionar memoria por usuario y bot específico"
+        },
+        "solution": {
+          "title": "Solución:",
+          "desc": "Sistema de contexto persistente en Supabase con TTL configurable y recuperación automática entre sesiones"
+        }
+      },
+      "challenge3": {
+        "title": "Especialización por Industria",
+        "problem": {
+          "title": "Problema:",
+          "desc": "Cada industria requiere prompts, lógica de negocio y flujos conversacionales completamente diferentes"
+        },
+        "solution": {
+          "title": "Solución:",
+          "desc": "Sistema de archivos de configuración modular por bot con prompts especializados y business logic independiente"
+        }
+      }
+    },
+    "workflowSteps": {
+      "detection": {
+        "title": "1. Detección Automática",
+        "desc": "Identifica bot especializado por Page ID"
+      },
+      "aiProcessing": {
+        "title": "2. Procesamiento IA",
+        "desc": "Google Gemini con prompts especializados"
+      },
+      "contextManagement": {
+        "title": "3. Gestión de Contexto",
+        "desc": "Persistencia en Supabase con TTL"
+      },
+      "analytics": {
+        "title": "4. Analytics y Respuesta",
+        "desc": "Métricas en tiempo real y respuesta especializada"
+      }
+    },
+    "feedback": {
+      "alternaClient": {
+        "title": "Director Comercial ALTERNA",
+        "institution": "Empresa de Energía Solar",
+        "quote": "El bot especializado en energía solar genera cotizaciones técnicas en menos de 5 minutos. Antes tardábamos 2-3 días en responder consultas complejas. Ahora es inmediato y preciso.",
+        "metrics": {
+          "roi": "340% ROI",
+          "responseTime": "< 5 min respuesta"
+        }
+      },
+      "webdevClient": {
+        "title": "CEO WebDev Pro",
+        "institution": "Agencia de Desarrollo Web",
+        "quote": "El bot técnico resuelve 78% de consultas automáticamente. Nuestro equipo se enfoca en proyectos complejos mientras el bot maneja consultas técnicas estándar con precisión profesional.",
+        "metrics": {
+          "automation": "78% Automatización",
+          "teamFocus": "+60% Productividad"
+        }
+      }
+    },
+    "resourceLinks": {
+      "liveWebsite": "Sitio Web en Producción",
+      "liveWebsiteDesc": "Plataforma comercial activa con clientes reales",
+      "visitWebsite": "Visitar botsaiservices.online",
+      "technicalDocs": "Documentación Técnica",
+      "technicalDocsDesc": "Guía completa de arquitectura multi-bot",
+      "inProduction": "En Producción",
+      "inProductionDesc": "4 bots activos sirviendo empresas reales"
+    },
+    "navigation": {
+      "prevProject": "Proyecto Anterior: Sistema de Constancias Escolares",
+      "backToPortfolio": "Volver al Portafolio"
     }
   },
   "schoolCertificateProject": {

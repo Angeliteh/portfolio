@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Multi-Bot Empresarial IA</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicon.svg">
+
+    <!-- Mover el CSP aquí y actualizarlo -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' https:; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https:; connect-src 'self' https:;">
+
+    <!-- Update CSS paths to use relative paths -->
+    <link rel="stylesheet" href="../assets/css/fontawesome.css">
+    <link rel="stylesheet" href="../assets/css/templatemo-style.css">
+    <link rel="stylesheet" href="../assets/css/owl.css">
+    <link rel="stylesheet" href="../assets/css/lightbox.css">
+    <link rel="stylesheet" href="../assets/css/custom-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  </head>
+
+  <body>
+    <div id="page-wraper">
+      <div id="sidebar-container"></div>
+      <div class="project-content">
+        <section class="section project-details">
+          <div class="container">
+            <div class="section-heading">
+              <h2 data-i18n="botProject.title">Sistema Multi-Bot Empresarial IA</h2>
+              <div class="line-dec"></div>
+              <span data-i18n="botProject.subtitle">Plataforma de IA conversacional multi-bot con arquitectura modular escalable para empresas</span>
+            </div>
+
+            <!-- Project Preview Carousel -->
+            <div class="project-preview">
+              <div class="project-carousel">
+                <div class="carousel-container">
+                  <!-- Botón de pantalla completa -->
+                  <button class="carousel-fullscreen" id="carousel-fullscreen" title="Ver en pantalla completa">
+                    <i class="fas fa-expand"></i>
+                  </button>
+
+                  <!-- Contador de imágenes -->
+                  <div class="carousel-counter">
+                    <span id="current-slide">1</span> / <span id="total-slides">5</span>
+                  </div>
+
+                  <!-- Slides del carrusel -->
+                  <div class="carousel-slides" id="carousel-slides">
+                    <div class="carousel-slide active">
+                      <img src="../assets/images/projects/sistema-bots-ia/image_1.png"
+                           alt="Sistema Multi-Bot - Dashboard Maestro"
+                           loading="lazy">
+                    </div>
+                    <div class="carousel-slide">
+                      <img src="../assets/images/projects/sistema-bots-ia/image_2.png"
+                           alt="Sistema Multi-Bot - Bot ALTERNA Energía Solar"
+                           loading="lazy">
+                    </div>
+                    <div class="carousel-slide">
+                      <img src="../assets/images/projects/sistema-bots-ia/image_3.png"
+                           alt="Sistema Multi-Bot - Bot WebDev Pro"
+                           loading="lazy">
+                    </div>
+                    <div class="carousel-slide">
+                      <img src="../assets/images/projects/sistema-bots-ia/image_4.png"
+                           alt="Sistema Multi-Bot - Arquitectura del Sistema"
+                           loading="lazy">
+                    </div>
+                    <div class="carousel-slide">
+                      <img src="../assets/images/projects/sistema-bots-ia/image_5.png"
+                           alt="Sistema Multi-Bot - Métricas y Analytics"
+                           loading="lazy">
+                    </div>
+                  </div>
+
+                  <!-- Controles de navegación -->
+                  <button class="carousel-controls carousel-prev" id="carousel-prev">
+                    <i class="fas fa-chevron-left"></i>
+                  </button>
+                  <button class="carousel-controls carousel-next" id="carousel-next">
+                    <i class="fas fa-chevron-right"></i>
+                  </button>
+
+                  <!-- Indicadores -->
+                  <div class="carousel-indicators" id="carousel-indicators">
+                    <button class="carousel-indicator active" data-slide="0"></button>
+                    <button class="carousel-indicator" data-slide="1"></button>
+                    <button class="carousel-indicator" data-slide="2"></button>
+                    <button class="carousel-indicator" data-slide="3"></button>
+                    <button class="carousel-indicator" data-slide="4"></button>
+                  </div>
+                </div>
+
+                <!-- Métricas overlay -->
+                <div class="metrics-overlay">
+                  <div class="metric-card" tabindex="0">
+                    <i class="fas fa-industry" aria-hidden="true"></i>
+                    <span data-i18n="botProject.metrics.bots">4 Bots Especializados</span>
+                  </div>
+                  <div class="metric-card" tabindex="0">
+                    <i class="fas fa-chart-line" aria-hidden="true"></i>
+                    <span data-i18n="botProject.metrics.roi">ROI 340% Promedio</span>
+                  </div>
+                  <div class="metric-card" tabindex="0">
+                    <i class="fas fa-clock" aria-hidden="true"></i>
+                    <span data-i18n="botProject.metrics.development">89% Menos Tiempo Dev</span>
+                  </div>
+                  <div class="metric-card website-link" tabindex="0">
+                    <a href="https://botsaiservices.online/" target="_blank" style="color: inherit; text-decoration: none;">
+                      <i class="fas fa-globe" aria-hidden="true"></i>
+                      <span data-i18n="botProject.metrics.website">🚀 Ver Sitio en Vivo</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project Overview -->
+            <div class="project-section overview">
+              <h3 data-i18n="botProject.sections.overview">Descripción General</h3>
+              <p data-i18n="botProject.sections.overviewText">
+                Plataforma empresarial de IA conversacional con arquitectura modular que gestiona múltiples bots especializados por industria.
+                Sistema desarrollado con Node.js, Express.js, Supabase y Google Gemini AI que permite escalabilidad para 50+ bots con gestión centralizada.
+                Actualmente operando 4 bots especializados (Energía Solar, Desarrollo Web, Inmobiliaria, Restaurante) con dashboard maestro y analytics en tiempo real.
+              </p>
+              <div class="key-features">
+                <div class="feature-item" tabindex="0">
+                  <i class="fas fa-sitemap" aria-hidden="true"></i>
+                  <h4 data-i18n="botProject.features.architecture.title">Arquitectura Modular Escalable</h4>
+                  <p data-i18n="botProject.features.architecture.desc">Sistema de detección automática de bots por Page ID con configuración dinámica y rutas auto-generadas para nuevos bots en menos de 2 horas</p>
+                </div>
+                <div class="feature-item" tabindex="0">
+                  <i class="fas fa-brain" aria-hidden="true"></i>
+                  <h4 data-i18n="botProject.features.ai.title">IA Especializada por Industria</h4>
+                  <p data-i18n="botProject.features.ai.desc">Google Gemini AI con prompts especializados, gestión de contexto persistente y memoria conversacional por usuario y bot</p>
+                </div>
+                <div class="feature-item" tabindex="0">
+                  <i class="fas fa-tachometer-alt" aria-hidden="true"></i>
+                  <h4 data-i18n="botProject.features.dashboard.title">Dashboard Maestro Centralizado</h4>
+                  <p data-i18n="botProject.features.dashboard.desc">Gestión centralizada con métricas en tiempo real, analytics por bot y sistema de testing automatizado completo</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Demo Tabs Section -->
+            <div class="project-section demo-tabs-container">
+              <h3 data-i18n="botProject.sections.demoSection">Demostración del Sistema</h3>
+
+              <!-- Pestañas -->
+              <div class="demo-tabs-header">
+                <button class="demo-tab active" data-tab="video">
+                  <i class="fas fa-play-circle"></i>
+                  <span data-i18n="botProject.tabs.video">Video Demo</span>
+                </button>
+                <button class="demo-tab" data-tab="guide">
+                  <i class="fas fa-book-open"></i>
+                  <span data-i18n="botProject.tabs.guide">Guía Técnica</span>
+                </button>
+              </div>
+
+              <!-- Contenido de las pestañas -->
+              <div class="demo-tabs-content">
+                <!-- Pestaña Video -->
+                <div class="demo-tab-pane active" id="video-pane">
+                  <div class="video-container">
+                    <!-- Video embebido -->
+                    <div class="youtube-embed-container">
+                      <iframe
+                        src="https://www.youtube.com/embed/P8R_x47reBc"
+                        title="Sistema Multi-Bot Empresarial IA - Demostración Completa"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                        loading="lazy">
+                      </iframe>
+                    </div>
+                    <div class="video-info">
+                      <h4 class="video-title" data-i18n="botProject.video.title">Demostración del Sistema Multi-Bot</h4>
+                      <p class="video-description" data-i18n="botProject.video.description">
+                        Observa cómo el sistema gestiona múltiples bots especializados desde un dashboard maestro:
+                        desde la detección automática por industria hasta la generación de leads y analytics en tiempo real.
+                        Incluye demostración de los 4 bots activos y el sistema de testing automatizado.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Pestaña Guía -->
+                <div class="demo-tab-pane" id="guide-pane">
+                  <div class="guide-content">
+                    <!-- Resumen Ejecutivo -->
+                    <div class="guide-section">
+                      <h4><i class="fas fa-eye"></i> <span data-i18n="botProject.guide.executiveOverview.title">Resumen Ejecutivo</span></h4>
+                      <p data-i18n="botProject.guide.executiveOverview.content">
+                        Sistema empresarial listo para producción que resuelve la necesidad de múltiples bots especializados con gestión centralizada.
+                        Arquitectura modular con Node.js + Express que permite agregar nuevos bots en menos de 2 horas, con ROI promedio del 340%
+                        y reducción del 89% en tiempo de desarrollo. Actualmente gestiona 4 bots especializados con capacidad para escalar a 50+.
+                      </p>
+                      <div class="guide-highlight">
+                        <h6 data-i18n="botProject.guide.executiveOverview.highlight.title">Arquitectura Enterprise-Grade</h6>
+                        <p data-i18n="botProject.guide.executiveOverview.highlight.content">
+                          Combina la especialización por industria con la eficiencia de gestión centralizada,
+                          permitiendo escalabilidad empresarial sin comprometer la personalización por vertical de negocio.
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- Arquitectura del Sistema -->
+                    <div class="guide-section">
+                      <h4><i class="fas fa-sitemap"></i> <span data-i18n="botProject.guide.architecture.title">Arquitectura del Sistema</span></h4>
+                      <div class="architecture-grid">
+                        <div class="arch-component">
+                          <h5 data-i18n="botProject.guide.architecture.core.title">Core Engine (Node.js + Express)</h5>
+                          <p data-i18n="botProject.guide.architecture.core.desc">Sistema de orquestación multi-bot con detección automática por Page ID, configuración dinámica y rutas auto-generadas</p>
+                        </div>
+                        <div class="arch-component">
+                          <h5 data-i18n="botProject.guide.architecture.data.title">Data Layer (Supabase + PostgreSQL)</h5>
+                          <p data-i18n="botProject.guide.architecture.data.desc">Persistencia de conversaciones, gestión de clientes, analytics por bot y sistema de contexto con TTL configurable</p>
+                        </div>
+                        <div class="arch-component">
+                          <h5 data-i18n="botProject.guide.architecture.ai.title">AI Integration Layer</h5>
+                          <p data-i18n="botProject.guide.architecture.ai.desc">Google Gemini AI con prompts especializados, gestión de múltiples API keys y failover automático</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Integración con APIs -->
+                    <div class="guide-section">
+                      <h4><i class="fas fa-plug"></i> <span data-i18n="botProject.guide.apiIntegration.title">Integración con APIs Oficiales</span></h4>
+                      <div class="api-list">
+                        <div class="api-item">
+                          <i class="fab fa-facebook-messenger"></i>
+                          <div class="api-details">
+                            <h5 data-i18n="botProject.guide.apiIntegration.messenger.title">Facebook Messenger API</h5>
+                            <p data-i18n="botProject.guide.apiIntegration.messenger.desc">Integración completa con webhooks, gestión de tokens por Page ID y sistema de testing automatizado</p>
+                            <span class="api-status implemented" data-i18n="botProject.guide.apiIntegration.status.implemented">✅ Implementado</span>
+                          </div>
+                        </div>
+                        <div class="api-item">
+                          <i class="fab fa-instagram"></i>
+                          <div class="api-details">
+                            <h5 data-i18n="botProject.guide.apiIntegration.instagram.title">Instagram Business API</h5>
+                            <p data-i18n="botProject.guide.apiIntegration.instagram.desc">Expansión planificada para Q3 2025 con soporte para Instagram Direct y Stories</p>
+                            <span class="api-status planned" data-i18n="botProject.guide.apiIntegration.status.planned">🔄 Roadmap Q3 2025</span>
+                          </div>
+                        </div>
+                        <div class="api-item">
+                          <i class="fab fa-whatsapp"></i>
+                          <div class="api-details">
+                            <h5 data-i18n="botProject.guide.apiIntegration.whatsapp.title">WhatsApp Business API</h5>
+                            <p data-i18n="botProject.guide.apiIntegration.whatsapp.desc">Integración planificada para Q3 2025 con soporte para mensajes multimedia y templates</p>
+                            <span class="api-status planned" data-i18n="botProject.guide.apiIntegration.status.planned">🔄 Roadmap Q3 2025</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Technical Details -->
+            <div class="project-section technical">
+              <h3 data-i18n="botProject.sections.technicalDetails">Detalles Técnicos</h3>
+              <div class="tech-details-grid">
+                <div class="detail-card architecture">
+                  <h4><i class="fas fa-layer-group"></i> <span data-i18n="botProject.technical.architecture.title">Arquitectura</span></h4>
+                  <ul>
+                    <li data-i18n="botProject.technical.architecture.item1">Sistema modular con detección automática de bots por Page ID</li>
+                    <li data-i18n="botProject.technical.architecture.item2">Configuración dinámica que soporta escalabilidad para 50+ bots</li>
+                    <li data-i18n="botProject.technical.architecture.item3">Rutas auto-generadas y assets compartidos con templates reutilizables</li>
+                  </ul>
+                </div>
+                <div class="detail-card security">
+                  <h4><i class="fas fa-shield-alt"></i> <span data-i18n="botProject.technical.security.title">Seguridad</span></h4>
+                  <ul>
+                    <li data-i18n="botProject.technical.security.item1">Verificación de signatures en webhooks de Facebook</li>
+                    <li data-i18n="botProject.technical.security.item2">Gestión segura de múltiples API keys con variables de entorno</li>
+                    <li data-i18n="botProject.technical.security.item3">Rate limiting y protección DDoS con Helmet.js</li>
+                  </ul>
+                </div>
+                <div class="detail-card features">
+                  <h4><i class="fas fa-star"></i> <span data-i18n="botProject.technical.features.title">Características Avanzadas</span></h4>
+                  <ul>
+                    <li data-i18n="botProject.technical.features.item1">Dashboard dinámico con generación automática de tarjetas por bot</li>
+                    <li data-i18n="botProject.technical.features.item2">Sistema de testing automatizado con simulación de webhooks</li>
+                    <li data-i18n="botProject.technical.features.item3">Analytics en tiempo real con métricas específicas por industria</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tech Stack -->
+            <div class="project-section tech-stack">
+              <h3 data-i18n="botProject.sections.techStack">Stack Tecnológico</h3>
+              <div class="tech-grid">
+                <div class="tech-category backend">
+                  <h4><i class="fas fa-server"></i> <span data-i18n="botProject.techStack.backend.title">Backend</span></h4>
+                  <div class="tech-items">
+                    <span class="tech-badge" data-i18n="botProject.techStack.backend.nodejs">Node.js</span>
+                    <span class="tech-badge" data-i18n="botProject.techStack.backend.express">Express.js</span>
+                    <span class="tech-badge" data-i18n="botProject.techStack.backend.render">Render.com</span>
+                  </div>
+                </div>
+                <div class="tech-category frontend">
+                  <h4><i class="fas fa-code"></i> <span data-i18n="botProject.techStack.frontend.title">Frontend/Interface</span></h4>
+                  <div class="tech-items">
+                    <span class="tech-badge" data-i18n="botProject.techStack.frontend.html5">HTML5/CSS3</span>
+                    <span class="tech-badge" data-i18n="botProject.techStack.frontend.bootstrap">Bootstrap 5</span>
+                    <span class="tech-badge" data-i18n="botProject.techStack.frontend.chartjs">Chart.js</span>
+                  </div>
+                </div>
+                <div class="tech-category ai">
+                  <h4><i class="fas fa-brain"></i> <span data-i18n="botProject.techStack.ai.title">IA y APIs</span></h4>
+                  <div class="tech-items">
+                    <span class="tech-badge" data-i18n="botProject.techStack.ai.gemini">Google Gemini AI</span>
+                    <span class="tech-badge" data-i18n="botProject.techStack.ai.messenger">Messenger API</span>
+                    <span class="tech-badge" data-i18n="botProject.techStack.ai.webhooks">Webhooks</span>
+                  </div>
+                </div>
+                <div class="tech-category database">
+                  <h4><i class="fas fa-database"></i> <span data-i18n="botProject.techStack.database.title">Base de Datos</span></h4>
+                  <div class="tech-items">
+                    <span class="tech-badge" data-i18n="botProject.techStack.database.supabase">Supabase</span>
+                    <span class="tech-badge" data-i18n="botProject.techStack.database.postgresql">PostgreSQL</span>
+                    <span class="tech-badge" data-i18n="botProject.techStack.database.realtime">Real-time</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Challenges and Solutions -->
+            <div class="project-section challenges">
+              <h3 data-i18n="botProject.sections.challenges">Desafíos Técnicos y Soluciones</h3>
+              <div class="challenges-grid">
+                <div class="challenge-item">
+                  <div class="challenge-header">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <h4 data-i18n="botProject.challenges.challenge1.title">Escalabilidad Multi-Bot</h4>
+                  </div>
+                  <div class="challenge-content">
+                    <div class="problem">
+                      <h5 data-i18n="botProject.challenges.challenge1.problem.title">Problema:</h5>
+                      <p data-i18n="botProject.challenges.challenge1.problem.desc">Necesidad de gestionar múltiples bots especializados sin duplicar código ni infraestructura</p>
+                    </div>
+                    <div class="solution">
+                      <h5 data-i18n="botProject.challenges.challenge1.solution.title">Solución:</h5>
+                      <p data-i18n="botProject.challenges.challenge1.solution.desc">Arquitectura modular con detección automática por Page ID y configuración dinámica que permite agregar nuevos bots en menos de 2 horas</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="challenge-item">
+                  <div class="challenge-header">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <h4 data-i18n="botProject.challenges.challenge2.title">Gestión de Contexto Persistente</h4>
+                  </div>
+                  <div class="challenge-content">
+                    <div class="problem">
+                      <h5 data-i18n="botProject.challenges.challenge2.problem.title">Problema:</h5>
+                      <p data-i18n="botProject.challenges.challenge2.problem.desc">Mantener contexto conversacional entre sesiones y gestionar memoria por usuario y bot específico</p>
+                    </div>
+                    <div class="solution">
+                      <h5 data-i18n="botProject.challenges.challenge2.solution.title">Solución:</h5>
+                      <p data-i18n="botProject.challenges.challenge2.solution.desc">Sistema de contexto persistente en Supabase con TTL configurable y recuperación automática entre sesiones</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="challenge-item">
+                  <div class="challenge-header">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <h4 data-i18n="botProject.challenges.challenge3.title">Especialización por Industria</h4>
+                  </div>
+                  <div class="challenge-content">
+                    <div class="problem">
+                      <h5 data-i18n="botProject.challenges.challenge3.problem.title">Problema:</h5>
+                      <p data-i18n="botProject.challenges.challenge3.problem.desc">Cada industria requiere prompts, lógica de negocio y flujos conversacionales completamente diferentes</p>
+                    </div>
+                    <div class="solution">
+                      <h5 data-i18n="botProject.challenges.challenge3.solution.title">Solución:</h5>
+                      <p data-i18n="botProject.challenges.challenge3.solution.desc">Sistema de archivos de configuración modular por bot con prompts especializados y business logic independiente</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Workflow Section -->
+            <div class="project-section workflow">
+              <h3 data-i18n="botProject.sections.workflow">Flujo de Trabajo Multi-Bot</h3>
+              <div class="workflow-steps">
+                <div class="step">
+                  <i class="fas fa-search"></i>
+                  <h4 data-i18n="botProject.workflowSteps.detection.title">1. Detección Automática</h4>
+                  <p data-i18n="botProject.workflowSteps.detection.desc">Identifica bot especializado por Page ID</p>
+                </div>
+                <div class="step">
+                  <i class="fas fa-brain"></i>
+                  <h4 data-i18n="botProject.workflowSteps.aiProcessing.title">2. Procesamiento IA</h4>
+                  <p data-i18n="botProject.workflowSteps.aiProcessing.desc">Google Gemini con prompts especializados</p>
+                </div>
+                <div class="step">
+                  <i class="fas fa-database"></i>
+                  <h4 data-i18n="botProject.workflowSteps.contextManagement.title">3. Gestión de Contexto</h4>
+                  <p data-i18n="botProject.workflowSteps.contextManagement.desc">Persistencia en Supabase con TTL</p>
+                </div>
+                <div class="step">
+                  <i class="fas fa-chart-line"></i>
+                  <h4 data-i18n="botProject.workflowSteps.analytics.title">4. Analytics y Respuesta</h4>
+                  <p data-i18n="botProject.workflowSteps.analytics.desc">Métricas en tiempo real y respuesta especializada</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Client Feedback Section -->
+            <div class="project-section feedback" style="margin-top: 2rem;">
+              <h3 data-i18n="botProject.sections.productionImpact">Impacto en Producción</h3>
+              <div class="feedback-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <div class="feedback-card" style="background: #f8f9fa; padding: 2rem; border-radius: 10px; border-left: 4px solid #28a745;">
+                  <div class="feedback-header" style="display: flex; align-items: center; margin-bottom: 1rem;">
+                    <i class="fas fa-solar-panel" style="font-size: 2rem; color: #28a745; margin-right: 1rem;"></i>
+                    <div>
+                      <h4 style="margin: 0; color: #333;" data-i18n="botProject.feedback.alternaClient.title">Director Comercial ALTERNA</h4>
+                      <small style="color: #666;" data-i18n="botProject.feedback.alternaClient.institution">Empresa de Energía Solar</small>
+                    </div>
+                  </div>
+                  <p style="font-style: italic; color: #555; margin-bottom: 1rem;" data-i18n="botProject.feedback.alternaClient.quote">
+                    "El bot especializado en energía solar genera cotizaciones técnicas en menos de 5 minutos.
+                    Antes tardábamos 2-3 días en responder consultas complejas. Ahora es inmediato y preciso."
+                  </p>
+                  <div class="feedback-metrics" style="display: flex; gap: 1rem;">
+                    <span style="background: #28a745; color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">
+                      <i class="fas fa-chart-line"></i> <span data-i18n="botProject.feedback.alternaClient.metrics.roi">340% ROI</span>
+                    </span>
+                    <span style="background: #17a2b8; color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">
+                      <i class="fas fa-clock"></i> <span data-i18n="botProject.feedback.alternaClient.metrics.responseTime">< 5 min respuesta</span>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="feedback-card" style="background: #f8f9fa; padding: 2rem; border-radius: 10px; border-left: 4px solid #007bff;">
+                  <div class="feedback-header" style="display: flex; align-items: center; margin-bottom: 1rem;">
+                    <i class="fas fa-code" style="font-size: 2rem; color: #007bff; margin-right: 1rem;"></i>
+                    <div>
+                      <h4 style="margin: 0; color: #333;" data-i18n="botProject.feedback.webdevClient.title">CEO WebDev Pro</h4>
+                      <small style="color: #666;" data-i18n="botProject.feedback.webdevClient.institution">Agencia de Desarrollo Web</small>
+                    </div>
+                  </div>
+                  <p style="font-style: italic; color: #555; margin-bottom: 1rem;" data-i18n="botProject.feedback.webdevClient.quote">
+                    "El bot técnico resuelve 78% de consultas automáticamente. Nuestro equipo se enfoca en proyectos complejos
+                    mientras el bot maneja consultas técnicas estándar con precisión profesional."
+                  </p>
+                  <div class="feedback-metrics" style="display: flex; gap: 1rem;">
+                    <span style="background: #007bff; color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">
+                      <i class="fas fa-robot"></i> <span data-i18n="botProject.feedback.webdevClient.metrics.automation">78% Automatización</span>
+                    </span>
+                    <span style="background: #6f42c1; color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">
+                      <i class="fas fa-users"></i> <span data-i18n="botProject.feedback.webdevClient.metrics.teamFocus">+60% Productividad</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project Information -->
+            <div class="project-section resources">
+              <h3 data-i18n="botProject.sections.resources">Información del Proyecto</h3>
+              <div class="resources-grid">
+                <div class="resource-info website">
+                  <i class="fas fa-globe"></i>
+                  <span data-i18n="botProject.resourceLinks.liveWebsite">Sitio Web en Producción</span>
+                  <small data-i18n="botProject.resourceLinks.liveWebsiteDesc">Plataforma comercial activa con clientes reales</small>
+                  <a href="https://botsaiservices.online/" target="_blank" class="resource-link">
+                    <i class="fas fa-external-link-alt"></i>
+                    <span data-i18n="botProject.resourceLinks.visitWebsite">Visitar botsaiservices.online</span>
+                  </a>
+                </div>
+                <div class="resource-info docs">
+                  <i class="fas fa-book"></i>
+                  <span data-i18n="botProject.resourceLinks.technicalDocs">Documentación Técnica</span>
+                  <small data-i18n="botProject.resourceLinks.technicalDocsDesc">Guía completa de arquitectura multi-bot</small>
+                </div>
+                <div class="resource-info production">
+                  <i class="fas fa-industry"></i>
+                  <span data-i18n="botProject.resourceLinks.inProduction">En Producción</span>
+                  <small data-i18n="botProject.resourceLinks.inProductionDesc">4 bots activos sirviendo empresas reales</small>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project Navigation -->
+            <div class="project-navigation">
+              <a href="constancias-escolares-ia.html" class="prev-project">
+                <i class="fas fa-arrow-left"></i> <span data-i18n="botProject.navigation.prevProject">Proyecto Anterior: Sistema de Constancias Escolares</span>
+              </a>
+              <a href="../index.html#section3" class="next-project">
+                <span data-i18n="botProject.navigation.backToPortfolio">Volver al Portafolio</span> <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+
+
+
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Scripts principales -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="../assets/js/isotope.min.js"></script>
+    <script src="../assets/js/owl-carousel.js"></script>
+    <script src="../assets/js/lightbox.js"></script>
+    <script src="../assets/js/custom.js"></script>
+    <script src="../assets/js/theme-switcher.js"></script>
+    <script src="../assets/js/template-loader.js"></script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', async function() {
+        try {
+          console.log('Iniciando carga de componentes...');
+          // Primero actualizar las rutas CSS
+          TemplateLoader.updateCSSPaths();
+          // Luego cargar el sidebar
+          await TemplateLoader.loadSidebar();
+        } catch (error) {
+          console.error('Error durante la inicialización:', error);
+        }
+      });
+    </script>
+
+    <!-- Scripts de i18n -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/22.4.9/i18next.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next-http-backend/2.1.1/i18nextHttpBackend.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-i18next/1.2.1/jquery-i18next.min.js"></script>
+    <!-- Scripts personalizados de i18n -->
+    <script src="../assets/js/i18n-config.js"></script>
+    <script src="../assets/js/language-switcher.js"></script>
+
+    <!-- Script para las pestañas de demo -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Funcionalidad de pestañas
+        const tabs = document.querySelectorAll('.demo-tab');
+        const panes = document.querySelectorAll('.demo-tab-pane');
+
+        tabs.forEach(tab => {
+          tab.addEventListener('click', function() {
+            const targetTab = this.getAttribute('data-tab');
+
+            // Remover clase active de todas las pestañas y paneles
+            tabs.forEach(t => t.classList.remove('active'));
+            panes.forEach(p => p.classList.remove('active'));
+
+            // Agregar clase active a la pestaña clickeada
+            this.classList.add('active');
+
+            // Mostrar el panel correspondiente
+            const targetPane = document.getElementById(targetTab + '-pane');
+            if (targetPane) {
+              targetPane.classList.add('active');
+            }
+          });
+        });
+
+        // Funcionalidad del carrusel
+        const slides = document.getElementById('carousel-slides');
+        const indicators = document.querySelectorAll('.carousel-indicator');
+        const prevBtn = document.getElementById('carousel-prev');
+        const nextBtn = document.getElementById('carousel-next');
+        const currentSlideSpan = document.getElementById('current-slide');
+        const fullscreenBtn = document.getElementById('carousel-fullscreen');
+        const modal = document.getElementById('carousel-modal');
+        const modalImg = document.getElementById('carousel-modal-img');
+        const modalClose = document.getElementById('carousel-modal-close');
+        const modalPrev = document.getElementById('carousel-modal-prev');
+        const modalNext = document.getElementById('carousel-modal-next');
+        const modalCurrentSlide = document.getElementById('modal-current-slide');
+
+        let currentSlide = 0;
+        const totalSlides = 5;
+
+        // Array con las rutas de las imágenes
+        const imageUrls = [
+          '../assets/images/projects/sistema-bots-ia/image_1.png',
+          '../assets/images/projects/sistema-bots-ia/image_2.png',
+          '../assets/images/projects/sistema-bots-ia/image_3.png',
+          '../assets/images/projects/sistema-bots-ia/image_4.png',
+          '../assets/images/projects/sistema-bots-ia/image_5.png'
+        ];
+
+        function updateCarousel() {
+          // Mover slides
+          const translateX = -currentSlide * 20; // 20% por slide
+          slides.style.transform = `translateX(${translateX}%)`;
+
+          // Actualizar indicadores
+          indicators.forEach((indicator, index) => {
+            indicator.classList.toggle('active', index === currentSlide);
+          });
+
+          // Actualizar contador
+          currentSlideSpan.textContent = currentSlide + 1;
+        }
+
+        function nextSlide() {
+          currentSlide = (currentSlide + 1) % totalSlides;
+          updateCarousel();
+        }
+
+        function prevSlide() {
+          currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+          updateCarousel();
+        }
+
+        function goToSlide(slideIndex) {
+          currentSlide = slideIndex;
+          updateCarousel();
+        }
+
+        function updateModalImage() {
+          modalImg.src = imageUrls[currentSlide];
+          modalCurrentSlide.textContent = currentSlide + 1;
+        }
+
+        function openFullscreen() {
+          updateModalImage();
+          modal.classList.add('active');
+
+          // Bloquear scroll completamente
+          document.body.classList.add('modal-open');
+          document.documentElement.classList.add('modal-open');
+        }
+
+        function closeFullscreen() {
+          modal.classList.remove('active');
+          document.body.classList.remove('modal-open');
+          document.documentElement.classList.remove('modal-open');
+        }
+
+        function modalNextSlide() {
+          currentSlide = (currentSlide + 1) % totalSlides;
+          updateCarousel();
+          updateModalImage();
+        }
+
+        function modalPrevSlide() {
+          currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+          updateCarousel();
+          updateModalImage();
+        }
+
+        // Event listeners
+        nextBtn.addEventListener('click', nextSlide);
+        prevBtn.addEventListener('click', prevSlide);
+        fullscreenBtn.addEventListener('click', openFullscreen);
+        modalClose.addEventListener('click', closeFullscreen);
+        modalNext.addEventListener('click', modalNextSlide);
+        modalPrev.addEventListener('click', modalPrevSlide);
+
+        indicators.forEach((indicator, index) => {
+          indicator.addEventListener('click', () => goToSlide(index));
+        });
+
+        // Navegación con teclado
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape') {
+            closeFullscreen();
+          } else if (e.key === 'ArrowLeft') {
+            if (modal.classList.contains('active')) {
+              modalPrevSlide();
+            } else {
+              prevSlide();
+            }
+          } else if (e.key === 'ArrowRight') {
+            if (modal.classList.contains('active')) {
+              modalNextSlide();
+            } else {
+              nextSlide();
+            }
+          }
+        });
+
+        modal.addEventListener('click', (e) => {
+          if (e.target === modal) {
+            closeFullscreen();
+          }
+        });
+
+        // Doble click en imagen para pantalla completa
+        slides.addEventListener('dblclick', openFullscreen);
+
+        // Inicializar carrusel
+        updateCarousel();
+      });
+    </script>
+
+    <!-- Modal de pantalla completa - FUERA de todos los contenedores -->
+    <div class="carousel-modal" id="carousel-modal">
+      <button class="carousel-modal-close" id="carousel-modal-close">
+        <i class="fas fa-times"></i>
+      </button>
+
+      <!-- Controles de navegación en el modal -->
+      <button class="carousel-modal-nav carousel-modal-prev" id="carousel-modal-prev">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button class="carousel-modal-nav carousel-modal-next" id="carousel-modal-next">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+
+      <!-- Contador en el modal -->
+      <div class="carousel-modal-counter" id="carousel-modal-counter">
+        <span id="modal-current-slide">1</span> / <span id="modal-total-slides">5</span>
+      </div>
+
+      <img id="carousel-modal-img" src="" alt="Imagen en pantalla completa">
+    </div>
+  </body>
+</html>

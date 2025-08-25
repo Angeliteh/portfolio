@@ -94,6 +94,16 @@
       "subtitle": "The most complex and impactful projects",
       "badge": "FEATURED",
       "viewProject": "View Complete Project",
+      "botProject": {
+        "title": "Enterprise Multi-Bot AI System",
+        "description": "Multi-bot conversational AI platform with scalable modular architecture. 4 industry-specialized bots with master dashboard, centralized management and 340% average ROI.",
+        "liveWebsite": "Live Site",
+        "metrics": {
+          "bots": "4 Specialized Bots",
+          "roi": "340% Average ROI",
+          "development": "89% Less Dev Time"
+        }
+      },
       "aiProject": {
         "title": "AI School Certificate System",
         "description": "Desktop application in production with Master-Student AI architecture. Automates complete school management with natural conversational interface.",
@@ -155,6 +165,11 @@
       "desc": "Automation system for filling official medical license forms. Eliminates manual data entry, reduces errors and accelerates document generation process with multiple capture interfaces and voice recognition."
     },
     "project7": {
+      "name": "Multi-Bot AI System",
+      "title": "Enterprise Multi-Bot AI System",
+      "desc": "Enterprise platform with 4 industry-specialized bots, scalable modular architecture and master dashboard. 340% average ROI with 89% reduction in development time."
+    },
+    "project8": {
       "name": "School Certificate System with AI",
       "title": "School Certificate System with AI",
       "desc": "Desktop application with AI that automates certificates and school management. Master Interpreter with intelligent routing, PDF generation and natural conversational interface. In production with scalable and robust architecture."
@@ -832,6 +847,225 @@
     "navigation": {
       "prevProject": "Previous Project: Excel Scraper",
       "nextProject": "Next Project: AI School Certificate System"
+    }
+  },
+  "botProject": {
+    "title": "Enterprise Multi-Bot AI System",
+    "subtitle": "Multi-bot conversational AI platform with scalable modular architecture for enterprises",
+    "metrics": {
+      "bots": "4 Specialized Bots",
+      "roi": "340% Average ROI",
+      "development": "89% Less Dev Time",
+      "website": "🚀 View Live Site"
+    },
+    "sections": {
+      "demoSection": "System Demonstration",
+      "overview": "Overview",
+      "overviewText": "Enterprise conversational AI platform with modular architecture that manages multiple industry-specialized bots. System developed with Node.js, Express.js, Supabase and Google Gemini AI that enables scalability for 50+ bots with centralized management. Currently operating 4 specialized bots (Solar Energy, Web Development, Real Estate, Restaurant) with master dashboard and real-time analytics.",
+      "technicalDetails": "Technical Details",
+      "techStack": "Tech Stack",
+      "challenges": "Technical Challenges and Solutions",
+      "workflow": "Multi-Bot Workflow",
+      "productionImpact": "Production Impact",
+      "resources": "Project Information"
+    },
+    "features": {
+      "architecture": {
+        "title": "Scalable Modular Architecture",
+        "desc": "Automatic bot detection system by Page ID with dynamic configuration and auto-generated routes for new bots in less than 2 hours"
+      },
+      "ai": {
+        "title": "Industry-Specialized AI",
+        "desc": "Google Gemini AI with specialized prompts, persistent context management and conversational memory per user and bot"
+      },
+      "dashboard": {
+        "title": "Centralized Master Dashboard",
+        "desc": "Centralized management with real-time metrics, per-bot analytics and complete automated testing system"
+      }
+    },
+    "tabs": {
+      "video": "Video Demo",
+      "guide": "Technical Guide"
+    },
+    "video": {
+      "title": "Multi-Bot System Demonstration",
+      "description": "Watch how the system manages multiple specialized bots from a master dashboard: from automatic industry detection to lead generation and real-time analytics. Includes demonstration of the 4 active bots and the automated testing system."
+    },
+    "guide": {
+      "executiveOverview": {
+        "title": "Executive Summary",
+        "content": "Production-ready enterprise system that solves the need for multiple specialized bots with centralized management. Modular architecture with Node.js + Express that allows adding new bots in less than 2 hours, with 340% average ROI and 89% reduction in development time. Currently manages 4 specialized bots with capacity to scale to 50+.",
+        "highlight": {
+          "title": "Enterprise-Grade Architecture",
+          "content": "Combines industry specialization with centralized management efficiency, enabling enterprise scalability without compromising customization per business vertical."
+        }
+      },
+      "architecture": {
+        "title": "System Architecture",
+        "core": {
+          "title": "Core Engine (Node.js + Express)",
+          "desc": "Multi-bot orchestration system with automatic detection by Page ID, dynamic configuration and auto-generated routes"
+        },
+        "data": {
+          "title": "Data Layer (Supabase + PostgreSQL)",
+          "desc": "Conversation persistence, customer management, per-bot analytics and context system with configurable TTL"
+        },
+        "ai": {
+          "title": "AI Integration Layer",
+          "desc": "Google Gemini AI with specialized prompts, multiple API key management and automatic failover"
+        }
+      },
+      "apiIntegration": {
+        "title": "Official API Integration",
+        "messenger": {
+          "title": "Facebook Messenger API",
+          "desc": "Complete integration with webhooks, token management per Page ID and automated testing system"
+        },
+        "instagram": {
+          "title": "Instagram Business API",
+          "desc": "Planned expansion for Q3 2025 with support for Instagram Direct and Stories"
+        },
+        "whatsapp": {
+          "title": "WhatsApp Business API",
+          "desc": "Planned integration for Q3 2025 with support for multimedia messages and templates"
+        },
+        "status": {
+          "implemented": "✅ Implemented",
+          "planned": "🔄 Q3 2025 Roadmap"
+        }
+      }
+    },
+    "technical": {
+      "architecture": {
+        "title": "Architecture",
+        "item1": "Modular system with automatic bot detection by Page ID",
+        "item2": "Dynamic configuration supporting scalability for 50+ bots",
+        "item3": "Auto-generated routes and shared assets with reusable templates"
+      },
+      "security": {
+        "title": "Security",
+        "item1": "Signature verification in Facebook webhooks",
+        "item2": "Secure management of multiple API keys with environment variables",
+        "item3": "Rate limiting and DDoS protection with Helmet.js"
+      },
+      "features": {
+        "title": "Advanced Features",
+        "item1": "Dynamic dashboard with automatic card generation per bot",
+        "item2": "Automated testing system with webhook simulation",
+        "item3": "Real-time analytics with industry-specific metrics"
+      }
+    },
+    "techStack": {
+      "backend": {
+        "title": "Backend",
+        "nodejs": "Node.js",
+        "express": "Express.js",
+        "render": "Render.com"
+      },
+      "frontend": {
+        "title": "Frontend/Interface",
+        "html5": "HTML5/CSS3",
+        "bootstrap": "Bootstrap 5",
+        "chartjs": "Chart.js"
+      },
+      "ai": {
+        "title": "AI and APIs",
+        "gemini": "Google Gemini AI",
+        "messenger": "Messenger API",
+        "webhooks": "Webhooks"
+      },
+      "database": {
+        "title": "Database",
+        "supabase": "Supabase",
+        "postgresql": "PostgreSQL",
+        "realtime": "Real-time"
+      }
+    },
+    "challenges": {
+      "challenge1": {
+        "title": "Multi-Bot Scalability",
+        "problem": {
+          "title": "Problem:",
+          "desc": "Need to manage multiple specialized bots without duplicating code or infrastructure"
+        },
+        "solution": {
+          "title": "Solution:",
+          "desc": "Modular architecture with automatic detection by Page ID and dynamic configuration that allows adding new bots in less than 2 hours"
+        }
+      },
+      "challenge2": {
+        "title": "Persistent Context Management",
+        "problem": {
+          "title": "Problem:",
+          "desc": "Maintain conversational context between sessions and manage memory per user and specific bot"
+        },
+        "solution": {
+          "title": "Solution:",
+          "desc": "Persistent context system in Supabase with configurable TTL and automatic recovery between sessions"
+        }
+      },
+      "challenge3": {
+        "title": "Industry Specialization",
+        "problem": {
+          "title": "Problem:",
+          "desc": "Each industry requires completely different prompts, business logic and conversational flows"
+        },
+        "solution": {
+          "title": "Solution:",
+          "desc": "Modular configuration file system per bot with specialized prompts and independent business logic"
+        }
+      }
+    },
+    "workflowSteps": {
+      "detection": {
+        "title": "1. Automatic Detection",
+        "desc": "Identifies specialized bot by Page ID"
+      },
+      "aiProcessing": {
+        "title": "2. AI Processing",
+        "desc": "Google Gemini with specialized prompts"
+      },
+      "contextManagement": {
+        "title": "3. Context Management",
+        "desc": "Persistence in Supabase with TTL"
+      },
+      "analytics": {
+        "title": "4. Analytics and Response",
+        "desc": "Real-time metrics and specialized response"
+      }
+    },
+    "feedback": {
+      "alternaClient": {
+        "title": "ALTERNA Commercial Director",
+        "institution": "Solar Energy Company",
+        "quote": "The solar energy specialized bot generates technical quotes in less than 5 minutes. Before it took us 2-3 days to respond to complex queries. Now it's immediate and accurate.",
+        "metrics": {
+          "roi": "340% ROI",
+          "responseTime": "< 5 min response"
+        }
+      },
+      "webdevClient": {
+        "title": "WebDev Pro CEO",
+        "institution": "Web Development Agency",
+        "quote": "The technical bot resolves 78% of queries automatically. Our team focuses on complex projects while the bot handles standard technical queries with professional precision.",
+        "metrics": {
+          "automation": "78% Automation",
+          "teamFocus": "+60% Productivity"
+        }
+      }
+    },
+    "resourceLinks": {
+      "liveWebsite": "Live Production Website",
+      "liveWebsiteDesc": "Active commercial platform with real clients",
+      "visitWebsite": "Visit botsaiservices.online",
+      "technicalDocs": "Technical Documentation",
+      "technicalDocsDesc": "Complete multi-bot architecture guide",
+      "inProduction": "In Production",
+      "inProductionDesc": "4 active bots serving real businesses"
+    },
+    "navigation": {
+      "prevProject": "Previous Project: School Certificate System",
+      "backToPortfolio": "Back to Portfolio"
     }
   },
   "schoolCertificateProject": {
