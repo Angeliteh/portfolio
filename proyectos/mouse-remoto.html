@@ -28,15 +28,24 @@
 
             <!-- Project Preview -->
             <div class="project-preview">
-              <div class="preview-container">
-                <!-- TODO: Reemplazar con screenshot de la app móvil conectada al servidor PC -->
-                <!-- Mostrar: Mousepad en móvil, indicador de conexión verde, estadísticas en tiempo real -->
-                <img
-                  src="../assets/images/remote-mouse-preview.jpg"
-                  alt="Remote Mouse App Demo"
-                  class="main-preview"
-                  loading="lazy"
-                />
+              <div class="project-carousel">
+                <div class="carousel-container">
+                  <!-- Botón de pantalla completa -->
+                  <button class="carousel-fullscreen" id="carousel-fullscreen" title="Ver en pantalla completa">
+                    <i class="fas fa-expand"></i>
+                  </button>
+
+                  <!-- Slides del carrusel (una sola imagen) -->
+                  <div class="carousel-slides" id="carousel-slides">
+                    <div class="carousel-slide active">
+                      <img src="../assets/images/projects/remote-mouse/main-preview.png"
+                           alt="Remote Mouse App Demo"
+                           loading="lazy">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Métricas overlay -->
                 <div class="metrics-overlay">
                   <div class="metric-card" tabindex="0">
                     <i class="fas fa-tachometer-alt" aria-hidden="true"></i>
@@ -50,6 +59,29 @@
                     <i class="fas fa-check-circle" aria-hidden="true"></i>
                     <span data-i18n="remoteMouseProject.metrics.accuracy">99.9% precisión</span>
                   </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Video Demo Section -->
+            <div class="project-section video-demo">
+              <h3 data-i18n="remoteMouseProject.sections.videoDemo">Demostración en Video</h3>
+              <div class="video-container">
+                <div class="youtube-embed-container">
+                  <iframe
+                    src="[URL_VIDEO_REMOTE_MOUSE]"
+                    title="Remote Mouse - Control Remoto con Latencia Ultra Baja"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                    loading="lazy">
+                  </iframe>
+                </div>
+                <div class="video-info">
+                  <h4 class="video-title" data-i18n="remoteMouseProject.video.title">Control Remoto de Ultra Baja Latencia</h4>
+                  <p class="video-description" data-i18n="remoteMouseProject.video.description">
+                    Observa cómo la aplicación móvil controla el cursor del PC con latencia menor a 8ms.
+                    Incluye gestos multitáctiles, teclado virtual y accesos rápidos personalizables en tiempo real.
+                  </p>
                 </div>
               </div>
             </div>
@@ -195,38 +227,25 @@
               </div>
             </div>
 
-            <!-- Video Demo Section -->
-            <div class="project-section video-demo" style="margin-top: 2rem;">
-              <h3 data-i18n="remoteMouseProject.sections.videoDemo">Demo en Video</h3>
-              <div class="video-container" style="text-align: center; padding: 2rem; background: #f8f9fa; border-radius: 10px;">
-                <!-- TODO: Reemplazar con video real (60-90 segundos) -->
-                <!-- 0-10s: Problema - Control de PC desde sofá/cama -->
-                <!-- 10-60s: Demo de conexión, movimiento, clics, scroll, escritura -->
-                <!-- 60-90s: Configuración avanzada y estadísticas del servidor -->
-                <div class="video-placeholder" style="background: #e9ecef; padding: 4rem; border-radius: 8px; border: 2px dashed #6c757d;">
-                  <i class="fas fa-video" style="font-size: 3rem; color: #6c757d; margin-bottom: 1rem;"></i>
-                  <p style="color: #6c757d; margin: 0; font-size: 1.1rem;" data-i18n="remoteMouseProject.sections.videoPlaceholder">Video Demo Próximamente</p>
-                  <small style="color: #6c757d;" data-i18n="remoteMouseProject.sections.videoDescription">Demostración de control remoto en acción desde dispositivo móvil</small>
-                </div>
-              </div>
-            </div>
-
-            <!-- Links and Resources -->
+            <!-- Project Information -->
             <div class="project-section resources">
-              <h3 data-i18n="remoteMouseProject.sections.resources">Enlaces y Recursos</h3>
+              <h3 data-i18n="remoteMouseProject.sections.resources">Información del Proyecto</h3>
               <div class="resources-grid">
-                <a href="#" class="resource-card github disabled" title="Repositorio local - C:\Users\anita\Desktop\remote_mouse">
+                <div class="resource-info github">
                   <i class="fab fa-github"></i>
                   <span data-i18n="remoteMouseProject.resourceLinks.localCode">Código Local</span>
-                </a>
-                <a href="#" class="resource-card docs">
+                  <small data-i18n="remoteMouseProject.resourceLinks.localCodeDesc">Aplicación móvil y servidor desktop</small>
+                </div>
+                <div class="resource-info docs">
                   <i class="fas fa-book"></i>
-                  <span data-i18n="remoteMouseProject.resourceLinks.readme">README.md</span>
-                </a>
-                <a href="#" class="resource-card demo disabled" title="Requiere instalación local">
+                  <span data-i18n="remoteMouseProject.resourceLinks.readme">Documentación</span>
+                  <small data-i18n="remoteMouseProject.resourceLinks.readmeDesc">Guía de instalación y configuración</small>
+                </div>
+                <div class="resource-info production">
                   <i class="fas fa-desktop"></i>
-                  <span data-i18n="remoteMouseProject.resourceLinks.executable">Ejecutable (.exe)</span>
-                </a>
+                  <span data-i18n="remoteMouseProject.resourceLinks.executable">Aplicación Desktop</span>
+                  <small data-i18n="remoteMouseProject.resourceLinks.executableDesc">Servidor ejecutable para Windows</small>
+                </div>
               </div>
             </div>
 
@@ -274,5 +293,66 @@
     <!-- Scripts personalizados de i18n -->
     <script src="../assets/js/i18n-config.js"></script>
     <script src="../assets/js/language-switcher.js"></script>
+
+    <!-- Script para funcionalidad de pantalla completa -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Funcionalidad de pantalla completa para imagen única
+        const fullscreenBtn = document.getElementById('carousel-fullscreen');
+        const modal = document.getElementById('carousel-modal');
+        const modalImg = document.getElementById('carousel-modal-img');
+        const modalClose = document.getElementById('carousel-modal-close');
+
+        // Imagen principal
+        const mainImage = document.querySelector('.carousel-slide img');
+
+        if (fullscreenBtn && mainImage) {
+          fullscreenBtn.addEventListener('click', function() {
+            if (modal && modalImg) {
+              modalImg.src = mainImage.src;
+              modalImg.alt = mainImage.alt;
+              modal.classList.add('active');
+              document.body.style.overflow = 'hidden';
+            }
+          });
+        }
+
+        // Cerrar modal
+        if (modalClose) {
+          modalClose.addEventListener('click', function() {
+            if (modal) {
+              modal.classList.remove('active');
+              document.body.style.overflow = '';
+            }
+          });
+        }
+
+        // Cerrar modal con ESC
+        document.addEventListener('keydown', function(e) {
+          if (e.key === 'Escape' && modal && modal.classList.contains('active')) {
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+          }
+        });
+
+        // Cerrar modal clickeando fuera de la imagen
+        if (modal) {
+          modal.addEventListener('click', function(e) {
+            if (e.target === modal) {
+              modal.classList.remove('active');
+              document.body.style.overflow = '';
+            }
+          });
+        }
+      });
+    </script>
+
+    <!-- Modal de pantalla completa -->
+    <div class="carousel-modal" id="carousel-modal">
+      <button class="carousel-modal-close" id="carousel-modal-close">
+        <i class="fas fa-times"></i>
+      </button>
+      <img id="carousel-modal-img" src="" alt="Imagen en pantalla completa">
+    </div>
   </body>
-</html> 
+</html>

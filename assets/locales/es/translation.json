@@ -1,5 +1,5 @@
 {
-  "role": "Desarrollador Full-Stack",
+  "role": "Desarrollador Senior Full-Stack",
   "nav": {
     "about": "Sobre Mí",
     "skills": "Habilidades",
@@ -36,20 +36,20 @@
   "project-view": "Ver Proyecto",
   "about": {
     "title": "Sobre Mí",
-    "subtitle": "Desarrollador Full-Stack especializado en soluciones innovadoras y sistemas de alto rendimiento",
+    "subtitle": "Desarrollador Senior especializado en soluciones de alto impacto y sistemas escalables",
     "who": "Quién soy",
-    "whoText": "Soy un desarrollador full-stack con experiencia demostrada en el desarrollo de soluciones completas desde aplicaciones móviles con comunicación en tiempo real hasta sistemas de IA conversacional en producción. Mi experiencia abarca desarrollo web moderno (React/Flask), aplicaciones móviles nativas, sistemas de escritorio multiplataforma (PyQt), y automatización inteligente con IA. He desarrollado desde herramientas de web scraping y procesamiento multimedia hasta sistemas educativos y médicos que generan impacto real con reducciones de tiempo del 85-95%.",
+    "whoText": "Desarrollador Senior full-stack especializado en crear soluciones tecnológicas de alto impacto que resuelven problemas reales. Experto en sistemas conversacionales con IA (adaptable a cualquier LLM), arquitecturas escalables y automatización crítica que genera ROI del 340%. Mi experiencia abarca desarrollo web moderno (React/Flask), aplicaciones móviles de tiempo real, sistemas desktop híbridos (PyQt), y algoritmos complejos. Combino innovación técnica con resultados medibles: reducciones de tiempo del 85-95%, sistemas en producción sirviendo empresas reales, y arquitecturas preparadas para escalar.",
     "approach": "Mi enfoque",
-    "approachText": "Me especializo en crear arquitecturas escalables y sistemas de alto rendimiento, desde aplicaciones de baja latencia con WebSockets hasta interfaces conversacionales con IA adaptable a múltiples proveedores. Combino diseño UX/UI optimizado con backend robusto, priorizando tanto la experiencia de usuario como la eficiencia técnica. Mi experiencia incluye algoritmos complejos, procesamiento de datos en tiempo real, integración de APIs múltiples, y desarrollo responsive. Cada proyecto está diseñado para ser mantenible, escalable y preparado para evolucionar con nuevas tecnologías."
+    "approachText": "Desde web scraping inteligente hasta interfaces conversacionales, cada proyecto está diseñado para generar impacto real y valor empresarial. Me especializo en crear arquitecturas escalables y sistemas de alto rendimiento, desde aplicaciones de baja latencia (<8ms) con WebSockets hasta sistemas conversacionales adaptables a cualquier LLM. Combino diseño UX/UI optimizado con backend robusto, algoritmos complejos y procesamiento de datos en tiempo real. Mi enfoque prioriza tanto la experiencia de usuario como la eficiencia técnica, creando soluciones mantenibles y preparadas para evolucionar."
   },
   "skills": {
     "title": "Mis Habilidades",
     "subtitle": "Stack tecnológico completo con experiencia demostrada en proyectos reales",
-    "automation": "Desarrollo Full-Stack y Arquitecturas Modernas",
+    "automation": "Desarrollo Full-Stack y Arquitecturas Escalables",
     "automationList": {
-      "item1": "React/Flask para aplicaciones web escalables con APIs REST",
-      "item2": "PyQt5 para aplicaciones de escritorio multiplataforma",
-      "item3": "Arquitecturas con separación de capas y patrones de diseño avanzados"
+      "item1": "React/Flask para aplicaciones web robustas con APIs REST y arquitecturas modulares",
+      "item2": "PyQt5 para sistemas desktop híbridos con core de negocio compartido",
+      "item3": "Patrones de diseño enterprise, separación de capas y sistemas preparados para escalar"
     },
     "backend": "Aplicaciones Móviles y Comunicación en Tiempo Real",
     "backendList": {
@@ -57,11 +57,11 @@
       "item2": "Sistemas de tiempo real con gestos multitáctiles y interfaces adaptativas",
       "item3": "Optimización de rendimiento y experiencia de usuario móvil"
     },
-    "frontend": "Inteligencia Artificial y Automatización Inteligente",
+    "frontend": "IA Conversacional y Automatización Inteligente",
     "frontendList": {
-      "item1": "IA conversacional con múltiples proveedores (Google Gemini, APIs locales)",
-      "item2": "Procesamiento de lenguaje natural y routing inteligente de intenciones",
-      "item3": "Sistemas de reconocimiento de voz y interfaces multimodales"
+      "item1": "Sistemas conversacionales adaptables a cualquier LLM (Gemini, APIs locales, modelos custom)",
+      "item2": "Arquitecturas multi-bot escalables con routing inteligente y gestión de contexto",
+      "item3": "Automatización crítica con procesamiento de lenguaje natural y reconocimiento de voz"
     },
     "devops": "Diseño Web y Experiencia de Usuario",
     "devopsList": {
@@ -216,7 +216,7 @@
       "accuracy": "95% precisión"
     },
     "sections": {
-      "videoDemo": "Demo en Video",
+      "videoDemo": "Demostración en Video",
       "videoPlaceholder": "Video Demo Próximamente",
       "videoDescription": "60-90 segundos mostrando scraping → resultados → filtros → historial",
       "overview": "Descripción General",
@@ -225,7 +225,7 @@
       "techStack": "Stack Tecnológico",
       "challenges": "Desafíos y Soluciones",
       "workflow": "Flujo de Trabajo",
-      "resources": "Enlaces y Recursos"
+      "resources": "Información del Proyecto"
     },
     "features": {
       "smartScraping": {
@@ -310,10 +310,17 @@
         "desc": "Dashboard web con gráficos y filtros"
       }
     },
+    "video": {
+      "title": "Monitor de Precios en Tiempo Real",
+      "description": "Observa cómo el scraper monitorea automáticamente precios de GPUs RTX en múltiples plataformas. Incluye filtros avanzados, alertas de precio y dashboard con estadísticas en tiempo real."
+    },
     "resourceLinks": {
       "sourceCode": "Código Fuente",
+      "sourceCodeDesc": "Web scraper con Selenium y BeautifulSoup",
       "documentation": "Documentación",
-      "localDemo": "Demo Local"
+      "documentationDesc": "Guía de instalación y configuración",
+      "localDemo": "Demo Local",
+      "localDemoDesc": "Aplicación web con dashboard interactivo"
     },
     "navigation": {
       "backToPortfolio": "Volver al Portafolio",
@@ -329,10 +336,11 @@
       "accuracy": "99.9% precisión"
     },
     "sections": {
-      "videoDemo": "Demo en Video",
+      "videoDemo": "Demostración en Video",
       "videoPlaceholder": "Video Demo Próximamente",
       "videoDescription": "Demostración de control remoto en acción desde dispositivo móvil",
       "overview": "Descripción General",
+      "resources": "Información del Proyecto"
       "overviewText": "Aplicación multiplataforma que permite controlar el mouse y teclado de una PC desde un dispositivo móvil usando comunicación WebSocket en tiempo real. Incluye un servidor Python con interfaz gráfica para PC y una aplicación Flutter para dispositivos móviles con soporte para Android, iOS, Web, Windows, macOS y Linux. Ofrece control preciso del cursor, clics, scroll, escritura de texto y combinaciones de teclas con retroalimentación háptica y configuración personalizable.",
       "technicalDetails": "Detalles Técnicos",
       "techStack": "Stack Tecnológico",
@@ -404,10 +412,17 @@
         "solution": "Abstracción con PyAutoGUI y configuración específica por plataforma."
       }
     },
+    "video": {
+      "title": "Control Remoto de Ultra Baja Latencia",
+      "description": "Observa cómo la aplicación móvil controla el cursor del PC con latencia menor a 8ms. Incluye gestos multitáctiles, teclado virtual y accesos rápidos personalizables en tiempo real."
+    },
     "resourceLinks": {
       "localCode": "Código Local",
-      "readme": "README.md",
-      "executable": "Ejecutable (.exe)"
+      "localCodeDesc": "Aplicación móvil y servidor desktop",
+      "readme": "Documentación",
+      "readmeDesc": "Guía de instalación y configuración",
+      "executable": "Aplicación Desktop",
+      "executableDesc": "Servidor ejecutable para Windows"
     },
     "navigation": {
       "prevProject": "Proyecto Anterior: RTX Web Scraper",
@@ -423,7 +438,7 @@
       "successRate": "99% tasa de éxito"
     },
     "sections": {
-      "videoDemo": "Demo en Video",
+      "videoDemo": "Demostración en Video",
       "videoPlaceholder": "Video Demo Próximamente",
       "videoDescription": "Descarga desde Instagram, TikTok y Facebook con múltiples calidades",
       "overview": "Descripción General",
@@ -431,7 +446,7 @@
       "technicalDetails": "Detalles Técnicos",
       "techStack": "Stack Tecnológico",
       "challenges": "Desafíos y Soluciones",
-      "resources": "Enlaces y Recursos"
+      "resources": "Información del Proyecto"
     },
     "features": {
       "universalDownload": {
@@ -498,10 +513,17 @@
         "solution": "Sistema de historial JSON con límite de 50 entradas y nombres únicos UUID."
       }
     },
+    "video": {
+      "title": "Descarga Universal de Videos",
+      "description": "Observa cómo la aplicación descarga videos de Instagram, TikTok y Facebook en segundos. Incluye interfaz web intuitiva, historial de descargas y soporte para múltiples formatos."
+    },
     "resourceLinks": {
       "sourceCode": "Código Fuente",
-      "documentation": "Docstrings Detallados",
-      "webDemo": "Demo Web"
+      "sourceCodeDesc": "Flask + yt-dlp para descarga universal",
+      "documentation": "Documentación",
+      "documentationDesc": "Docstrings detallados y guía de uso",
+      "webDemo": "Aplicación Web",
+      "webDemoDesc": "Interfaz web responsive con historial"
     },
     "navigation": {
       "prevProject": "Proyecto Anterior: Remote Mouse",
@@ -517,7 +539,7 @@
       "accuracy": "99% precisión"
     },
     "sections": {
-      "videoDemo": "Demo en Video",
+      "videoDemo": "Demostración en Video",
       "videoPlaceholder": "Video Demo Próximamente",
       "videoDescription": "Demostración completa de cálculo de distancias y matriz interactiva",
       "overview": "Descripción General",
@@ -526,7 +548,7 @@
       "techStack": "Stack Tecnológico",
       "challenges": "Desafíos y Soluciones",
       "workflow": "Flujo de Trabajo",
-      "resources": "Enlaces y Recursos"
+      "resources": "Información del Proyecto"
     },
     "features": {
       "smartCalculation": {
@@ -612,10 +634,17 @@
         "desc": "Generación de reportes"
       }
     },
+    "video": {
+      "title": "Cálculo Interactivo de Distancias",
+      "description": "Observa cómo la herramienta calcula distancias entre múltiples puntos en tiempo real. Incluye matriz de distancias, reordenamiento de destinos y visualización de rutas optimizadas."
+    },
     "resourceLinks": {
       "localCode": "Código Local",
+      "localCodeDesc": "JavaScript vanilla con Google Maps API",
       "integratedGuide": "Guía Integrada",
-      "localDemo": "Demo Local"
+      "integratedGuideDesc": "Tutorial interactivo dentro de la aplicación",
+      "localDemo": "Aplicación Web",
+      "localDemoDesc": "Herramienta interactiva con mapas en tiempo real"
     },
     "navigation": {
       "prevProject": "Proyecto Anterior: Social Media Downloader",
@@ -745,7 +774,7 @@
       "errorFree": "100% sin errores"
     },
     "sections": {
-      "videoDemo": "Demo en Video",
+      "videoDemo": "Demostración en Video",
       "videoPlaceholder": "Video Demo Próximamente",
       "videoDescription": "Demostración de automatización de licencias médicas en acción",
       "overview": "Descripción General",
@@ -839,14 +868,234 @@
         "desc": "Documento completo listo para firma"
       }
     },
+    "video": {
+      "title": "Automatización Completa de Licencias",
+      "description": "Observa cómo el sistema automatiza completamente el llenado de formatos de licencias médicas oficiales. Desde la captura de datos hasta la generación del documento final, eliminando errores y reduciendo el tiempo de 30 minutos a 2 minutos."
+    },
     "resourceLinks": {
       "confidentialCode": "Código Confidencial",
+      "confidentialCodeDesc": "Proyecto del sector salud con datos sensibles",
       "technicalDocs": "Documentación Técnica",
-      "internalUse": "Uso Interno"
+      "technicalDocsDesc": "Guía de automatización de documentos médicos",
+      "internalUse": "En Producción",
+      "internalUseDesc": "Sistema activo en oficina del sector salud"
     },
     "navigation": {
       "prevProject": "Proyecto Anterior: Excel Scraper",
       "nextProject": "Siguiente Proyecto: Sistema de Constancias Escolares con IA"
+    }
+  },
+  "excelProject": {
+    "title": "Sistema Universal de Validación Excel",
+    "subtitle": "Plataforma híbrida (PyQt + React) que automatiza extracción, validación y visualización de tablas Excel educativas",
+    "metrics": {
+      "automation": "100% Automatizado",
+      "hybrid": "Híbrido Desktop/Web",
+      "validation": "Validación Inteligente"
+    },
+    "sections": {
+      "demoSection": "Demostración del Sistema",
+      "overview": "Descripción General",
+      "overviewText": "Sistema híbrido que automatiza completamente el procesamiento de tablas Excel educativas complejas. Arquitectura compartida entre desktop (PyQt) y web (React + Flask) con algoritmo bidimensional de detección de celdas combinadas. Reduce 90-95% el tiempo de procesamiento manual.",
+      "technicalDetails": "Detalles Técnicos",
+      "techStack": "Stack Tecnológico",
+      "challenges": "Desafíos Técnicos y Soluciones",
+      "workflow": "Flujo de Trabajo",
+      "productionImpact": "Impacto en Producción",
+      "resources": "Información del Proyecto"
+    },
+    "features": {
+      "algorithm": {
+        "title": "Algoritmo Bidimensional",
+        "desc": "Detección automática de celdas combinadas con algoritmo bidimensional que identifica patrones [valor] y genera spans precisos"
+      },
+      "hybrid": {
+        "title": "Arquitectura Híbrida",
+        "desc": "Core de negocio compartido entre desktop (PyQt) y web (React + Flask) garantizando consistencia y mantenibilidad"
+      },
+      "validation": {
+        "title": "Validaciones Universales",
+        "desc": "Sistema de validaciones automáticas para coherencia, subtotales y totales con evidencia de estados"
+      }
+    },
+    "tabs": {
+      "video": "Video Demo",
+      "guide": "Guía Técnica"
+    },
+    "video": {
+      "title": "Demostración del Sistema Híbrido",
+      "description": "Observa cómo el sistema procesa archivos Excel complejos tanto en la interfaz desktop (PyQt) como en la interfaz web (React). Incluye demostración del algoritmo de detección de celdas combinadas, validaciones automáticas y flujo completo de 4 pasos."
+    },
+    "guide": {
+      "executiveOverview": {
+        "title": "Resumen Ejecutivo",
+        "content": "Sistema híbrido que automatiza completamente el procesamiento de tablas Excel educativas complejas. Arquitectura compartida entre desktop (PyQt) y web (React + Flask) con algoritmo bidimensional de detección de celdas combinadas. Reduce 90-95% el tiempo de procesamiento manual.",
+        "highlight": {
+          "title": "Arquitectura Híbrida Innovadora",
+          "content": "Combina la potencia del desktop con la accesibilidad web, compartiendo el mismo core de negocio para garantizar consistencia y mantenibilidad."
+        }
+      },
+      "algorithm": {
+        "title": "Algoritmo Bidimensional",
+        "detection": {
+          "title": "Detección de Marcadores",
+          "desc": "Identifica patrones [valor] en celdas para determinar spans horizontales y verticales"
+        },
+        "merging": {
+          "title": "Generación de Spans",
+          "desc": "Calcula mergedCells precisos y limpia datos combinados automáticamente"
+        },
+        "validation": {
+          "title": "Validación Universal",
+          "desc": "Coherencia, subtotales y totales con evidencia de estados"
+        }
+      },
+      "hybridArchitecture": {
+        "title": "Arquitectura Híbrida",
+        "desktop": {
+          "title": "Desktop (PyQt)",
+          "desc": "Interfaz nativa con controladores especializados y acceso directo al sistema de archivos"
+        },
+        "web": {
+          "title": "Web (React + Flask)",
+          "desc": "API REST con interfaz moderna, tabla tipo Excel y selección de rangos"
+        },
+        "core": {
+          "title": "Core Compartido",
+          "desc": "Módulos de negocio puros sin dependencias de UI, reutilizables entre plataformas"
+        }
+      }
+    },
+    "technical": {
+      "architecture": {
+        "title": "Arquitectura",
+        "item1": "Core de negocio compartido entre desktop y web",
+        "item2": "Algoritmo bidimensional para detección de celdas combinadas",
+        "item3": "Controladores especializados por plataforma (PyQt/Flask)"
+      },
+      "security": {
+        "title": "Robustez",
+        "item1": "Validaciones exhaustivas de coherencia de datos",
+        "item2": "Manejo de errores con evidencia de estados",
+        "item3": "Procesamiento seguro de archivos Excel complejos"
+      },
+      "features": {
+        "title": "Características Avanzadas",
+        "item1": "Detección automática de estructura de tablas complejas",
+        "item2": "Interfaz web tipo Excel con selección de rangos",
+        "item3": "Flujo de 4 pasos con validaciones en cada etapa"
+      }
+    },
+    "techStack": {
+      "backend": {
+        "title": "Backend",
+        "python": "Python",
+        "flask": "Flask",
+        "pandas": "Pandas"
+      },
+      "frontend": {
+        "title": "Frontend",
+        "pyqt": "PyQt5",
+        "react": "React",
+        "bootstrap": "Bootstrap"
+      },
+      "processing": {
+        "title": "Procesamiento",
+        "openpyxl": "OpenPyXL",
+        "algorithms": "Algoritmos Propios",
+        "validation": "Validaciones Custom"
+      },
+      "architecture": {
+        "title": "Arquitectura",
+        "hybrid": "Híbrida",
+        "shared": "Core Compartido",
+        "modular": "Modular"
+      }
+    },
+    "challenges": {
+      "challenge1": {
+        "title": "Detección de Celdas Combinadas",
+        "problem": {
+          "title": "Problema:",
+          "desc": "Excel no proporciona información directa sobre celdas combinadas en archivos complejos"
+        },
+        "solution": {
+          "title": "Solución:",
+          "desc": "Algoritmo bidimensional que detecta patrones [valor] y calcula spans automáticamente"
+        }
+      },
+      "challenge2": {
+        "title": "Arquitectura Híbrida",
+        "problem": {
+          "title": "Problema:",
+          "desc": "Mantener consistencia entre interfaces desktop y web sin duplicar lógica"
+        },
+        "solution": {
+          "title": "Solución:",
+          "desc": "Core de negocio compartido con controladores especializados por plataforma"
+        }
+      },
+      "challenge3": {
+        "title": "Validaciones Universales",
+        "problem": {
+          "title": "Problema:",
+          "desc": "Validar coherencia en tablas con estructuras variables y datos complejos"
+        },
+        "solution": {
+          "title": "Solución:",
+          "desc": "Sistema de validaciones automáticas con evidencia de estados y reportes detallados"
+        }
+      }
+    },
+    "workflowSteps": {
+      "extraction": {
+        "title": "1. Extracción",
+        "desc": "Carga y análisis de archivos Excel"
+      },
+      "detection": {
+        "title": "2. Detección",
+        "desc": "Algoritmo bidimensional de celdas combinadas"
+      },
+      "validation": {
+        "title": "3. Validación",
+        "desc": "Verificación de coherencia y totales"
+      },
+      "visualization": {
+        "title": "4. Visualización",
+        "desc": "Presentación en interfaz híbrida"
+      }
+    },
+    "feedback": {
+      "dataAnalyst": {
+        "title": "Analista de Datos Educativos",
+        "institution": "Institución Educativa",
+        "quote": "Antes tardábamos horas procesando manualmente cada archivo Excel con celdas combinadas. Ahora el sistema detecta automáticamente la estructura y valida todo en minutos.",
+        "metrics": {
+          "timeSaved": "95% menos tiempo",
+          "accuracy": "100% precisión"
+        }
+      },
+      "developer": {
+        "title": "Desarrollador del Equipo",
+        "institution": "Equipo de desarrollo",
+        "quote": "La arquitectura híbrida permite mantener un solo core de negocio para desktop y web. El algoritmo bidimensional es elegante y maneja casos complejos que otros sistemas no pueden.",
+        "metrics": {
+          "codeReuse": "80% código reutilizado",
+          "architecture": "Arquitectura sólida"
+        }
+      }
+    },
+    "resourceLinks": {
+      "privateCode": "Código Privado",
+      "privateCodeDesc": "Arquitectura híbrida con algoritmos propietarios",
+      "technicalDocs": "Documentación Técnica",
+      "technicalDocsDesc": "Guía completa de arquitectura híbrida",
+      "inProduction": "Sistema Híbrido",
+      "inProductionDesc": "Desktop y Web con core compartido"
+    },
+    "navigation": {
+      "prevProject": "Proyecto Anterior: Sistema Multi-Bot IA",
+      "backToPortfolio": "Volver al Portafolio"
     }
   },
   "botProject": {

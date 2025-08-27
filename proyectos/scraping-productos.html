@@ -29,17 +29,26 @@
               <span data-i18n="rtxProject.subtitle">Monitor automático de precios de tarjetas gráficas RTX en tiempo real</span>
             </div>
 
-            <!-- Project Preview con lazy loading -->
+            <!-- Project Preview -->
             <div class="project-preview">
-              <div class="preview-container">
-                <!-- TODO: Reemplazar con screenshot real del dashboard (1920x1280px) -->
-                <!-- Mostrar: Grid de productos RTX, precios en MXN, filtros activos, estadísticas -->
-                <img
-                  src="../assets/images/rtx-scraper-preview.jpg"
-                  alt="RTX Web Scraper Dashboard Demo"
-                  class="main-preview"
-                  loading="lazy"
-                />
+              <div class="project-carousel">
+                <div class="carousel-container">
+                  <!-- Botón de pantalla completa -->
+                  <button class="carousel-fullscreen" id="carousel-fullscreen" title="Ver en pantalla completa">
+                    <i class="fas fa-expand"></i>
+                  </button>
+
+                  <!-- Slides del carrusel (una sola imagen) -->
+                  <div class="carousel-slides" id="carousel-slides">
+                    <div class="carousel-slide active">
+                      <img src="../assets/images/projects/rtx-scraper/main-preview.png"
+                           alt="RTX Web Scraper Dashboard Demo"
+                           loading="lazy">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Métricas overlay -->
                 <div class="metrics-overlay">
                   <div class="metric-card" tabindex="0">
                     <i class="fas fa-tachometer-alt" aria-hidden="true"></i>
@@ -58,18 +67,24 @@
             </div>
 
             <!-- Video Demo Section -->
-            <div class="project-section video-demo" style="margin-top: 2rem;">
-              <h3 data-i18n="rtxProject.sections.videoDemo">Demo en Video</h3>
-              <div class="video-container" style="text-align: center; padding: 2rem; background: #f8f9fa; border-radius: 10px;">
-                <!-- TODO: Reemplazar con video real (60-90 segundos) -->
-                <!-- 0-15s: Problema (buscar GPU manualmente) -->
-                <!-- 15-45s: Ejecutar scraper, mostrar resultados -->
-                <!-- 45-60s: Navegar interfaz, filtros, historial -->
-                <!-- 60-90s: Gráficos de precios y alertas -->
-                <div class="video-placeholder" style="background: #e9ecef; padding: 4rem; border-radius: 8px; border: 2px dashed #6c757d;">
-                  <i class="fas fa-video" style="font-size: 3rem; color: #6c757d; margin-bottom: 1rem;"></i>
-                  <p style="color: #6c757d; margin: 0; font-size: 1.1rem;" data-i18n="rtxProject.sections.videoPlaceholder">Video Demo Próximamente</p>
-                  <small style="color: #6c757d;" data-i18n="rtxProject.sections.videoDescription">60-90 segundos mostrando scraping → resultados → filtros → historial</small>
+            <div class="project-section video-demo">
+              <h3 data-i18n="rtxProject.sections.videoDemo">Demostración en Video</h3>
+              <div class="video-container">
+                <div class="youtube-embed-container">
+                  <iframe
+                    src="[URL_VIDEO_RTX_SCRAPER]"
+                    title="RTX Web Scraper - Monitor de Precios en Tiempo Real"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                    loading="lazy">
+                  </iframe>
+                </div>
+                <div class="video-info">
+                  <h4 class="video-title" data-i18n="rtxProject.video.title">Monitor de Precios en Tiempo Real</h4>
+                  <p class="video-description" data-i18n="rtxProject.video.description">
+                    Observa cómo el scraper monitorea automáticamente precios de GPUs RTX en múltiples plataformas.
+                    Incluye filtros avanzados, alertas de precio y dashboard con estadísticas en tiempo real.
+                  </p>
                 </div>
               </div>
             </div>
@@ -244,22 +259,25 @@
               </div>
             </div>
 
-            <!-- Links and Resources -->
+            <!-- Project Information -->
             <div class="project-section resources">
-              <h3 data-i18n="rtxProject.sections.resources">Enlaces y Recursos</h3>
+              <h3 data-i18n="rtxProject.sections.resources">Información del Proyecto</h3>
               <div class="resources-grid">
-                <a href="https://github.com/tu-usuario/rtx_web_scrap" target="_blank" class="resource-card github">
+                <div class="resource-info github">
                   <i class="fab fa-github"></i>
                   <span data-i18n="rtxProject.resourceLinks.sourceCode">Código Fuente</span>
-                </a>
-                <a href="https://github.com/tu-usuario/rtx_web_scrap#readme" target="_blank" class="resource-card docs">
+                  <small data-i18n="rtxProject.resourceLinks.sourceCodeDesc">Web scraper con Selenium y BeautifulSoup</small>
+                </div>
+                <div class="resource-info docs">
                   <i class="fas fa-book"></i>
                   <span data-i18n="rtxProject.resourceLinks.documentation">Documentación</span>
-                </a>
-                <a href="#" class="resource-card demo disabled" title="Demo local - Requiere instalación">
+                  <small data-i18n="rtxProject.resourceLinks.documentationDesc">Guía de instalación y configuración</small>
+                </div>
+                <div class="resource-info production">
                   <i class="fas fa-desktop"></i>
                   <span data-i18n="rtxProject.resourceLinks.localDemo">Demo Local</span>
-                </a>
+                  <small data-i18n="rtxProject.resourceLinks.localDemoDesc">Aplicación web con dashboard interactivo</small>
+                </div>
               </div>
             </div>
 
@@ -309,6 +327,67 @@
     <!-- Scripts personalizados de i18n -->
     <script src="../assets/js/i18n-config.js"></script>
     <script src="../assets/js/language-switcher.js"></script>
+
+    <!-- Script para funcionalidad de pantalla completa -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Funcionalidad de pantalla completa para imagen única
+        const fullscreenBtn = document.getElementById('carousel-fullscreen');
+        const modal = document.getElementById('carousel-modal');
+        const modalImg = document.getElementById('carousel-modal-img');
+        const modalClose = document.getElementById('carousel-modal-close');
+
+        // Imagen principal
+        const mainImage = document.querySelector('.carousel-slide img');
+
+        if (fullscreenBtn && mainImage) {
+          fullscreenBtn.addEventListener('click', function() {
+            if (modal && modalImg) {
+              modalImg.src = mainImage.src;
+              modalImg.alt = mainImage.alt;
+              modal.classList.add('active');
+              document.body.style.overflow = 'hidden';
+            }
+          });
+        }
+
+        // Cerrar modal
+        if (modalClose) {
+          modalClose.addEventListener('click', function() {
+            if (modal) {
+              modal.classList.remove('active');
+              document.body.style.overflow = '';
+            }
+          });
+        }
+
+        // Cerrar modal con ESC
+        document.addEventListener('keydown', function(e) {
+          if (e.key === 'Escape' && modal && modal.classList.contains('active')) {
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+          }
+        });
+
+        // Cerrar modal clickeando fuera de la imagen
+        if (modal) {
+          modal.addEventListener('click', function(e) {
+            if (e.target === modal) {
+              modal.classList.remove('active');
+              document.body.style.overflow = '';
+            }
+          });
+        }
+      });
+    </script>
+
+    <!-- Modal de pantalla completa -->
+    <div class="carousel-modal" id="carousel-modal">
+      <button class="carousel-modal-close" id="carousel-modal-close">
+        <i class="fas fa-times"></i>
+      </button>
+      <img id="carousel-modal-img" src="" alt="Imagen en pantalla completa">
+    </div>
   </body>
 </html> 
 </html> 

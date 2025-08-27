@@ -31,15 +31,24 @@
 
             <!-- Project Preview -->
             <div class="project-preview">
-              <div class="preview-container">
-                <!-- TODO: Reemplazar con screenshot del sistema procesando documentos -->
-                <!-- Mostrar: Interfaz de captura, documento Word antes/después, campos completados -->
-                <img 
-                  src="../assets/images/licencias-medicas-preview.jpg" 
-                  alt="Sistema de Automatización de Licencias Médicas Demo"
-                  class="main-preview"
-                  loading="lazy"
-                />
+              <div class="project-carousel">
+                <div class="carousel-container">
+                  <!-- Botón de pantalla completa -->
+                  <button class="carousel-fullscreen" id="carousel-fullscreen" title="Ver en pantalla completa">
+                    <i class="fas fa-expand"></i>
+                  </button>
+
+                  <!-- Slides del carrusel (una sola imagen) -->
+                  <div class="carousel-slides" id="carousel-slides">
+                    <div class="carousel-slide active">
+                      <img src="../assets/images/projects/licencias-medicas/main-preview.png"
+                           alt="Sistema de Automatización de Licencias Médicas Demo"
+                           loading="lazy">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Métricas overlay -->
                 <div class="metrics-overlay">
                   <div class="metric-card" tabindex="0">
                     <i class="fas fa-clock" aria-hidden="true"></i>
@@ -53,6 +62,29 @@
                     <i class="fas fa-check-circle" aria-hidden="true"></i>
                     <span data-i18n="medicalLicenseProject.metrics.errorFree">100% sin errores</span>
                   </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Video Demo Section -->
+            <div class="project-section video-demo">
+              <h3 data-i18n="medicalLicenseProject.sections.videoDemo">Demostración en Video</h3>
+              <div class="video-container">
+                <div class="youtube-embed-container">
+                  <iframe
+                    src="https://www.youtube.com/embed/xkSqqCoRXLo"
+                    title="Sistema de Automatización de Licencias Médicas - Demo"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                    loading="lazy">
+                  </iframe>
+                </div>
+                <div class="video-info">
+                  <h4 class="video-title" data-i18n="medicalLicenseProject.video.title">Automatización Completa de Licencias</h4>
+                  <p class="video-description" data-i18n="medicalLicenseProject.video.description">
+                    Observa cómo el sistema automatiza completamente el llenado de formatos de licencias médicas oficiales.
+                    Desde la captura de datos hasta la generación del documento final, eliminando errores y reduciendo el tiempo de 30 minutos a 2 minutos.
+                  </p>
                 </div>
               </div>
             </div>
@@ -193,20 +225,6 @@
               </div>
             </div>
 
-            <!-- Video Demo Section -->
-            <div class="project-section video-demo" style="margin-top: 2rem;">
-              <h3 data-i18n="medicalLicenseProject.sections.videoDemo">Demo en Video</h3>
-              <div class="video-container" style="text-align: center; padding: 2rem; background: #f8f9fa; border-radius: 10px;">
-                <!-- TODO: Reemplazar con video real (60-90 segundos) -->
-                <!-- Mostrar: Diferentes interfaces, procesamiento de documento, antes/después -->
-                <div class="video-placeholder" style="background: #e9ecef; padding: 4rem; border-radius: 8px; border: 2px dashed #6c757d;">
-                  <i class="fas fa-video" style="font-size: 3rem; color: #6c757d; margin-bottom: 1rem;"></i>
-                  <p style="color: #6c757d; margin: 0; font-size: 1.1rem;" data-i18n="medicalLicenseProject.sections.videoPlaceholder">Video Demo Próximamente</p>
-                  <small style="color: #6c757d;" data-i18n="medicalLicenseProject.sections.videoDescription">Demostración de automatización de licencias médicas en acción</small>
-                </div>
-              </div>
-            </div>
-
             <!-- Workflow Section -->
             <div class="project-section workflow">
               <h3 data-i18n="medicalLicenseProject.sections.workflow">Flujo de Trabajo</h3>
@@ -234,22 +252,25 @@
               </div>
             </div>
 
-            <!-- Links and Resources -->
+            <!-- Project Information -->
             <div class="project-section resources">
-              <h3 data-i18n="medicalLicenseProject.sections.resources">Enlaces y Recursos</h3>
+              <h3 data-i18n="medicalLicenseProject.sections.resources">Información del Proyecto</h3>
               <div class="resources-grid">
-                <a href="#" class="resource-card github disabled" title="Proyecto confidencial - sector salud">
-                  <i class="fab fa-github"></i>
+                <div class="resource-info github">
+                  <i class="fas fa-shield-alt"></i>
                   <span data-i18n="medicalLicenseProject.resourceLinks.confidentialCode">Código Confidencial</span>
-                </a>
-                <a href="#" class="resource-card docs">
+                  <small data-i18n="medicalLicenseProject.resourceLinks.confidentialCodeDesc">Proyecto del sector salud con datos sensibles</small>
+                </div>
+                <div class="resource-info docs">
                   <i class="fas fa-book"></i>
                   <span data-i18n="medicalLicenseProject.resourceLinks.technicalDocs">Documentación Técnica</span>
-                </a>
-                <a href="#" class="resource-card demo disabled" title="Uso interno - sector salud">
+                  <small data-i18n="medicalLicenseProject.resourceLinks.technicalDocsDesc">Guía de automatización de documentos médicos</small>
+                </div>
+                <div class="resource-info production">
                   <i class="fas fa-hospital"></i>
-                  <span data-i18n="medicalLicenseProject.resourceLinks.internalUse">Uso Interno</span>
-                </a>
+                  <span data-i18n="medicalLicenseProject.resourceLinks.internalUse">En Producción</span>
+                  <small data-i18n="medicalLicenseProject.resourceLinks.internalUseDesc">Sistema activo en oficina del sector salud</small>
+                </div>
               </div>
             </div>
 
@@ -300,5 +321,66 @@
     <!-- Scripts personalizados de i18n -->
     <script src="../assets/js/i18n-config.js"></script>
     <script src="../assets/js/language-switcher.js"></script>
+
+    <!-- Script para funcionalidad de pantalla completa -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Funcionalidad de pantalla completa para imagen única
+        const fullscreenBtn = document.getElementById('carousel-fullscreen');
+        const modal = document.getElementById('carousel-modal');
+        const modalImg = document.getElementById('carousel-modal-img');
+        const modalClose = document.getElementById('carousel-modal-close');
+
+        // Imagen principal
+        const mainImage = document.querySelector('.carousel-slide img');
+
+        if (fullscreenBtn && mainImage) {
+          fullscreenBtn.addEventListener('click', function() {
+            if (modal && modalImg) {
+              modalImg.src = mainImage.src;
+              modalImg.alt = mainImage.alt;
+              modal.classList.add('active');
+              document.body.style.overflow = 'hidden';
+            }
+          });
+        }
+
+        // Cerrar modal
+        if (modalClose) {
+          modalClose.addEventListener('click', function() {
+            if (modal) {
+              modal.classList.remove('active');
+              document.body.style.overflow = '';
+            }
+          });
+        }
+
+        // Cerrar modal con ESC
+        document.addEventListener('keydown', function(e) {
+          if (e.key === 'Escape' && modal && modal.classList.contains('active')) {
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+          }
+        });
+
+        // Cerrar modal clickeando fuera de la imagen
+        if (modal) {
+          modal.addEventListener('click', function(e) {
+            if (e.target === modal) {
+              modal.classList.remove('active');
+              document.body.style.overflow = '';
+            }
+          });
+        }
+      });
+    </script>
+
+    <!-- Modal de pantalla completa -->
+    <div class="carousel-modal" id="carousel-modal">
+      <button class="carousel-modal-close" id="carousel-modal-close">
+        <i class="fas fa-times"></i>
+      </button>
+      <img id="carousel-modal-img" src="" alt="Imagen en pantalla completa">
+    </div>
   </body>
 </html>

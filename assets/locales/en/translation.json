@@ -216,7 +216,7 @@
       "accuracy": "95% accuracy"
     },
     "sections": {
-      "videoDemo": "Video Demo",
+      "videoDemo": "Video Demonstration",
       "videoPlaceholder": "Video Demo Coming Soon",
       "videoDescription": "60-90 seconds showing scraping → results → filters → history",
       "overview": "Overview",
@@ -225,7 +225,7 @@
       "techStack": "Technology Stack",
       "challenges": "Challenges and Solutions",
       "workflow": "Workflow",
-      "resources": "Links and Resources"
+      "resources": "Project Information"
     },
     "features": {
       "smartScraping": {
@@ -310,10 +310,17 @@
         "desc": "Web dashboard with charts and filters"
       }
     },
+    "video": {
+      "title": "Real-Time Price Monitor",
+      "description": "Watch how the scraper automatically monitors RTX GPU prices across multiple platforms. Includes advanced filters, price alerts and dashboard with real-time statistics."
+    },
     "resourceLinks": {
       "sourceCode": "Source Code",
+      "sourceCodeDesc": "Web scraper with Selenium and BeautifulSoup",
       "documentation": "Documentation",
-      "localDemo": "Local Demo"
+      "documentationDesc": "Installation and configuration guide",
+      "localDemo": "Local Demo",
+      "localDemoDesc": "Web application with interactive dashboard"
     },
     "navigation": {
       "backToPortfolio": "Back to Portfolio",
@@ -329,10 +336,11 @@
       "accuracy": "99.9% accuracy"
     },
     "sections": {
-      "videoDemo": "Video Demo",
+      "videoDemo": "Video Demonstration",
       "videoPlaceholder": "Video Demo Coming Soon",
       "videoDescription": "Remote control demonstration in action from mobile device",
       "overview": "Overview",
+      "resources": "Project Information"
       "overviewText": "Cross-platform application that allows controlling PC mouse and keyboard from a mobile device using real-time WebSocket communication. Includes a Python server with GUI for PC and a Flutter application for mobile devices with support for Android, iOS, Web, Windows, macOS and Linux. Offers precise cursor control, clicks, scroll, text input and key combinations with haptic feedback and customizable configuration.",
       "technicalDetails": "Technical Details",
       "techStack": "Technology Stack",
@@ -404,10 +412,17 @@
         "solution": "Abstraction with PyAutoGUI and platform-specific configuration."
       }
     },
+    "video": {
+      "title": "Ultra Low Latency Remote Control",
+      "description": "Watch how the mobile app controls the PC cursor with less than 8ms latency. Includes multi-touch gestures, virtual keyboard and customizable shortcuts in real time."
+    },
     "resourceLinks": {
       "localCode": "Local Code",
-      "readme": "README.md",
-      "executable": "Executable (.exe)"
+      "localCodeDesc": "Mobile app and desktop server",
+      "readme": "Documentation",
+      "readmeDesc": "Installation and configuration guide",
+      "executable": "Desktop Application",
+      "executableDesc": "Windows executable server"
     },
     "navigation": {
       "prevProject": "Previous Project: RTX Web Scraper",
@@ -423,7 +438,7 @@
       "successRate": "99% success rate"
     },
     "sections": {
-      "videoDemo": "Video Demo",
+      "videoDemo": "Video Demonstration",
       "videoPlaceholder": "Video Demo Coming Soon",
       "videoDescription": "Download from Instagram, TikTok and Facebook with multiple qualities",
       "overview": "Overview",
@@ -431,7 +446,7 @@
       "technicalDetails": "Technical Details",
       "techStack": "Technology Stack",
       "challenges": "Challenges and Solutions",
-      "resources": "Links and Resources"
+      "resources": "Project Information"
     },
     "features": {
       "universalDownload": {
@@ -498,10 +513,17 @@
         "solution": "JSON history system with 50 entry limit and unique UUID names."
       }
     },
+    "video": {
+      "title": "Universal Video Download",
+      "description": "Watch how the application downloads videos from Instagram, TikTok and Facebook in seconds. Includes intuitive web interface, download history and support for multiple formats."
+    },
     "resourceLinks": {
       "sourceCode": "Source Code",
-      "documentation": "Detailed Docstrings",
-      "webDemo": "Web Demo"
+      "sourceCodeDesc": "Flask + yt-dlp for universal download",
+      "documentation": "Documentation",
+      "documentationDesc": "Detailed docstrings and usage guide",
+      "webDemo": "Web Application",
+      "webDemoDesc": "Responsive web interface with history"
     },
     "navigation": {
       "prevProject": "Previous Project: Remote Mouse",
@@ -517,7 +539,7 @@
       "accuracy": "99% accuracy"
     },
     "sections": {
-      "videoDemo": "Video Demo",
+      "videoDemo": "Video Demonstration",
       "videoPlaceholder": "Video Demo Coming Soon",
       "videoDescription": "Complete demonstration of distance calculation and interactive matrix",
       "overview": "Overview",
@@ -526,7 +548,7 @@
       "techStack": "Technology Stack",
       "challenges": "Challenges and Solutions",
       "workflow": "Workflow",
-      "resources": "Links and Resources"
+      "resources": "Project Information"
     },
     "features": {
       "smartCalculation": {
@@ -612,10 +634,17 @@
         "desc": "Report generation"
       }
     },
+    "video": {
+      "title": "Interactive Distance Calculation",
+      "description": "Watch how the tool calculates distances between multiple points in real time. Includes distance matrix, destination reordering and optimized route visualization."
+    },
     "resourceLinks": {
       "localCode": "Local Code",
+      "localCodeDesc": "Vanilla JavaScript with Google Maps API",
       "integratedGuide": "Integrated Guide",
-      "localDemo": "Local Demo"
+      "integratedGuideDesc": "Interactive tutorial within the application",
+      "localDemo": "Web Application",
+      "localDemoDesc": "Interactive tool with real-time maps"
     },
     "navigation": {
       "prevProject": "Previous Project: Social Media Downloader",
@@ -745,7 +774,7 @@
       "errorFree": "100% error-free"
     },
     "sections": {
-      "videoDemo": "Video Demo",
+      "videoDemo": "Video Demonstration",
       "videoPlaceholder": "Video Demo Coming Soon",
       "videoDescription": "Demonstration of medical license automation in action",
       "overview": "Overview",
@@ -839,14 +868,234 @@
         "desc": "Complete document ready for signature"
       }
     },
+    "video": {
+      "title": "Complete License Automation",
+      "description": "Watch how the system completely automates the filling of official medical license forms. From data capture to final document generation, eliminating errors and reducing time from 30 minutes to 2 minutes."
+    },
     "resourceLinks": {
       "confidentialCode": "Confidential Code",
+      "confidentialCodeDesc": "Health sector project with sensitive data",
       "technicalDocs": "Technical Documentation",
-      "internalUse": "Internal Use"
+      "technicalDocsDesc": "Medical document automation guide",
+      "internalUse": "In Production",
+      "internalUseDesc": "Active system in health sector office"
     },
     "navigation": {
       "prevProject": "Previous Project: Excel Scraper",
       "nextProject": "Next Project: AI School Certificate System"
+    }
+  },
+  "excelProject": {
+    "title": "Universal Excel Validation System",
+    "subtitle": "Hybrid platform (PyQt + React) that automates extraction, validation and visualization of educational Excel tables",
+    "metrics": {
+      "automation": "100% Automated",
+      "hybrid": "Hybrid Desktop/Web",
+      "validation": "Intelligent Validation"
+    },
+    "sections": {
+      "demoSection": "System Demonstration",
+      "overview": "Overview",
+      "overviewText": "Hybrid system that completely automates the processing of complex educational Excel tables. Shared architecture between desktop (PyQt) and web (React + Flask) with bidimensional algorithm for merged cell detection. Reduces 90-95% of manual processing time.",
+      "technicalDetails": "Technical Details",
+      "techStack": "Tech Stack",
+      "challenges": "Technical Challenges and Solutions",
+      "workflow": "Workflow",
+      "productionImpact": "Production Impact",
+      "resources": "Project Information"
+    },
+    "features": {
+      "algorithm": {
+        "title": "Bidimensional Algorithm",
+        "desc": "Automatic merged cell detection with bidimensional algorithm that identifies [value] patterns and generates precise spans"
+      },
+      "hybrid": {
+        "title": "Hybrid Architecture",
+        "desc": "Shared business core between desktop (PyQt) and web (React + Flask) ensuring consistency and maintainability"
+      },
+      "validation": {
+        "title": "Universal Validations",
+        "desc": "Automatic validation system for coherence, subtotals and totals with state evidence"
+      }
+    },
+    "tabs": {
+      "video": "Video Demo",
+      "guide": "Technical Guide"
+    },
+    "video": {
+      "title": "Hybrid System Demonstration",
+      "description": "Watch how the system processes complex Excel files in both desktop interface (PyQt) and web interface (React). Includes demonstration of merged cell detection algorithm, automatic validations and complete 4-step workflow."
+    },
+    "guide": {
+      "executiveOverview": {
+        "title": "Executive Summary",
+        "content": "Hybrid system that completely automates the processing of complex educational Excel tables. Shared architecture between desktop (PyQt) and web (React + Flask) with bidimensional algorithm for merged cell detection. Reduces 90-95% of manual processing time.",
+        "highlight": {
+          "title": "Innovative Hybrid Architecture",
+          "content": "Combines desktop power with web accessibility, sharing the same business core to ensure consistency and maintainability."
+        }
+      },
+      "algorithm": {
+        "title": "Bidimensional Algorithm",
+        "detection": {
+          "title": "Marker Detection",
+          "desc": "Identifies [value] patterns in cells to determine horizontal and vertical spans"
+        },
+        "merging": {
+          "title": "Span Generation",
+          "desc": "Calculates precise mergedCells and automatically cleans combined data"
+        },
+        "validation": {
+          "title": "Universal Validation",
+          "desc": "Coherence, subtotals and totals with state evidence"
+        }
+      },
+      "hybridArchitecture": {
+        "title": "Hybrid Architecture",
+        "desktop": {
+          "title": "Desktop (PyQt)",
+          "desc": "Native interface with specialized controllers and direct file system access"
+        },
+        "web": {
+          "title": "Web (React + Flask)",
+          "desc": "REST API with modern interface, Excel-like table and range selection"
+        },
+        "core": {
+          "title": "Shared Core",
+          "desc": "Pure business modules without UI dependencies, reusable across platforms"
+        }
+      }
+    },
+    "technical": {
+      "architecture": {
+        "title": "Architecture",
+        "item1": "Shared business core between desktop and web",
+        "item2": "Bidimensional algorithm for merged cell detection",
+        "item3": "Platform-specialized controllers (PyQt/Flask)"
+      },
+      "security": {
+        "title": "Robustness",
+        "item1": "Exhaustive data coherence validations",
+        "item2": "Error handling with state evidence",
+        "item3": "Safe processing of complex Excel files"
+      },
+      "features": {
+        "title": "Advanced Features",
+        "item1": "Automatic detection of complex table structures",
+        "item2": "Excel-like web interface with range selection",
+        "item3": "4-step workflow with validations at each stage"
+      }
+    },
+    "techStack": {
+      "backend": {
+        "title": "Backend",
+        "python": "Python",
+        "flask": "Flask",
+        "pandas": "Pandas"
+      },
+      "frontend": {
+        "title": "Frontend",
+        "pyqt": "PyQt5",
+        "react": "React",
+        "bootstrap": "Bootstrap"
+      },
+      "processing": {
+        "title": "Processing",
+        "openpyxl": "OpenPyXL",
+        "algorithms": "Custom Algorithms",
+        "validation": "Custom Validations"
+      },
+      "architecture": {
+        "title": "Architecture",
+        "hybrid": "Hybrid",
+        "shared": "Shared Core",
+        "modular": "Modular"
+      }
+    },
+    "challenges": {
+      "challenge1": {
+        "title": "Merged Cell Detection",
+        "problem": {
+          "title": "Problem:",
+          "desc": "Excel doesn't provide direct information about merged cells in complex files"
+        },
+        "solution": {
+          "title": "Solution:",
+          "desc": "Bidimensional algorithm that detects [value] patterns and calculates spans automatically"
+        }
+      },
+      "challenge2": {
+        "title": "Hybrid Architecture",
+        "problem": {
+          "title": "Problem:",
+          "desc": "Maintain consistency between desktop and web interfaces without duplicating logic"
+        },
+        "solution": {
+          "title": "Solution:",
+          "desc": "Shared business core with platform-specialized controllers"
+        }
+      },
+      "challenge3": {
+        "title": "Universal Validations",
+        "problem": {
+          "title": "Problem:",
+          "desc": "Validate coherence in tables with variable structures and complex data"
+        },
+        "solution": {
+          "title": "Solution:",
+          "desc": "Automatic validation system with state evidence and detailed reports"
+        }
+      }
+    },
+    "workflowSteps": {
+      "extraction": {
+        "title": "1. Extraction",
+        "desc": "Load and analyze Excel files"
+      },
+      "detection": {
+        "title": "2. Detection",
+        "desc": "Bidimensional merged cell algorithm"
+      },
+      "validation": {
+        "title": "3. Validation",
+        "desc": "Coherence and totals verification"
+      },
+      "visualization": {
+        "title": "4. Visualization",
+        "desc": "Presentation in hybrid interface"
+      }
+    },
+    "feedback": {
+      "dataAnalyst": {
+        "title": "Educational Data Analyst",
+        "institution": "Educational Institution",
+        "quote": "Before we spent hours manually processing each Excel file with merged cells. Now the system automatically detects the structure and validates everything in minutes.",
+        "metrics": {
+          "timeSaved": "95% less time",
+          "accuracy": "100% accuracy"
+        }
+      },
+      "developer": {
+        "title": "Team Developer",
+        "institution": "Development team",
+        "quote": "The hybrid architecture allows maintaining a single business core for desktop and web. The bidimensional algorithm is elegant and handles complex cases that other systems cannot.",
+        "metrics": {
+          "codeReuse": "80% code reused",
+          "architecture": "Solid architecture"
+        }
+      }
+    },
+    "resourceLinks": {
+      "privateCode": "Private Code",
+      "privateCodeDesc": "Hybrid architecture with proprietary algorithms",
+      "technicalDocs": "Technical Documentation",
+      "technicalDocsDesc": "Complete hybrid architecture guide",
+      "inProduction": "Hybrid System",
+      "inProductionDesc": "Desktop and Web with shared core"
+    },
+    "navigation": {
+      "prevProject": "Previous Project: Multi-Bot AI System",
+      "backToPortfolio": "Back to Portfolio"
     }
   },
   "botProject": {

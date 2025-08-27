@@ -32,15 +32,24 @@
 
             <!-- Project Preview -->
             <div class="project-preview">
-              <div class="preview-container">
-                <!-- TODO: Reemplazar con screenshot del dashboard con múltiples puntos -->
-                <!-- Mostrar: Mapa con marcadores, matriz de distancias, panel de control -->
-                <img
-                  src="../assets/images/calculadora-distancias-preview.jpg"
-                  alt="Calculadora de Distancias Dashboard Demo"
-                  class="main-preview"
-                  loading="lazy"
-                />
+              <div class="project-carousel">
+                <div class="carousel-container">
+                  <!-- Botón de pantalla completa -->
+                  <button class="carousel-fullscreen" id="carousel-fullscreen" title="Ver en pantalla completa">
+                    <i class="fas fa-expand"></i>
+                  </button>
+
+                  <!-- Slides del carrusel (una sola imagen) -->
+                  <div class="carousel-slides" id="carousel-slides">
+                    <div class="carousel-slide active">
+                      <img src="../assets/images/projects/calculadora-distancias/main-preview.png"
+                           alt="Calculadora de Distancias Dashboard Demo"
+                           loading="lazy">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Métricas overlay -->
                 <div class="metrics-overlay">
                   <div class="metric-card" tabindex="0">
                     <i class="fas fa-tachometer-alt" aria-hidden="true"></i>
@@ -54,6 +63,29 @@
                     <i class="fas fa-check-circle" aria-hidden="true"></i>
                     <span data-i18n="distanceCalculatorProject.metrics.accuracy">99% precisión</span>
                   </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Video Demo Section -->
+            <div class="project-section video-demo">
+              <h3 data-i18n="distanceCalculatorProject.sections.videoDemo">Demostración en Video</h3>
+              <div class="video-container">
+                <div class="youtube-embed-container">
+                  <iframe
+                    src="[URL_VIDEO_CALCULADORA_DISTANCIAS]"
+                    title="Calculadora de Distancias - Herramienta Web para Mapas"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                    loading="lazy">
+                  </iframe>
+                </div>
+                <div class="video-info">
+                  <h4 class="video-title" data-i18n="distanceCalculatorProject.video.title">Cálculo Interactivo de Distancias</h4>
+                  <p class="video-description" data-i18n="distanceCalculatorProject.video.description">
+                    Observa cómo la herramienta calcula distancias entre múltiples puntos en tiempo real.
+                    Incluye matriz de distancias, reordenamiento de destinos y visualización de rutas optimizadas.
+                  </p>
                 </div>
               </div>
             </div>
@@ -206,20 +238,6 @@
               </div>
             </div>
 
-            <!-- Video Demo Section -->
-            <div class="project-section video-demo" style="margin-top: 2rem;">
-              <h3 data-i18n="distanceCalculatorProject.sections.videoDemo">Demo en Video</h3>
-              <div class="video-container" style="text-align: center; padding: 2rem; background: #f8f9fa; border-radius: 10px;">
-                <!-- TODO: Reemplazar con video real (60 segundos) -->
-                <!-- Mostrar: Añadir puntos, matriz de distancias, reordenamiento, tema claro/oscuro -->
-                <div class="video-placeholder" style="background: #e9ecef; padding: 4rem; border-radius: 8px; border: 2px dashed #6c757d;">
-                  <i class="fas fa-video" style="font-size: 3rem; color: #6c757d; margin-bottom: 1rem;"></i>
-                  <p style="color: #6c757d; margin: 0; font-size: 1.1rem;" data-i18n="distanceCalculatorProject.sections.videoPlaceholder">Video Demo Próximamente</p>
-                  <small style="color: #6c757d;" data-i18n="distanceCalculatorProject.sections.videoDescription">Demostración completa de cálculo de distancias y matriz interactiva</small>
-                </div>
-              </div>
-            </div>
-
             <!-- Workflow Section -->
             <div class="project-section workflow">
               <h3 data-i18n="distanceCalculatorProject.sections.workflow">Flujo de Trabajo</h3>
@@ -247,22 +265,25 @@
               </div>
             </div>
 
-            <!-- Links and Resources -->
+            <!-- Project Information -->
             <div class="project-section resources">
-              <h3 data-i18n="distanceCalculatorProject.sections.resources">Enlaces y Recursos</h3>
+              <h3 data-i18n="distanceCalculatorProject.sections.resources">Información del Proyecto</h3>
               <div class="resources-grid">
-                <a href="#" class="resource-card github disabled" title="Pendiente - repositorio local">
+                <div class="resource-info github">
                   <i class="fab fa-github"></i>
                   <span data-i18n="distanceCalculatorProject.resourceLinks.localCode">Código Local</span>
-                </a>
-                <a href="#" class="resource-card docs">
+                  <small data-i18n="distanceCalculatorProject.resourceLinks.localCodeDesc">JavaScript vanilla con Google Maps API</small>
+                </div>
+                <div class="resource-info docs">
                   <i class="fas fa-question-circle"></i>
                   <span data-i18n="distanceCalculatorProject.resourceLinks.integratedGuide">Guía Integrada</span>
-                </a>
-                <a href="http://localhost:8000" class="resource-card demo" target="_blank" title="Requiere servidor local">
+                  <small data-i18n="distanceCalculatorProject.resourceLinks.integratedGuideDesc">Tutorial interactivo dentro de la aplicación</small>
+                </div>
+                <div class="resource-info production">
                   <i class="fas fa-desktop"></i>
-                  <span data-i18n="distanceCalculatorProject.resourceLinks.localDemo">Demo Local</span>
-                </a>
+                  <span data-i18n="distanceCalculatorProject.resourceLinks.localDemo">Aplicación Web</span>
+                  <small data-i18n="distanceCalculatorProject.resourceLinks.localDemoDesc">Herramienta interactiva con mapas en tiempo real</small>
+                </div>
               </div>
             </div>
 
@@ -311,6 +332,67 @@
     <!-- Scripts personalizados de i18n -->
     <script src="../assets/js/i18n-config.js"></script>
     <script src="../assets/js/language-switcher.js"></script>
+
+    <!-- Script para funcionalidad de pantalla completa -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Funcionalidad de pantalla completa para imagen única
+        const fullscreenBtn = document.getElementById('carousel-fullscreen');
+        const modal = document.getElementById('carousel-modal');
+        const modalImg = document.getElementById('carousel-modal-img');
+        const modalClose = document.getElementById('carousel-modal-close');
+
+        // Imagen principal
+        const mainImage = document.querySelector('.carousel-slide img');
+
+        if (fullscreenBtn && mainImage) {
+          fullscreenBtn.addEventListener('click', function() {
+            if (modal && modalImg) {
+              modalImg.src = mainImage.src;
+              modalImg.alt = mainImage.alt;
+              modal.classList.add('active');
+              document.body.style.overflow = 'hidden';
+            }
+          });
+        }
+
+        // Cerrar modal
+        if (modalClose) {
+          modalClose.addEventListener('click', function() {
+            if (modal) {
+              modal.classList.remove('active');
+              document.body.style.overflow = '';
+            }
+          });
+        }
+
+        // Cerrar modal con ESC
+        document.addEventListener('keydown', function(e) {
+          if (e.key === 'Escape' && modal && modal.classList.contains('active')) {
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+          }
+        });
+
+        // Cerrar modal clickeando fuera de la imagen
+        if (modal) {
+          modal.addEventListener('click', function(e) {
+            if (e.target === modal) {
+              modal.classList.remove('active');
+              document.body.style.overflow = '';
+            }
+          });
+        }
+      });
+    </script>
+
+    <!-- Modal de pantalla completa -->
+    <div class="carousel-modal" id="carousel-modal">
+      <button class="carousel-modal-close" id="carousel-modal-close">
+        <i class="fas fa-times"></i>
+      </button>
+      <img id="carousel-modal-img" src="" alt="Imagen en pantalla completa">
+    </div>
   </body>
 </html>
 
