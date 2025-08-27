@@ -1,8 +1,9 @@
 // Esperar a que el DOM esté completamente cargado
 document.addEventListener('DOMContentLoaded', () => {
-  // Inicializar el tema guardado
-  const savedTheme = localStorage.getItem('theme') || 'light';
+  // Inicializar el tema guardado (por defecto oscuro)
+  const savedTheme = localStorage.getItem('theme') || 'dark';
   document.documentElement.setAttribute('data-theme', savedTheme);
+  console.log('Tema inicializado:', savedTheme);
 
   // Esperar a que el sidebar se cargue
   const observer = new MutationObserver((mutations, obs) => {

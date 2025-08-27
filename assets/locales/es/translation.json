@@ -1,5 +1,8 @@
 {
   "role": "Desarrollador Senior Full-Stack",
+  "site": {
+    "title": "Desarrollador Senior Full-Stack"
+  },
   "nav": {
     "about": "Sobre Mí",
     "skills": "Habilidades",
@@ -51,29 +54,29 @@
       "item2": "PyQt5 para sistemas desktop híbridos con core de negocio compartido",
       "item3": "Patrones de diseño enterprise, separación de capas y sistemas preparados para escalar"
     },
-    "backend": "Aplicaciones Móviles y Comunicación en Tiempo Real",
+    "backend": "IA Conversacional y Automatización Inteligente",
     "backendList": {
-      "item1": "Desarrollo móvil nativo con comunicación WebSocket de baja latencia",
-      "item2": "Sistemas de tiempo real con gestos multitáctiles y interfaces adaptativas",
-      "item3": "Optimización de rendimiento y experiencia de usuario móvil"
-    },
-    "frontend": "IA Conversacional y Automatización Inteligente",
-    "frontendList": {
       "item1": "Sistemas conversacionales adaptables a cualquier LLM (Gemini, APIs locales, modelos custom)",
       "item2": "Arquitecturas multi-bot escalables con routing inteligente y gestión de contexto",
       "item3": "Automatización crítica con procesamiento de lenguaje natural y reconocimiento de voz"
     },
-    "devops": "Diseño Web y Experiencia de Usuario",
-    "devopsList": {
-      "item1": "Diseño responsive y UX/UI optimizado para conversión",
-      "item2": "Landing pages y sitios corporativos con marketing digital",
-      "item3": "Optimización de rendimiento web y SEO técnico"
+    "frontend": "Aplicaciones de Tiempo Real y Móviles",
+    "frontendList": {
+      "item1": "Desarrollo móvil nativo con comunicación WebSocket de ultra baja latencia (<8ms)",
+      "item2": "Sistemas de tiempo real con gestos multitáctiles y sincronización perfecta",
+      "item3": "Optimización de rendimiento y experiencias de usuario fluidas multiplataforma"
     },
-    "additional": "Automatización y Procesamiento de Datos",
+    "devops": "Procesamiento de Datos y Algoritmos Avanzados",
+    "devopsList": {
+      "item1": "Web scraping inteligente, monitoreo automatizado y procesamiento multimedia",
+      "item2": "Algoritmos bidimensionales, detección de patrones y optimización de rutas",
+      "item3": "Integración de APIs múltiples, manejo de datos complejos y validaciones automáticas"
+    },
+    "additional": "Diseño Web y Experiencia de Usuario",
     "additionalList": {
-      "item1": "Web scraping avanzado y monitoreo automatizado de precios",
-      "item2": "Procesamiento multimedia y descarga de contenido de redes sociales",
-      "item3": "Algoritmos geográficos, matrices de distancia y optimización de rutas"
+      "item1": "Diseño responsive y UX/UI optimizado para conversión y engagement",
+      "item2": "Landing pages corporativas, marketing digital y optimización de rendimiento",
+      "item3": "SEO técnico, accesibilidad web y experiencias multiplataforma coherentes"
     }
   },
   "projects": {
@@ -340,7 +343,6 @@
       "videoPlaceholder": "Video Demo Próximamente",
       "videoDescription": "Demostración de control remoto en acción desde dispositivo móvil",
       "overview": "Descripción General",
-      "resources": "Información del Proyecto"
       "overviewText": "Aplicación multiplataforma que permite controlar el mouse y teclado de una PC desde un dispositivo móvil usando comunicación WebSocket en tiempo real. Incluye un servidor Python con interfaz gráfica para PC y una aplicación Flutter para dispositivos móviles con soporte para Android, iOS, Web, Windows, macOS y Linux. Ofrece control preciso del cursor, clics, scroll, escritura de texto y combinaciones de teclas con retroalimentación háptica y configuración personalizable.",
       "technicalDetails": "Detalles Técnicos",
       "techStack": "Stack Tecnológico",
@@ -1331,7 +1333,6 @@
       "videoPlaceholder": "Video Demo Próximamente",
       "videoDescription": "Demostración completa del sistema IA en producción",
       "demoGuide": "Guía de Demostración",
-      "resources": "Información del Proyecto",
       "overview": "Descripción General",
       "overviewText": "Aplicación de escritorio (PyQt + PyInstaller) usada en producción por una escuela para reemplazar tareas de secretaría: búsqueda/gestión de alumnos, generación y transformación de constancias PDF, consultas y recomendaciones inteligentes vía IA. Arquitectura de IA con \"Master Interpreter\" que detecta intención y sub-intenciones y enruta a especialistas (Student/Help), integrándose con servicios locales (SQLite, PDF). Escalable y robusta: mejora con nuevos modelos de IA y empaquetado estable.",
       "technicalDetails": "Detalles Técnicos",
@@ -1649,6 +1650,10 @@
       "prevProject": "Proyecto Anterior: Sistema de Licencias Médicas",
       "backToPortfolio": "Volver al Portafolio"
     }
+  },
+  "theme": {
+    "dark": "Modo Oscuro",
+    "light": "Modo Claro"
   }
 }
 

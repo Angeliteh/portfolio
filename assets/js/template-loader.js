@@ -1,6 +1,19 @@
 class TemplateLoader {
   static getBasePath() {
-    return window.location.hostname.includes('github.io') ? '/portfolio' : '';
+    const isGitHubPages = window.location.hostname.includes('github.io');
+    const currentPath = window.location.pathname;
+    let baseUrl = '';
+
+    if (isGitHubPages) {
+      // Si estamos en GitHub Pages, detectar si hay un subdirectorio
+      const pathParts = currentPath.split('/').filter(part => part);
+      if (pathParts.length > 0 && !pathParts[0].includes('.html')) {
+        baseUrl = '/' + pathParts[0];
+      }
+    }
+
+    console.log('TemplateLoader - Base path:', baseUrl);
+    return baseUrl;
   }
 
   static async loadSidebar() {
@@ -13,15 +26,31 @@ class TemplateLoader {
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
-      
+
       const html = await response.text();
       const sidebarContainer = document.getElementById('sidebar-container');
       if (sidebarContainer) {
         sidebarContainer.innerHTML = html;
+        console.log('Sidebar HTML cargado exitosamente');
+
+        // Esperar un poco para que el DOM se actualice
+        await new Promise(resolve => setTimeout(resolve, 100));
+
         this.initSidebarEvents();
+        console.log('Eventos del sidebar inicializados');
+
+        // Disparar evento personalizado para notificar que el sidebar está listo
+        window.dispatchEvent(new CustomEvent('sidebarLoaded'));
+      } else {
+        console.error('No se encontró el contenedor del sidebar (#sidebar-container)');
       }
     } catch (error) {
       console.error('Error cargando sidebar:', error);
+      // Intentar cargar de nuevo después de un delay
+      setTimeout(() => {
+        console.log('Reintentando cargar sidebar...');
+        this.loadSidebar();
+      }, 1000);
     }
   }
 

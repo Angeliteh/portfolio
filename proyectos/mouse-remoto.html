@@ -35,13 +35,43 @@
                     <i class="fas fa-expand"></i>
                   </button>
 
-                  <!-- Slides del carrusel (una sola imagen) -->
+                  <!-- Slides del carrusel -->
                   <div class="carousel-slides" id="carousel-slides">
                     <div class="carousel-slide active">
-                      <img src="../assets/images/projects/remote-mouse/main-preview.png"
-                           alt="Remote Mouse App Demo"
+                      <img src="../assets/images/projects/mouse-remoto/image_1.png"
+                           alt="Remote Mouse - Interfaz Móvil Principal"
                            loading="lazy">
                     </div>
+                    <div class="carousel-slide">
+                      <img src="../assets/images/projects/mouse-remoto/image_2.png"
+                           alt="Remote Mouse - Servidor Desktop"
+                           loading="lazy">
+                    </div>
+                    <div class="carousel-slide">
+                      <img src="../assets/images/projects/mouse-remoto/image_3.png"
+                           alt="Remote Mouse - Configuración y Controles"
+                           loading="lazy">
+                    </div>
+                  </div>
+
+                  <!-- Controles del carrusel -->
+                  <button class="carousel-controls carousel-prev" id="carousel-prev">
+                    <i class="fas fa-chevron-left"></i>
+                  </button>
+                  <button class="carousel-controls carousel-next" id="carousel-next">
+                    <i class="fas fa-chevron-right"></i>
+                  </button>
+
+                  <!-- Indicadores -->
+                  <div class="carousel-indicators" id="carousel-indicators">
+                    <button class="carousel-indicator active" data-slide="0"></button>
+                    <button class="carousel-indicator" data-slide="1"></button>
+                    <button class="carousel-indicator" data-slide="2"></button>
+                  </div>
+
+                  <!-- Contador -->
+                  <div class="carousel-counter">
+                    <span id="current-slide">1</span> / <span id="total-slides">3</span>
                   </div>
                 </div>
 
@@ -63,28 +93,7 @@
               </div>
             </div>
 
-            <!-- Video Demo Section -->
-            <div class="project-section video-demo">
-              <h3 data-i18n="remoteMouseProject.sections.videoDemo">Demostración en Video</h3>
-              <div class="video-container">
-                <div class="youtube-embed-container">
-                  <iframe
-                    src="[URL_VIDEO_REMOTE_MOUSE]"
-                    title="Remote Mouse - Control Remoto con Latencia Ultra Baja"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen
-                    loading="lazy">
-                  </iframe>
-                </div>
-                <div class="video-info">
-                  <h4 class="video-title" data-i18n="remoteMouseProject.video.title">Control Remoto de Ultra Baja Latencia</h4>
-                  <p class="video-description" data-i18n="remoteMouseProject.video.description">
-                    Observa cómo la aplicación móvil controla el cursor del PC con latencia menor a 8ms.
-                    Incluye gestos multitáctiles, teclado virtual y accesos rápidos personalizables en tiempo real.
-                  </p>
-                </div>
-              </div>
-            </div>
+
 
             <!-- Project Overview -->
             <div class="project-section overview">
@@ -294,28 +303,101 @@
     <script src="../assets/js/i18n-config.js"></script>
     <script src="../assets/js/language-switcher.js"></script>
 
-    <!-- Script para funcionalidad de pantalla completa -->
+    <!-- Script para funcionalidad del carousel -->
     <script>
       document.addEventListener('DOMContentLoaded', function() {
-        // Funcionalidad de pantalla completa para imagen única
+        // Elementos del carrusel
+        const slides = document.getElementById('carousel-slides');
+        const nextBtn = document.getElementById('carousel-next');
+        const prevBtn = document.getElementById('carousel-prev');
+        const indicators = document.querySelectorAll('.carousel-indicator');
+        const currentSlideSpan = document.getElementById('current-slide');
         const fullscreenBtn = document.getElementById('carousel-fullscreen');
         const modal = document.getElementById('carousel-modal');
         const modalImg = document.getElementById('carousel-modal-img');
         const modalClose = document.getElementById('carousel-modal-close');
 
-        // Imagen principal
-        const mainImage = document.querySelector('.carousel-slide img');
+        let currentSlide = 0;
+        const totalSlides = 3;
 
-        if (fullscreenBtn && mainImage) {
+        // Array con las rutas de las imágenes
+        const imageUrls = [
+          '../assets/images/projects/mouse-remoto/image_1.png',
+          '../assets/images/projects/mouse-remoto/image_2.png',
+          '../assets/images/projects/mouse-remoto/image_3.png'
+        ];
+
+        function updateCarousel() {
+          // Mover slides (33.33% por slide para 3 imágenes)
+          const translateX = -currentSlide * 33.33;
+          slides.style.transform = `translateX(${translateX}%)`;
+
+          // Actualizar indicadores
+          indicators.forEach((indicator, index) => {
+            indicator.classList.toggle('active', index === currentSlide);
+          });
+
+          // Actualizar contador
+          currentSlideSpan.textContent = currentSlide + 1;
+        }
+
+        function nextSlide() {
+          currentSlide = (currentSlide + 1) % totalSlides;
+          updateCarousel();
+        }
+
+        function prevSlide() {
+          currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+          updateCarousel();
+        }
+
+        function goToSlide(slideIndex) {
+          currentSlide = slideIndex;
+          updateCarousel();
+        }
+
+        // Event listeners
+        if (nextBtn) nextBtn.addEventListener('click', nextSlide);
+        if (prevBtn) prevBtn.addEventListener('click', prevSlide);
+
+        indicators.forEach((indicator, index) => {
+          indicator.addEventListener('click', () => goToSlide(index));
+        });
+
+        // Navegación con teclado
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'ArrowLeft') {
+            prevSlide();
+          } else if (e.key === 'ArrowRight') {
+            nextSlide();
+          }
+        });
+
+        // Funcionalidad de pantalla completa
+        if (fullscreenBtn) {
           fullscreenBtn.addEventListener('click', function() {
             if (modal && modalImg) {
-              modalImg.src = mainImage.src;
-              modalImg.alt = mainImage.alt;
+              modalImg.src = imageUrls[currentSlide];
+              modalImg.alt = document.querySelectorAll('.carousel-slide img')[currentSlide].alt;
               modal.classList.add('active');
               document.body.style.overflow = 'hidden';
             }
           });
         }
+
+        // Inicializar carrusel
+        updateCarousel();
+      });
+    </script>
+
+    <!-- CSS específico para carousel de 3 imágenes -->
+    <style>
+      .carousel-slides {
+        width: 300% !important; /* 3 imágenes */
+      }
+      .carousel-slide {
+        width: 33.33% !important; /* 100% / 3 */
+      }
 
         // Cerrar modal
         if (modalClose) {

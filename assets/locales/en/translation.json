@@ -1,5 +1,8 @@
 {
-  "role": "Full-Stack Developer",
+  "role": "Senior Full-Stack Developer",
+  "site": {
+    "title": "Senior Full-Stack Developer"
+  },
   "nav": {
     "about": "About Me",
     "skills": "Skills",
@@ -36,44 +39,44 @@
   "project-view": "View Project",
   "about": {
     "title": "About Me",
-    "subtitle": "Full-Stack Developer specialized in innovative solutions and high-performance systems",
+    "subtitle": "Senior Developer specialized in high-impact solutions and scalable systems",
     "who": "Who I am",
-    "whoText": "I'm a full-stack developer with proven experience in developing complete solutions from mobile applications with real-time communication to conversational AI systems in production. My expertise spans modern web development (React/Flask), native mobile applications, cross-platform desktop systems (PyQt), and intelligent automation with AI. I've developed everything from web scraping tools and multimedia processing to educational and medical systems that generate real impact with 85-95% time reductions.",
+    "whoText": "Senior full-stack developer specialized in creating high-impact technological solutions that solve real problems. Expert in conversational AI systems (adaptable to any LLM), scalable architectures and critical automation that generates 340% ROI. My experience spans modern web development (React/Flask), real-time mobile applications, hybrid desktop systems (PyQt), and complex algorithms. I combine technical innovation with measurable results: 85-95% time reductions, production systems serving real companies, and architectures ready to scale.",
     "approach": "My Approach",
-    "approachText": "I specialize in creating scalable architectures and high-performance systems, from low-latency applications with WebSockets to conversational interfaces with AI adaptable to multiple providers. I combine optimized UX/UI design with robust backend, prioritizing both user experience and technical efficiency. My experience includes complex algorithms, real-time data processing, multiple API integration, and responsive development. Each project is designed to be maintainable, scalable, and ready to evolve with new technologies."
+    "approachText": "From intelligent web scraping to conversational interfaces, each project is designed to generate real impact and business value. I specialize in creating scalable architectures and high-performance systems, from low-latency applications (<8ms) with WebSockets to conversational systems adaptable to any LLM. I combine optimized UX/UI design with robust backend, complex algorithms and real-time data processing. My approach prioritizes both user experience and technical efficiency, creating maintainable solutions ready to evolve."
   },
   "skills": {
     "title": "My Skills",
     "subtitle": "Complete technology stack with proven experience in real projects",
-    "automation": "Full-Stack Development and Modern Architectures",
+    "automation": "Full-Stack Development and Scalable Architectures",
     "automationList": {
-      "item1": "React/Flask for scalable web applications with REST APIs",
-      "item2": "PyQt5 for cross-platform desktop applications",
-      "item3": "Layered architectures with separation of concerns and advanced design patterns"
+      "item1": "React/Flask for robust web applications with REST APIs and modular architectures",
+      "item2": "PyQt5 for hybrid desktop systems with shared business core",
+      "item3": "Enterprise design patterns, layer separation and systems ready to scale"
     },
-    "backend": "Mobile Applications and Real-Time Communication",
+    "backend": "Conversational AI and Intelligent Automation",
     "backendList": {
-      "item1": "Native mobile development with low-latency WebSocket communication",
-      "item2": "Real-time systems with multi-touch gestures and adaptive interfaces",
-      "item3": "Performance optimization and mobile user experience"
+      "item1": "Conversational systems adaptable to any LLM (Gemini, local APIs, custom models)",
+      "item2": "Scalable multi-bot architectures with intelligent routing and context management",
+      "item3": "Critical automation with natural language processing and voice recognition"
     },
-    "frontend": "Artificial Intelligence and Intelligent Automation",
+    "frontend": "Real-Time and Mobile Applications",
     "frontendList": {
-      "item1": "Conversational AI with multiple providers (Google Gemini, local APIs)",
-      "item2": "Natural language processing and intelligent intention routing",
-      "item3": "Voice recognition systems and multimodal interfaces"
+      "item1": "Native mobile development with ultra low-latency WebSocket communication (<8ms)",
+      "item2": "Real-time systems with multi-touch gestures and perfect synchronization",
+      "item3": "Performance optimization and fluid cross-platform user experiences"
     },
-    "devops": "Web Design and User Experience",
+    "devops": "Data Processing and Advanced Algorithms",
     "devopsList": {
-      "item1": "Responsive design and UX/UI optimized for conversion",
-      "item2": "Landing pages and corporate sites with digital marketing",
-      "item3": "Web performance optimization and technical SEO"
+      "item1": "Intelligent web scraping, automated monitoring and multimedia processing",
+      "item2": "Bidimensional algorithms, pattern detection and route optimization",
+      "item3": "Multiple API integration, complex data handling and automatic validations"
     },
-    "additional": "Automation and Data Processing",
+    "additional": "Web Design and User Experience",
     "additionalList": {
-      "item1": "Advanced web scraping and automated price monitoring",
-      "item2": "Multimedia processing and social media content downloading",
-      "item3": "Geographic algorithms, distance matrices and route optimization"
+      "item1": "Responsive design and UX/UI optimized for conversion and engagement",
+      "item2": "Corporate landing pages, digital marketing and performance optimization",
+      "item3": "Technical SEO, web accessibility and coherent cross-platform experiences"
     }
   },
   "projects": {
@@ -340,7 +343,7 @@
       "videoPlaceholder": "Video Demo Coming Soon",
       "videoDescription": "Remote control demonstration in action from mobile device",
       "overview": "Overview",
-      "resources": "Project Information"
+      "resources": "Project Information",
       "overviewText": "Cross-platform application that allows controlling PC mouse and keyboard from a mobile device using real-time WebSocket communication. Includes a Python server with GUI for PC and a Flutter application for mobile devices with support for Android, iOS, Web, Windows, macOS and Linux. Offers precise cursor control, clicks, scroll, text input and key combinations with haptic feedback and customizable configuration.",
       "technicalDetails": "Technical Details",
       "techStack": "Technology Stack",

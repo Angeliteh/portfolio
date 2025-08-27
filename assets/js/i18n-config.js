@@ -1,7 +1,23 @@
 // Crear una promesa global para el estado de inicialización
 window.i18nextInitialized = new Promise(async (resolve) => {
     const savedLang = localStorage.getItem('language') || 'es';
-    const baseUrl = window.location.hostname.includes('github.io') ? '/portfolio' : '';
+    // Detectar la ruta base correcta
+    const isGitHubPages = window.location.hostname.includes('github.io');
+    const currentPath = window.location.pathname;
+    let baseUrl = '';
+
+    if (isGitHubPages) {
+        // Si estamos en GitHub Pages, detectar si hay un subdirectorio
+        const pathParts = currentPath.split('/').filter(part => part);
+        if (pathParts.length > 0 && !pathParts[0].includes('.html')) {
+            baseUrl = '/' + pathParts[0];
+        }
+    }
+
+    console.log('i18n Config - Hostname:', window.location.hostname);
+    console.log('i18n Config - Current path:', currentPath);
+    console.log('i18n Config - Base URL:', baseUrl);
+    console.log('i18n Config - Translation path:', `${baseUrl}/assets/locales/{{lng}}/translation.json`);
 
     try {
         // Verificar si i18next ya está inicializado
