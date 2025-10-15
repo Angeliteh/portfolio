@@ -11,7 +11,7 @@ const CHAT_CONFIG = {
   // 🌐 URL del backend
   // Desarrollo: "http://localhost:3000"
   // Producción: "https://tu-servidor.onrender.com"
-  backendUrl: "http://localhost:3000",
+  backendUrl: "https://bots-ai-websites.onrender.com",
   
   // 👤 Nombre del bot (se muestra en el header)
   botName: "Personal AI Agent",
