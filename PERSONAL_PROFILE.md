@@ -22,18 +22,20 @@
 
 ### **🥇 TIER 1 - NIVEL EXPERT**
 
+
 #### **1. Sistema Multi-Bot Empresarial IA**
 **Complejidad**: ⭐⭐⭐⭐⭐ (Expert)
 **Impacto**: ⭐⭐⭐⭐⭐ (ROI 340%)
-**Innovación**: ⭐⭐⭐⭐⭐ (Arquitectura única)
+**Innovación**: ⭐⭐⭐⭐⭐ (Arquitectura única, IA conversacional multi-bot)
+
+**Descripción**: Plataforma empresarial de IA conversacional con arquitectura modular y escalable, capaz de orquestar más de 50 bots especializados por industria. Incluye dashboard maestro, analytics en tiempo real y un sistema de routing inteligente que permite gestionar múltiples flujos de conversación y automatización de procesos empresariales. Integración avanzada con Google Gemini AI y Supabase. En producción, sirviendo empresas reales con métricas de impacto.
 
 **Fortalezas técnicas demostradas**:
-- ✅ Arquitectura modular escalable (50+ bots)
-- ✅ Detección automática por Page ID
-- ✅ Sistema de routing inteligente
-- ✅ Gestión centralizada con dashboard maestro
-- ✅ Analytics en tiempo real
-- ✅ Sistema en producción con métricas reales
+- ✅ Arquitectura multi-bot modular y escalable (50+ bots simultáneos)
+- ✅ Routing inteligente y gestión centralizada
+- ✅ Integración avanzada de IA (Google Gemini, APIs locales)
+- ✅ Analytics y métricas empresariales en tiempo real
+- ✅ Sistema robusto y seguro en producción
 
 **Tecnologías dominadas**:
 - Node.js + Express.js (Backend robusto)
@@ -42,18 +44,20 @@
 - React (Dashboard frontend)
 - Arquitecturas microservicios
 
+
 #### **2. Sistema de Constancias Escolares con IA**
 **Complejidad**: ⭐⭐⭐⭐⭐ (Expert)
 **Impacto**: ⭐⭐⭐⭐⭐ (En producción real)
-**Innovación**: ⭐⭐⭐⭐⭐ (Master-Student AI)
+**Innovación**: ⭐⭐⭐⭐⭐ (Arquitectura Master-Student AI, automatización escolar total)
+
+**Descripción**: Aplicación de escritorio con arquitectura Master-Student AI que automatiza la gestión escolar y la generación de constancias. Incluye un sistema conversacional natural, generación automática de PDFs, integración con servicios locales y un motor de routing inteligente de intenciones. En producción, utilizada por instituciones educativas para reducir tiempos y errores administrativos.
 
 **Fortalezas técnicas demostradas**:
-- ✅ Arquitectura Master-Student AI (muy avanzada)
-- ✅ Routing inteligente de intenciones
-- ✅ Interfaz conversacional natural
-- ✅ Generación automática de PDFs
-- ✅ Sistema desktop robusto (PyQt5)
-- ✅ Integración con servicios locales
+- ✅ Arquitectura Master-Student AI avanzada
+- ✅ Routing inteligente y procesamiento de lenguaje natural
+- ✅ Generación automática de documentos (PDF, Word)
+- ✅ Integración con sistemas locales y APIs
+- ✅ Interfaz conversacional intuitiva
 
 **Tecnologías dominadas**:
 - PyQt5 (Aplicaciones desktop complejas)
@@ -62,24 +66,27 @@
 - python-docx (Generación documentos)
 - Arquitecturas de IA avanzadas
 
-#### **3. Sistema Universal de Validación Excel**
+
+#### **3. Sistema Universal de Validación y Visualización de Tablas Excel**
 **Complejidad**: ⭐⭐⭐⭐⭐ (Expert)
 **Impacto**: ⭐⭐⭐⭐ (Automatización 100%)
-**Innovación**: ⭐⭐⭐⭐⭐ (Algoritmo bidimensional)
+**Innovación**: ⭐⭐⭐⭐⭐ (Extracción y operación avanzada de tablas)
+
+**Descripción**: Plataforma integral que automatiza la extracción, combinación, validación y presentación de tablas educativas en Excel. El sistema es capaz de desmenuzar y entender múltiples tablas de diferentes hojas, realizar operaciones y validaciones cruzadas entre ellas, y generar reportes personalizados. Arquitectura híbrida con core compartido entre app de escritorio (PyQt) y web (React + Flask).
 
 **Fortalezas técnicas demostradas**:
-- ✅ Algoritmo bidimensional complejo (nivel expert)
-- ✅ Detección de celdas combinadas con marcadores
-- ✅ Arquitectura híbrida Desktop/Web
-- ✅ Core compartido entre plataformas
-- ✅ Validaciones automáticas inteligentes
+- ✅ Algoritmo bidimensional avanzado para extracción y validación de datos
+- ✅ Detección y manejo de celdas combinadas, rangos y relaciones entre tablas
+- ✅ Operaciones y validaciones cruzadas entre múltiples tablas
+- ✅ Arquitectura híbrida Desktop/Web con core compartido
+- ✅ Automatización total del flujo de datos y generación de reportes
 
 **Tecnologías dominadas**:
-- Algoritmos complejos (bidimensionales)
-- React + Flask (Full-stack híbrido)
 - PyQt5 (Desktop avanzado)
-- pandas (Procesamiento datos)
-- Arquitecturas compartidas
+- React + Flask (Full-stack híbrido)
+- pandas (Procesamiento y análisis de datos)
+- Algoritmos complejos de extracción y validación
+- Arquitecturas compartidas multiplataforma
 
 ### **🥈 TIER 2 - NIVEL SENIOR**
 
