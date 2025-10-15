@@ -110,18 +110,61 @@
   const inputEl = win.querySelector("#angel-input");
   const sendBtn = win.querySelector("#angel-send");
 
-  // Toggle ventana
+  // Botón de cerrar (X) para el chat
+  const closeChatBtn = document.createElement("span");
+  closeChatBtn.innerHTML = "&times;";
+  closeChatBtn.title = "Cerrar chat";
+  closeChatBtn.style.cssText = "position:absolute;top:10px;right:18px;font-size:2rem;cursor:pointer;z-index:10;color:#fff;opacity:0.7;transition:opacity 0.2s;";
+  closeChatBtn.addEventListener("mouseenter",()=>closeChatBtn.style.opacity="1");
+  closeChatBtn.addEventListener("mouseleave",()=>closeChatBtn.style.opacity="0.7");
+  closeChatBtn.addEventListener("click",()=>{
+    win.classList.remove("angel-chat-open");
+    setTimeout(()=>{
+      win.style.display = "none";
+      chatOpen = false;
+      showLabel();
+    }, 350);
+  });
+  win.appendChild(closeChatBtn);
+
+  // Toggle ventana (sin focus automático en móvil)
+  function isMobile() {
+    return /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i.test(navigator.userAgent);
+  }
   btn.addEventListener("click", () => {
     const opening = win.style.display === "none";
-    win.style.display = opening ? "flex" : "none";
-    chatOpen = opening;
     if (opening) {
-      inputEl.focus();
+      win.style.display = "flex";
+      setTimeout(()=>win.classList.add("angel-chat-open"), 10);
+      chatOpen = true;
       hideLabel();
+      // Solo focus automático en desktop
+      if (!isMobile()) {
+        inputEl.focus();
+      }
     } else {
-      showLabel();
+      win.classList.remove("angel-chat-open");
+      setTimeout(()=>{
+        win.style.display = "none";
+        chatOpen = false;
+        showLabel();
+      }, 350);
     }
   });
+  // Ajustar alto del chat dinámicamente en móvil cuando aparece el teclado
+  if (isMobile()) {
+    let initialVH = window.innerHeight;
+    function adjustChatHeight() {
+      // Cuando el teclado aparece, window.innerHeight disminuye
+      const vh = window.innerHeight;
+      win.style.height = Math.min(550, vh - 40) + "px";
+    }
+    window.addEventListener("resize", adjustChatHeight);
+    // Restaurar alto al cerrar el teclado
+    inputEl.addEventListener("blur", () => {
+      win.style.height = "550px";
+    });
+  }
 
   // Posicionar la etiqueta cerca del botón
   function positionLabel() {
