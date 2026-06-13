@@ -3,438 +3,250 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Remote Mouse - Proyecto</title>
-    
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' https:; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https:; connect-src 'self' https:;">
-    
+    <title>Project - Angel</title>
+    <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
     <link rel="stylesheet" href="../assets/css/fontawesome.css">
-    <link rel="stylesheet" href="../assets/css/templatemo-style.css">
-    <link rel="stylesheet" href="../assets/css/owl.css">
-    <link rel="stylesheet" href="../assets/css/lightbox.css">
-    <link rel="stylesheet" href="../assets/css/custom-styles.css">
+    <link rel="stylesheet" href="../assets/css/portfolio.css">
+    <link rel="stylesheet" href="../assets/css/project.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   </head>
-  <body>
-    <div id="page-wraper">
-      <div id="sidebar-container"></div>
-      <div class="project-content">
-        <section class="section project-details">
-          <div class="container">
-            <div class="section-heading">
-              <h2 data-i18n="remoteMouseProject.title">Remote Mouse</h2>
-              <div class="line-dec"></div>
-              <span data-i18n="remoteMouseProject.subtitle">Control remoto de mouse y teclado desde dispositivos móviles via WebSocket</span>
+  <body class="project-page">
+    <div id="sidebar-container"></div>
+    <div id="main-content">
+      <div class="container">
+        
+        <div class="proj-hero">
+          <a href="../index.html#section3" class="proj-hero-back">
+            <i class="fas fa-arrow-left"></i> <span data-i18n="remoteMouseProject.navigation.backToPortfolio">Volver al Portafolio</span>
+          </a>
+          <div class="proj-hero-meta">
+            <span class="proj-category-badge red">Networking</span>
+          </div>
+          <h1 class="proj-hero-title" data-i18n="remoteMouseProject.title">Título</h1>
+          <p class="proj-hero-tagline" data-i18n="remoteMouseProject.subtitle">Subtítulo</p>
+          <div class="proj-hero-actions">
+            <a href="https://github.com/angeliteh" target="_blank" class="btn-secondary">
+              <i class="fab fa-github"></i> <span data-i18n="remoteMouseProject.resourceLinks.sourceCode">Ver Código</span>
+            </a>
+          </div>
+
+          <div class="proj-meta-row">
+            <div class="proj-meta-item">
+              <div class="proj-meta-label">Role</div>
+              <div class="proj-meta-value">Systems Dev</div>
             </div>
-
-            <!-- Project Preview -->
-            <div class="project-preview">
-              <div class="project-carousel">
-                <div class="carousel-container">
-                  <!-- Botón de pantalla completa -->
-                  <button class="carousel-fullscreen" id="carousel-fullscreen" title="Ver en pantalla completa">
-                    <i class="fas fa-expand"></i>
-                  </button>
-
-                  <!-- Slides del carrusel -->
-                  <div class="carousel-slides" id="carousel-slides">
-                    <div class="carousel-slide active">
-                      <img src="../assets/images/projects/mouse-remoto/image_1.png"
-                           alt="Remote Mouse - Interfaz Móvil Principal"
-                           loading="lazy">
-                    </div>
-                    <div class="carousel-slide">
-                      <img src="../assets/images/projects/mouse-remoto/image_2.png"
-                           alt="Remote Mouse - Servidor Desktop"
-                           loading="lazy">
-                    </div>
-                    <div class="carousel-slide">
-                      <img src="../assets/images/projects/mouse-remoto/image_3.png"
-                           alt="Remote Mouse - Configuración y Controles"
-                           loading="lazy">
-                    </div>
-                  </div>
-
-                  <!-- Controles del carrusel -->
-                  <button class="carousel-controls carousel-prev" id="carousel-prev">
-                    <i class="fas fa-chevron-left"></i>
-                  </button>
-                  <button class="carousel-controls carousel-next" id="carousel-next">
-                    <i class="fas fa-chevron-right"></i>
-                  </button>
-
-                  <!-- Indicadores -->
-                  <div class="carousel-indicators" id="carousel-indicators">
-                    <button class="carousel-indicator active" data-slide="0"></button>
-                    <button class="carousel-indicator" data-slide="1"></button>
-                    <button class="carousel-indicator" data-slide="2"></button>
-                  </div>
-
-                  <!-- Contador -->
-                  <div class="carousel-counter">
-                    <span id="current-slide">1</span> / <span id="total-slides">3</span>
-                  </div>
-                </div>
-
-                <!-- Métricas overlay -->
-                <div class="metrics-overlay">
-                  <div class="metric-card" tabindex="0">
-                    <i class="fas fa-tachometer-alt" aria-hidden="true"></i>
-                    <span data-i18n="remoteMouseProject.metrics.latency">Latencia < 8ms</span>
-                  </div>
-                  <div class="metric-card" tabindex="0">
-                    <i class="fas fa-mobile-alt" aria-hidden="true"></i>
-                    <span data-i18n="remoteMouseProject.metrics.platforms">6 plataformas</span>
-                  </div>
-                  <div class="metric-card" tabindex="0">
-                    <i class="fas fa-check-circle" aria-hidden="true"></i>
-                    <span data-i18n="remoteMouseProject.metrics.accuracy">99.9% precisión</span>
-                  </div>
-                </div>
-              </div>
+            <div class="proj-meta-item">
+              <div class="proj-meta-label">Timeline</div>
+              <div class="proj-meta-value">3 Weeks</div>
             </div>
-
-
-
-            <!-- Project Overview -->
-            <div class="project-section overview">
-              <h3 data-i18n="remoteMouseProject.sections.overview">Descripción General</h3>
-              <p data-i18n="remoteMouseProject.sections.overviewText">
-                Aplicación multiplataforma que permite controlar el mouse y teclado de una PC desde un dispositivo móvil usando comunicación WebSocket en tiempo real.
-                Incluye un servidor Python con interfaz gráfica para PC y una aplicación Flutter para dispositivos móviles con soporte para Android, iOS, Web, Windows, macOS y Linux.
-                Ofrece control preciso del cursor, clics, scroll, escritura de texto y combinaciones de teclas con retroalimentación háptica y configuración personalizable.
-              </p>
-              <div class="key-features">
-                <div class="feature-item" tabindex="0">
-                  <i class="fas fa-mouse" aria-hidden="true"></i>
-                  <h4 data-i18n="remoteMouseProject.features.mouseControl.title">Control de Mouse Avanzado</h4>
-                  <p data-i18n="remoteMouseProject.features.mouseControl.desc">Movimiento preciso con buffer de optimización, clics y scroll con sensibilidad ajustable</p>
-                </div>
-                <div class="feature-item" tabindex="0">
-                  <i class="fas fa-keyboard" aria-hidden="true"></i>
-                  <h4 data-i18n="remoteMouseProject.features.virtualKeyboard.title">Teclado Virtual Inteligente</h4>
-                  <p data-i18n="remoteMouseProject.features.virtualKeyboard.desc">Escritura en tiempo real, teclas especiales y combinaciones (Ctrl+C, Alt+Tab)</p>
-                </div>
-                <div class="feature-item" tabindex="0">
-                  <i class="fas fa-mobile-alt" aria-hidden="true"></i>
-                  <h4 data-i18n="remoteMouseProject.features.multiplatform.title">Interfaz Multiplataforma</h4>
-                  <p data-i18n="remoteMouseProject.features.multiplatform.desc">Flutter nativo para móviles y servidor Python GUI, soporte para 6 plataformas</p>
-                </div>
-              </div>
+            <div class="proj-meta-item">
+              <div class="proj-meta-label">Tech</div>
+              <div class="proj-meta-value">C++, Android</div>
             </div>
-
-            <!-- Technical Details -->
-            <div class="project-section technical">
-              <h3 data-i18n="remoteMouseProject.sections.technicalDetails">Detalles Técnicos</h3>
-              <div class="tech-details-grid">
-                <div class="detail-card architecture">
-                  <h4><i class="fas fa-layer-group"></i> <span data-i18n="remoteMouseProject.techDetails.architecture.title">Arquitectura</span></h4>
-                  <ul>
-                    <li data-i18n="remoteMouseProject.techDetails.architecture.items.0">Cliente-Servidor con WebSocket</li>
-                    <li data-i18n="remoteMouseProject.techDetails.architecture.items.1">MVC en Flutter con servicios modulares</li>
-                    <li data-i18n="remoteMouseProject.techDetails.architecture.items.2">Separación clara servidor Python/cliente Flutter</li>
-                    <li data-i18n="remoteMouseProject.techDetails.architecture.items.3">Protocolo de comandos personalizado</li>
-                  </ul>
-                </div>
-                <div class="detail-card optimization">
-                  <h4><i class="fas fa-bolt"></i> <span data-i18n="remoteMouseProject.techDetails.optimization.title">Optimización</span></h4>
-                  <ul>
-                    <li data-i18n="remoteMouseProject.techDetails.optimization.items.0">Buffer de movimientos con timer de 8ms</li>
-                    <li data-i18n="remoteMouseProject.techDetails.optimization.items.1">WebSocket bidireccional optimizado</li>
-                    <li data-i18n="remoteMouseProject.techDetails.optimization.items.2">Deltas de movimiento acumulados</li>
-                    <li data-i18n="remoteMouseProject.techDetails.optimization.items.3">Configuración persistente local</li>
-                  </ul>
-                </div>
-                <div class="detail-card features">
-                  <h4><i class="fas fa-star"></i> <span data-i18n="remoteMouseProject.techDetails.features.title">Características Avanzadas</span></h4>
-                  <ul>
-                    <li data-i18n="remoteMouseProject.techDetails.features.items.0">Retroalimentación háptica</li>
-                    <li data-i18n="remoteMouseProject.techDetails.features.items.1">Bandeja del sistema</li>
-                    <li data-i18n="remoteMouseProject.techDetails.features.items.2">Inicio automático</li>
-                    <li data-i18n="remoteMouseProject.techDetails.features.items.3">8 tipos de comandos diferentes</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <!-- Tech Stack -->
-            <div class="project-section tech-stack">
-              <h3 data-i18n="remoteMouseProject.sections.techStack">Stack Tecnológico</h3>
-              <div class="tech-grid">
-                <div class="tech-category mobile">
-                  <h4><i class="fas fa-mobile-alt"></i> <span data-i18n="remoteMouseProject.techCategories.frontend">Frontend</span></h4>
-                  <div class="tech-items">
-                    <span class="tech-badge" data-i18n="tech.flutter">Flutter/Dart</span>
-                    <span class="tech-badge">Material Design 3</span>
-                    <span class="tech-badge">WebSocket Channel</span>
-                    <span class="tech-badge">HapticFeedback</span>
-                  </div>
-                </div>
-                <div class="tech-category backend">
-                  <h4><i class="fas fa-server"></i> <span data-i18n="remoteMouseProject.techCategories.backend">Backend</span></h4>
-                  <div class="tech-items">
-                    <span class="tech-badge" data-i18n="tech.python">Python 3.7+</span>
-                    <span class="tech-badge">WebSockets</span>
-                    <span class="tech-badge">asyncio</span>
-                    <span class="tech-badge">PyAutoGUI</span>
-                    <span class="tech-badge">Tkinter</span>
-                  </div>
-                </div>
-                <div class="tech-category tools">
-                  <h4><i class="fas fa-tools"></i> <span data-i18n="remoteMouseProject.techCategories.tools">Herramientas</span></h4>
-                  <div class="tech-items">
-                    <span class="tech-badge">PyInstaller</span>
-                    <span class="tech-badge">Flutter SDK</span>
-                    <span class="tech-badge">SharedPreferences</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Challenges and Solutions -->
-            <div class="project-section challenges">
-              <h3 data-i18n="remoteMouseProject.sections.challenges">Desafíos y Soluciones</h3>
-              <div class="challenges-grid">
-                <div class="challenge-card">
-                  <div class="challenge-header">
-                    <i class="fas fa-exclamation-circle"></i>
-                    <h4 data-i18n="remoteMouseProject.challengesList.latencyMovements.title">Latencia en Movimientos</h4>
-                  </div>
-                  <div class="challenge-content">
-                    <p class="problem" data-i18n="remoteMouseProject.challengesList.latencyMovements.problem">Los movimientos individuales del mouse generaban demasiados comandos WebSocket.</p>
-                    <p class="solution">
-                      <i class="fas fa-check-circle"></i>
-                      <span data-i18n="remoteMouseProject.challengesList.latencyMovements.solution">Buffer de movimientos con timer de 8ms para acumular y enviar deltas optimizados.</span>
-                    </p>
-                  </div>
-                </div>
-                <div class="challenge-card">
-                  <div class="challenge-header">
-                    <i class="fas fa-exclamation-circle"></i>
-                    <h4 data-i18n="remoteMouseProject.challengesList.textSync.title">Sincronización de Texto</h4>
-                  </div>
-                  <div class="challenge-content">
-                    <p class="problem" data-i18n="remoteMouseProject.challengesList.textSync.problem">Detectar cambios de texto (añadir/borrar) sin perder sincronización.</p>
-                    <p class="solution">
-                      <i class="fas fa-check-circle"></i>
-                      <span data-i18n="remoteMouseProject.challengesList.textSync.solution">Sistema de tracking con comparación de longitudes y envío diferencial de comandos.</span>
-                    </p>
-                  </div>
-                </div>
-                <div class="challenge-card">
-                  <div class="challenge-header">
-                    <i class="fas fa-exclamation-circle"></i>
-                    <h4 data-i18n="remoteMouseProject.challengesList.crossPlatform.title">Compatibilidad Multiplataforma</h4>
-                  </div>
-                  <div class="challenge-content">
-                    <p class="problem" data-i18n="remoteMouseProject.challengesList.crossPlatform.problem">Diferentes comportamientos de SO para control de mouse/teclado.</p>
-                    <p class="solution">
-                      <i class="fas fa-check-circle"></i>
-                      <span data-i18n="remoteMouseProject.challengesList.crossPlatform.solution">Abstracción con PyAutoGUI y configuración específica por plataforma.</span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Project Information -->
-            <div class="project-section resources">
-              <h3 data-i18n="remoteMouseProject.sections.resources">Información del Proyecto</h3>
-              <div class="resources-grid">
-                <div class="resource-info github">
-                  <i class="fab fa-github"></i>
-                  <span data-i18n="remoteMouseProject.resourceLinks.localCode">Código Local</span>
-                  <small data-i18n="remoteMouseProject.resourceLinks.localCodeDesc">Aplicación móvil y servidor desktop</small>
-                </div>
-                <div class="resource-info docs">
-                  <i class="fas fa-book"></i>
-                  <span data-i18n="remoteMouseProject.resourceLinks.readme">Documentación</span>
-                  <small data-i18n="remoteMouseProject.resourceLinks.readmeDesc">Guía de instalación y configuración</small>
-                </div>
-                <div class="resource-info production">
-                  <i class="fas fa-desktop"></i>
-                  <span data-i18n="remoteMouseProject.resourceLinks.executable">Aplicación Desktop</span>
-                  <small data-i18n="remoteMouseProject.resourceLinks.executableDesc">Servidor ejecutable para Windows</small>
-                </div>
-              </div>
-            </div>
-
-            <div class="project-navigation">
-              <a href="scraping-productos.html" class="prev-project">
-                <i class="fas fa-arrow-left"></i> <span data-i18n="remoteMouseProject.navigation.prevProject">Proyecto Anterior: RTX Web Scraper</span>
-              </a>
-              <a href="social-media-downloader.html" class="next-project">
-                <span data-i18n="remoteMouseProject.navigation.nextProject">Siguiente Proyecto: Social Media Downloader</span> <i class="fas fa-arrow-right"></i>
-              </a>
+            <div class="proj-meta-item">
+              <div class="proj-meta-label">Impact</div>
+              <div class="proj-meta-value">Latencia < 8ms</div>
             </div>
           </div>
-        </section>
+        </div>
+
+        <div class="proj-content">
+          <div class="proj-content-grid">
+            <main class="proj-main">
+              
+              <div class="proj-carousel-wrap">
+                <div class="carousel-container">
+                  <div class="carousel-slides count-2" id="carousel-slides">
+                    <div class="carousel-slide active"><img src="../assets/images/projects/mouse-remoto/image_1.png" alt="Screenshot"></div>
+<div class="carousel-slide"><img src="../assets/images/projects/mouse-remoto/image_2.png" alt="Screenshot"></div>
+
+                  </div>
+                  <button class="carousel-btn prev" id="carousel-prev"><i class="fas fa-chevron-left"></i></button>
+                  <button class="carousel-btn next" id="carousel-next"><i class="fas fa-chevron-right"></i></button>
+                  <button class="carousel-fullscreen-btn" id="carousel-fullscreen"><i class="fas fa-expand"></i></button>
+                  <div class="carousel-counter"><span id="current-slide">1</span> / 2</div>
+                </div>
+                <div class="carousel-indicators-row" id="carousel-indicators">
+                  <button class="carousel-dot active" data-slide="0"></button>
+<button class="carousel-dot" data-slide="1"></button>
+
+                </div>
+              </div>
+
+              <div class="content-block">
+                <div class="content-block-title" data-i18n="remoteMouseProject.sections.overview">Overview</div>
+                <p data-i18n="remoteMouseProject.sections.overviewText">Descripción</p>
+              </div>
+
+              <div class="demo-tabs-wrap">
+                <div class="demo-tabs-header">
+                  <button class="demo-tab-btn active" data-tab="demo"><i class="fas fa-play-circle"></i> <span data-i18n="remoteMouseProject.sections.videoDemo">Video Demo</span></button>
+                  <button class="demo-tab-btn" data-tab="arch"><i class="fas fa-layer-group"></i> Architecture</button>
+                </div>
+                <div class="demo-tab-pane active" id="pane-demo">
+                  <div class="youtube-wrap">
+                    <iframe src="https://www.youtube.com/embed/X1v3m10vQyY" allowfullscreen></iframe>
+                  </div>
+                  <div class="video-caption">
+                    <h4 data-i18n="remoteMouseProject.video.title">Demostración</h4>
+                    <p data-i18n="remoteMouseProject.video.description">Observa el sistema en acción.</p>
+                  </div>
+                </div>
+                <div class="demo-tab-pane" id="pane-arch">
+                  <div class="arch-block">
+                    <pre>
+<span class="purple">Core Layer</span>
+    └─ Backend & Analytics
+
+<span class="blue">Service Layer</span>
+    └─ API & Processing
+
+<span class="accent">Presentation Layer</span>
+    └─ Frontend & Interfaces</pre>
+                  </div>
+                </div>
+              </div>
+
+              <div class="content-block">
+                <div class="content-block-title" data-i18n="remoteMouseProject.sections.challenges">Technical Challenges</div>
+                <div class="challenges-list">
+                  <div class="challenge-card">
+                    <div class="challenge-header">
+                      <i class="fas fa-exclamation-triangle"></i>
+                      <h4 data-i18n="remoteMouseProject.challengesList.challenge1.title">Desafío 1</h4>
+                    </div>
+                    <div class="challenge-body">
+                      <div class="challenge-problem">
+                        <span class="challenge-label">Problem</span>
+                        <p data-i18n="remoteMouseProject.challengesList.challenge1.problem">Problema</p>
+                      </div>
+                      <div class="challenge-solution">
+                        <span class="challenge-label">Solution</span>
+                        <p data-i18n="remoteMouseProject.challengesList.challenge1.solution">Solución</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="challenge-card">
+                    <div class="challenge-header">
+                      <i class="fas fa-exclamation-triangle"></i>
+                      <h4 data-i18n="remoteMouseProject.challengesList.challenge2.title">Desafío 2</h4>
+                    </div>
+                    <div class="challenge-body">
+                      <div class="challenge-problem">
+                        <span class="challenge-label">Problem</span>
+                        <p data-i18n="remoteMouseProject.challengesList.challenge2.problem">Problema</p>
+                      </div>
+                      <div class="challenge-solution">
+                        <span class="challenge-label">Solution</span>
+                        <p data-i18n="remoteMouseProject.challengesList.challenge2.solution">Solución</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="proj-navigation">
+                <a href="licencias-medicas.html" class="proj-nav-link">
+                  <i class="fas fa-arrow-left"></i>
+                  <div><span class="proj-nav-label">Previous</span>Licencias</div>
+                </a>
+                <a href="social-media-downloader.html" class="proj-nav-link next">
+                  <i class="fas fa-arrow-right"></i>
+                  <div><span class="proj-nav-label">Next</span>SM Downloader</div>
+                </a>
+              </div>
+            </main>
+
+            <aside class="proj-sidebar">
+              <div class="sidebar-widget">
+                <div class="sidebar-widget-title" data-i18n="remoteMouseProject.sections.techStack">Tech Stack</div>
+                <div class="stack-list">
+                  <div class="stack-row"><span class="label">Main Tech</span><span class="value">C++, Android</span></div>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
       </div>
+    </div>
+
+    <div class="carousel-modal" id="carousel-modal">
+      <button class="carousel-modal-close" id="carousel-modal-close"><i class="fas fa-times"></i></button>
+      <button class="carousel-modal-nav carousel-modal-prev" id="carousel-modal-prev"><i class="fas fa-chevron-left"></i></button>
+      <button class="carousel-modal-nav carousel-modal-next" id="carousel-modal-next"><i class="fas fa-chevron-right"></i></button>
+      <div class="carousel-modal-counter"><span id="modal-current-slide">1</span> / 2</div>
+      <img id="carousel-modal-img" src="" alt="Fullscreen view">
     </div>
 
     <!-- Scripts -->
     <script src="../vendor/jquery/jquery.min.js"></script>
-    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="../assets/js/isotope.min.js"></script>
-    <script src="../assets/js/owl-carousel.js"></script>
-    <script src="../assets/js/lightbox.js"></script>
-    <script src="../assets/js/custom.js"></script>
-    <script src="../assets/js/theme-switcher.js"></script>
     <script src="../assets/js/template-loader.js"></script>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', async function() {
-        try {
-          console.log('Iniciando carga de componentes...');
-          // Primero actualizar las rutas CSS
-          TemplateLoader.updateCSSPaths();
-          // Luego cargar el sidebar
-          await TemplateLoader.loadSidebar();
-        } catch (error) {
-          console.error('Error durante la inicialización:', error);
-        }
-      });
-    </script>
-
-    <!-- Scripts de i18n -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/22.4.9/i18next.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next-http-backend/2.1.1/i18nextHttpBackend.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-i18next/1.2.1/jquery-i18next.min.js"></script>
-    <!-- Scripts personalizados de i18n -->
     <script src="../assets/js/i18n-config.js"></script>
     <script src="../assets/js/language-switcher.js"></script>
 
-    <!-- Script para funcionalidad del carousel -->
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // Elementos del carrusel
+      document.addEventListener('DOMContentLoaded', async () => {
+        await TemplateLoader.loadSidebar();
+        
+        // Carousel Logic
         const slides = document.getElementById('carousel-slides');
-        const nextBtn = document.getElementById('carousel-next');
-        const prevBtn = document.getElementById('carousel-prev');
-        const indicators = document.querySelectorAll('.carousel-indicator');
-        const currentSlideSpan = document.getElementById('current-slide');
-        const fullscreenBtn = document.getElementById('carousel-fullscreen');
+        const dots = document.querySelectorAll('.carousel-dot');
+        const counter = document.getElementById('current-slide');
+        let index = 0; const total = 2;
+
+        function update() {
+          slides.style.transform = `translateX(-${index * (100/total)}%)`;
+          dots.forEach((d, i) => d.classList.toggle('active', i === index));
+          counter.textContent = index + 1;
+        }
+        document.getElementById('carousel-next')?.addEventListener('click', () => { index = (index + 1) % total; update(); });
+        document.getElementById('carousel-prev')?.addEventListener('click', () => { index = (index - 1 + total) % total; update(); });
+        dots.forEach((d, i) => d.addEventListener('click', () => { index = i; update(); }));
+
+        // Tabs Logic
+        document.querySelectorAll('.demo-tab-btn').forEach(btn => {
+          btn.addEventListener('click', () => {
+            document.querySelectorAll('.demo-tab-btn').forEach(b => b.classList.remove('active'));
+            document.querySelectorAll('.demo-tab-pane').forEach(p => p.classList.remove('active'));
+            btn.classList.add('active');
+            document.getElementById('pane-' + btn.dataset.tab).classList.add('active');
+          });
+        });
+
+        // Fullscreen Modal Logic
         const modal = document.getElementById('carousel-modal');
         const modalImg = document.getElementById('carousel-modal-img');
-        const modalClose = document.getElementById('carousel-modal-close');
-
-        let currentSlide = 0;
-        const totalSlides = 3;
-
-        // Array con las rutas de las imágenes
-        const imageUrls = [
-          '../assets/images/projects/mouse-remoto/image_1.png',
-          '../assets/images/projects/mouse-remoto/image_2.png',
-          '../assets/images/projects/mouse-remoto/image_3.png'
-        ];
-
-        function updateCarousel() {
-          // Mover slides (33.33% por slide para 3 imágenes)
-          const translateX = -currentSlide * 33.33;
-          slides.style.transform = `translateX(${translateX}%)`;
-
-          // Actualizar indicadores
-          indicators.forEach((indicator, index) => {
-            indicator.classList.toggle('active', index === currentSlide);
-          });
-
-          // Actualizar contador
-          currentSlideSpan.textContent = currentSlide + 1;
+        const modalCounter = document.getElementById('modal-current-slide');
+        
+        function updateModal() {
+          modalImg.src = document.querySelectorAll('.carousel-slide img')[index].src;
+          modalCounter.textContent = index + 1;
         }
 
-        function nextSlide() {
-          currentSlide = (currentSlide + 1) % totalSlides;
-          updateCarousel();
-        }
-
-        function prevSlide() {
-          currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-          updateCarousel();
-        }
-
-        function goToSlide(slideIndex) {
-          currentSlide = slideIndex;
-          updateCarousel();
-        }
-
-        // Event listeners
-        if (nextBtn) nextBtn.addEventListener('click', nextSlide);
-        if (prevBtn) prevBtn.addEventListener('click', prevSlide);
-
-        indicators.forEach((indicator, index) => {
-          indicator.addEventListener('click', () => goToSlide(index));
+        document.getElementById('carousel-fullscreen')?.addEventListener('click', () => {
+          updateModal();
+          modal.classList.add('active');
         });
 
-        // Navegación con teclado
-        document.addEventListener('keydown', (e) => {
-          if (e.key === 'ArrowLeft') {
-            prevSlide();
-          } else if (e.key === 'ArrowRight') {
-            nextSlide();
-          }
+        document.getElementById('carousel-modal-close')?.addEventListener('click', () => {
+          modal.classList.remove('active');
         });
 
-        // Funcionalidad de pantalla completa
-        if (fullscreenBtn) {
-          fullscreenBtn.addEventListener('click', function() {
-            if (modal && modalImg) {
-              modalImg.src = imageUrls[currentSlide];
-              modalImg.alt = document.querySelectorAll('.carousel-slide img')[currentSlide].alt;
-              modal.classList.add('active');
-              document.body.style.overflow = 'hidden';
-            }
-          });
-        }
+        document.getElementById('carousel-modal-next')?.addEventListener('click', () => {
+          index = (index + 1) % total;
+          updateModal();
+          update();
+        });
 
-        // Inicializar carrusel
-        updateCarousel();
+        document.getElementById('carousel-modal-prev')?.addEventListener('click', () => {
+          index = (index - 1 + total) % total;
+          updateModal();
+          update();
+        });
       });
     </script>
-
-    <!-- CSS específico para carousel de 3 imágenes -->
-    <style>
-      .carousel-slides {
-        width: 300% !important; /* 3 imágenes */
-      }
-      .carousel-slide {
-        width: 33.33% !important; /* 100% / 3 */
-      }
-
-        // Cerrar modal
-        if (modalClose) {
-          modalClose.addEventListener('click', function() {
-            if (modal) {
-              modal.classList.remove('active');
-              document.body.style.overflow = '';
-            }
-          });
-        }
-
-        // Cerrar modal con ESC
-        document.addEventListener('keydown', function(e) {
-          if (e.key === 'Escape' && modal && modal.classList.contains('active')) {
-            modal.classList.remove('active');
-            document.body.style.overflow = '';
-          }
-        });
-
-        // Cerrar modal clickeando fuera de la imagen
-        if (modal) {
-          modal.addEventListener('click', function(e) {
-            if (e.target === modal) {
-              modal.classList.remove('active');
-              document.body.style.overflow = '';
-            }
-          });
-        }
-      });
-    </script>
-
-    <!-- Modal de pantalla completa -->
-    <div class="carousel-modal" id="carousel-modal">
-      <button class="carousel-modal-close" id="carousel-modal-close">
-        <i class="fas fa-times"></i>
-      </button>
-      <img id="carousel-modal-img" src="" alt="Imagen en pantalla completa">
-    </div>
   </body>
 </html>

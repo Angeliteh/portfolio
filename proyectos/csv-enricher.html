@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="CSV Enricher — AI-powered B2B SaaS platform for intelligent CSV data enrichment. Built with FastAPI, React, Stripe and OpenAI. Case study by Angel Payan."
+    />
+    <title>CSV Enricher · Angel Payan</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/fontawesome.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/portfolio.css" />
+    <link rel="stylesheet" href="../assets/css/project.css" />
+    <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg" />
+  </head>
+
+  <body class="project-page">
+    <div id="page-wraper">
+      <div id="sidebar-container"></div>
+
+      <main id="main-content">
+
+        <!-- ── PROJECT HERO ── -->
+        <div class="proj-hero">
+          <div class="container">
+
+            <a href="../index.html" class="proj-hero-back">
+              <i class="fas fa-arrow-left"></i> Back to portfolio
+            </a>
+
+            <div class="proj-hero-meta">
+              <span class="proj-category-badge blue">B2B SaaS</span>
+              <span class="proj-category-badge blue">AI &amp; Data</span>
+              <span class="proj-category-badge green">Live in Production</span>
+            </div>
+
+            <h1 class="proj-hero-title">CSV Enricher</h1>
+
+            <p class="proj-hero-tagline">
+              An AI-powered SaaS platform that transforms hours of manual spreadsheet processing
+              into a 2-minute automated pipeline — without requiring users to write a single prompt.
+            </p>
+
+            <div class="proj-hero-actions">
+              <a href="https://csvanalyst.com/" target="_blank" class="btn-primary">
+                <i class="fas fa-external-link-alt"></i> Visit csvanalyst.com
+              </a>
+              <a href="../index.html#section2" class="btn-secondary">
+                ← All products
+              </a>
+            </div>
+
+            <div class="proj-meta-row">
+              <div class="proj-meta-item">
+                <div class="proj-meta-label">Type</div>
+                <div class="proj-meta-value">B2B SaaS</div>
+              </div>
+              <div class="proj-meta-item">
+                <div class="proj-meta-label">Status</div>
+                <div class="proj-meta-value">✦ Live</div>
+              </div>
+              <div class="proj-meta-item">
+                <div class="proj-meta-label">Monetization</div>
+                <div class="proj-meta-value">Stripe Subscriptions</div>
+              </div>
+              <div class="proj-meta-item">
+                <div class="proj-meta-label">Built by</div>
+                <div class="proj-meta-value">Solo — end to end</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ── CASE STUDY CONTENT ── -->
+        <div class="proj-content">
+          <div class="container">
+            <div class="proj-content-grid">
+
+              <!-- ─ MAIN COLUMN ─ -->
+              <div class="proj-main">
+
+                <!-- Screenshot carousel (add images to assets/images/projects/csv-enricher/) -->
+                <div class="content-block">
+                  <div class="content-block-title">Product Screenshots</div>
+
+                  <div class="proj-carousel-wrap" id="proj-carousel">
+                    <div class="carousel-container">
+                      <button class="carousel-fullscreen-btn" id="fs-btn" title="Fullscreen"><i class="fas fa-expand"></i></button>
+                      <div class="carousel-counter"><span id="slide-cur">1</span> / <span id="slide-tot">1</span></div>
+
+                      <div class="carousel-slides count-1" id="carousel-slides">
+                        <div class="carousel-slide">
+                          <!-- Placeholder: drop real screenshots to assets/images/projects/csv-enricher/ -->
+                          <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;color:var(--text-subtle);font-family:var(--mono);font-size:13px;padding:48px;text-align:center;">
+                            <i class="fas fa-image" style="font-size:32px;opacity:0.3;"></i>
+                            <span>Screenshots coming soon</span>
+                            <span style="font-size:11px;">Drop images to assets/images/projects/csv-enricher/</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <button class="carousel-btn prev" id="car-prev"><i class="fas fa-chevron-left"></i></button>
+                      <button class="carousel-btn next" id="car-next"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <div class="carousel-indicators-row" id="car-dots"></div>
+                  </div>
+                </div>
+
+                <!-- Live product demo tabs -->
+                <div class="content-block">
+                  <div class="content-block-title">Live Product</div>
+
+                  <div class="demo-tabs-wrap">
+                    <div class="demo-tabs-header">
+                      <button class="demo-tab-btn active" data-tab="live">
+                        <i class="fas fa-globe"></i> Live Product
+                      </button>
+                      <button class="demo-tab-btn" data-tab="guide">
+                        <i class="fas fa-book-open"></i> Technical Guide
+                      </button>
+                    </div>
+
+                    <div class="demo-tab-pane active" id="tab-live" style="display:flex;flex-direction:column;gap:14px;">
+                      <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:24px;display:flex;flex-direction:column;gap:12px;">
+                        <div style="font-size:13px;color:var(--text-muted);">
+                          CSV Enricher is live and in production at <strong style="color:var(--text);">csvanalyst.com</strong>.
+                          You can create a free account, upload a sample CSV, and run the Resume Screening template
+                          in under 2 minutes — no credit card required for the initial trial.
+                        </div>
+                        <a href="https://csvanalyst.com/" target="_blank" class="btn-primary" style="width:fit-content;">
+                          <i class="fas fa-external-link-alt"></i> Open csvanalyst.com
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="demo-tab-pane" id="tab-guide">
+                      <div style="display:flex;flex-direction:column;gap:16px;">
+                        <h3 style="font-size:15px;font-weight:600;color:var(--text);margin:0;">How it works in 3 steps</h3>
+                        <ol style="color:var(--text-muted);font-size:13.5px;line-height:2;padding-left:20px;">
+                          <li><strong>Upload CSV</strong> — any spreadsheet with text columns (resumes, leads, tickets, keywords)</li>
+                          <li><strong>Set your context</strong> — fill the MyProfile form with your evaluation criteria once. Reuse it forever.</li>
+                          <li><strong>Run the template</strong> — the AI processes every row using your context and returns enriched output as a downloadable CSV</li>
+                        </ol>
+                        <h3 style="font-size:15px;font-weight:600;color:var(--text);margin:0;">Available templates</h3>
+                        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+                          <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:6px;padding:10px 14px;font-size:12.5px;color:var(--text-muted);"><i class="fas fa-user-tie" style="color:var(--blue);margin-right:8px;"></i>Resume Screening</div>
+                          <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:6px;padding:10px 14px;font-size:12.5px;color:var(--text-muted);"><i class="fas fa-bullseye" style="color:var(--blue);margin-right:8px;"></i>Lead Enrichment</div>
+                          <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:6px;padding:10px 14px;font-size:12.5px;color:var(--text-muted);"><i class="fas fa-file-invoice" style="color:var(--blue);margin-right:8px;"></i>Invoice Processing</div>
+                          <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:6px;padding:10px 14px;font-size:12.5px;color:var(--text-muted);"><i class="fas fa-tags" style="color:var(--blue);margin-right:8px;"></i>Keyword Classification</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Problem -->
+                <div class="content-block">
+                  <div class="content-block-title">The Problem</div>
+                  <h3>AI is powerful. Using it on spreadsheets is painful.</h3>
+                  <p>
+                    Professionals in HR, sales, finance, and marketing deal with hundreds or thousands
+                    of rows of unstructured CSV data every week. The manual process — reading each row,
+                    applying judgment, writing a result — is slow, inconsistent, and impossible to scale.
+                  </p>
+                  <p>
+                    Existing solutions either require technical prompt engineering skills most users
+                    don't have, or are so generic they can't adapt to a specific company's criteria
+                    and workflows. The gap between "I have this data" and "I need this intelligence
+                    applied to it" was enormous.
+                  </p>
+                </div>
+
+                <!-- Solution -->
+                <div class="content-block">
+                  <div class="content-block-title">The Solution</div>
+                  <h3>Business context-aware AI pipelines, no code required.</h3>
+                  <p>
+                    CSV Enricher lets users define their business context once (through a MyProfile
+                    form) and reuse it across hundreds of CSV runs. The platform translates those
+                    visual forms into optimized LLM prompts — invisibly, correctly, and consistently.
+                  </p>
+                  <p>
+                    A recruiter who needs to screen 500 resumes defines their ideal candidate profile
+                    once, uploads their CSV, and gets back a ranked list with match scores, reasoning,
+                    and next-step recommendations — in under 2 minutes.
+                  </p>
+                </div>
+
+                <!-- Key Features -->
+                <div class="content-block">
+                  <div class="content-block-title">Key Features</div>
+
+                  <div class="feature-list">
+                    <div class="feature-item">
+                      <div class="feature-item-icon blue">
+                        <i class="fas fa-layer-group"></i>
+                      </div>
+                      <div class="feature-item-text">
+                        <strong>Reusable AI Templates</strong>
+                        <p>
+                          Industry-specific templates (Resume Screening, Lead Enrichment, Invoice
+                          Processing, Keyword Classification) that users can activate with one click.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="feature-item">
+                      <div class="feature-item-icon blue">
+                        <i class="fas fa-user-cog"></i>
+                      </div>
+                      <div class="feature-item-text">
+                        <strong>MyProfile — Context Injection Engine</strong>
+                        <p>
+                          A visual form where users define their business criteria. That context is
+                          automatically injected into every prompt, making the AI behave as an expert
+                          in their specific domain.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="feature-item">
+                      <div class="feature-item-icon blue">
+                        <i class="fas fa-bolt"></i>
+                      </div>
+                      <div class="feature-item-text">
+                        <strong>Batch Processing Pipeline</strong>
+                        <p>
+                          Large CSVs are split into optimized batches and processed without
+                          overwhelming the OpenAI API. Rate limiting, retry logic, and progress
+                          tracking included.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="feature-item">
+                      <div class="feature-item-icon green">
+                        <i class="fas fa-credit-card"></i>
+                      </div>
+                      <div class="feature-item-text">
+                        <strong>Full Stripe Monetization</strong>
+                        <p>
+                          Subscriptions (Starter &amp; Growth plans), credit-based usage billing,
+                          Stripe Checkout, and secure Webhook handling — fully integrated.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Architecture -->
+                <div class="content-block">
+                  <div class="content-block-title">Architecture</div>
+                  <div class="arch-block">
+                    <pre>
+<span class="accent">Frontend</span>  React + Vite + TailwindCSS
+          └─ Supabase JS (auth)
+          └─ Stripe.js (checkout)
+
+<span class="blue">Backend</span>   FastAPI (Python)
+          └─ SQLAlchemy ORM
+          └─ OpenAI API (batched prompt engine)
+          └─ Stripe Webhooks (billing events)
+          └─ slowapi (rate limiting)
+
+<span class="accent">Database</span>  PostgreSQL (production)
+          └─ Supabase (auth + storage)
+
+<span class="blue">Infra</span>     Cloudflare (CDN, DNS, WAF)
+          └─ VPS (Linux + Nginx + SSL)
+          └─ CORS, security headers</pre>
+                  </div>
+                </div>
+
+                <!-- Target Users -->
+                <div class="content-block">
+                  <div class="content-block-title">Who Uses It</div>
+                  <div class="feature-list">
+                    <div class="feature-item">
+                      <div class="feature-item-icon orange"><i class="fas fa-users"></i></div>
+                      <div class="feature-item-text">
+                        <strong>HR / Recruiting Teams</strong>
+                        <p>Mass resume screening with customizable match criteria.</p>
+                      </div>
+                    </div>
+                    <div class="feature-item">
+                      <div class="feature-item-icon orange"><i class="fas fa-bullseye"></i></div>
+                      <div class="feature-item-text">
+                        <strong>Sales &amp; Marketing</strong>
+                        <p>Lead scoring, enrichment, and intent classification at scale.</p>
+                      </div>
+                    </div>
+                    <div class="feature-item">
+                      <div class="feature-item-icon orange"><i class="fas fa-headset"></i></div>
+                      <div class="feature-item-text">
+                        <strong>Customer Support</strong>
+                        <p>Ticket categorization by urgency and sentiment for triage workflows.</p>
+                      </div>
+                    </div>
+                    <div class="feature-item">
+                      <div class="feature-item-icon orange"><i class="fas fa-search"></i></div>
+                      <div class="feature-item-text">
+                        <strong>SEO Agencies</strong>
+                        <p>Bulk keyword classification, search intent analysis at scale.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Future roadmap -->
+                <div class="content-block">
+                  <div class="content-block-title">Roadmap</div>
+                  <p>
+                    Planned features include real-time processing via WebSockets (replacing polling),
+                    native integrations with HubSpot, Salesforce, and Google Sheets, a conversational
+                    pipeline configurator, and parallel async processing via Celery/Redis for
+                    enterprise-scale datasets.
+                  </p>
+                </div>
+
+                <!-- Workflow -->
+                <div class="content-block">
+                  <div class="content-block-title">Processing Pipeline</div>
+                  <div class="workflow-steps">
+                    <div class="workflow-step">
+                      <div class="workflow-step-num">01</div>
+                      <div class="workflow-step-icon"><i class="fas fa-upload"></i></div>
+                      <h4>Upload CSV</h4>
+                      <p>Drag &amp; drop any spreadsheet with text content</p>
+                    </div>
+                    <div class="workflow-step">
+                      <div class="workflow-step-num">02</div>
+                      <div class="workflow-step-icon"><i class="fas fa-user-cog"></i></div>
+                      <h4>Set Context</h4>
+                      <p>MyProfile injects business criteria into every prompt</p>
+                    </div>
+                    <div class="workflow-step">
+                      <div class="workflow-step-num">03</div>
+                      <div class="workflow-step-icon"><i class="fas fa-bolt"></i></div>
+                      <h4>Batch Process</h4>
+                      <p>OpenAI API called in optimized batches with retry logic</p>
+                    </div>
+                    <div class="workflow-step">
+                      <div class="workflow-step-num">04</div>
+                      <div class="workflow-step-icon"><i class="fas fa-download"></i></div>
+                      <h4>Download Results</h4>
+                      <p>Enriched CSV ready in ~2 minutes</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Challenges -->
+                <div class="content-block">
+                  <div class="content-block-title">Technical Challenges &amp; Solutions</div>
+
+                  <div class="challenges-list">
+                    <div class="challenge-card">
+                      <div class="challenge-header">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <h4>Context Injection at Scale</h4>
+                      </div>
+                      <div class="challenge-body">
+                        <div class="challenge-problem">
+                          <span class="challenge-label">Problem</span>
+                          <p>Standard LLM wrappers produce generic results because they lack specific business logic. Users don't know how to write complex system prompts.</p>
+                        </div>
+                        <div class="challenge-solution">
+                          <span class="challenge-label">Solution</span>
+                          <p>The "MyProfile" engine. It translates a visual form (business criteria) into a highly optimized, structured meta-prompt injected into every batch invisibly.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="challenge-card">
+                      <div class="challenge-header">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <h4>API Rate Limiting &amp; Crashes</h4>
+                      </div>
+                      <div class="challenge-body">
+                        <div class="challenge-problem">
+                          <span class="challenge-label">Problem</span>
+                          <p>Sending a 5,000-row CSV directly to the OpenAI API causes immediate token limit errors, timeouts, and catastrophic failures.</p>
+                        </div>
+                        <div class="challenge-solution">
+                          <span class="challenge-label">Solution</span>
+                          <p>A resilient batch-processing queue via FastAPI. It chunks the CSV dynamically, monitors OpenAI headers, applies slowapi backoff, and retries failed chunks automatically.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Impact -->
+                <div class="content-block">
+                  <div class="content-block-title">Business Impact</div>
+
+                  <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                      <div class="testimonial-header">
+                        <div class="testimonial-avatar"><i class="fas fa-building"></i></div>
+                        <div>
+                          <div class="testimonial-name">HR &amp; Recruiting Teams</div>
+                          <div class="testimonial-role">Resume Screening Use Case</div>
+                        </div>
+                      </div>
+                      <p class="testimonial-quote">
+                        "Evaluating 500 applicants used to take a recruiter two full days of reading and manual scoring. The pipeline now scores and ranks them based on specific job criteria in under 2 minutes."
+                      </p>
+                      <div class="testimonial-metrics">
+                        <span class="metric-badge">Hours → 2 Mins</span>
+                        <span class="metric-badge orange">100% Consistency</span>
+                      </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                      <div class="testimonial-header">
+                        <div class="testimonial-avatar"><i class="fas fa-bolt"></i></div>
+                        <div>
+                          <div class="testimonial-name">Zero Prompt Engineering</div>
+                          <div class="testimonial-role">User Experience</div>
+                        </div>
+                      </div>
+                      <p class="testimonial-quote">
+                        "The biggest barrier to AI adoption in B2B is the blank text box. By utilizing pre-built industry templates, operators get enterprise-grade AI results without writing a single prompt."
+                      </p>
+                      <div class="testimonial-metrics">
+                        <span class="metric-badge blue">No-code AI</span>
+                        <span class="metric-badge purple">Template Driven</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Project navigation -->
+                <div class="proj-navigation">
+                  <a href="../index.html#section2" class="proj-nav-link">
+                    <i class="fas fa-arrow-left"></i>
+                    <div><span class="proj-nav-label">Back to</span>All Products</div>
+                  </a>
+                  <a href="vioagents.html" class="proj-nav-link next">
+                    <i class="fas fa-arrow-right"></i>
+                    <div><span class="proj-nav-label">Next product</span>VioAgents</div>
+                  </a>
+                </div>
+
+              </div><!-- /proj-main -->
+
+              <!-- ─ SIDEBAR ─ -->
+              <aside class="proj-sidebar">
+
+                <!-- CTA -->
+                <div class="sidebar-widget cta-widget">
+                  <div class="sidebar-widget-title">Try It</div>
+                  <a href="https://csvanalyst.com/" target="_blank" class="btn-primary">
+                    <i class="fas fa-external-link-alt"></i> Visit csvanalyst.com
+                  </a>
+                </div>
+
+                <!-- Stack -->
+                <div class="sidebar-widget">
+                  <div class="sidebar-widget-title">Tech Stack</div>
+                  <div class="stack-list">
+                    <div class="stack-row">
+                      <span class="label">Backend</span>
+                      <span class="value">FastAPI · Python</span>
+                    </div>
+                    <div class="stack-row">
+                      <span class="label">Frontend</span>
+                      <span class="value">React · Vite</span>
+                    </div>
+                    <div class="stack-row">
+                      <span class="label">Database</span>
+                      <span class="value">PostgreSQL · Supabase</span>
+                    </div>
+                    <div class="stack-row">
+                      <span class="label">AI</span>
+                      <span class="value">OpenAI API</span>
+                    </div>
+                    <div class="stack-row">
+                      <span class="label">Payments</span>
+                      <span class="value">Stripe</span>
+                    </div>
+                    <div class="stack-row">
+                      <span class="label">Infra</span>
+                      <span class="value">Cloudflare · VPS</span>
+                    </div>
+                    <div class="stack-row">
+                      <span class="label">Auth</span>
+                      <span class="value">Supabase Auth</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Key facts -->
+                <div class="sidebar-widget">
+                  <div class="sidebar-widget-title">Key Facts</div>
+                  <div class="metric-list">
+                    <div class="metric-row">
+                      <div class="metric-label">Processing time</div>
+                      <div class="metric-value">~2 min</div>
+                    </div>
+                    <div class="metric-row">
+                      <div class="metric-label">vs. manual work</div>
+                      <div class="metric-value">Hours → Minutes</div>
+                    </div>
+                    <div class="metric-row">
+                      <div class="metric-label">Billing model</div>
+                      <div class="metric-value">Subscription + Credits</div>
+                    </div>
+                    <div class="metric-row">
+                      <div class="metric-label">Built by</div>
+                      <div class="metric-value">1 engineer (solo)</div>
+                    </div>
+                  </div>
+                </div>
+
+              </aside>
+
+            </div><!-- /proj-content-grid -->
+          </div>
+        </div><!-- /proj-content -->
+
+        <!-- Footer -->
+        <footer class="site-footer">
+          <div class="container">
+            <p>
+              Angel Payan &nbsp;·&nbsp;
+              <a href="../index.html">Portfolio</a>
+              &nbsp;·&nbsp;
+              <a href="https://csvanalyst.com/" target="_blank">csvanalyst.com</a>
+            </p>
+          </div>
+        </footer>
+
+      </main>
+    </div>
+
+    <!-- Fullscreen modal -->
+    <div class="carousel-modal" id="carousel-modal">
+      <button class="carousel-modal-close" id="modal-close"><i class="fas fa-times"></i></button>
+      <button class="carousel-modal-nav carousel-modal-prev" id="modal-prev"><i class="fas fa-chevron-left"></i></button>
+      <button class="carousel-modal-nav carousel-modal-next" id="modal-next"><i class="fas fa-chevron-right"></i></button>
+      <div class="carousel-modal-counter"><span id="modal-cur">1</span> / <span id="modal-tot">1</span></div>
+      <img id="modal-img" src="" alt="" />
+    </div>
+
+    <!-- Scripts -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../assets/js/template-loader.js"></script>
+    <script>
+      $(document).ready(function () {
+        $.easing.easeInOutCubic = function (x, t, b, c, d) {
+          if ((t /= d / 2) < 1) return (c / 2) * t * t * t + b;
+          return (c / 2) * ((t -= 2) * t * t + 2) + b;
+        };
+      });
+      document.addEventListener('DOMContentLoaded', async function () {
+        try {
+          TemplateLoader.updateCSSPaths();
+          await TemplateLoader.loadSidebar();
+        } catch (e) { console.error(e); }
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/22.4.9/i18next.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next-http-backend/2.1.1/i18nextHttpBackend.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-i18next/1.2.1/jquery-i18next.min.js"></script>
+    <script src="../assets/js/i18n-config.js"></script>
+    <script src="../assets/js/language-switcher.js"></script>
+
+    <!-- Tabs logic -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      document.querySelectorAll('.demo-tab-btn').forEach(btn => {
+        btn.addEventListener('click', function () {
+          document.querySelectorAll('.demo-tab-btn').forEach(b => b.classList.remove('active'));
+          document.querySelectorAll('.demo-tab-pane').forEach(p => p.classList.remove('active'));
+          this.classList.add('active');
+          const pane = document.getElementById('tab-' + this.dataset.tab);
+          if (pane) pane.classList.add('active');
+        });
+      });
+    });
+    </script>
+  </body>
+</html>

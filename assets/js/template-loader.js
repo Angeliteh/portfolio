@@ -81,7 +81,7 @@ class TemplateLoader {
             window.jQuery('html, body').stop(true, false).animate({
               scrollTop: window.jQuery(targetSection).offset().top
             }, {
-              duration: 1200,
+              duration: 100,
               easing: window.jQuery.easing.easeInOutCubic ? 'easeInOutCubic' : 'swing'
             });
 
@@ -174,19 +174,19 @@ class TemplateLoader {
     if (!isGitHubPages) return;
 
     const basePath = this.getBasePath();
-    
+
     document.querySelectorAll('link[rel="stylesheet"]').forEach(link => {
       const href = link.getAttribute('href');
-      if (!href || 
-          href.startsWith('http') || 
-          href.startsWith('//') || 
-          href.startsWith(basePath)) return;
+      if (!href ||
+        href.startsWith('http') ||
+        href.startsWith('//') ||
+        href.startsWith(basePath)) return;
 
       // Limpiar la ruta
       let newHref = href.replace(/^\.\.\//, '');  // Remover ../
       newHref = newHref.replace(/^\//, '');       // Remover / inicial
       newHref = `${basePath}/${newHref}`;         // Añadir basePath
-      
+
       console.log(`Actualizando ruta CSS de: ${href} a: ${newHref}`);
       link.href = newHref;
     });

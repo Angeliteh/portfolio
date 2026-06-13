@@ -3,431 +3,250 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Videos Downloader - Descargador Universal de Videos</title>
-    
-    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css">
+    <title>Project - Angel</title>
+    <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
     <link rel="stylesheet" href="../assets/css/fontawesome.css">
-    <link rel="stylesheet" href="../assets/css/templatemo-style.css">
-    <link rel="stylesheet" href="../assets/css/owl.css">
-    <link rel="stylesheet" href="../assets/css/lightbox.css">
-    <link rel="stylesheet" href="../assets/css/custom-styles.css">
+    <link rel="stylesheet" href="../assets/css/portfolio.css">
+    <link rel="stylesheet" href="../assets/css/project.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   </head>
-  <body>
-    <div id="page-wraper">
-      <div id="sidebar-container"></div>
-      <div class="project-content">
-        <section class="section project-details">
-          <div class="container">
-            <div class="section-heading">
-              <h2 data-i18n="socialMediaProject.title">Videos Downloader - Descargador Universal de Videos</h2>
-              <div class="line-dec"></div>
-              <span data-i18n="socialMediaProject.subtitle">Descarga videos de Instagram, TikTok y Facebook con interfaz web</span>
+  <body class="project-page">
+    <div id="sidebar-container"></div>
+    <div id="main-content">
+      <div class="container">
+        
+        <div class="proj-hero">
+          <a href="../index.html#section3" class="proj-hero-back">
+            <i class="fas fa-arrow-left"></i> <span data-i18n="socialMediaProject.navigation.backToPortfolio">Volver al Portafolio</span>
+          </a>
+          <div class="proj-hero-meta">
+            <span class="proj-category-badge cyan">Web Dev</span>
+          </div>
+          <h1 class="proj-hero-title" data-i18n="socialMediaProject.title">Título</h1>
+          <p class="proj-hero-tagline" data-i18n="socialMediaProject.subtitle">Subtítulo</p>
+          <div class="proj-hero-actions">
+            <a href="https://github.com/angeliteh" target="_blank" class="btn-secondary">
+              <i class="fab fa-github"></i> <span data-i18n="socialMediaProject.resourceLinks.sourceCode">Ver Código</span>
+            </a>
+          </div>
+
+          <div class="proj-meta-row">
+            <div class="proj-meta-item">
+              <div class="proj-meta-label">Role</div>
+              <div class="proj-meta-value">Backend Dev</div>
             </div>
-
-            <!-- Project Preview -->
-            <div class="project-preview">
-              <div class="project-carousel">
-                <div class="carousel-container">
-                  <!-- Botón de pantalla completa -->
-                  <button class="carousel-fullscreen" id="carousel-fullscreen" title="Ver en pantalla completa">
-                    <i class="fas fa-expand"></i>
-                  </button>
-
-                  <!-- Slides del carrusel -->
-                  <div class="carousel-slides" id="carousel-slides">
-                    <div class="carousel-slide active">
-                      <img src="../assets/images/projects/social-media-downloader/image_1.png"
-                           alt="Social Media Downloader - Interfaz Principal"
-                           loading="lazy">
-                    </div>
-                    <div class="carousel-slide">
-                      <img src="../assets/images/projects/social-media-downloader/image_2.png"
-                           alt="Social Media Downloader - Proceso de Descarga"
-                           loading="lazy">
-                    </div>
-                  </div>
-
-                  <!-- Controles del carrusel -->
-                  <button class="carousel-controls carousel-prev" id="carousel-prev">
-                    <i class="fas fa-chevron-left"></i>
-                  </button>
-                  <button class="carousel-controls carousel-next" id="carousel-next">
-                    <i class="fas fa-chevron-right"></i>
-                  </button>
-
-                  <!-- Indicadores -->
-                  <div class="carousel-indicators" id="carousel-indicators">
-                    <button class="carousel-indicator active" data-slide="0"></button>
-                    <button class="carousel-indicator" data-slide="1"></button>
-                  </div>
-
-                  <!-- Contador -->
-                  <div class="carousel-counter">
-                    <span id="current-slide">1</span> / <span id="total-slides">2</span>
-                  </div>
-                </div>
-
-                <!-- Métricas overlay -->
-                <div class="metrics-overlay">
-                  <div class="metric-card" tabindex="0">
-                    <i class="fas fa-tachometer-alt" aria-hidden="true"></i>
-                    <span data-i18n="socialMediaProject.metrics.speed">< 2s promedio</span>
-                  </div>
-                  <div class="metric-card" tabindex="0">
-                    <i class="fas fa-share-alt" aria-hidden="true"></i>
-                    <span data-i18n="socialMediaProject.metrics.platforms">3 plataformas</span>
-                  </div>
-                  <div class="metric-card" tabindex="0">
-                    <i class="fas fa-check-circle" aria-hidden="true"></i>
-                    <span data-i18n="socialMediaProject.metrics.successRate">99% tasa de éxito</span>
-                  </div>
-                </div>
-              </div>
+            <div class="proj-meta-item">
+              <div class="proj-meta-label">Timeline</div>
+              <div class="proj-meta-value">3 Weeks</div>
             </div>
-
-
-
-            <!-- Project Overview -->
-            <div class="project-section overview">
-              <h3 data-i18n="socialMediaProject.sections.overview">Descripción General</h3>
-              <p data-i18n="socialMediaProject.sections.overviewText">
-                Aplicación web desarrollada en Flask que permite descargar videos de las principales redes sociales (Instagram, TikTok, Facebook) con múltiples opciones de calidad.
-                Incluye una interfaz web moderna y responsiva, sistema de historial de descargas, y arquitectura modular con múltiples métodos de descarga para garantizar alta disponibilidad.
-                La aplicación maneja automáticamente la normalización de URLs, expansión de enlaces acortados, y proporciona una API REST completa para integración con aplicaciones móviles.
-              </p>
-              <div class="key-features">
-                <div class="feature-item" tabindex="0">
-                  <i class="fas fa-globe" aria-hidden="true"></i>
-                  <h4 data-i18n="socialMediaProject.features.universalDownload.title">Descarga Universal Multi-Plataforma</h4>
-                  <p data-i18n="socialMediaProject.features.universalDownload.desc">Detección automática de plataforma con normalización inteligente de URLs</p>
-                </div>
-                <div class="feature-item" tabindex="0">
-                  <i class="fas fa-shield-alt" aria-hidden="true"></i>
-                  <h4 data-i18n="socialMediaProject.features.robustBackup.title">Sistema de Respaldo Robusto</h4>
-                  <p data-i18n="socialMediaProject.features.robustBackup.desc">Múltiples métodos de descarga con fallback automático en caso de fallo</p>
-                </div>
-                <div class="feature-item" tabindex="0">
-                  <i class="fas fa-desktop" aria-hidden="true"></i>
-                  <h4 data-i18n="socialMediaProject.features.webInterface.title">Interfaz Web Completa</h4>
-                  <p data-i18n="socialMediaProject.features.webInterface.desc">Dashboard responsivo con historial y API REST para integración móvil</p>
-                </div>
-              </div>
+            <div class="proj-meta-item">
+              <div class="proj-meta-label">Tech</div>
+              <div class="proj-meta-value">Python, Flask</div>
             </div>
-
-            <!-- Technical Details -->
-            <div class="project-section technical">
-              <h3 data-i18n="socialMediaProject.sections.technicalDetails">Detalles Técnicos</h3>
-              <div class="tech-details-grid">
-                <div class="detail-card architecture">
-                  <h4><i class="fas fa-layer-group"></i> <span data-i18n="socialMediaProject.techDetails.architecture.title">Arquitectura</span></h4>
-                  <ul>
-                    <li data-i18n="socialMediaProject.techDetails.architecture.items.0">Patrón MVC (Model-View-Controller)</li>
-                    <li data-i18n="socialMediaProject.techDetails.architecture.items.1">Estructura modular por plataforma</li>
-                    <li data-i18n="socialMediaProject.techDetails.architecture.items.2">API RESTful con endpoints JSON</li>
-                    <li data-i18n="socialMediaProject.techDetails.architecture.items.3">Sistema de gestión de archivos</li>
-                  </ul>
-                </div>
-                <div class="detail-card optimization">
-                  <h4><i class="fas fa-bolt"></i> <span data-i18n="socialMediaProject.techDetails.optimization.title">Optimización</span></h4>
-                  <ul>
-                    <li data-i18n="socialMediaProject.techDetails.optimization.items.0">Múltiples métodos de respaldo</li>
-                    <li data-i18n="socialMediaProject.techDetails.optimization.items.1">Normalización automática de URLs</li>
-                    <li data-i18n="socialMediaProject.techDetails.optimization.items.2">Expansión de enlaces acortados</li>
-                    <li data-i18n="socialMediaProject.techDetails.optimization.items.3">Historial con límite de 50 entradas</li>
-                  </ul>
-                </div>
-                <div class="detail-card features">
-                  <h4><i class="fas fa-star"></i> <span data-i18n="socialMediaProject.techDetails.features.title">Características Avanzadas</span></h4>
-                  <ul>
-                    <li data-i18n="socialMediaProject.techDetails.features.items.0">Detección automática de plataforma</li>
-                    <li data-i18n="socialMediaProject.techDetails.features.items.1">Múltiples opciones de calidad</li>
-                    <li data-i18n="socialMediaProject.techDetails.features.items.2">Fallback automático</li>
-                    <li data-i18n="socialMediaProject.techDetails.features.items.3">Logging detallado de errores</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <!-- Tech Stack -->
-            <div class="project-section tech-stack">
-              <h3 data-i18n="socialMediaProject.sections.techStack">Stack Tecnológico</h3>
-              <div class="tech-grid">
-                <div class="tech-category frontend">
-                  <h4><i class="fas fa-code"></i> <span data-i18n="socialMediaProject.techCategories.frontend">Frontend</span></h4>
-                  <div class="tech-items">
-                    <span class="tech-badge" data-i18n="tech.html">HTML5</span>
-                    <span class="tech-badge">CSS3</span>
-                    <span class="tech-badge" data-i18n="tech.javascript">JavaScript ES6+</span>
-                    <span class="tech-badge">Font Awesome 6.4.0</span>
-                  </div>
-                </div>
-                <div class="tech-category backend">
-                  <h4><i class="fas fa-server"></i> <span data-i18n="socialMediaProject.techCategories.backend">Backend</span></h4>
-                  <div class="tech-items">
-                    <span class="tech-badge" data-i18n="tech.python">Python 3.x</span>
-                    <span class="tech-badge">Flask 2.3.3</span>
-                    <span class="tech-badge">yt-dlp 2023.7.6</span>
-                    <span class="tech-badge">flask-cors 4.0.0</span>
-                    <span class="tech-badge">Werkzeug 2.3.7</span>
-                  </div>
-                </div>
-                <div class="tech-category tools">
-                  <h4><i class="fas fa-tools"></i> <span data-i18n="socialMediaProject.techCategories.tools">Herramientas</span></h4>
-                  <div class="tech-items">
-                    <span class="tech-badge">requests 2.31.0</span>
-                    <span class="tech-badge">Vanilla JavaScript</span>
-                    <span class="tech-badge" data-i18n="tech.responsive">Responsive Design</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Challenges and Solutions -->
-            <div class="project-section challenges">
-              <h3 data-i18n="socialMediaProject.sections.challenges">Desafíos y Soluciones</h3>
-              <div class="challenges-grid">
-                <div class="challenge-card">
-                  <div class="challenge-header">
-                    <i class="fas fa-exclamation-circle"></i>
-                    <h4 data-i18n="socialMediaProject.challengesList.urlVariations.title">URLs Acortadas y Variaciones</h4>
-                  </div>
-                  <div class="challenge-content">
-                    <p class="problem" data-i18n="socialMediaProject.challengesList.urlVariations.problem">TikTok usa múltiples formatos de URL (vm.tiktok.com, vt.tiktok.com).</p>
-                    <p class="solution">
-                      <i class="fas fa-check-circle"></i>
-                      <span data-i18n="socialMediaProject.challengesList.urlVariations.solution">Sistema de normalización con expansión automática usando requests.head().</span>
-                    </p>
-                  </div>
-                </div>
-                <div class="challenge-card">
-                  <div class="challenge-header">
-                    <i class="fas fa-exclamation-circle"></i>
-                    <h4 data-i18n="socialMediaProject.challengesList.multiPlatformReliability.title">Confiabilidad Multi-Plataforma</h4>
-                  </div>
-                  <div class="challenge-content">
-                    <p class="problem" data-i18n="socialMediaProject.challengesList.multiPlatformReliability.problem">APIs de redes sociales cambian frecuentemente, causando fallos.</p>
-                    <p class="solution">
-                      <i class="fas fa-check-circle"></i>
-                      <span data-i18n="socialMediaProject.challengesList.multiPlatformReliability.solution">Arquitectura de múltiples métodos de respaldo con fallback automático.</span>
-                    </p>
-                  </div>
-                </div>
-                <div class="challenge-card">
-                  <div class="challenge-header">
-                    <i class="fas fa-exclamation-circle"></i>
-                    <h4 data-i18n="socialMediaProject.challengesList.fileManagement.title">Gestión de Archivos</h4>
-                  </div>
-                  <div class="challenge-content">
-                    <p class="problem" data-i18n="socialMediaProject.challengesList.fileManagement.problem">Manejo eficiente de archivos descargados y limpieza de storage.</p>
-                    <p class="solution">
-                      <i class="fas fa-check-circle"></i>
-                      <span data-i18n="socialMediaProject.challengesList.fileManagement.solution">Sistema de historial JSON con límite de 50 entradas y nombres únicos UUID.</span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Project Information -->
-            <div class="project-section resources">
-              <h3 data-i18n="socialMediaProject.sections.resources">Información del Proyecto</h3>
-              <div class="resources-grid">
-                <div class="resource-info github">
-                  <i class="fab fa-github"></i>
-                  <span data-i18n="socialMediaProject.resourceLinks.sourceCode">Código Fuente</span>
-                  <small data-i18n="socialMediaProject.resourceLinks.sourceCodeDesc">Flask + yt-dlp para descarga universal</small>
-                </div>
-                <div class="resource-info docs">
-                  <i class="fas fa-book"></i>
-                  <span data-i18n="socialMediaProject.resourceLinks.documentation">Documentación</span>
-                  <small data-i18n="socialMediaProject.resourceLinks.documentationDesc">Docstrings detallados y guía de uso</small>
-                </div>
-                <div class="resource-info production">
-                  <i class="fas fa-globe"></i>
-                  <span data-i18n="socialMediaProject.resourceLinks.webDemo">Aplicación Web</span>
-                  <small data-i18n="socialMediaProject.resourceLinks.webDemoDesc">Interfaz web responsive con historial</small>
-                </div>
-              </div>
-            </div>
-
-            <!-- Project Navigation -->
-            <div class="project-navigation">
-              <a href="mouse-remoto.html" class="prev-project">
-                <i class="fas fa-arrow-left"></i> <span data-i18n="socialMediaProject.navigation.prevProject">Proyecto Anterior: Remote Mouse</span>
-              </a>
-              <a href="calculadora-distancias.html" class="next-project">
-                <span data-i18n="socialMediaProject.navigation.nextProject">Siguiente Proyecto: Calculadora de Distancias</span> <i class="fas fa-arrow-right"></i>
-              </a>
+            <div class="proj-meta-item">
+              <div class="proj-meta-label">Impact</div>
+              <div class="proj-meta-value">< 2s promedio</div>
             </div>
           </div>
-        </section>
+        </div>
+
+        <div class="proj-content">
+          <div class="proj-content-grid">
+            <main class="proj-main">
+              
+              <div class="proj-carousel-wrap">
+                <div class="carousel-container">
+                  <div class="carousel-slides count-2" id="carousel-slides">
+                    <div class="carousel-slide active"><img src="../assets/images/projects/social-media-downloader/image_1.png" alt="Screenshot"></div>
+<div class="carousel-slide"><img src="../assets/images/projects/social-media-downloader/image_2.png" alt="Screenshot"></div>
+
+                  </div>
+                  <button class="carousel-btn prev" id="carousel-prev"><i class="fas fa-chevron-left"></i></button>
+                  <button class="carousel-btn next" id="carousel-next"><i class="fas fa-chevron-right"></i></button>
+                  <button class="carousel-fullscreen-btn" id="carousel-fullscreen"><i class="fas fa-expand"></i></button>
+                  <div class="carousel-counter"><span id="current-slide">1</span> / 2</div>
+                </div>
+                <div class="carousel-indicators-row" id="carousel-indicators">
+                  <button class="carousel-dot active" data-slide="0"></button>
+<button class="carousel-dot" data-slide="1"></button>
+
+                </div>
+              </div>
+
+              <div class="content-block">
+                <div class="content-block-title" data-i18n="socialMediaProject.sections.overview">Overview</div>
+                <p data-i18n="socialMediaProject.sections.overviewText">Descripción</p>
+              </div>
+
+              <div class="demo-tabs-wrap">
+                <div class="demo-tabs-header">
+                  <button class="demo-tab-btn active" data-tab="demo"><i class="fas fa-play-circle"></i> <span data-i18n="socialMediaProject.sections.videoDemo">Video Demo</span></button>
+                  <button class="demo-tab-btn" data-tab="arch"><i class="fas fa-layer-group"></i> Architecture</button>
+                </div>
+                <div class="demo-tab-pane active" id="pane-demo">
+                  <div class="youtube-wrap">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+                  </div>
+                  <div class="video-caption">
+                    <h4 data-i18n="socialMediaProject.video.title">Demostración</h4>
+                    <p data-i18n="socialMediaProject.video.description">Observa el sistema en acción.</p>
+                  </div>
+                </div>
+                <div class="demo-tab-pane" id="pane-arch">
+                  <div class="arch-block">
+                    <pre>
+<span class="purple">Core Layer</span>
+    └─ Backend & Analytics
+
+<span class="blue">Service Layer</span>
+    └─ API & Processing
+
+<span class="accent">Presentation Layer</span>
+    └─ Frontend & Interfaces</pre>
+                  </div>
+                </div>
+              </div>
+
+              <div class="content-block">
+                <div class="content-block-title" data-i18n="socialMediaProject.sections.challenges">Technical Challenges</div>
+                <div class="challenges-list">
+                  <div class="challenge-card">
+                    <div class="challenge-header">
+                      <i class="fas fa-exclamation-triangle"></i>
+                      <h4 data-i18n="socialMediaProject.challengesList.challenge1.title">Desafío 1</h4>
+                    </div>
+                    <div class="challenge-body">
+                      <div class="challenge-problem">
+                        <span class="challenge-label">Problem</span>
+                        <p data-i18n="socialMediaProject.challengesList.challenge1.problem">Problema</p>
+                      </div>
+                      <div class="challenge-solution">
+                        <span class="challenge-label">Solution</span>
+                        <p data-i18n="socialMediaProject.challengesList.challenge1.solution">Solución</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="challenge-card">
+                    <div class="challenge-header">
+                      <i class="fas fa-exclamation-triangle"></i>
+                      <h4 data-i18n="socialMediaProject.challengesList.challenge2.title">Desafío 2</h4>
+                    </div>
+                    <div class="challenge-body">
+                      <div class="challenge-problem">
+                        <span class="challenge-label">Problem</span>
+                        <p data-i18n="socialMediaProject.challengesList.challenge2.problem">Problema</p>
+                      </div>
+                      <div class="challenge-solution">
+                        <span class="challenge-label">Solution</span>
+                        <p data-i18n="socialMediaProject.challengesList.challenge2.solution">Solución</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="proj-navigation">
+                <a href="mouse-remoto.html" class="proj-nav-link">
+                  <i class="fas fa-arrow-left"></i>
+                  <div><span class="proj-nav-label">Previous</span>Remote Mouse</div>
+                </a>
+                <a href="calculadora-distancias.html" class="proj-nav-link next">
+                  <i class="fas fa-arrow-right"></i>
+                  <div><span class="proj-nav-label">Next</span>Calculadora</div>
+                </a>
+              </div>
+            </main>
+
+            <aside class="proj-sidebar">
+              <div class="sidebar-widget">
+                <div class="sidebar-widget-title" data-i18n="socialMediaProject.sections.techStack">Tech Stack</div>
+                <div class="stack-list">
+                  <div class="stack-row"><span class="label">Main Tech</span><span class="value">Python, Flask</span></div>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
       </div>
+    </div>
+
+    <div class="carousel-modal" id="carousel-modal">
+      <button class="carousel-modal-close" id="carousel-modal-close"><i class="fas fa-times"></i></button>
+      <button class="carousel-modal-nav carousel-modal-prev" id="carousel-modal-prev"><i class="fas fa-chevron-left"></i></button>
+      <button class="carousel-modal-nav carousel-modal-next" id="carousel-modal-next"><i class="fas fa-chevron-right"></i></button>
+      <div class="carousel-modal-counter"><span id="modal-current-slide">1</span> / 2</div>
+      <img id="carousel-modal-img" src="" alt="Fullscreen view">
     </div>
 
     <!-- Scripts -->
     <script src="../vendor/jquery/jquery.min.js"></script>
-    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="../assets/js/isotope.min.js"></script>
-    <script src="../assets/js/owl-carousel.js"></script>
-    <script src="../assets/js/lightbox.js"></script>
-    <script src="../assets/js/custom.js"></script>
-    <script src="../assets/js/theme-switcher.js"></script>
     <script src="../assets/js/template-loader.js"></script>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', async function() {
-        try {
-          console.log('Iniciando carga de componentes...');
-          // Primero actualizar las rutas CSS
-          TemplateLoader.updateCSSPaths();
-          // Luego cargar el sidebar
-          await TemplateLoader.loadSidebar();
-        } catch (error) {
-          console.error('Error durante la inicialización:', error);
-        }
-      });
-    </script>
-
-    <!-- Scripts de i18n -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/22.4.9/i18next.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next-http-backend/2.1.1/i18nextHttpBackend.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-i18next/1.2.1/jquery-i18next.min.js"></script>
-    <!-- Scripts personalizados de i18n -->
     <script src="../assets/js/i18n-config.js"></script>
     <script src="../assets/js/language-switcher.js"></script>
 
-    <!-- Script para funcionalidad del carousel -->
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // Elementos del carrusel
+      document.addEventListener('DOMContentLoaded', async () => {
+        await TemplateLoader.loadSidebar();
+        
+        // Carousel Logic
         const slides = document.getElementById('carousel-slides');
-        const nextBtn = document.getElementById('carousel-next');
-        const prevBtn = document.getElementById('carousel-prev');
-        const indicators = document.querySelectorAll('.carousel-indicator');
-        const currentSlideSpan = document.getElementById('current-slide');
-        const fullscreenBtn = document.getElementById('carousel-fullscreen');
+        const dots = document.querySelectorAll('.carousel-dot');
+        const counter = document.getElementById('current-slide');
+        let index = 0; const total = 2;
+
+        function update() {
+          slides.style.transform = `translateX(-${index * (100/total)}%)`;
+          dots.forEach((d, i) => d.classList.toggle('active', i === index));
+          counter.textContent = index + 1;
+        }
+        document.getElementById('carousel-next')?.addEventListener('click', () => { index = (index + 1) % total; update(); });
+        document.getElementById('carousel-prev')?.addEventListener('click', () => { index = (index - 1 + total) % total; update(); });
+        dots.forEach((d, i) => d.addEventListener('click', () => { index = i; update(); }));
+
+        // Tabs Logic
+        document.querySelectorAll('.demo-tab-btn').forEach(btn => {
+          btn.addEventListener('click', () => {
+            document.querySelectorAll('.demo-tab-btn').forEach(b => b.classList.remove('active'));
+            document.querySelectorAll('.demo-tab-pane').forEach(p => p.classList.remove('active'));
+            btn.classList.add('active');
+            document.getElementById('pane-' + btn.dataset.tab).classList.add('active');
+          });
+        });
+
+        // Fullscreen Modal Logic
         const modal = document.getElementById('carousel-modal');
         const modalImg = document.getElementById('carousel-modal-img');
-        const modalClose = document.getElementById('carousel-modal-close');
-
-        let currentSlide = 0;
-        const totalSlides = 2;
-
-        // Array con las rutas de las imágenes
-        const imageUrls = [
-          '../assets/images/projects/social-media-downloader/image_1.png',
-          '../assets/images/projects/social-media-downloader/image_2.png'
-        ];
-
-        function updateCarousel() {
-          // Mover slides (50% por slide para 2 imágenes)
-          const translateX = -currentSlide * 50;
-          slides.style.transform = `translateX(${translateX}%)`;
-
-          // Actualizar indicadores
-          indicators.forEach((indicator, index) => {
-            indicator.classList.toggle('active', index === currentSlide);
-          });
-
-          // Actualizar contador
-          currentSlideSpan.textContent = currentSlide + 1;
+        const modalCounter = document.getElementById('modal-current-slide');
+        
+        function updateModal() {
+          modalImg.src = document.querySelectorAll('.carousel-slide img')[index].src;
+          modalCounter.textContent = index + 1;
         }
 
-        function nextSlide() {
-          currentSlide = (currentSlide + 1) % totalSlides;
-          updateCarousel();
-        }
-
-        function prevSlide() {
-          currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-          updateCarousel();
-        }
-
-        function goToSlide(slideIndex) {
-          currentSlide = slideIndex;
-          updateCarousel();
-        }
-
-        // Event listeners
-        if (nextBtn) nextBtn.addEventListener('click', nextSlide);
-        if (prevBtn) prevBtn.addEventListener('click', prevSlide);
-
-        indicators.forEach((indicator, index) => {
-          indicator.addEventListener('click', () => goToSlide(index));
+        document.getElementById('carousel-fullscreen')?.addEventListener('click', () => {
+          updateModal();
+          modal.classList.add('active');
         });
 
-        // Navegación con teclado
-        document.addEventListener('keydown', (e) => {
-          if (e.key === 'ArrowLeft') {
-            prevSlide();
-          } else if (e.key === 'ArrowRight') {
-            nextSlide();
-          }
+        document.getElementById('carousel-modal-close')?.addEventListener('click', () => {
+          modal.classList.remove('active');
         });
 
-        // Funcionalidad de pantalla completa
-        if (fullscreenBtn) {
-          fullscreenBtn.addEventListener('click', function() {
-            if (modal && modalImg) {
-              modalImg.src = imageUrls[currentSlide];
-              modalImg.alt = document.querySelectorAll('.carousel-slide img')[currentSlide].alt;
-              modal.classList.add('active');
-              document.body.style.overflow = 'hidden';
-            }
-          });
-        }
+        document.getElementById('carousel-modal-next')?.addEventListener('click', () => {
+          index = (index + 1) % total;
+          updateModal();
+          update();
+        });
 
-        // Inicializar carrusel
-        updateCarousel();
+        document.getElementById('carousel-modal-prev')?.addEventListener('click', () => {
+          index = (index - 1 + total) % total;
+          updateModal();
+          update();
+        });
       });
     </script>
-
-    <!-- CSS específico para carousel de 2 imágenes -->
-    <style>
-      .carousel-slides {
-        width: 200% !important; /* 2 imágenes */
-      }
-      .carousel-slide {
-        width: 50% !important; /* 100% / 2 */
-      }
-
-        // Cerrar modal
-        if (modalClose) {
-          modalClose.addEventListener('click', function() {
-            if (modal) {
-              modal.classList.remove('active');
-              document.body.style.overflow = '';
-            }
-          });
-        }
-
-        // Cerrar modal con ESC
-        document.addEventListener('keydown', function(e) {
-          if (e.key === 'Escape' && modal && modal.classList.contains('active')) {
-            modal.classList.remove('active');
-            document.body.style.overflow = '';
-          }
-        });
-
-        // Cerrar modal clickeando fuera de la imagen
-        if (modal) {
-          modal.addEventListener('click', function(e) {
-            if (e.target === modal) {
-              modal.classList.remove('active');
-              document.body.style.overflow = '';
-            }
-          });
-        }
-      });
-    </script>
-
-    <!-- Modal de pantalla completa -->
-    <div class="carousel-modal" id="carousel-modal">
-      <button class="carousel-modal-close" id="carousel-modal-close">
-        <i class="fas fa-times"></i>
-      </button>
-      <img id="carousel-modal-img" src="" alt="Imagen en pantalla completa">
-    </div>
   </body>
 </html>

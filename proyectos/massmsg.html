@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="MassMSG — Desktop RPA platform for intelligent messaging automation. Stealth browser control, RSA licensing, and human emulation engine. Case study by Angel Payan."
+    />
+    <title>MassMSG · Angel Payan</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="../assets/css/portfolio.css" />
+    <link rel="stylesheet" href="../assets/css/project.css" />
+    <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg" />
+  </head>
+
+  <body class="project-page">
+    <div id="page-wraper">
+      <div id="sidebar-container"></div>
+
+      <main id="main-content">
+
+        <div class="proj-hero">
+          <div class="container">
+
+            <a href="../index.html" class="proj-hero-back">
+              <i class="fas fa-arrow-left"></i> Back to portfolio
+            </a>
+
+            <div class="proj-hero-meta">
+              <span class="proj-category-badge green">Desktop RPA</span>
+              <span class="proj-category-badge green">Browser Automation</span>
+              <span class="proj-category-badge orange">Commercial</span>
+            </div>
+
+            <h1 class="proj-hero-title">MassMSG</h1>
+
+            <p class="proj-hero-tagline">
+              A desktop RPA platform that automates high-volume messaging workflows through
+              Electron + FastAPI + Playwright — with a stealth human-emulation engine that makes
+              the automation indistinguishable from real user behavior.
+            </p>
+
+            <div class="proj-hero-actions">
+              <a href="../index.html#section2" class="btn-secondary">← All products</a>
+            </div>
+
+            <div class="proj-meta-row">
+              <div class="proj-meta-item">
+                <div class="proj-meta-label">Type</div>
+                <div class="proj-meta-value">Desktop Application</div>
+              </div>
+              <div class="proj-meta-item">
+                <div class="proj-meta-label">Status</div>
+                <div class="proj-meta-value">✦ Commercial</div>
+              </div>
+              <div class="proj-meta-item">
+                <div class="proj-meta-label">Pricing</div>
+                <div class="proj-meta-value">Lifetime Deal</div>
+              </div>
+              <div class="proj-meta-item">
+                <div class="proj-meta-label">Built by</div>
+                <div class="proj-meta-value">Solo — end to end</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="proj-content">
+          <div class="container">
+            <div class="proj-content-grid">
+
+              <div class="proj-main">
+
+                <!-- Screenshot carousel (add images to assets/images/projects/massmsg/) -->
+                <div class="content-block">
+                  <div class="content-block-title">Product Screenshots</div>
+
+                  <div class="proj-carousel-wrap" id="proj-carousel">
+                    <div class="carousel-container">
+                      <button class="carousel-fullscreen-btn" id="fs-btn" title="Fullscreen"><i class="fas fa-expand"></i></button>
+                      <div class="carousel-counter"><span id="slide-cur">1</span> / <span id="slide-tot">1</span></div>
+
+                      <div class="carousel-slides count-1" id="carousel-slides">
+                        <div class="carousel-slide">
+                          <!-- Placeholder -->
+                          <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;color:var(--text-subtle);font-family:var(--mono);font-size:13px;padding:48px;text-align:center;">
+                            <i class="fas fa-image" style="font-size:32px;opacity:0.3;"></i>
+                            <span>Screenshots coming soon</span>
+                            <span style="font-size:11px;">Drop images to assets/images/projects/massmsg/</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <button class="carousel-btn prev" id="car-prev"><i class="fas fa-chevron-left"></i></button>
+                      <button class="carousel-btn next" id="car-next"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <div class="carousel-indicators-row" id="car-dots"></div>
+                  </div>
+                </div>
+
+                <!-- Video demo tabs -->
+                <div class="content-block">
+                  <div class="content-block-title">Product Demo</div>
+
+                  <div class="demo-tabs-wrap">
+                    <div class="demo-tabs-header">
+                      <button class="demo-tab-btn active" data-tab="video">
+                        <i class="fas fa-play-circle"></i> Demo Video
+                      </button>
+                      <button class="demo-tab-btn" data-tab="guide">
+                        <i class="fas fa-shield-alt"></i> Security Engine
+                      </button>
+                    </div>
+
+                    <div class="demo-tab-pane active" id="tab-video">
+                      <div style="width:100%;aspect-ratio:16/9;background:var(--bg-card);border:1px dashed var(--border-mid);border-radius:var(--radius);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;color:var(--text-subtle);">
+                        <i class="fab fa-youtube" style="font-size:32px;opacity:0.5;"></i>
+                        <span style="font-size:13px;">YouTube demo video coming soon</span>
+                      </div>
+                    </div>
+
+                    <div class="demo-tab-pane" id="tab-guide">
+                      <div style="display:flex;flex-direction:column;gap:16px;">
+                        <h3 style="font-size:15px;font-weight:600;color:var(--text);margin:0;">Why standard bots get banned</h3>
+                        <p style="font-size:13px;color:var(--text-muted);line-height:1.6;margin:0;">
+                          Cloud automation tools inject API requests or use headless browsers from datacenter IPs. Platforms detect this instantly. MassMSG takes control of your local, normal Chrome profile. It types letters one by one using a variable delay. If it makes a mistake, it presses Backspace. It literally emulates a human worker.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="content-block">
+                  <div class="content-block-title">The Problem</div>
+                  <h3>Official messaging APIs are expensive, restrictive, and detectable.</h3>
+                  <p>
+                    WhatsApp Business API charges per conversation and requires template pre-approval.
+                    Cloud-based bulk messaging tools use shared datacenter IPs that get detected and
+                    banned within minutes. Existing open-source RPA tools require deep technical
+                    knowledge to configure and maintain.
+                  </p>
+                  <p>
+                    SMBs needed a solution that runs locally on their own machine, uses their actual
+                    account and residential IP, and looks completely human to the platform's security
+                    systems.
+                  </p>
+                </div>
+
+                <div class="content-block">
+                  <div class="content-block-title">Architecture: Dual Interface Design</div>
+                  <h3>One engine, two interfaces — local, portable, zero cloud dependency.</h3>
+
+                  <div class="arch-block">
+                    <pre>
+<span class="green">Electron Main</span>  Orchestrates lifecycle
+    └─ Spawns FastAPI Server (Python binary)
+    └─ Renders React UI via Vite (dev) / dist/ (prod)
+    └─ Graceful shutdown via POST /api/shutdown + SIGKILL fallback
+
+<span class="blue">FastAPI Backend</span>  Local API on :8000
+    └─ /launch     → Finds Chrome, opens debug port :9222
+    └─ /init       → Attaches Playwright via CDP
+    └─ /send-batch → Queues message campaigns
+    └─ /api/campaigns → Campaign CRUD (JSON persistence)
+
+<span class="accent">Playwright Core</span>  Attached to native Chrome via CDP
+    └─ Manipulates WhatsApp / Gmail / Google Messages DOM
+    └─ Typo Engine → human-realistic keystrokes
+    └─ Bio-pauses → randomized delays, "lunch breaks"
+
+<span class="blue">Heartbeat System</span>  Process integrity
+    └─ React pings /api/heartbeat every 5s
+    └─ If &gt;15s without ping → Python self-terminates (os._exit)
+    └─ Prevents zombie processes on Electron crash</pre>
+                  </div>
+                </div>
+
+                <div class="content-block">
+                  <div class="content-block-title">Stealth Engine</div>
+                  <div class="feature-list">
+                    <div class="feature-item">
+                      <div class="feature-item-icon green"><i class="fas fa-keyboard"></i></div>
+                      <div class="feature-item-text">
+                        <strong>Typo Engine — Human Keystroke Emulation</strong>
+                        <p>
+                          Variable per-key delays (0.10–0.20s), random "fat finger" typos with
+                          Backspace correction, and simulated thinking pauses every N characters.
+                          Characters are typed one by one — never injected.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="feature-item">
+                      <div class="feature-item-icon green"><i class="fas fa-coffee"></i></div>
+                      <div class="feature-item-text">
+                        <strong>Bio-Pauses — Office Day Simulation</strong>
+                        <p>
+                          Randomized distraction pauses (10–30s), coffee breaks (10–20 min every
+                          50 messages), and lunch breaks (30–60 min on large batches). Every delay
+                          has ±25% random variance — no detectable pattern.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="feature-item">
+                      <div class="feature-item-icon green"><i class="fas fa-fingerprint"></i></div>
+                      <div class="feature-item-text">
+                        <strong>Residential IP + Native Fingerprint</strong>
+                        <p>
+                          Runs on the user's Chrome with their actual browser fingerprint and home
+                          IP — identical to a human navigating manually. Platforms cannot distinguish
+                          it from organic user activity.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="feature-item">
+                      <div class="feature-item-icon green"><i class="fas fa-hdd"></i></div>
+                      <div class="feature-item-text">
+                        <strong>Persistent Session &amp; Portability</strong>
+                        <p>
+                          Chrome profile stored in <code>prod_browser_profile/</code> — one-time QR
+                          scan. Moving the folder to an external drive preserves the full session
+                          with zero reconfiguration.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="content-block">
+                  <div class="content-block-title">Security: RSA + HWID Licensing</div>
+                  <h3>Three-layer cryptographic protection against piracy.</h3>
+                  <div class="arch-block">
+                    <pre>
+<span class="accent">Layer 1 · Startup</span>
+    └─ Reads license.key + generates HWID from Motherboard UUID
+    └─ Verifies RSA signature with embedded public key
+    └─ 7-day offline grace period via encrypted local cache
+
+<span class="blue">Layer 2 · Middleware</span>
+    └─ FastAPI middleware intercepts every HTTP request
+    └─ Returns HTTP 403 if license_manager.is_active() = false
+
+<span class="green">Layer 3 · Action Gate</span>
+    └─ RSA signature re-validated immediately before send_message()
+    └─ Prevents in-memory manipulation of license state</pre>
+                  </div>
+                </div>
+
+                <!-- Workflow -->
+                <div class="content-block">
+                  <div class="content-block-title">Execution Pipeline</div>
+                  <div class="workflow-steps">
+                    <div class="workflow-step">
+                      <div class="workflow-step-num">01</div>
+                      <div class="workflow-step-icon"><i class="fas fa-file-csv"></i></div>
+                      <h4>Load Data</h4>
+                      <p>Import CSV/Excel with contacts and custom variables.</p>
+                    </div>
+                    <div class="workflow-step">
+                      <div class="workflow-step-num">02</div>
+                      <div class="workflow-step-icon"><i class="fas fa-link"></i></div>
+                      <h4>Chrome Bind</h4>
+                      <p>Attach via CDP to the user's native Chrome session.</p>
+                    </div>
+                    <div class="workflow-step">
+                      <div class="workflow-step-num">03</div>
+                      <div class="workflow-step-icon"><i class="fas fa-keyboard"></i></div>
+                      <h4>Emulate</h4>
+                      <p>Type characters using the biological Typo Engine.</p>
+                    </div>
+                    <div class="workflow-step">
+                      <div class="workflow-step-num">04</div>
+                      <div class="workflow-step-icon"><i class="fas fa-coffee"></i></div>
+                      <h4>Bio-Pauses</h4>
+                      <p>Execute random coffee breaks to evade heuristics.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Challenges -->
+                <div class="content-block">
+                  <div class="content-block-title">Technical Challenges &amp; Solutions</div>
+
+                  <div class="challenges-list">
+                    <div class="challenge-card">
+                      <div class="challenge-header">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <h4>Cloud API Bans</h4>
+                      </div>
+                      <div class="challenge-body">
+                        <div class="challenge-problem">
+                          <span class="challenge-label">Problem</span>
+                          <p>Cloud-based mass messaging SaaS tools get banned instantly because Meta detects their datacenter IP addresses and headless browser signatures.</p>
+                        </div>
+                        <div class="challenge-solution">
+                          <span class="challenge-label">Solution</span>
+                          <p>MassMSG is a local desktop app. It leverages the user's organic residential IP and native browser Canvas fingerprint, making it indistinguishable from human use.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="challenge-card">
+                      <div class="challenge-header">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <h4>Orphaned Zombie Processes</h4>
+                      </div>
+                      <div class="challenge-body">
+                        <div class="challenge-problem">
+                          <span class="challenge-label">Problem</span>
+                          <p>When bundling Python with Electron, if the user force-quits the UI, the Python backend stays alive in the RAM forever as a memory leak.</p>
+                        </div>
+                        <div class="challenge-solution">
+                          <span class="challenge-label">Solution</span>
+                          <p>A double-safety Heartbeat system. The React UI sends a ping every 5s. If Python detects 15s without a ping, it self-terminates instantly (os._exit), keeping the user's PC clean.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Impact -->
+                <div class="content-block">
+                  <div class="content-block-title">Business Impact</div>
+
+                  <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                      <div class="testimonial-header">
+                        <div class="testimonial-avatar"><i class="fas fa-dollar-sign"></i></div>
+                        <div>
+                          <div class="testimonial-name">Zero Cost Per Message</div>
+                          <div class="testimonial-role">Financial Impact</div>
+                        </div>
+                      </div>
+                      <p class="testimonial-quote">
+                        "Official APIs charge per conversation and require rigid template approvals. Because MassMSG acts as a human, users can send thousands of customized marketing messages without paying API fees."
+                      </p>
+                      <div class="testimonial-metrics">
+                        <span class="metric-badge">100% Free Sending</span>
+                        <span class="metric-badge orange">No Template Rules</span>
+                      </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                      <div class="testimonial-header">
+                        <div class="testimonial-avatar"><i class="fas fa-user-shield"></i></div>
+                        <div>
+                          <div class="testimonial-name">Absolute Privacy</div>
+                          <div class="testimonial-role">Data Security</div>
+                        </div>
+                      </div>
+                      <p class="testimonial-quote">
+                        "Businesses no longer have to upload their valuable client databases to external SaaS servers. Everything runs and stays strictly within their local hard drive."
+                      </p>
+                      <div class="testimonial-metrics">
+                        <span class="metric-badge blue">Air-Gap Capable</span>
+                        <span class="metric-badge purple">GDPR Compliant</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Project navigation -->
+                <div class="proj-navigation">
+                  <a href="vioagents.html" class="proj-nav-link">
+                    <i class="fas fa-arrow-left"></i>
+                    <div><span class="proj-nav-label">Previous product</span>VioAgents</div>
+                  </a>
+                  <a href="excel-scraper.html" class="proj-nav-link next">
+                    <i class="fas fa-arrow-right"></i>
+                    <div><span class="proj-nav-label">Next</span>Excel Scraper</div>
+                  </a>
+                </div>
+
+              </div>
+
+              <aside class="proj-sidebar">
+
+                <div class="sidebar-widget">
+                  <div class="sidebar-widget-title">Tech Stack</div>
+                  <div class="stack-list">
+                    <div class="stack-row"><span class="label">Shell</span><span class="value">Electron · Node.js</span></div>
+                    <div class="stack-row"><span class="label">UI</span><span class="value">React · Vite</span></div>
+                    <div class="stack-row"><span class="label">Backend</span><span class="value">FastAPI · Python</span></div>
+                    <div class="stack-row"><span class="label">Automation</span><span class="value">Playwright (CDP)</span></div>
+                    <div class="stack-row"><span class="label">Security</span><span class="value">RSA + HWID + SHA-256</span></div>
+                    <div class="stack-row"><span class="label">Platforms</span><span class="value">WhatsApp, Gmail, GMessages</span></div>
+                  </div>
+                </div>
+
+                <div class="sidebar-widget">
+                  <div class="sidebar-widget-title">Engineering Highlights</div>
+                  <div class="metric-list">
+                    <div class="metric-row">
+                      <div class="metric-label">API cost per message</div>
+                      <div class="metric-value">$0</div>
+                    </div>
+                    <div class="metric-row">
+                      <div class="metric-label">Licensing</div>
+                      <div class="metric-value">RSA + HWID Lock</div>
+                    </div>
+                    <div class="metric-row">
+                      <div class="metric-label">Process safety</div>
+                      <div class="metric-value">Heartbeat System</div>
+                    </div>
+                    <div class="metric-row">
+                      <div class="metric-label">Detection risk</div>
+                      <div class="metric-value">Residential IP</div>
+                    </div>
+                  </div>
+                </div>
+
+              </aside>
+            </div>
+          </div>
+        </div>
+
+        <footer class="site-footer">
+          <div class="container">
+            <p>Angel Payan &nbsp;·&nbsp; <a href="../index.html">Portfolio</a></p>
+          </div>
+        </footer>
+
+      </main>
+    </div>
+
+    <!-- Fullscreen modal -->
+    <div class="carousel-modal" id="carousel-modal">
+      <button class="carousel-modal-close" id="modal-close"><i class="fas fa-times"></i></button>
+      <button class="carousel-modal-nav carousel-modal-prev" id="modal-prev"><i class="fas fa-chevron-left"></i></button>
+      <button class="carousel-modal-nav carousel-modal-next" id="modal-next"><i class="fas fa-chevron-right"></i></button>
+      <div class="carousel-modal-counter"><span id="modal-cur">1</span> / <span id="modal-tot">1</span></div>
+      <img id="modal-img" src="" alt="" />
+    </div>
+
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../assets/js/template-loader.js"></script>
+    <script>
+      $(document).ready(function () {
+        $.easing.easeInOutCubic = function (x, t, b, c, d) {
+          if ((t /= d / 2) < 1) return (c / 2) * t * t * t + b;
+          return (c / 2) * ((t -= 2) * t * t + 2) + b;
+        };
+      });
+      document.addEventListener('DOMContentLoaded', async function () {
+        try { TemplateLoader.updateCSSPaths(); await TemplateLoader.loadSidebar(); } catch (e) { console.error(e); }
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/22.4.9/i18next.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next-http-backend/2.1.1/i18nextHttpBackend.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-i18next/1.2.1/jquery-i18next.min.js"></script>
+    <script src="../assets/js/i18n-config.js"></script>
+    <script src="../assets/js/language-switcher.js"></script>
+
+    <!-- Tabs logic -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      document.querySelectorAll('.demo-tab-btn').forEach(btn => {
+        btn.addEventListener('click', function () {
+          document.querySelectorAll('.demo-tab-btn').forEach(b => b.classList.remove('active'));
+          document.querySelectorAll('.demo-tab-pane').forEach(p => p.classList.remove('active'));
+          this.classList.add('active');
+          const pane = document.getElementById('tab-' + this.dataset.tab);
+          if (pane) pane.classList.add('active');
+        });
+      });
+    });
+    </script>
+  </body>
+</html>

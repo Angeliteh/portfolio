@@ -3,645 +3,408 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema Universal de Validación Excel</title>
-
-    <!-- Favicon -->
+    <title>Sistema Universal de Validación Excel - Angel Payan</title>
+    
     <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicon.svg">
-
-    <!-- Mover el CSP aquí y actualizarlo -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' https:; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https:; connect-src 'self' https:;">
-
-    <!-- Update CSS paths to use relative paths -->
+    
     <link rel="stylesheet" href="../assets/css/fontawesome.css">
-    <link rel="stylesheet" href="../assets/css/templatemo-style.css">
-    <link rel="stylesheet" href="../assets/css/owl.css">
-    <link rel="stylesheet" href="../assets/css/lightbox.css">
-    <link rel="stylesheet" href="../assets/css/custom-styles.css">
+    <link rel="stylesheet" href="../assets/css/portfolio.css">
+    <link rel="stylesheet" href="../assets/css/project.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   </head>
 
-  <body>
-    <div id="page-wraper">
-      <div id="sidebar-container"></div>
-      <div class="project-content">
-        <section class="section project-details">
-          <div class="container">
-            <div class="section-heading">
-              <h2 data-i18n="excelProject.title">Sistema Universal de Validación Excel</h2>
-              <div class="line-dec"></div>
-              <span data-i18n="excelProject.subtitle">Plataforma híbrida (PyQt + React) que automatiza extracción, validación y visualización de tablas Excel educativas</span>
-            </div>
-
-            <!-- Project Preview Carousel -->
-            <div class="project-preview">
-              <div class="project-carousel">
-                <div class="carousel-container">
-                  <!-- Botón de pantalla completa -->
-                  <button class="carousel-fullscreen" id="carousel-fullscreen" title="Ver en pantalla completa">
-                    <i class="fas fa-expand"></i>
-                  </button>
-
-                  <!-- Contador de imágenes -->
-                  <div class="carousel-counter">
-                    <span id="current-slide">1</span> / <span id="total-slides">3</span>
-                  </div>
-
-                  <!-- Slides del carrusel -->
-                  <div class="carousel-slides" id="carousel-slides">
-                    <div class="carousel-slide active">
-                      <img src="../assets/images/projects/excel-scraper/image_1.png"
-                           alt="Sistema Excel - Interfaz Desktop PyQt"
-                           loading="lazy">
-                    </div>
-                    <div class="carousel-slide">
-                      <img src="../assets/images/projects/excel-scraper/image_2.png"
-                           alt="Sistema Excel - Algoritmo Bidimensional"
-                           loading="lazy">
-                    </div>
-                    <div class="carousel-slide">
-                      <img src="../assets/images/projects/excel-scraper/image_3.png"
-                           alt="Sistema Excel - Interfaz Web React"
-                           loading="lazy">
-                    </div>
-                  </div>
-
-                  <!-- Controles de navegación -->
-                  <button class="carousel-controls carousel-prev" id="carousel-prev">
-                    <i class="fas fa-chevron-left"></i>
-                  </button>
-                  <button class="carousel-controls carousel-next" id="carousel-next">
-                    <i class="fas fa-chevron-right"></i>
-                  </button>
-
-                  <!-- Indicadores -->
-                  <div class="carousel-indicators" id="carousel-indicators">
-                    <button class="carousel-indicator active" data-slide="0"></button>
-                    <button class="carousel-indicator" data-slide="1"></button>
-                    <button class="carousel-indicator" data-slide="2"></button>
-                  </div>
-                </div>
-
-                <!-- Métricas overlay -->
-                <div class="metrics-overlay">
-                  <div class="metric-card" tabindex="0">
-                    <i class="fas fa-cogs" aria-hidden="true"></i>
-                    <span data-i18n="excelProject.metrics.automation">100% Automatizado</span>
-                  </div>
-                  <div class="metric-card" tabindex="0">
-                    <i class="fas fa-desktop" aria-hidden="true"></i>
-                    <span data-i18n="excelProject.metrics.hybrid">Híbrido Desktop/Web</span>
-                  </div>
-                  <div class="metric-card" tabindex="0">
-                    <i class="fas fa-check-circle" aria-hidden="true"></i>
-                    <span data-i18n="excelProject.metrics.validation">Validación Inteligente</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          <!-- Project Overview -->
-          <div class="project-section overview">
-            <h3 data-i18n="excelScraperProject.sections.overview">Descripción General</h3>
-            <p data-i18n="excelScraperProject.sections.overviewText">
-              Plataforma integral que automatiza la extracción, combinación, validación y presentación de tablas educativas en Excel,
-              con una arquitectura compartida y reusable entre una app de escritorio (PyQt) y una interfaz web moderna (React + Flask).
-              El núcleo implementa un algoritmo bidimensional de detección de celdas combinadas a partir de marcadores [valor],
-              generando spans precisos, datos limpiamente combinados y una base robusta para validaciones universales.
-            </p>
-            <div class="key-features">
-              <div class="feature-item" tabindex="0">
-                <i class="fas fa-th" aria-hidden="true"></i>
-                <h4 data-i18n="excelScraperProject.features.bidimensionalAlgorithm.title">Algoritmo Bidimensional de Celdas Combinadas</h4>
-                <p data-i18n="excelScraperProject.features.bidimensionalAlgorithm.desc">Detecta spans horizontal/vertical basados en marcadores [valor] con limpieza y generación de mergedCells precisos</p>
-              </div>
-              <div class="feature-item" tabindex="0">
-                <i class="fas fa-layer-group" aria-hidden="true"></i>
-                <h4 data-i18n="excelScraperProject.features.multiplatformArchitecture.title">Arquitectura Multiplataforma con Core Reutilizable</h4>
-                <p data-i18n="excelScraperProject.features.multiplatformArchitecture.desc">Desktop (PyQt) y Web (React/Flask) comparten módulos de negocio con controladores especializados</p>
-              </div>
-              <div class="feature-item" tabindex="0">
-                <i class="fas fa-check-double" aria-hidden="true"></i>
-                <h4 data-i18n="excelScraperProject.features.sophisticatedValidations.title">Validaciones Educativas Sofisticadas y UI de 4 Pasos</h4>
-                <p data-i18n="excelScraperProject.features.sophisticatedValidations.desc">Coherencia, subtotales, totales con flujo Paso 1-4 y tabla tipo Excel con selección de rango</p>
-              </div>
-            </div>
+  <body class="project-page">
+    <div id="sidebar-container"></div>
+    
+    <div id="main-content">
+      <div class="container">
+        
+        <!-- Hero Section -->
+        <div class="proj-hero">
+          <a href="../index.html#section3" class="proj-hero-back">
+            <i class="fas fa-arrow-left"></i> <span data-i18n="excelProject.navigation.backToPortfolio">Volver al Portafolio</span>
+          </a>
+          
+          <div class="proj-hero-meta">
+            <span class="proj-category-badge green">Desktop & Web</span>
+          </div>
+          
+          <h1 class="proj-hero-title" data-i18n="excelProject.title">Sistema Universal de Validación Excel</h1>
+          <p class="proj-hero-tagline" data-i18n="excelProject.subtitle">Plataforma híbrida (PyQt + React) que automatiza extracción, validación y visualización de tablas Excel educativas</p>
+          
+          <div class="proj-hero-actions">
+            <a href="https://github.com/angeliteh" target="_blank" class="btn-secondary">
+              <i class="fab fa-github"></i> <span data-i18n="excelProject.resourceLinks.privateCode">Código Privado</span>
+            </a>
           </div>
 
-            <!-- Demo Tabs Section -->
-            <div class="project-section demo-tabs-container">
-              <h3 data-i18n="excelProject.sections.demoSection">Demostración del Sistema</h3>
-
-              <!-- Pestañas -->
-              <div class="demo-tabs-header">
-                <button class="demo-tab active" data-tab="video">
-                  <i class="fas fa-play-circle"></i>
-                  <span data-i18n="excelProject.tabs.video">Video Demo</span>
-                </button>
-                <button class="demo-tab" data-tab="guide">
-                  <i class="fas fa-book-open"></i>
-                  <span data-i18n="excelProject.tabs.guide">Guía Técnica</span>
-                </button>
-              </div>
-
-              <!-- Contenido de las pestañas -->
-              <div class="demo-tabs-content">
-                <!-- Pestaña Video -->
-                <div class="demo-tab-pane active" id="video-pane">
-                  <div class="video-container">
-                    <!-- Video embebido -->
-                    <div class="youtube-embed-container">
-                      <iframe
-                        src="https://www.youtube.com/embed/GgXT9KtJYeM"
-                        title="Sistema Universal de Validación Excel - Demostración Completa"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen
-                        loading="lazy">
-                      </iframe>
-                    </div>
-                    <div class="video-info">
-                      <h4 class="video-title" data-i18n="excelProject.video.title">Demostración del Sistema Híbrido</h4>
-                      <p class="video-description" data-i18n="excelProject.video.description">
-                        Observa cómo el sistema procesa archivos Excel complejos tanto en la interfaz desktop (PyQt)
-                        como en la interfaz web (React). Incluye demostración del algoritmo de detección de celdas
-                        combinadas, validaciones automáticas y flujo completo de 4 pasos.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Pestaña Guía -->
-                <div class="demo-tab-pane" id="guide-pane">
-                  <div class="guide-content">
-                    <!-- Resumen Ejecutivo -->
-                    <div class="guide-section">
-                      <h4><i class="fas fa-eye"></i> <span data-i18n="excelProject.guide.executiveOverview.title">Resumen Ejecutivo</span></h4>
-                      <p data-i18n="excelProject.guide.executiveOverview.content">
-                        Sistema híbrido que automatiza completamente el procesamiento de tablas Excel educativas complejas.
-                        Arquitectura compartida entre desktop (PyQt) y web (React + Flask) con algoritmo bidimensional
-                        de detección de celdas combinadas. Reduce 90-95% el tiempo de procesamiento manual.
-                      </p>
-                      <div class="guide-highlight">
-                        <h6 data-i18n="excelProject.guide.executiveOverview.highlight.title">Arquitectura Híbrida Innovadora</h6>
-                        <p data-i18n="excelProject.guide.executiveOverview.highlight.content">
-                          Combina la potencia del desktop con la accesibilidad web, compartiendo el mismo core de negocio
-                          para garantizar consistencia y mantenibilidad.
-                        </p>
-                      </div>
-                    </div>
-
-                    <!-- Algoritmo Bidimensional -->
-                    <div class="guide-section">
-                      <h4><i class="fas fa-th"></i> <span data-i18n="excelProject.guide.algorithm.title">Algoritmo Bidimensional</span></h4>
-                      <div class="algorithm-grid">
-                        <div class="algo-component">
-                          <h5 data-i18n="excelProject.guide.algorithm.detection.title">Detección de Marcadores</h5>
-                          <p data-i18n="excelProject.guide.algorithm.detection.desc">Identifica patrones [valor] en celdas para determinar spans horizontales y verticales</p>
-                        </div>
-                        <div class="algo-component">
-                          <h5 data-i18n="excelProject.guide.algorithm.merging.title">Generación de Spans</h5>
-                          <p data-i18n="excelProject.guide.algorithm.merging.desc">Calcula mergedCells precisos y limpia datos combinados automáticamente</p>
-                        </div>
-                        <div class="algo-component">
-                          <h5 data-i18n="excelProject.guide.algorithm.validation.title">Validación Universal</h5>
-                          <p data-i18n="excelProject.guide.algorithm.validation.desc">Coherencia, subtotales y totales con evidencia de estados</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- Arquitectura Híbrida -->
-                    <div class="guide-section">
-                      <h4><i class="fas fa-layer-group"></i> <span data-i18n="excelProject.guide.hybridArchitecture.title">Arquitectura Híbrida</span></h4>
-                      <div class="hybrid-list">
-                        <div class="hybrid-item">
-                          <i class="fas fa-desktop"></i>
-                          <div class="hybrid-details">
-                            <h5 data-i18n="excelProject.guide.hybridArchitecture.desktop.title">Desktop (PyQt)</h5>
-                            <p data-i18n="excelProject.guide.hybridArchitecture.desktop.desc">Interfaz nativa con controladores especializados y acceso directo al sistema de archivos</p>
-                          </div>
-                        </div>
-                        <div class="hybrid-item">
-                          <i class="fas fa-globe"></i>
-                          <div class="hybrid-details">
-                            <h5 data-i18n="excelProject.guide.hybridArchitecture.web.title">Web (React + Flask)</h5>
-                            <p data-i18n="excelProject.guide.hybridArchitecture.web.desc">API REST con interfaz moderna, tabla tipo Excel y selección de rangos</p>
-                          </div>
-                        </div>
-                        <div class="hybrid-item">
-                          <i class="fas fa-cog"></i>
-                          <div class="hybrid-details">
-                            <h5 data-i18n="excelProject.guide.hybridArchitecture.core.title">Core Compartido</h5>
-                            <p data-i18n="excelProject.guide.hybridArchitecture.core.desc">Módulos de negocio puros sin dependencias de UI, reutilizables entre plataformas</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <!-- Hero Metrics -->
+          <div class="proj-meta-row">
+            <div class="proj-meta-item">
+              <div class="proj-meta-label">Escala</div>
+              <div class="proj-meta-value" data-i18n="excelProject.metrics.automation">100% Automatizado</div>
             </div>
-
-          <!-- Technical Details -->
-          <div class="project-section technical">
-            <h3 data-i18n="excelScraperProject.sections.technicalDetails">Detalles Técnicos</h3>
-            <div class="tech-details-grid">
-              <div class="detail-card architecture">
-                <h4><i class="fas fa-layer-group"></i> <span data-i18n="excelScraperProject.techDetails.architecture.title">Arquitectura</span></h4>
-                <ul>
-                  <li data-i18n="excelScraperProject.techDetails.architecture.items.0">Separación por capas con controladores especializados</li>
-                  <li data-i18n="excelScraperProject.techDetails.architecture.items.1">MVC/MVP híbrido en Desktop, cliente-servidor REST en Web</li>
-                  <li data-i18n="excelScraperProject.techDetails.architecture.items.2">Core puro sin dependencias de UI</li>
-                  <li data-i18n="excelScraperProject.techDetails.architecture.items.3">Aislamiento por pestaña y por archivo</li>
-                </ul>
-              </div>
-              <div class="detail-card optimization">
-                <h4><i class="fas fa-bolt"></i> <span data-i18n="excelScraperProject.techDetails.optimization.title">Optimización</span></h4>
-                <ul>
-                  <li data-i18n="excelScraperProject.techDetails.optimization.items.0">Algoritmo bidimensional de detección de celdas combinadas</li>
-                  <li data-i18n="excelScraperProject.techDetails.optimization.items.1">Función pura memoizada (useMemo/useCallback) en Web</li>
-                  <li data-i18n="excelScraperProject.techDetails.optimization.items.2">Sistema de logs "rastreador" con evidencia de estados</li>
-                  <li data-i18n="excelScraperProject.techDetails.optimization.items.3">Configuración centralizada por periodo y modo</li>
-                </ul>
-              </div>
-              <div class="detail-card features">
-                <h4><i class="fas fa-star"></i> <span data-i18n="excelScraperProject.techDetails.features.title">Características Avanzadas</span></h4>
-                <ul>
-                  <li data-i18n="excelScraperProject.techDetails.features.items.0">Validaciones universales (coherencia, subtotales, totales)</li>
-                  <li data-i18n="excelScraperProject.techDetails.features.items.1">UI de 4 pasos con datos crudos como fuente canónica</li>
-                  <li data-i18n="excelScraperProject.techDetails.features.items.2">Interfaz web tipo Excel con selección de rango</li>
-                  <li data-i18n="excelScraperProject.techDetails.features.items.3">Configuración dinámica vía JSON (roadmap)</li>
-                </ul>
-              </div>
+            <div class="proj-meta-item">
+              <div class="proj-meta-label">Arquitectura</div>
+              <div class="proj-meta-value" data-i18n="excelProject.metrics.hybrid">Híbrido Desktop/Web</div>
+            </div>
+            <div class="proj-meta-item">
+              <div class="proj-meta-label">Precisión</div>
+              <div class="proj-meta-value" data-i18n="excelProject.metrics.validation">Validación Inteligente</div>
+            </div>
+            <div class="proj-meta-item">
+              <div class="proj-meta-label">Tech</div>
+              <div class="proj-meta-value">PyQt5, React, Flask, Pandas</div>
             </div>
           </div>
-
-          <!-- Tech Stack -->
-          <div class="project-section tech-stack">
-            <h3 data-i18n="excelScraperProject.sections.techStack">Stack Tecnológico</h3>
-            <div class="tech-grid">
-              <div class="tech-category frontend">
-                <h4><i class="fas fa-code"></i> <span data-i18n="excelScraperProject.techCategories.frontend">Frontend</span></h4>
-                <div class="tech-items">
-                  <span class="tech-badge">React 18</span>
-                  <span class="tech-badge">CSS Módulos</span>
-                  <span class="tech-badge">Functional Components</span>
-                  <span class="tech-badge">Hooks</span>
-                </div>
-              </div>
-              <div class="tech-category backend">
-                <h4><i class="fas fa-server"></i> <span data-i18n="excelScraperProject.techCategories.backend">Backend</span></h4>
-                <div class="tech-items">
-                  <span class="tech-badge">Flask</span>
-                  <span class="tech-badge">Blueprints</span>
-                  <span class="tech-badge">CORS</span>
-                  <span class="tech-badge">API REST</span>
-                </div>
-              </div>
-              <div class="tech-category desktop">
-                <h4><i class="fas fa-desktop"></i> <span data-i18n="excelScraperProject.techCategories.desktop">Desktop</span></h4>
-                <div class="tech-items">
-                  <span class="tech-badge">PyQt5</span>
-                  <span class="tech-badge" data-i18n="tech.python">Python 3.8+</span>
-                  <span class="tech-badge">pandas</span>
-                </div>
-              </div>
-              <div class="tech-category tools">
-                <h4><i class="fas fa-tools"></i> <span data-i18n="excelScraperProject.techCategories.tools">Herramientas</span></h4>
-                <div class="tech-items">
-                  <span class="tech-badge">Node.js/npm</span>
-                  <span class="tech-badge">start_web_development.py</span>
-                  <span class="tech-badge">Modular Architecture</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Challenges and Solutions -->
-          <div class="project-section challenges">
-            <h3 data-i18n="excelScraperProject.sections.challenges">Desafíos y Soluciones</h3>
-            <div class="challenges-grid">
-              <div class="challenge-card">
-                <div class="challenge-header">
-                  <i class="fas fa-exclamation-circle"></i>
-                  <h4 data-i18n="excelScraperProject.challengesList.tabIsolation.title">Aislamiento Perfecto entre Pestañas</h4>
-                </div>
-                <div class="challenge-content">
-                  <p class="problem" data-i18n="excelScraperProject.challengesList.tabIsolation.problem">La segunda pestaña no detectaba correctamente archivos ya procesados y compartía estado global.</p>
-                  <p class="solution">
-                    <i class="fas fa-check-circle"></i>
-                    <span data-i18n="excelScraperProject.challengesList.tabIsolation.solution">Datos específicos por pestaña/archivo en app_controller con verificación dual y guardado de proceso_secuencial_activo.</span>
-                  </p>
-                </div>
-              </div>
-              <div class="challenge-card">
-                <div class="challenge-header">
-                  <i class="fas fa-exclamation-circle"></i>
-                  <h4 data-i18n="excelScraperProject.challengesList.step4Fallbacks.title">Paso 4 Incorrecto por Fallbacks</h4>
-                </div>
-                <div class="challenge-content">
-                  <p class="problem" data-i18n="excelScraperProject.challengesList.step4Fallbacks.problem">Paso 4 mostraba datos del Paso 3 (fallback a datos_numericos) y mapeos incompletos.</p>
-                  <p class="solution">
-                    <i class="fas fa-check-circle"></i>
-                    <span data-i18n="excelScraperProject.challengesList.step4Fallbacks.solution">Priorizar datos_paso4, eliminar fallback problemático y mapeo completo para compatibilidad.</span>
-                  </p>
-                </div>
-              </div>
-              <div class="challenge-card">
-                <div class="challenge-header">
-                  <i class="fas fa-exclamation-circle"></i>
-                  <h4 data-i18n="excelScraperProject.challengesList.webLogicPort.title">Portar Lógica de Combinaciones a Web</h4>
-                </div>
-                <div class="challenge-content">
-                  <p class="problem" data-i18n="excelScraperProject.challengesList.webLogicPort.problem">Replicar combinación bidimensional sin bucles infinitos ni re-renders en React.</p>
-                  <p class="solution">
-                    <i class="fas fa-check-circle"></i>
-                    <span data-i18n="excelScraperProject.challengesList.webLogicPort.solution">Función pura memoizada (useMemo/useCallback), estructura mergedCells + dataToRender con eventos controlados.</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Workflow Section -->
-          <div class="project-section workflow">
-            <h3 data-i18n="excelScraperProject.sections.workflow">Flujo de Trabajo de 4 Pasos</h3>
-            <div class="workflow-steps">
-              <div class="step">
-                <i class="fas fa-eye"></i>
-                <h4 data-i18n="excelScraperProject.workflowSteps.step1.title">Paso 1: Vista Combinada</h4>
-                <p data-i18n="excelScraperProject.workflowSteps.step1.desc">Visualización de celdas combinadas detectadas</p>
-              </div>
-              <div class="step">
-                <i class="fas fa-database"></i>
-                <h4 data-i18n="excelScraperProject.workflowSteps.step2.title">Paso 2: Datos Crudos</h4>
-                <p data-i18n="excelScraperProject.workflowSteps.step2.desc">Extracción y limpieza de datos originales</p>
-              </div>
-              <div class="step">
-                <i class="fas fa-crop"></i>
-                <h4 data-i18n="excelScraperProject.workflowSteps.step3.title">Paso 3: Recorte Visual</h4>
-                <p data-i18n="excelScraperProject.workflowSteps.step3.desc">Selección y ajuste de rangos de datos</p>
-              </div>
-              <div class="step">
-                <i class="fas fa-check-circle"></i>
-                <h4 data-i18n="excelScraperProject.workflowSteps.step4.title">Paso 4: Datos Finales</h4>
-                <p data-i18n="excelScraperProject.workflowSteps.step4.desc">Validación y presentación de resultados</p>
-              </div>
-            </div>
-          </div>
-
-            <!-- Client Feedback Section -->
-            <div class="project-section feedback" style="margin-top: 2rem;">
-              <h3 data-i18n="excelProject.sections.productionImpact">Impacto en Producción</h3>
-              <div class="feedback-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
-                <div class="feedback-card" style="background: #f8f9fa; padding: 2rem; border-radius: 10px; border-left: 4px solid #28a745;">
-                  <div class="feedback-header" style="display: flex; align-items: center; margin-bottom: 1rem;">
-                    <i class="fas fa-user-tie" style="font-size: 2rem; color: #28a745; margin-right: 1rem;"></i>
-                    <div>
-                      <h4 style="margin: 0; color: #333;" data-i18n="excelProject.feedback.dataAnalyst.title">Analista de Datos Educativos</h4>
-                      <small style="color: #666;" data-i18n="excelProject.feedback.dataAnalyst.institution">Institución Educativa</small>
-                    </div>
-                  </div>
-                  <p style="font-style: italic; color: #555; margin-bottom: 1rem;" data-i18n="excelProject.feedback.dataAnalyst.quote">
-                    "Antes tardábamos horas procesando manualmente cada archivo Excel con celdas combinadas.
-                    Ahora el sistema detecta automáticamente la estructura y valida todo en minutos."
-                  </p>
-                  <div class="feedback-metrics" style="display: flex; gap: 1rem;">
-                    <span style="background: #28a745; color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">
-                      <i class="fas fa-clock"></i> <span data-i18n="excelProject.feedback.dataAnalyst.metrics.timeSaved">95% menos tiempo</span>
-                    </span>
-                    <span style="background: #17a2b8; color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">
-                      <i class="fas fa-check-circle"></i> <span data-i18n="excelProject.feedback.dataAnalyst.metrics.accuracy">100% precisión</span>
-                    </span>
-                  </div>
-                </div>
-
-                <div class="feedback-card" style="background: #f8f9fa; padding: 2rem; border-radius: 10px; border-left: 4px solid #007bff;">
-                  <div class="feedback-header" style="display: flex; align-items: center; margin-bottom: 1rem;">
-                    <i class="fas fa-laptop-code" style="font-size: 2rem; color: #007bff; margin-right: 1rem;"></i>
-                    <div>
-                      <h4 style="margin: 0; color: #333;" data-i18n="excelProject.feedback.developer.title">Desarrollador del Equipo</h4>
-                      <small style="color: #666;" data-i18n="excelProject.feedback.developer.institution">Equipo de desarrollo</small>
-                    </div>
-                  </div>
-                  <p style="font-style: italic; color: #555; margin-bottom: 1rem;" data-i18n="excelProject.feedback.developer.quote">
-                    "La arquitectura híbrida permite mantener un solo core de negocio para desktop y web.
-                    El algoritmo bidimensional es elegante y maneja casos complejos que otros sistemas no pueden."
-                  </p>
-                  <div class="feedback-metrics" style="display: flex; gap: 1rem;">
-                    <span style="background: #007bff; color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">
-                      <i class="fas fa-code"></i> <span data-i18n="excelProject.feedback.developer.metrics.codeReuse">80% código reutilizado</span>
-                    </span>
-                    <span style="background: #6f42c1; color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">
-                      <i class="fas fa-layer-group"></i> <span data-i18n="excelProject.feedback.developer.metrics.architecture">Arquitectura sólida</span>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Project Information -->
-            <div class="project-section resources">
-              <h3 data-i18n="excelProject.sections.resources">Información del Proyecto</h3>
-              <div class="resources-grid">
-                <div class="resource-info github">
-                  <i class="fab fa-github"></i>
-                  <span data-i18n="excelProject.resourceLinks.privateCode">Código Privado</span>
-                  <small data-i18n="excelProject.resourceLinks.privateCodeDesc">Arquitectura híbrida con algoritmos propietarios</small>
-                </div>
-                <div class="resource-info docs">
-                  <i class="fas fa-book"></i>
-                  <span data-i18n="excelProject.resourceLinks.technicalDocs">Documentación Técnica</span>
-                  <small data-i18n="excelProject.resourceLinks.technicalDocsDesc">Guía completa de arquitectura híbrida</small>
-                </div>
-                <div class="resource-info production">
-                  <i class="fas fa-desktop"></i>
-                  <span data-i18n="excelProject.resourceLinks.inProduction">Sistema Híbrido</span>
-                  <small data-i18n="excelProject.resourceLinks.inProductionDesc">Desktop y Web con core compartido</small>
-                </div>
-              </div>
-            </div>
-
-            <!-- Project Navigation -->
-            <div class="project-navigation">
-              <a href="sistema-bots-ia.html" class="prev-project">
-                <i class="fas fa-arrow-left"></i> <span data-i18n="excelProject.navigation.prevProject">Proyecto Anterior: Sistema Multi-Bot IA</span>
-              </a>
-              <a href="../index.html#section3" class="next-project">
-                <span data-i18n="excelProject.navigation.backToPortfolio">Volver al Portafolio</span> <i class="fas fa-arrow-right"></i>
-              </a>
-            </div>
-
-
         </div>
-      </section>
+
+        <div class="proj-content">
+          <div class="proj-content-grid">
+            <main class="proj-main">
+              
+              <!-- Carousel -->
+              <div class="proj-carousel-wrap">
+                <div class="carousel-container">
+                  <div class="carousel-slides count-3" id="carousel-slides">
+                    <div class="carousel-slide active"><img src="../assets/images/projects/excel-scraper/image_1.png" alt="Sistema Híbrido Desktop"></div>
+                    <div class="carousel-slide"><img src="../assets/images/projects/excel-scraper/image_2.png" alt="Validación de Celdas Combinadas"></div>
+                    <div class="carousel-slide"><img src="../assets/images/projects/excel-scraper/image_3.png" alt="Interfaz Web React"></div>
+                  </div>
+                  <button class="carousel-btn prev" id="carousel-prev"><i class="fas fa-chevron-left"></i></button>
+                  <button class="carousel-btn next" id="carousel-next"><i class="fas fa-chevron-right"></i></button>
+                  <button class="carousel-fullscreen-btn" id="carousel-fullscreen"><i class="fas fa-expand"></i></button>
+                  <div class="carousel-counter"><span id="current-slide">1</span> / 3</div>
+                </div>
+                <div class="carousel-indicators-row" id="carousel-indicators">
+                  <button class="carousel-dot active" data-slide="0"></button>
+                  <button class="carousel-dot" data-slide="1"></button>
+                  <button class="carousel-dot" data-slide="2"></button>
+                </div>
+              </div>
+
+              <!-- Overview -->
+              <div class="content-block">
+                <div class="content-block-title" data-i18n="excelProject.sections.overview">Descripción General</div>
+                <p data-i18n="excelProject.sections.overviewText">Sistema híbrido que automatiza completamente el procesamiento de tablas Excel educativas complejas. Arquitectura compartida entre desktop (PyQt) y web (React + Flask) con algoritmo bidimensional de detección de celdas combinadas. Reduce 90-95% el tiempo de procesamiento manual.</p>
+                
+                <h3 style="margin-top:2rem; font-size:1.1rem; color:var(--text); margin-bottom:1rem;">Características Principales</h3>
+                <div class="feature-list" style="display: flex; flex-direction: column; gap: 1rem;">
+                  <div class="feature-item" style="display: flex; gap: 1rem; align-items: flex-start;">
+                    <div class="feature-item-icon green" style="background: rgba(16, 185, 129, 0.1); color: #10b981; width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                      <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <div class="feature-item-text">
+                      <strong data-i18n="excelProject.features.algorithm.title" style="color: var(--text); display: block; margin-bottom: 0.25rem;">Algoritmo Bidimensional</strong>
+                      <p data-i18n="excelProject.features.algorithm.desc" style="margin: 0; color: var(--text-muted); font-size: 0.95rem; line-height: 1.5;">Detección automática de celdas combinadas con algoritmo bidimensional que identifica patrones [valor] y genera spans precisos</p>
+                    </div>
+                  </div>
+                  
+                  <div class="feature-item" style="display: flex; gap: 1rem; align-items: flex-start;">
+                    <div class="feature-item-icon blue" style="background: rgba(59, 130, 246, 0.1); color: #3b82f6; width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                      <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="feature-item-text">
+                      <strong data-i18n="excelProject.features.hybrid.title" style="color: var(--text); display: block; margin-bottom: 0.25rem;">Arquitectura Híbrida</strong>
+                      <p data-i18n="excelProject.features.hybrid.desc" style="margin: 0; color: var(--text-muted); font-size: 0.95rem; line-height: 1.5;">Core de negocio compartido entre desktop (PyQt) y web (React + Flask) garantizando consistencia y mantenibilidad</p>
+                    </div>
+                  </div>
+
+                  <div class="feature-item" style="display: flex; gap: 1rem; align-items: flex-start;">
+                    <div class="feature-item-icon purple" style="background: rgba(139, 92, 246, 0.1); color: #8b5cf6; width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                      <i class="fas fa-check-double"></i>
+                    </div>
+                    <div class="feature-item-text">
+                      <strong data-i18n="excelProject.features.validation.title" style="color: var(--text); display: block; margin-bottom: 0.25rem;">Validaciones Universales</strong>
+                      <p data-i18n="excelProject.features.validation.desc" style="margin: 0; color: var(--text-muted); font-size: 0.95rem; line-height: 1.5;">Sistema de validaciones automáticas para coherencia, subtotales y totales con evidencia de estados</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Demo & Arch Tabs -->
+              <div class="demo-tabs-wrap">
+                <div class="demo-tabs-header">
+                  <button class="demo-tab-btn active" data-tab="demo"><i class="fas fa-play-circle"></i> <span data-i18n="excelProject.tabs.video">Video Demo</span></button>
+                  <button class="demo-tab-btn" data-tab="arch"><i class="fas fa-layer-group"></i> <span data-i18n="excelProject.tabs.guide">Guía Técnica</span></button>
+                </div>
+                
+                <!-- Demo Pane -->
+                <div class="demo-tab-pane active" id="pane-demo">
+                  <div class="youtube-wrap">
+                    <iframe src="https://www.youtube.com/embed/GgXT9KtJYeM" allowfullscreen></iframe>
+                  </div>
+                  <div class="video-caption">
+                    <h4 data-i18n="excelProject.video.title">Demostración del Sistema Híbrido</h4>
+                    <p data-i18n="excelProject.video.description">Observa cómo el sistema procesa archivos Excel complejos tanto en la interfaz desktop (PyQt) como en la interfaz web (React). Incluye demostración del algoritmo de detección de celdas combinadas, validaciones automáticas y flujo completo de 4 pasos.</p>
+                  </div>
+                </div>
+
+                <!-- Arch Pane -->
+                <div class="demo-tab-pane" id="pane-arch">
+                  <div class="arch-block">
+                    <pre>
+<span class="purple">Frontend Layer (React / PyQt5)</span>
+    └─ Controlador especializado por UI
+    └─ Visualización tipo Excel con selección de rangos
+
+<span class="blue">Core Shared Engine (Python)</span>
+    └─ Algoritmo bidimensional de celdas combinadas
+    └─ Validaciones universales puros (sin dependencias UI)
+
+<span class="accent">Data Layer (Pandas + OpenPyXL)</span>
+    └─ Extracción y limpieza
+    └─ Evidencia de estados y reportes</pre>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Workflow -->
+              <div class="content-block">
+                <div class="content-block-title" data-i18n="excelProject.sections.workflow">Flujo de Trabajo</div>
+                <div class="workflow-steps">
+                  <div class="workflow-step">
+                    <div class="workflow-step-num">01</div>
+                    <div class="workflow-step-icon"><i class="fas fa-file-import"></i></div>
+                    <h4 data-i18n="excelProject.workflowSteps.extraction.title">1. Extracción</h4>
+                    <p data-i18n="excelProject.workflowSteps.extraction.desc">Carga y análisis de archivos Excel</p>
+                  </div>
+                  <div class="workflow-step">
+                    <div class="workflow-step-num">02</div>
+                    <div class="workflow-step-icon"><i class="fas fa-border-all"></i></div>
+                    <h4 data-i18n="excelProject.workflowSteps.detection.title">2. Detección</h4>
+                    <p data-i18n="excelProject.workflowSteps.detection.desc">Algoritmo bidimensional de celdas combinadas</p>
+                  </div>
+                  <div class="workflow-step">
+                    <div class="workflow-step-num">03</div>
+                    <div class="workflow-step-icon"><i class="fas fa-check-circle"></i></div>
+                    <h4 data-i18n="excelProject.workflowSteps.validation.title">3. Validación</h4>
+                    <p data-i18n="excelProject.workflowSteps.validation.desc">Verificación de coherencia y totales</p>
+                  </div>
+                  <div class="workflow-step">
+                    <div class="workflow-step-num">04</div>
+                    <div class="workflow-step-icon"><i class="fas fa-desktop"></i></div>
+                    <h4 data-i18n="excelProject.workflowSteps.visualization.title">4. Visualización</h4>
+                    <p data-i18n="excelProject.workflowSteps.visualization.desc">Presentación en interfaz híbrida</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Challenges -->
+              <div class="content-block">
+                <div class="content-block-title" data-i18n="excelProject.sections.challenges">Desafíos Técnicos y Soluciones</div>
+                <div class="challenges-list">
+                  <div class="challenge-card">
+                    <div class="challenge-header">
+                      <i class="fas fa-exclamation-triangle"></i>
+                      <h4 data-i18n="excelProject.challenges.challenge1.title">Detección de Celdas Combinadas</h4>
+                    </div>
+                    <div class="challenge-body">
+                      <div class="challenge-problem">
+                        <span class="challenge-label">Problem</span>
+                        <p data-i18n="excelProject.challenges.challenge1.problem.desc">Excel no proporciona información directa sobre celdas combinadas en archivos complejos</p>
+                      </div>
+                      <div class="challenge-solution">
+                        <span class="challenge-label">Solution</span>
+                        <p data-i18n="excelProject.challenges.challenge1.solution.desc">Algoritmo bidimensional que detecta patrones [valor] y calcula spans automáticamente</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="challenge-card">
+                    <div class="challenge-header">
+                      <i class="fas fa-exclamation-triangle"></i>
+                      <h4 data-i18n="excelProject.challenges.challenge2.title">Arquitectura Híbrida</h4>
+                    </div>
+                    <div class="challenge-body">
+                      <div class="challenge-problem">
+                        <span class="challenge-label">Problem</span>
+                        <p data-i18n="excelProject.challenges.challenge2.problem.desc">Mantener consistencia entre interfaces desktop y web sin duplicar lógica</p>
+                      </div>
+                      <div class="challenge-solution">
+                        <span class="challenge-label">Solution</span>
+                        <p data-i18n="excelProject.challenges.challenge2.solution.desc">Core de negocio compartido con controladores especializados por plataforma</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="challenge-card">
+                    <div class="challenge-header">
+                      <i class="fas fa-exclamation-triangle"></i>
+                      <h4 data-i18n="excelProject.challenges.challenge3.title">Validaciones Universales</h4>
+                    </div>
+                    <div class="challenge-body">
+                      <div class="challenge-problem">
+                        <span class="challenge-label">Problem</span>
+                        <p data-i18n="excelProject.challenges.challenge3.problem.desc">Validar coherencia en tablas con estructuras variables y datos complejos</p>
+                      </div>
+                      <div class="challenge-solution">
+                        <span class="challenge-label">Solution</span>
+                        <p data-i18n="excelProject.challenges.challenge3.solution.desc">Sistema de validaciones automáticas con evidencia de estados y reportes detallados</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Impact -->
+              <div class="content-block">
+                <div class="content-block-title" data-i18n="excelProject.sections.productionImpact">Impacto en Producción</div>
+                <div class="testimonials-grid">
+                  <div class="testimonial-card">
+                    <div class="testimonial-header">
+                      <div class="testimonial-avatar"><i class="fas fa-user-tie"></i></div>
+                      <div>
+                        <div class="testimonial-name" data-i18n="excelProject.feedback.dataAnalyst.title">Analista de Datos Educativos</div>
+                        <div class="testimonial-role" data-i18n="excelProject.feedback.dataAnalyst.institution">Institución Educativa</div>
+                      </div>
+                    </div>
+                    <p class="testimonial-quote" data-i18n="excelProject.feedback.dataAnalyst.quote">"Antes tardábamos horas procesando manualmente cada archivo Excel con celdas combinadas. Ahora el sistema detecta automáticamente la estructura y valida todo en minutos."</p>
+                    <div class="testimonial-metrics">
+                      <span class="metric-badge green" data-i18n="excelProject.feedback.dataAnalyst.metrics.timeSaved">95% menos tiempo</span>
+                      <span class="metric-badge orange" data-i18n="excelProject.feedback.dataAnalyst.metrics.accuracy">100% precisión</span>
+                    </div>
+                  </div>
+                  <div class="testimonial-card">
+                    <div class="testimonial-header">
+                      <div class="testimonial-avatar"><i class="fas fa-laptop-code"></i></div>
+                      <div>
+                        <div class="testimonial-name" data-i18n="excelProject.feedback.developer.title">Desarrollador del Equipo</div>
+                        <div class="testimonial-role" data-i18n="excelProject.feedback.developer.institution">Equipo de desarrollo</div>
+                      </div>
+                    </div>
+                    <p class="testimonial-quote" data-i18n="excelProject.feedback.developer.quote">"La arquitectura híbrida permite mantener un solo core de negocio para desktop y web. El algoritmo bidimensional es elegante y maneja casos complejos que otros sistemas no pueden."</p>
+                    <div class="testimonial-metrics">
+                      <span class="metric-badge blue" data-i18n="excelProject.feedback.developer.metrics.codeReuse">80% código reutilizado</span>
+                      <span class="metric-badge purple" data-i18n="excelProject.feedback.developer.metrics.architecture">Arquitectura sólida</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Navigation -->
+              <div class="proj-navigation">
+                <!-- Relevance order: Forensic Suite -> Excel Scraper -> RTX Scraper (scraping-productos.html) -->
+                <a href="forensic-suite.html" class="proj-nav-link">
+                  <i class="fas fa-arrow-left"></i>
+                  <div><span class="proj-nav-label">Previous</span>Forensic Suite</div>
+                </a>
+                <a href="scraping-productos.html" class="proj-nav-link next">
+                  <i class="fas fa-arrow-right"></i>
+                  <div><span class="proj-nav-label">Next</span>RTX Scraper</div>
+                </a>
+              </div>
+            </main>
+
+            <!-- Sidebar -->
+            <aside class="proj-sidebar">
+              <div class="sidebar-widget">
+                <div class="sidebar-widget-title" data-i18n="excelProject.sections.techStack">Tech Stack</div>
+                <div class="stack-list">
+                  <div class="stack-row">
+                    <span class="label" data-i18n="excelProject.techStack.backend.title">Backend</span>
+                    <span class="value">Python, Flask, Pandas</span>
+                  </div>
+                  <div class="stack-row">
+                    <span class="label" data-i18n="excelProject.techStack.frontend.title">Frontend</span>
+                    <span class="value">PyQt5, React, Bootstrap</span>
+                  </div>
+                  <div class="stack-row">
+                    <span class="label" data-i18n="excelProject.techStack.processing.title">Procesamiento</span>
+                    <span class="value">OpenPyXL, Algoritmos Propios</span>
+                  </div>
+                  <div class="stack-row">
+                    <span class="label" data-i18n="excelProject.techStack.architecture.title">Arquitectura</span>
+                    <span class="value">Híbrida, Core Compartido</span>
+                  </div>
+                </div>
+              </div>
+            </aside>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carousel Modal -->
+    <div class="carousel-modal" id="carousel-modal">
+      <button class="carousel-modal-close" id="carousel-modal-close"><i class="fas fa-times"></i></button>
+      <button class="carousel-modal-nav carousel-modal-prev" id="carousel-modal-prev"><i class="fas fa-chevron-left"></i></button>
+      <button class="carousel-modal-nav carousel-modal-next" id="carousel-modal-next"><i class="fas fa-chevron-right"></i></button>
+      <div class="carousel-modal-counter"><span id="modal-current-slide">1</span> / 3</div>
+      <img id="carousel-modal-img" src="" alt="Fullscreen view">
     </div>
 
     <!-- Scripts -->
-    <!-- Bootstrap core JavaScript -->
     <script src="../vendor/jquery/jquery.min.js"></script>
-    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <script src="../assets/js/isotope.min.js"></script>
-    <script src="../assets/js/owl-carousel.js"></script>
-    <script src="../assets/js/lightbox.js"></script>
-    <script src="../assets/js/custom.js"></script>
-    <script src="../assets/js/theme-switcher.js"></script>
     <script src="../assets/js/template-loader.js"></script>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', async function() {
-        try {
-          console.log('Iniciando carga de componentes...');
-          // Primero actualizar las rutas CSS
-          TemplateLoader.updateCSSPaths();
-          // Luego cargar el sidebar
-          await TemplateLoader.loadSidebar();
-        } catch (error) {
-          console.error('Error durante la inicialización:', error);
-        }
-      });
-    </script>
-
-    <!-- Scripts de i18n -->
+    
+    <!-- i18n -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/22.4.9/i18next.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next-http-backend/2.1.1/i18nextHttpBackend.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-i18next/1.2.1/jquery-i18next.min.js"></script>
-    <!-- Scripts personalizados de i18n -->
     <script src="../assets/js/i18n-config.js"></script>
     <script src="../assets/js/language-switcher.js"></script>
 
-    <!-- Script para las pestañas de demo -->
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // Funcionalidad de pestañas
-        const tabs = document.querySelectorAll('.demo-tab');
-        const panes = document.querySelectorAll('.demo-tab-pane');
+      document.addEventListener('DOMContentLoaded', async () => {
+        await TemplateLoader.loadSidebar();
+        
+        // Carousel Logic
+        const slides = document.getElementById('carousel-slides');
+        const dots = document.querySelectorAll('.carousel-dot');
+        const counter = document.getElementById('current-slide');
+        let index = 0; const total = 3;
 
-        tabs.forEach(tab => {
-          tab.addEventListener('click', function() {
-            const targetTab = this.getAttribute('data-tab');
+        function update() {
+          slides.style.transform = `translateX(-${index * (100/total)}%)`;
+          dots.forEach((d, i) => d.classList.toggle('active', i === index));
+          counter.textContent = index + 1;
+        }
+        document.getElementById('carousel-next')?.addEventListener('click', () => { index = (index + 1) % total; update(); });
+        document.getElementById('carousel-prev')?.addEventListener('click', () => { index = (index - 1 + total) % total; update(); });
+        dots.forEach((d, i) => d.addEventListener('click', () => { index = i; update(); }));
 
-            // Remover clase active de todas las pestañas y paneles
-            tabs.forEach(t => t.classList.remove('active'));
-            panes.forEach(p => p.classList.remove('active'));
-
-            // Agregar clase active a la pestaña clickeada
-            this.classList.add('active');
-
-            // Mostrar el panel correspondiente
-            const targetPane = document.getElementById(targetTab + '-pane');
-            if (targetPane) {
-              targetPane.classList.add('active');
-            }
+        // Tabs Logic
+        document.querySelectorAll('.demo-tab-btn').forEach(btn => {
+          btn.addEventListener('click', () => {
+            document.querySelectorAll('.demo-tab-btn').forEach(b => b.classList.remove('active'));
+            document.querySelectorAll('.demo-tab-pane').forEach(p => p.classList.remove('active'));
+            btn.classList.add('active');
+            document.getElementById('pane-' + btn.dataset.tab).classList.add('active');
           });
         });
 
-        // Funcionalidad del carrusel
-        const slides = document.getElementById('carousel-slides');
-        const indicators = document.querySelectorAll('.carousel-indicator');
-        const prevBtn = document.getElementById('carousel-prev');
-        const nextBtn = document.getElementById('carousel-next');
-        const currentSlideSpan = document.getElementById('current-slide');
-        const fullscreenBtn = document.getElementById('carousel-fullscreen');
+        // Fullscreen Modal Logic
         const modal = document.getElementById('carousel-modal');
         const modalImg = document.getElementById('carousel-modal-img');
-        const modalClose = document.getElementById('carousel-modal-close');
-        const modalPrev = document.getElementById('carousel-modal-prev');
-        const modalNext = document.getElementById('carousel-modal-next');
-        const modalCurrentSlide = document.getElementById('modal-current-slide');
-
-        let currentSlide = 0;
-        const totalSlides = 3;
-
-        // Array con las rutas de las imágenes
-        const imageUrls = [
-          '../assets/images/projects/excel-scraper/image_1.png',
-          '../assets/images/projects/excel-scraper/image_2.png',
-          '../assets/images/projects/excel-scraper/image_3.png'
-        ];
-
-        function updateCarousel() {
-          // Mover slides (33.33% por slide para 3 imágenes)
-          const translateX = -currentSlide * 33.33;
-          slides.style.transform = `translateX(${translateX}%)`;
-
-          // Actualizar indicadores
-          indicators.forEach((indicator, index) => {
-            indicator.classList.toggle('active', index === currentSlide);
-          });
-
-          // Actualizar contador
-          currentSlideSpan.textContent = currentSlide + 1;
+        const modalCounter = document.getElementById('modal-current-slide');
+        
+        function updateModal() {
+          modalImg.src = document.querySelectorAll('.carousel-slide img')[index].src;
+          modalCounter.textContent = index + 1;
         }
 
-        function nextSlide() {
-          currentSlide = (currentSlide + 1) % totalSlides;
-          updateCarousel();
-        }
-
-        function prevSlide() {
-          currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-          updateCarousel();
-        }
-
-        function goToSlide(slideIndex) {
-          currentSlide = slideIndex;
-          updateCarousel();
-        }
-
-        // Event listeners
-        if (nextBtn) nextBtn.addEventListener('click', nextSlide);
-        if (prevBtn) prevBtn.addEventListener('click', prevSlide);
-
-        indicators.forEach((indicator, index) => {
-          indicator.addEventListener('click', () => goToSlide(index));
+        document.getElementById('carousel-fullscreen')?.addEventListener('click', () => {
+          updateModal();
+          modal.classList.add('active');
         });
 
-        // Navegación con teclado
-        document.addEventListener('keydown', (e) => {
-          if (e.key === 'ArrowLeft') {
-            prevSlide();
-          } else if (e.key === 'ArrowRight') {
-            nextSlide();
-          }
+        document.getElementById('carousel-modal-close')?.addEventListener('click', () => {
+          modal.classList.remove('active');
         });
 
-        // Inicializar carrusel
-        updateCarousel();
+        document.getElementById('carousel-modal-next')?.addEventListener('click', () => {
+          index = (index + 1) % total;
+          updateModal();
+          update();
+        });
+
+        document.getElementById('carousel-modal-prev')?.addEventListener('click', () => {
+          index = (index - 1 + total) % total;
+          updateModal();
+          update();
+        });
       });
     </script>
-
-    <!-- Modal de pantalla completa - FUERA de todos los contenedores -->
-    <div class="carousel-modal" id="carousel-modal">
-      <button class="carousel-modal-close" id="carousel-modal-close">
-        <i class="fas fa-times"></i>
-      </button>
-
-      <!-- Controles de navegación en el modal -->
-      <button class="carousel-modal-nav carousel-modal-prev" id="carousel-modal-prev">
-        <i class="fas fa-chevron-left"></i>
-      </button>
-      <button class="carousel-modal-nav carousel-modal-next" id="carousel-modal-next">
-        <i class="fas fa-chevron-right"></i>
-      </button>
-
-      <!-- Contador en el modal -->
-      <div class="carousel-modal-counter" id="carousel-modal-counter">
-        <span id="modal-current-slide">1</span> / <span id="modal-total-slides">3</span>
-      </div>
-
-      <img id="carousel-modal-img" src="" alt="Imagen en pantalla completa">
-    </div>
-
-    <!-- CSS específico para carousel de 3 imágenes -->
-    <style>
-      .carousel-slides {
-        width: 300% !important; /* 3 imágenes */
-      }
-      .carousel-slide {
-        width: 33.33% !important; /* 100% / 3 */
-      }
-    </style>
   </body>
 </html>

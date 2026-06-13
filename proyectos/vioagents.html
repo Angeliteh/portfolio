@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="VioAgents — Multi-tenant conversational AI platform for business automation. Custom M1-M2-M3 cognitive orchestration. Case study by Angel Payan."
+    />
+    <title>VioAgents · Angel Payan</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="../assets/css/portfolio.css" />
+    <link rel="stylesheet" href="../assets/css/project.css" />
+    <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg" />
+  </head>
+
+  <body class="project-page">
+    <div id="page-wraper">
+      <div id="sidebar-container"></div>
+
+      <main id="main-content">
+
+        <div class="proj-hero">
+          <div class="container">
+
+            <a href="../index.html" class="proj-hero-back">
+              <i class="fas fa-arrow-left"></i> Back to portfolio
+            </a>
+
+            <div class="proj-hero-meta">
+              <span class="proj-category-badge purple">Multi-tenant SaaS</span>
+              <span class="proj-category-badge purple">AI Agents</span>
+              <span class="proj-category-badge green">Live Demo</span>
+            </div>
+
+            <h1 class="proj-hero-title">VioAgents</h1>
+
+            <p class="proj-hero-tagline">
+              A conversational AI platform that deploys specialized business agents — for sales,
+              appointment booking, and customer support — using a custom cognitive orchestration
+              system designed to eliminate hallucinations on real data.
+            </p>
+
+            <div class="proj-hero-actions">
+              <a href="https://ai-agents-vio-1-0-yqum.onrender.com/" target="_blank" class="btn-primary">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+              <a href="../index.html#section2" class="btn-secondary">← All products</a>
+            </div>
+
+            <div class="proj-meta-row">
+              <div class="proj-meta-item">
+                <div class="proj-meta-label">Type</div>
+                <div class="proj-meta-value">Multi-tenant SaaS</div>
+              </div>
+              <div class="proj-meta-item">
+                <div class="proj-meta-label">Status</div>
+                <div class="proj-meta-value">✦ Live</div>
+              </div>
+              <div class="proj-meta-item">
+                <div class="proj-meta-label">Target</div>
+                <div class="proj-meta-value">SMBs &amp; Local Business</div>
+              </div>
+              <div class="proj-meta-item">
+                <div class="proj-meta-label">Built by</div>
+                <div class="proj-meta-value">Solo — end to end</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="proj-content">
+          <div class="container">
+            <div class="proj-content-grid">
+
+              <div class="proj-main">
+
+                <!-- Screenshot carousel (add images to assets/images/projects/vioagents/) -->
+                <div class="content-block">
+                  <div class="content-block-title">Product Screenshots</div>
+
+                  <div class="proj-carousel-wrap" id="proj-carousel">
+                    <div class="carousel-container">
+                      <button class="carousel-fullscreen-btn" id="fs-btn" title="Fullscreen"><i class="fas fa-expand"></i></button>
+                      <div class="carousel-counter"><span id="slide-cur">1</span> / <span id="slide-tot">1</span></div>
+
+                      <div class="carousel-slides count-1" id="carousel-slides">
+                        <div class="carousel-slide">
+                          <!-- Placeholder -->
+                          <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;color:var(--text-subtle);font-family:var(--mono);font-size:13px;padding:48px;text-align:center;">
+                            <i class="fas fa-image" style="font-size:32px;opacity:0.3;"></i>
+                            <span>Screenshots coming soon</span>
+                            <span style="font-size:11px;">Drop images to assets/images/projects/vioagents/</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <button class="carousel-btn prev" id="car-prev"><i class="fas fa-chevron-left"></i></button>
+                      <button class="carousel-btn next" id="car-next"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <div class="carousel-indicators-row" id="car-dots"></div>
+                  </div>
+                </div>
+
+                <!-- Live product demo tabs -->
+                <div class="content-block">
+                  <div class="content-block-title">Live Demo</div>
+
+                  <div class="demo-tabs-wrap">
+                    <div class="demo-tabs-header">
+                      <button class="demo-tab-btn active" data-tab="live">
+                        <i class="fas fa-globe"></i> Live Widget
+                      </button>
+                      <button class="demo-tab-btn" data-tab="guide">
+                        <i class="fas fa-book-open"></i> How it works
+                      </button>
+                    </div>
+
+                    <div class="demo-tab-pane active" id="tab-live" style="display:flex;flex-direction:column;gap:14px;">
+                      <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:24px;display:flex;flex-direction:column;gap:12px;">
+                        <div style="font-size:13px;color:var(--text-muted);">
+                          The VioAgents widget is currently live. You can test the AI agent's ability to
+                          search catalogs, handle objections, and book appointments in a real conversational flow.
+                        </div>
+                        <a href="https://ai-agents-vio-1-0-yqum.onrender.com/" target="_blank" class="btn-primary" style="width:fit-content;">
+                          <i class="fas fa-external-link-alt"></i> Open Live Demo
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="demo-tab-pane" id="tab-guide">
+                      <div style="display:flex;flex-direction:column;gap:16px;">
+                        <h3 style="font-size:15px;font-weight:600;color:var(--text);margin:0;">Testing the agents</h3>
+                        <ol style="color:var(--text-muted);font-size:13.5px;line-height:2;padding-left:20px;">
+                          <li><strong>Sales:</strong> Ask for product recommendations or prices. Notice how it only quotes items from its actual CSV catalog.</li>
+                          <li><strong>Booking:</strong> Try to book an appointment. It checks Google Calendar in real time and will not allow double bookings.</li>
+                          <li><strong>Support:</strong> Ask complex policy questions. It grounds all answers on its provided markdown knowledge base.</li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="content-block">
+                  <div class="content-block-title">The Problem</div>
+                  <h3>Traditional chatbots are rigid. LLM wrappers hallucinate.</h3>
+                  <p>
+                    SMBs lose leads every day because they can't respond instantly outside business
+                    hours. Traditional rule-based chatbots can't handle natural language. Generic
+                    LLM integrations invent prices, availability, and policies — damaging trust and
+                    reputation.
+                  </p>
+                  <p>
+                    The market needed an agent that speaks naturally, knows the actual catalog, books
+                    real appointments, and never invents information it doesn't have.
+                  </p>
+                </div>
+
+                <div class="content-block">
+                  <div class="content-block-title">The Architecture: M1 → M2 → M3</div>
+                  <h3>Custom cognitive orchestration — no LangChain, no AutoGen.</h3>
+                  <p>
+                    Instead of relying on external orchestration frameworks, VioAgents uses a
+                    purpose-built three-moment system with strict data validation at each gate.
+                    This guarantees the agent never responds with invented data.
+                  </p>
+
+                  <div class="arch-block">
+                    <pre>
+<span class="purple">M1 · Conversational Receptor</span>
+   └─ Understands user intent
+   └─ Defines need_package: {readiness, missing_requirements}
+   └─ Gates: if data is missing → asks user, never proceeds blindly
+
+<span class="blue">M2 · Technical Specialist</span>
+   └─ Executes tool calls (CSV catalog search, Google Calendar query)
+   └─ Returns exact structured data (real prices, real time slots)
+   └─ Cannot respond to user — only returns data to M3
+
+<span class="accent">M3 · Grounded Responder</span>
+   └─ Receives exact data from M2
+   └─ Composes natural language response
+   └─ Prohibited from inventing any price, product, or availability
+   └─ If M2 returned empty → transparently says "not available"</pre>
+                  </div>
+                </div>
+
+                <div class="content-block">
+                  <div class="content-block-title">The Three Agents</div>
+
+                  <div class="feature-list">
+                    <div class="feature-item">
+                      <div class="feature-item-icon purple"><i class="fas fa-tag"></i></div>
+                      <div class="feature-item-text">
+                        <strong>Sales Agent</strong>
+                        <p>
+                          Intelligent product search over CSV catalogs. Multi-query support,
+                          cross-sell suggestions, and PDF quotation generation triggered by
+                          providing the customer's name.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="feature-item">
+                      <div class="feature-item-icon purple"><i class="fas fa-calendar-alt"></i></div>
+                      <div class="feature-item-text">
+                        <strong>Booking Agent</strong>
+                        <p>
+                          Real Google Calendar integration. Checks live availability, blocks slots
+                          in real time, prevents duplicates, and suggests alternatives for taken
+                          time slots — in natural conversation.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="feature-item">
+                      <div class="feature-item-icon purple"><i class="fas fa-question-circle"></i></div>
+                      <div class="feature-item-text">
+                        <strong>FAQ / Knowledge Agent</strong>
+                        <p>
+                          Consumes structured Markdown knowledge bases. Smart human handoff:
+                          when frustration or escalation is detected, the bot pauses and notifies
+                          a human operator with full conversation context.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="content-block">
+                  <div class="content-block-title">Multi-tenancy &amp; Scalability</div>
+                  <h3>Onboard a new client in minutes, not days.</h3>
+                  <p>
+                    VioAgents uses a three-level configuration hierarchy: Domain → Niche → Business.
+                    The cognitive rules and sector vocabulary are inherited automatically — only
+                    business-specific policies and catalog files need to be added per client.
+                    Embedding the widget requires exactly 2 lines of code.
+                  </p>
+                  <div class="arch-block">
+                    <pre>
+<span class="purple">Domain</span>   Sales / Booking / FAQ  →  global behavior rules
+<span class="blue">Niche</span>    Ferreterías / Clínicas →  sector vocabulary + categories
+<span class="accent">Business</span> Ferretería López       →  tenant_defaults.md + CSV catalog</pre>
+                  </div>
+                </div>
+
+                <!-- Workflow -->
+                <div class="content-block">
+                  <div class="content-block-title">AI Processing Pipeline</div>
+                  <div class="workflow-steps">
+                    <div class="workflow-step">
+                      <div class="workflow-step-num">M1</div>
+                      <div class="workflow-step-icon"><i class="fas fa-brain"></i></div>
+                      <h4>Receptor</h4>
+                      <p>Parses user intent and validates missing requirements.</p>
+                    </div>
+                    <div class="workflow-step">
+                      <div class="workflow-step-num">GATE</div>
+                      <div class="workflow-step-icon"><i class="fas fa-shield-alt"></i></div>
+                      <h4>Gatekeeper</h4>
+                      <p>Halts flow if data is missing, asks user naturally.</p>
+                    </div>
+                    <div class="workflow-step">
+                      <div class="workflow-step-num">M2</div>
+                      <div class="workflow-step-icon"><i class="fas fa-cogs"></i></div>
+                      <h4>Specialist</h4>
+                      <p>Executes tool calls (Google Calendar, DB queries).</p>
+                    </div>
+                    <div class="workflow-step">
+                      <div class="workflow-step-num">M3</div>
+                      <div class="workflow-step-icon"><i class="fas fa-comment-dots"></i></div>
+                      <h4>Grounding</h4>
+                      <p>Drafts final response using only exact data from M2.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Challenges -->
+                <div class="content-block">
+                  <div class="content-block-title">Technical Challenges &amp; Solutions</div>
+
+                  <div class="challenges-list">
+                    <div class="challenge-card">
+                      <div class="challenge-header">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <h4>AI Hallucinating Prices and Stock</h4>
+                      </div>
+                      <div class="challenge-body">
+                        <div class="challenge-problem">
+                          <span class="challenge-label">Problem</span>
+                          <p>Basic LLM integrations will often invent a price or confirm an appointment slot that doesn't exist just to sound helpful to the user.</p>
+                        </div>
+                        <div class="challenge-solution">
+                          <span class="challenge-label">Solution</span>
+                          <p>The M3 architectural isolation. M3 cannot access internal weights for knowledge; it only formats the strict JSON return value from M2 into markdown tables.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="challenge-card">
+                      <div class="challenge-header">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <h4>Frustrating Bot Loops</h4>
+                      </div>
+                      <div class="challenge-body">
+                        <div class="challenge-problem">
+                          <span class="challenge-label">Problem</span>
+                          <p>Users hate when bots get stuck in loops and refuse to pass them to a human, leading to dropped leads and bad reviews.</p>
+                        </div>
+                        <div class="challenge-solution">
+                          <span class="challenge-label">Solution</span>
+                          <p>Native sentiment analysis and explicit handoff detection. If frustration is detected, the bot pauses itself automatically and pages a human operator to take over the chat.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Impact -->
+                <div class="content-block">
+                  <div class="content-block-title">Business Impact</div>
+
+                  <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                      <div class="testimonial-header">
+                        <div class="testimonial-avatar"><i class="fas fa-calendar-check"></i></div>
+                        <div>
+                          <div class="testimonial-name">Lead Capture &amp; Booking</div>
+                          <div class="testimonial-role">Conversion Impact</div>
+                        </div>
+                      </div>
+                      <p class="testimonial-quote">
+                        "Instead of sending leads to a static contact form where 70% drop off, the agent books them directly into Google Calendar instantly, 24/7."
+                      </p>
+                      <div class="testimonial-metrics">
+                        <span class="metric-badge">24/7 Operation</span>
+                        <span class="metric-badge orange">Zero Duplicate Bookings</span>
+                      </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                      <div class="testimonial-header">
+                        <div class="testimonial-avatar"><i class="fas fa-tachometer-alt"></i></div>
+                        <div>
+                          <div class="testimonial-name">Speed &amp; Scalability</div>
+                          <div class="testimonial-role">Deployment Impact</div>
+                        </div>
+                      </div>
+                      <p class="testimonial-quote">
+                        "Adding a new client in a supported niche takes minutes. We just drop in their CSV catalog and tenant_defaults.md file, and the agent inherits the domain rules automatically."
+                      </p>
+                      <div class="testimonial-metrics">
+                        <span class="metric-badge blue">Response &lt; 2s</span>
+                        <span class="metric-badge purple">2-line Integration</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Project navigation -->
+                <div class="proj-navigation">
+                  <a href="csv-enricher.html" class="proj-nav-link">
+                    <i class="fas fa-arrow-left"></i>
+                    <div><span class="proj-nav-label">Previous product</span>CSV Enricher</div>
+                  </a>
+                  <a href="massmsg.html" class="proj-nav-link next">
+                    <i class="fas fa-arrow-right"></i>
+                    <div><span class="proj-nav-label">Next product</span>MassMSG</div>
+                  </a>
+                </div>
+
+              </div>
+
+              <aside class="proj-sidebar">
+
+                <div class="sidebar-widget cta-widget">
+                  <div class="sidebar-widget-title">Try It</div>
+                  <a href="https://ai-agents-vio-1-0-yqum.onrender.com/" target="_blank" class="btn-primary">
+                    <i class="fas fa-external-link-alt"></i> Live Demo
+                  </a>
+                </div>
+
+                <div class="sidebar-widget">
+                  <div class="sidebar-widget-title">Tech Stack</div>
+                  <div class="stack-list">
+                    <div class="stack-row"><span class="label">Backend</span><span class="value">FastAPI · Python</span></div>
+                    <div class="stack-row"><span class="label">Frontend</span><span class="value">React · Vite</span></div>
+                    <div class="stack-row"><span class="label">Widget</span><span class="value">Vanilla JS</span></div>
+                    <div class="stack-row"><span class="label">Database</span><span class="value">Supabase · PostgreSQL</span></div>
+                    <div class="stack-row"><span class="label">AI</span><span class="value">OpenAI / OpenRouter</span></div>
+                    <div class="stack-row"><span class="label">Calendar</span><span class="value">Google Calendar API</span></div>
+                    <div class="stack-row"><span class="label">Docs</span><span class="value">PDFKit</span></div>
+                  </div>
+                </div>
+
+                <div class="sidebar-widget">
+                  <div class="sidebar-widget-title">Key Facts</div>
+                  <div class="metric-list">
+                    <div class="metric-row">
+                      <div class="metric-label">Response time</div>
+                      <div class="metric-value">&lt; 2 seconds</div>
+                    </div>
+                    <div class="metric-row">
+                      <div class="metric-label">Hallucination risk</div>
+                      <div class="metric-value">Eliminated by M3</div>
+                    </div>
+                    <div class="metric-row">
+                      <div class="metric-label">Integration</div>
+                      <div class="metric-value">2 lines of code</div>
+                    </div>
+                    <div class="metric-row">
+                      <div class="metric-label">Orchestration</div>
+                      <div class="metric-value">Custom (no LangChain)</div>
+                    </div>
+                  </div>
+                </div>
+
+              </aside>
+            </div>
+          </div>
+        </div>
+
+        <footer class="site-footer">
+          <div class="container">
+            <p>Angel Payan &nbsp;·&nbsp; <a href="../index.html">Portfolio</a></p>
+          </div>
+        </footer>
+
+      </main>
+    </div>
+
+    <!-- Fullscreen modal -->
+    <div class="carousel-modal" id="carousel-modal">
+      <button class="carousel-modal-close" id="modal-close"><i class="fas fa-times"></i></button>
+      <button class="carousel-modal-nav carousel-modal-prev" id="modal-prev"><i class="fas fa-chevron-left"></i></button>
+      <button class="carousel-modal-nav carousel-modal-next" id="modal-next"><i class="fas fa-chevron-right"></i></button>
+      <div class="carousel-modal-counter"><span id="modal-cur">1</span> / <span id="modal-tot">1</span></div>
+      <img id="modal-img" src="" alt="" />
+    </div>
+
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../assets/js/template-loader.js"></script>
+    <script>
+      $(document).ready(function () {
+        $.easing.easeInOutCubic = function (x, t, b, c, d) {
+          if ((t /= d / 2) < 1) return (c / 2) * t * t * t + b;
+          return (c / 2) * ((t -= 2) * t * t + 2) + b;
+        };
+      });
+      document.addEventListener('DOMContentLoaded', async function () {
+        try { TemplateLoader.updateCSSPaths(); await TemplateLoader.loadSidebar(); } catch (e) { console.error(e); }
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/22.4.9/i18next.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next-http-backend/2.1.1/i18nextHttpBackend.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-i18next/1.2.1/jquery-i18next.min.js"></script>
+    <script src="../assets/js/i18n-config.js"></script>
+    <script src="../assets/js/language-switcher.js"></script>
+
+    <!-- Tabs logic -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      document.querySelectorAll('.demo-tab-btn').forEach(btn => {
+        btn.addEventListener('click', function () {
+          document.querySelectorAll('.demo-tab-btn').forEach(b => b.classList.remove('active'));
+          document.querySelectorAll('.demo-tab-pane').forEach(p => p.classList.remove('active'));
+          this.classList.add('active');
+          const pane = document.getElementById('tab-' + this.dataset.tab);
+          if (pane) pane.classList.add('active');
+        });
+      });
+    });
+    </script>
+  </body>
+</html>
