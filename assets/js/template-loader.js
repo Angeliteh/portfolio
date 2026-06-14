@@ -39,6 +39,16 @@ class TemplateLoader {
         this.initSidebarEvents();
         console.log('Eventos del sidebar inicializados');
 
+        // Re-aplicar traducciones tras inyectar el sidebar
+        // Usamos localize() directamente para no disparar languageChanged y evitar loops
+        if (window.i18nextInitialized) {
+          window.i18nextInitialized.then(() => {
+            if (window.$ && typeof $.fn.localize !== 'undefined') {
+              setTimeout(() => $('body').localize(), 50);
+            }
+          });
+        }
+
         // Disparar evento personalizado para notificar que el sidebar está listo
         window.dispatchEvent(new CustomEvent('sidebarLoaded'));
       } else {

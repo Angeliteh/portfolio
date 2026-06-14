@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio Web Comercial - Angel Payan - Caso de estudio de ingeniería de software por Angel Payan.">
+    <title>Portafolio Web Comercial - Angel Payan</title>
+    
+    <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
+    
+    <link rel="stylesheet" href="../assets/css/fontawesome.css">
+    <link rel="stylesheet" href="../assets/css/portfolio.css">
+    <link rel="stylesheet" href="../assets/css/project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <style>
+      .web-gallery-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+        margin-top: 1.5rem;
+      }
+
+      .web-gallery-item {
+        background: var(--bg-card);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        overflow: hidden;
+        transition: border-color 0.2s ease, transform 0.2s ease;
+        cursor: pointer;
+        text-decoration: none;
+        display: block;
+      }
+
+      .web-gallery-item:hover {
+        border-color: var(--border-mid);
+        transform: translateY(-2px);
+      }
+
+      .web-gallery-thumb {
+        width: 100%;
+        aspect-ratio: 16/9;
+        background: var(--bg-surface);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .web-gallery-thumb img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+      }
+
+      .web-gallery-item:hover .web-gallery-thumb img {
+        transform: scale(1.04);
+      }
+
+      .web-gallery-thumb-placeholder {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        color: var(--text-muted);
+        font-size: 12px;
+      }
+
+      .web-gallery-thumb-placeholder i {
+        font-size: 24px;
+        opacity: 0.4;
+      }
+
+      .web-gallery-info {
+        padding: 12px 14px;
+      }
+
+      .web-gallery-title {
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--text);
+        margin: 0 0 4px;
+      }
+
+      .web-gallery-meta {
+        font-size: 11px;
+        color: var(--text-muted);
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .web-gallery-tag {
+        font-size: 10px;
+        padding: 2px 8px;
+        border-radius: 20px;
+        font-weight: 600;
+        font-family: var(--mono);
+      }
+
+      .web-gallery-tag.wp { background: rgba(33,116,187,0.12); color: #2174bb; }
+      .web-gallery-tag.shopify { background: rgba(16,185,129,0.12); color: var(--accent); }
+      .web-gallery-tag.html { background: rgba(227,179,65,0.12); color: var(--orange); }
+
+      .web-external-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        margin-top: 10px;
+        font-size: 12px;
+        font-weight: 600;
+        color: var(--accent);
+        text-decoration: none;
+        transition: opacity 0.2s;
+      }
+      .web-external-link:hover { opacity: 0.75; }
+
+      @media (max-width: 600px) {
+        .web-gallery-grid { grid-template-columns: 1fr; }
+      }
+    </style>
+  </head>
+
+  <body class="project-page">
+    <div id="sidebar-container"></div>
+    
+    <div id="main-content">
+      <div class="container">
+        
+        <!-- Hero Section -->
+        <div class="proj-hero">
+          <a href="../index.html#section3" class="proj-hero-back">
+            <i class="fas fa-arrow-left"></i> <span data-i18n="webPortfolioProject.navigation.backToPortfolio">Volver al Portafolio</span>
+          </a>
+          
+          <div class="proj-hero-meta">
+            <span class="proj-category-badge orange">Web Development</span>
+          </div>
+          
+          <h1 class="proj-hero-title" data-i18n="webPortfolioProject.title">Portafolio Web Comercial</h1>
+          <p class="proj-hero-tagline" data-i18n="webPortfolioProject.subtitle">15+ sitios comerciales desplegados: landing pages, sitios corporativos y e-commerce</p>
+          
+          <div class="proj-hero-actions">
+            <a href="https://angeliteh.github.io/portfolio_webs/" target="_blank" class="btn-secondary">
+              <i class="fas fa-external-link-alt"></i> Ver Portafolio Completo
+            </a>
+          </div>
+
+          <!-- Hero Metrics -->
+          <div class="proj-meta-row">
+            <div class="proj-meta-item">
+              <div class="proj-meta-label">Proyectos</div>
+              <div class="proj-meta-value" data-i18n="webPortfolioProject.metrics.sites">15+ Sitios</div>
+            </div>
+            <div class="proj-meta-item">
+              <div class="proj-meta-label">Plataformas</div>
+              <div class="proj-meta-value" data-i18n="webPortfolioProject.metrics.platforms">WordPress & Shopify</div>
+            </div>
+            <div class="proj-meta-item">
+              <div class="proj-meta-label">Rendimiento</div>
+              <div class="proj-meta-value" data-i18n="webPortfolioProject.metrics.performance">90+ Lighthouse Score</div>
+            </div>
+            <div class="proj-meta-item">
+              <div class="proj-meta-label">Tech</div>
+              <div class="proj-meta-value">HTML, CSS, JS, WP, Shopify</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-content">
+          <div class="proj-content-grid">
+            <main class="proj-main">
+              
+              <!-- Overview -->
+              <div class="content-block">
+                <div class="content-block-title" data-i18n="webPortfolioProject.sections.overview">Descripción General</div>
+                <p data-i18n="webPortfolioProject.sections.overviewText">Colección diversa de sitios web comerciales desarrollados para clientes reales en distintas industrias. Desde landing pages de alta conversión hasta soluciones e-commerce completas en Shopify y temas WordPress personalizados. Este portafolio demuestra mi base sólida en desarrollo frontend, diseño responsivo, optimización SEO y entrega de experiencias web listas para producción que generan resultados de negocio reales.</p>
+              </div>
+
+              <!-- Gallery -->
+              <div class="content-block">
+                <div class="content-block-title">Sitios Destacados</div>
+                <p style="color: var(--text-muted); font-size: 13px; margin-bottom: 0;">Una selección de los proyectos web comerciales más representativos entregados a clientes.</p>
+
+                <div class="web-gallery-grid">
+
+                  <a href="https://angeliteh.github.io/portfolio_webs/" target="_blank" class="web-gallery-item">
+                    <div class="web-gallery-thumb">
+                      <div class="web-gallery-thumb-placeholder">
+                        <i class="fas fa-store"></i>
+                        <span>E-Commerce</span>
+                      </div>
+                    </div>
+                    <div class="web-gallery-info">
+                      <div class="web-gallery-title">E-Commerce Shopify</div>
+                      <div class="web-gallery-meta">
+                        <span class="web-gallery-tag shopify">Shopify</span>
+                        <span>Tienda online</span>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a href="https://angeliteh.github.io/portfolio_webs/" target="_blank" class="web-gallery-item">
+                    <div class="web-gallery-thumb">
+                      <div class="web-gallery-thumb-placeholder">
+                        <i class="fas fa-building"></i>
+                        <span>Corporativo</span>
+                      </div>
+                    </div>
+                    <div class="web-gallery-info">
+                      <div class="web-gallery-title">Sitio Corporativo</div>
+                      <div class="web-gallery-meta">
+                        <span class="web-gallery-tag wp">WordPress</span>
+                        <span>Presentación empresarial</span>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a href="https://angeliteh.github.io/portfolio_webs/" target="_blank" class="web-gallery-item">
+                    <div class="web-gallery-thumb">
+                      <div class="web-gallery-thumb-placeholder">
+                        <i class="fas fa-bullhorn"></i>
+                        <span>Landing Page</span>
+                      </div>
+                    </div>
+                    <div class="web-gallery-info">
+                      <div class="web-gallery-title">Landing Page de Alta Conversión</div>
+                      <div class="web-gallery-meta">
+                        <span class="web-gallery-tag html">HTML/CSS</span>
+                        <span>Lead generation</span>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a href="https://angeliteh.github.io/portfolio_webs/" target="_blank" class="web-gallery-item">
+                    <div class="web-gallery-thumb">
+                      <div class="web-gallery-thumb-placeholder">
+                        <i class="fas fa-utensils"></i>
+                        <span>Restaurante</span>
+                      </div>
+                    </div>
+                    <div class="web-gallery-info">
+                      <div class="web-gallery-title">Sitio para Restaurante</div>
+                      <div class="web-gallery-meta">
+                        <span class="web-gallery-tag wp">WordPress</span>
+                        <span>Local business</span>
+                      </div>
+                    </div>
+                  </a>
+
+                </div>
+
+                <a href="https://angeliteh.github.io/portfolio_webs/" target="_blank" class="web-external-link" style="margin-top: 20px;">
+                  <i class="fas fa-external-link-alt"></i> Ver todos los sitios en el portafolio completo
+                </a>
+              </div>
+
+              <!-- Capabilities -->
+              <div class="content-block">
+                <div class="content-block-title">Capacidades</div>
+                <div class="feature-list" style="display: flex; flex-direction: column; gap: 1rem;">
+                  <div class="feature-item" style="display: flex; gap: 1rem; align-items: flex-start;">
+                    <div style="background: rgba(59,130,246,0.1); color: #3b82f6; width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                      <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div>
+                      <strong style="color: var(--text); display: block; margin-bottom: 0.25rem;">Diseño Responsivo Mobile-First</strong>
+                      <p style="margin: 0; color: var(--text-muted); font-size: 0.95rem; line-height: 1.5;">Todos los sitios diseñados desde móvil hacia desktop, garantizando experiencia óptima en cualquier dispositivo</p>
+                    </div>
+                  </div>
+                  <div class="feature-item" style="display: flex; gap: 1rem; align-items: flex-start;">
+                    <div style="background: rgba(16,185,129,0.1); color: #10b981; width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                      <i class="fas fa-search"></i>
+                    </div>
+                    <div>
+                      <strong style="color: var(--text); display: block; margin-bottom: 0.25rem;">SEO y Performance</strong>
+                      <p style="margin: 0; color: var(--text-muted); font-size: 0.95rem; line-height: 1.5;">Estructura semántica, meta tags optimizados y assets comprimidos para scores Lighthouse de 90+</p>
+                    </div>
+                  </div>
+                  <div class="feature-item" style="display: flex; gap: 1rem; align-items: flex-start;">
+                    <div style="background: rgba(163,113,247,0.1); color: #a371f7; width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                      <i class="fab fa-shopify"></i>
+                    </div>
+                    <div>
+                      <strong style="color: var(--text); display: block; margin-bottom: 0.25rem;">E-Commerce Listo para Venta</strong>
+                      <p style="margin: 0; color: var(--text-muted); font-size: 0.95rem; line-height: 1.5;">Configuración completa de Shopify y WordPress WooCommerce, desde producto hasta checkout</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Navigation -->
+              <div class="proj-navigation">
+                <a href="social-media-downloader.html" class="proj-nav-link">
+                  <i class="fas fa-arrow-left"></i>
+                  <div><span class="proj-nav-label">Previous</span>Social Media DL</div>
+                </a>
+                <a href="../index.html#section3" class="proj-nav-link next">
+                  <i class="fas fa-th-large"></i>
+                  <div><span class="proj-nav-label">Portfolio</span>Ver Todos</div>
+                </a>
+              </div>
+            </main>
+
+            <!-- Sidebar -->
+            <aside class="proj-sidebar">
+              <div class="sidebar-widget">
+                <div class="sidebar-widget-title" data-i18n="webPortfolioProject.sections.techStack">Tech Stack</div>
+                <div class="stack-list">
+                  <div class="stack-row">
+                    <span class="label">CMS</span>
+                    <span class="value">WordPress, Shopify</span>
+                  </div>
+                  <div class="stack-row">
+                    <span class="label">Frontend</span>
+                    <span class="value">HTML5, CSS3, JS</span>
+                  </div>
+                  <div class="stack-row">
+                    <span class="label">E-Commerce</span>
+                    <span class="value">WooCommerce, Liquid</span>
+                  </div>
+                  <div class="stack-row">
+                    <span class="label">Optimización</span>
+                    <span class="value">SEO, Lighthouse</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sidebar-widget">
+                <div class="sidebar-widget-title">Key Facts</div>
+                <div class="metric-list">
+                  <div class="metric-row">
+                    <div class="metric-label">Sitios</div>
+                    <div class="metric-value">15+</div>
+                  </div>
+                  <div class="metric-row">
+                    <div class="metric-label">Clientes Reales</div>
+                    <div class="metric-value">Pagados</div>
+                  </div>
+                  <div class="metric-row">
+                    <div class="metric-label">Producción</div>
+                    <div class="metric-value">Todos Desplegados</div>
+                  </div>
+                </div>
+              </div>
+            </aside>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../assets/js/template-loader.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/22.4.9/i18next.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next-http-backend/2.1.1/i18nextHttpBackend.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-i18next/1.2.1/jquery-i18next.min.js"></script>
+    <script src="../assets/js/i18n-config.js"></script>
+    <script src="../assets/js/language-switcher.js"></script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', async () => {
+        await TemplateLoader.loadSidebar();
+      });
+    </script>
+  </body>
+</html>

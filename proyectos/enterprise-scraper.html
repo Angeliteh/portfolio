@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Social Media Downloader - Angel Payan - Caso de estudio de ingeniería de software por Angel Payan.">
-    <title>Social Media Downloader - Angel Payan</title>
+    <meta name="description" content="Enterprise E-Commerce Pipeline - Angel Payan - Caso de estudio de ingeniería de software por Angel Payan.">
+    <title>Enterprise E-Commerce Pipeline - Angel Payan</title>
     
     <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
@@ -24,39 +24,37 @@
         <!-- Hero Section -->
         <div class="proj-hero">
           <a href="../index.html#section3" class="proj-hero-back">
-            <i class="fas fa-arrow-left"></i> <span data-i18n="socialMediaProject.navigation.backToPortfolio">Volver al Portafolio</span>
+            <i class="fas fa-arrow-left"></i> <span data-i18n="enterpriseScraperProject.navigation.backToPortfolio">Volver al Portafolio</span>
           </a>
           
           <div class="proj-hero-meta">
-            <span class="proj-category-badge cyan">Web Automation</span>
+            <span class="proj-category-badge purple">Data Engineering</span>
           </div>
           
-          <h1 class="proj-hero-title" data-i18n="socialMediaProject.title">Videos Downloader - Descargador Universal de Videos</h1>
-          <p class="proj-hero-tagline" data-i18n="socialMediaProject.subtitle">Descarga videos de Instagram, TikTok y Facebook con interfaz web</p>
+          <h1 class="proj-hero-title" data-i18n="enterpriseScraperProject.title">Enterprise E-Commerce Data Pipeline</h1>
+          <p class="proj-hero-tagline" data-i18n="enterpriseScraperProject.subtitle">Scraping a gran escala de 40+ sitios de fabricantes para alimentar un e-commerce central</p>
           
           <div class="proj-hero-actions">
-            <a href="https://github.com/angeliteh" target="_blank" class="btn-secondary">
-              <i class="fab fa-github"></i> <span data-i18n="socialMediaProject.resourceLinks.sourceCode">Código Fuente</span>
-            </a>
+            <!-- No public source code because it's private enterprise work -->
           </div>
 
           <!-- Hero Metrics -->
           <div class="proj-meta-row">
             <div class="proj-meta-item">
-              <div class="proj-meta-label">Velocidad</div>
-              <div class="proj-meta-value" data-i18n="socialMediaProject.metrics.speed">&lt; 2s promedio</div>
+              <div class="proj-meta-label">Cobertura</div>
+              <div class="proj-meta-value" data-i18n="enterpriseScraperProject.metrics.scale">40+ Sitios Web</div>
             </div>
             <div class="proj-meta-item">
-              <div class="proj-meta-label">Plataformas</div>
-              <div class="proj-meta-value" data-i18n="socialMediaProject.metrics.platforms">3 plataformas</div>
+              <div class="proj-meta-label">Volumen</div>
+              <div class="proj-meta-value" data-i18n="enterpriseScraperProject.metrics.speed">Miles de productos/semana</div>
             </div>
             <div class="proj-meta-item">
-              <div class="proj-meta-label">Éxito</div>
-              <div class="proj-meta-value" data-i18n="socialMediaProject.metrics.successRate">99% tasa de éxito</div>
+              <div class="proj-meta-label">Legado</div>
+              <div class="proj-meta-value" data-i18n="enterpriseScraperProject.metrics.impact">Originó CSV Analyst</div>
             </div>
             <div class="proj-meta-item">
               <div class="proj-meta-label">Tech</div>
-              <div class="proj-meta-value">Python, Flask, yt-dlp</div>
+              <div class="proj-meta-value">Python, Selenium, APIs</div>
             </div>
           </div>
         </div>
@@ -69,8 +67,9 @@
               <div class="proj-carousel-wrap">
                 <div class="carousel-container">
                   <div class="carousel-slides count-2" id="carousel-slides">
-                    <div class="carousel-slide active"><img loading="lazy" src="../assets/images/projects/social-media-downloader/image_1.png" alt="Interfaz Principal del Downloader"></div>
-                    <div class="carousel-slide"><img loading="lazy" src="../assets/images/projects/social-media-downloader/image_2.png" alt="Historial de Descargas"></div>
+                    <!-- Usamos las capturas técnicas del scraper -->
+                    <div class="carousel-slide active"><img loading="lazy" src="../assets/images/projects/scraping-productos/image_1.png" alt="Scraping Pipeline Terminal"></div>
+                    <div class="carousel-slide"><img loading="lazy" src="../assets/images/projects/scraping-productos/image_2.png" alt="Data Normalization"></div>
                   </div>
                   <button class="carousel-btn prev" id="carousel-prev"><i class="fas fa-chevron-left"></i></button>
                   <button class="carousel-btn next" id="carousel-next"><i class="fas fa-chevron-right"></i></button>
@@ -85,38 +84,38 @@
 
               <!-- Overview -->
               <div class="content-block">
-                <div class="content-block-title" data-i18n="socialMediaProject.sections.overview">Descripción General</div>
-                <p data-i18n="socialMediaProject.sections.overviewText">Aplicación web desarrollada en Flask que permite descargar videos de las principales redes sociales (Instagram, TikTok, Facebook) con múltiples opciones de calidad. Incluye una interfaz web moderna y responsiva, sistema de historial de descargas, y arquitectura modular con múltiples métodos de descarga para garantizar alta disponibilidad. La aplicación maneja automáticamente la normalización de URLs, expansión de enlaces acortados, y proporciona una API REST completa para integración con aplicaciones móviles.</p>
+                <div class="content-block-title" data-i18n="enterpriseScraperProject.sections.overview">Descripción General</div>
+                <p data-i18n="enterpriseScraperProject.sections.overviewText">Un pipeline de ingeniería de datos masivo desarrollado para alimentar un e-commerce con inventario de más de 30 marcas. El proceso consistió en dos fases: primero, ingeniería inversa de las APIs privadas (red/XHR) de un proveedor central para obtener el catálogo base a alta velocidad. Segundo, la creación de scrapers dinámicos (1 a 3 diarios) que navegaban los sitios oficiales de los fabricantes, evadiendo protecciones anti-bot mediante inyección JS, para extraer especificaciones enriquecidas e imágenes. La complejidad de normalizar miles de productos ambiguos extraídos fue lo que me inspiró a crear el sistema CSV Analyst con IA.</p>
                 
                 <h3 style="margin-top:2rem; font-size:1.1rem; color:var(--text); margin-bottom:1rem;">Características Principales</h3>
                 <div class="feature-list" style="display: flex; flex-direction: column; gap: 1rem;">
                   <div class="feature-item" style="display: flex; gap: 1rem; align-items: flex-start;">
-                    <div style="background: rgba(59,130,246,0.1); color: #3b82f6; width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                      <i class="fas fa-download"></i>
+                    <div class="feature-item-icon blue" style="background: rgba(59, 130, 246, 0.1); color: #3b82f6; width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                      <i class="fas fa-network-wired"></i>
                     </div>
-                    <div>
-                      <strong data-i18n="socialMediaProject.features.universalDownload.title" style="color: var(--text); display: block; margin-bottom: 0.25rem;">Descarga Universal Multi-Plataforma</strong>
-                      <p data-i18n="socialMediaProject.features.universalDownload.desc" style="margin: 0; color: var(--text-muted); font-size: 0.95rem; line-height: 1.5;">Detección automática de plataforma con normalización inteligente de URLs</p>
+                    <div class="feature-item-text">
+                      <strong data-i18n="enterpriseScraperProject.features.networkAnalysis.title" style="color: var(--text); display: block; margin-bottom: 0.25rem;">Ingeniería Inversa de APIs</strong>
+                      <p data-i18n="enterpriseScraperProject.features.networkAnalysis.desc" style="margin: 0; color: var(--text-muted); font-size: 0.95rem; line-height: 1.5;">Análisis de red (XHR) para interceptar respuestas JSON y extraer datos base masivamente</p>
                     </div>
                   </div>
                   
                   <div class="feature-item" style="display: flex; gap: 1rem; align-items: flex-start;">
-                    <div style="background: rgba(163,113,247,0.1); color: #a371f7; width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                      <i class="fas fa-shield-alt"></i>
+                    <div class="feature-item-icon purple" style="background: rgba(163, 113, 247, 0.1); color: #a371f7; width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                      <i class="fas fa-spider"></i>
                     </div>
-                    <div>
-                      <strong data-i18n="socialMediaProject.features.robustBackup.title" style="color: var(--text); display: block; margin-bottom: 0.25rem;">Sistema de Respaldo Robusto</strong>
-                      <p data-i18n="socialMediaProject.features.robustBackup.desc" style="margin: 0; color: var(--text-muted); font-size: 0.95rem; line-height: 1.5;">Múltiples métodos de descarga con fallback automático en caso de fallo</p>
+                    <div class="feature-item-text">
+                      <strong data-i18n="enterpriseScraperProject.features.dynamicScraping.title" style="color: var(--text); display: block; margin-bottom: 0.25rem;">Scraping Dinámico y Evasión</strong>
+                      <p data-i18n="enterpriseScraperProject.features.dynamicScraping.desc" style="margin: 0; color: var(--text-muted); font-size: 0.95rem; line-height: 1.5;">Scripts adaptables por sitio, inyección de JS y control de navegador para saltar protecciones</p>
                     </div>
                   </div>
 
                   <div class="feature-item" style="display: flex; gap: 1rem; align-items: flex-start;">
-                    <div style="background: rgba(16,185,129,0.1); color: #10b981; width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                      <i class="fas fa-history"></i>
+                    <div class="feature-item-icon orange" style="background: rgba(227, 179, 65, 0.1); color: #e3b341; width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                      <i class="fas fa-database"></i>
                     </div>
-                    <div>
-                      <strong data-i18n="socialMediaProject.features.webInterface.title" style="color: var(--text); display: block; margin-bottom: 0.25rem;">Interfaz Web Completa</strong>
-                      <p data-i18n="socialMediaProject.features.webInterface.desc" style="margin: 0; color: var(--text-muted); font-size: 0.95rem; line-height: 1.5;">Dashboard responsivo con historial y API REST para integración móvil</p>
+                    <div class="feature-item-text">
+                      <strong data-i18n="enterpriseScraperProject.features.dataPipeline.title" style="color: var(--text); display: block; margin-bottom: 0.25rem;">Pipeline Completo</strong>
+                      <p data-i18n="enterpriseScraperProject.features.dataPipeline.desc" style="margin: 0; color: var(--text-muted); font-size: 0.95rem; line-height: 1.5;">Limpieza, formateo y normalización automática para importación directa en WooCommerce</p>
                     </div>
                   </div>
                 </div>
@@ -124,53 +123,53 @@
 
               <!-- Challenges -->
               <div class="content-block">
-                <div class="content-block-title" data-i18n="socialMediaProject.sections.challenges">Desafíos Técnicos y Soluciones</div>
+                <div class="content-block-title" data-i18n="enterpriseScraperProject.sections.challenges">Desafíos Técnicos y Soluciones</div>
                 <div class="challenges-list">
                   <div class="challenge-card">
                     <div class="challenge-header">
-                      <i class="fas fa-link"></i>
-                      <h4 data-i18n="socialMediaProject.challengesList.urlVariations.title">URLs Acortadas y Variaciones</h4>
+                      <i class="fas fa-shield-alt"></i>
+                      <h4 data-i18n="enterpriseScraperProject.challengesList.networkInterception.title">Extracción Base a Escala</h4>
                     </div>
                     <div class="challenge-body">
                       <div class="challenge-problem">
                         <span class="challenge-label">Problem</span>
-                        <p data-i18n="socialMediaProject.challengesList.urlVariations.problem">TikTok usa múltiples formatos de URL (vm.tiktok.com, vt.tiktok.com).</p>
+                        <p data-i18n="enterpriseScraperProject.challengesList.networkInterception.problem">El proveedor central tenía un inventario inmenso protegido tras una interfaz web lenta.</p>
                       </div>
                       <div class="challenge-solution">
                         <span class="challenge-label">Solution</span>
-                        <p data-i18n="socialMediaProject.challengesList.urlVariations.solution">Sistema de normalización con expansión automática usando requests.head().</p>
+                        <p data-i18n="enterpriseScraperProject.challengesList.networkInterception.solution">Ingeniería inversa usando DevTools para interceptar las llamadas API y obtener los JSON puros.</p>
                       </div>
                     </div>
                   </div>
                   <div class="challenge-card">
                     <div class="challenge-header">
-                      <i class="fas fa-random"></i>
-                      <h4 data-i18n="socialMediaProject.challengesList.multiPlatformReliability.title">Confiabilidad Multi-Plataforma</h4>
+                      <i class="fas fa-code-branch"></i>
+                      <h4 data-i18n="enterpriseScraperProject.challengesList.uniqueArchitectures.title">40+ Sitios Distintos</h4>
                     </div>
                     <div class="challenge-body">
                       <div class="challenge-problem">
                         <span class="challenge-label">Problem</span>
-                        <p data-i18n="socialMediaProject.challengesList.multiPlatformReliability.problem">APIs de redes sociales cambian frecuentemente, causando fallos.</p>
+                        <p data-i18n="enterpriseScraperProject.challengesList.uniqueArchitectures.problem">Cada fabricante oficial tenía una estructura web, protecciones y formatos diferentes.</p>
                       </div>
                       <div class="challenge-solution">
                         <span class="challenge-label">Solution</span>
-                        <p data-i18n="socialMediaProject.challengesList.multiPlatformReliability.solution">Arquitectura de múltiples métodos de respaldo con fallback automático.</p>
+                        <p data-i18n="enterpriseScraperProject.challengesList.uniqueArchitectures.solution">Desarrollo ágil de 1-3 scrapers adaptables por día, usando selectores dinámicos y Selenium.</p>
                       </div>
                     </div>
                   </div>
                   <div class="challenge-card">
                     <div class="challenge-header">
-                      <i class="fas fa-folder"></i>
-                      <h4 data-i18n="socialMediaProject.challengesList.fileManagement.title">Gestión de Archivos</h4>
+                      <i class="fas fa-lightbulb"></i>
+                      <h4 data-i18n="enterpriseScraperProject.challengesList.dataNormalization.title">El Origen de CSV Analyst</h4>
                     </div>
                     <div class="challenge-body">
                       <div class="challenge-problem">
                         <span class="challenge-label">Problem</span>
-                        <p data-i18n="socialMediaProject.challengesList.fileManagement.problem">Manejo eficiente de archivos descargados y limpieza de storage.</p>
+                        <p data-i18n="enterpriseScraperProject.challengesList.dataNormalization.problem">Los datos venían con formatos ambiguos imposibles de mapear con reglas tradicionales.</p>
                       </div>
                       <div class="challenge-solution">
                         <span class="challenge-label">Solution</span>
-                        <p data-i18n="socialMediaProject.challengesList.fileManagement.solution">Sistema de historial JSON con límite de 50 entradas y nombres únicos UUID.</p>
+                        <p data-i18n="enterpriseScraperProject.challengesList.dataNormalization.solution">Esto evidenció la necesidad de IA para categorización, naciendo así el sistema CSV Analyst.</p>
                       </div>
                     </div>
                   </div>
@@ -179,14 +178,14 @@
 
               <!-- Navigation -->
               <div class="proj-navigation">
-                <!-- Relevance order: Medical License -> Social Media DL -> Web Portfolio -->
-                <a href="licencias-medicas.html" class="proj-nav-link">
+                <!-- Relevance order: Excel Validation -> Enterprise Scraper -> Remote Mouse -->
+                <a href="excel-scraper.html" class="proj-nav-link">
                   <i class="fas fa-arrow-left"></i>
-                  <div><span class="proj-nav-label">Previous</span>Medical License</div>
+                  <div><span class="proj-nav-label">Previous</span>Excel Validation</div>
                 </a>
-                <a href="web-portfolio.html" class="proj-nav-link next">
+                <a href="scraping-productos.html" class="proj-nav-link next">
                   <i class="fas fa-arrow-right"></i>
-                  <div><span class="proj-nav-label">Next</span>Web Portfolio</div>
+                  <div><span class="proj-nav-label" data-i18n="enterpriseScraperProject.navigation.nextProject">Next</span>RTX Scraper</div>
                 </a>
               </div>
             </main>
@@ -194,43 +193,35 @@
             <!-- Sidebar -->
             <aside class="proj-sidebar">
               <div class="sidebar-widget">
-                <div class="sidebar-widget-title" data-i18n="socialMediaProject.sections.techStack">Tech Stack</div>
+                <div class="sidebar-widget-title" data-i18n="enterpriseScraperProject.sections.techStack">Tech Stack</div>
                 <div class="stack-list">
                   <div class="stack-row">
-                    <span class="label">Backend</span>
-                    <span class="value">Python, Flask</span>
+                    <span class="label">Extracción Dinámica</span>
+                    <span class="value">Selenium, Playwright</span>
                   </div>
                   <div class="stack-row">
-                    <span class="label">Descarga</span>
-                    <span class="value">yt-dlp, requests</span>
+                    <span class="label">Procesamiento</span>
+                    <span class="value">Python, Pandas</span>
                   </div>
                   <div class="stack-row">
-                    <span class="label">Frontend</span>
-                    <span class="value">HTML5, CSS3, JS</span>
+                    <span class="label">Integración</span>
+                    <span class="value">WooCommerce API</span>
                   </div>
                   <div class="stack-row">
-                    <span class="label">Storage</span>
-                    <span class="value">JSON, UUID</span>
+                    <span class="label">Análisis</span>
+                    <span class="value">DevTools, XHR, JSON</span>
                   </div>
                 </div>
               </div>
-
+              
               <div class="sidebar-widget">
-                <div class="sidebar-widget-title">Key Facts</div>
-                <div class="metric-list">
-                  <div class="metric-row">
-                    <div class="metric-label">Velocidad</div>
-                    <div class="metric-value">&lt; 2s</div>
-                  </div>
-                  <div class="metric-row">
-                    <div class="metric-label">Plataformas</div>
-                    <div class="metric-value">IG, TikTok, FB</div>
-                  </div>
-                  <div class="metric-row">
-                    <div class="metric-label">Disponibilidad</div>
-                    <div class="metric-value">99% éxito</div>
-                  </div>
-                </div>
+                <div class="sidebar-widget-title" data-i18n="enterpriseScraperProject.techDetails.architecture.title">Arquitectura del Pipeline</div>
+                <ul class="product-highlights" style="margin-top: 10px;">
+                  <li data-i18n="enterpriseScraperProject.techDetails.architecture.items.0">Scraping Base (Provider API)</li>
+                  <li data-i18n="enterpriseScraperProject.techDetails.architecture.items.1">Scraping Específico (Manufacturer sites)</li>
+                  <li data-i18n="enterpriseScraperProject.techDetails.architecture.items.2">Módulo de Limpieza y Normalización</li>
+                  <li data-i18n="enterpriseScraperProject.techDetails.architecture.items.3">Integración WooCommerce</li>
+                </ul>
               </div>
             </aside>
             
@@ -252,6 +243,7 @@
     <script src="../vendor/jquery/jquery.min.js"></script>
     <script src="../assets/js/template-loader.js"></script>
     
+    <!-- i18n -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/22.4.9/i18next.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next-http-backend/2.1.1/i18nextHttpBackend.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-i18next/1.2.1/jquery-i18next.min.js"></script>
@@ -276,6 +268,16 @@
         document.getElementById('carousel-next')?.addEventListener('click', () => { index = (index + 1) % total; update(); });
         document.getElementById('carousel-prev')?.addEventListener('click', () => { index = (index - 1 + total) % total; update(); });
         dots.forEach((d, i) => d.addEventListener('click', () => { index = i; update(); }));
+
+        // Tabs Logic
+        document.querySelectorAll('.demo-tab-btn').forEach(btn => {
+          btn.addEventListener('click', () => {
+            document.querySelectorAll('.demo-tab-btn').forEach(b => b.classList.remove('active'));
+            document.querySelectorAll('.demo-tab-pane').forEach(p => p.classList.remove('active'));
+            btn.classList.add('active');
+            document.getElementById('pane-' + btn.dataset.tab).classList.add('active');
+          });
+        });
 
         // Fullscreen Modal Logic
         const modal = document.getElementById('carousel-modal');

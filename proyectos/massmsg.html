@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -7,6 +7,7 @@
       name="description"
       content="MassMSG — Desktop RPA platform for intelligent messaging automation. Stealth browser control, RSA licensing, and human emulation engine. Case study by Angel Payan."
     />
+    <meta name="description" content="MassMSG · Angel Payan - Caso de estudio de ingeniería de software por Angel Payan.">
     <title>MassMSG · Angel Payan</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -29,43 +30,41 @@
           <div class="container">
 
             <a href="../index.html" class="proj-hero-back">
-              <i class="fas fa-arrow-left"></i> Back to portfolio
+              <i class="fas fa-arrow-left"></i> <span data-i18n="massmsgProject.navigation.backToPortfolio">Volver al portafolio</span>
             </a>
 
             <div class="proj-hero-meta">
-              <span class="proj-category-badge green">Desktop RPA</span>
-              <span class="proj-category-badge green">Browser Automation</span>
-              <span class="proj-category-badge orange">Commercial</span>
+              <span class="proj-category-badge green" data-i18n="massmsgProject.badges.desktopRpa">RPA de escritorio</span>
+              <span class="proj-category-badge green" data-i18n="massmsgProject.badges.browserAutomation">Automatización de navegador</span>
+              <span class="proj-category-badge orange" data-i18n="massmsgProject.badges.commercial">Comercial</span>
             </div>
 
             <h1 class="proj-hero-title">MassMSG</h1>
 
-            <p class="proj-hero-tagline">
-              A desktop RPA platform that automates high-volume messaging workflows through
-              Electron + FastAPI + Playwright — with a stealth human-emulation engine that makes
-              the automation indistinguishable from real user behavior.
+            <p class="proj-hero-tagline" data-i18n="massmsgProject.subtitle">
+              Plataforma RPA de escritorio que automatiza flujos de mensajería de alto volumen con Electron, FastAPI y Playwright, incluyendo un motor stealth de emulación humana que vuelve la automatización indistinguible del comportamiento real.
             </p>
 
             <div class="proj-hero-actions">
-              <a href="../index.html#section2" class="btn-secondary">← All products</a>
+              <a href="../index.html#section2" class="btn-secondary" data-i18n="massmsgProject.actions.allProducts">← Todos los productos</a>
             </div>
 
             <div class="proj-meta-row">
               <div class="proj-meta-item">
-                <div class="proj-meta-label">Type</div>
-                <div class="proj-meta-value">Desktop Application</div>
+                <div class="proj-meta-label" data-i18n="massmsgProject.meta.typeLabel">Tipo</div>
+                <div class="proj-meta-value" data-i18n="massmsgProject.meta.typeValue">Aplicación de escritorio</div>
               </div>
               <div class="proj-meta-item">
-                <div class="proj-meta-label">Status</div>
-                <div class="proj-meta-value">✦ Commercial</div>
+                <div class="proj-meta-label" data-i18n="massmsgProject.meta.statusLabel">Estado</div>
+                <div class="proj-meta-value" data-i18n="massmsgProject.meta.statusValue">✦ Comercial</div>
               </div>
               <div class="proj-meta-item">
-                <div class="proj-meta-label">Pricing</div>
-                <div class="proj-meta-value">Lifetime Deal</div>
+                <div class="proj-meta-label" data-i18n="massmsgProject.meta.pricingLabel">Modelo comercial</div>
+                <div class="proj-meta-value" data-i18n="massmsgProject.meta.pricingValue">Lifetime Deal</div>
               </div>
               <div class="proj-meta-item">
-                <div class="proj-meta-label">Built by</div>
-                <div class="proj-meta-value">Solo — end to end</div>
+                <div class="proj-meta-label" data-i18n="massmsgProject.meta.builtByLabel">Construido por</div>
+                <div class="proj-meta-value" data-i18n="massmsgProject.meta.builtByValue">Solo, end to end</div>
               </div>
             </div>
 
@@ -80,7 +79,7 @@
 
                 <!-- Screenshot carousel (add images to assets/images/projects/massmsg/) -->
                 <div class="content-block">
-                  <div class="content-block-title">Product Screenshots</div>
+                  <div class="content-block-title" data-i18n="massmsgProject.sections.screenshots">Capturas del producto</div>
 
                   <div class="proj-carousel-wrap" id="proj-carousel">
                     <div class="carousel-container">
@@ -92,8 +91,8 @@
                           <!-- Placeholder -->
                           <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;color:var(--text-subtle);font-family:var(--mono);font-size:13px;padding:48px;text-align:center;">
                             <i class="fas fa-image" style="font-size:32px;opacity:0.3;"></i>
-                            <span>Screenshots coming soon</span>
-                            <span style="font-size:11px;">Drop images to assets/images/projects/massmsg/</span>
+                            <span data-i18n="massmsgProject.placeholders.screenshotsSoon">Capturas próximamente</span>
+                            <span style="font-size:11px;" data-i18n="massmsgProject.placeholders.screenshotsPath">Coloca imágenes en assets/images/projects/massmsg/</span>
                           </div>
                         </div>
                       </div>
@@ -107,30 +106,30 @@
 
                 <!-- Video demo tabs -->
                 <div class="content-block">
-                  <div class="content-block-title">Product Demo</div>
+                  <div class="content-block-title" data-i18n="massmsgProject.sections.demo">Demo del producto</div>
 
                   <div class="demo-tabs-wrap">
                     <div class="demo-tabs-header">
                       <button class="demo-tab-btn active" data-tab="video">
-                        <i class="fas fa-play-circle"></i> Demo Video
+                        <i class="fas fa-play-circle"></i> <span data-i18n="massmsgProject.tabs.video">Video demo</span>
                       </button>
                       <button class="demo-tab-btn" data-tab="guide">
-                        <i class="fas fa-shield-alt"></i> Security Engine
+                        <i class="fas fa-shield-alt"></i> <span data-i18n="massmsgProject.tabs.security">Motor de seguridad</span>
                       </button>
                     </div>
 
                     <div class="demo-tab-pane active" id="tab-video">
                       <div style="width:100%;aspect-ratio:16/9;background:var(--bg-card);border:1px dashed var(--border-mid);border-radius:var(--radius);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;color:var(--text-subtle);">
                         <i class="fab fa-youtube" style="font-size:32px;opacity:0.5;"></i>
-                        <span style="font-size:13px;">YouTube demo video coming soon</span>
+                        <span style="font-size:13px;" data-i18n="massmsgProject.placeholders.videoSoon">Video demo en YouTube próximamente</span>
                       </div>
                     </div>
 
                     <div class="demo-tab-pane" id="tab-guide">
                       <div style="display:flex;flex-direction:column;gap:16px;">
-                        <h3 style="font-size:15px;font-weight:600;color:var(--text);margin:0;">Why standard bots get banned</h3>
-                        <p style="font-size:13px;color:var(--text-muted);line-height:1.6;margin:0;">
-                          Cloud automation tools inject API requests or use headless browsers from datacenter IPs. Platforms detect this instantly. MassMSG takes control of your local, normal Chrome profile. It types letters one by one using a variable delay. If it makes a mistake, it presses Backspace. It literally emulates a human worker.
+                        <h3 style="font-size:15px;font-weight:600;color:var(--text);margin:0;" data-i18n="massmsgProject.securityGuide.title">Por qué banean a los bots estándar</h3>
+                        <p style="font-size:13px;color:var(--text-muted);line-height:1.6;margin:0;" data-i18n="massmsgProject.securityGuide.desc">
+                          Las herramientas cloud de automatización inyectan requests o usan navegadores headless desde IPs de datacenter. Las plataformas lo detectan de inmediato. MassMSG controla tu Chrome local real, escribe letra por letra con delay variable y hasta corrige errores como una persona.
                         </p>
                       </div>
                     </div>
@@ -138,24 +137,19 @@
                 </div>
 
                 <div class="content-block">
-                  <div class="content-block-title">The Problem</div>
-                  <h3>Official messaging APIs are expensive, restrictive, and detectable.</h3>
-                  <p>
-                    WhatsApp Business API charges per conversation and requires template pre-approval.
-                    Cloud-based bulk messaging tools use shared datacenter IPs that get detected and
-                    banned within minutes. Existing open-source RPA tools require deep technical
-                    knowledge to configure and maintain.
+                  <div class="content-block-title" data-i18n="massmsgProject.problem.title">El problema</div>
+                  <h3 data-i18n="massmsgProject.problem.heading">Las APIs oficiales de mensajería son caras, restrictivas y detectables.</h3>
+                  <p data-i18n="massmsgProject.problem.p1">
+                    WhatsApp Business API cobra por conversación y exige aprobación previa de plantillas. Las herramientas cloud de envío masivo usan IPs compartidas de datacenter que son detectadas y bloqueadas en minutos. Muchas opciones open source además requieren alto conocimiento técnico.
                   </p>
-                  <p>
-                    SMBs needed a solution that runs locally on their own machine, uses their actual
-                    account and residential IP, and looks completely human to the platform's security
-                    systems.
+                  <p data-i18n="massmsgProject.problem.p2">
+                    Las PyMEs necesitaban una solución local que corriera en su propia máquina, usara su cuenta real y su IP residencial, y se viera completamente humana para los sistemas de seguridad de la plataforma.
                   </p>
                 </div>
 
                 <div class="content-block">
-                  <div class="content-block-title">Architecture: Dual Interface Design</div>
-                  <h3>One engine, two interfaces — local, portable, zero cloud dependency.</h3>
+                  <div class="content-block-title" data-i18n="massmsgProject.architecture.title">Arquitectura: diseño de doble interfaz</div>
+                  <h3 data-i18n="massmsgProject.architecture.heading">Un motor, dos interfaces: local, portable y sin dependencia cloud.</h3>
 
                   <div class="arch-block">
                     <pre>
@@ -183,16 +177,14 @@
                 </div>
 
                 <div class="content-block">
-                  <div class="content-block-title">Stealth Engine</div>
+                  <div class="content-block-title" data-i18n="massmsgProject.stealth.title">Motor stealth</div>
                   <div class="feature-list">
                     <div class="feature-item">
                       <div class="feature-item-icon green"><i class="fas fa-keyboard"></i></div>
                       <div class="feature-item-text">
-                        <strong>Typo Engine — Human Keystroke Emulation</strong>
-                        <p>
-                          Variable per-key delays (0.10–0.20s), random "fat finger" typos with
-                          Backspace correction, and simulated thinking pauses every N characters.
-                          Characters are typed one by one — never injected.
+                        <strong data-i18n="massmsgProject.stealth.items.typo.title">Typo Engine: emulación humana de tecleo</strong>
+                        <p data-i18n="massmsgProject.stealth.items.typo.desc">
+                          Delays variables por tecla, errores aleatorios corregidos con Backspace y pausas de pensamiento simuladas. Los caracteres se escriben uno por uno, nunca se inyectan.
                         </p>
                       </div>
                     </div>
@@ -200,11 +192,9 @@
                     <div class="feature-item">
                       <div class="feature-item-icon green"><i class="fas fa-coffee"></i></div>
                       <div class="feature-item-text">
-                        <strong>Bio-Pauses — Office Day Simulation</strong>
-                        <p>
-                          Randomized distraction pauses (10–30s), coffee breaks (10–20 min every
-                          50 messages), and lunch breaks (30–60 min on large batches). Every delay
-                          has ±25% random variance — no detectable pattern.
+                        <strong data-i18n="massmsgProject.stealth.items.pauses.title">Bio-pauses: simulación de jornada real</strong>
+                        <p data-i18n="massmsgProject.stealth.items.pauses.desc">
+                          Pausas aleatorias por distracción, descansos de café y breaks largos en lotes grandes. Cada delay tiene variación aleatoria para evitar patrones detectables.
                         </p>
                       </div>
                     </div>
@@ -212,11 +202,9 @@
                     <div class="feature-item">
                       <div class="feature-item-icon green"><i class="fas fa-fingerprint"></i></div>
                       <div class="feature-item-text">
-                        <strong>Residential IP + Native Fingerprint</strong>
-                        <p>
-                          Runs on the user's Chrome with their actual browser fingerprint and home
-                          IP — identical to a human navigating manually. Platforms cannot distinguish
-                          it from organic user activity.
+                        <strong data-i18n="massmsgProject.stealth.items.fingerprint.title">IP residencial y fingerprint nativo</strong>
+                        <p data-i18n="massmsgProject.stealth.items.fingerprint.desc">
+                          Corre sobre el Chrome real del usuario con su fingerprint verdadero e IP doméstica, idéntico a una operación manual. Las plataformas no pueden distinguirlo de uso orgánico.
                         </p>
                       </div>
                     </div>
@@ -224,11 +212,9 @@
                     <div class="feature-item">
                       <div class="feature-item-icon green"><i class="fas fa-hdd"></i></div>
                       <div class="feature-item-text">
-                        <strong>Persistent Session &amp; Portability</strong>
-                        <p>
-                          Chrome profile stored in <code>prod_browser_profile/</code> — one-time QR
-                          scan. Moving the folder to an external drive preserves the full session
-                          with zero reconfiguration.
+                        <strong data-i18n="massmsgProject.stealth.items.session.title">Sesión persistente y portabilidad</strong>
+                        <p data-i18n="massmsgProject.stealth.items.session.desc">
+                          El perfil de Chrome se guarda en <code>prod_browser_profile/</code> y el QR se escanea solo una vez. Mover la carpeta a otra unidad conserva la sesión completa sin reconfiguración.
                         </p>
                       </div>
                     </div>
@@ -236,8 +222,8 @@
                 </div>
 
                 <div class="content-block">
-                  <div class="content-block-title">Security: RSA + HWID Licensing</div>
-                  <h3>Three-layer cryptographic protection against piracy.</h3>
+                  <div class="content-block-title" data-i18n="massmsgProject.licensing.title">Seguridad: licenciamiento RSA + HWID</div>
+                  <h3 data-i18n="massmsgProject.licensing.heading">Protección criptográfica en tres capas contra piratería.</h3>
                   <div class="arch-block">
                     <pre>
 <span class="accent">Layer 1 · Startup</span>
@@ -257,53 +243,53 @@
 
                 <!-- Workflow -->
                 <div class="content-block">
-                  <div class="content-block-title">Execution Pipeline</div>
+                  <div class="content-block-title" data-i18n="massmsgProject.pipeline.title">Pipeline de ejecución</div>
                   <div class="workflow-steps">
                     <div class="workflow-step">
                       <div class="workflow-step-num">01</div>
                       <div class="workflow-step-icon"><i class="fas fa-file-csv"></i></div>
-                      <h4>Load Data</h4>
-                      <p>Import CSV/Excel with contacts and custom variables.</p>
+                      <h4 data-i18n="massmsgProject.pipeline.steps.load.title">Cargar datos</h4>
+                      <p data-i18n="massmsgProject.pipeline.steps.load.desc">Importa CSV o Excel con contactos y variables personalizadas.</p>
                     </div>
                     <div class="workflow-step">
                       <div class="workflow-step-num">02</div>
                       <div class="workflow-step-icon"><i class="fas fa-link"></i></div>
-                      <h4>Chrome Bind</h4>
-                      <p>Attach via CDP to the user's native Chrome session.</p>
+                      <h4 data-i18n="massmsgProject.pipeline.steps.bind.title">Vincular Chrome</h4>
+                      <p data-i18n="massmsgProject.pipeline.steps.bind.desc">Se conecta vía CDP a la sesión nativa de Chrome del usuario.</p>
                     </div>
                     <div class="workflow-step">
                       <div class="workflow-step-num">03</div>
                       <div class="workflow-step-icon"><i class="fas fa-keyboard"></i></div>
-                      <h4>Emulate</h4>
-                      <p>Type characters using the biological Typo Engine.</p>
+                      <h4 data-i18n="massmsgProject.pipeline.steps.emulate.title">Emular</h4>
+                      <p data-i18n="massmsgProject.pipeline.steps.emulate.desc">Escribe caracteres usando el Typo Engine biológico.</p>
                     </div>
                     <div class="workflow-step">
                       <div class="workflow-step-num">04</div>
                       <div class="workflow-step-icon"><i class="fas fa-coffee"></i></div>
-                      <h4>Bio-Pauses</h4>
-                      <p>Execute random coffee breaks to evade heuristics.</p>
+                      <h4 data-i18n="massmsgProject.pipeline.steps.pauses.title">Bio-pauses</h4>
+                      <p data-i18n="massmsgProject.pipeline.steps.pauses.desc">Ejecuta pausas aleatorias para evadir heurísticas de detección.</p>
                     </div>
                   </div>
                 </div>
 
                 <!-- Challenges -->
                 <div class="content-block">
-                  <div class="content-block-title">Technical Challenges &amp; Solutions</div>
+                  <div class="content-block-title" data-i18n="massmsgProject.challenges.title">Desafíos técnicos y soluciones</div>
 
                   <div class="challenges-list">
                     <div class="challenge-card">
                       <div class="challenge-header">
                         <i class="fas fa-exclamation-triangle"></i>
-                        <h4>Cloud API Bans</h4>
+                        <h4 data-i18n="massmsgProject.challenges.items.bans.title">Bloqueos por APIs y herramientas cloud</h4>
                       </div>
                       <div class="challenge-body">
                         <div class="challenge-problem">
-                          <span class="challenge-label">Problem</span>
-                          <p>Cloud-based mass messaging SaaS tools get banned instantly because Meta detects their datacenter IP addresses and headless browser signatures.</p>
+                          <span class="challenge-label" data-i18n="massmsgProject.challenges.problemLabel">Problema</span>
+                          <p data-i18n="massmsgProject.challenges.items.bans.problem">Las herramientas SaaS cloud de mensajería masiva son bloqueadas rápidamente porque Meta detecta sus IPs de datacenter y firmas de navegador headless.</p>
                         </div>
                         <div class="challenge-solution">
-                          <span class="challenge-label">Solution</span>
-                          <p>MassMSG is a local desktop app. It leverages the user's organic residential IP and native browser Canvas fingerprint, making it indistinguishable from human use.</p>
+                          <span class="challenge-label" data-i18n="massmsgProject.challenges.solutionLabel">Solución</span>
+                          <p data-i18n="massmsgProject.challenges.items.bans.solution">MassMSG es una app local de escritorio. Aprovecha la IP residencial orgánica del usuario y el fingerprint nativo del navegador, volviéndolo indistinguible del uso humano.</p>
                         </div>
                       </div>
                     </div>
@@ -311,16 +297,16 @@
                     <div class="challenge-card">
                       <div class="challenge-header">
                         <i class="fas fa-exclamation-triangle"></i>
-                        <h4>Orphaned Zombie Processes</h4>
+                        <h4 data-i18n="massmsgProject.challenges.items.zombies.title">Procesos zombie huérfanos</h4>
                       </div>
                       <div class="challenge-body">
                         <div class="challenge-problem">
-                          <span class="challenge-label">Problem</span>
-                          <p>When bundling Python with Electron, if the user force-quits the UI, the Python backend stays alive in the RAM forever as a memory leak.</p>
+                          <span class="challenge-label" data-i18n="massmsgProject.challenges.problemLabel">Problema</span>
+                          <p data-i18n="massmsgProject.challenges.items.zombies.problem">Al empaquetar Python con Electron, si el usuario cierra a la fuerza la UI, el backend Python puede seguir vivo en RAM como fuga de memoria.</p>
                         </div>
                         <div class="challenge-solution">
-                          <span class="challenge-label">Solution</span>
-                          <p>A double-safety Heartbeat system. The React UI sends a ping every 5s. If Python detects 15s without a ping, it self-terminates instantly (os._exit), keeping the user's PC clean.</p>
+                          <span class="challenge-label" data-i18n="massmsgProject.challenges.solutionLabel">Solución</span>
+                          <p data-i18n="massmsgProject.challenges.items.zombies.solution">Sistema Heartbeat de doble seguridad. La UI React envía ping cada 5s y, si Python detecta 15s sin señal, se auto-termina de inmediato para evitar procesos colgados.</p>
                         </div>
                       </div>
                     </div>
@@ -329,23 +315,23 @@
 
                 <!-- Impact -->
                 <div class="content-block">
-                  <div class="content-block-title">Business Impact</div>
+                  <div class="content-block-title" data-i18n="massmsgProject.impact.title">Impacto de negocio</div>
 
                   <div class="testimonials-grid">
                     <div class="testimonial-card">
                       <div class="testimonial-header">
                         <div class="testimonial-avatar"><i class="fas fa-dollar-sign"></i></div>
                         <div>
-                          <div class="testimonial-name">Zero Cost Per Message</div>
-                          <div class="testimonial-role">Financial Impact</div>
+                          <div class="testimonial-name" data-i18n="massmsgProject.impact.cards.cost.name">Costo cero por mensaje</div>
+                          <div class="testimonial-role" data-i18n="massmsgProject.impact.cards.cost.role">Impacto financiero</div>
                         </div>
                       </div>
                       <p class="testimonial-quote">
-                        "Official APIs charge per conversation and require rigid template approvals. Because MassMSG acts as a human, users can send thousands of customized marketing messages without paying API fees."
+                        <span data-i18n="massmsgProject.impact.cards.cost.quote">Las APIs oficiales cobran por conversación y exigen reglas rígidas de plantillas. Como MassMSG actúa como humano, los usuarios pueden enviar miles de mensajes personalizados sin pagar fees de API.</span>
                       </p>
                       <div class="testimonial-metrics">
-                        <span class="metric-badge">100% Free Sending</span>
-                        <span class="metric-badge orange">No Template Rules</span>
+                        <span class="metric-badge" data-i18n="massmsgProject.impact.cards.cost.metric1">Envío 100% libre</span>
+                        <span class="metric-badge orange" data-i18n="massmsgProject.impact.cards.cost.metric2">Sin reglas de plantilla</span>
                       </div>
                     </div>
 
@@ -353,16 +339,16 @@
                       <div class="testimonial-header">
                         <div class="testimonial-avatar"><i class="fas fa-user-shield"></i></div>
                         <div>
-                          <div class="testimonial-name">Absolute Privacy</div>
-                          <div class="testimonial-role">Data Security</div>
+                          <div class="testimonial-name" data-i18n="massmsgProject.impact.cards.privacy.name">Privacidad absoluta</div>
+                          <div class="testimonial-role" data-i18n="massmsgProject.impact.cards.privacy.role">Seguridad de datos</div>
                         </div>
                       </div>
                       <p class="testimonial-quote">
-                        "Businesses no longer have to upload their valuable client databases to external SaaS servers. Everything runs and stays strictly within their local hard drive."
+                        <span data-i18n="massmsgProject.impact.cards.privacy.quote">Los negocios ya no tienen que subir sus bases de clientes a servidores externos. Todo corre y permanece estrictamente dentro de su propio equipo local.</span>
                       </p>
                       <div class="testimonial-metrics">
-                        <span class="metric-badge blue">Air-Gap Capable</span>
-                        <span class="metric-badge purple">GDPR Compliant</span>
+                        <span class="metric-badge blue" data-i18n="massmsgProject.impact.cards.privacy.metric1">Capaz de air-gap</span>
+                        <span class="metric-badge purple" data-i18n="massmsgProject.impact.cards.privacy.metric2">Compatible con GDPR</span>
                       </div>
                     </div>
                   </div>
@@ -372,11 +358,11 @@
                 <div class="proj-navigation">
                   <a href="vioagents.html" class="proj-nav-link">
                     <i class="fas fa-arrow-left"></i>
-                    <div><span class="proj-nav-label">Previous product</span>VioAgents</div>
+                    <div><span class="proj-nav-label" data-i18n="massmsgProject.navigation.previousProduct">Producto anterior</span><span data-i18n="massmsgProject.navigation.previousProductName">VioAgents</span></div>
                   </a>
                   <a href="excel-scraper.html" class="proj-nav-link next">
                     <i class="fas fa-arrow-right"></i>
-                    <div><span class="proj-nav-label">Next</span>Excel Scraper</div>
+                    <div><span class="proj-nav-label" data-i18n="massmsgProject.navigation.nextProject">Siguiente</span><span data-i18n="massmsgProject.navigation.nextProjectName">Excel Scraper</span></div>
                   </a>
                 </div>
 
@@ -385,35 +371,35 @@
               <aside class="proj-sidebar">
 
                 <div class="sidebar-widget">
-                  <div class="sidebar-widget-title">Tech Stack</div>
+                  <div class="sidebar-widget-title" data-i18n="massmsgProject.sidebar.techStack">Tech Stack</div>
                   <div class="stack-list">
-                    <div class="stack-row"><span class="label">Shell</span><span class="value">Electron · Node.js</span></div>
-                    <div class="stack-row"><span class="label">UI</span><span class="value">React · Vite</span></div>
-                    <div class="stack-row"><span class="label">Backend</span><span class="value">FastAPI · Python</span></div>
-                    <div class="stack-row"><span class="label">Automation</span><span class="value">Playwright (CDP)</span></div>
-                    <div class="stack-row"><span class="label">Security</span><span class="value">RSA + HWID + SHA-256</span></div>
-                    <div class="stack-row"><span class="label">Platforms</span><span class="value">WhatsApp, Gmail, GMessages</span></div>
+                    <div class="stack-row"><span class="label" data-i18n="massmsgProject.sidebar.stack.shell">Shell</span><span class="value">Electron · Node.js</span></div>
+                    <div class="stack-row"><span class="label" data-i18n="massmsgProject.sidebar.stack.ui">UI</span><span class="value">React · Vite</span></div>
+                    <div class="stack-row"><span class="label" data-i18n="massmsgProject.sidebar.stack.backend">Backend</span><span class="value">FastAPI · Python</span></div>
+                    <div class="stack-row"><span class="label" data-i18n="massmsgProject.sidebar.stack.automation">Automatización</span><span class="value">Playwright (CDP)</span></div>
+                    <div class="stack-row"><span class="label" data-i18n="massmsgProject.sidebar.stack.security">Seguridad</span><span class="value">RSA + HWID + SHA-256</span></div>
+                    <div class="stack-row"><span class="label" data-i18n="massmsgProject.sidebar.stack.platforms">Plataformas</span><span class="value">WhatsApp, Gmail, GMessages</span></div>
                   </div>
                 </div>
 
                 <div class="sidebar-widget">
-                  <div class="sidebar-widget-title">Engineering Highlights</div>
+                  <div class="sidebar-widget-title" data-i18n="massmsgProject.sidebar.highlights">Highlights de ingeniería</div>
                   <div class="metric-list">
                     <div class="metric-row">
-                      <div class="metric-label">API cost per message</div>
+                      <div class="metric-label" data-i18n="massmsgProject.sidebar.metrics.apiCost">Costo API por mensaje</div>
                       <div class="metric-value">$0</div>
                     </div>
                     <div class="metric-row">
-                      <div class="metric-label">Licensing</div>
-                      <div class="metric-value">RSA + HWID Lock</div>
+                      <div class="metric-label" data-i18n="massmsgProject.sidebar.metrics.licensing">Licenciamiento</div>
+                      <div class="metric-value" data-i18n="massmsgProject.sidebar.metrics.licensingValue">RSA + bloqueo HWID</div>
                     </div>
                     <div class="metric-row">
-                      <div class="metric-label">Process safety</div>
-                      <div class="metric-value">Heartbeat System</div>
+                      <div class="metric-label" data-i18n="massmsgProject.sidebar.metrics.processSafety">Seguridad de proceso</div>
+                      <div class="metric-value" data-i18n="massmsgProject.sidebar.metrics.processSafetyValue">Sistema Heartbeat</div>
                     </div>
                     <div class="metric-row">
-                      <div class="metric-label">Detection risk</div>
-                      <div class="metric-value">Residential IP</div>
+                      <div class="metric-label" data-i18n="massmsgProject.sidebar.metrics.detectionRisk">Riesgo de detección</div>
+                      <div class="metric-value" data-i18n="massmsgProject.sidebar.metrics.detectionRiskValue">IP residencial</div>
                     </div>
                   </div>
                 </div>
@@ -425,7 +411,7 @@
 
         <footer class="site-footer">
           <div class="container">
-            <p>Angel Payan &nbsp;·&nbsp; <a href="../index.html">Portfolio</a></p>
+            <p>Angel Payan &nbsp;·&nbsp; <a href="../index.html" data-i18n="massmsgProject.footer.portfolio">Portafolio</a></p>
           </div>
         </footer>
 
@@ -438,7 +424,7 @@
       <button class="carousel-modal-nav carousel-modal-prev" id="modal-prev"><i class="fas fa-chevron-left"></i></button>
       <button class="carousel-modal-nav carousel-modal-next" id="modal-next"><i class="fas fa-chevron-right"></i></button>
       <div class="carousel-modal-counter"><span id="modal-cur">1</span> / <span id="modal-tot">1</span></div>
-      <img id="modal-img" src="" alt="" />
+      <img loading="lazy" id="modal-img" src="" alt="" />
     </div>
 
     <script src="../vendor/jquery/jquery.min.js"></script>

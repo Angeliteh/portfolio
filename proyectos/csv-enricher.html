@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -7,6 +7,7 @@
       name="description"
       content="CSV Enricher — AI-powered B2B SaaS platform for intelligent CSV data enrichment. Built with FastAPI, React, Stripe and OpenAI. Case study by Angel Payan."
     />
+    <meta name="description" content="CSV Enricher · Angel Payan - Caso de estudio de ingeniería de software por Angel Payan.">
     <title>CSV Enricher · Angel Payan</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -36,47 +37,46 @@
           <div class="container">
 
             <a href="../index.html" class="proj-hero-back">
-              <i class="fas fa-arrow-left"></i> Back to portfolio
+              <i class="fas fa-arrow-left"></i> <span data-i18n="csvEnricherProject.navigation.backToPortfolio">Volver al portafolio</span>
             </a>
 
             <div class="proj-hero-meta">
-              <span class="proj-category-badge blue">B2B SaaS</span>
-              <span class="proj-category-badge blue">AI &amp; Data</span>
-              <span class="proj-category-badge green">Live in Production</span>
+              <span class="proj-category-badge blue" data-i18n="csvEnricherProject.badges.saas">B2B SaaS</span>
+              <span class="proj-category-badge blue" data-i18n="csvEnricherProject.badges.aiData">IA y Datos</span>
+              <span class="proj-category-badge green" data-i18n="csvEnricherProject.badges.live">Activo en producción</span>
             </div>
 
             <h1 class="proj-hero-title">CSV Enricher</h1>
 
-            <p class="proj-hero-tagline">
-              An AI-powered SaaS platform that transforms hours of manual spreadsheet processing
-              into a 2-minute automated pipeline — without requiring users to write a single prompt.
+            <p class="proj-hero-tagline" data-i18n="csvEnricherProject.subtitle">
+              Plataforma SaaS impulsada por IA que transforma horas de procesamiento manual de hojas de cálculo en un pipeline automatizado de 2 minutos, sin exigir que el usuario escriba un solo prompt.
             </p>
 
             <div class="proj-hero-actions">
               <a href="https://csvanalyst.com/" target="_blank" class="btn-primary">
-                <i class="fas fa-external-link-alt"></i> Visit csvanalyst.com
+                <i class="fas fa-external-link-alt"></i> <span data-i18n="csvEnricherProject.actions.visitSite">Visitar csvanalyst.com</span>
               </a>
-              <a href="../index.html#section2" class="btn-secondary">
-                ← All products
+              <a href="../index.html#section2" class="btn-secondary" data-i18n="csvEnricherProject.actions.allProducts">
+                ← Todos los productos
               </a>
             </div>
 
             <div class="proj-meta-row">
               <div class="proj-meta-item">
-                <div class="proj-meta-label">Type</div>
-                <div class="proj-meta-value">B2B SaaS</div>
+                <div class="proj-meta-label" data-i18n="csvEnricherProject.meta.typeLabel">Tipo</div>
+                <div class="proj-meta-value" data-i18n="csvEnricherProject.meta.typeValue">B2B SaaS</div>
               </div>
               <div class="proj-meta-item">
-                <div class="proj-meta-label">Status</div>
-                <div class="proj-meta-value">✦ Live</div>
+                <div class="proj-meta-label" data-i18n="csvEnricherProject.meta.statusLabel">Estado</div>
+                <div class="proj-meta-value" data-i18n="csvEnricherProject.meta.statusValue">✦ Activo</div>
               </div>
               <div class="proj-meta-item">
-                <div class="proj-meta-label">Monetization</div>
-                <div class="proj-meta-value">Stripe Subscriptions</div>
+                <div class="proj-meta-label" data-i18n="csvEnricherProject.meta.monetizationLabel">Monetización</div>
+                <div class="proj-meta-value" data-i18n="csvEnricherProject.meta.monetizationValue">Suscripciones con Stripe</div>
               </div>
               <div class="proj-meta-item">
-                <div class="proj-meta-label">Built by</div>
-                <div class="proj-meta-value">Solo — end to end</div>
+                <div class="proj-meta-label" data-i18n="csvEnricherProject.meta.builtByLabel">Construido por</div>
+                <div class="proj-meta-value" data-i18n="csvEnricherProject.meta.builtByValue">Solo, end to end</div>
               </div>
             </div>
 
@@ -93,7 +93,7 @@
 
                 <!-- Screenshot carousel (add images to assets/images/projects/csv-enricher/) -->
                 <div class="content-block">
-                  <div class="content-block-title">Product Screenshots</div>
+                  <div class="content-block-title" data-i18n="csvEnricherProject.sections.screenshots">Capturas del producto</div>
 
                   <div class="proj-carousel-wrap" id="proj-carousel">
                     <div class="carousel-container">
@@ -105,8 +105,8 @@
                           <!-- Placeholder: drop real screenshots to assets/images/projects/csv-enricher/ -->
                           <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;color:var(--text-subtle);font-family:var(--mono);font-size:13px;padding:48px;text-align:center;">
                             <i class="fas fa-image" style="font-size:32px;opacity:0.3;"></i>
-                            <span>Screenshots coming soon</span>
-                            <span style="font-size:11px;">Drop images to assets/images/projects/csv-enricher/</span>
+                            <span data-i18n="csvEnricherProject.placeholders.screenshotsSoon">Capturas próximamente</span>
+                            <span style="font-size:11px;" data-i18n="csvEnricherProject.placeholders.screenshotsPath">Coloca imágenes en assets/images/projects/csv-enricher/</span>
                           </div>
                         </div>
                       </div>
@@ -120,45 +120,43 @@
 
                 <!-- Live product demo tabs -->
                 <div class="content-block">
-                  <div class="content-block-title">Live Product</div>
+                  <div class="content-block-title" data-i18n="csvEnricherProject.sections.liveProduct">Producto en vivo</div>
 
                   <div class="demo-tabs-wrap">
                     <div class="demo-tabs-header">
                       <button class="demo-tab-btn active" data-tab="live">
-                        <i class="fas fa-globe"></i> Live Product
+                        <i class="fas fa-globe"></i> <span data-i18n="csvEnricherProject.tabs.live">Producto en vivo</span>
                       </button>
                       <button class="demo-tab-btn" data-tab="guide">
-                        <i class="fas fa-book-open"></i> Technical Guide
+                        <i class="fas fa-book-open"></i> <span data-i18n="csvEnricherProject.tabs.guide">Guía técnica</span>
                       </button>
                     </div>
 
                     <div class="demo-tab-pane active" id="tab-live" style="display:flex;flex-direction:column;gap:14px;">
                       <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:24px;display:flex;flex-direction:column;gap:12px;">
-                        <div style="font-size:13px;color:var(--text-muted);">
-                          CSV Enricher is live and in production at <strong style="color:var(--text);">csvanalyst.com</strong>.
-                          You can create a free account, upload a sample CSV, and run the Resume Screening template
-                          in under 2 minutes — no credit card required for the initial trial.
+                        <div style="font-size:13px;color:var(--text-muted);" data-i18n="csvEnricherProject.liveCard.description">
+                          CSV Enricher está activo y en producción en csvanalyst.com. Puedes crear una cuenta gratuita, subir un CSV de ejemplo y ejecutar la plantilla de evaluación de CVs en menos de 2 minutos, sin tarjeta para la prueba inicial.
                         </div>
                         <a href="https://csvanalyst.com/" target="_blank" class="btn-primary" style="width:fit-content;">
-                          <i class="fas fa-external-link-alt"></i> Open csvanalyst.com
+                          <i class="fas fa-external-link-alt"></i> <span data-i18n="csvEnricherProject.liveCard.openDemo">Abrir csvanalyst.com</span>
                         </a>
                       </div>
                     </div>
 
                     <div class="demo-tab-pane" id="tab-guide">
                       <div style="display:flex;flex-direction:column;gap:16px;">
-                        <h3 style="font-size:15px;font-weight:600;color:var(--text);margin:0;">How it works in 3 steps</h3>
+                        <h3 style="font-size:15px;font-weight:600;color:var(--text);margin:0;" data-i18n="csvEnricherProject.guide.stepsTitle">Cómo funciona en 3 pasos</h3>
                         <ol style="color:var(--text-muted);font-size:13.5px;line-height:2;padding-left:20px;">
-                          <li><strong>Upload CSV</strong> — any spreadsheet with text columns (resumes, leads, tickets, keywords)</li>
-                          <li><strong>Set your context</strong> — fill the MyProfile form with your evaluation criteria once. Reuse it forever.</li>
-                          <li><strong>Run the template</strong> — the AI processes every row using your context and returns enriched output as a downloadable CSV</li>
+                          <li data-i18n="csvEnricherProject.guide.steps.item1"><strong>Sube un CSV</strong> con columnas de texto como CVs, leads, tickets o keywords.</li>
+                          <li data-i18n="csvEnricherProject.guide.steps.item2"><strong>Define tu contexto</strong> llenando MyProfile una sola vez con tus criterios de evaluación.</li>
+                          <li data-i18n="csvEnricherProject.guide.steps.item3"><strong>Ejecuta la plantilla</strong> y la IA procesa cada fila usando ese contexto para devolver un CSV enriquecido.</li>
                         </ol>
-                        <h3 style="font-size:15px;font-weight:600;color:var(--text);margin:0;">Available templates</h3>
+                        <h3 style="font-size:15px;font-weight:600;color:var(--text);margin:0;" data-i18n="csvEnricherProject.guide.templatesTitle">Plantillas disponibles</h3>
                         <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
-                          <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:6px;padding:10px 14px;font-size:12.5px;color:var(--text-muted);"><i class="fas fa-user-tie" style="color:var(--blue);margin-right:8px;"></i>Resume Screening</div>
-                          <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:6px;padding:10px 14px;font-size:12.5px;color:var(--text-muted);"><i class="fas fa-bullseye" style="color:var(--blue);margin-right:8px;"></i>Lead Enrichment</div>
-                          <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:6px;padding:10px 14px;font-size:12.5px;color:var(--text-muted);"><i class="fas fa-file-invoice" style="color:var(--blue);margin-right:8px;"></i>Invoice Processing</div>
-                          <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:6px;padding:10px 14px;font-size:12.5px;color:var(--text-muted);"><i class="fas fa-tags" style="color:var(--blue);margin-right:8px;"></i>Keyword Classification</div>
+                          <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:6px;padding:10px 14px;font-size:12.5px;color:var(--text-muted);"><i class="fas fa-user-tie" style="color:var(--blue);margin-right:8px;"></i><span data-i18n="csvEnricherProject.guide.templates.resume">Evaluación de CVs</span></div>
+                          <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:6px;padding:10px 14px;font-size:12.5px;color:var(--text-muted);"><i class="fas fa-bullseye" style="color:var(--blue);margin-right:8px;"></i><span data-i18n="csvEnricherProject.guide.templates.leads">Enriquecimiento de leads</span></div>
+                          <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:6px;padding:10px 14px;font-size:12.5px;color:var(--text-muted);"><i class="fas fa-file-invoice" style="color:var(--blue);margin-right:8px;"></i><span data-i18n="csvEnricherProject.guide.templates.invoice">Procesamiento de facturas</span></div>
+                          <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:6px;padding:10px 14px;font-size:12.5px;color:var(--text-muted);"><i class="fas fa-tags" style="color:var(--blue);margin-right:8px;"></i><span data-i18n="csvEnricherProject.guide.templates.keyword">Clasificación de keywords</span></div>
                         </div>
                       </div>
                     </div>
@@ -167,40 +165,31 @@
 
                 <!-- Problem -->
                 <div class="content-block">
-                  <div class="content-block-title">The Problem</div>
-                  <h3>AI is powerful. Using it on spreadsheets is painful.</h3>
-                  <p>
-                    Professionals in HR, sales, finance, and marketing deal with hundreds or thousands
-                    of rows of unstructured CSV data every week. The manual process — reading each row,
-                    applying judgment, writing a result — is slow, inconsistent, and impossible to scale.
+                  <div class="content-block-title" data-i18n="csvEnricherProject.problem.title">El problema</div>
+                  <h3 data-i18n="csvEnricherProject.problem.heading">La IA es poderosa. Usarla bien sobre hojas de cálculo es doloroso.</h3>
+                  <p data-i18n="csvEnricherProject.problem.p1">
+                    Profesionales de RH, ventas, finanzas y marketing trabajan cada semana con cientos o miles de filas de datos CSV no estructurados. El proceso manual de leer, juzgar y escribir resultados es lento, inconsistente e imposible de escalar.
                   </p>
-                  <p>
-                    Existing solutions either require technical prompt engineering skills most users
-                    don't have, or are so generic they can't adapt to a specific company's criteria
-                    and workflows. The gap between "I have this data" and "I need this intelligence
-                    applied to it" was enormous.
+                  <p data-i18n="csvEnricherProject.problem.p2">
+                    Las soluciones existentes exigen habilidades de prompt engineering que la mayoría no tiene o son tan genéricas que no se adaptan a los criterios reales de cada empresa. La distancia entre “tengo estos datos” y “necesito aplicar inteligencia sobre ellos” era enorme.
                   </p>
                 </div>
 
                 <!-- Solution -->
                 <div class="content-block">
-                  <div class="content-block-title">The Solution</div>
-                  <h3>Business context-aware AI pipelines, no code required.</h3>
-                  <p>
-                    CSV Enricher lets users define their business context once (through a MyProfile
-                    form) and reuse it across hundreds of CSV runs. The platform translates those
-                    visual forms into optimized LLM prompts — invisibly, correctly, and consistently.
+                  <div class="content-block-title" data-i18n="csvEnricherProject.solution.title">La solución</div>
+                  <h3 data-i18n="csvEnricherProject.solution.heading">Pipelines de IA conscientes del contexto de negocio, sin código.</h3>
+                  <p data-i18n="csvEnricherProject.solution.p1">
+                    CSV Enricher permite que el usuario defina su contexto de negocio una sola vez mediante MyProfile y lo reutilice en cientos de ejecuciones. La plataforma traduce esos formularios visuales a prompts optimizados para LLMs de forma invisible y consistente.
                   </p>
-                  <p>
-                    A recruiter who needs to screen 500 resumes defines their ideal candidate profile
-                    once, uploads their CSV, and gets back a ranked list with match scores, reasoning,
-                    and next-step recommendations — in under 2 minutes.
+                  <p data-i18n="csvEnricherProject.solution.p2">
+                    Un reclutador que necesita evaluar 500 CVs define el perfil ideal una sola vez, sube el CSV y recibe una lista priorizada con puntuaciones, razonamiento y recomendaciones en menos de 2 minutos.
                   </p>
                 </div>
 
                 <!-- Key Features -->
                 <div class="content-block">
-                  <div class="content-block-title">Key Features</div>
+                  <div class="content-block-title" data-i18n="csvEnricherProject.features.title">Funciones clave</div>
 
                   <div class="feature-list">
                     <div class="feature-item">
@@ -208,10 +197,9 @@
                         <i class="fas fa-layer-group"></i>
                       </div>
                       <div class="feature-item-text">
-                        <strong>Reusable AI Templates</strong>
-                        <p>
-                          Industry-specific templates (Resume Screening, Lead Enrichment, Invoice
-                          Processing, Keyword Classification) that users can activate with one click.
+                        <strong data-i18n="csvEnricherProject.features.items.templates.title">Plantillas de IA reutilizables</strong>
+                        <p data-i18n="csvEnricherProject.features.items.templates.desc">
+                          Plantillas por industria como evaluación de CVs, enriquecimiento de leads, procesamiento de facturas y clasificación de keywords, activables con un clic.
                         </p>
                       </div>
                     </div>
@@ -221,11 +209,9 @@
                         <i class="fas fa-user-cog"></i>
                       </div>
                       <div class="feature-item-text">
-                        <strong>MyProfile — Context Injection Engine</strong>
-                        <p>
-                          A visual form where users define their business criteria. That context is
-                          automatically injected into every prompt, making the AI behave as an expert
-                          in their specific domain.
+                        <strong data-i18n="csvEnricherProject.features.items.profile.title">MyProfile, motor de inyección de contexto</strong>
+                        <p data-i18n="csvEnricherProject.features.items.profile.desc">
+                          Un formulario visual donde el usuario define sus criterios de negocio. Ese contexto se inyecta automáticamente en cada prompt para que la IA actúe como experta en ese dominio específico.
                         </p>
                       </div>
                     </div>
@@ -235,11 +221,9 @@
                         <i class="fas fa-bolt"></i>
                       </div>
                       <div class="feature-item-text">
-                        <strong>Batch Processing Pipeline</strong>
-                        <p>
-                          Large CSVs are split into optimized batches and processed without
-                          overwhelming the OpenAI API. Rate limiting, retry logic, and progress
-                          tracking included.
+                        <strong data-i18n="csvEnricherProject.features.items.batch.title">Pipeline de procesamiento por lotes</strong>
+                        <p data-i18n="csvEnricherProject.features.items.batch.desc">
+                          Los CSV grandes se dividen en lotes optimizados y se procesan sin saturar la API de OpenAI. Incluye rate limiting, reintentos y seguimiento de progreso.
                         </p>
                       </div>
                     </div>
@@ -249,10 +233,9 @@
                         <i class="fas fa-credit-card"></i>
                       </div>
                       <div class="feature-item-text">
-                        <strong>Full Stripe Monetization</strong>
-                        <p>
-                          Subscriptions (Starter &amp; Growth plans), credit-based usage billing,
-                          Stripe Checkout, and secure Webhook handling — fully integrated.
+                        <strong data-i18n="csvEnricherProject.features.items.billing.title">Monetización completa con Stripe</strong>
+                        <p data-i18n="csvEnricherProject.features.items.billing.desc">
+                          Suscripciones, cobro por créditos, Stripe Checkout y manejo seguro de webhooks, todo integrado en producción.
                         </p>
                       </div>
                     </div>
@@ -261,7 +244,7 @@
 
                 <!-- Architecture -->
                 <div class="content-block">
-                  <div class="content-block-title">Architecture</div>
+                  <div class="content-block-title" data-i18n="csvEnricherProject.architecture.title">Arquitectura</div>
                   <div class="arch-block">
                     <pre>
 <span class="accent">Frontend</span>  React + Vite + TailwindCSS
@@ -285,34 +268,34 @@
 
                 <!-- Target Users -->
                 <div class="content-block">
-                  <div class="content-block-title">Who Uses It</div>
+                  <div class="content-block-title" data-i18n="csvEnricherProject.users.title">Quién lo usa</div>
                   <div class="feature-list">
                     <div class="feature-item">
                       <div class="feature-item-icon orange"><i class="fas fa-users"></i></div>
                       <div class="feature-item-text">
-                        <strong>HR / Recruiting Teams</strong>
-                        <p>Mass resume screening with customizable match criteria.</p>
+                        <strong data-i18n="csvEnricherProject.users.items.hr.title">Equipos de RH y reclutamiento</strong>
+                        <p data-i18n="csvEnricherProject.users.items.hr.desc">Evaluación masiva de CVs con criterios personalizables.</p>
                       </div>
                     </div>
                     <div class="feature-item">
                       <div class="feature-item-icon orange"><i class="fas fa-bullseye"></i></div>
                       <div class="feature-item-text">
-                        <strong>Sales &amp; Marketing</strong>
-                        <p>Lead scoring, enrichment, and intent classification at scale.</p>
+                        <strong data-i18n="csvEnricherProject.users.items.sales.title">Ventas y marketing</strong>
+                        <p data-i18n="csvEnricherProject.users.items.sales.desc">Scoring, enriquecimiento y clasificación de intención a escala.</p>
                       </div>
                     </div>
                     <div class="feature-item">
                       <div class="feature-item-icon orange"><i class="fas fa-headset"></i></div>
                       <div class="feature-item-text">
-                        <strong>Customer Support</strong>
-                        <p>Ticket categorization by urgency and sentiment for triage workflows.</p>
+                        <strong data-i18n="csvEnricherProject.users.items.support.title">Soporte al cliente</strong>
+                        <p data-i18n="csvEnricherProject.users.items.support.desc">Categorización de tickets por urgencia y sentimiento para flujos de triage.</p>
                       </div>
                     </div>
                     <div class="feature-item">
                       <div class="feature-item-icon orange"><i class="fas fa-search"></i></div>
                       <div class="feature-item-text">
-                        <strong>SEO Agencies</strong>
-                        <p>Bulk keyword classification, search intent analysis at scale.</p>
+                        <strong data-i18n="csvEnricherProject.users.items.seo.title">Agencias SEO</strong>
+                        <p data-i18n="csvEnricherProject.users.items.seo.desc">Clasificación masiva de keywords y análisis de intención de búsqueda.</p>
                       </div>
                     </div>
                   </div>
@@ -320,64 +303,61 @@
 
                 <!-- Future roadmap -->
                 <div class="content-block">
-                  <div class="content-block-title">Roadmap</div>
-                  <p>
-                    Planned features include real-time processing via WebSockets (replacing polling),
-                    native integrations with HubSpot, Salesforce, and Google Sheets, a conversational
-                    pipeline configurator, and parallel async processing via Celery/Redis for
-                    enterprise-scale datasets.
+                  <div class="content-block-title" data-i18n="csvEnricherProject.roadmap.title">Roadmap</div>
+                  <p data-i18n="csvEnricherProject.roadmap.desc">
+                    Entre las funciones planeadas están procesamiento en tiempo real con WebSockets, integraciones nativas con HubSpot, Salesforce y Google Sheets, un configurador conversacional de pipelines y procesamiento paralelo con Celery/Redis para datasets empresariales.
                   </p>
                 </div>
 
                 <!-- Workflow -->
                 <div class="content-block">
-                  <div class="content-block-title">Processing Pipeline</div>
+                  <div class="content-block-title" data-i18n="csvEnricherProject.pipeline.title">Pipeline de procesamiento</div>
                   <div class="workflow-steps">
                     <div class="workflow-step">
                       <div class="workflow-step-num">01</div>
                       <div class="workflow-step-icon"><i class="fas fa-upload"></i></div>
-                      <h4>Upload CSV</h4>
-                      <p>Drag &amp; drop any spreadsheet with text content</p>
+                      <h4 data-i18n="csvEnricherProject.pipeline.steps.upload.title">Subir CSV</h4>
+                      <p data-i18n="csvEnricherProject.pipeline.steps.upload.desc">Arrastra cualquier hoja de cálculo con contenido textual</p>
                     </div>
                     <div class="workflow-step">
                       <div class="workflow-step-num">02</div>
                       <div class="workflow-step-icon"><i class="fas fa-user-cog"></i></div>
-                      <h4>Set Context</h4>
-                      <p>MyProfile injects business criteria into every prompt</p>
+                      <h4 data-i18n="csvEnricherProject.pipeline.steps.context.title">Definir contexto</h4>
+                      <p data-i18n="csvEnricherProject.pipeline.steps.context.desc">MyProfile inyecta los criterios de negocio en cada prompt</p>
                     </div>
                     <div class="workflow-step">
                       <div class="workflow-step-num">03</div>
                       <div class="workflow-step-icon"><i class="fas fa-bolt"></i></div>
-                      <h4>Batch Process</h4>
-                      <p>OpenAI API called in optimized batches with retry logic</p>
+                      <h4 data-i18n="csvEnricherProject.pipeline.steps.batch.title">Procesar por lotes</h4>
+                      <p data-i18n="csvEnricherProject.pipeline.steps.batch.desc">La API de OpenAI se llama en lotes optimizados con lógica de reintentos</p>
                     </div>
                     <div class="workflow-step">
                       <div class="workflow-step-num">04</div>
                       <div class="workflow-step-icon"><i class="fas fa-download"></i></div>
-                      <h4>Download Results</h4>
-                      <p>Enriched CSV ready in ~2 minutes</p>
+                      <h4 data-i18n="csvEnricherProject.pipeline.steps.download.title">Descargar resultados</h4>
+                      <p data-i18n="csvEnricherProject.pipeline.steps.download.desc">CSV enriquecido listo en alrededor de 2 minutos</p>
                     </div>
                   </div>
                 </div>
 
                 <!-- Challenges -->
                 <div class="content-block">
-                  <div class="content-block-title">Technical Challenges &amp; Solutions</div>
+                  <div class="content-block-title" data-i18n="csvEnricherProject.challenges.title">Desafíos técnicos y soluciones</div>
 
                   <div class="challenges-list">
                     <div class="challenge-card">
                       <div class="challenge-header">
                         <i class="fas fa-exclamation-triangle"></i>
-                        <h4>Context Injection at Scale</h4>
+                        <h4 data-i18n="csvEnricherProject.challenges.items.context.title">Inyección de contexto a escala</h4>
                       </div>
                       <div class="challenge-body">
                         <div class="challenge-problem">
-                          <span class="challenge-label">Problem</span>
-                          <p>Standard LLM wrappers produce generic results because they lack specific business logic. Users don't know how to write complex system prompts.</p>
+                          <span class="challenge-label" data-i18n="csvEnricherProject.challenges.problemLabel">Problema</span>
+                          <p data-i18n="csvEnricherProject.challenges.items.context.problem">Los wrappers estándar de LLM generan resultados genéricos porque carecen de lógica de negocio específica. Los usuarios no saben escribir prompts de sistema complejos.</p>
                         </div>
                         <div class="challenge-solution">
-                          <span class="challenge-label">Solution</span>
-                          <p>The "MyProfile" engine. It translates a visual form (business criteria) into a highly optimized, structured meta-prompt injected into every batch invisibly.</p>
+                          <span class="challenge-label" data-i18n="csvEnricherProject.challenges.solutionLabel">Solución</span>
+                          <p data-i18n="csvEnricherProject.challenges.items.context.solution">El motor MyProfile traduce un formulario visual con criterios de negocio a un meta-prompt estructurado y optimizado que se inyecta en cada lote de forma invisible.</p>
                         </div>
                       </div>
                     </div>
@@ -385,16 +365,16 @@
                     <div class="challenge-card">
                       <div class="challenge-header">
                         <i class="fas fa-exclamation-triangle"></i>
-                        <h4>API Rate Limiting &amp; Crashes</h4>
+                        <h4 data-i18n="csvEnricherProject.challenges.items.rate.title">Rate limiting y fallos de API</h4>
                       </div>
                       <div class="challenge-body">
                         <div class="challenge-problem">
-                          <span class="challenge-label">Problem</span>
-                          <p>Sending a 5,000-row CSV directly to the OpenAI API causes immediate token limit errors, timeouts, and catastrophic failures.</p>
+                          <span class="challenge-label" data-i18n="csvEnricherProject.challenges.problemLabel">Problema</span>
+                          <p data-i18n="csvEnricherProject.challenges.items.rate.problem">Enviar un CSV de 5,000 filas directamente a la API de OpenAI provoca límites de tokens, timeouts y fallos graves.</p>
                         </div>
                         <div class="challenge-solution">
-                          <span class="challenge-label">Solution</span>
-                          <p>A resilient batch-processing queue via FastAPI. It chunks the CSV dynamically, monitors OpenAI headers, applies slowapi backoff, and retries failed chunks automatically.</p>
+                          <span class="challenge-label" data-i18n="csvEnricherProject.challenges.solutionLabel">Solución</span>
+                          <p data-i18n="csvEnricherProject.challenges.items.rate.solution">Una cola resiliente de procesamiento por lotes en FastAPI que fragmenta el CSV dinámicamente, monitorea headers de OpenAI, aplica backoff y reintenta chunks fallidos automáticamente.</p>
                         </div>
                       </div>
                     </div>
@@ -403,23 +383,23 @@
 
                 <!-- Impact -->
                 <div class="content-block">
-                  <div class="content-block-title">Business Impact</div>
+                  <div class="content-block-title" data-i18n="csvEnricherProject.impact.title">Impacto de negocio</div>
 
                   <div class="testimonials-grid">
                     <div class="testimonial-card">
                       <div class="testimonial-header">
                         <div class="testimonial-avatar"><i class="fas fa-building"></i></div>
                         <div>
-                          <div class="testimonial-name">HR &amp; Recruiting Teams</div>
-                          <div class="testimonial-role">Resume Screening Use Case</div>
+                          <div class="testimonial-name" data-i18n="csvEnricherProject.impact.cards.hr.name">Equipos de RH y reclutamiento</div>
+                          <div class="testimonial-role" data-i18n="csvEnricherProject.impact.cards.hr.role">Caso de uso: evaluación de CVs</div>
                         </div>
                       </div>
                       <p class="testimonial-quote">
-                        "Evaluating 500 applicants used to take a recruiter two full days of reading and manual scoring. The pipeline now scores and ranks them based on specific job criteria in under 2 minutes."
+                        <span data-i18n="csvEnricherProject.impact.cards.hr.quote">Evaluar 500 postulantes antes tomaba dos días completos de lectura y scoring manual. Ahora el pipeline los califica y ordena según criterios específicos en menos de 2 minutos.</span>
                       </p>
                       <div class="testimonial-metrics">
-                        <span class="metric-badge">Hours → 2 Mins</span>
-                        <span class="metric-badge orange">100% Consistency</span>
+                        <span class="metric-badge" data-i18n="csvEnricherProject.impact.cards.hr.metric1">Horas → 2 min</span>
+                        <span class="metric-badge orange" data-i18n="csvEnricherProject.impact.cards.hr.metric2">100% consistencia</span>
                       </div>
                     </div>
 
@@ -427,16 +407,16 @@
                       <div class="testimonial-header">
                         <div class="testimonial-avatar"><i class="fas fa-bolt"></i></div>
                         <div>
-                          <div class="testimonial-name">Zero Prompt Engineering</div>
-                          <div class="testimonial-role">User Experience</div>
+                          <div class="testimonial-name" data-i18n="csvEnricherProject.impact.cards.ux.name">Cero prompt engineering</div>
+                          <div class="testimonial-role" data-i18n="csvEnricherProject.impact.cards.ux.role">Experiencia de usuario</div>
                         </div>
                       </div>
                       <p class="testimonial-quote">
-                        "The biggest barrier to AI adoption in B2B is the blank text box. By utilizing pre-built industry templates, operators get enterprise-grade AI results without writing a single prompt."
+                        <span data-i18n="csvEnricherProject.impact.cards.ux.quote">La mayor barrera para adoptar IA en B2B es la caja de texto en blanco. Usando plantillas preconstruidas, los operadores obtienen resultados de nivel enterprise sin escribir un solo prompt.</span>
                       </p>
                       <div class="testimonial-metrics">
-                        <span class="metric-badge blue">No-code AI</span>
-                        <span class="metric-badge purple">Template Driven</span>
+                        <span class="metric-badge blue" data-i18n="csvEnricherProject.impact.cards.ux.metric1">IA no-code</span>
+                        <span class="metric-badge purple" data-i18n="csvEnricherProject.impact.cards.ux.metric2">Guiado por plantillas</span>
                       </div>
                     </div>
                   </div>
@@ -446,11 +426,11 @@
                 <div class="proj-navigation">
                   <a href="../index.html#section2" class="proj-nav-link">
                     <i class="fas fa-arrow-left"></i>
-                    <div><span class="proj-nav-label">Back to</span>All Products</div>
+                    <div><span class="proj-nav-label" data-i18n="csvEnricherProject.navigation.backTo">Volver a</span><span data-i18n="csvEnricherProject.navigation.allProducts">Todos los productos</span></div>
                   </a>
                   <a href="vioagents.html" class="proj-nav-link next">
                     <i class="fas fa-arrow-right"></i>
-                    <div><span class="proj-nav-label">Next product</span>VioAgents</div>
+                    <div><span class="proj-nav-label" data-i18n="csvEnricherProject.navigation.nextProduct">Siguiente producto</span><span data-i18n="csvEnricherProject.navigation.nextProductName">VioAgents</span></div>
                   </a>
                 </div>
 
@@ -461,42 +441,42 @@
 
                 <!-- CTA -->
                 <div class="sidebar-widget cta-widget">
-                  <div class="sidebar-widget-title">Try It</div>
+                  <div class="sidebar-widget-title" data-i18n="csvEnricherProject.sidebar.tryIt">Probar ahora</div>
                   <a href="https://csvanalyst.com/" target="_blank" class="btn-primary">
-                    <i class="fas fa-external-link-alt"></i> Visit csvanalyst.com
+                    <i class="fas fa-external-link-alt"></i> <span data-i18n="csvEnricherProject.actions.visitSite">Visitar csvanalyst.com</span>
                   </a>
                 </div>
 
                 <!-- Stack -->
                 <div class="sidebar-widget">
-                  <div class="sidebar-widget-title">Tech Stack</div>
+                  <div class="sidebar-widget-title" data-i18n="csvEnricherProject.sidebar.techStack">Tech Stack</div>
                   <div class="stack-list">
                     <div class="stack-row">
-                      <span class="label">Backend</span>
+                      <span class="label" data-i18n="csvEnricherProject.sidebar.stack.backend">Backend</span>
                       <span class="value">FastAPI · Python</span>
                     </div>
                     <div class="stack-row">
-                      <span class="label">Frontend</span>
+                      <span class="label" data-i18n="csvEnricherProject.sidebar.stack.frontend">Frontend</span>
                       <span class="value">React · Vite</span>
                     </div>
                     <div class="stack-row">
-                      <span class="label">Database</span>
+                      <span class="label" data-i18n="csvEnricherProject.sidebar.stack.database">Base de datos</span>
                       <span class="value">PostgreSQL · Supabase</span>
                     </div>
                     <div class="stack-row">
-                      <span class="label">AI</span>
+                      <span class="label" data-i18n="csvEnricherProject.sidebar.stack.ai">IA</span>
                       <span class="value">OpenAI API</span>
                     </div>
                     <div class="stack-row">
-                      <span class="label">Payments</span>
+                      <span class="label" data-i18n="csvEnricherProject.sidebar.stack.payments">Pagos</span>
                       <span class="value">Stripe</span>
                     </div>
                     <div class="stack-row">
-                      <span class="label">Infra</span>
+                      <span class="label" data-i18n="csvEnricherProject.sidebar.stack.infra">Infra</span>
                       <span class="value">Cloudflare · VPS</span>
                     </div>
                     <div class="stack-row">
-                      <span class="label">Auth</span>
+                      <span class="label" data-i18n="csvEnricherProject.sidebar.stack.auth">Auth</span>
                       <span class="value">Supabase Auth</span>
                     </div>
                   </div>
@@ -504,23 +484,23 @@
 
                 <!-- Key facts -->
                 <div class="sidebar-widget">
-                  <div class="sidebar-widget-title">Key Facts</div>
+                  <div class="sidebar-widget-title" data-i18n="csvEnricherProject.sidebar.keyFacts">Datos clave</div>
                   <div class="metric-list">
                     <div class="metric-row">
-                      <div class="metric-label">Processing time</div>
+                      <div class="metric-label" data-i18n="csvEnricherProject.sidebar.facts.processingTime">Tiempo de procesamiento</div>
                       <div class="metric-value">~2 min</div>
                     </div>
                     <div class="metric-row">
-                      <div class="metric-label">vs. manual work</div>
-                      <div class="metric-value">Hours → Minutes</div>
+                      <div class="metric-label" data-i18n="csvEnricherProject.sidebar.facts.manualWork">vs trabajo manual</div>
+                      <div class="metric-value" data-i18n="csvEnricherProject.sidebar.facts.manualWorkValue">Horas → Minutos</div>
                     </div>
                     <div class="metric-row">
-                      <div class="metric-label">Billing model</div>
-                      <div class="metric-value">Subscription + Credits</div>
+                      <div class="metric-label" data-i18n="csvEnricherProject.sidebar.facts.billingModel">Modelo de cobro</div>
+                      <div class="metric-value" data-i18n="csvEnricherProject.sidebar.facts.billingModelValue">Suscripción + Créditos</div>
                     </div>
                     <div class="metric-row">
-                      <div class="metric-label">Built by</div>
-                      <div class="metric-value">1 engineer (solo)</div>
+                      <div class="metric-label" data-i18n="csvEnricherProject.sidebar.facts.builtBy">Construido por</div>
+                      <div class="metric-value" data-i18n="csvEnricherProject.sidebar.facts.builtByValue">1 ingeniero (solo)</div>
                     </div>
                   </div>
                 </div>
@@ -536,7 +516,7 @@
           <div class="container">
             <p>
               Angel Payan &nbsp;·&nbsp;
-              <a href="../index.html">Portfolio</a>
+              <a href="../index.html" data-i18n="csvEnricherProject.footer.portfolio">Portafolio</a>
               &nbsp;·&nbsp;
               <a href="https://csvanalyst.com/" target="_blank">csvanalyst.com</a>
             </p>
@@ -552,7 +532,7 @@
       <button class="carousel-modal-nav carousel-modal-prev" id="modal-prev"><i class="fas fa-chevron-left"></i></button>
       <button class="carousel-modal-nav carousel-modal-next" id="modal-next"><i class="fas fa-chevron-right"></i></button>
       <div class="carousel-modal-counter"><span id="modal-cur">1</span> / <span id="modal-tot">1</span></div>
-      <img id="modal-img" src="" alt="" />
+      <img loading="lazy" id="modal-img" src="" alt="" />
     </div>
 
     <!-- Scripts -->

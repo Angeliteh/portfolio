@@ -1,6 +1,7 @@
-document.addEventListener('DOMContentLoaded', async function() {
-    // Esperar a que i18next esté inicializado
+document.addEventListener('DOMContentLoaded', async function () {
     await window.i18nextInitialized;
+
+    let buttonsSetup = false; // Flag para no registrar listeners duplicados
 
     function updateLanguageButtons(currentLang) {
         document.querySelectorAll('.lang-btn').forEach(btn => {
@@ -12,51 +13,53 @@ document.addEventListener('DOMContentLoaded', async function() {
     }
 
     function changeLanguage(lang) {
-        if (i18next.language === lang) return; // Evitar cambio innecesario
-
-        i18next.changeLanguage(lang, function(err) {
-            if (err) {
-                console.error('Error al cambiar idioma:', err);
-                return;
-            }
-            
-            localStorage.setItem('language', lang);
+        if (i18next.language === lang) {
+            // Mismo idioma, solo re-localizar y actualizar botones
+            updateLanguageButtons(lang);
+            $('body').localize();
+            return;
+        }
+        i18next.changeLanguage(lang, function (err) {
+            if (err) { console.error('Error cambiando idioma:', err); return; }
+            window.langStorage.set(lang);
             updateLanguageButtons(lang);
             $('body').localize();
         });
     }
 
-    // Configurar los botones de idioma
     function setupLanguageButtons() {
         const buttons = document.querySelectorAll('.lang-btn');
-        if (buttons.length) {
-            buttons.forEach(btn => {
-                btn.addEventListener('click', function() {
-                    const lang = this.getAttribute('data-lang');
-                    changeLanguage(lang);
-                });
-            });
-            
-            // Establecer el estado inicial
-            const currentLang = i18next.language || 'es';
-            updateLanguageButtons(currentLang);
+        if (!buttons.length) return;
+        if (buttonsSetup) {
+            // Botones ya configurados — solo actualizar estado visual
+            updateLanguageButtons(i18next.language || 'es');
+            return;
         }
+        buttonsSetup = true;
+        buttons.forEach(btn => {
+            btn.addEventListener('click', function () {
+                changeLanguage(this.getAttribute('data-lang'));
+            });
+        });
+        updateLanguageButtons(i18next.language || 'es');
     }
 
-    // Configurar inicialmente si los botones ya existen
+    // Setup inicial
     setupLanguageButtons();
 
-    // Observar cambios en el DOM para botones añadidos dinámicamente
+    // Observar solo cuando se agrega el sidebar (no text nodes, no attribute changes)
     const observer = new MutationObserver((mutations) => {
-        mutations.forEach((mutation) => {
-            if (mutation.addedNodes.length) {
-                setupLanguageButtons();
+        for (const mutation of mutations) {
+            for (const node of mutation.addedNodes) {
+                // Solo reaccionar cuando se agrega un elemento HTML (no texto)
+                if (node.nodeType === 1) {
+                    setupLanguageButtons();
+                    return; // Un solo pass es suficiente
+                }
             }
-        });
+        }
     });
 
-    observer.observe(document.body, {
-        childList: true,
-        subtree: true
-    });
+    observer.observe(document.body, { childList: true, subtree: false });
+    // subtree: false → solo hijos directos del body, no cada texto modificado por localize()
 });

@@ -305,16 +305,23 @@
 .stack-row {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 6px 0;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 8px 0;
   border-bottom: 1px solid var(--border);
   font-size: 12.5px;
 }
 
 .stack-row:last-child { border-bottom: none; }
 
-.stack-row .label { color: var(--text-muted); }
-.stack-row .value { color: var(--text); font-weight: 500; font-family: var(--mono); font-size: 11px; }
+.stack-row .label { color: var(--text-muted); flex-shrink: 0; }
+.stack-row .value { 
+  color: var(--text); 
+  font-weight: 500; 
+  font-family: var(--mono); 
+  font-size: 11px; 
+  text-align: right; 
+}
 
 /* Key metrics widget */
 .metric-list {

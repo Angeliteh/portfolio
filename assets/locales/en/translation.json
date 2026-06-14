@@ -3,6 +3,170 @@
   "site": {
     "title": "Senior Full-Stack Developer"
   },
+  "landing": {
+    "common": {
+      "caseStudy": "Case study →",
+      "viewProject": "View project →",
+      "viewPortfolio": "View portfolio →"
+    },
+    "sidebar": {
+      "role": "Product Engineer",
+      "products": "Products"
+    },
+    "hero": {
+      "available": "Available for work",
+      "badgeEngineer": "Full-Stack Software Engineer",
+      "badgeAi": "AI & Automation",
+      "badgeBuilder": "Product Builder",
+      "taglineLine1": "I build complete software products, from architecture to production.",
+      "taglineLine2": "Not just code. Systems that work, ship, and generate revenue.",
+      "primaryCta": "See CSV Analyst Live",
+      "secondaryCta": "Get in touch"
+    },
+    "about": {
+      "label": "About",
+      "p1": "Over the past several years I've independently designed, developed, deployed, and commercialized multiple production software products, managing every stage from system architecture and backend development to cloud infrastructure, client delivery, and ongoing support.",
+      "p2": "My stack spans Python, FastAPI, React, Electron, Node.js, PostgreSQL, Supabase, and LLM integration. I've delivered solutions for 20+ business clients across education, automation, digital forensics, and e-commerce.",
+      "p3": "What makes me different: I think like a founder. Every system I build is designed to solve a real problem, survive production, and deliver measurable business value, not just pass a code review.",
+      "stats": {
+        "clients": "Clients served",
+        "products": "Commercial products",
+        "years": "Years building",
+        "stack": "Stack coverage"
+      }
+    },
+    "products": {
+      "title": "Commercial Products",
+      "subtitle": "Software I built, deployed, and commercialized, now in production with real users",
+      "status": {
+        "live": "Live",
+        "commercial": "Commercial"
+      },
+      "csv": {
+        "type": "B2B SaaS · AI Data Processing",
+        "desc": "AI-powered SaaS platform that transforms hours of manual spreadsheet work into 2-minute automated pipelines. Non-technical users can enrich, classify, and clean CSV data at scale using reusable templates and custom business profiles that inject context directly into OpenAI prompts.",
+        "highlights": {
+          "item1": "Reusable AI templates with customizable business profiles",
+          "item2": "Stripe subscriptions and credit-based billing",
+          "item3": "Batch processing for large datasets without overloading the API",
+          "item4": "Supabase auth, PostgreSQL, and Cloudflare in real production infrastructure"
+        }
+      },
+      "vioagents": {
+        "type": "Multi-tenant SaaS · AI Agents for Business",
+        "desc": "Conversational AI platform for business automation. Specialized agents for sales, appointment booking, and FAQ handling, powered by a custom cognitive orchestration system that eliminates hallucinations when working with real catalogs and live calendars.",
+        "liveDemo": "Live Demo",
+        "highlights": {
+          "item1": "Custom AI orchestration architecture with no LangChain dependency",
+          "item2": "Google Calendar integration for real appointment booking",
+          "item3": "Intelligent CSV catalog search with cross-sell and upsell logic",
+          "item4": "Auto-generated PDF quotes and embeddable widget"
+        }
+      },
+      "massmsg": {
+        "type": "Desktop RPA · Browser Automation",
+        "desc": "Desktop automation platform for high-volume messaging workflows. It runs entirely locally using the user's own Chrome profile and residential IP, making it indistinguishable from manual operation.",
+        "highlights": {
+          "item1": "Stealth engine with variable typing speed, simulated human error, and bio-pauses",
+          "item2": "RSA + HWID cryptographic licensing locked per device",
+          "item3": "Heartbeat system to prevent zombie processes on crashes",
+          "item4": "Supports WhatsApp Web, Gmail, and Google Messages"
+        }
+      },
+      "forensic": {
+        "type": "Desktop Tool · Digital Forensics",
+        "desc": "Desktop application for legal-grade digital evidence acquisition. It extracts and cryptographically seals WhatsApp conversations and Android content, generating SHA-256 certified PDF reports suitable for legal proceedings.",
+        "highlights": {
+          "item1": "SHA-256 integrity calculated immediately on extraction",
+          "item2": "Auto-generated forensic PDF certificates with chain-of-custody data",
+          "item3": "Dual extraction: WhatsApp Web with Playwright and Android storage with ADB",
+          "item4": "100% local processing with zero data leaving the analyst's machine"
+        }
+      }
+    },
+    "additional": {
+      "title": "Additional Commercial Solutions",
+      "education": {
+        "title": "AI Assistant for Educational Institutions",
+        "desc": "Natural language SQL over institutional databases. Automated generation of certificates, student records, PDFs, and Excel exports."
+      },
+      "excel": {
+        "title": "Enterprise Excel Validation Platform",
+        "desc": "Cross-table validation, subtotal verification, and mathematical consistency checks. Reduced weeks of manual work to seconds."
+      },
+      "leads": {
+        "title": "Lead Factory",
+        "desc": "Internal AI-powered lead generation platform. Combines scraping, data enrichment, and automated qualification. Currently used in production."
+      },
+      "web": {
+        "title": "Web Development & Infrastructure",
+        "desc": "15+ deployed commercial sites. Linux VPS management, Nginx, SSL/TLS, Cloudflare, DNS, Shopify, and legacy WordPress maintenance."
+      }
+    },
+    "projects": {
+      "title": "Technical Projects",
+      "subtitle": "Selected engineering work demonstrating breadth across stacks and domains",
+      "filters": {
+        "all": "All",
+        "data": "Data Engineering",
+        "ai": "AI Integration",
+        "automation": "Web Automation",
+        "desktop": "Desktop & Systems",
+        "web": "Web Development"
+      },
+      "mobileHint": "Swipe to see more",
+      "cards": {
+        "school": {
+          "title": "AI School Records System",
+          "desc": "Desktop app with Master-Student AI architecture. Automates school record management with a conversational interface, intelligent routing, and automatic PDF generation. In production at educational institutions."
+        },
+        "excel": {
+          "title": "Excel Validation System",
+          "desc": "Hybrid platform (PyQt + React) for automated extraction, cross-table validation, and visualization of complex Excel data. A custom bidimensional algorithm handles merged cells and multi-sheet relationships."
+        },
+        "enterprise": {
+          "title": "Enterprise E-Commerce Pipeline",
+          "desc": "Massive data extraction pipeline across 40+ official manufacturer sites. Includes reverse-engineered JSON APIs, multi-brand crawling, and dynamic cleaning ready for WooCommerce."
+        },
+        "rtx": {
+          "title": "RTX Price Monitor",
+          "desc": "Automated scraper for GPU price monitoring across multiple stores. Includes scheduled tracking, SQLite storage, and alerts with data export."
+        },
+        "mouse": {
+          "title": "Remote Mouse",
+          "desc": "Mobile app for ultra-low latency PC control over WebSockets. Multi-touch gestures, virtual keyboard, and customizable shortcuts. Sub-8ms latency."
+        },
+        "medical": {
+          "title": "Medical License Automation",
+          "desc": "Automation system for completing official medical license forms. Voice recognition, multi-source capture, and automatic document generation."
+        },
+        "downloader": {
+          "title": "Social Media Downloader",
+          "desc": "Web platform for downloading social media videos without watermarks. Multi-format support, parallel processing, and a clean modern interface."
+        },
+        "webPortfolio": {
+          "title": "Commercial Web Portfolio",
+          "desc": "15+ deployed commercial sites, landing pages, and corporate sites. Responsive design, SEO optimization, and performance-first development."
+        }
+      }
+    },
+    "skills": {
+      "title": "Technical Skills",
+      "subtitle": "A stack built through years of shipping real products, not tutorials",
+      "groups": {
+        "languages": "Languages",
+        "frameworks": "Frameworks & Libraries",
+        "ai": "Artificial Intelligence",
+        "databases": "Databases",
+        "infrastructure": "Infrastructure & DevOps",
+        "automation": "Automation & Data"
+      }
+    },
+    "contact": {
+      "title": "Get in Touch",
+      "subtitle": "Open to full-time roles, freelance projects, and interesting conversations"
+    }
+  },
   "nav": {
     "about": "About Me",
     "skills": "Skills",
@@ -35,6 +199,696 @@
   "project5": {
     "title": "Excel Scraper",
     "desc": "Tool for automatic data consolidation from multiple Excel files. Processes and combines information from different sources, applying business rules and generating custom reports."
+  },
+  "csvEnricherProject": {
+    "title": "CSV Enricher",
+    "subtitle": "AI-powered SaaS platform that transforms hours of manual spreadsheet processing into a 2-minute automated pipeline, without requiring users to write a single prompt.",
+    "badges": {
+      "saas": "B2B SaaS",
+      "aiData": "AI & Data",
+      "live": "Live in Production"
+    },
+    "actions": {
+      "visitSite": "Visit csvanalyst.com",
+      "allProducts": "← All products"
+    },
+    "meta": {
+      "typeLabel": "Type",
+      "typeValue": "B2B SaaS",
+      "statusLabel": "Status",
+      "statusValue": "✦ Live",
+      "monetizationLabel": "Monetization",
+      "monetizationValue": "Stripe Subscriptions",
+      "builtByLabel": "Built by",
+      "builtByValue": "Solo, end to end"
+    },
+    "navigation": {
+      "backToPortfolio": "Back to portfolio",
+      "backTo": "Back to",
+      "allProducts": "All Products",
+      "nextProduct": "Next product",
+      "nextProductName": "VioAgents"
+    },
+    "sections": {
+      "screenshots": "Product Screenshots",
+      "liveProduct": "Live Product"
+    },
+    "placeholders": {
+      "screenshotsSoon": "Screenshots coming soon",
+      "screenshotsPath": "Drop images to assets/images/projects/csv-enricher/"
+    },
+    "tabs": {
+      "live": "Live Product",
+      "guide": "Technical Guide"
+    },
+    "liveCard": {
+      "description": "CSV Enricher is live and in production at csvanalyst.com. You can create a free account, upload a sample CSV, and run the Resume Screening template in under 2 minutes, with no credit card required for the initial trial.",
+      "openDemo": "Open csvanalyst.com"
+    },
+    "guide": {
+      "stepsTitle": "How it works in 3 steps",
+      "templatesTitle": "Available templates",
+      "steps": {
+        "item1": "<strong>Upload a CSV</strong> with text columns such as resumes, leads, tickets, or keywords.",
+        "item2": "<strong>Set your context</strong> by filling out MyProfile once with your evaluation criteria.",
+        "item3": "<strong>Run the template</strong> and the AI processes every row using that context to return an enriched CSV."
+      },
+      "templates": {
+        "resume": "Resume Screening",
+        "leads": "Lead Enrichment",
+        "invoice": "Invoice Processing",
+        "keyword": "Keyword Classification"
+      }
+    },
+    "problem": {
+      "title": "The Problem",
+      "heading": "AI is powerful. Using it well on spreadsheets is painful.",
+      "p1": "Professionals in HR, sales, finance, and marketing handle hundreds or thousands of rows of unstructured CSV data every week. The manual process of reading, judging, and writing results is slow, inconsistent, and impossible to scale.",
+      "p2": "Existing solutions require prompt engineering skills that most users do not have, or they are so generic that they cannot adapt to a company's actual criteria. The gap between “I have this data” and “I need intelligence applied to it” was enormous."
+    },
+    "solution": {
+      "title": "The Solution",
+      "heading": "Business context-aware AI pipelines, no code required.",
+      "p1": "CSV Enricher allows users to define their business context once through MyProfile and reuse it across hundreds of runs. The platform translates those visual forms into optimized LLM prompts invisibly and consistently.",
+      "p2": "A recruiter who needs to screen 500 resumes defines the ideal candidate profile once, uploads the CSV, and gets back a prioritized list with scores, reasoning, and recommendations in under 2 minutes."
+    },
+    "features": {
+      "title": "Key Features",
+      "items": {
+        "templates": {
+          "title": "Reusable AI Templates",
+          "desc": "Industry-specific templates such as Resume Screening, Lead Enrichment, Invoice Processing, and Keyword Classification, all activatable with one click."
+        },
+        "profile": {
+          "title": "MyProfile, the context injection engine",
+          "desc": "A visual form where users define their business criteria. That context is automatically injected into every prompt so the AI behaves like an expert in that specific domain."
+        },
+        "batch": {
+          "title": "Batch processing pipeline",
+          "desc": "Large CSVs are split into optimized batches and processed without overwhelming the OpenAI API. Includes rate limiting, retries, and progress tracking."
+        },
+        "billing": {
+          "title": "Full Stripe monetization",
+          "desc": "Subscriptions, credit-based billing, Stripe Checkout, and secure webhook handling, fully integrated in production."
+        }
+      }
+    },
+    "architecture": {
+      "title": "Architecture"
+    },
+    "users": {
+      "title": "Who Uses It",
+      "items": {
+        "hr": {
+          "title": "HR and recruiting teams",
+          "desc": "Mass resume screening with customizable criteria."
+        },
+        "sales": {
+          "title": "Sales and marketing",
+          "desc": "Lead scoring, enrichment, and intent classification at scale."
+        },
+        "support": {
+          "title": "Customer support",
+          "desc": "Ticket categorization by urgency and sentiment for triage workflows."
+        },
+        "seo": {
+          "title": "SEO agencies",
+          "desc": "Bulk keyword classification and search intent analysis."
+        }
+      }
+    },
+    "roadmap": {
+      "title": "Roadmap",
+      "desc": "Planned features include real-time processing with WebSockets, native integrations with HubSpot, Salesforce, and Google Sheets, a conversational pipeline configurator, and parallel processing with Celery/Redis for enterprise datasets."
+    },
+    "pipeline": {
+      "title": "Processing Pipeline",
+      "steps": {
+        "upload": {
+          "title": "Upload CSV",
+          "desc": "Drag any spreadsheet with text content"
+        },
+        "context": {
+          "title": "Set Context",
+          "desc": "MyProfile injects business criteria into every prompt"
+        },
+        "batch": {
+          "title": "Batch Process",
+          "desc": "The OpenAI API is called in optimized batches with retry logic"
+        },
+        "download": {
+          "title": "Download Results",
+          "desc": "Enriched CSV ready in about 2 minutes"
+        }
+      }
+    },
+    "challenges": {
+      "title": "Technical Challenges and Solutions",
+      "problemLabel": "Problem",
+      "solutionLabel": "Solution",
+      "items": {
+        "context": {
+          "title": "Context injection at scale",
+          "problem": "Standard LLM wrappers generate generic results because they lack specific business logic. Users do not know how to write complex system prompts.",
+          "solution": "The MyProfile engine translates a visual form with business criteria into a structured optimized meta-prompt that gets injected invisibly into each batch."
+        },
+        "rate": {
+          "title": "API rate limiting and crashes",
+          "problem": "Sending a 5,000-row CSV directly to the OpenAI API causes token limit issues, timeouts, and major failures.",
+          "solution": "A resilient FastAPI batch-processing queue dynamically chunks the CSV, monitors OpenAI headers, applies backoff, and retries failed chunks automatically."
+        }
+      }
+    },
+    "impact": {
+      "title": "Business Impact",
+      "cards": {
+        "hr": {
+          "name": "HR and recruiting teams",
+          "role": "Resume Screening Use Case",
+          "quote": "Evaluating 500 applicants used to take two full days of reading and manual scoring. The pipeline now scores and ranks them based on specific criteria in under 2 minutes.",
+          "metric1": "Hours → 2 min",
+          "metric2": "100% consistency"
+        },
+        "ux": {
+          "name": "Zero prompt engineering",
+          "role": "User experience",
+          "quote": "The biggest barrier to AI adoption in B2B is the blank text box. Using prebuilt templates, operators get enterprise-grade results without writing a single prompt.",
+          "metric1": "No-code AI",
+          "metric2": "Template driven"
+        }
+      }
+    },
+    "sidebar": {
+      "tryIt": "Try It",
+      "techStack": "Tech Stack",
+      "keyFacts": "Key Facts",
+      "stack": {
+        "backend": "Backend",
+        "frontend": "Frontend",
+        "database": "Database",
+        "ai": "AI",
+        "payments": "Payments",
+        "infra": "Infra",
+        "auth": "Auth"
+      },
+      "facts": {
+        "processingTime": "Processing time",
+        "manualWork": "vs. manual work",
+        "manualWorkValue": "Hours → Minutes",
+        "billingModel": "Billing model",
+        "billingModelValue": "Subscription + Credits",
+        "builtBy": "Built by",
+        "builtByValue": "1 engineer (solo)"
+      }
+    },
+    "footer": {
+      "portfolio": "Portfolio"
+    }
+  },
+  "vioagentsProject": {
+    "subtitle": "Conversational AI platform that deploys specialized agents for sales, appointment booking, and support, using a custom cognitive orchestration system designed to eliminate hallucinations on real data.",
+    "badges": {
+      "saas": "Multi-tenant SaaS",
+      "agents": "AI Agents",
+      "liveDemo": "Live Demo"
+    },
+    "actions": {
+      "liveDemo": "Live Demo",
+      "allProducts": "← All products"
+    },
+    "meta": {
+      "typeLabel": "Type",
+      "typeValue": "Multi-tenant SaaS",
+      "statusLabel": "Status",
+      "statusValue": "✦ Live",
+      "targetLabel": "Target",
+      "targetValue": "SMBs & Local Business",
+      "builtByLabel": "Built by",
+      "builtByValue": "Solo, end to end"
+    },
+    "navigation": {
+      "backToPortfolio": "Back to portfolio",
+      "previousProduct": "Previous product",
+      "previousProductName": "CSV Enricher",
+      "nextProduct": "Next product",
+      "nextProductName": "MassMSG"
+    },
+    "sections": {
+      "screenshots": "Product Screenshots",
+      "liveDemo": "Live Demo"
+    },
+    "placeholders": {
+      "screenshotsSoon": "Screenshots coming soon",
+      "screenshotsPath": "Drop images to assets/images/projects/vioagents/"
+    },
+    "tabs": {
+      "liveWidget": "Live Widget",
+      "howItWorks": "How it works"
+    },
+    "liveCard": {
+      "description": "The VioAgents widget is live. You can test the agent's ability to search catalogs, handle objections, and book appointments inside a real conversational flow.",
+      "openDemo": "Open Live Demo"
+    },
+    "guide": {
+      "title": "How to test the agents",
+      "items": {
+        "sales": "<strong>Sales:</strong> ask for recommendations or prices and you will see it only quotes real products from the CSV catalog.",
+        "booking": "<strong>Booking:</strong> try to reserve an appointment and you will see it checks Google Calendar in real time and avoids double bookings.",
+        "support": "<strong>Support:</strong> ask complex policy questions and you will get answers grounded in its markdown knowledge base."
+      }
+    },
+    "problem": {
+      "title": "The Problem",
+      "heading": "Traditional chatbots are rigid. LLM wrappers hallucinate.",
+      "p1": "SMBs lose leads every day because they cannot respond outside business hours. Rule-based chatbots do not handle natural language and generic LLM integrations invent prices, availability, and policies.",
+      "p2": "The market needed an agent that speaks naturally, knows the real catalog, books real appointments, and never invents information it does not have."
+    },
+    "architecture": {
+      "title": "Architecture: M1 → M2 → M3",
+      "heading": "Custom cognitive orchestration, no LangChain and no AutoGen.",
+      "p1": "Instead of depending on external orchestration frameworks, VioAgents uses a three-moment system with strict data validation at each gate. That guarantees the agent never answers with invented data."
+    },
+    "agents": {
+      "title": "The three agents",
+      "items": {
+        "sales": {
+          "title": "Sales Agent",
+          "desc": "Intelligent search over CSV catalogs, multi-query support, cross-sell suggestions, and PDF quote generation when the customer's name is provided."
+        },
+        "booking": {
+          "title": "Booking Agent",
+          "desc": "Real Google Calendar integration. Checks live availability, blocks slots, prevents duplicates, and suggests alternatives in natural conversation."
+        },
+        "faq": {
+          "title": "FAQ and knowledge agent",
+          "desc": "Consumes structured Markdown knowledge bases. If frustration or escalation is detected, it pauses the flow and notifies a human operator with full context."
+        }
+      }
+    },
+    "multitenancy": {
+      "title": "Multi-tenancy and scalability",
+      "heading": "Onboarding a new client takes minutes, not days.",
+      "p1": "VioAgents uses a three-level configuration hierarchy: Domain → Niche → Business. Cognitive rules and sector vocabulary are inherited automatically; each client only needs its specific policies and catalog files added. The widget embeds with exactly 2 lines of code."
+    },
+    "pipeline": {
+      "title": "AI Processing Pipeline",
+      "gatekeeperTitle": "Gatekeeper",
+      "specialistTitle": "Specialist",
+      "groundingTitle": "Grounding",
+      "steps": {
+        "receptor": "Parses user intent and validates missing requirements.",
+        "gatekeeper": "Halts the flow if data is missing and asks the user naturally.",
+        "specialist": "Executes tool calls such as Google Calendar and database queries.",
+        "grounding": "Drafts the final response using only exact data returned by M2."
+      }
+    },
+    "challenges": {
+      "title": "Technical Challenges and Solutions",
+      "problemLabel": "Problem",
+      "solutionLabel": "Solution",
+      "items": {
+        "hallucinations": {
+          "title": "AI hallucinating prices and stock",
+          "problem": "Basic LLM integrations often invent a price or confirm an appointment slot that does not exist just to sound helpful.",
+          "solution": "Architectural isolation in M3. M3 does not access internal knowledge; it only formats the strict JSON returned by M2."
+        },
+        "loops": {
+          "title": "Frustrating bot loops",
+          "problem": "Users hate when a bot gets stuck in loops and refuses to hand off to a human, causing dropped leads and bad reviews.",
+          "solution": "Native sentiment analysis and explicit handoff detection. If frustration is detected, the bot pauses and notifies a human operator."
+        }
+      }
+    },
+    "impact": {
+      "title": "Business Impact",
+      "cards": {
+        "booking": {
+          "name": "Lead capture and booking",
+          "role": "Conversion impact",
+          "quote": "Instead of sending leads to a static form where many drop off, the agent books them directly into Google Calendar instantly, 24/7.",
+          "metric1": "24/7 operation",
+          "metric2": "Zero duplicate bookings"
+        },
+        "scale": {
+          "name": "Speed and scalability",
+          "role": "Deployment impact",
+          "quote": "Adding a new client in a supported niche takes minutes. You just add their CSV catalog and tenant_defaults.md file, and the agent inherits the domain rules automatically.",
+          "metric1": "Response < 2s",
+          "metric2": "2-line integration"
+        }
+      }
+    },
+    "sidebar": {
+      "tryIt": "Try It",
+      "techStack": "Tech Stack",
+      "keyFacts": "Key Facts",
+      "stack": {
+        "backend": "Backend",
+        "frontend": "Frontend",
+        "widget": "Widget",
+        "database": "Database",
+        "ai": "AI",
+        "calendar": "Calendar",
+        "docs": "Docs"
+      },
+      "facts": {
+        "responseTime": "Response time",
+        "responseTimeValue": "< 2 seconds",
+        "hallucinationRisk": "Hallucination risk",
+        "hallucinationRiskValue": "Eliminated by M3",
+        "integration": "Integration",
+        "integrationValue": "2 lines of code",
+        "orchestration": "Orchestration",
+        "orchestrationValue": "Custom, no LangChain"
+      }
+    },
+    "footer": {
+      "portfolio": "Portfolio"
+    }
+  },
+  "massmsgProject": {
+    "subtitle": "Desktop RPA platform that automates high-volume messaging workflows with Electron, FastAPI, and Playwright, including a stealth human-emulation engine that makes the automation indistinguishable from real behavior.",
+    "badges": {
+      "desktopRpa": "Desktop RPA",
+      "browserAutomation": "Browser Automation",
+      "commercial": "Commercial"
+    },
+    "actions": {
+      "allProducts": "← All products"
+    },
+    "meta": {
+      "typeLabel": "Type",
+      "typeValue": "Desktop Application",
+      "statusLabel": "Status",
+      "statusValue": "✦ Commercial",
+      "pricingLabel": "Pricing",
+      "pricingValue": "Lifetime Deal",
+      "builtByLabel": "Built by",
+      "builtByValue": "Solo, end to end"
+    },
+    "navigation": {
+      "backToPortfolio": "Back to portfolio",
+      "previousProduct": "Previous product",
+      "previousProductName": "VioAgents",
+      "nextProject": "Next",
+      "nextProjectName": "Excel Scraper"
+    },
+    "sections": {
+      "screenshots": "Product Screenshots",
+      "demo": "Product Demo"
+    },
+    "placeholders": {
+      "screenshotsSoon": "Screenshots coming soon",
+      "screenshotsPath": "Drop images to assets/images/projects/massmsg/",
+      "videoSoon": "YouTube demo video coming soon"
+    },
+    "tabs": {
+      "video": "Demo Video",
+      "security": "Security Engine"
+    },
+    "securityGuide": {
+      "title": "Why standard bots get banned",
+      "desc": "Cloud automation tools inject requests or use headless browsers from datacenter IPs. Platforms detect this immediately. MassMSG controls your real local Chrome, types letter by letter with variable delay, and even corrects mistakes like a human."
+    },
+    "problem": {
+      "title": "The Problem",
+      "heading": "Official messaging APIs are expensive, restrictive, and detectable.",
+      "p1": "WhatsApp Business API charges per conversation and requires template pre-approval. Cloud bulk messaging tools use shared datacenter IPs that get detected and blocked within minutes. Many open-source alternatives also require significant technical skill.",
+      "p2": "SMBs needed a local solution that runs on their own machine, uses their real account and residential IP, and looks fully human to the platform's security systems."
+    },
+    "architecture": {
+      "title": "Architecture: dual interface design",
+      "heading": "One engine, two interfaces: local, portable, and zero cloud dependency."
+    },
+    "stealth": {
+      "title": "Stealth Engine",
+      "items": {
+        "typo": {
+          "title": "Typo Engine: human keystroke emulation",
+          "desc": "Variable per-key delays, random mistakes corrected with Backspace, and simulated thinking pauses. Characters are typed one by one and never injected."
+        },
+        "pauses": {
+          "title": "Bio-pauses: real workday simulation",
+          "desc": "Random distraction pauses, coffee breaks, and longer breaks on large batches. Every delay has random variance to avoid detectable patterns."
+        },
+        "fingerprint": {
+          "title": "Residential IP and native fingerprint",
+          "desc": "Runs on the user's real Chrome with the true browser fingerprint and home IP, identical to manual operation. Platforms cannot distinguish it from organic use."
+        },
+        "session": {
+          "title": "Persistent session and portability",
+          "desc": "The Chrome profile is stored in <code>prod_browser_profile/</code> and the QR is scanned only once. Moving the folder preserves the full session without reconfiguration."
+        }
+      }
+    },
+    "licensing": {
+      "title": "Security: RSA + HWID licensing",
+      "heading": "Three-layer cryptographic protection against piracy."
+    },
+    "pipeline": {
+      "title": "Execution Pipeline",
+      "steps": {
+        "load": {
+          "title": "Load Data",
+          "desc": "Import CSV or Excel with contacts and custom variables."
+        },
+        "bind": {
+          "title": "Chrome Bind",
+          "desc": "Connects via CDP to the user's native Chrome session."
+        },
+        "emulate": {
+          "title": "Emulate",
+          "desc": "Types characters using the biological Typo Engine."
+        },
+        "pauses": {
+          "title": "Bio-Pauses",
+          "desc": "Executes random pauses to evade detection heuristics."
+        }
+      }
+    },
+    "challenges": {
+      "title": "Technical Challenges and Solutions",
+      "problemLabel": "Problem",
+      "solutionLabel": "Solution",
+      "items": {
+        "bans": {
+          "title": "Cloud API and tooling bans",
+          "problem": "Cloud mass messaging SaaS tools get blocked quickly because Meta detects their datacenter IPs and headless browser signatures.",
+          "solution": "MassMSG is a local desktop app. It uses the user's organic residential IP and native browser fingerprint, making it indistinguishable from human use."
+        },
+        "zombies": {
+          "title": "Orphaned zombie processes",
+          "problem": "When bundling Python with Electron, if the user force-quits the UI, the Python backend can stay alive in RAM as a memory leak.",
+          "solution": "A double-safety Heartbeat system. The React UI sends a ping every 5 seconds and, if Python detects 15 seconds without signal, it self-terminates immediately."
+        }
+      }
+    },
+    "impact": {
+      "title": "Business Impact",
+      "cards": {
+        "cost": {
+          "name": "Zero cost per message",
+          "role": "Financial impact",
+          "quote": "Official APIs charge per conversation and impose rigid template rules. Because MassMSG behaves like a human, users can send thousands of personalized messages without paying API fees.",
+          "metric1": "100% free sending",
+          "metric2": "No template rules"
+        },
+        "privacy": {
+          "name": "Absolute privacy",
+          "role": "Data security",
+          "quote": "Businesses no longer need to upload their client databases to external servers. Everything runs and stays strictly on their own local machine.",
+          "metric1": "Air-gap capable",
+          "metric2": "GDPR compliant"
+        }
+      }
+    },
+    "sidebar": {
+      "techStack": "Tech Stack",
+      "highlights": "Engineering Highlights",
+      "stack": {
+        "shell": "Shell",
+        "ui": "UI",
+        "backend": "Backend",
+        "automation": "Automation",
+        "security": "Security",
+        "platforms": "Platforms"
+      },
+      "metrics": {
+        "apiCost": "API cost per message",
+        "licensing": "Licensing",
+        "licensingValue": "RSA + HWID lock",
+        "processSafety": "Process safety",
+        "processSafetyValue": "Heartbeat System",
+        "detectionRisk": "Detection risk",
+        "detectionRiskValue": "Residential IP"
+      }
+    },
+    "footer": {
+      "portfolio": "Portfolio"
+    }
+  },
+  "forensicSuiteProject": {
+    "title": "Forensic Data Extractor Suite",
+    "subtitle": "Desktop application for legal-grade digital evidence acquisition. It extracts and cryptographically seals content from WhatsApp Web and Android devices, producing SHA-256 certified forensic PDF reports suitable for court.",
+    "badges": {
+      "desktopTool": "Desktop Tool",
+      "forensics": "Digital Forensics",
+      "commercialLicensed": "Commercial · Licensed"
+    },
+    "actions": {
+      "allProducts": "← All products"
+    },
+    "meta": {
+      "typeLabel": "Type",
+      "typeValue": "Desktop Application",
+      "licensingLabel": "Licensing",
+      "licensingValue": "Annual · $350–$499",
+      "standardsLabel": "Standards",
+      "standardsValue": "FBI / NOM-151-SCFI",
+      "builtByLabel": "Built by",
+      "builtByValue": "Solo, end to end"
+    },
+    "navigation": {
+      "backToPortfolio": "Back to portfolio",
+      "previousProduct": "Previous product",
+      "previousProductName": "MassMSG",
+      "nextProject": "Next project",
+      "nextProjectName": "Excel Scraper"
+    },
+    "sections": {
+      "screenshots": "Product Screenshots",
+      "demo": "Product Demo"
+    },
+    "placeholders": {
+      "screenshotsSoon": "Screenshots coming soon",
+      "screenshotsPath": "Drop images to assets/images/projects/forensic-suite/",
+      "videoSoon": "YouTube demo video coming soon"
+    },
+    "tabs": {
+      "video": "Demo Video",
+      "pdf": "PDF Certificate"
+    },
+    "pdfGuide": {
+      "title": "The output",
+      "desc": "The system generates a formal PDF with an inventory of every extracted file and its computed SHA-256 hash. Because that hash is generated at the exact moment the buffer is written to disk, any later alteration changes the hash and protects the chain of custody."
+    },
+    "problem": {
+      "title": "The Problem",
+      "heading": "Screenshots do not stand up in court. Chain of custody breaks easily.",
+      "p1": "In civil and labor litigation, WhatsApp messages are critical evidence. But screenshots are easily manipulated and any attorney can claim they were edited with Photoshop or DevTools. Courts often reject them.",
+      "p2": "Enterprise forensic tools cost thousands of dollars per year and require specialized certifications. Independent attorneys, forensic analysts, and private agencies had no accessible alternative with legal admissibility standards."
+    },
+    "architecture": {
+      "title": "System Architecture"
+    },
+    "integrity": {
+      "title": "Forensic Integrity System",
+      "items": {
+        "hash": {
+          "title": "Immediate SHA-256 hashing",
+          "desc": "The hash is calculated at the buffer level at the exact moment data is written to disk, before the PDF is generated. Any later modification changes the hash and proves tampering mathematically."
+        },
+        "pdf": {
+          "title": "Automated forensic certificate",
+          "desc": "The PDF contains ISO 8601 timestamp, software version, analyst name, module used, and SHA-256 fingerprint for each extracted file. It is designed for direct presentation before a judge or notary."
+        },
+        "dual": {
+          "title": "Dual extraction: web and physical",
+          "desc": "Logical: Playwright traverses WhatsApp Web and reads native DOM metadata such as author and timestamp. Physical: ADB extracts EXIF metadata from images, including GPS coordinates and capture date."
+        },
+        "local": {
+          "title": "100% local, air-gap capable",
+          "desc": "No evidence data is transmitted over the internet. The ADB binary is bundled in <code>bin/</code>, with no Android SDK required. It can run in courtrooms or locations without connectivity."
+        }
+      }
+    },
+    "market": {
+      "title": "Target Market",
+      "desc": "Built for legal professionals who need court-admissible digital evidence without enterprise software budgets: civil litigators, private investigation agencies, corporate auditors, and independent forensic consultants. Priced at $350–$499 per year per device with an optional maintenance plan."
+    },
+    "pipeline": {
+      "title": "Extraction Pipeline",
+      "steps": {
+        "logical": {
+          "title": "Logical Fetch",
+          "desc": "Playwright scrolls and extracts raw text plus metadata."
+        },
+        "physical": {
+          "title": "Physical Pull",
+          "desc": "ADB extracts original media with EXIF metadata intact."
+        },
+        "hash": {
+          "title": "Hash Seal",
+          "desc": "Immediate SHA-256 calculation at buffer level."
+        },
+        "report": {
+          "title": "PDF Report",
+          "desc": "Generates an extraction certificate ready for court."
+        }
+      }
+    },
+    "challenges": {
+      "title": "Technical Challenges and Solutions",
+      "problemLabel": "Problem",
+      "solutionLabel": "Solution",
+      "items": {
+        "screenshots": {
+          "title": "Inadmissibility of screenshots",
+          "problem": "Lawyers lose cases because the opposing side argues that WhatsApp screenshots can be forged easily with Photoshop or DevTools.",
+          "solution": "Zero-time-gap cryptography. The system calculates the SHA-256 hash at the exact millisecond the buffer is written to disk, guaranteeing mathematical immutability."
+        },
+        "portability": {
+          "title": "Hardware dependencies and portability",
+          "problem": "To perform physical extractions, many tools require installing heavy Android SDKs, making it impractical to run on improvised courtroom laptops.",
+          "solution": "Electron bundling. The core adb.exe binary ships inside the internal `bin` folder, allowing the app to function as a portable executable with zero external dependencies."
+        }
+      }
+    },
+    "impact": {
+      "title": "Production Impact",
+      "cards": {
+        "legal": {
+          "name": "Legal admissibility",
+          "role": "Litigation value",
+          "quote": "Enterprise tools like Cellebrite cost thousands of dollars annually. This suite brings FBI and NOM-151 standard forensic extraction to independent attorneys at a fraction of the cost.",
+          "metric1": "SHA-256 standard",
+          "metric2": "Court-ready PDF"
+        },
+        "privacy": {
+          "name": "Total privacy",
+          "role": "Data sovereignty",
+          "quote": "Because everything runs locally as a native application, investigators can execute full extractions in air-gapped rooms without internet, ensuring absolute confidentiality.",
+          "metric1": "Offline capable",
+          "metric2": "Zero cloud processing"
+        }
+      }
+    },
+    "sidebar": {
+      "techStack": "Tech Stack",
+      "keyFacts": "Key Facts",
+      "stack": {
+        "shell": "Shell",
+        "ui": "UI",
+        "browser": "Browser",
+        "mobile": "Mobile",
+        "integrity": "Integrity",
+        "reports": "Reports",
+        "licensing": "Licensing"
+      },
+      "metrics": {
+        "evidenceStandard": "Evidence standard",
+        "evidenceStandardValue": "SHA-256 Certified",
+        "legalFrameworks": "Legal frameworks",
+        "legalFrameworksValue": "FBI + NOM-151",
+        "pricing": "Pricing",
+        "pricingValue": "$350–$499 / year",
+        "cloudDependency": "Cloud dependency",
+        "cloudDependencyValue": "Zero"
+      }
+    },
+    "footer": {
+      "portfolio": "Portfolio"
+    }
   },
   "project-view": "View Project",
   "about": {
@@ -181,6 +1035,8 @@
   "contact": {
     "title": "Contact",
     "subtitle": "Interested in collaborating on a project or have a question?",
+    "ctaIntro": "I prefer to respond quickly. Write to me directly:",
+    "responseTime": "I respond within 24 hours",
     "info": {
       "title": "Let's Talk!",
       "description": "I'm always open to discussing new projects, creative opportunities or just chatting about technology.",
@@ -330,6 +1186,61 @@
       "nextProject": "Next Project: Remote Mouse"
     }
   },
+  "enterpriseScraperProject": {
+    "title": "Enterprise E-Commerce Pipeline",
+    "subtitle": "Massive data extraction pipeline scraping 40+ official manufacturer sites",
+    "metrics": {
+      "brands": "40+ Brands",
+      "data": "500GB+ Data",
+      "format": "Direct WooCommerce"
+    },
+    "sections": {
+      "overview": "Overview",
+      "overviewText": "Massive automated extraction system designed for a major hardware and tools retailer. The pipeline monitors and extracts daily data from more than 40 official brand websites, automatically bypassing advanced anti-bot protections and reverse-engineering complex private APIs. It processes technical specifications, HD images, and categorizations, standardizing everything into a unified format ready for direct WooCommerce import.",
+      "techStack": "Tech Stack",
+      "challenges": "Technical Challenges and Solutions"
+    },
+    "features": {
+      "antiBot": {
+        "title": "Advanced Anti-Bot Evasion",
+        "desc": "Dynamic proxy rotation, behavioral simulation, and TLS fingerprint spoofing"
+      },
+      "apiReverse": {
+        "title": "Private API Reverse Engineering",
+        "desc": "Network traffic analysis to replicate undocumented GraphQL and REST queries"
+      },
+      "dataCleaning": {
+        "title": "Intelligent Data Cleaning",
+        "desc": "Automatic normalization of technical specifications and image processing"
+      }
+    },
+    "challengesList": {
+      "cloudflare": {
+        "title": "Cloudflare & Datadome Bypass",
+        "problem": "Official sites use enterprise-grade protections that block standard requests.",
+        "solution": "Implementation of undetected-chromedriver and custom request sessions with browser-perfect TLS fingerprints."
+      },
+      "dynamicContent": {
+        "title": "Dynamic React/Next.js Content",
+        "problem": "Product data was not present in the initial HTML, requiring JavaScript execution.",
+        "solution": "Reverse engineering of XHR requests and extraction of hydration states (__NEXT_DATA__) to bypass rendering overhead."
+      },
+      "inconsistentData": {
+        "title": "Inconsistent Brand Schemas",
+        "problem": "Every manufacturer uses completely different categorization and specification formats.",
+        "solution": "Custom NLP mappers and regex patterns to normalize and map data to a universal taxonomy."
+      }
+    },
+    "navigation": {
+      "prevProject": "Previous Project: Excel Validation",
+      "nextProject": "Next Project: Remote Mouse",
+      "backToPortfolio": "Back to Portfolio"
+    },
+    "resourceLinks": {
+      "sourceCode": "Source Code",
+      "architecture": "Architecture Guide"
+    }
+  },
   "remoteMouseProject": {
     "title": "Remote Mouse",
     "subtitle": "Remote mouse and keyboard control from mobile devices via WebSocket",
@@ -343,12 +1254,11 @@
       "videoPlaceholder": "Video Demo Coming Soon",
       "videoDescription": "Remote control demonstration in action from mobile device",
       "overview": "Overview",
-      "resources": "Project Information",
+      "resources": "Links and Resources",
       "overviewText": "Cross-platform application that allows controlling PC mouse and keyboard from a mobile device using real-time WebSocket communication. Includes a Python server with GUI for PC and a Flutter application for mobile devices with support for Android, iOS, Web, Windows, macOS and Linux. Offers precise cursor control, clicks, scroll, text input and key combinations with haptic feedback and customizable configuration.",
       "technicalDetails": "Technical Details",
       "techStack": "Technology Stack",
-      "challenges": "Challenges and Solutions",
-      "resources": "Links and Resources"
+      "challenges": "Challenges and Solutions"
     },
     "features": {
       "mouseControl": {
@@ -760,853 +1670,761 @@
     },
     "resourceLinks": {
       "privateCode": "Private Code",
-      "technicalDocs": "Technical Documentation",
-      "localDemo": "Local Demo"
-    },
-    "navigation": {
-      "prevProject": "Previous Project: Distance Calculator",
-      "nextProject": "Next Project: Medical License System"
-    }
-  },
-  "medicalLicenseProject": {
-    "title": "Medical License Automation System",
-    "subtitle": "Automation tool for generating official medical licenses",
-    "metrics": {
-      "timeReduction": "95% time reduction",
-      "fields": "18 different fields",
-      "errorFree": "100% error-free"
-    },
-    "sections": {
-      "videoDemo": "Video Demonstration",
-      "videoPlaceholder": "Video Demo Coming Soon",
-      "videoDescription": "Demonstration of medical license automation in action",
-      "overview": "Overview",
-      "overviewText": "System developed for a health sector office that automates the process of filling medical license forms. Eliminates manual repetitive data entry, reduces human errors and significantly accelerates the process of generating official documents. The system processes Word templates with predefined fields and generates complete documents ready for signature and delivery.",
-      "technicalDetails": "Technical Details",
-      "techStack": "Technology Stack",
-      "challenges": "Challenges and Solutions",
-      "workflow": "Workflow",
-      "resources": "Links and Resources"
-    },
-    "features": {
-      "multipleInterfaces": {
-        "title": "Multiple Capture Interfaces",
-        "desc": "Commands, guided mode, voice recognition and predefined dictionaries"
-      },
-      "intelligentProcessing": {
-        "title": "Intelligent Template Processing",
-        "desc": "Automatic field detection with original format preservation"
-      },
-      "medicalDataManagement": {
-        "title": "Specialized Medical Data Management",
-        "desc": "Specific fields for diagnoses, periods and administrative information"
+      "navigation": {
+        "prevProject": "Previous Project: Distance Calculator",
+        "nextProject": "Next Project: Medical License System",
+        "backToPortfolio": "Back to Portfolio"
       }
     },
-    "techDetails": {
-      "architecture": {
-        "title": "Architecture",
-        "items": [
-          "Modular pattern with separation of responsibilities",
-          "Specialized modules by interface type",
-          "Sequential processing with validation",
-          "Python dictionary handling for mapping"
-        ]
-      },
-      "optimization": {
-        "title": "Optimization",
-        "items": [
-          "Recursive search in document elements",
-          "Validation of mandatory vs optional fields",
-          "Text replacement preserving styles",
-          "Centralized functions for processing"
-        ]
-      },
-      "features": {
-        "title": "Advanced Features",
-        "items": [
-          "Voice recognition for accessibility",
-          "Interface adapted to different technical levels",
-          "Complete preservation of official format",
-          "Validation system at each step"
-        ]
-      }
-    },
-    "techCategories": {
-      "mainLanguage": "Main Language",
-      "mainLibraries": "Main Libraries",
-      "formats": "Formats"
-    },
-    "challengesList": {
-      "complexFieldDetection": {
-        "title": "Complex Field Detection",
-        "problem": "Fields can be in paragraphs or tables with complex formatting.",
-        "solution": "Recursive search in all document elements (paragraphs, tables, cells)."
-      },
-      "nonTechnicalInterface": {
-        "title": "Interface for Non-Technical Staff",
-        "problem": "Medical staff needed a simple and intuitive interface.",
-        "solution": "Multiple interfaces (guided, voice, commands) adapted to different levels."
-      },
-      "formatPreservation": {
-        "title": "Format Preservation",
-        "problem": "Maintain official document format after automatic filling.",
-        "solution": "Text replacement preserving styles, tables and original structure."
-      }
-    },
-    "workflowSteps": {
-      "loadTemplate": {
-        "title": "1. Load Template",
-        "desc": "Word document with predefined fields"
-      },
-      "captureData": {
-        "title": "2. Capture Data",
-        "desc": "Guided interface, commands or voice recognition"
-      },
-      "processDocument": {
-        "title": "3. Process Document",
-        "desc": "Automatic filling preserving format"
-      },
-      "generateResult": {
-        "title": "4. Generate Result",
-        "desc": "Complete document ready for signature"
-      }
-    },
-    "video": {
-      "title": "Complete License Automation",
-      "description": "Watch how the system completely automates the filling of official medical license forms. From data capture to final document generation, eliminating errors and reducing time from 30 minutes to 2 minutes."
-    },
-    "resourceLinks": {
-      "confidentialCode": "Confidential Code",
-      "confidentialCodeDesc": "Health sector project with sensitive data",
-      "technicalDocs": "Technical Documentation",
-      "technicalDocsDesc": "Medical document automation guide",
-      "internalUse": "In Production",
-      "internalUseDesc": "Active system in health sector office"
-    },
-    "navigation": {
-      "prevProject": "Previous Project: Excel Scraper",
-      "nextProject": "Next Project: AI School Certificate System"
-    }
-  },
-  "excelProject": {
-    "title": "Universal Excel Validation System",
-    "subtitle": "Hybrid platform (PyQt + React) that automates extraction, validation and visualization of educational Excel tables",
-    "metrics": {
-      "automation": "100% Automated",
-      "hybrid": "Hybrid Desktop/Web",
-      "validation": "Intelligent Validation"
-    },
-    "sections": {
-      "demoSection": "System Demonstration",
-      "overview": "Overview",
-      "overviewText": "Hybrid system that completely automates the processing of complex educational Excel tables. Shared architecture between desktop (PyQt) and web (React + Flask) with bidimensional algorithm for merged cell detection. Reduces 90-95% of manual processing time.",
-      "technicalDetails": "Technical Details",
-      "techStack": "Tech Stack",
-      "challenges": "Technical Challenges and Solutions",
-      "workflow": "Workflow",
-      "productionImpact": "Production Impact",
-      "resources": "Project Information"
-    },
-    "features": {
-      "algorithm": {
-        "title": "Bidimensional Algorithm",
-        "desc": "Automatic merged cell detection with bidimensional algorithm that identifies [value] patterns and generates precise spans"
-      },
-      "hybrid": {
-        "title": "Hybrid Architecture",
-        "desc": "Shared business core between desktop (PyQt) and web (React + Flask) ensuring consistency and maintainability"
-      },
-      "validation": {
-        "title": "Universal Validations",
-        "desc": "Automatic validation system for coherence, subtotals and totals with state evidence"
-      }
-    },
-    "tabs": {
-      "video": "Video Demo",
-      "guide": "Technical Guide"
-    },
-    "video": {
-      "title": "Hybrid System Demonstration",
-      "description": "Watch how the system processes complex Excel files in both desktop interface (PyQt) and web interface (React). Includes demonstration of merged cell detection algorithm, automatic validations and complete 4-step workflow."
-    },
-    "guide": {
-      "executiveOverview": {
-        "title": "Executive Summary",
-        "content": "Hybrid system that completely automates the processing of complex educational Excel tables. Shared architecture between desktop (PyQt) and web (React + Flask) with bidimensional algorithm for merged cell detection. Reduces 90-95% of manual processing time.",
-        "highlight": {
-          "title": "Innovative Hybrid Architecture",
-          "content": "Combines desktop power with web accessibility, sharing the same business core to ensure consistency and maintainability."
-        }
-      },
-      "algorithm": {
-        "title": "Bidimensional Algorithm",
-        "detection": {
-          "title": "Marker Detection",
-          "desc": "Identifies [value] patterns in cells to determine horizontal and vertical spans"
-        },
-        "merging": {
-          "title": "Span Generation",
-          "desc": "Calculates precise mergedCells and automatically cleans combined data"
-        },
-        "validation": {
-          "title": "Universal Validation",
-          "desc": "Coherence, subtotals and totals with state evidence"
-        }
-      },
-      "hybridArchitecture": {
-        "title": "Hybrid Architecture",
-        "desktop": {
-          "title": "Desktop (PyQt)",
-          "desc": "Native interface with specialized controllers and direct file system access"
-        },
-        "web": {
-          "title": "Web (React + Flask)",
-          "desc": "REST API with modern interface, Excel-like table and range selection"
-        },
-        "core": {
-          "title": "Shared Core",
-          "desc": "Pure business modules without UI dependencies, reusable across platforms"
-        }
-      }
-    },
-    "technical": {
-      "architecture": {
-        "title": "Architecture",
-        "item1": "Shared business core between desktop and web",
-        "item2": "Bidimensional algorithm for merged cell detection",
-        "item3": "Platform-specialized controllers (PyQt/Flask)"
-      },
-      "security": {
-        "title": "Robustness",
-        "item1": "Exhaustive data coherence validations",
-        "item2": "Error handling with state evidence",
-        "item3": "Safe processing of complex Excel files"
-      },
-      "features": {
-        "title": "Advanced Features",
-        "item1": "Automatic detection of complex table structures",
-        "item2": "Excel-like web interface with range selection",
-        "item3": "4-step workflow with validations at each stage"
-      }
-    },
-    "techStack": {
-      "backend": {
-        "title": "Backend",
-        "python": "Python",
-        "flask": "Flask",
-        "pandas": "Pandas"
-      },
-      "frontend": {
-        "title": "Frontend",
-        "pyqt": "PyQt5",
-        "react": "React",
-        "bootstrap": "Bootstrap"
-      },
-      "processing": {
-        "title": "Processing",
-        "openpyxl": "OpenPyXL",
-        "algorithms": "Custom Algorithms",
-        "validation": "Custom Validations"
-      },
-      "architecture": {
-        "title": "Architecture",
-        "hybrid": "Hybrid",
-        "shared": "Shared Core",
-        "modular": "Modular"
-      }
-    },
-    "challenges": {
-      "challenge1": {
-        "title": "Merged Cell Detection",
-        "problem": {
-          "title": "Problem:",
-          "desc": "Excel doesn't provide direct information about merged cells in complex files"
-        },
-        "solution": {
-          "title": "Solution:",
-          "desc": "Bidimensional algorithm that detects [value] patterns and calculates spans automatically"
-        }
-      },
-      "challenge2": {
-        "title": "Hybrid Architecture",
-        "problem": {
-          "title": "Problem:",
-          "desc": "Maintain consistency between desktop and web interfaces without duplicating logic"
-        },
-        "solution": {
-          "title": "Solution:",
-          "desc": "Shared business core with platform-specialized controllers"
-        }
-      },
-      "challenge3": {
-        "title": "Universal Validations",
-        "problem": {
-          "title": "Problem:",
-          "desc": "Validate coherence in tables with variable structures and complex data"
-        },
-        "solution": {
-          "title": "Solution:",
-          "desc": "Automatic validation system with state evidence and detailed reports"
-        }
-      }
-    },
-    "workflowSteps": {
-      "extraction": {
-        "title": "1. Extraction",
-        "desc": "Load and analyze Excel files"
-      },
-      "detection": {
-        "title": "2. Detection",
-        "desc": "Bidimensional merged cell algorithm"
-      },
-      "validation": {
-        "title": "3. Validation",
-        "desc": "Coherence and totals verification"
-      },
-      "visualization": {
-        "title": "4. Visualization",
-        "desc": "Presentation in hybrid interface"
-      }
-    },
-    "feedback": {
-      "dataAnalyst": {
-        "title": "Educational Data Analyst",
-        "institution": "Educational Institution",
-        "quote": "Before we spent hours manually processing each Excel file with merged cells. Now the system automatically detects the structure and validates everything in minutes.",
-        "metrics": {
-          "timeSaved": "95% less time",
-          "accuracy": "100% accuracy"
-        }
-      },
-      "developer": {
-        "title": "Team Developer",
-        "institution": "Development team",
-        "quote": "The hybrid architecture allows maintaining a single business core for desktop and web. The bidimensional algorithm is elegant and handles complex cases that other systems cannot.",
-        "metrics": {
-          "codeReuse": "80% code reused",
-          "architecture": "Solid architecture"
-        }
-      }
-    },
-    "resourceLinks": {
-      "privateCode": "Private Code",
-      "privateCodeDesc": "Hybrid architecture with proprietary algorithms",
-      "technicalDocs": "Technical Documentation",
-      "technicalDocsDesc": "Complete hybrid architecture guide",
-      "inProduction": "Hybrid System",
-      "inProductionDesc": "Desktop and Web with shared core"
-    },
-    "navigation": {
-      "prevProject": "Previous Project: Multi-Bot AI System",
-      "backToPortfolio": "Back to Portfolio"
-    }
-  },
-  "botProject": {
-    "title": "Enterprise Multi-Bot AI System",
-    "subtitle": "Multi-bot conversational AI platform with scalable modular architecture for enterprises",
-    "metrics": {
-      "bots": "4 Specialized Bots",
-      "roi": "340% Average ROI",
-      "development": "89% Less Dev Time",
-      "website": "🚀 View Live Site"
-    },
-    "sections": {
-      "demoSection": "System Demonstration",
-      "overview": "Overview",
-      "overviewText": "Enterprise conversational AI platform with modular architecture that manages multiple industry-specialized bots. System developed with Node.js, Express.js, Supabase and Google Gemini AI that enables scalability for 50+ bots with centralized management. Currently operating 4 specialized bots (Solar Energy, Web Development, Real Estate, Restaurant) with master dashboard and real-time analytics.",
-      "technicalDetails": "Technical Details",
-      "techStack": "Tech Stack",
-      "challenges": "Technical Challenges and Solutions",
-      "workflow": "Multi-Bot Workflow",
-      "productionImpact": "Production Impact",
-      "resources": "Project Information"
-    },
-    "features": {
-      "architecture": {
-        "title": "Scalable Modular Architecture",
-        "desc": "Automatic bot detection system by Page ID with dynamic configuration and auto-generated routes for new bots in less than 2 hours"
-      },
-      "ai": {
-        "title": "Industry-Specialized AI",
-        "desc": "Google Gemini AI with specialized prompts, persistent context management and conversational memory per user and bot"
-      },
-      "dashboard": {
-        "title": "Centralized Master Dashboard",
-        "desc": "Centralized management with real-time metrics, per-bot analytics and complete automated testing system"
-      }
-    },
-    "tabs": {
-      "video": "Video Demo",
-      "guide": "Technical Guide"
-    },
-    "video": {
-      "title": "Multi-Bot System Demonstration",
-      "description": "Watch how the system manages multiple specialized bots from a master dashboard: from automatic industry detection to lead generation and real-time analytics. Includes demonstration of the 4 active bots and the automated testing system."
-    },
-    "guide": {
-      "executiveOverview": {
-        "title": "Executive Summary",
-        "content": "Production-ready enterprise system that solves the need for multiple specialized bots with centralized management. Modular architecture with Node.js + Express that allows adding new bots in less than 2 hours, with 340% average ROI and 89% reduction in development time. Currently manages 4 specialized bots with capacity to scale to 50+.",
-        "highlight": {
-          "title": "Enterprise-Grade Architecture",
-          "content": "Combines industry specialization with centralized management efficiency, enabling enterprise scalability without compromising customization per business vertical."
-        }
-      },
-      "architecture": {
-        "title": "System Architecture",
-        "core": {
-          "title": "Core Engine (Node.js + Express)",
-          "desc": "Multi-bot orchestration system with automatic detection by Page ID, dynamic configuration and auto-generated routes"
-        },
-        "data": {
-          "title": "Data Layer (Supabase + PostgreSQL)",
-          "desc": "Conversation persistence, customer management, per-bot analytics and context system with configurable TTL"
-        },
-        "ai": {
-          "title": "AI Integration Layer",
-          "desc": "Google Gemini AI with specialized prompts, multiple API key management and automatic failover"
-        }
-      },
-      "apiIntegration": {
-        "title": "Official API Integration",
-        "messenger": {
-          "title": "Facebook Messenger API",
-          "desc": "Complete integration with webhooks, token management per Page ID and automated testing system"
-        },
-        "instagram": {
-          "title": "Instagram Business API",
-          "desc": "Planned expansion for Q3 2025 with support for Instagram Direct and Stories"
-        },
-        "whatsapp": {
-          "title": "WhatsApp Business API",
-          "desc": "Planned integration for Q3 2025 with support for multimedia messages and templates"
-        },
-        "status": {
-          "implemented": "✅ Implemented",
-          "planned": "🔄 Q3 2025 Roadmap"
-        }
-      }
-    },
-    "technical": {
-      "architecture": {
-        "title": "Architecture",
-        "item1": "Modular system with automatic bot detection by Page ID",
-        "item2": "Dynamic configuration supporting scalability for 50+ bots",
-        "item3": "Auto-generated routes and shared assets with reusable templates"
-      },
-      "security": {
-        "title": "Security",
-        "item1": "Signature verification in Facebook webhooks",
-        "item2": "Secure management of multiple API keys with environment variables",
-        "item3": "Rate limiting and DDoS protection with Helmet.js"
-      },
-      "features": {
-        "title": "Advanced Features",
-        "item1": "Dynamic dashboard with automatic card generation per bot",
-        "item2": "Automated testing system with webhook simulation",
-        "item3": "Real-time analytics with industry-specific metrics"
-      }
-    },
-    "techStack": {
-      "backend": {
-        "title": "Backend",
-        "nodejs": "Node.js",
-        "express": "Express.js",
-        "render": "Render.com"
-      },
-      "frontend": {
-        "title": "Frontend/Interface",
-        "html5": "HTML5/CSS3",
-        "bootstrap": "Bootstrap 5",
-        "chartjs": "Chart.js"
-      },
-      "ai": {
-        "title": "AI and APIs",
-        "gemini": "Google Gemini AI",
-        "messenger": "Messenger API",
-        "webhooks": "Webhooks"
-      },
-      "database": {
-        "title": "Database",
-        "supabase": "Supabase",
-        "postgresql": "PostgreSQL",
-        "realtime": "Real-time"
-      }
-    },
-    "challenges": {
-      "challenge1": {
-        "title": "Multi-Bot Scalability",
-        "problem": {
-          "title": "Problem:",
-          "desc": "Need to manage multiple specialized bots without duplicating code or infrastructure"
-        },
-        "solution": {
-          "title": "Solution:",
-          "desc": "Modular architecture with automatic detection by Page ID and dynamic configuration that allows adding new bots in less than 2 hours"
-        }
-      },
-      "challenge2": {
-        "title": "Persistent Context Management",
-        "problem": {
-          "title": "Problem:",
-          "desc": "Maintain conversational context between sessions and manage memory per user and specific bot"
-        },
-        "solution": {
-          "title": "Solution:",
-          "desc": "Persistent context system in Supabase with configurable TTL and automatic recovery between sessions"
-        }
-      },
-      "challenge3": {
-        "title": "Industry Specialization",
-        "problem": {
-          "title": "Problem:",
-          "desc": "Each industry requires completely different prompts, business logic and conversational flows"
-        },
-        "solution": {
-          "title": "Solution:",
-          "desc": "Modular configuration file system per bot with specialized prompts and independent business logic"
-        }
-      }
-    },
-    "workflowSteps": {
-      "detection": {
-        "title": "1. Automatic Detection",
-        "desc": "Identifies specialized bot by Page ID"
-      },
-      "aiProcessing": {
-        "title": "2. AI Processing",
-        "desc": "Google Gemini with specialized prompts"
-      },
-      "contextManagement": {
-        "title": "3. Context Management",
-        "desc": "Persistence in Supabase with TTL"
-      },
-      "analytics": {
-        "title": "4. Analytics and Response",
-        "desc": "Real-time metrics and specialized response"
-      }
-    },
-    "feedback": {
-      "alternaClient": {
-        "title": "ALTERNA Commercial Director",
-        "institution": "Solar Energy Company",
-        "quote": "The solar energy specialized bot generates technical quotes in less than 5 minutes. Before it took us 2-3 days to respond to complex queries. Now it's immediate and accurate.",
-        "metrics": {
-          "roi": "340% ROI",
-          "responseTime": "< 5 min response"
-        }
-      },
-      "webdevClient": {
-        "title": "WebDev Pro CEO",
-        "institution": "Web Development Agency",
-        "quote": "The technical bot resolves 78% of queries automatically. Our team focuses on complex projects while the bot handles standard technical queries with professional precision.",
-        "metrics": {
-          "automation": "78% Automation",
-          "teamFocus": "+60% Productivity"
-        }
-      }
-    },
-    "resourceLinks": {
-      "liveWebsite": "Live Production Website",
-      "liveWebsiteDesc": "Active commercial platform with real clients",
-      "visitWebsite": "Visit botsaiservices.online",
-      "technicalDocs": "Technical Documentation",
-      "technicalDocsDesc": "Complete multi-bot architecture guide",
-      "inProduction": "In Production",
-      "inProductionDesc": "4 active bots serving real businesses"
-    },
-    "navigation": {
-      "prevProject": "Previous Project: School Certificate System",
-      "backToPortfolio": "Back to Portfolio"
-    }
-  },
-  "schoolCertificateProject": {
-    "title": "AI School Certificate System",
-    "subtitle": "Desktop app with AI that automates certificates and school management",
-    "metrics": {
-      "aiMasterStudent": "AI Master-Student",
-      "inProduction": "In production",
-      "pdfSpeed": "1-5s per PDF"
-    },
-    "sections": {
-      "demoSection": "System Demonstration",
-      "videoDemo": "Video Demo",
-      "videoPlaceholder": "Video Demo Coming Soon",
-      "videoDescription": "Complete demonstration of AI system in production",
-      "demoGuide": "Demo Guide",
-      "resources": "Project Information",
-      "overview": "Overview",
-      "overviewText": "Desktop application (PyQt + PyInstaller) used in production by a school to replace secretarial tasks: student search/management, PDF certificate generation and transformation, intelligent queries and recommendations via AI. AI architecture with \"Master Interpreter\" that detects intention and sub-intentions and routes to specialists (Student/Help), integrating with local services (SQLite, PDF). Scalable and robust: improves with new AI models and stable packaging.",
-      "technicalDetails": "Technical Details",
-      "techStack": "Technology Stack",
-      "challenges": "Challenges and Solutions",
-      "workflow": "AI Workflow",
-      "productionImpact": "Production Impact",
-      "resources": "Links and Resources"
-    },
-    "features": {
-      "masterStudentRouting": {
-        "title": "Master-Student AI Routing",
-        "desc": "Master Interpreter detects intention and delegates to specialists with conversational memory"
-      },
-      "pdfGeneration": {
-        "title": "PDF Certificate Generation and Transformation",
-        "desc": "wkhtmltopdf with templates, integrated preview and transformation of existing PDFs"
-      },
-      "classicInterface": {
-        "title": "Classic CRUD Interface + Searches",
-        "desc": "Modules to manage students, search/filter and issue certificates with adaptive aesthetics"
-      }
-    },
-    "techDetails": {
-      "aiArchitecture": {
-        "title": "AI Architecture",
-        "items": [
-          "Intention-based Master–Student–Help routing",
-          "Unified analysis with conversation_stack",
-          "Service–Repository for data separated from UI",
-          "PyQt signals/slots for AI threads"
-        ]
-      },
-      "aiSystem": {
-        "title": "AI System",
-        "items": [
-          "Google Generative AI (Gemini 2.0-flash + fallback)",
-          "MasterPromptManager with conversational context",
-          "Automatic intention routing",
-          "Intelligent clarification requests"
-        ]
-      },
-      "features": {
-        "title": "Advanced Features",
-        "items": [
-          "Centralized normalization of school data",
-          "Health checks and auto-cleanup of context",
-          "PyInstaller packaging with included resources",
-          "Multi-level fallbacks for resilience"
-        ]
-      }
-    },
-    "techCategories": {
-      "frontend": "Frontend",
-      "backend": "Backend",
-      "ai": "AI",
-      "tools": "Tools"
-    },
-    "challengesList": {
-      "pyinstallerIntegration": {
-        "title": "google-generativeai + PyInstaller",
-        "problem": "Broken import and runtime when freezing; inaccessible environment variables.",
-        "solution": "Early \"monkey patch\", manual .env loading in executable, configured hooks/paths with model fallback."
-      },
-      "intentionRouting": {
-        "title": "Intention Routing + Context",
-        "problem": "Ambiguities (\"he\", \"the second\", \"of those...\"), deciding whether to use context and how to resolve references.",
-        "solution": "Unified analysis with MasterPromptManager; conversation_stack with awaiting; intelligent continuity."
-      },
-      "dataConsistency": {
-        "title": "Data Normalization and Consistency",
-        "problem": "Name/field variants affect searches and certificates.",
-        "solution": "Centralized normalization in Config; validation with warnings; configuration-based sorting."
-      }
-    },
-    "workflowSteps": {
-      "chatEngine": {
-        "title": "1. Chat Engine",
-        "desc": "Receives natural user query"
-      },
-      "masterInterpreter": {
-        "title": "2. Master Interpreter",
-        "desc": "Detects intention and sub-intentions"
-      },
-      "specializedRouting": {
-        "title": "3. Specialized Routing",
-        "desc": "Routes to Student/Help based on context"
-      },
-      "actionExecutor": {
-        "title": "4. Action Executor",
-        "desc": "Executes services and generates response"
-      }
-    },
-    "feedback": {
-      "academicDirector": {
-        "title": "Academic Director",
-        "institution": "\"Benito Juárez\" Elementary School",
-        "quote": "Before we took 15-20 minutes per certificate searching physical files. Now the system generates everything in less than 2 minutes just by typing the student's name.",
-        "metrics": {
-          "timeSaved": "85% less time",
-          "certificates": "200+ certificates/month"
-        }
-      },
-      "schoolSecretary": {
-        "title": "School Secretary",
-        "institution": "Main system user",
-        "quote": "The AI perfectly understands when I say 'I need Juan's certificate from 5th grade B'. I no longer have to remember complicated procedures, I just speak naturally.",
-        "metrics": {
-          "satisfaction": "95% satisfaction",
-          "aiAccuracy": "98% AI accuracy"
-        }
-      }
-    },
-    "resourceLinks": {
-      "privateCode": "Private Code",
-      "privateCodeDesc": "Proprietary architecture adaptable to any domain",
-      "technicalDocs": "Technical Documentation",
-      "technicalDocsDesc": "Complete architecture and implementation guide",
-      "inProduction": "In Production",
-      "inProductionDesc": "Active system in Mexican primary school"
-    },
-    "tabs": {
-      "video": "Video Demo",
-      "guide": "Technical Guide"
-    },
-    "carousel": {
-      "slide1": {
-        "title": "Main System Interface",
-        "description": "Overview of the hybrid system with access to classic management and AI chat"
-      },
-      "slide2": {
-        "title": "Conversational AI Chat",
-        "description": "Intelligent chat interface for natural language queries"
-      },
-      "slide3": {
-        "title": "Student Management",
-        "description": "CRUD administration panel for complete school data management"
-      },
-      "slide4": {
-        "title": "PDF Generation",
-        "description": "Automatic system for generating personalized official certificates"
-      },
-      "slide5": {
-        "title": "Document Transformation",
-        "description": "Tool to convert external PDFs into official certificates"
-      }
-    },
-    "video": {
-      "title": "Complete System Demonstration",
-      "description": "Watch how the AI system automates school certificate generation: from intelligent student search to personalized PDF creation, all through a natural conversational interface."
-    },
-    "guide": {
-      "executiveOverview": {
-        "title": "Executive Overview",
-        "content": "Production-ready hybrid system that combines a conversational AI assistant with a traditional administrative interface. Directors ask in natural language for searches, statistics, and official certificates; administrators keep full control over the database and document workflows. The backend is local (SQLite) and the app is compiled for distribution.",
-        "highlight": {
-          "title": "Unique Hybrid Architecture",
-          "content": "Combines the efficiency of conversational AI with the security and control of traditional interfaces, maintaining a single source of truth in local database."
-        }
-      },
-      "context": {
-        "title": "System Context",
-        "spanish": "Spanish Interface: This build was delivered for a real school in Mexico. Labels and helper messages appear in Spanish (e.g., \"Transformar\", \"Buscar\", \"Constancias\"). The system is designed to be bilingual: prompts, examples, UI strings, and PDF templates can be localized.",
-        "legend": {
-          "title": "Quick Legend (Spanish → English):",
-          "transform": "Transformar → Transform documents (PDF → official certificate)",
-          "search": "Buscar / Generar Constancias → Search students / Generate certificates",
-          "management": "Gestión / Administración → Full administrative management (CRUD)"
-        }
-      },
-      "architecture": {
-        "title": "System Architecture",
-        "intro": "Hybrid AI architecture with Master-Specialist pattern that understands user intent and routes to specialists:",
-        "master": "Master Interpreter",
-        "masterDesc": "Understands intent and context, routes requests",
-        "student": "Student Specialist",
-        "studentDesc": "Maps human requests to SQL and certificates; applies filters detected from language",
-        "help": "Help Specialist",
-        "helpDesc": "Explains capabilities and guided usage",
-        "database": "Local database (SQLite)",
-        "databaseDesc": "Single source of truth",
-        "build": "Production build",
-        "buildDesc": "Compiled executable with compatibility patch for Google's AI library"
-      },
-      "dualInterface": {
-        "title": "Two Complementary Experiences",
-        "intro": "Two complementary interfaces sharing the same backend:",
-        "classic": {
-          "title": "Classic Management",
-          "crud": "Full CRUD over local SQLite database",
-          "search": "Search and generate certificates with deliberate control",
-          "transform": "Transform documents with supervised options (templates/branding/persistence)"
-        },
-        "ai": {
-          "title": "AI Chat",
-          "natural": "Natural language requests (e.g., \"Find students named Garcia\")",
-          "automatic": "Automatic lists/filters/statistics and PDF generation",
-          "readonly": "Read-only data dialogs to maximize speed"
-        }
-      },
-      "demoFlow": {
-        "title": "Demo Storyline (mirrors the 18-minute video)",
-        "partA": {
-          "title": "Part A — Classic Management (foundation)",
-          "step1": "Open Classic Management",
-          "step2": "Show student records and open a typical entry (name, CURP, matrícula, grade, group, shift)",
-          "step3": "Explain: this local SQLite DB is the system's single source of truth. AI answers and PDFs are grounded in this data",
-          "step4": "Card: Transform - Pick an external PDF; extract data; generate a properly formatted certificate",
-          "step5": "Card: Search & Generate Certificates - Search by name, grade, group, shift, matrícula, CURP",
-          "step6": "Card: Management (CRUD) - Edit/validate/save fields with visual control and auditability"
-        },
-        "partB": {
-          "title": "Part B — AI Chat (automatic)",
-          "step1": "Open AI Chat (dark theme)",
-          "step2": "Search by name: \"Find students with last name Garcia\" → list results",
-          "step3": "Context continuation: \"From that list, only afternoon shift\" → filtered results",
-          "step4": "Progressive narrowing: \"Now third grade\" → \"Now group A\" → refined results",
-          "step5": "Statistics: \"How many students are in third grade?\" → count/distribution",
-          "step6": "Exact lookup: \"Show the student with matrícula 2024001\" (or by CURP)",
-          "step7": "Generate certificate: \"Generate a certificate of studies for [Student Name]\" → PDF opens",
-          "step8": "Transform external PDF: attach sample → \"Transform this PDF to an official certificate\" → automatic extraction + PDF",
-          "step9": "Help: \"What can you do?\" → capabilities overview in plain language"
-        }
-      },
-      "benefits": {
-        "title": "Benefits and Value",
-        "directors": {
-          "title": "For directors and staff",
-          "natural": "Natural language: ask for lists, refine with filters, compute statistics, and get official PDFs in seconds",
-          "noSQL": "No need for SQL or complex UI navigation"
-        },
-        "admins": {
-          "title": "For administrators",
-          "control": "Full control over data and documents (validation, auditability, templates)",
-          "faster": "Faster daily operations; fewer manual steps"
-        },
-        "it": {
-          "title": "For IT / companies",
-          "content": "Reusable Master → Specialists pattern; modular prompts and catalogs. Local data (SQLite), consistent PDF pipeline, compiled distribution (PyInstaller). Easy to adapt to other domains with the same architecture."
-        }
-      },
-      "privacy": {
-        "title": "Data, Privacy, and Deployment",
-        "local": "Local-first",
-        "localDesc": "student data stays on local storage (SQLite)",
-        "pdfs": "PDFs",
-        "pdfsDesc": "generated consistently with school branding and templates",
-        "distribution": "Distribution",
-        "distributionDesc": "compiled executable via PyInstaller",
-        "logging": "Logging",
-        "loggingDesc": "informative logs for troubleshooting (no sensitive data in demo logs)"
-      },
-      "bilingual": {
-        "title": "Bilingual Readiness",
-        "current": "Today's build: Spanish UI (delivered to a Mexican school)",
-        "ready": "Ready for English: prompts/examples, UI strings, and PDF templates can be localized",
-        "ai": "AI can reply in the user's language while keeping a consistent internal schema"
-      }
-    },
-    "demoGuide": {
-      "title": "Complete Technical Guide",
-      "subtitle": "Structured system documentation for detailed technical analysis",
-      "tocTitle": "Guide Contents",
-      "toc": {
-        "executiveOverview": "Executive Overview",
-        "systemArchitecture": "System Architecture",
-        "dualInterface": "Dual Interface",
-        "demoWorkflow": "Demo Workflow",
-        "businessValue": "Business Value",
-        "deployment": "Deployment & Privacy"
+    "webPortfolioProject": {
+      "title": "Commercial Web Portfolio",
+      "subtitle": "15+ deployed commercial sites, landing pages, and corporate sites",
+      "metrics": {
+        "sites": "15+ Sites",
+        "platforms": "WordPress & Shopify",
+        "performance": "90+ Lighthouse Score"
       },
       "sections": {
+        "overview": "Overview",
+        "overviewText": "A diverse collection of commercial websites developed for real clients across various industries. From high-converting landing pages to full e-commerce solutions on Shopify and custom WordPress themes. This portfolio demonstrates my strong foundation in frontend development, responsive design, SEO optimization, and delivering production-ready web experiences that drive business results.",
+        "technicalDetails": "Technical Details",
+        "techStack": "Tech Stack"
+      },
+      "techDetails": {
+        "architecture": {
+          "title": "Development Approach",
+          "items": [
+            "Mobile-first responsive design",
+            "Performance-optimized assets",
+            "Custom WordPress themes",
+            "Shopify liquid templating"
+          ]
+        }
+      },
+      "navigation": {
+        "prevProject": "Previous Project: Social Media DL",
+        "nextProject": "Next Project: AI School Records",
+        "backToPortfolio": "Back to Portfolio"
+      }
+    },
+    "medicalLicenseProject": {
+      "title": "Medical License Automation System",
+      "subtitle": "Automation tool for generating official medical licenses",
+      "metrics": {
+        "timeReduction": "95% time reduction",
+        "fields": "18 different fields",
+        "errorFree": "100% error-free"
+      },
+      "sections": {
+        "videoDemo": "Video Demonstration",
+        "videoPlaceholder": "Video Demo Coming Soon",
+        "videoDescription": "Demonstration of medical license automation in action",
+        "overview": "Overview",
+        "overviewText": "System developed for a health sector office that automates the process of filling medical license forms. Eliminates manual repetitive data entry, reduces human errors and significantly accelerates the process of generating official documents. The system processes Word templates with predefined fields and generates complete documents ready for signature and delivery.",
+        "technicalDetails": "Technical Details",
+        "techStack": "Technology Stack",
+        "challenges": "Challenges and Solutions",
+        "workflow": "Workflow",
+        "resources": "Links and Resources"
+      },
+      "features": {
+        "multipleInterfaces": {
+          "title": "Multiple Capture Interfaces",
+          "desc": "Commands, guided mode, voice recognition and predefined dictionaries"
+        },
+        "intelligentProcessing": {
+          "title": "Intelligent Template Processing",
+          "desc": "Automatic field detection with original format preservation"
+        },
+        "medicalDataManagement": {
+          "title": "Specialized Medical Data Management",
+          "desc": "Specific fields for diagnoses, periods and administrative information"
+        }
+      },
+      "techDetails": {
+        "architecture": {
+          "title": "Architecture",
+          "items": [
+            "Modular pattern with separation of responsibilities",
+            "Specialized modules by interface type",
+            "Sequential processing with validation",
+            "Python dictionary handling for mapping"
+          ]
+        },
+        "optimization": {
+          "title": "Optimization",
+          "items": [
+            "Recursive search in document elements",
+            "Validation of mandatory vs optional fields",
+            "Text replacement preserving styles",
+            "Centralized functions for processing"
+          ]
+        },
+        "features": {
+          "title": "Advanced Features",
+          "items": [
+            "Voice recognition for accessibility",
+            "Interface adapted to different technical levels",
+            "Complete preservation of official format",
+            "Validation system at each step"
+          ]
+        }
+      },
+      "techCategories": {
+        "mainLanguage": "Main Language",
+        "mainLibraries": "Main Libraries",
+        "formats": "Formats"
+      },
+      "challengesList": {
+        "complexFieldDetection": {
+          "title": "Complex Field Detection",
+          "problem": "Fields can be in paragraphs or tables with complex formatting.",
+          "solution": "Recursive search in all document elements (paragraphs, tables, cells)."
+        },
+        "nonTechnicalInterface": {
+          "title": "Interface for Non-Technical Staff",
+          "problem": "Medical staff needed a simple and intuitive interface.",
+          "solution": "Multiple interfaces (guided, voice, commands) adapted to different levels."
+        },
+        "formatPreservation": {
+          "title": "Format Preservation",
+          "problem": "Maintain official document format after automatic filling.",
+          "solution": "Text replacement preserving styles, tables and original structure."
+        }
+      },
+      "workflowSteps": {
+        "loadTemplate": {
+          "title": "1. Load Template",
+          "desc": "Word document with predefined fields"
+        },
+        "captureData": {
+          "title": "2. Capture Data",
+          "desc": "Guided interface, commands or voice recognition"
+        },
+        "processDocument": {
+          "title": "3. Process Document",
+          "desc": "Automatic filling preserving format"
+        },
+        "generateResult": {
+          "title": "4. Generate Result",
+          "desc": "Complete document ready for signature"
+        }
+      },
+      "video": {
+        "title": "Complete License Automation",
+        "description": "Watch how the system completely automates the filling of official medical license forms. From data capture to final document generation, eliminating errors and reducing time from 30 minutes to 2 minutes."
+      },
+      "resourceLinks": {
+        "confidentialCode": "Confidential Code",
+        "confidentialCodeDesc": "Health sector project with sensitive data",
+        "technicalDocs": "Technical Documentation",
+        "technicalDocsDesc": "Medical document automation guide",
+        "internalUse": "In Production",
+        "internalUseDesc": "Active system in health sector office"
+      },
+      "navigation": {
+        "prevProject": "Previous Project: Excel Scraper",
+        "nextProject": "Next Project: AI School Certificate System"
+      }
+    },
+    "excelProject": {
+      "title": "Universal Excel Validation System",
+      "subtitle": "Hybrid platform (PyQt + React) that automates extraction, validation and visualization of educational Excel tables",
+      "metrics": {
+        "automation": "100% Automated",
+        "hybrid": "Hybrid Desktop/Web",
+        "validation": "Intelligent Validation"
+      },
+      "sections": {
+        "demoSection": "System Demonstration",
+        "overview": "Overview",
+        "overviewText": "Hybrid system that completely automates the processing of complex educational Excel tables. Shared architecture between desktop (PyQt) and web (React + Flask) with bidimensional algorithm for merged cell detection. Reduces 90-95% of manual processing time.",
+        "technicalDetails": "Technical Details",
+        "techStack": "Tech Stack",
+        "challenges": "Technical Challenges and Solutions",
+        "workflow": "Workflow",
+        "productionImpact": "Production Impact",
+        "resources": "Project Information"
+      },
+      "features": {
+        "algorithm": {
+          "title": "Bidimensional Algorithm",
+          "desc": "Automatic merged cell detection with bidimensional algorithm that identifies [value] patterns and generates precise spans"
+        },
+        "hybrid": {
+          "title": "Hybrid Architecture",
+          "desc": "Shared business core between desktop (PyQt) and web (React + Flask) ensuring consistency and maintainability"
+        },
+        "validation": {
+          "title": "Universal Validations",
+          "desc": "Automatic validation system for coherence, subtotals and totals with state evidence"
+        }
+      },
+      "tabs": {
+        "video": "Video Demo",
+        "guide": "Technical Guide"
+      },
+      "video": {
+        "title": "Hybrid System Demonstration",
+        "description": "Watch how the system processes complex Excel files in both desktop interface (PyQt) and web interface (React). Includes demonstration of merged cell detection algorithm, automatic validations and complete 4-step workflow."
+      },
+      "guide": {
+        "executiveOverview": {
+          "title": "Executive Summary",
+          "content": "Hybrid system that completely automates the processing of complex educational Excel tables. Shared architecture between desktop (PyQt) and web (React + Flask) with bidimensional algorithm for merged cell detection. Reduces 90-95% of manual processing time.",
+          "highlight": {
+            "title": "Innovative Hybrid Architecture",
+            "content": "Combines desktop power with web accessibility, sharing the same business core to ensure consistency and maintainability."
+          }
+        },
+        "algorithm": {
+          "title": "Bidimensional Algorithm",
+          "detection": {
+            "title": "Marker Detection",
+            "desc": "Identifies [value] patterns in cells to determine horizontal and vertical spans"
+          },
+          "merging": {
+            "title": "Span Generation",
+            "desc": "Calculates precise mergedCells and automatically cleans combined data"
+          },
+          "validation": {
+            "title": "Universal Validation",
+            "desc": "Coherence, subtotals and totals with state evidence"
+          }
+        },
+        "hybridArchitecture": {
+          "title": "Hybrid Architecture",
+          "desktop": {
+            "title": "Desktop (PyQt)",
+            "desc": "Native interface with specialized controllers and direct file system access"
+          },
+          "web": {
+            "title": "Web (React + Flask)",
+            "desc": "REST API with modern interface, Excel-like table and range selection"
+          },
+          "core": {
+            "title": "Shared Core",
+            "desc": "Pure business modules without UI dependencies, reusable across platforms"
+          }
+        }
+      },
+      "technical": {
+        "architecture": {
+          "title": "Architecture",
+          "item1": "Shared business core between desktop and web",
+          "item2": "Bidimensional algorithm for merged cell detection",
+          "item3": "Platform-specialized controllers (PyQt/Flask)"
+        },
+        "security": {
+          "title": "Robustness",
+          "item1": "Exhaustive data coherence validations",
+          "item2": "Error handling with state evidence",
+          "item3": "Safe processing of complex Excel files"
+        },
+        "features": {
+          "title": "Advanced Features",
+          "item1": "Automatic detection of complex table structures",
+          "item2": "Excel-like web interface with range selection",
+          "item3": "4-step workflow with validations at each stage"
+        }
+      },
+      "techStack": {
+        "backend": {
+          "title": "Backend",
+          "python": "Python",
+          "flask": "Flask",
+          "pandas": "Pandas"
+        },
+        "frontend": {
+          "title": "Frontend",
+          "pyqt": "PyQt5",
+          "react": "React",
+          "bootstrap": "Bootstrap"
+        },
+        "processing": {
+          "title": "Processing",
+          "openpyxl": "OpenPyXL",
+          "algorithms": "Custom Algorithms",
+          "validation": "Custom Validations"
+        },
+        "architecture": {
+          "title": "Architecture",
+          "hybrid": "Hybrid",
+          "shared": "Shared Core",
+          "modular": "Modular"
+        }
+      },
+      "challenges": {
+        "challenge1": {
+          "title": "Merged Cell Detection",
+          "problem": {
+            "title": "Problem:",
+            "desc": "Excel doesn't provide direct information about merged cells in complex files"
+          },
+          "solution": {
+            "title": "Solution:",
+            "desc": "Bidimensional algorithm that detects [value] patterns and calculates spans automatically"
+          }
+        },
+        "challenge2": {
+          "title": "Hybrid Architecture",
+          "problem": {
+            "title": "Problem:",
+            "desc": "Maintain consistency between desktop and web interfaces without duplicating logic"
+          },
+          "solution": {
+            "title": "Solution:",
+            "desc": "Shared business core with platform-specialized controllers"
+          }
+        },
+        "challenge3": {
+          "title": "Universal Validations",
+          "problem": {
+            "title": "Problem:",
+            "desc": "Validate coherence in tables with variable structures and complex data"
+          },
+          "solution": {
+            "title": "Solution:",
+            "desc": "Automatic validation system with state evidence and detailed reports"
+          }
+        }
+      },
+      "workflowSteps": {
+        "extraction": {
+          "title": "1. Extraction",
+          "desc": "Load and analyze Excel files"
+        },
+        "detection": {
+          "title": "2. Detection",
+          "desc": "Bidimensional merged cell algorithm"
+        },
+        "validation": {
+          "title": "3. Validation",
+          "desc": "Coherence and totals verification"
+        },
+        "visualization": {
+          "title": "4. Visualization",
+          "desc": "Presentation in hybrid interface"
+        }
+      },
+      "feedback": {
+        "dataAnalyst": {
+          "title": "Educational Data Analyst",
+          "institution": "Educational Institution",
+          "quote": "Before we spent hours manually processing each Excel file with merged cells. Now the system automatically detects the structure and validates everything in minutes.",
+          "metrics": {
+            "timeSaved": "95% less time",
+            "accuracy": "100% accuracy"
+          }
+        },
+        "developer": {
+          "title": "Team Developer",
+          "institution": "Development team",
+          "quote": "The hybrid architecture allows maintaining a single business core for desktop and web. The bidimensional algorithm is elegant and handles complex cases that other systems cannot.",
+          "metrics": {
+            "codeReuse": "80% code reused",
+            "architecture": "Solid architecture"
+          }
+        }
+      },
+      "resourceLinks": {
+        "privateCode": "Private Code",
+        "privateCodeDesc": "Hybrid architecture with proprietary algorithms",
+        "technicalDocs": "Technical Documentation",
+        "technicalDocsDesc": "Complete hybrid architecture guide",
+        "inProduction": "Hybrid System",
+        "inProductionDesc": "Desktop and Web with shared core"
+      },
+      "navigation": {
+        "prevProject": "Previous Project: Multi-Bot AI System",
+        "backToPortfolio": "Back to Portfolio"
+      }
+    },
+    "botProject": {
+      "title": "Enterprise Multi-Bot AI System",
+      "subtitle": "Multi-bot conversational AI platform with scalable modular architecture for enterprises",
+      "metrics": {
+        "bots": "4 Specialized Bots",
+        "roi": "340% Average ROI",
+        "development": "89% Less Dev Time",
+        "website": "🚀 View Live Site"
+      },
+      "sections": {
+        "demoSection": "System Demonstration",
+        "overview": "Overview",
+        "overviewText": "Enterprise conversational AI platform with modular architecture that manages multiple industry-specialized bots. System developed with Node.js, Express.js, Supabase and Google Gemini AI that enables scalability for 50+ bots with centralized management. Currently operating 4 specialized bots (Solar Energy, Web Development, Real Estate, Restaurant) with master dashboard and real-time analytics.",
+        "technicalDetails": "Technical Details",
+        "techStack": "Tech Stack",
+        "challenges": "Technical Challenges and Solutions",
+        "workflow": "Multi-Bot Workflow",
+        "productionImpact": "Production Impact",
+        "resources": "Project Information"
+      },
+      "features": {
+        "architecture": {
+          "title": "Scalable Modular Architecture",
+          "desc": "Automatic bot detection system by Page ID with dynamic configuration and auto-generated routes for new bots in less than 2 hours"
+        },
+        "ai": {
+          "title": "Industry-Specialized AI",
+          "desc": "Google Gemini AI with specialized prompts, persistent context management and conversational memory per user and bot"
+        },
+        "dashboard": {
+          "title": "Centralized Master Dashboard",
+          "desc": "Centralized management with real-time metrics, per-bot analytics and complete automated testing system"
+        }
+      },
+      "tabs": {
+        "video": "Video Demo",
+        "guide": "Technical Guide"
+      },
+      "video": {
+        "title": "Multi-Bot System Demonstration",
+        "description": "Watch how the system manages multiple specialized bots from a master dashboard: from automatic industry detection to lead generation and real-time analytics. Includes demonstration of the 4 active bots and the automated testing system."
+      },
+      "guide": {
+        "executiveOverview": {
+          "title": "Executive Summary",
+          "content": "Production-ready enterprise system that solves the need for multiple specialized bots with centralized management. Modular architecture with Node.js + Express that allows adding new bots in less than 2 hours, with 340% average ROI and 89% reduction in development time. Currently manages 4 specialized bots with capacity to scale to 50+.",
+          "highlight": {
+            "title": "Enterprise-Grade Architecture",
+            "content": "Combines industry specialization with centralized management efficiency, enabling enterprise scalability without compromising customization per business vertical."
+          }
+        },
+        "architecture": {
+          "title": "System Architecture",
+          "core": {
+            "title": "Core Engine (Node.js + Express)",
+            "desc": "Multi-bot orchestration system with automatic detection by Page ID, dynamic configuration and auto-generated routes"
+          },
+          "data": {
+            "title": "Data Layer (Supabase + PostgreSQL)",
+            "desc": "Conversation persistence, customer management, per-bot analytics and context system with configurable TTL"
+          },
+          "ai": {
+            "title": "AI Integration Layer",
+            "desc": "Google Gemini AI with specialized prompts, multiple API key management and automatic failover"
+          }
+        },
+        "apiIntegration": {
+          "title": "Official API Integration",
+          "messenger": {
+            "title": "Facebook Messenger API",
+            "desc": "Complete integration with webhooks, token management per Page ID and automated testing system"
+          },
+          "instagram": {
+            "title": "Instagram Business API",
+            "desc": "Planned expansion for Q3 2025 with support for Instagram Direct and Stories"
+          },
+          "whatsapp": {
+            "title": "WhatsApp Business API",
+            "desc": "Planned integration for Q3 2025 with support for multimedia messages and templates"
+          },
+          "status": {
+            "implemented": "✅ Implemented",
+            "planned": "🔄 Q3 2025 Roadmap"
+          }
+        }
+      },
+      "technical": {
+        "architecture": {
+          "title": "Architecture",
+          "item1": "Modular system with automatic bot detection by Page ID",
+          "item2": "Dynamic configuration supporting scalability for 50+ bots",
+          "item3": "Auto-generated routes and shared assets with reusable templates"
+        },
+        "security": {
+          "title": "Security",
+          "item1": "Signature verification in Facebook webhooks",
+          "item2": "Secure management of multiple API keys with environment variables",
+          "item3": "Rate limiting and DDoS protection with Helmet.js"
+        },
+        "features": {
+          "title": "Advanced Features",
+          "item1": "Dynamic dashboard with automatic card generation per bot",
+          "item2": "Automated testing system with webhook simulation",
+          "item3": "Real-time analytics with industry-specific metrics"
+        }
+      },
+      "techStack": {
+        "backend": {
+          "title": "Backend",
+          "nodejs": "Node.js",
+          "express": "Express.js",
+          "render": "Render.com"
+        },
+        "frontend": {
+          "title": "Frontend/Interface",
+          "html5": "HTML5/CSS3",
+          "bootstrap": "Bootstrap 5",
+          "chartjs": "Chart.js"
+        },
+        "ai": {
+          "title": "AI and APIs",
+          "gemini": "Google Gemini AI",
+          "messenger": "Messenger API",
+          "webhooks": "Webhooks"
+        },
+        "database": {
+          "title": "Database",
+          "supabase": "Supabase",
+          "postgresql": "PostgreSQL",
+          "realtime": "Real-time"
+        }
+      },
+      "challenges": {
+        "challenge1": {
+          "title": "Multi-Bot Scalability",
+          "problem": {
+            "title": "Problem:",
+            "desc": "Need to manage multiple specialized bots without duplicating code or infrastructure"
+          },
+          "solution": {
+            "title": "Solution:",
+            "desc": "Modular architecture with automatic detection by Page ID and dynamic configuration that allows adding new bots in less than 2 hours"
+          }
+        },
+        "challenge2": {
+          "title": "Persistent Context Management",
+          "problem": {
+            "title": "Problem:",
+            "desc": "Maintain conversational context between sessions and manage memory per user and specific bot"
+          },
+          "solution": {
+            "title": "Solution:",
+            "desc": "Persistent context system in Supabase with configurable TTL and automatic recovery between sessions"
+          }
+        },
+        "challenge3": {
+          "title": "Industry Specialization",
+          "problem": {
+            "title": "Problem:",
+            "desc": "Each industry requires completely different prompts, business logic and conversational flows"
+          },
+          "solution": {
+            "title": "Solution:",
+            "desc": "Modular configuration file system per bot with specialized prompts and independent business logic"
+          }
+        }
+      },
+      "workflowSteps": {
+        "detection": {
+          "title": "1. Automatic Detection",
+          "desc": "Identifies specialized bot by Page ID"
+        },
+        "aiProcessing": {
+          "title": "2. AI Processing",
+          "desc": "Google Gemini with specialized prompts"
+        },
+        "contextManagement": {
+          "title": "3. Context Management",
+          "desc": "Persistence in Supabase with TTL"
+        },
+        "analytics": {
+          "title": "4. Analytics and Response",
+          "desc": "Real-time metrics and specialized response"
+        }
+      },
+      "feedback": {
+        "alternaClient": {
+          "title": "ALTERNA Commercial Director",
+          "institution": "Solar Energy Company",
+          "quote": "The solar energy specialized bot generates technical quotes in less than 5 minutes. Before it took us 2-3 days to respond to complex queries. Now it's immediate and accurate.",
+          "metrics": {
+            "roi": "340% ROI",
+            "responseTime": "< 5 min response"
+          }
+        },
+        "webdevClient": {
+          "title": "WebDev Pro CEO",
+          "institution": "Web Development Agency",
+          "quote": "The technical bot resolves 78% of queries automatically. Our team focuses on complex projects while the bot handles standard technical queries with professional precision.",
+          "metrics": {
+            "automation": "78% Automation",
+            "teamFocus": "+60% Productivity"
+          }
+        }
+      },
+      "resourceLinks": {
+        "liveWebsite": "Live Production Website",
+        "liveWebsiteDesc": "Active commercial platform with real clients",
+        "visitWebsite": "Visit botsaiservices.online",
+        "technicalDocs": "Technical Documentation",
+        "technicalDocsDesc": "Complete multi-bot architecture guide",
+        "inProduction": "In Production",
+        "inProductionDesc": "4 active bots serving real businesses"
+      },
+      "navigation": {
+        "prevProject": "Previous Project: School Certificate System",
+        "backToPortfolio": "Back to Portfolio"
+      }
+    },
+    "schoolCertificateProject": {
+      "title": "AI School Certificate System",
+      "subtitle": "Desktop app with AI that automates certificates and school management",
+      "metrics": {
+        "aiMasterStudent": "AI Master-Student",
+        "inProduction": "In production",
+        "pdfSpeed": "1-5s per PDF"
+      },
+      "sections": {
+        "demoSection": "System Demonstration",
+        "videoDemo": "Video Demo",
+        "videoPlaceholder": "Video Demo Coming Soon",
+        "videoDescription": "Complete demonstration of AI system in production",
+        "demoGuide": "Demo Guide",
+        "resources": "Links and Resources",
+        "overview": "Overview",
+        "overviewText": "Desktop application (PyQt + PyInstaller) used in production by a school to replace secretarial tasks: student search/management, PDF certificate generation and transformation, intelligent queries and recommendations via AI. AI architecture with \"Master Interpreter\" that detects intention and sub-intentions and routes to specialists (Student/Help), integrating with local services (SQLite, PDF). Scalable and robust: improves with new AI models and stable packaging.",
+        "technicalDetails": "Technical Details",
+        "techStack": "Technology Stack",
+        "challenges": "Challenges and Solutions",
+        "workflow": "AI Workflow",
+        "productionImpact": "Production Impact"
+      },
+      "features": {
+        "masterStudentRouting": {
+          "title": "Master-Student AI Routing",
+          "desc": "Master Interpreter detects intention and delegates to specialists with conversational memory"
+        },
+        "pdfGeneration": {
+          "title": "PDF Certificate Generation and Transformation",
+          "desc": "wkhtmltopdf with templates, integrated preview and transformation of existing PDFs"
+        },
+        "classicInterface": {
+          "title": "Classic CRUD Interface + Searches",
+          "desc": "Modules to manage students, search/filter and issue certificates with adaptive aesthetics"
+        }
+      },
+      "techDetails": {
+        "aiArchitecture": {
+          "title": "AI Architecture",
+          "items": [
+            "Intention-based Master–Student–Help routing",
+            "Unified analysis with conversation_stack",
+            "Service–Repository for data separated from UI",
+            "PyQt signals/slots for AI threads"
+          ]
+        },
+        "aiSystem": {
+          "title": "AI System",
+          "items": [
+            "Google Generative AI (Gemini 2.0-flash + fallback)",
+            "MasterPromptManager with conversational context",
+            "Automatic intention routing",
+            "Intelligent clarification requests"
+          ]
+        },
+        "features": {
+          "title": "Advanced Features",
+          "items": [
+            "Centralized normalization of school data",
+            "Health checks and auto-cleanup of context",
+            "PyInstaller packaging with included resources",
+            "Multi-level fallbacks for resilience"
+          ]
+        }
+      },
+      "techCategories": {
+        "frontend": "Frontend",
+        "backend": "Backend",
+        "ai": "AI",
+        "tools": "Tools"
+      },
+      "challengesList": {
+        "pyinstallerIntegration": {
+          "title": "google-generativeai + PyInstaller",
+          "problem": "Broken import and runtime when freezing; inaccessible environment variables.",
+          "solution": "Early \"monkey patch\", manual .env loading in executable, configured hooks/paths with model fallback."
+        },
+        "intentionRouting": {
+          "title": "Intention Routing + Context",
+          "problem": "Ambiguities (\"he\", \"the second\", \"of those...\"), deciding whether to use context and how to resolve references.",
+          "solution": "Unified analysis with MasterPromptManager; conversation_stack with awaiting; intelligent continuity."
+        },
+        "dataConsistency": {
+          "title": "Data Normalization and Consistency",
+          "problem": "Name/field variants affect searches and certificates.",
+          "solution": "Centralized normalization in Config; validation with warnings; configuration-based sorting."
+        }
+      },
+      "workflowSteps": {
+        "chatEngine": {
+          "title": "1. Chat Engine",
+          "desc": "Receives natural user query"
+        },
+        "masterInterpreter": {
+          "title": "2. Master Interpreter",
+          "desc": "Detects intention and sub-intentions"
+        },
+        "specializedRouting": {
+          "title": "3. Specialized Routing",
+          "desc": "Routes to Student/Help based on context"
+        },
+        "actionExecutor": {
+          "title": "4. Action Executor",
+          "desc": "Executes services and generates response"
+        }
+      },
+      "feedback": {
+        "academicDirector": {
+          "title": "Academic Director",
+          "institution": "\"Benito Juárez\" Elementary School",
+          "quote": "Before we took 15-20 minutes per certificate searching physical files. Now the system generates everything in less than 2 minutes just by typing the student's name.",
+          "metrics": {
+            "timeSaved": "85% less time",
+            "certificates": "200+ certificates/month"
+          }
+        },
+        "schoolSecretary": {
+          "title": "School Secretary",
+          "institution": "Main system user",
+          "quote": "The AI perfectly understands when I say 'I need Juan's certificate from 5th grade B'. I no longer have to remember complicated procedures, I just speak naturally.",
+          "metrics": {
+            "satisfaction": "95% satisfaction",
+            "aiAccuracy": "98% AI accuracy"
+          }
+        }
+      },
+      "resourceLinks": {
+        "privateCode": "Private Code",
+        "privateCodeDesc": "Proprietary architecture adaptable to any domain",
+        "technicalDocs": "Technical Documentation",
+        "technicalDocsDesc": "Complete architecture and implementation guide",
+        "inProduction": "In Production",
+        "inProductionDesc": "Active system in Mexican primary school"
+      },
+      "tabs": {
+        "video": "Video Demo",
+        "guide": "Technical Guide"
+      },
+      "carousel": {
+        "slide1": {
+          "title": "Main System Interface",
+          "description": "Overview of the hybrid system with access to classic management and AI chat"
+        },
+        "slide2": {
+          "title": "Conversational AI Chat",
+          "description": "Intelligent chat interface for natural language queries"
+        },
+        "slide3": {
+          "title": "Student Management",
+          "description": "CRUD administration panel for complete school data management"
+        },
+        "slide4": {
+          "title": "PDF Generation",
+          "description": "Automatic system for generating personalized official certificates"
+        },
+        "slide5": {
+          "title": "Document Transformation",
+          "description": "Tool to convert external PDFs into official certificates"
+        }
+      },
+      "video": {
+        "title": "Complete System Demonstration",
+        "description": "Watch how the AI system automates school certificate generation: from intelligent student search to personalized PDF creation, all through a natural conversational interface."
+      },
+      "guide": {
         "executiveOverview": {
           "title": "Executive Overview",
           "content": "Production-ready hybrid system that combines a conversational AI assistant with a traditional administrative interface. Directors ask in natural language for searches, statistics, and official certificates; administrators keep full control over the database and document workflows. The backend is local (SQLite) and the app is compiled for distribution.",
@@ -1615,49 +2433,218 @@
             "content": "Combines the efficiency of conversational AI with the security and control of traditional interfaces, maintaining a single source of truth in local database."
           }
         },
-        "systemArchitecture": {
+        "context": {
+          "title": "System Context",
+          "spanish": "Spanish Interface: This build was delivered for a real school in Mexico. Labels and helper messages appear in Spanish (e.g., \"Transformar\", \"Buscar\", \"Constancias\"). The system is designed to be bilingual: prompts, examples, UI strings, and PDF templates can be localized.",
+          "legend": {
+            "title": "Quick Legend (Spanish → English):",
+            "transform": "Transformar → Transform documents (PDF → official certificate)",
+            "search": "Buscar / Generar Constancias → Search students / Generate certificates",
+            "management": "Gestión / Administración → Full administrative management (CRUD)"
+          }
+        },
+        "architecture": {
           "title": "System Architecture",
           "intro": "Hybrid AI architecture with Master-Specialist pattern that understands user intent and routes to specialists:",
-          "items": [
-            "Master Interpreter: Understands intent and context, routes requests",
-            "Student Specialist: Maps human requests to SQL and certificates; applies filters detected from language",
-            "Help Specialist: Explains capabilities and guided usage",
-            "Local database (SQLite): Single source of truth",
-            "Production build: Compiled executable with compatibility patch for Google's AI library"
-          ]
+          "master": "Master Interpreter",
+          "masterDesc": "Understands intent and context, routes requests",
+          "student": "Student Specialist",
+          "studentDesc": "Maps human requests to SQL and certificates; applies filters detected from language",
+          "help": "Help Specialist",
+          "helpDesc": "Explains capabilities and guided usage",
+          "database": "Local database (SQLite)",
+          "databaseDesc": "Single source of truth",
+          "build": "Production build",
+          "buildDesc": "Compiled executable with compatibility patch for Google's AI library"
         },
         "dualInterface": {
           "title": "Two Complementary Experiences",
           "intro": "Two complementary interfaces sharing the same backend:",
           "classic": {
             "title": "Classic Management",
-            "items": [
-              "Full CRUD over local SQLite database",
-              "Search and generate certificates with deliberate control",
-              "Transform documents with supervised options"
-            ]
+            "crud": "Full CRUD over local SQLite database",
+            "search": "Search and generate certificates with deliberate control",
+            "transform": "Transform documents with supervised options (templates/branding/persistence)"
           },
           "ai": {
             "title": "AI Chat",
+            "natural": "Natural language requests (e.g., \"Find students named Garcia\")",
+            "automatic": "Automatic lists/filters/statistics and PDF generation",
+            "readonly": "Read-only data dialogs to maximize speed"
+          }
+        },
+        "demoFlow": {
+          "title": "Demo Storyline (mirrors the 18-minute video)",
+          "partA": {
+            "title": "Part A — Classic Management (foundation)",
+            "step1": "Open Classic Management",
+            "step2": "Show student records and open a typical entry (name, CURP, matrícula, grade, group, shift)",
+            "step3": "Explain: this local SQLite DB is the system's single source of truth. AI answers and PDFs are grounded in this data",
+            "step4": "Card: Transform - Pick an external PDF; extract data; generate a properly formatted certificate",
+            "step5": "Card: Search & Generate Certificates - Search by name, grade, group, shift, matrícula, CURP",
+            "step6": "Card: Management (CRUD) - Edit/validate/save fields with visual control and auditability"
+          },
+          "partB": {
+            "title": "Part B — AI Chat (automatic)",
+            "step1": "Open AI Chat (dark theme)",
+            "step2": "Search by name: \"Find students with last name Garcia\" → list results",
+            "step3": "Context continuation: \"From that list, only afternoon shift\" → filtered results",
+            "step4": "Progressive narrowing: \"Now third grade\" → \"Now group A\" → refined results",
+            "step5": "Statistics: \"How many students are in third grade?\" → count/distribution",
+            "step6": "Exact lookup: \"Show the student with matrícula 2024001\" (or by CURP)",
+            "step7": "Generate certificate: \"Generate a certificate of studies for [Student Name]\" → PDF opens",
+            "step8": "Transform external PDF: attach sample → \"Transform this PDF to an official certificate\" → automatic extraction + PDF",
+            "step9": "Help: \"What can you do?\" → capabilities overview in plain language"
+          }
+        },
+        "benefits": {
+          "title": "Benefits and Value",
+          "directors": {
+            "title": "For directors and staff",
+            "natural": "Natural language: ask for lists, refine with filters, compute statistics, and get official PDFs in seconds",
+            "noSQL": "No need for SQL or complex UI navigation"
+          },
+          "admins": {
+            "title": "For administrators",
+            "control": "Full control over data and documents (validation, auditability, templates)",
+            "faster": "Faster daily operations; fewer manual steps"
+          },
+          "it": {
+            "title": "For IT / companies",
+            "content": "Reusable Master → Specialists pattern; modular prompts and catalogs. Local data (SQLite), consistent PDF pipeline, compiled distribution (PyInstaller). Easy to adapt to other domains with the same architecture."
+          }
+        },
+        "privacy": {
+          "title": "Data, Privacy, and Deployment",
+          "local": "Local-first",
+          "localDesc": "student data stays on local storage (SQLite)",
+          "pdfs": "PDFs",
+          "pdfsDesc": "generated consistently with school branding and templates",
+          "distribution": "Distribution",
+          "distributionDesc": "compiled executable via PyInstaller",
+          "logging": "Logging",
+          "loggingDesc": "informative logs for troubleshooting (no sensitive data in demo logs)"
+        },
+        "bilingual": {
+          "title": "Bilingual Readiness",
+          "current": "Today's build: Spanish UI (delivered to a Mexican school)",
+          "ready": "Ready for English: prompts/examples, UI strings, and PDF templates can be localized",
+          "ai": "AI can reply in the user's language while keeping a consistent internal schema"
+        }
+      },
+      "demoGuide": {
+        "title": "Complete Technical Guide",
+        "subtitle": "Structured system documentation for detailed technical analysis",
+        "tocTitle": "Guide Contents",
+        "toc": {
+          "executiveOverview": "Executive Overview",
+          "systemArchitecture": "System Architecture",
+          "dualInterface": "Dual Interface",
+          "demoWorkflow": "Demo Workflow",
+          "businessValue": "Business Value",
+          "deployment": "Deployment & Privacy"
+        },
+        "sections": {
+          "executiveOverview": {
+            "title": "Executive Overview",
+            "content": "Production-ready hybrid system that combines a conversational AI assistant with a traditional administrative interface. Directors ask in natural language for searches, statistics, and official certificates; administrators keep full control over the database and document workflows. The backend is local (SQLite) and the app is compiled for distribution.",
+            "highlight": {
+              "title": "Unique Hybrid Architecture",
+              "content": "Combines the efficiency of conversational AI with the security and control of traditional interfaces, maintaining a single source of truth in local database."
+            }
+          },
+          "systemArchitecture": {
+            "title": "System Architecture",
+            "intro": "Hybrid AI architecture with Master-Specialist pattern that understands user intent and routes to specialists:",
             "items": [
-              "Natural language requests",
-              "Automatic lists/filters/statistics and PDF generation",
-              "Read-only data dialogs to maximize speed"
+              "Master Interpreter: Understands intent and context, routes requests",
+              "Student Specialist: Maps human requests to SQL and certificates; applies filters detected from language",
+              "Help Specialist: Explains capabilities and guided usage",
+              "Local database (SQLite): Single source of truth",
+              "Production build: Compiled executable with compatibility patch for Google's AI library"
             ]
+          },
+          "dualInterface": {
+            "title": "Two Complementary Experiences",
+            "intro": "Two complementary interfaces sharing the same backend:",
+            "classic": {
+              "title": "Classic Management",
+              "items": [
+                "Full CRUD over local SQLite database",
+                "Search and generate certificates with deliberate control",
+                "Transform documents with supervised options"
+              ]
+            },
+            "ai": {
+              "title": "AI Chat",
+              "items": [
+                "Natural language requests",
+                "Automatic lists/filters/statistics and PDF generation",
+                "Read-only data dialogs to maximize speed"
+              ]
+            }
           }
         }
+      },
+      "navigation": {
+        "prevProject": "Previous Project: Medical License System",
+        "backToPortfolio": "Back to Portfolio"
+      }
+    }
+  },
+  "webPortfolioProject": {
+    "title": "Commercial Web Portfolio",
+    "subtitle": "15+ deployed commercial sites: landing pages, corporate sites and e-commerce",
+    "metrics": {
+      "sites": "15+ Sites",
+      "platforms": "WordPress & Shopify",
+      "performance": "90+ Lighthouse Score"
+    },
+    "sections": {
+      "overview": "Overview",
+      "overviewText": "Diverse collection of commercial websites developed for real clients across multiple industries. From high-conversion landing pages to full e-commerce solutions on Shopify and custom WordPress themes. This portfolio demonstrates my solid foundation in frontend development, responsive design, SEO optimization, and delivering production-ready web experiences that drive real business results.",
+      "techStack": "Tech Stack",
+      "challenges": "Technical Challenges and Solutions"
+    },
+    "features": {
+      "responsive": {
+        "title": "Responsive Design",
+        "desc": "Mobile-first interfaces adapted for all screen sizes and devices"
+      },
+      "seo": {
+        "title": "Technical SEO",
+        "desc": "Semantic HTML, schema markup, and advanced meta tags for search engine optimization"
+      },
+      "performance": {
+        "title": "Performance Optimization",
+        "desc": "Lazy loading, asset minification, and caching strategies for sub-second load times"
+      }
+    },
+    "challengesList": {
+      "conversion": {
+        "title": "Conversion Rate Optimization",
+        "problem": "Designing layouts that guide users towards specific actions (purchases, lead forms).",
+        "solution": "A/B testing, strategic CTA placement, and frictionless checkout flows."
+      },
+      "clientHandoff": {
+        "title": "Client Content Management",
+        "problem": "Non-technical clients need to update their own sites without breaking layouts.",
+        "solution": "Implementation of custom fields (ACF) and modular components for safe self-management."
+      },
+      "speed": {
+        "title": "Speed in CMS Environments",
+        "problem": "WordPress and Shopify can become slow with multiple plugins and unoptimized assets.",
+        "solution": "Strict plugin audits, custom lightweight themes, and CDN integration."
       }
     },
     "navigation": {
-      "prevProject": "Previous Project: Medical License System",
+      "prevProject": "Previous Project: Social Media DL",
+      "nextProject": "Next Project: AI School Records",
       "backToPortfolio": "Back to Portfolio"
     }
+  },
+  "theme": {
+    "dark": "Dark Mode",
+    "light": "Light Mode"
   }
 }
-
-
-
-
-
-
-

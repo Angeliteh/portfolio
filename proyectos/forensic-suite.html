@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -7,6 +7,7 @@
       name="description"
       content="Forensic Data Extractor Suite — Desktop application for court-admissible digital evidence acquisition. SHA-256 integrity, ADB, Playwright. Case study by Angel Payan."
     />
+    <meta name="description" content="Forensic Suite · Angel Payan - Caso de estudio de ingeniería de software por Angel Payan.">
     <title>Forensic Suite · Angel Payan</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -29,43 +30,41 @@
           <div class="container">
 
             <a href="../index.html" class="proj-hero-back">
-              <i class="fas fa-arrow-left"></i> Back to portfolio
+              <i class="fas fa-arrow-left"></i> <span data-i18n="forensicSuiteProject.navigation.backToPortfolio">Volver al portafolio</span>
             </a>
 
             <div class="proj-hero-meta">
-              <span class="proj-category-badge red">Desktop Tool</span>
-              <span class="proj-category-badge red">Digital Forensics</span>
-              <span class="proj-category-badge orange">Commercial · Licensed</span>
+              <span class="proj-category-badge red" data-i18n="forensicSuiteProject.badges.desktopTool">Herramienta de escritorio</span>
+              <span class="proj-category-badge red" data-i18n="forensicSuiteProject.badges.forensics">Forense digital</span>
+              <span class="proj-category-badge orange" data-i18n="forensicSuiteProject.badges.commercialLicensed">Comercial · Licenciado</span>
             </div>
 
-            <h1 class="proj-hero-title">Forensic Data Extractor Suite</h1>
+            <h1 class="proj-hero-title" data-i18n="forensicSuiteProject.title">Forensic Data Extractor Suite</h1>
 
-            <p class="proj-hero-tagline">
-              A desktop application for legal-grade digital evidence acquisition. Extracts and
-              cryptographically seals digital content from WhatsApp Web and Android devices —
-              producing court-admissible SHA-256 certified PDF forensic reports.
+            <p class="proj-hero-tagline" data-i18n="forensicSuiteProject.subtitle">
+              Aplicación de escritorio para adquisición de evidencia digital con validez legal. Extrae y sella criptográficamente contenido desde WhatsApp Web y dispositivos Android, produciendo reportes forenses PDF certificados con SHA-256 aptos para juicio.
             </p>
 
             <div class="proj-hero-actions">
-              <a href="../index.html#section2" class="btn-secondary">← All products</a>
+              <a href="../index.html#section2" class="btn-secondary" data-i18n="forensicSuiteProject.actions.allProducts">← Todos los productos</a>
             </div>
 
             <div class="proj-meta-row">
               <div class="proj-meta-item">
-                <div class="proj-meta-label">Type</div>
-                <div class="proj-meta-value">Desktop Application</div>
+                <div class="proj-meta-label" data-i18n="forensicSuiteProject.meta.typeLabel">Tipo</div>
+                <div class="proj-meta-value" data-i18n="forensicSuiteProject.meta.typeValue">Aplicación de escritorio</div>
               </div>
               <div class="proj-meta-item">
-                <div class="proj-meta-label">Licensing</div>
-                <div class="proj-meta-value">Annual · $350–$499</div>
+                <div class="proj-meta-label" data-i18n="forensicSuiteProject.meta.licensingLabel">Licenciamiento</div>
+                <div class="proj-meta-value" data-i18n="forensicSuiteProject.meta.licensingValue">Anual · $350–$499</div>
               </div>
               <div class="proj-meta-item">
-                <div class="proj-meta-label">Standards</div>
-                <div class="proj-meta-value">FBI / NOM-151-SCFI</div>
+                <div class="proj-meta-label" data-i18n="forensicSuiteProject.meta.standardsLabel">Estándares</div>
+                <div class="proj-meta-value" data-i18n="forensicSuiteProject.meta.standardsValue">FBI / NOM-151-SCFI</div>
               </div>
               <div class="proj-meta-item">
-                <div class="proj-meta-label">Built by</div>
-                <div class="proj-meta-value">Solo — end to end</div>
+                <div class="proj-meta-label" data-i18n="forensicSuiteProject.meta.builtByLabel">Construido por</div>
+                <div class="proj-meta-value" data-i18n="forensicSuiteProject.meta.builtByValue">Solo, end to end</div>
               </div>
             </div>
 
@@ -80,7 +79,7 @@
 
                 <!-- Screenshot carousel (add images to assets/images/projects/forensic-suite/) -->
                 <div class="content-block">
-                  <div class="content-block-title">Product Screenshots</div>
+                  <div class="content-block-title" data-i18n="forensicSuiteProject.sections.screenshots">Capturas del producto</div>
 
                   <div class="proj-carousel-wrap" id="proj-carousel">
                     <div class="carousel-container">
@@ -92,8 +91,8 @@
                           <!-- Placeholder -->
                           <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;color:var(--text-subtle);font-family:var(--mono);font-size:13px;padding:48px;text-align:center;">
                             <i class="fas fa-image" style="font-size:32px;opacity:0.3;"></i>
-                            <span>Screenshots coming soon</span>
-                            <span style="font-size:11px;">Drop images to assets/images/projects/forensic-suite/</span>
+                            <span data-i18n="forensicSuiteProject.placeholders.screenshotsSoon">Capturas próximamente</span>
+                            <span style="font-size:11px;" data-i18n="forensicSuiteProject.placeholders.screenshotsPath">Coloca imágenes en assets/images/projects/forensic-suite/</span>
                           </div>
                         </div>
                       </div>
@@ -107,30 +106,30 @@
 
                 <!-- Video demo tabs -->
                 <div class="content-block">
-                  <div class="content-block-title">Product Demo</div>
+                  <div class="content-block-title" data-i18n="forensicSuiteProject.sections.demo">Demo del producto</div>
 
                   <div class="demo-tabs-wrap">
                     <div class="demo-tabs-header">
                       <button class="demo-tab-btn active" data-tab="video">
-                        <i class="fas fa-play-circle"></i> Demo Video
+                        <i class="fas fa-play-circle"></i> <span data-i18n="forensicSuiteProject.tabs.video">Video demo</span>
                       </button>
                       <button class="demo-tab-btn" data-tab="guide">
-                        <i class="fas fa-file-pdf"></i> PDF Certificate
+                        <i class="fas fa-file-pdf"></i> <span data-i18n="forensicSuiteProject.tabs.pdf">Certificado PDF</span>
                       </button>
                     </div>
 
                     <div class="demo-tab-pane active" id="tab-video">
                       <div style="width:100%;aspect-ratio:16/9;background:var(--bg-card);border:1px dashed var(--border-mid);border-radius:var(--radius);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;color:var(--text-subtle);">
                         <i class="fab fa-youtube" style="font-size:32px;opacity:0.5;"></i>
-                        <span style="font-size:13px;">YouTube demo video coming soon</span>
+                        <span style="font-size:13px;" data-i18n="forensicSuiteProject.placeholders.videoSoon">Video demo en YouTube próximamente</span>
                       </div>
                     </div>
 
                     <div class="demo-tab-pane" id="tab-guide">
                       <div style="display:flex;flex-direction:column;gap:16px;">
-                        <h3 style="font-size:15px;font-weight:600;color:var(--text);margin:0;">The Output</h3>
-                        <p style="font-size:13px;color:var(--text-muted);line-height:1.6;margin:0;">
-                          The system outputs a formal PDF document containing an inventory of all extracted files. Beside each file is its computed SHA-256 hash. Because the hash is calculated at the exact moment the buffer writes to disk, it is mathematically impossible to alter the extracted media without the hash changing, thus preserving the chain of custody for court.
+                        <h3 style="font-size:15px;font-weight:600;color:var(--text);margin:0;" data-i18n="forensicSuiteProject.pdfGuide.title">El resultado</h3>
+                        <p style="font-size:13px;color:var(--text-muted);line-height:1.6;margin:0;" data-i18n="forensicSuiteProject.pdfGuide.desc">
+                          El sistema genera un PDF formal con inventario de todos los archivos extraídos y su hash SHA-256 calculado. Como ese hash se obtiene exactamente al escribir el buffer a disco, alterar la evidencia después cambia el hash y protege la cadena de custodia.
                         </p>
                       </div>
                     </div>
@@ -138,24 +137,18 @@
                 </div>
 
                 <div class="content-block">
-                  <div class="content-block-title">The Problem</div>
-                  <h3>Screenshots don't hold up in court. Chain of custody breaks easily.</h3>
-                  <p>
-                    In civil and labor litigation, WhatsApp messages are increasingly critical
-                    evidence. But screenshots are trivially manipulable — any attorney can argue
-                    the image was edited in Photoshop or via browser DevTools. Courts routinely
-                    reject them.
+                  <div class="content-block-title" data-i18n="forensicSuiteProject.problem.title">El problema</div>
+                  <h3 data-i18n="forensicSuiteProject.problem.heading">Las capturas no sostienen un juicio. La cadena de custodia se rompe fácil.</h3>
+                  <p data-i18n="forensicSuiteProject.problem.p1">
+                    En litigios civiles y laborales, los mensajes de WhatsApp son evidencia crítica. Pero las capturas son fácilmente manipulables y cualquier abogado puede alegar edición con Photoshop o DevTools. Los tribunales suelen rechazarlas.
                   </p>
-                  <p>
-                    Enterprise-grade forensic tools (Cellebrite, Magnet AXIOM) cost thousands of
-                    dollars annually and require specialized certifications. Independent attorneys,
-                    private investigators, and mid-scale forensic analysts had no affordable
-                    alternative that met legal admissibility standards.
+                  <p data-i18n="forensicSuiteProject.problem.p2">
+                    Las herramientas forenses enterprise cuestan miles de dólares al año y exigen certificaciones especializadas. Abogados independientes, peritos y agencias privadas no tenían una alternativa accesible con estándares de admisibilidad legal.
                   </p>
                 </div>
 
                 <div class="content-block">
-                  <div class="content-block-title">System Architecture</div>
+                  <div class="content-block-title" data-i18n="forensicSuiteProject.architecture.title">Arquitectura del sistema</div>
 
                   <div class="arch-block">
                     <pre>
@@ -186,17 +179,15 @@
                 </div>
 
                 <div class="content-block">
-                  <div class="content-block-title">Forensic Integrity System</div>
+                  <div class="content-block-title" data-i18n="forensicSuiteProject.integrity.title">Sistema de integridad forense</div>
 
                   <div class="feature-list">
                     <div class="feature-item">
                       <div class="feature-item-icon red"><i class="fas fa-hashtag"></i></div>
                       <div class="feature-item-text">
-                        <strong>Immediate SHA-256 Hashing</strong>
-                        <p>
-                          Hash is calculated at the buffer level the moment data is written to disk —
-                          before the PDF is generated. Any post-extraction modification changes the
-                          hash, proving tampering mathematically.
+                        <strong data-i18n="forensicSuiteProject.integrity.items.hash.title">Hash SHA-256 inmediato</strong>
+                        <p data-i18n="forensicSuiteProject.integrity.items.hash.desc">
+                          El hash se calcula a nivel buffer en el instante exacto en que los datos se escriben a disco, antes de generar el PDF. Cualquier modificación posterior cambia el hash y prueba alteración matemática.
                         </p>
                       </div>
                     </div>
@@ -204,11 +195,9 @@
                     <div class="feature-item">
                       <div class="feature-item-icon red"><i class="fas fa-file-pdf"></i></div>
                       <div class="feature-item-text">
-                        <strong>Automated Forensic Certificate (PDFKit)</strong>
-                        <p>
-                          PDF contains: extraction date/time in ISO 8601, software version, analyst
-                          name, module used, and SHA-256 fingerprint for every extracted file. Designed
-                          for direct submission to a judge or notary.
+                        <strong data-i18n="forensicSuiteProject.integrity.items.pdf.title">Certificado forense automatizado</strong>
+                        <p data-i18n="forensicSuiteProject.integrity.items.pdf.desc">
+                          El PDF contiene fecha y hora ISO 8601, versión del software, nombre del analista, módulo utilizado y fingerprint SHA-256 por archivo extraído. Está diseñado para presentarse directamente ante juez o fedatario.
                         </p>
                       </div>
                     </div>
@@ -216,11 +205,9 @@
                     <div class="feature-item">
                       <div class="feature-item-icon red"><i class="fas fa-mobile-alt"></i></div>
                       <div class="feature-item-text">
-                        <strong>Dual Extraction: Web + Physical</strong>
-                        <p>
-                          Logical: Playwright scrolls WhatsApp Web and reads native DOM metadata
-                          (author phone number, message timestamp). Physical: ADB extracts EXIF
-                          metadata from images, including GPS coordinates and capture date.
+                        <strong data-i18n="forensicSuiteProject.integrity.items.dual.title">Extracción dual: web y física</strong>
+                        <p data-i18n="forensicSuiteProject.integrity.items.dual.desc">
+                          Lógica: Playwright recorre WhatsApp Web y lee metadatos nativos del DOM como autor y timestamp. Física: ADB extrae metadatos EXIF de imágenes, incluidas coordenadas GPS y fecha de captura.
                         </p>
                       </div>
                     </div>
@@ -228,11 +215,9 @@
                     <div class="feature-item">
                       <div class="feature-item-icon red"><i class="fas fa-lock"></i></div>
                       <div class="feature-item-text">
-                        <strong>100% Local — Air-Gap Capable</strong>
-                        <p>
-                          No evidence data is transmitted over the internet. ADB binary is bundled
-                          in <code>bin/</code> — no Android SDK installation required. Runs in
-                          courtrooms or locations without connectivity.
+                        <strong data-i18n="forensicSuiteProject.integrity.items.local.title">100% local, apto para air-gap</strong>
+                        <p data-i18n="forensicSuiteProject.integrity.items.local.desc">
+                          Ningún dato de evidencia se transmite por internet. El binario ADB va incluido en <code>bin/</code>, sin requerir Android SDK. Puede ejecutarse en salas de juicio o lugares sin conectividad.
                         </p>
                       </div>
                     </div>
@@ -240,65 +225,61 @@
                 </div>
 
                 <div class="content-block">
-                  <div class="content-block-title">Target Market</div>
-                  <p>
-                    Built for legal professionals who need court-admissible digital evidence without
-                    enterprise forensic software budgets: civil litigation attorneys, private
-                    investigation agencies, corporate security auditors, and independent forensic
-                    consultants. Priced at $350–$499/year per device with an optional maintenance
-                    plan covering selector updates when WhatsApp Web changes its DOM.
+                  <div class="content-block-title" data-i18n="forensicSuiteProject.market.title">Mercado objetivo</div>
+                  <p data-i18n="forensicSuiteProject.market.desc">
+                    Diseñado para profesionales legales que necesitan evidencia digital admisible sin pagar presupuestos enterprise: litigantes civiles, agencias de investigación privada, auditores corporativos y consultores forenses independientes. Precio de $350–$499 por año por dispositivo con plan opcional de mantenimiento.
                   </p>
                 </div>
 
                 <!-- Workflow -->
                 <div class="content-block">
-                  <div class="content-block-title">Extraction Pipeline</div>
+                  <div class="content-block-title" data-i18n="forensicSuiteProject.pipeline.title">Pipeline de extracción</div>
                   <div class="workflow-steps">
                     <div class="workflow-step">
                       <div class="workflow-step-num">01</div>
                       <div class="workflow-step-icon"><i class="fas fa-desktop"></i></div>
-                      <h4>Logical Fetch</h4>
-                      <p>Playwright scrolls and extracts raw text + metadata.</p>
+                      <h4 data-i18n="forensicSuiteProject.pipeline.steps.logical.title">Extracción lógica</h4>
+                      <p data-i18n="forensicSuiteProject.pipeline.steps.logical.desc">Playwright recorre y extrae texto crudo más metadatos.</p>
                     </div>
                     <div class="workflow-step">
                       <div class="workflow-step-num">02</div>
                       <div class="workflow-step-icon"><i class="fas fa-usb"></i></div>
-                      <h4>Physical Pull</h4>
-                      <p>ADB extracts original media with EXIF tags intact.</p>
+                      <h4 data-i18n="forensicSuiteProject.pipeline.steps.physical.title">Extracción física</h4>
+                      <p data-i18n="forensicSuiteProject.pipeline.steps.physical.desc">ADB extrae medios originales con metadatos EXIF intactos.</p>
                     </div>
                     <div class="workflow-step">
                       <div class="workflow-step-num">03</div>
                       <div class="workflow-step-icon"><i class="fas fa-lock"></i></div>
-                      <h4>Hash Seal</h4>
-                      <p>Immediate SHA-256 calculation at buffer level.</p>
+                      <h4 data-i18n="forensicSuiteProject.pipeline.steps.hash.title">Sellado hash</h4>
+                      <p data-i18n="forensicSuiteProject.pipeline.steps.hash.desc">Cálculo inmediato de SHA-256 a nivel buffer.</p>
                     </div>
                     <div class="workflow-step">
                       <div class="workflow-step-num">04</div>
                       <div class="workflow-step-icon"><i class="fas fa-file-signature"></i></div>
-                      <h4>PDF Report</h4>
-                      <p>Generates court-ready extraction certificate.</p>
+                      <h4 data-i18n="forensicSuiteProject.pipeline.steps.report.title">Reporte PDF</h4>
+                      <p data-i18n="forensicSuiteProject.pipeline.steps.report.desc">Genera certificado de extracción listo para juicio.</p>
                     </div>
                   </div>
                 </div>
 
                 <!-- Challenges -->
                 <div class="content-block">
-                  <div class="content-block-title">Technical Challenges &amp; Solutions</div>
+                  <div class="content-block-title" data-i18n="forensicSuiteProject.challenges.title">Desafíos técnicos y soluciones</div>
 
                   <div class="challenges-list">
                     <div class="challenge-card">
                       <div class="challenge-header">
                         <i class="fas fa-exclamation-triangle"></i>
-                        <h4>Inadmissibility of Screenshots</h4>
+                        <h4 data-i18n="forensicSuiteProject.challenges.items.screenshots.title">Inadmisibilidad de capturas</h4>
                       </div>
                       <div class="challenge-body">
                         <div class="challenge-problem">
-                          <span class="challenge-label">Problem</span>
-                          <p>Lawyers constantly lose civil cases because opposing counsel argues that screenshots of WhatsApp are easily forged via Photoshop or browser DevTools.</p>
+                          <span class="challenge-label" data-i18n="forensicSuiteProject.challenges.problemLabel">Problema</span>
+                          <p data-i18n="forensicSuiteProject.challenges.items.screenshots.problem">Abogados pierden casos porque la contraparte argumenta que las capturas de WhatsApp pueden falsificarse fácilmente con Photoshop o DevTools.</p>
                         </div>
                         <div class="challenge-solution">
-                          <span class="challenge-label">Solution</span>
-                          <p>Zero-time gap cryptography. The system calculates the SHA-256 hash the precise millisecond the buffer is written to disk, guaranteeing mathematical immutability.</p>
+                          <span class="challenge-label" data-i18n="forensicSuiteProject.challenges.solutionLabel">Solución</span>
+                          <p data-i18n="forensicSuiteProject.challenges.items.screenshots.solution">Criptografía con gap cero en el tiempo. El sistema calcula el hash SHA-256 en el milisegundo exacto en que el buffer se escribe a disco, garantizando inmutabilidad matemática.</p>
                         </div>
                       </div>
                     </div>
@@ -306,16 +287,16 @@
                     <div class="challenge-card">
                       <div class="challenge-header">
                         <i class="fas fa-exclamation-triangle"></i>
-                        <h4>Hardware Dependencies &amp; Portability</h4>
+                        <h4 data-i18n="forensicSuiteProject.challenges.items.portability.title">Dependencias de hardware y portabilidad</h4>
                       </div>
                       <div class="challenge-body">
                         <div class="challenge-problem">
-                          <span class="challenge-label">Problem</span>
-                          <p>To perform physical extractions, typical forensic tools require installing heavy Android SDKs, making it impossible to run the tool on random courtroom laptops.</p>
+                          <span class="challenge-label" data-i18n="forensicSuiteProject.challenges.problemLabel">Problema</span>
+                          <p data-i18n="forensicSuiteProject.challenges.items.portability.problem">Para hacer extracciones físicas, muchas herramientas exigen instalar Android SDKs pesados, imposibilitando ejecutarlas en laptops improvisadas de sala.</p>
                         </div>
                         <div class="challenge-solution">
-                          <span class="challenge-label">Solution</span>
-                          <p>Electron bundling. The core adb.exe binary is shipped inside the app's internal bin folder. The app acts as a zero-dependency portable executable.</p>
+                          <span class="challenge-label" data-i18n="forensicSuiteProject.challenges.solutionLabel">Solución</span>
+                          <p data-i18n="forensicSuiteProject.challenges.items.portability.solution">Empaquetado con Electron. El binario central adb.exe viaja dentro de la carpeta interna `bin`, permitiendo que la app funcione como ejecutable portable sin dependencias externas.</p>
                         </div>
                       </div>
                     </div>
@@ -324,23 +305,23 @@
 
                 <!-- Impact -->
                 <div class="content-block">
-                  <div class="content-block-title">Production Impact</div>
+                  <div class="content-block-title" data-i18n="forensicSuiteProject.impact.title">Impacto en producción</div>
 
                   <div class="testimonials-grid">
                     <div class="testimonial-card">
                       <div class="testimonial-header">
                         <div class="testimonial-avatar"><i class="fas fa-balance-scale"></i></div>
                         <div>
-                          <div class="testimonial-name">Legal Admissibility</div>
-                          <div class="testimonial-role">Litigation Value</div>
+                          <div class="testimonial-name" data-i18n="forensicSuiteProject.impact.cards.legal.name">Admisibilidad legal</div>
+                          <div class="testimonial-role" data-i18n="forensicSuiteProject.impact.cards.legal.role">Valor litigante</div>
                         </div>
                       </div>
                       <p class="testimonial-quote">
-                        "Traditional enterprise tools like Cellebrite cost thousands of dollars annually. This suite brings FBI and NOM-151 standard forensic data extraction to independent attorneys at a fraction of the cost."
+                        <span data-i18n="forensicSuiteProject.impact.cards.legal.quote">Herramientas enterprise como Cellebrite cuestan miles de dólares al año. Esta suite lleva extracción forense bajo estándares FBI y NOM-151 a abogados independientes por una fracción del costo.</span>
                       </p>
                       <div class="testimonial-metrics">
-                        <span class="metric-badge">SHA-256 Standard</span>
-                        <span class="metric-badge orange">Court-Ready PDF</span>
+                        <span class="metric-badge" data-i18n="forensicSuiteProject.impact.cards.legal.metric1">Estándar SHA-256</span>
+                        <span class="metric-badge orange" data-i18n="forensicSuiteProject.impact.cards.legal.metric2">PDF listo para juicio</span>
                       </div>
                     </div>
 
@@ -348,16 +329,16 @@
                       <div class="testimonial-header">
                         <div class="testimonial-avatar"><i class="fas fa-user-secret"></i></div>
                         <div>
-                          <div class="testimonial-name">100% Privacy</div>
-                          <div class="testimonial-role">Data Sovereignty</div>
+                          <div class="testimonial-name" data-i18n="forensicSuiteProject.impact.cards.privacy.name">Privacidad total</div>
+                          <div class="testimonial-role" data-i18n="forensicSuiteProject.impact.cards.privacy.role">Soberanía de datos</div>
                         </div>
                       </div>
                       <p class="testimonial-quote">
-                        "Because everything runs locally as a native application, private investigators can run full extractions in air-gapped rooms without an internet connection, ensuring absolute client confidentiality."
+                        <span data-i18n="forensicSuiteProject.impact.cards.privacy.quote">Como todo corre localmente como aplicación nativa, peritos e investigadores pueden ejecutar extracciones completas en salas aisladas sin internet, asegurando confidencialidad absoluta.</span>
                       </p>
                       <div class="testimonial-metrics">
-                        <span class="metric-badge blue">Offline Capable</span>
-                        <span class="metric-badge purple">Zero Cloud Processing</span>
+                        <span class="metric-badge blue" data-i18n="forensicSuiteProject.impact.cards.privacy.metric1">Capaz offline</span>
+                        <span class="metric-badge purple" data-i18n="forensicSuiteProject.impact.cards.privacy.metric2">Cero procesamiento cloud</span>
                       </div>
                     </div>
                   </div>
@@ -367,11 +348,11 @@
                 <div class="proj-navigation">
                   <a href="massmsg.html" class="proj-nav-link">
                     <i class="fas fa-arrow-left"></i>
-                    <div><span class="proj-nav-label">Previous product</span>MassMSG</div>
+                    <div><span class="proj-nav-label" data-i18n="forensicSuiteProject.navigation.previousProduct">Producto anterior</span><span data-i18n="forensicSuiteProject.navigation.previousProductName">MassMSG</span></div>
                   </a>
                   <a href="excel-scraper.html" class="proj-nav-link next">
                     <i class="fas fa-arrow-right"></i>
-                    <div><span class="proj-nav-label">Next project</span>Excel Scraper</div>
+                    <div><span class="proj-nav-label" data-i18n="forensicSuiteProject.navigation.nextProject">Siguiente proyecto</span><span data-i18n="forensicSuiteProject.navigation.nextProjectName">Excel Scraper</span></div>
                   </a>
                 </div>
 
@@ -380,36 +361,36 @@
               <aside class="proj-sidebar">
 
                 <div class="sidebar-widget">
-                  <div class="sidebar-widget-title">Tech Stack</div>
+                  <div class="sidebar-widget-title" data-i18n="forensicSuiteProject.sidebar.techStack">Tech Stack</div>
                   <div class="stack-list">
-                    <div class="stack-row"><span class="label">Shell</span><span class="value">Electron · Node.js</span></div>
-                    <div class="stack-row"><span class="label">UI</span><span class="value">Vanilla HTML/CSS/JS</span></div>
-                    <div class="stack-row"><span class="label">Browser</span><span class="value">Playwright (Chromium)</span></div>
-                    <div class="stack-row"><span class="label">Mobile</span><span class="value">ADB (bundled binary)</span></div>
-                    <div class="stack-row"><span class="label">Integrity</span><span class="value">SHA-256 (Node crypto)</span></div>
-                    <div class="stack-row"><span class="label">Reports</span><span class="value">PDFKit</span></div>
-                    <div class="stack-row"><span class="label">Licensing</span><span class="value">Lemon Squeezy API</span></div>
+                    <div class="stack-row"><span class="label" data-i18n="forensicSuiteProject.sidebar.stack.shell">Shell</span><span class="value">Electron · Node.js</span></div>
+                    <div class="stack-row"><span class="label" data-i18n="forensicSuiteProject.sidebar.stack.ui">UI</span><span class="value">Vanilla HTML/CSS/JS</span></div>
+                    <div class="stack-row"><span class="label" data-i18n="forensicSuiteProject.sidebar.stack.browser">Browser</span><span class="value">Playwright (Chromium)</span></div>
+                    <div class="stack-row"><span class="label" data-i18n="forensicSuiteProject.sidebar.stack.mobile">Mobile</span><span class="value">ADB (bundled binary)</span></div>
+                    <div class="stack-row"><span class="label" data-i18n="forensicSuiteProject.sidebar.stack.integrity">Integridad</span><span class="value">SHA-256 (Node crypto)</span></div>
+                    <div class="stack-row"><span class="label" data-i18n="forensicSuiteProject.sidebar.stack.reports">Reportes</span><span class="value">PDFKit</span></div>
+                    <div class="stack-row"><span class="label" data-i18n="forensicSuiteProject.sidebar.stack.licensing">Licenciamiento</span><span class="value">Lemon Squeezy API</span></div>
                   </div>
                 </div>
 
                 <div class="sidebar-widget">
-                  <div class="sidebar-widget-title">Key Facts</div>
+                  <div class="sidebar-widget-title" data-i18n="forensicSuiteProject.sidebar.keyFacts">Datos clave</div>
                   <div class="metric-list">
                     <div class="metric-row">
-                      <div class="metric-label">Evidence standard</div>
-                      <div class="metric-value">SHA-256 Certified</div>
+                      <div class="metric-label" data-i18n="forensicSuiteProject.sidebar.metrics.evidenceStandard">Estándar de evidencia</div>
+                      <div class="metric-value" data-i18n="forensicSuiteProject.sidebar.metrics.evidenceStandardValue">Certificado SHA-256</div>
                     </div>
                     <div class="metric-row">
-                      <div class="metric-label">Legal frameworks</div>
-                      <div class="metric-value">FBI + NOM-151</div>
+                      <div class="metric-label" data-i18n="forensicSuiteProject.sidebar.metrics.legalFrameworks">Marcos legales</div>
+                      <div class="metric-value" data-i18n="forensicSuiteProject.sidebar.metrics.legalFrameworksValue">FBI + NOM-151</div>
                     </div>
                     <div class="metric-row">
-                      <div class="metric-label">Pricing</div>
-                      <div class="metric-value">$350–$499 / year</div>
+                      <div class="metric-label" data-i18n="forensicSuiteProject.sidebar.metrics.pricing">Precio</div>
+                      <div class="metric-value" data-i18n="forensicSuiteProject.sidebar.metrics.pricingValue">$350–$499 / año</div>
                     </div>
                     <div class="metric-row">
-                      <div class="metric-label">Cloud dependency</div>
-                      <div class="metric-value">Zero</div>
+                      <div class="metric-label" data-i18n="forensicSuiteProject.sidebar.metrics.cloudDependency">Dependencia cloud</div>
+                      <div class="metric-value" data-i18n="forensicSuiteProject.sidebar.metrics.cloudDependencyValue">Cero</div>
                     </div>
                   </div>
                 </div>
@@ -421,7 +402,7 @@
 
         <footer class="site-footer">
           <div class="container">
-            <p>Angel Payan &nbsp;·&nbsp; <a href="../index.html">Portfolio</a></p>
+            <p>Angel Payan &nbsp;·&nbsp; <a href="../index.html" data-i18n="forensicSuiteProject.footer.portfolio">Portafolio</a></p>
           </div>
         </footer>
 
@@ -434,7 +415,7 @@
       <button class="carousel-modal-nav carousel-modal-prev" id="modal-prev"><i class="fas fa-chevron-left"></i></button>
       <button class="carousel-modal-nav carousel-modal-next" id="modal-next"><i class="fas fa-chevron-right"></i></button>
       <div class="carousel-modal-counter"><span id="modal-cur">1</span> / <span id="modal-tot">1</span></div>
-      <img id="modal-img" src="" alt="" />
+      <img loading="lazy" id="modal-img" src="" alt="" />
     </div>
 
     <script src="../vendor/jquery/jquery.min.js"></script>

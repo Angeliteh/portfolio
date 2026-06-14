@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -7,6 +7,7 @@
       name="description"
       content="VioAgents — Multi-tenant conversational AI platform for business automation. Custom M1-M2-M3 cognitive orchestration. Case study by Angel Payan."
     />
+    <meta name="description" content="VioAgents · Angel Payan - Caso de estudio de ingeniería de software por Angel Payan.">
     <title>VioAgents · Angel Payan</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -29,46 +30,44 @@
           <div class="container">
 
             <a href="../index.html" class="proj-hero-back">
-              <i class="fas fa-arrow-left"></i> Back to portfolio
+              <i class="fas fa-arrow-left"></i> <span data-i18n="vioagentsProject.navigation.backToPortfolio">Volver al portafolio</span>
             </a>
 
             <div class="proj-hero-meta">
-              <span class="proj-category-badge purple">Multi-tenant SaaS</span>
-              <span class="proj-category-badge purple">AI Agents</span>
-              <span class="proj-category-badge green">Live Demo</span>
+              <span class="proj-category-badge purple" data-i18n="vioagentsProject.badges.saas">SaaS multi-tenant</span>
+              <span class="proj-category-badge purple" data-i18n="vioagentsProject.badges.agents">Agentes de IA</span>
+              <span class="proj-category-badge green" data-i18n="vioagentsProject.badges.liveDemo">Demo en vivo</span>
             </div>
 
             <h1 class="proj-hero-title">VioAgents</h1>
 
-            <p class="proj-hero-tagline">
-              A conversational AI platform that deploys specialized business agents — for sales,
-              appointment booking, and customer support — using a custom cognitive orchestration
-              system designed to eliminate hallucinations on real data.
+            <p class="proj-hero-tagline" data-i18n="vioagentsProject.subtitle">
+              Plataforma de IA conversacional que despliega agentes especializados para ventas, agenda de citas y soporte, usando un sistema propio de orquestación cognitiva diseñado para eliminar alucinaciones sobre datos reales.
             </p>
 
             <div class="proj-hero-actions">
               <a href="https://ai-agents-vio-1-0-yqum.onrender.com/" target="_blank" class="btn-primary">
-                <i class="fas fa-external-link-alt"></i> Live Demo
+                <i class="fas fa-external-link-alt"></i> <span data-i18n="vioagentsProject.actions.liveDemo">Demo en vivo</span>
               </a>
-              <a href="../index.html#section2" class="btn-secondary">← All products</a>
+              <a href="../index.html#section2" class="btn-secondary" data-i18n="vioagentsProject.actions.allProducts">← Todos los productos</a>
             </div>
 
             <div class="proj-meta-row">
               <div class="proj-meta-item">
-                <div class="proj-meta-label">Type</div>
-                <div class="proj-meta-value">Multi-tenant SaaS</div>
+                <div class="proj-meta-label" data-i18n="vioagentsProject.meta.typeLabel">Tipo</div>
+                <div class="proj-meta-value" data-i18n="vioagentsProject.meta.typeValue">SaaS multi-tenant</div>
               </div>
               <div class="proj-meta-item">
-                <div class="proj-meta-label">Status</div>
-                <div class="proj-meta-value">✦ Live</div>
+                <div class="proj-meta-label" data-i18n="vioagentsProject.meta.statusLabel">Estado</div>
+                <div class="proj-meta-value" data-i18n="vioagentsProject.meta.statusValue">✦ Activo</div>
               </div>
               <div class="proj-meta-item">
-                <div class="proj-meta-label">Target</div>
-                <div class="proj-meta-value">SMBs &amp; Local Business</div>
+                <div class="proj-meta-label" data-i18n="vioagentsProject.meta.targetLabel">Objetivo</div>
+                <div class="proj-meta-value" data-i18n="vioagentsProject.meta.targetValue">PyMEs y negocios locales</div>
               </div>
               <div class="proj-meta-item">
-                <div class="proj-meta-label">Built by</div>
-                <div class="proj-meta-value">Solo — end to end</div>
+                <div class="proj-meta-label" data-i18n="vioagentsProject.meta.builtByLabel">Construido por</div>
+                <div class="proj-meta-value" data-i18n="vioagentsProject.meta.builtByValue">Solo, end to end</div>
               </div>
             </div>
 
@@ -83,7 +82,7 @@
 
                 <!-- Screenshot carousel (add images to assets/images/projects/vioagents/) -->
                 <div class="content-block">
-                  <div class="content-block-title">Product Screenshots</div>
+                  <div class="content-block-title" data-i18n="vioagentsProject.sections.screenshots">Capturas del producto</div>
 
                   <div class="proj-carousel-wrap" id="proj-carousel">
                     <div class="carousel-container">
@@ -95,8 +94,8 @@
                           <!-- Placeholder -->
                           <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;color:var(--text-subtle);font-family:var(--mono);font-size:13px;padding:48px;text-align:center;">
                             <i class="fas fa-image" style="font-size:32px;opacity:0.3;"></i>
-                            <span>Screenshots coming soon</span>
-                            <span style="font-size:11px;">Drop images to assets/images/projects/vioagents/</span>
+                            <span data-i18n="vioagentsProject.placeholders.screenshotsSoon">Capturas próximamente</span>
+                            <span style="font-size:11px;" data-i18n="vioagentsProject.placeholders.screenshotsPath">Coloca imágenes en assets/images/projects/vioagents/</span>
                           </div>
                         </div>
                       </div>
@@ -110,37 +109,36 @@
 
                 <!-- Live product demo tabs -->
                 <div class="content-block">
-                  <div class="content-block-title">Live Demo</div>
+                  <div class="content-block-title" data-i18n="vioagentsProject.sections.liveDemo">Demo en vivo</div>
 
                   <div class="demo-tabs-wrap">
                     <div class="demo-tabs-header">
                       <button class="demo-tab-btn active" data-tab="live">
-                        <i class="fas fa-globe"></i> Live Widget
+                        <i class="fas fa-globe"></i> <span data-i18n="vioagentsProject.tabs.liveWidget">Widget en vivo</span>
                       </button>
                       <button class="demo-tab-btn" data-tab="guide">
-                        <i class="fas fa-book-open"></i> How it works
+                        <i class="fas fa-book-open"></i> <span data-i18n="vioagentsProject.tabs.howItWorks">Cómo funciona</span>
                       </button>
                     </div>
 
                     <div class="demo-tab-pane active" id="tab-live" style="display:flex;flex-direction:column;gap:14px;">
                       <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:24px;display:flex;flex-direction:column;gap:12px;">
-                        <div style="font-size:13px;color:var(--text-muted);">
-                          The VioAgents widget is currently live. You can test the AI agent's ability to
-                          search catalogs, handle objections, and book appointments in a real conversational flow.
+                        <div style="font-size:13px;color:var(--text-muted);" data-i18n="vioagentsProject.liveCard.description">
+                          El widget de VioAgents está activo. Puedes probar la capacidad del agente para buscar catálogos, manejar objeciones y agendar citas dentro de un flujo conversacional real.
                         </div>
                         <a href="https://ai-agents-vio-1-0-yqum.onrender.com/" target="_blank" class="btn-primary" style="width:fit-content;">
-                          <i class="fas fa-external-link-alt"></i> Open Live Demo
+                          <i class="fas fa-external-link-alt"></i> <span data-i18n="vioagentsProject.liveCard.openDemo">Abrir demo en vivo</span>
                         </a>
                       </div>
                     </div>
 
                     <div class="demo-tab-pane" id="tab-guide">
                       <div style="display:flex;flex-direction:column;gap:16px;">
-                        <h3 style="font-size:15px;font-weight:600;color:var(--text);margin:0;">Testing the agents</h3>
+                        <h3 style="font-size:15px;font-weight:600;color:var(--text);margin:0;" data-i18n="vioagentsProject.guide.title">Cómo probar los agentes</h3>
                         <ol style="color:var(--text-muted);font-size:13.5px;line-height:2;padding-left:20px;">
-                          <li><strong>Sales:</strong> Ask for product recommendations or prices. Notice how it only quotes items from its actual CSV catalog.</li>
-                          <li><strong>Booking:</strong> Try to book an appointment. It checks Google Calendar in real time and will not allow double bookings.</li>
-                          <li><strong>Support:</strong> Ask complex policy questions. It grounds all answers on its provided markdown knowledge base.</li>
+                          <li data-i18n="vioagentsProject.guide.items.sales"><strong>Ventas:</strong> pide recomendaciones o precios y verás que solo cita productos reales del catálogo CSV.</li>
+                          <li data-i18n="vioagentsProject.guide.items.booking"><strong>Agenda:</strong> intenta reservar una cita y comprobarás que consulta Google Calendar en tiempo real y evita dobles reservas.</li>
+                          <li data-i18n="vioagentsProject.guide.items.support"><strong>Soporte:</strong> haz preguntas complejas de políticas y verás respuestas aterrizadas en su base de conocimiento markdown.</li>
                         </ol>
                       </div>
                     </div>
@@ -148,27 +146,21 @@
                 </div>
 
                 <div class="content-block">
-                  <div class="content-block-title">The Problem</div>
-                  <h3>Traditional chatbots are rigid. LLM wrappers hallucinate.</h3>
-                  <p>
-                    SMBs lose leads every day because they can't respond instantly outside business
-                    hours. Traditional rule-based chatbots can't handle natural language. Generic
-                    LLM integrations invent prices, availability, and policies — damaging trust and
-                    reputation.
+                  <div class="content-block-title" data-i18n="vioagentsProject.problem.title">El problema</div>
+                  <h3 data-i18n="vioagentsProject.problem.heading">Los chatbots tradicionales son rígidos. Los wrappers sobre LLM alucinan.</h3>
+                  <p data-i18n="vioagentsProject.problem.p1">
+                    Las PyMEs pierden leads todos los días porque no pueden responder fuera de horario. Los chatbots basados en reglas no manejan lenguaje natural y las integraciones genéricas con LLM inventan precios, disponibilidad y políticas.
                   </p>
-                  <p>
-                    The market needed an agent that speaks naturally, knows the actual catalog, books
-                    real appointments, and never invents information it doesn't have.
+                  <p data-i18n="vioagentsProject.problem.p2">
+                    El mercado necesitaba un agente que hablara natural, conociera el catálogo real, reservara citas reales y nunca inventara información que no tiene.
                   </p>
                 </div>
 
                 <div class="content-block">
-                  <div class="content-block-title">The Architecture: M1 → M2 → M3</div>
-                  <h3>Custom cognitive orchestration — no LangChain, no AutoGen.</h3>
-                  <p>
-                    Instead of relying on external orchestration frameworks, VioAgents uses a
-                    purpose-built three-moment system with strict data validation at each gate.
-                    This guarantees the agent never responds with invented data.
+                  <div class="content-block-title" data-i18n="vioagentsProject.architecture.title">Arquitectura: M1 → M2 → M3</div>
+                  <h3 data-i18n="vioagentsProject.architecture.heading">Orquestación cognitiva propia, sin LangChain ni AutoGen.</h3>
+                  <p data-i18n="vioagentsProject.architecture.p1">
+                    En vez de depender de frameworks externos de orquestación, VioAgents usa un sistema de tres momentos con validación estricta de datos en cada compuerta. Eso garantiza que el agente nunca responda con datos inventados.
                   </p>
 
                   <div class="arch-block">
@@ -192,17 +184,15 @@
                 </div>
 
                 <div class="content-block">
-                  <div class="content-block-title">The Three Agents</div>
+                  <div class="content-block-title" data-i18n="vioagentsProject.agents.title">Los tres agentes</div>
 
                   <div class="feature-list">
                     <div class="feature-item">
                       <div class="feature-item-icon purple"><i class="fas fa-tag"></i></div>
                       <div class="feature-item-text">
-                        <strong>Sales Agent</strong>
-                        <p>
-                          Intelligent product search over CSV catalogs. Multi-query support,
-                          cross-sell suggestions, and PDF quotation generation triggered by
-                          providing the customer's name.
+                        <strong data-i18n="vioagentsProject.agents.items.sales.title">Agente de ventas</strong>
+                        <p data-i18n="vioagentsProject.agents.items.sales.desc">
+                          Búsqueda inteligente sobre catálogos CSV, soporte multi-consulta, sugerencias de cross-sell y generación de cotizaciones PDF al recibir el nombre del cliente.
                         </p>
                       </div>
                     </div>
@@ -210,11 +200,9 @@
                     <div class="feature-item">
                       <div class="feature-item-icon purple"><i class="fas fa-calendar-alt"></i></div>
                       <div class="feature-item-text">
-                        <strong>Booking Agent</strong>
-                        <p>
-                          Real Google Calendar integration. Checks live availability, blocks slots
-                          in real time, prevents duplicates, and suggests alternatives for taken
-                          time slots — in natural conversation.
+                        <strong data-i18n="vioagentsProject.agents.items.booking.title">Agente de agenda</strong>
+                        <p data-i18n="vioagentsProject.agents.items.booking.desc">
+                          Integración real con Google Calendar. Consulta disponibilidad en vivo, bloquea horarios, evita duplicados y sugiere alternativas en conversación natural.
                         </p>
                       </div>
                     </div>
@@ -222,11 +210,9 @@
                     <div class="feature-item">
                       <div class="feature-item-icon purple"><i class="fas fa-question-circle"></i></div>
                       <div class="feature-item-text">
-                        <strong>FAQ / Knowledge Agent</strong>
-                        <p>
-                          Consumes structured Markdown knowledge bases. Smart human handoff:
-                          when frustration or escalation is detected, the bot pauses and notifies
-                          a human operator with full conversation context.
+                        <strong data-i18n="vioagentsProject.agents.items.faq.title">Agente FAQ y conocimiento</strong>
+                        <p data-i18n="vioagentsProject.agents.items.faq.desc">
+                          Consume bases de conocimiento estructuradas en Markdown. Si detecta frustración o escalamiento, pausa el flujo y notifica a un operador humano con todo el contexto.
                         </p>
                       </div>
                     </div>
@@ -234,13 +220,10 @@
                 </div>
 
                 <div class="content-block">
-                  <div class="content-block-title">Multi-tenancy &amp; Scalability</div>
-                  <h3>Onboard a new client in minutes, not days.</h3>
-                  <p>
-                    VioAgents uses a three-level configuration hierarchy: Domain → Niche → Business.
-                    The cognitive rules and sector vocabulary are inherited automatically — only
-                    business-specific policies and catalog files need to be added per client.
-                    Embedding the widget requires exactly 2 lines of code.
+                  <div class="content-block-title" data-i18n="vioagentsProject.multitenancy.title">Multi-tenancy y escalabilidad</div>
+                  <h3 data-i18n="vioagentsProject.multitenancy.heading">Subir un nuevo cliente toma minutos, no días.</h3>
+                  <p data-i18n="vioagentsProject.multitenancy.p1">
+                    VioAgents usa una jerarquía de configuración de tres niveles: Dominio → Nicho → Negocio. Las reglas cognitivas y el vocabulario sectorial se heredan automáticamente; por cliente solo se agregan políticas y catálogos específicos. El widget se embebe con exactamente 2 líneas de código.
                   </p>
                   <div class="arch-block">
                     <pre>
@@ -252,53 +235,53 @@
 
                 <!-- Workflow -->
                 <div class="content-block">
-                  <div class="content-block-title">AI Processing Pipeline</div>
+                  <div class="content-block-title" data-i18n="vioagentsProject.pipeline.title">Pipeline de procesamiento IA</div>
                   <div class="workflow-steps">
                     <div class="workflow-step">
                       <div class="workflow-step-num">M1</div>
                       <div class="workflow-step-icon"><i class="fas fa-brain"></i></div>
                       <h4>Receptor</h4>
-                      <p>Parses user intent and validates missing requirements.</p>
+                      <p data-i18n="vioagentsProject.pipeline.steps.receptor">Analiza la intención del usuario y valida requisitos faltantes.</p>
                     </div>
                     <div class="workflow-step">
                       <div class="workflow-step-num">GATE</div>
                       <div class="workflow-step-icon"><i class="fas fa-shield-alt"></i></div>
-                      <h4>Gatekeeper</h4>
-                      <p>Halts flow if data is missing, asks user naturally.</p>
+                      <h4 data-i18n="vioagentsProject.pipeline.gatekeeperTitle">Gatekeeper</h4>
+                      <p data-i18n="vioagentsProject.pipeline.steps.gatekeeper">Detiene el flujo si faltan datos y pregunta al usuario de forma natural.</p>
                     </div>
                     <div class="workflow-step">
                       <div class="workflow-step-num">M2</div>
                       <div class="workflow-step-icon"><i class="fas fa-cogs"></i></div>
-                      <h4>Specialist</h4>
-                      <p>Executes tool calls (Google Calendar, DB queries).</p>
+                      <h4 data-i18n="vioagentsProject.pipeline.specialistTitle">Especialista</h4>
+                      <p data-i18n="vioagentsProject.pipeline.steps.specialist">Ejecuta llamadas a herramientas como Google Calendar y consultas a base de datos.</p>
                     </div>
                     <div class="workflow-step">
                       <div class="workflow-step-num">M3</div>
                       <div class="workflow-step-icon"><i class="fas fa-comment-dots"></i></div>
-                      <h4>Grounding</h4>
-                      <p>Drafts final response using only exact data from M2.</p>
+                      <h4 data-i18n="vioagentsProject.pipeline.groundingTitle">Grounding</h4>
+                      <p data-i18n="vioagentsProject.pipeline.steps.grounding">Redacta la respuesta final usando solo datos exactos devueltos por M2.</p>
                     </div>
                   </div>
                 </div>
 
                 <!-- Challenges -->
                 <div class="content-block">
-                  <div class="content-block-title">Technical Challenges &amp; Solutions</div>
+                  <div class="content-block-title" data-i18n="vioagentsProject.challenges.title">Desafíos técnicos y soluciones</div>
 
                   <div class="challenges-list">
                     <div class="challenge-card">
                       <div class="challenge-header">
                         <i class="fas fa-exclamation-triangle"></i>
-                        <h4>AI Hallucinating Prices and Stock</h4>
+                        <h4 data-i18n="vioagentsProject.challenges.items.hallucinations.title">La IA alucinando precios y stock</h4>
                       </div>
                       <div class="challenge-body">
                         <div class="challenge-problem">
-                          <span class="challenge-label">Problem</span>
-                          <p>Basic LLM integrations will often invent a price or confirm an appointment slot that doesn't exist just to sound helpful to the user.</p>
+                          <span class="challenge-label" data-i18n="vioagentsProject.challenges.problemLabel">Problema</span>
+                          <p data-i18n="vioagentsProject.challenges.items.hallucinations.problem">Las integraciones básicas con LLM suelen inventar un precio o confirmar una cita inexistente solo para sonar útiles.</p>
                         </div>
                         <div class="challenge-solution">
-                          <span class="challenge-label">Solution</span>
-                          <p>The M3 architectural isolation. M3 cannot access internal weights for knowledge; it only formats the strict JSON return value from M2 into markdown tables.</p>
+                          <span class="challenge-label" data-i18n="vioagentsProject.challenges.solutionLabel">Solución</span>
+                          <p data-i18n="vioagentsProject.challenges.items.hallucinations.solution">Aislamiento arquitectónico en M3. M3 no accede a conocimiento interno; solo formatea el JSON estricto devuelto por M2.</p>
                         </div>
                       </div>
                     </div>
@@ -306,16 +289,16 @@
                     <div class="challenge-card">
                       <div class="challenge-header">
                         <i class="fas fa-exclamation-triangle"></i>
-                        <h4>Frustrating Bot Loops</h4>
+                        <h4 data-i18n="vioagentsProject.challenges.items.loops.title">Loops frustrantes del bot</h4>
                       </div>
                       <div class="challenge-body">
                         <div class="challenge-problem">
-                          <span class="challenge-label">Problem</span>
-                          <p>Users hate when bots get stuck in loops and refuse to pass them to a human, leading to dropped leads and bad reviews.</p>
+                          <span class="challenge-label" data-i18n="vioagentsProject.challenges.problemLabel">Problema</span>
+                          <p data-i18n="vioagentsProject.challenges.items.loops.problem">Los usuarios odian cuando el bot entra en bucles y no transfiere a un humano, causando leads perdidos y malas reseñas.</p>
                         </div>
                         <div class="challenge-solution">
-                          <span class="challenge-label">Solution</span>
-                          <p>Native sentiment analysis and explicit handoff detection. If frustration is detected, the bot pauses itself automatically and pages a human operator to take over the chat.</p>
+                          <span class="challenge-label" data-i18n="vioagentsProject.challenges.solutionLabel">Solución</span>
+                          <p data-i18n="vioagentsProject.challenges.items.loops.solution">Análisis nativo de sentimiento y detección explícita de handoff. Si se detecta frustración, el bot se pausa y notifica a un operador humano.</p>
                         </div>
                       </div>
                     </div>
@@ -324,23 +307,23 @@
 
                 <!-- Impact -->
                 <div class="content-block">
-                  <div class="content-block-title">Business Impact</div>
+                  <div class="content-block-title" data-i18n="vioagentsProject.impact.title">Impacto de negocio</div>
 
                   <div class="testimonials-grid">
                     <div class="testimonial-card">
                       <div class="testimonial-header">
                         <div class="testimonial-avatar"><i class="fas fa-calendar-check"></i></div>
                         <div>
-                          <div class="testimonial-name">Lead Capture &amp; Booking</div>
-                          <div class="testimonial-role">Conversion Impact</div>
+                          <div class="testimonial-name" data-i18n="vioagentsProject.impact.cards.booking.name">Captura de leads y agenda</div>
+                          <div class="testimonial-role" data-i18n="vioagentsProject.impact.cards.booking.role">Impacto en conversión</div>
                         </div>
                       </div>
                       <p class="testimonial-quote">
-                        "Instead of sending leads to a static contact form where 70% drop off, the agent books them directly into Google Calendar instantly, 24/7."
+                        <span data-i18n="vioagentsProject.impact.cards.booking.quote">En vez de mandar leads a un formulario estático donde muchos se pierden, el agente los agenda directamente en Google Calendar de forma inmediata, 24/7.</span>
                       </p>
                       <div class="testimonial-metrics">
-                        <span class="metric-badge">24/7 Operation</span>
-                        <span class="metric-badge orange">Zero Duplicate Bookings</span>
+                        <span class="metric-badge" data-i18n="vioagentsProject.impact.cards.booking.metric1">Operación 24/7</span>
+                        <span class="metric-badge orange" data-i18n="vioagentsProject.impact.cards.booking.metric2">Cero dobles reservas</span>
                       </div>
                     </div>
 
@@ -348,16 +331,16 @@
                       <div class="testimonial-header">
                         <div class="testimonial-avatar"><i class="fas fa-tachometer-alt"></i></div>
                         <div>
-                          <div class="testimonial-name">Speed &amp; Scalability</div>
-                          <div class="testimonial-role">Deployment Impact</div>
+                          <div class="testimonial-name" data-i18n="vioagentsProject.impact.cards.scale.name">Velocidad y escalabilidad</div>
+                          <div class="testimonial-role" data-i18n="vioagentsProject.impact.cards.scale.role">Impacto de despliegue</div>
                         </div>
                       </div>
                       <p class="testimonial-quote">
-                        "Adding a new client in a supported niche takes minutes. We just drop in their CSV catalog and tenant_defaults.md file, and the agent inherits the domain rules automatically."
+                        <span data-i18n="vioagentsProject.impact.cards.scale.quote">Agregar un nuevo cliente en un nicho soportado toma minutos. Solo se incorpora su catálogo CSV y su archivo tenant_defaults.md, y el agente hereda las reglas del dominio automáticamente.</span>
                       </p>
                       <div class="testimonial-metrics">
-                        <span class="metric-badge blue">Response &lt; 2s</span>
-                        <span class="metric-badge purple">2-line Integration</span>
+                        <span class="metric-badge blue" data-i18n="vioagentsProject.impact.cards.scale.metric1">Respuesta &lt; 2s</span>
+                        <span class="metric-badge purple" data-i18n="vioagentsProject.impact.cards.scale.metric2">Integración en 2 líneas</span>
                       </div>
                     </div>
                   </div>
@@ -367,11 +350,11 @@
                 <div class="proj-navigation">
                   <a href="csv-enricher.html" class="proj-nav-link">
                     <i class="fas fa-arrow-left"></i>
-                    <div><span class="proj-nav-label">Previous product</span>CSV Enricher</div>
+                    <div><span class="proj-nav-label" data-i18n="vioagentsProject.navigation.previousProduct">Producto anterior</span><span data-i18n="vioagentsProject.navigation.previousProductName">CSV Enricher</span></div>
                   </a>
                   <a href="massmsg.html" class="proj-nav-link next">
                     <i class="fas fa-arrow-right"></i>
-                    <div><span class="proj-nav-label">Next product</span>MassMSG</div>
+                    <div><span class="proj-nav-label" data-i18n="vioagentsProject.navigation.nextProduct">Siguiente producto</span><span data-i18n="vioagentsProject.navigation.nextProductName">MassMSG</span></div>
                   </a>
                 </div>
 
@@ -380,43 +363,43 @@
               <aside class="proj-sidebar">
 
                 <div class="sidebar-widget cta-widget">
-                  <div class="sidebar-widget-title">Try It</div>
+                  <div class="sidebar-widget-title" data-i18n="vioagentsProject.sidebar.tryIt">Probar</div>
                   <a href="https://ai-agents-vio-1-0-yqum.onrender.com/" target="_blank" class="btn-primary">
-                    <i class="fas fa-external-link-alt"></i> Live Demo
+                    <i class="fas fa-external-link-alt"></i> <span data-i18n="vioagentsProject.actions.liveDemo">Demo en vivo</span>
                   </a>
                 </div>
 
                 <div class="sidebar-widget">
-                  <div class="sidebar-widget-title">Tech Stack</div>
+                  <div class="sidebar-widget-title" data-i18n="vioagentsProject.sidebar.techStack">Tech Stack</div>
                   <div class="stack-list">
-                    <div class="stack-row"><span class="label">Backend</span><span class="value">FastAPI · Python</span></div>
-                    <div class="stack-row"><span class="label">Frontend</span><span class="value">React · Vite</span></div>
-                    <div class="stack-row"><span class="label">Widget</span><span class="value">Vanilla JS</span></div>
-                    <div class="stack-row"><span class="label">Database</span><span class="value">Supabase · PostgreSQL</span></div>
-                    <div class="stack-row"><span class="label">AI</span><span class="value">OpenAI / OpenRouter</span></div>
-                    <div class="stack-row"><span class="label">Calendar</span><span class="value">Google Calendar API</span></div>
-                    <div class="stack-row"><span class="label">Docs</span><span class="value">PDFKit</span></div>
+                    <div class="stack-row"><span class="label" data-i18n="vioagentsProject.sidebar.stack.backend">Backend</span><span class="value">FastAPI · Python</span></div>
+                    <div class="stack-row"><span class="label" data-i18n="vioagentsProject.sidebar.stack.frontend">Frontend</span><span class="value">React · Vite</span></div>
+                    <div class="stack-row"><span class="label" data-i18n="vioagentsProject.sidebar.stack.widget">Widget</span><span class="value">Vanilla JS</span></div>
+                    <div class="stack-row"><span class="label" data-i18n="vioagentsProject.sidebar.stack.database">Base de datos</span><span class="value">Supabase · PostgreSQL</span></div>
+                    <div class="stack-row"><span class="label" data-i18n="vioagentsProject.sidebar.stack.ai">IA</span><span class="value">OpenAI / OpenRouter</span></div>
+                    <div class="stack-row"><span class="label" data-i18n="vioagentsProject.sidebar.stack.calendar">Calendario</span><span class="value">Google Calendar API</span></div>
+                    <div class="stack-row"><span class="label" data-i18n="vioagentsProject.sidebar.stack.docs">Docs</span><span class="value">PDFKit</span></div>
                   </div>
                 </div>
 
                 <div class="sidebar-widget">
-                  <div class="sidebar-widget-title">Key Facts</div>
+                  <div class="sidebar-widget-title" data-i18n="vioagentsProject.sidebar.keyFacts">Datos clave</div>
                   <div class="metric-list">
                     <div class="metric-row">
-                      <div class="metric-label">Response time</div>
-                      <div class="metric-value">&lt; 2 seconds</div>
+                      <div class="metric-label" data-i18n="vioagentsProject.sidebar.facts.responseTime">Tiempo de respuesta</div>
+                      <div class="metric-value" data-i18n="vioagentsProject.sidebar.facts.responseTimeValue">&lt; 2 segundos</div>
                     </div>
                     <div class="metric-row">
-                      <div class="metric-label">Hallucination risk</div>
-                      <div class="metric-value">Eliminated by M3</div>
+                      <div class="metric-label" data-i18n="vioagentsProject.sidebar.facts.hallucinationRisk">Riesgo de alucinación</div>
+                      <div class="metric-value" data-i18n="vioagentsProject.sidebar.facts.hallucinationRiskValue">Eliminado por M3</div>
                     </div>
                     <div class="metric-row">
-                      <div class="metric-label">Integration</div>
-                      <div class="metric-value">2 lines of code</div>
+                      <div class="metric-label" data-i18n="vioagentsProject.sidebar.facts.integration">Integración</div>
+                      <div class="metric-value" data-i18n="vioagentsProject.sidebar.facts.integrationValue">2 líneas de código</div>
                     </div>
                     <div class="metric-row">
-                      <div class="metric-label">Orchestration</div>
-                      <div class="metric-value">Custom (no LangChain)</div>
+                      <div class="metric-label" data-i18n="vioagentsProject.sidebar.facts.orchestration">Orquestación</div>
+                      <div class="metric-value" data-i18n="vioagentsProject.sidebar.facts.orchestrationValue">Propia, sin LangChain</div>
                     </div>
                   </div>
                 </div>
@@ -428,7 +411,7 @@
 
         <footer class="site-footer">
           <div class="container">
-            <p>Angel Payan &nbsp;·&nbsp; <a href="../index.html">Portfolio</a></p>
+            <p>Angel Payan &nbsp;·&nbsp; <a href="../index.html" data-i18n="vioagentsProject.footer.portfolio">Portafolio</a></p>
           </div>
         </footer>
 
@@ -441,7 +424,7 @@
       <button class="carousel-modal-nav carousel-modal-prev" id="modal-prev"><i class="fas fa-chevron-left"></i></button>
       <button class="carousel-modal-nav carousel-modal-next" id="modal-next"><i class="fas fa-chevron-right"></i></button>
       <div class="carousel-modal-counter"><span id="modal-cur">1</span> / <span id="modal-tot">1</span></div>
-      <img id="modal-img" src="" alt="" />
+      <img loading="lazy" id="modal-img" src="" alt="" />
     </div>
 
     <script src="../vendor/jquery/jquery.min.js"></script>

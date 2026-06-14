@@ -3,6 +3,170 @@
   "site": {
     "title": "Desarrollador Senior Full-Stack"
   },
+  "landing": {
+    "common": {
+      "caseStudy": "Caso de estudio →",
+      "viewProject": "Ver proyecto →",
+      "viewPortfolio": "Ver portafolio →"
+    },
+    "sidebar": {
+      "role": "Ingeniero de Producto",
+      "products": "Productos"
+    },
+    "hero": {
+      "available": "Disponible para trabajar",
+      "badgeEngineer": "Ingeniero de Software Full-Stack",
+      "badgeAi": "IA y Automatización",
+      "badgeBuilder": "Creador de Productos",
+      "taglineLine1": "Construyo productos de software completos, desde arquitectura hasta producción.",
+      "taglineLine2": "No solo código. Sistemas que funcionan, se entregan y generan ingresos.",
+      "primaryCta": "Ver CSV Analyst en vivo",
+      "secondaryCta": "Contáctame"
+    },
+    "about": {
+      "label": "Sobre mí",
+      "p1": "Durante los últimos años he diseñado, desarrollado, desplegado y comercializado de forma independiente múltiples productos de software en producción, gestionando cada etapa desde la arquitectura del sistema y el backend hasta la infraestructura cloud, la entrega al cliente y el soporte continuo.",
+      "p2": "Mi stack abarca Python, FastAPI, React, Electron, Node.js, PostgreSQL, Supabase e integración con LLMs. He entregado soluciones para más de 20 clientes de negocio en educación, automatización, forense digital y e-commerce.",
+      "p3": "Lo que me diferencia: pienso como fundador. Cada sistema que construyo está diseñado para resolver un problema real, sobrevivir en producción y generar valor de negocio medible, no solo pasar una revisión de código.",
+      "stats": {
+        "clients": "Clientes atendidos",
+        "products": "Productos comerciales",
+        "years": "Años construyendo",
+        "stack": "Cobertura de stack"
+      }
+    },
+    "products": {
+      "title": "Productos Comerciales",
+      "subtitle": "Software que construí, desplegué y comercialicé, hoy en producción con usuarios reales",
+      "status": {
+        "live": "Activo",
+        "commercial": "Comercial"
+      },
+      "csv": {
+        "type": "B2B SaaS · Procesamiento de Datos con IA",
+        "desc": "Plataforma SaaS impulsada por IA que transforma horas de trabajo manual en hojas de cálculo en pipelines automatizados de 2 minutos. Usuarios no técnicos pueden enriquecer, clasificar y limpiar datos CSV a escala usando plantillas reutilizables y perfiles de negocio personalizados que inyectan contexto directamente en prompts de OpenAI.",
+        "highlights": {
+          "item1": "Plantillas de IA reutilizables con perfiles de negocio personalizables",
+          "item2": "Suscripciones con Stripe y facturación por créditos",
+          "item3": "Procesamiento por lotes para datasets grandes sin sobrecargar la API",
+          "item4": "Auth con Supabase, PostgreSQL y Cloudflare en infraestructura real de producción"
+        }
+      },
+      "vioagents": {
+        "type": "SaaS multi-tenant · Agentes de IA para negocio",
+        "desc": "Plataforma de IA conversacional para automatización de negocio. Agentes especializados para ventas, citas y FAQs, impulsados por un sistema de orquestación cognitiva propio que elimina alucinaciones al trabajar con catálogos reales y calendarios en vivo.",
+        "liveDemo": "Demo en vivo",
+        "highlights": {
+          "item1": "Arquitectura propia de orquestación de IA sin dependencia de LangChain",
+          "item2": "Integración con Google Calendar para agendado real",
+          "item3": "Búsqueda inteligente en catálogos CSV con lógica de cross-sell y upsell",
+          "item4": "Cotizaciones PDF autogeneradas y widget embebible"
+        }
+      },
+      "massmsg": {
+        "type": "RPA de escritorio · Automatización de navegador",
+        "desc": "Plataforma de automatización de escritorio para flujos de mensajería de alto volumen. Corre completamente en local usando el propio perfil de Chrome del usuario y su IP residencial, haciéndola indistinguible de una operación manual.",
+        "highlights": {
+          "item1": "Motor stealth con velocidad variable, errores humanos simulados y bio-pausas",
+          "item2": "Licenciamiento criptográfico RSA + HWID ligado por dispositivo",
+          "item3": "Sistema heartbeat para evitar procesos zombie en caídas",
+          "item4": "Soporte para WhatsApp Web, Gmail y Google Messages"
+        }
+      },
+      "forensic": {
+        "type": "Herramienta de escritorio · Forense digital",
+        "desc": "Aplicación de escritorio para adquisición de evidencia digital con validez legal. Extrae y sella criptográficamente conversaciones de WhatsApp y contenido Android, generando reportes PDF certificados con SHA-256 aptos para procesos judiciales.",
+        "highlights": {
+          "item1": "Integridad SHA-256 calculada inmediatamente al extraer",
+          "item2": "Certificados PDF forenses autogenerados con cadena de custodia",
+          "item3": "Extracción dual: WhatsApp Web con Playwright y almacenamiento Android con ADB",
+          "item4": "Procesamiento 100% local sin sacar datos del equipo del analista"
+        }
+      }
+    },
+    "additional": {
+      "title": "Soluciones Comerciales Adicionales",
+      "education": {
+        "title": "Asistente con IA para instituciones educativas",
+        "desc": "SQL en lenguaje natural sobre bases institucionales. Generación automática de constancias, expedientes, PDFs y exportaciones a Excel."
+      },
+      "excel": {
+        "title": "Plataforma empresarial de validación Excel",
+        "desc": "Validación entre tablas, verificación de subtotales y consistencia matemática. Redujo semanas de trabajo manual a segundos."
+      },
+      "leads": {
+        "title": "Lead Factory",
+        "desc": "Plataforma interna de generación de leads con IA. Combina scraping, enriquecimiento de datos y calificación automatizada. Actualmente en producción."
+      },
+      "web": {
+        "title": "Desarrollo web e infraestructura",
+        "desc": "Más de 15 sitios comerciales desplegados. Gestión de VPS Linux, Nginx, SSL/TLS, Cloudflare, DNS, Shopify y mantenimiento legacy en WordPress."
+      }
+    },
+    "projects": {
+      "title": "Proyectos Técnicos",
+      "subtitle": "Trabajo de ingeniería seleccionado que demuestra amplitud entre stacks y dominios",
+      "filters": {
+        "all": "Todos",
+        "data": "Ingeniería de Datos",
+        "ai": "Integración de IA",
+        "automation": "Automatización Web",
+        "desktop": "Escritorio y Sistemas",
+        "web": "Desarrollo Web"
+      },
+      "mobileHint": "Desliza para ver más",
+      "cards": {
+        "school": {
+          "title": "Sistema escolar con IA",
+          "desc": "App de escritorio con arquitectura IA Master-Student. Automatiza gestión escolar con interfaz conversacional, enrutamiento inteligente y generación automática de PDFs. En producción en instituciones educativas."
+        },
+        "excel": {
+          "title": "Sistema de validación Excel",
+          "desc": "Plataforma híbrida (PyQt + React) para extracción automatizada, validación entre tablas y visualización de datos Excel complejos. Un algoritmo bidimensional propio maneja celdas combinadas y relaciones multihoja."
+        },
+        "enterprise": {
+          "title": "Pipeline empresarial de e-commerce",
+          "desc": "Pipeline masivo de extracción de datos sobre más de 40 sitios oficiales de fabricantes. Incluye ingeniería inversa de APIs JSON, crawling multimarcas y limpieza dinámica lista para WooCommerce."
+        },
+        "rtx": {
+          "title": "Monitor de precios RTX",
+          "desc": "Scraper automatizado para monitoreo de precios GPU en múltiples tiendas. Incluye seguimiento programado, almacenamiento en SQLite y alertas con exportación de datos."
+        },
+        "mouse": {
+          "title": "Mouse remoto",
+          "desc": "App móvil para control de PC con ultra baja latencia vía WebSockets. Gestos multitáctiles, teclado virtual y accesos rápidos personalizables. Latencia menor a 8 ms."
+        },
+        "medical": {
+          "title": "Automatización de licencias médicas",
+          "desc": "Sistema de automatización para llenado de formatos oficiales de licencias médicas. Reconocimiento de voz, captura multifuente y generación automática de documentos."
+        },
+        "downloader": {
+          "title": "Descargador de redes sociales",
+          "desc": "Plataforma web para descargar videos de redes sociales sin marcas de agua. Soporte multiformato, procesamiento paralelo e interfaz moderna."
+        },
+        "webPortfolio": {
+          "title": "Portafolio web comercial",
+          "desc": "Más de 15 sitios comerciales desplegados, landing pages y sitios corporativos. Diseño responsive, optimización SEO y desarrollo orientado a rendimiento."
+        }
+      }
+    },
+    "skills": {
+      "title": "Habilidades Técnicas",
+      "subtitle": "Un stack construido a través de años entregando productos reales, no tutoriales",
+      "groups": {
+        "languages": "Lenguajes",
+        "frameworks": "Frameworks y Librerías",
+        "ai": "Inteligencia Artificial",
+        "databases": "Bases de Datos",
+        "infrastructure": "Infraestructura y DevOps",
+        "automation": "Automatización y Datos"
+      }
+    },
+    "contact": {
+      "title": "Contacto",
+      "subtitle": "Abierto a roles de tiempo completo, proyectos freelance y conversaciones interesantes"
+    }
+  },
   "nav": {
     "about": "Sobre Mí",
     "skills": "Habilidades",
@@ -35,6 +199,696 @@
   "project5": {
     "title": "Scraper de Excel",
     "desc": "Herramienta para consolidación automática de datos desde múltiples archivos Excel. Procesa y combina información de diferentes fuentes, aplicando reglas de negocio y generando reportes personalizados."
+  },
+  "csvEnricherProject": {
+    "title": "CSV Enricher",
+    "subtitle": "Plataforma SaaS impulsada por IA que transforma horas de procesamiento manual de hojas de cálculo en un pipeline automatizado de 2 minutos, sin exigir que el usuario escriba un solo prompt.",
+    "badges": {
+      "saas": "B2B SaaS",
+      "aiData": "IA y Datos",
+      "live": "Activo en producción"
+    },
+    "actions": {
+      "visitSite": "Visitar csvanalyst.com",
+      "allProducts": "← Todos los productos"
+    },
+    "meta": {
+      "typeLabel": "Tipo",
+      "typeValue": "B2B SaaS",
+      "statusLabel": "Estado",
+      "statusValue": "✦ Activo",
+      "monetizationLabel": "Monetización",
+      "monetizationValue": "Suscripciones con Stripe",
+      "builtByLabel": "Construido por",
+      "builtByValue": "Solo, end to end"
+    },
+    "navigation": {
+      "backToPortfolio": "Volver al portafolio",
+      "backTo": "Volver a",
+      "allProducts": "Todos los productos",
+      "nextProduct": "Siguiente producto",
+      "nextProductName": "VioAgents"
+    },
+    "sections": {
+      "screenshots": "Capturas del producto",
+      "liveProduct": "Producto en vivo"
+    },
+    "placeholders": {
+      "screenshotsSoon": "Capturas próximamente",
+      "screenshotsPath": "Coloca imágenes en assets/images/projects/csv-enricher/"
+    },
+    "tabs": {
+      "live": "Producto en vivo",
+      "guide": "Guía técnica"
+    },
+    "liveCard": {
+      "description": "CSV Enricher está activo y en producción en csvanalyst.com. Puedes crear una cuenta gratuita, subir un CSV de ejemplo y ejecutar la plantilla de evaluación de CVs en menos de 2 minutos, sin tarjeta para la prueba inicial.",
+      "openDemo": "Abrir csvanalyst.com"
+    },
+    "guide": {
+      "stepsTitle": "Cómo funciona en 3 pasos",
+      "templatesTitle": "Plantillas disponibles",
+      "steps": {
+        "item1": "<strong>Sube un CSV</strong> con columnas de texto como CVs, leads, tickets o keywords.",
+        "item2": "<strong>Define tu contexto</strong> llenando MyProfile una sola vez con tus criterios de evaluación.",
+        "item3": "<strong>Ejecuta la plantilla</strong> y la IA procesa cada fila usando ese contexto para devolver un CSV enriquecido."
+      },
+      "templates": {
+        "resume": "Evaluación de CVs",
+        "leads": "Enriquecimiento de leads",
+        "invoice": "Procesamiento de facturas",
+        "keyword": "Clasificación de keywords"
+      }
+    },
+    "problem": {
+      "title": "El problema",
+      "heading": "La IA es poderosa. Usarla bien sobre hojas de cálculo es doloroso.",
+      "p1": "Profesionales de RH, ventas, finanzas y marketing trabajan cada semana con cientos o miles de filas de datos CSV no estructurados. El proceso manual de leer, juzgar y escribir resultados es lento, inconsistente e imposible de escalar.",
+      "p2": "Las soluciones existentes exigen habilidades de prompt engineering que la mayoría no tiene o son tan genéricas que no se adaptan a los criterios reales de cada empresa. La distancia entre “tengo estos datos” y “necesito aplicar inteligencia sobre ellos” era enorme."
+    },
+    "solution": {
+      "title": "La solución",
+      "heading": "Pipelines de IA conscientes del contexto de negocio, sin código.",
+      "p1": "CSV Enricher permite que el usuario defina su contexto de negocio una sola vez mediante MyProfile y lo reutilice en cientos de ejecuciones. La plataforma traduce esos formularios visuales a prompts optimizados para LLMs de forma invisible y consistente.",
+      "p2": "Un reclutador que necesita evaluar 500 CVs define el perfil ideal una sola vez, sube el CSV y recibe una lista priorizada con puntuaciones, razonamiento y recomendaciones en menos de 2 minutos."
+    },
+    "features": {
+      "title": "Funciones clave",
+      "items": {
+        "templates": {
+          "title": "Plantillas de IA reutilizables",
+          "desc": "Plantillas por industria como evaluación de CVs, enriquecimiento de leads, procesamiento de facturas y clasificación de keywords, activables con un clic."
+        },
+        "profile": {
+          "title": "MyProfile, motor de inyección de contexto",
+          "desc": "Un formulario visual donde el usuario define sus criterios de negocio. Ese contexto se inyecta automáticamente en cada prompt para que la IA actúe como experta en ese dominio específico."
+        },
+        "batch": {
+          "title": "Pipeline de procesamiento por lotes",
+          "desc": "Los CSV grandes se dividen en lotes optimizados y se procesan sin saturar la API de OpenAI. Incluye rate limiting, reintentos y seguimiento de progreso."
+        },
+        "billing": {
+          "title": "Monetización completa con Stripe",
+          "desc": "Suscripciones, cobro por créditos, Stripe Checkout y manejo seguro de webhooks, todo integrado en producción."
+        }
+      }
+    },
+    "architecture": {
+      "title": "Arquitectura"
+    },
+    "users": {
+      "title": "Quién lo usa",
+      "items": {
+        "hr": {
+          "title": "Equipos de RH y reclutamiento",
+          "desc": "Evaluación masiva de CVs con criterios personalizables."
+        },
+        "sales": {
+          "title": "Ventas y marketing",
+          "desc": "Scoring, enriquecimiento y clasificación de intención a escala."
+        },
+        "support": {
+          "title": "Soporte al cliente",
+          "desc": "Categorización de tickets por urgencia y sentimiento para flujos de triage."
+        },
+        "seo": {
+          "title": "Agencias SEO",
+          "desc": "Clasificación masiva de keywords y análisis de intención de búsqueda."
+        }
+      }
+    },
+    "roadmap": {
+      "title": "Roadmap",
+      "desc": "Entre las funciones planeadas están procesamiento en tiempo real con WebSockets, integraciones nativas con HubSpot, Salesforce y Google Sheets, un configurador conversacional de pipelines y procesamiento paralelo con Celery/Redis para datasets empresariales."
+    },
+    "pipeline": {
+      "title": "Pipeline de procesamiento",
+      "steps": {
+        "upload": {
+          "title": "Subir CSV",
+          "desc": "Arrastra cualquier hoja de cálculo con contenido textual"
+        },
+        "context": {
+          "title": "Definir contexto",
+          "desc": "MyProfile inyecta los criterios de negocio en cada prompt"
+        },
+        "batch": {
+          "title": "Procesar por lotes",
+          "desc": "La API de OpenAI se llama en lotes optimizados con lógica de reintentos"
+        },
+        "download": {
+          "title": "Descargar resultados",
+          "desc": "CSV enriquecido listo en alrededor de 2 minutos"
+        }
+      }
+    },
+    "challenges": {
+      "title": "Desafíos técnicos y soluciones",
+      "problemLabel": "Problema",
+      "solutionLabel": "Solución",
+      "items": {
+        "context": {
+          "title": "Inyección de contexto a escala",
+          "problem": "Los wrappers estándar de LLM generan resultados genéricos porque carecen de lógica de negocio específica. Los usuarios no saben escribir prompts de sistema complejos.",
+          "solution": "El motor MyProfile traduce un formulario visual con criterios de negocio a un meta-prompt estructurado y optimizado que se inyecta en cada lote de forma invisible."
+        },
+        "rate": {
+          "title": "Rate limiting y fallos de API",
+          "problem": "Enviar un CSV de 5,000 filas directamente a la API de OpenAI provoca límites de tokens, timeouts y fallos graves.",
+          "solution": "Una cola resiliente de procesamiento por lotes en FastAPI que fragmenta el CSV dinámicamente, monitorea headers de OpenAI, aplica backoff y reintenta chunks fallidos automáticamente."
+        }
+      }
+    },
+    "impact": {
+      "title": "Impacto de negocio",
+      "cards": {
+        "hr": {
+          "name": "Equipos de RH y reclutamiento",
+          "role": "Caso de uso: evaluación de CVs",
+          "quote": "Evaluar 500 postulantes antes tomaba dos días completos de lectura y scoring manual. Ahora el pipeline los califica y ordena según criterios específicos en menos de 2 minutos.",
+          "metric1": "Horas → 2 min",
+          "metric2": "100% consistencia"
+        },
+        "ux": {
+          "name": "Cero prompt engineering",
+          "role": "Experiencia de usuario",
+          "quote": "La mayor barrera para adoptar IA en B2B es la caja de texto en blanco. Usando plantillas preconstruidas, los operadores obtienen resultados de nivel enterprise sin escribir un solo prompt.",
+          "metric1": "IA no-code",
+          "metric2": "Guiado por plantillas"
+        }
+      }
+    },
+    "sidebar": {
+      "tryIt": "Probar ahora",
+      "techStack": "Tech Stack",
+      "keyFacts": "Datos clave",
+      "stack": {
+        "backend": "Backend",
+        "frontend": "Frontend",
+        "database": "Base de datos",
+        "ai": "IA",
+        "payments": "Pagos",
+        "infra": "Infra",
+        "auth": "Auth"
+      },
+      "facts": {
+        "processingTime": "Tiempo de procesamiento",
+        "manualWork": "vs trabajo manual",
+        "manualWorkValue": "Horas → Minutos",
+        "billingModel": "Modelo de cobro",
+        "billingModelValue": "Suscripción + Créditos",
+        "builtBy": "Construido por",
+        "builtByValue": "1 ingeniero (solo)"
+      }
+    },
+    "footer": {
+      "portfolio": "Portafolio"
+    }
+  },
+  "vioagentsProject": {
+    "subtitle": "Plataforma de IA conversacional que despliega agentes especializados para ventas, agenda de citas y soporte, usando un sistema propio de orquestación cognitiva diseñado para eliminar alucinaciones sobre datos reales.",
+    "badges": {
+      "saas": "SaaS multi-tenant",
+      "agents": "Agentes de IA",
+      "liveDemo": "Demo en vivo"
+    },
+    "actions": {
+      "liveDemo": "Demo en vivo",
+      "allProducts": "← Todos los productos"
+    },
+    "meta": {
+      "typeLabel": "Tipo",
+      "typeValue": "SaaS multi-tenant",
+      "statusLabel": "Estado",
+      "statusValue": "✦ Activo",
+      "targetLabel": "Objetivo",
+      "targetValue": "PyMEs y negocios locales",
+      "builtByLabel": "Construido por",
+      "builtByValue": "Solo, end to end"
+    },
+    "navigation": {
+      "backToPortfolio": "Volver al portafolio",
+      "previousProduct": "Producto anterior",
+      "previousProductName": "CSV Enricher",
+      "nextProduct": "Siguiente producto",
+      "nextProductName": "MassMSG"
+    },
+    "sections": {
+      "screenshots": "Capturas del producto",
+      "liveDemo": "Demo en vivo"
+    },
+    "placeholders": {
+      "screenshotsSoon": "Capturas próximamente",
+      "screenshotsPath": "Coloca imágenes en assets/images/projects/vioagents/"
+    },
+    "tabs": {
+      "liveWidget": "Widget en vivo",
+      "howItWorks": "Cómo funciona"
+    },
+    "liveCard": {
+      "description": "El widget de VioAgents está activo. Puedes probar la capacidad del agente para buscar catálogos, manejar objeciones y agendar citas dentro de un flujo conversacional real.",
+      "openDemo": "Abrir demo en vivo"
+    },
+    "guide": {
+      "title": "Cómo probar los agentes",
+      "items": {
+        "sales": "<strong>Ventas:</strong> pide recomendaciones o precios y verás que solo cita productos reales del catálogo CSV.",
+        "booking": "<strong>Agenda:</strong> intenta reservar una cita y comprobarás que consulta Google Calendar en tiempo real y evita dobles reservas.",
+        "support": "<strong>Soporte:</strong> haz preguntas complejas de políticas y verás respuestas aterrizadas en su base de conocimiento markdown."
+      }
+    },
+    "problem": {
+      "title": "El problema",
+      "heading": "Los chatbots tradicionales son rígidos. Los wrappers sobre LLM alucinan.",
+      "p1": "Las PyMEs pierden leads todos los días porque no pueden responder fuera de horario. Los chatbots basados en reglas no manejan lenguaje natural y las integraciones genéricas con LLM inventan precios, disponibilidad y políticas.",
+      "p2": "El mercado necesitaba un agente que hablara natural, conociera el catálogo real, reservara citas reales y nunca inventara información que no tiene."
+    },
+    "architecture": {
+      "title": "Arquitectura: M1 → M2 → M3",
+      "heading": "Orquestación cognitiva propia, sin LangChain ni AutoGen.",
+      "p1": "En vez de depender de frameworks externos de orquestación, VioAgents usa un sistema de tres momentos con validación estricta de datos en cada compuerta. Eso garantiza que el agente nunca responda con datos inventados."
+    },
+    "agents": {
+      "title": "Los tres agentes",
+      "items": {
+        "sales": {
+          "title": "Agente de ventas",
+          "desc": "Búsqueda inteligente sobre catálogos CSV, soporte multi-consulta, sugerencias de cross-sell y generación de cotizaciones PDF al recibir el nombre del cliente."
+        },
+        "booking": {
+          "title": "Agente de agenda",
+          "desc": "Integración real con Google Calendar. Consulta disponibilidad en vivo, bloquea horarios, evita duplicados y sugiere alternativas en conversación natural."
+        },
+        "faq": {
+          "title": "Agente FAQ y conocimiento",
+          "desc": "Consume bases de conocimiento estructuradas en Markdown. Si detecta frustración o escalamiento, pausa el flujo y notifica a un operador humano con todo el contexto."
+        }
+      }
+    },
+    "multitenancy": {
+      "title": "Multi-tenancy y escalabilidad",
+      "heading": "Subir un nuevo cliente toma minutos, no días.",
+      "p1": "VioAgents usa una jerarquía de configuración de tres niveles: Dominio → Nicho → Negocio. Las reglas cognitivas y el vocabulario sectorial se heredan automáticamente; por cliente solo se agregan políticas y catálogos específicos. El widget se embebe con exactamente 2 líneas de código."
+    },
+    "pipeline": {
+      "title": "Pipeline de procesamiento IA",
+      "gatekeeperTitle": "Gatekeeper",
+      "specialistTitle": "Especialista",
+      "groundingTitle": "Grounding",
+      "steps": {
+        "receptor": "Analiza la intención del usuario y valida requisitos faltantes.",
+        "gatekeeper": "Detiene el flujo si faltan datos y pregunta al usuario de forma natural.",
+        "specialist": "Ejecuta llamadas a herramientas como Google Calendar y consultas a base de datos.",
+        "grounding": "Redacta la respuesta final usando solo datos exactos devueltos por M2."
+      }
+    },
+    "challenges": {
+      "title": "Desafíos técnicos y soluciones",
+      "problemLabel": "Problema",
+      "solutionLabel": "Solución",
+      "items": {
+        "hallucinations": {
+          "title": "La IA alucinando precios y stock",
+          "problem": "Las integraciones básicas con LLM suelen inventar un precio o confirmar una cita inexistente solo para sonar útiles.",
+          "solution": "Aislamiento arquitectónico en M3. M3 no accede a conocimiento interno; solo formatea el JSON estricto devuelto por M2."
+        },
+        "loops": {
+          "title": "Loops frustrantes del bot",
+          "problem": "Los usuarios odian cuando el bot entra en bucles y no transfiere a un humano, causando leads perdidos y malas reseñas.",
+          "solution": "Análisis nativo de sentimiento y detección explícita de handoff. Si se detecta frustración, el bot se pausa y notifica a un operador humano."
+        }
+      }
+    },
+    "impact": {
+      "title": "Impacto de negocio",
+      "cards": {
+        "booking": {
+          "name": "Captura de leads y agenda",
+          "role": "Impacto en conversión",
+          "quote": "En vez de mandar leads a un formulario estático donde muchos se pierden, el agente los agenda directamente en Google Calendar de forma inmediata, 24/7.",
+          "metric1": "Operación 24/7",
+          "metric2": "Cero dobles reservas"
+        },
+        "scale": {
+          "name": "Velocidad y escalabilidad",
+          "role": "Impacto de despliegue",
+          "quote": "Agregar un nuevo cliente en un nicho soportado toma minutos. Solo se incorpora su catálogo CSV y su archivo tenant_defaults.md, y el agente hereda las reglas del dominio automáticamente.",
+          "metric1": "Respuesta < 2s",
+          "metric2": "Integración en 2 líneas"
+        }
+      }
+    },
+    "sidebar": {
+      "tryIt": "Probar",
+      "techStack": "Tech Stack",
+      "keyFacts": "Datos clave",
+      "stack": {
+        "backend": "Backend",
+        "frontend": "Frontend",
+        "widget": "Widget",
+        "database": "Base de datos",
+        "ai": "IA",
+        "calendar": "Calendario",
+        "docs": "Docs"
+      },
+      "facts": {
+        "responseTime": "Tiempo de respuesta",
+        "responseTimeValue": "< 2 segundos",
+        "hallucinationRisk": "Riesgo de alucinación",
+        "hallucinationRiskValue": "Eliminado por M3",
+        "integration": "Integración",
+        "integrationValue": "2 líneas de código",
+        "orchestration": "Orquestación",
+        "orchestrationValue": "Propia, sin LangChain"
+      }
+    },
+    "footer": {
+      "portfolio": "Portafolio"
+    }
+  },
+  "massmsgProject": {
+    "subtitle": "Plataforma RPA de escritorio que automatiza flujos de mensajería de alto volumen con Electron, FastAPI y Playwright, incluyendo un motor stealth de emulación humana que vuelve la automatización indistinguible del comportamiento real.",
+    "badges": {
+      "desktopRpa": "RPA de escritorio",
+      "browserAutomation": "Automatización de navegador",
+      "commercial": "Comercial"
+    },
+    "actions": {
+      "allProducts": "← Todos los productos"
+    },
+    "meta": {
+      "typeLabel": "Tipo",
+      "typeValue": "Aplicación de escritorio",
+      "statusLabel": "Estado",
+      "statusValue": "✦ Comercial",
+      "pricingLabel": "Modelo comercial",
+      "pricingValue": "Lifetime Deal",
+      "builtByLabel": "Construido por",
+      "builtByValue": "Solo, end to end"
+    },
+    "navigation": {
+      "backToPortfolio": "Volver al portafolio",
+      "previousProduct": "Producto anterior",
+      "previousProductName": "VioAgents",
+      "nextProject": "Siguiente",
+      "nextProjectName": "Excel Scraper"
+    },
+    "sections": {
+      "screenshots": "Capturas del producto",
+      "demo": "Demo del producto"
+    },
+    "placeholders": {
+      "screenshotsSoon": "Capturas próximamente",
+      "screenshotsPath": "Coloca imágenes en assets/images/projects/massmsg/",
+      "videoSoon": "Video demo en YouTube próximamente"
+    },
+    "tabs": {
+      "video": "Video demo",
+      "security": "Motor de seguridad"
+    },
+    "securityGuide": {
+      "title": "Por qué banean a los bots estándar",
+      "desc": "Las herramientas cloud de automatización inyectan requests o usan navegadores headless desde IPs de datacenter. Las plataformas lo detectan de inmediato. MassMSG controla tu Chrome local real, escribe letra por letra con delay variable y hasta corrige errores como una persona."
+    },
+    "problem": {
+      "title": "El problema",
+      "heading": "Las APIs oficiales de mensajería son caras, restrictivas y detectables.",
+      "p1": "WhatsApp Business API cobra por conversación y exige aprobación previa de plantillas. Las herramientas cloud de envío masivo usan IPs compartidas de datacenter que son detectadas y bloqueadas en minutos. Muchas opciones open source además requieren alto conocimiento técnico.",
+      "p2": "Las PyMEs necesitaban una solución local que corriera en su propia máquina, usara su cuenta real y su IP residencial, y se viera completamente humana para los sistemas de seguridad de la plataforma."
+    },
+    "architecture": {
+      "title": "Arquitectura: diseño de doble interfaz",
+      "heading": "Un motor, dos interfaces: local, portable y sin dependencia cloud."
+    },
+    "stealth": {
+      "title": "Motor stealth",
+      "items": {
+        "typo": {
+          "title": "Typo Engine: emulación humana de tecleo",
+          "desc": "Delays variables por tecla, errores aleatorios corregidos con Backspace y pausas de pensamiento simuladas. Los caracteres se escriben uno por uno, nunca se inyectan."
+        },
+        "pauses": {
+          "title": "Bio-pauses: simulación de jornada real",
+          "desc": "Pausas aleatorias por distracción, descansos de café y breaks largos en lotes grandes. Cada delay tiene variación aleatoria para evitar patrones detectables."
+        },
+        "fingerprint": {
+          "title": "IP residencial y fingerprint nativo",
+          "desc": "Corre sobre el Chrome real del usuario con su fingerprint verdadero e IP doméstica, idéntico a una operación manual. Las plataformas no pueden distinguirlo de uso orgánico."
+        },
+        "session": {
+          "title": "Sesión persistente y portabilidad",
+          "desc": "El perfil de Chrome se guarda en <code>prod_browser_profile/</code> y el QR se escanea solo una vez. Mover la carpeta a otra unidad conserva la sesión completa sin reconfiguración."
+        }
+      }
+    },
+    "licensing": {
+      "title": "Seguridad: licenciamiento RSA + HWID",
+      "heading": "Protección criptográfica en tres capas contra piratería."
+    },
+    "pipeline": {
+      "title": "Pipeline de ejecución",
+      "steps": {
+        "load": {
+          "title": "Cargar datos",
+          "desc": "Importa CSV o Excel con contactos y variables personalizadas."
+        },
+        "bind": {
+          "title": "Vincular Chrome",
+          "desc": "Se conecta vía CDP a la sesión nativa de Chrome del usuario."
+        },
+        "emulate": {
+          "title": "Emular",
+          "desc": "Escribe caracteres usando el Typo Engine biológico."
+        },
+        "pauses": {
+          "title": "Bio-pauses",
+          "desc": "Ejecuta pausas aleatorias para evadir heurísticas de detección."
+        }
+      }
+    },
+    "challenges": {
+      "title": "Desafíos técnicos y soluciones",
+      "problemLabel": "Problema",
+      "solutionLabel": "Solución",
+      "items": {
+        "bans": {
+          "title": "Bloqueos por APIs y herramientas cloud",
+          "problem": "Las herramientas SaaS cloud de mensajería masiva son bloqueadas rápidamente porque Meta detecta sus IPs de datacenter y firmas de navegador headless.",
+          "solution": "MassMSG es una app local de escritorio. Aprovecha la IP residencial orgánica del usuario y el fingerprint nativo del navegador, volviéndolo indistinguible del uso humano."
+        },
+        "zombies": {
+          "title": "Procesos zombie huérfanos",
+          "problem": "Al empaquetar Python con Electron, si el usuario cierra a la fuerza la UI, el backend Python puede seguir vivo en RAM como fuga de memoria.",
+          "solution": "Sistema Heartbeat de doble seguridad. La UI React envía ping cada 5s y, si Python detecta 15s sin señal, se auto-termina de inmediato para evitar procesos colgados."
+        }
+      }
+    },
+    "impact": {
+      "title": "Impacto de negocio",
+      "cards": {
+        "cost": {
+          "name": "Costo cero por mensaje",
+          "role": "Impacto financiero",
+          "quote": "Las APIs oficiales cobran por conversación y exigen reglas rígidas de plantillas. Como MassMSG actúa como humano, los usuarios pueden enviar miles de mensajes personalizados sin pagar fees de API.",
+          "metric1": "Envío 100% libre",
+          "metric2": "Sin reglas de plantilla"
+        },
+        "privacy": {
+          "name": "Privacidad absoluta",
+          "role": "Seguridad de datos",
+          "quote": "Los negocios ya no tienen que subir sus bases de clientes a servidores externos. Todo corre y permanece estrictamente dentro de su propio equipo local.",
+          "metric1": "Capaz de air-gap",
+          "metric2": "Compatible con GDPR"
+        }
+      }
+    },
+    "sidebar": {
+      "techStack": "Tech Stack",
+      "highlights": "Highlights de ingeniería",
+      "stack": {
+        "shell": "Shell",
+        "ui": "UI",
+        "backend": "Backend",
+        "automation": "Automatización",
+        "security": "Seguridad",
+        "platforms": "Plataformas"
+      },
+      "metrics": {
+        "apiCost": "Costo API por mensaje",
+        "licensing": "Licenciamiento",
+        "licensingValue": "RSA + bloqueo HWID",
+        "processSafety": "Seguridad de proceso",
+        "processSafetyValue": "Sistema Heartbeat",
+        "detectionRisk": "Riesgo de detección",
+        "detectionRiskValue": "IP residencial"
+      }
+    },
+    "footer": {
+      "portfolio": "Portafolio"
+    }
+  },
+  "forensicSuiteProject": {
+    "title": "Forensic Data Extractor Suite",
+    "subtitle": "Aplicación de escritorio para adquisición de evidencia digital con validez legal. Extrae y sella criptográficamente contenido desde WhatsApp Web y dispositivos Android, produciendo reportes forenses PDF certificados con SHA-256 aptos para juicio.",
+    "badges": {
+      "desktopTool": "Herramienta de escritorio",
+      "forensics": "Forense digital",
+      "commercialLicensed": "Comercial · Licenciado"
+    },
+    "actions": {
+      "allProducts": "← Todos los productos"
+    },
+    "meta": {
+      "typeLabel": "Tipo",
+      "typeValue": "Aplicación de escritorio",
+      "licensingLabel": "Licenciamiento",
+      "licensingValue": "Anual · $350–$499",
+      "standardsLabel": "Estándares",
+      "standardsValue": "FBI / NOM-151-SCFI",
+      "builtByLabel": "Construido por",
+      "builtByValue": "Solo, end to end"
+    },
+    "navigation": {
+      "backToPortfolio": "Volver al portafolio",
+      "previousProduct": "Producto anterior",
+      "previousProductName": "MassMSG",
+      "nextProject": "Siguiente proyecto",
+      "nextProjectName": "Excel Scraper"
+    },
+    "sections": {
+      "screenshots": "Capturas del producto",
+      "demo": "Demo del producto"
+    },
+    "placeholders": {
+      "screenshotsSoon": "Capturas próximamente",
+      "screenshotsPath": "Coloca imágenes en assets/images/projects/forensic-suite/",
+      "videoSoon": "Video demo en YouTube próximamente"
+    },
+    "tabs": {
+      "video": "Video demo",
+      "pdf": "Certificado PDF"
+    },
+    "pdfGuide": {
+      "title": "El resultado",
+      "desc": "El sistema genera un PDF formal con inventario de todos los archivos extraídos y su hash SHA-256 calculado. Como ese hash se obtiene exactamente al escribir el buffer a disco, alterar la evidencia después cambia el hash y protege la cadena de custodia."
+    },
+    "problem": {
+      "title": "El problema",
+      "heading": "Las capturas no sostienen un juicio. La cadena de custodia se rompe fácil.",
+      "p1": "En litigios civiles y laborales, los mensajes de WhatsApp son evidencia crítica. Pero las capturas son fácilmente manipulables y cualquier abogado puede alegar edición con Photoshop o DevTools. Los tribunales suelen rechazarlas.",
+      "p2": "Las herramientas forenses enterprise cuestan miles de dólares al año y exigen certificaciones especializadas. Abogados independientes, peritos y agencias privadas no tenían una alternativa accesible con estándares de admisibilidad legal."
+    },
+    "architecture": {
+      "title": "Arquitectura del sistema"
+    },
+    "integrity": {
+      "title": "Sistema de integridad forense",
+      "items": {
+        "hash": {
+          "title": "Hash SHA-256 inmediato",
+          "desc": "El hash se calcula a nivel buffer en el instante exacto en que los datos se escriben a disco, antes de generar el PDF. Cualquier modificación posterior cambia el hash y prueba alteración matemática."
+        },
+        "pdf": {
+          "title": "Certificado forense automatizado",
+          "desc": "El PDF contiene fecha y hora ISO 8601, versión del software, nombre del analista, módulo utilizado y fingerprint SHA-256 por archivo extraído. Está diseñado para presentarse directamente ante juez o fedatario."
+        },
+        "dual": {
+          "title": "Extracción dual: web y física",
+          "desc": "Lógica: Playwright recorre WhatsApp Web y lee metadatos nativos del DOM como autor y timestamp. Física: ADB extrae metadatos EXIF de imágenes, incluidas coordenadas GPS y fecha de captura."
+        },
+        "local": {
+          "title": "100% local, apto para air-gap",
+          "desc": "Ningún dato de evidencia se transmite por internet. El binario ADB va incluido en <code>bin/</code>, sin requerir Android SDK. Puede ejecutarse en salas de juicio o lugares sin conectividad."
+        }
+      }
+    },
+    "market": {
+      "title": "Mercado objetivo",
+      "desc": "Diseñado para profesionales legales que necesitan evidencia digital admisible sin pagar presupuestos enterprise: litigantes civiles, agencias de investigación privada, auditores corporativos y consultores forenses independientes. Precio de $350–$499 por año por dispositivo con plan opcional de mantenimiento."
+    },
+    "pipeline": {
+      "title": "Pipeline de extracción",
+      "steps": {
+        "logical": {
+          "title": "Extracción lógica",
+          "desc": "Playwright recorre y extrae texto crudo más metadatos."
+        },
+        "physical": {
+          "title": "Extracción física",
+          "desc": "ADB extrae medios originales con metadatos EXIF intactos."
+        },
+        "hash": {
+          "title": "Sellado hash",
+          "desc": "Cálculo inmediato de SHA-256 a nivel buffer."
+        },
+        "report": {
+          "title": "Reporte PDF",
+          "desc": "Genera certificado de extracción listo para juicio."
+        }
+      }
+    },
+    "challenges": {
+      "title": "Desafíos técnicos y soluciones",
+      "problemLabel": "Problema",
+      "solutionLabel": "Solución",
+      "items": {
+        "screenshots": {
+          "title": "Inadmisibilidad de capturas",
+          "problem": "Abogados pierden casos porque la contraparte argumenta que las capturas de WhatsApp pueden falsificarse fácilmente con Photoshop o DevTools.",
+          "solution": "Criptografía con gap cero en el tiempo. El sistema calcula el hash SHA-256 en el milisegundo exacto en que el buffer se escribe a disco, garantizando inmutabilidad matemática."
+        },
+        "portability": {
+          "title": "Dependencias de hardware y portabilidad",
+          "problem": "Para hacer extracciones físicas, muchas herramientas exigen instalar Android SDKs pesados, imposibilitando ejecutarlas en laptops improvisadas de sala.",
+          "solution": "Empaquetado con Electron. El binario central adb.exe viaja dentro de la carpeta interna `bin`, permitiendo que la app funcione como ejecutable portable sin dependencias externas."
+        }
+      }
+    },
+    "impact": {
+      "title": "Impacto en producción",
+      "cards": {
+        "legal": {
+          "name": "Admisibilidad legal",
+          "role": "Valor litigante",
+          "quote": "Herramientas enterprise como Cellebrite cuestan miles de dólares al año. Esta suite lleva extracción forense bajo estándares FBI y NOM-151 a abogados independientes por una fracción del costo.",
+          "metric1": "Estándar SHA-256",
+          "metric2": "PDF listo para juicio"
+        },
+        "privacy": {
+          "name": "Privacidad total",
+          "role": "Soberanía de datos",
+          "quote": "Como todo corre localmente como aplicación nativa, peritos e investigadores pueden ejecutar extracciones completas en salas aisladas sin internet, asegurando confidencialidad absoluta.",
+          "metric1": "Capaz offline",
+          "metric2": "Cero procesamiento cloud"
+        }
+      }
+    },
+    "sidebar": {
+      "techStack": "Tech Stack",
+      "keyFacts": "Datos clave",
+      "stack": {
+        "shell": "Shell",
+        "ui": "UI",
+        "browser": "Browser",
+        "mobile": "Mobile",
+        "integrity": "Integridad",
+        "reports": "Reportes",
+        "licensing": "Licenciamiento"
+      },
+      "metrics": {
+        "evidenceStandard": "Estándar de evidencia",
+        "evidenceStandardValue": "Certificado SHA-256",
+        "legalFrameworks": "Marcos legales",
+        "legalFrameworksValue": "FBI + NOM-151",
+        "pricing": "Precio",
+        "pricingValue": "$350–$499 / año",
+        "cloudDependency": "Dependencia cloud",
+        "cloudDependencyValue": "Cero"
+      }
+    },
+    "footer": {
+      "portfolio": "Portafolio"
+    }
   },
   "project-view": "Ver Proyecto",
   "about": {
@@ -181,6 +1035,8 @@
   "contact": {
     "title": "Contacto",
     "subtitle": "¿Interesado en colaborar en un proyecto o tienes alguna pregunta?",
+    "ctaIntro": "Prefiero responder rápido. Escríbeme directamente:",
+    "responseTime": "Respondo en menos de 24 horas",
     "info": {
       "title": "¡Hablemos!",
       "description": "Estoy siempre abierto a discutir nuevos proyectos, oportunidades creativas o simplemente charlar sobre tecnología.",
@@ -328,6 +1184,95 @@
     "navigation": {
       "backToPortfolio": "Volver al Portafolio",
       "nextProject": "Siguiente Proyecto: Remote Mouse"
+    }
+  },
+  "enterpriseScraperProject": {
+    "title": "Enterprise E-Commerce Data Pipeline",
+    "subtitle": "Scraping a gran escala de 40+ sitios de fabricantes para alimentar un e-commerce central",
+    "metrics": {
+      "scale": "40+ Sitios Web",
+      "speed": "Miles de productos/semana",
+      "impact": "Originó CSV Analyst"
+    },
+    "sections": {
+      "videoDemo": "Demostración del Pipeline",
+      "videoPlaceholder": "Video Demo Próximamente",
+      "videoDescription": "Extracción automatizada, análisis de red y limpieza de datos en tiempo real.",
+      "overview": "Descripción General",
+      "overviewText": "Un pipeline de ingeniería de datos masivo desarrollado para alimentar un e-commerce con inventario de más de 30 marcas. El proceso consistió en dos fases: primero, ingeniería inversa de las APIs privadas (red/XHR) de un proveedor central para obtener el catálogo base a alta velocidad. Segundo, la creación de scrapers dinámicos (1 a 3 diarios) que navegaban los sitios oficiales de los fabricantes, evadiendo protecciones anti-bot mediante inyección JS, para extraer especificaciones enriquecidas e imágenes. La complejidad de normalizar miles de productos ambiguos extraídos fue lo que me inspiró a crear el sistema CSV Analyst con IA.",
+      "technicalDetails": "Detalles Técnicos",
+      "techStack": "Stack Tecnológico",
+      "challenges": "Desafíos y Soluciones"
+    },
+    "features": {
+      "networkAnalysis": {
+        "title": "Ingeniería Inversa de APIs",
+        "desc": "Análisis de red (XHR) para interceptar respuestas JSON y extraer datos base masivamente"
+      },
+      "dynamicScraping": {
+        "title": "Scraping Dinámico y Evasión",
+        "desc": "Scripts adaptables por sitio, inyección de JS y control de navegador para saltar protecciones"
+      },
+      "dataPipeline": {
+        "title": "Pipeline Completo",
+        "desc": "Limpieza, formateo y normalización automática para importación directa en WooCommerce"
+      }
+    },
+    "techDetails": {
+      "architecture": {
+        "title": "Arquitectura del Pipeline",
+        "items": [
+          "Scraping Base (Provider API)",
+          "Scraping Específico (Manufacturer sites)",
+          "Módulo de Limpieza y Normalización",
+          "Integración WooCommerce"
+        ]
+      },
+      "optimization": {
+        "title": "Técnicas Anti-Bot",
+        "items": [
+          "Inyección de JavaScript",
+          "Control de navegador Headless",
+          "Rotación de User-Agents",
+          "Pausas dinámicas"
+        ]
+      },
+      "features": {
+        "title": "Impacto y Escala",
+        "items": [
+          "40+ arquitecturas web diferentes",
+          "Miles de productos procesados semanalmente",
+          "Reducción de meses de trabajo manual a días",
+          "Inspiración directa para CSV Analyst"
+        ]
+      }
+    },
+    "techCategories": {
+      "frontend": "Extracción",
+      "backend": "Procesamiento",
+      "tools": "Herramientas"
+    },
+    "challengesList": {
+      "networkInterception": {
+        "title": "Extracción Base a Escala",
+        "problem": "El proveedor central tenía un inventario inmenso protegido tras una interfaz web lenta.",
+        "solution": "Ingeniería inversa usando DevTools para interceptar las llamadas API y obtener los JSON puros."
+      },
+      "uniqueArchitectures": {
+        "title": "40+ Sitios Distintos",
+        "problem": "Cada fabricante oficial tenía una estructura web, protecciones y formatos diferentes.",
+        "solution": "Desarrollo ágil de 1-3 scrapers adaptables por día, usando selectores dinámicos y Selenium."
+      },
+      "dataNormalization": {
+        "title": "El Origen de CSV Analyst",
+        "problem": "Los datos venían con formatos ambiguos imposibles de mapear con reglas tradicionales.",
+        "solution": "Esto evidenció la necesidad de IA para categorización, naciendo así el sistema CSV Analyst."
+      }
+    },
+    "navigation": {
+      "prevProject": "Proyecto Anterior: Excel Validation",
+      "nextProject": "Siguiente Proyecto: Remote Mouse",
+      "backToPortfolio": "Volver al Portafolio"
     }
   },
   "remoteMouseProject": {
@@ -1651,14 +2596,39 @@
       "backToPortfolio": "Volver al Portafolio"
     }
   },
+  "webPortfolioProject": {
+    "title": "Portafolio Web Comercial",
+    "subtitle": "15+ sitios comerciales desplegados: landing pages, sitios corporativos y e-commerce",
+    "metrics": {
+      "sites": "15+ Sitios",
+      "platforms": "WordPress & Shopify",
+      "performance": "90+ Lighthouse Score"
+    },
+    "sections": {
+      "overview": "Descripción General",
+      "overviewText": "Colección diversa de sitios web comerciales desarrollados para clientes reales en distintas industrias. Desde landing pages de alta conversión hasta soluciones e-commerce completas en Shopify y temas WordPress personalizados. Este portafolio demuestra mi base sólida en desarrollo frontend, diseño responsivo, optimización SEO y entrega de experiencias web listas para producción que generan resultados de negocio reales.",
+      "technicalDetails": "Detalles Técnicos",
+      "techStack": "Stack Tecnológico"
+    },
+    "techDetails": {
+      "architecture": {
+        "title": "Enfoque de Desarrollo",
+        "items": [
+          "Diseño responsivo mobile-first",
+          "Assets optimizados para rendimiento",
+          "Temas WordPress personalizados",
+          "Liquid templating en Shopify"
+        ]
+      }
+    },
+    "navigation": {
+      "prevProject": "Proyecto Anterior: Social Media DL",
+      "nextProject": "Siguiente Proyecto: AI School Records",
+      "backToPortfolio": "Volver al Portafolio"
+    }
+  },
   "theme": {
     "dark": "Modo Oscuro",
     "light": "Modo Claro"
   }
 }
-
-
-
-
-
-

@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="RTX Scraper - Angel Payan - Caso de estudio de ingeniería de software por Angel Payan.">
-    <title>RTX Scraper - Angel Payan</title>
+    <meta name="description" content="Remote Mouse - Angel Payan - Caso de estudio de ingeniería de software por Angel Payan.">
+    <title>Remote Mouse - Angel Payan</title>
     
     <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
@@ -24,39 +24,39 @@
         <!-- Hero Section -->
         <div class="proj-hero">
           <a href="../index.html#section3" class="proj-hero-back">
-            <i class="fas fa-arrow-left"></i> <span data-i18n="rtxProject.navigation.backToPortfolio">Volver al Portafolio</span>
+            <i class="fas fa-arrow-left"></i> <span data-i18n="remoteMouseProject.navigation.backToPortfolio">Volver al Portafolio</span>
           </a>
           
           <div class="proj-hero-meta">
-            <span class="proj-category-badge purple">Web Automation</span>
+            <span class="proj-category-badge blue">Mobile & Desktop</span>
           </div>
           
-          <h1 class="proj-hero-title" data-i18n="rtxProject.title">RTX Web Scraper - Monitor de Precios de GPUs</h1>
-          <p class="proj-hero-tagline" data-i18n="rtxProject.subtitle">Monitor automático de precios de tarjetas gráficas RTX en tiempo real</p>
+          <h1 class="proj-hero-title" data-i18n="remoteMouseProject.title">Remote Mouse</h1>
+          <p class="proj-hero-tagline" data-i18n="remoteMouseProject.subtitle">Control remoto de mouse y teclado desde dispositivos móviles via WebSocket</p>
           
           <div class="proj-hero-actions">
             <a href="https://github.com/angeliteh" target="_blank" class="btn-secondary">
-              <i class="fab fa-github"></i> <span data-i18n="rtxProject.resourceLinks.sourceCode">Código Fuente</span>
+              <i class="fab fa-github"></i> <span data-i18n="remoteMouseProject.resourceLinks.localCode">Código Local</span>
             </a>
           </div>
 
           <!-- Hero Metrics -->
           <div class="proj-meta-row">
             <div class="proj-meta-item">
-              <div class="proj-meta-label">Velocidad</div>
-              <div class="proj-meta-value" data-i18n="rtxProject.metrics.products">51 productos en <30s</div>
+              <div class="proj-meta-label">Desempeño</div>
+              <div class="proj-meta-value" data-i18n="remoteMouseProject.metrics.latency">Latencia < 8ms</div>
             </div>
             <div class="proj-meta-item">
-              <div class="proj-meta-label">Cobertura</div>
-              <div class="proj-meta-value" data-i18n="rtxProject.metrics.platforms">2 plataformas principales</div>
+              <div class="proj-meta-label">Soporte</div>
+              <div class="proj-meta-value" data-i18n="remoteMouseProject.metrics.platforms">6 plataformas</div>
             </div>
             <div class="proj-meta-item">
-              <div class="proj-meta-label">Efectividad</div>
-              <div class="proj-meta-value" data-i18n="rtxProject.metrics.accuracy">95% precisión</div>
+              <div class="proj-meta-label">Confiabilidad</div>
+              <div class="proj-meta-value" data-i18n="remoteMouseProject.metrics.accuracy">99.9% precisión</div>
             </div>
             <div class="proj-meta-item">
               <div class="proj-meta-label">Tech</div>
-              <div class="proj-meta-value">Python, Selenium, SQLite</div>
+              <div class="proj-meta-value">Flutter, Python, WebSockets</div>
             </div>
           </div>
         </div>
@@ -68,140 +68,111 @@
               <!-- Carousel -->
               <div class="proj-carousel-wrap">
                 <div class="carousel-container">
-                  <div class="carousel-slides count-2" id="carousel-slides">
-                    <div class="carousel-slide active"><img loading="lazy" src="../assets/images/projects/scraping-productos/image_1.png" alt="Dashboard Principal RTX Scraper"></div>
-                    <div class="carousel-slide"><img loading="lazy" src="../assets/images/projects/scraping-productos/image_2.png" alt="Filtros y Visualización"></div>
+                  <div class="carousel-slides count-3" id="carousel-slides">
+                    <div class="carousel-slide active"><img loading="lazy" src="../assets/images/projects/mouse-remoto/image_1.png" alt="Interfaz Flutter Mobile"></div>
+                    <div class="carousel-slide"><img loading="lazy" src="../assets/images/projects/mouse-remoto/image_2.png" alt="Servidor Desktop"></div>
+                    <div class="carousel-slide"><img loading="lazy" src="../assets/images/projects/mouse-remoto/image_3.png" alt="Arquitectura del Sistema"></div>
                   </div>
                   <button class="carousel-btn prev" id="carousel-prev"><i class="fas fa-chevron-left"></i></button>
                   <button class="carousel-btn next" id="carousel-next"><i class="fas fa-chevron-right"></i></button>
                   <button class="carousel-fullscreen-btn" id="carousel-fullscreen"><i class="fas fa-expand"></i></button>
-                  <div class="carousel-counter"><span id="current-slide">1</span> / 2</div>
+                  <div class="carousel-counter"><span id="current-slide">1</span> / 3</div>
                 </div>
                 <div class="carousel-indicators-row" id="carousel-indicators">
                   <button class="carousel-dot active" data-slide="0"></button>
                   <button class="carousel-dot" data-slide="1"></button>
+                  <button class="carousel-dot" data-slide="2"></button>
                 </div>
               </div>
 
               <!-- Overview -->
               <div class="content-block">
-                <div class="content-block-title" data-i18n="rtxProject.sections.overview">Descripción General</div>
-                <p data-i18n="rtxProject.sections.overviewText">Aplicación web completa que automatiza el monitoreo de precios de tarjetas gráficas NVIDIA RTX en Amazon México y MercadoLibre. Incluye scraping inteligente, base de datos histórica, interfaz web responsiva con filtros avanzados, gráficos de tendencias de precios y sistema de alertas. Diseñada para ayudar a usuarios a encontrar las mejores ofertas y tomar decisiones informadas de compra.</p>
+                <div class="content-block-title" data-i18n="remoteMouseProject.sections.overview">Descripción General</div>
+                <p data-i18n="remoteMouseProject.sections.overviewText">Aplicación multiplataforma que permite controlar el mouse y teclado de una PC desde un dispositivo móvil usando comunicación WebSocket en tiempo real. Incluye un servidor Python con interfaz gráfica para PC y una aplicación Flutter para dispositivos móviles con soporte para Android, iOS, Web, Windows, macOS y Linux. Ofrece control preciso del cursor, clics, scroll, escritura de texto y combinaciones de teclas con retroalimentación háptica y configuración personalizable.</p>
                 
                 <h3 style="margin-top:2rem; font-size:1.1rem; color:var(--text); margin-bottom:1rem;">Características Principales</h3>
                 <div class="feature-list" style="display: flex; flex-direction: column; gap: 1rem;">
                   <div class="feature-item" style="display: flex; gap: 1rem; align-items: flex-start;">
                     <div class="feature-item-icon blue" style="background: rgba(59, 130, 246, 0.1); color: #3b82f6; width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                      <i class="fas fa-spider"></i>
+                      <i class="fas fa-mouse-pointer"></i>
                     </div>
                     <div class="feature-item-text">
-                      <strong data-i18n="rtxProject.features.smartScraping.title" style="color: var(--text); display: block; margin-bottom: 0.25rem;">Scraping Inteligente</strong>
-                      <p data-i18n="rtxProject.features.smartScraping.desc" style="margin: 0; color: var(--text-muted); font-size: 0.95rem; line-height: 1.5;">Extracción automatizada con filtros para eliminar productos irrelevantes</p>
+                      <strong data-i18n="remoteMouseProject.features.mouseControl.title" style="color: var(--text); display: block; margin-bottom: 0.25rem;">Control de Mouse Avanzado</strong>
+                      <p data-i18n="remoteMouseProject.features.mouseControl.desc" style="margin: 0; color: var(--text-muted); font-size: 0.95rem; line-height: 1.5;">Movimiento preciso con buffer de optimización, clics y scroll con sensibilidad ajustable</p>
                     </div>
                   </div>
                   
                   <div class="feature-item" style="display: flex; gap: 1rem; align-items: flex-start;">
                     <div class="feature-item-icon purple" style="background: rgba(163, 113, 247, 0.1); color: #a371f7; width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                      <i class="fas fa-chart-bar"></i>
+                      <i class="fas fa-keyboard"></i>
                     </div>
                     <div class="feature-item-text">
-                      <strong data-i18n="rtxProject.features.webInterface.title" style="color: var(--text); display: block; margin-bottom: 0.25rem;">Interfaz Web Completa</strong>
-                      <p data-i18n="rtxProject.features.webInterface.desc" style="margin: 0; color: var(--text-muted); font-size: 0.95rem; line-height: 1.5;">Dashboard responsivo con filtros, ordenamiento y modo oscuro/claro</p>
+                      <strong data-i18n="remoteMouseProject.features.virtualKeyboard.title" style="color: var(--text); display: block; margin-bottom: 0.25rem;">Teclado Virtual Inteligente</strong>
+                      <p data-i18n="remoteMouseProject.features.virtualKeyboard.desc" style="margin: 0; color: var(--text-muted); font-size: 0.95rem; line-height: 1.5;">Escritura en tiempo real, teclas especiales y combinaciones (Ctrl+C, Alt+Tab)</p>
                     </div>
                   </div>
 
                   <div class="feature-item" style="display: flex; gap: 1rem; align-items: flex-start;">
-                    <div class="feature-item-icon orange" style="background: rgba(227, 179, 65, 0.1); color: #e3b341; width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                      <i class="fas fa-bell"></i>
+                    <div class="feature-item-icon green" style="background: rgba(16, 185, 129, 0.1); color: #10b981; width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                      <i class="fas fa-mobile-alt"></i>
                     </div>
                     <div class="feature-item-text">
-                      <strong data-i18n="rtxProject.features.alertSystem.title" style="color: var(--text); display: block; margin-bottom: 0.25rem;">Sistema de Alertas</strong>
-                      <p data-i18n="rtxProject.features.alertSystem.desc" style="margin: 0; color: var(--text-muted); font-size: 0.95rem; line-height: 1.5;">Notificaciones vía Telegram/Discord cuando los precios bajan >10%</p>
+                      <strong data-i18n="remoteMouseProject.features.multiplatform.title" style="color: var(--text); display: block; margin-bottom: 0.25rem;">Interfaz Multiplataforma</strong>
+                      <p data-i18n="remoteMouseProject.features.multiplatform.desc" style="margin: 0; color: var(--text-muted); font-size: 0.95rem; line-height: 1.5;">Flutter nativo para móviles y servidor Python GUI, soporte para 6 plataformas</p>
                     </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Workflow -->
-              <div class="content-block">
-                <div class="content-block-title" data-i18n="rtxProject.sections.workflow">Flujo de Trabajo</div>
-                <div class="workflow-steps">
-                  <div class="workflow-step">
-                    <div class="workflow-step-num">01</div>
-                    <div class="workflow-step-icon"><i class="fas fa-globe"></i></div>
-                    <h4 data-i18n="rtxProject.workflowSteps.scraping.title">1. Scraping Automático</h4>
-                    <p data-i18n="rtxProject.workflowSteps.scraping.desc">Extracción de datos de Amazon MX y MercadoLibre</p>
-                  </div>
-                  <div class="workflow-step">
-                    <div class="workflow-step-num">02</div>
-                    <div class="workflow-step-icon"><i class="fas fa-filter"></i></div>
-                    <h4 data-i18n="rtxProject.workflowSteps.filtering.title">2. Filtrado Inteligente</h4>
-                    <p data-i18n="rtxProject.workflowSteps.filtering.desc">Eliminación de productos irrelevantes</p>
-                  </div>
-                  <div class="workflow-step">
-                    <div class="workflow-step-num">03</div>
-                    <div class="workflow-step-icon"><i class="fas fa-database"></i></div>
-                    <h4 data-i18n="rtxProject.workflowSteps.storage.title">3. Almacenamiento</h4>
-                    <p data-i18n="rtxProject.workflowSteps.storage.desc">Guardado en base de datos con historial</p>
-                  </div>
-                  <div class="workflow-step">
-                    <div class="workflow-step-num">04</div>
-                    <div class="workflow-step-icon"><i class="fas fa-chart-line"></i></div>
-                    <h4 data-i18n="rtxProject.workflowSteps.visualization.title">4. Visualización</h4>
-                    <p data-i18n="rtxProject.workflowSteps.visualization.desc">Dashboard web con gráficos y filtros</p>
                   </div>
                 </div>
               </div>
 
               <!-- Challenges -->
               <div class="content-block">
-                <div class="content-block-title" data-i18n="rtxProject.sections.challenges">Desafíos Técnicos y Soluciones</div>
+                <div class="content-block-title" data-i18n="remoteMouseProject.sections.challenges">Desafíos Técnicos y Soluciones</div>
                 <div class="challenges-list">
                   <div class="challenge-card">
                     <div class="challenge-header">
-                      <i class="fas fa-shield-alt"></i>
-                      <h4 data-i18n="rtxProject.challengesList.antiBotProtection.title">Anti-Bot Protection</h4>
+                      <i class="fas fa-bolt"></i>
+                      <h4 data-i18n="remoteMouseProject.challengesList.latencyMovements.title">Latencia en Movimientos</h4>
                     </div>
                     <div class="challenge-body">
                       <div class="challenge-problem">
                         <span class="challenge-label">Problem</span>
-                        <p data-i18n="rtxProject.challengesList.antiBotProtection.problem">Amazon y MercadoLibre bloquean requests automatizados.</p>
+                        <p data-i18n="remoteMouseProject.challengesList.latencyMovements.problem">Los movimientos individuales del mouse generaban demasiados comandos WebSocket.</p>
                       </div>
                       <div class="challenge-solution">
                         <span class="challenge-label">Solution</span>
-                        <p data-i18n="rtxProject.challengesList.antiBotProtection.solution">User-agents rotativos, delays aleatorios, headers realistas y Selenium para sitios complejos.</p>
+                        <p data-i18n="remoteMouseProject.challengesList.latencyMovements.solution">Buffer de movimientos con timer de 8ms para acumular y enviar deltas optimizados.</p>
                       </div>
                     </div>
                   </div>
                   <div class="challenge-card">
                     <div class="challenge-header">
-                      <i class="fas fa-filter"></i>
-                      <h4 data-i18n="rtxProject.challengesList.productFiltering.title">Filtrado de Productos</h4>
+                      <i class="fas fa-sync"></i>
+                      <h4 data-i18n="remoteMouseProject.challengesList.textSync.title">Sincronización de Texto</h4>
                     </div>
                     <div class="challenge-body">
                       <div class="challenge-problem">
                         <span class="challenge-label">Problem</span>
-                        <p data-i18n="rtxProject.challengesList.productFiltering.problem">Búsquedas devuelven cables, soportes y accesorios no deseados.</p>
+                        <p data-i18n="remoteMouseProject.challengesList.textSync.problem">Detectar cambios de texto (añadir/borrar) sin perder sincronización.</p>
                       </div>
                       <div class="challenge-solution">
                         <span class="challenge-label">Solution</span>
-                        <p data-i18n="rtxProject.challengesList.productFiltering.solution">Lista de palabras prohibidas configurable y validación por modelo RTX específico.</p>
+                        <p data-i18n="remoteMouseProject.challengesList.textSync.solution">Sistema de tracking con comparación de longitudes y envío diferencial de comandos.</p>
                       </div>
                     </div>
                   </div>
                   <div class="challenge-card">
                     <div class="challenge-header">
-                      <i class="fab fa-python"></i>
-                      <h4 data-i18n="rtxProject.challengesList.pythonCompatibility.title">Compatibilidad Python 3.13</h4>
+                      <i class="fas fa-layer-group"></i>
+                      <h4 data-i18n="remoteMouseProject.challengesList.crossPlatform.title">Compatibilidad Multiplataforma</h4>
                     </div>
                     <div class="challenge-body">
                       <div class="challenge-problem">
                         <span class="challenge-label">Problem</span>
-                        <p data-i18n="rtxProject.challengesList.pythonCompatibility.problem">Python 3.13 no compatible con psycopg2-binary precompilado.</p>
+                        <p data-i18n="remoteMouseProject.challengesList.crossPlatform.problem">Diferentes comportamientos de SO para control de mouse/teclado.</p>
                       </div>
                       <div class="challenge-solution">
                         <span class="challenge-label">Solution</span>
-                        <p data-i18n="rtxProject.challengesList.pythonCompatibility.solution">Importaciones condicionales y configuración flexible de base de datos.</p>
+                        <p data-i18n="remoteMouseProject.challengesList.crossPlatform.solution">Abstracción con PyAutoGUI y configuración específica por plataforma.</p>
                       </div>
                     </div>
                   </div>
@@ -210,14 +181,14 @@
 
               <!-- Navigation -->
               <div class="proj-navigation">
-                <!-- Relevance order: Excel Scraper -> RTX Scraper -> Remote Mouse -->
-                <a href="enterprise-scraper.html" class="proj-nav-link">
+                <!-- Relevance order: RTX Scraper -> Remote Mouse -> Social Media Downloader -->
+                <a href="scraping-productos.html" class="proj-nav-link">
                   <i class="fas fa-arrow-left"></i>
-                  <div><span class="proj-nav-label">Previous</span>Enterprise Scraper</div>
+                  <div><span class="proj-nav-label">Previous</span>RTX Scraper</div>
                 </a>
-                <a href="remote-mouse.html" class="proj-nav-link next">
+                <a href="licencias-medicas.html" class="proj-nav-link next">
                   <i class="fas fa-arrow-right"></i>
-                  <div><span class="proj-nav-label" data-i18n="rtxProject.navigation.nextProject">Next</span>Remote Mouse</div>
+                  <div><span class="proj-nav-label" data-i18n="remoteMouseProject.navigation.nextProject">Next</span>Medical License</div>
                 </a>
               </div>
             </main>
@@ -225,34 +196,34 @@
             <!-- Sidebar -->
             <aside class="proj-sidebar">
               <div class="sidebar-widget">
-                <div class="sidebar-widget-title" data-i18n="rtxProject.sections.techStack">Tech Stack</div>
+                <div class="sidebar-widget-title" data-i18n="remoteMouseProject.sections.techStack">Tech Stack</div>
                 <div class="stack-list">
                   <div class="stack-row">
-                    <span class="label">Backend</span>
-                    <span class="value">Python, Flask</span>
+                    <span class="label">App Móvil</span>
+                    <span class="value">Flutter, Dart</span>
                   </div>
                   <div class="stack-row">
-                    <span class="label">Automation</span>
-                    <span class="value">Selenium, BeautifulSoup</span>
+                    <span class="label">Servidor</span>
+                    <span class="value">Python, WebSockets</span>
                   </div>
                   <div class="stack-row">
-                    <span class="label">Frontend</span>
-                    <span class="value">HTML5, CSS3, JS</span>
+                    <span class="label">Interfaz Servidor</span>
+                    <span class="value">CustomTkinter</span>
                   </div>
                   <div class="stack-row">
-                    <span class="label">Database</span>
-                    <span class="value">SQLite</span>
+                    <span class="label">Protocolo</span>
+                    <span class="value">JSON sobre WS</span>
                   </div>
                 </div>
               </div>
               
               <div class="sidebar-widget">
-                <div class="sidebar-widget-title" data-i18n="rtxProject.techDetails.architecture.title">Arquitectura</div>
+                <div class="sidebar-widget-title" data-i18n="remoteMouseProject.techDetails.architecture.title">Arquitectura</div>
                 <ul class="product-highlights" style="margin-top: 10px;">
-                  <li data-i18n="rtxProject.techDetails.architecture.items.0">Patrón MVC con separación clara</li>
-                  <li data-i18n="rtxProject.techDetails.architecture.items.1">Estructura modular (scrapers/, database/, utils/)</li>
-                  <li data-i18n="rtxProject.techDetails.architecture.items.2">API REST endpoints + interfaz web integrada</li>
-                  <li data-i18n="rtxProject.techDetails.architecture.items.3">SQLite con esquema relacional</li>
+                  <li data-i18n="remoteMouseProject.techDetails.architecture.items.0">Cliente-Servidor con WebSocket</li>
+                  <li data-i18n="remoteMouseProject.techDetails.architecture.items.1">MVC en Flutter con servicios modulares</li>
+                  <li data-i18n="remoteMouseProject.techDetails.architecture.items.2">Separación clara servidor Python/cliente Flutter</li>
+                  <li data-i18n="remoteMouseProject.techDetails.architecture.items.3">Protocolo de comandos personalizado</li>
                 </ul>
               </div>
             </aside>
@@ -267,7 +238,7 @@
       <button class="carousel-modal-close" id="carousel-modal-close"><i class="fas fa-times"></i></button>
       <button class="carousel-modal-nav carousel-modal-prev" id="carousel-modal-prev"><i class="fas fa-chevron-left"></i></button>
       <button class="carousel-modal-nav carousel-modal-next" id="carousel-modal-next"><i class="fas fa-chevron-right"></i></button>
-      <div class="carousel-modal-counter"><span id="modal-current-slide">1</span> / 2</div>
+      <div class="carousel-modal-counter"><span id="modal-current-slide">1</span> / 3</div>
       <img loading="lazy" id="carousel-modal-img" src="" alt="Fullscreen view">
     </div>
 
@@ -290,7 +261,7 @@
         const slides = document.getElementById('carousel-slides');
         const dots = document.querySelectorAll('.carousel-dot');
         const counter = document.getElementById('current-slide');
-        let index = 0; const total = 2;
+        let index = 0; const total = 3;
 
         function update() {
           slides.style.transform = `translateX(-${index * (100/total)}%)`;

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -50,71 +50,64 @@
 
             <!-- Hero block -->
             <div class="hero-block">
-              <div class="hero-label">
-                Available for work &nbsp;·&nbsp; Durango, Mexico
+              <div class="hero-label" data-i18n="landing.hero.available">
+                Disponible para trabajar
               </div>
 
               <h1 class="hero-name">Angel Payan</h1>
 
               <div class="hero-titles">
-                <span class="hero-title-badge">Full-Stack Software Engineer</span>
+                <span class="hero-title-badge" data-i18n="landing.hero.badgeEngineer">Ingeniero de Software Full-Stack</span>
                 <span class="hero-title-sep">·</span>
-                <span class="hero-title-badge">AI &amp; Automation</span>
+                <span class="hero-title-badge" data-i18n="landing.hero.badgeAi">IA y Automatización</span>
                 <span class="hero-title-sep">·</span>
-                <span class="hero-title-badge">Product Builder</span>
+                <span class="hero-title-badge" data-i18n="landing.hero.badgeBuilder">Creador de Productos</span>
               </div>
 
               <p class="hero-tagline">
-                I build complete software products — from architecture to production.<br />
-                Not just code. Systems that work, ship, and generate revenue.
+                <span data-i18n="landing.hero.taglineLine1">Construyo productos de software completos, desde arquitectura hasta producción.</span><br />
+                <span data-i18n="landing.hero.taglineLine2">No solo código. Sistemas que funcionan, se entregan y generan ingresos.</span>
               </p>
 
               <div class="hero-cta">
                 <a href="https://csvanalyst.com/" target="_blank" class="btn-primary">
-                  <i class="fas fa-external-link-alt"></i> See CSV Enricher Live
+                  <i class="fas fa-external-link-alt"></i> <span data-i18n="landing.hero.primaryCta">Ver CSV Analyst en vivo</span>
                 </a>
-                <a href="#section5" class="btn-secondary">Get in touch</a>
+                <a href="#section5" class="btn-secondary" data-i18n="landing.hero.secondaryCta">Contáctame</a>
               </div>
             </div>
 
             <!-- About content -->
             <div class="about-grid">
               <div class="about-block">
-                <div class="section-label">About</div>
-                <p>
-                  Over the past several years I've independently designed, developed, deployed, and
-                  <strong>commercialized multiple production software products</strong> — managing
-                  every stage from system architecture and backend development to cloud
-                  infrastructure, client delivery, and ongoing support.
+                <div class="section-label" data-i18n="landing.about.label">Sobre mí</div>
+                <p data-i18n="landing.about.p1">
+                  Durante los últimos años he diseñado, desarrollado, desplegado y comercializado de forma independiente múltiples productos de software en producción, gestionando cada etapa desde la arquitectura del sistema y el backend hasta la infraestructura cloud, la entrega al cliente y el soporte continuo.
                 </p>
-                <p>
-                  My stack spans Python, FastAPI, React, Electron, Node.js, PostgreSQL, Supabase,
-                  and LLM integration. I've delivered solutions for <strong>20+ business clients</strong>
-                  across education, automation, legal forensics, and e-commerce.
+                <p data-i18n="landing.about.p2">
+                  Mi stack abarca Python, FastAPI, React, Electron, Node.js, PostgreSQL, Supabase e integración con LLMs. He entregado soluciones para más de 20 clientes de negocio en educación, automatización, forense digital y e-commerce.
                 </p>
-                <p>
-                  What makes me different: I think like a founder. Every system I build is designed
-                  to solve a real problem, survive production, and deliver measurable business value —
-                  not just pass a code review.
+                <p data-i18n="landing.about.p3">
+                  Lo que me diferencia: pienso como fundador. Cada sistema que construyo está diseñado para resolver un problema real, sobrevivir en producción y generar valor de negocio medible, no solo pasar una revisión de código.
                 </p>
               </div>
 
               <div class="about-stats">
                 <div class="stat-card">
                   <div class="stat-number">20+</div>
-                  <div class="stat-label">Clients served</div>
+                  <div class="stat-label" data-i18n="landing.about.stats.clients">Clientes atendidos</div>
                 </div>
                 <div class="stat-card">
                   <div class="stat-number">4</div>
-                  <div class="stat-label">Commercial products</div>
+                  <div class="stat-label" data-i18n="landing.about.stats.products">Productos comerciales</div>
                 </div>
                 <div class="stat-card">
                   <div class="stat-number">3+</div>
-                  <div class="stat-label">Years building</div>
+                  <div class="stat-label" data-i18n="landing.about.stats.years">Años construyendo</div>
                 </div>
                 <div class="stat-card">
                   <div class="stat-number">∞</div>
-                  <div class="stat-label">Stack coverage</div>
+                  <div class="stat-label" data-i18n="landing.about.stats.stack">Cobertura de stack</div>
                 </div>
               </div>
             </div>
@@ -130,9 +123,9 @@
           <div class="container">
 
             <div class="section-header">
-              <h2 class="section-title">Commercial Products</h2>
-              <p class="section-subtitle">
-                Software I built, deployed, and commercialized — in production with real users
+              <h2 class="section-title" data-i18n="landing.products.title">Productos Comerciales</h2>
+              <p class="section-subtitle" data-i18n="landing.products.subtitle">
+                Software que construí, desplegué y comercialicé, hoy en producción con usuarios reales
               </p>
             </div>
 
@@ -145,27 +138,24 @@
                     <i class="fas fa-table"></i>
                   </div>
                   <div class="product-status live">
-                    <span class="status-dot"></span> Live
+                    <span class="status-dot"></span> <span data-i18n="landing.products.status.live">Activo</span>
                   </div>
                 </div>
 
                 <div>
                   <h3 class="product-name">CSV Enricher</h3>
-                  <p class="product-type">B2B SaaS &nbsp;·&nbsp; AI Data Processing</p>
+                  <p class="product-type" data-i18n="landing.products.csv.type">B2B SaaS · Procesamiento de Datos con IA</p>
                 </div>
 
-                <p class="product-desc">
-                  AI-powered SaaS platform that transforms hours of manual spreadsheet work into
-                  2-minute automated pipelines. Non-technical users can enrich, classify, and clean
-                  CSV data at scale — using reusable templates and custom business profiles that
-                  inject context directly into OpenAI prompts.
+                <p class="product-desc" data-i18n="landing.products.csv.desc">
+                  Plataforma SaaS impulsada por IA que transforma horas de trabajo manual en hojas de cálculo en pipelines automatizados de 2 minutos. Usuarios no técnicos pueden enriquecer, clasificar y limpiar datos CSV a escala usando plantillas reutilizables y perfiles de negocio personalizados que inyectan contexto directamente en prompts de OpenAI.
                 </p>
 
                 <ul class="product-highlights">
-                  <li>Reusable AI templates with customizable business profiles</li>
-                  <li>Stripe subscriptions + credit-based billing (Starter &amp; Growth plans)</li>
-                  <li>Batch processing for large datasets without overloading the API</li>
-                  <li>Supabase auth, PostgreSQL, Cloudflare — full production infra</li>
+                  <li data-i18n="landing.products.csv.highlights.item1">Plantillas de IA reutilizables con perfiles de negocio personalizables</li>
+                  <li data-i18n="landing.products.csv.highlights.item2">Suscripciones con Stripe y facturación por créditos</li>
+                  <li data-i18n="landing.products.csv.highlights.item3">Procesamiento por lotes para datasets grandes sin sobrecargar la API</li>
+                  <li data-i18n="landing.products.csv.highlights.item4">Auth con Supabase, PostgreSQL y Cloudflare en infraestructura real de producción</li>
                 </ul>
 
                 <div class="product-stack">
@@ -182,7 +172,7 @@
                   <a href="https://csvanalyst.com/" target="_blank" class="product-btn-live">
                     <i class="fas fa-external-link-alt"></i> csvanalyst.com
                   </a>
-                  <a href="proyectos/csv-enricher.html" class="product-btn-case">Case study →</a>
+                  <a href="proyectos/csv-enricher.html" class="product-btn-case" data-i18n="landing.common.caseStudy">Caso de estudio →</a>
                 </div>
               </div>
 
@@ -193,27 +183,24 @@
                     <i class="fas fa-robot"></i>
                   </div>
                   <div class="product-status live">
-                    <span class="status-dot"></span> Live
+                    <span class="status-dot"></span> <span data-i18n="landing.products.status.live">Activo</span>
                   </div>
                 </div>
 
                 <div>
                   <h3 class="product-name">VioAgents</h3>
-                  <p class="product-type">Multi-tenant SaaS &nbsp;·&nbsp; AI Agents for Business</p>
+                  <p class="product-type" data-i18n="landing.products.vioagents.type">SaaS multi-tenant · Agentes de IA para negocio</p>
                 </div>
 
-                <p class="product-desc">
-                  Conversational AI platform for business automation. Specialized agents for sales,
-                  appointment booking, and FAQ management — powered by a custom cognitive
-                  orchestration system (M1→M2→M3) that eliminates hallucinations when working
-                  with real product catalogs and live calendars.
+                <p class="product-desc" data-i18n="landing.products.vioagents.desc">
+                  Plataforma de IA conversacional para automatización de negocio. Agentes especializados para ventas, citas y FAQs, impulsados por un sistema de orquestación cognitiva propio que elimina alucinaciones al trabajar con catálogos reales y calendarios en vivo.
                 </p>
 
                 <ul class="product-highlights">
-                  <li>Custom AI orchestration architecture — no LangChain dependency</li>
-                  <li>Google Calendar integration for real appointment booking</li>
-                  <li>Intelligent CSV catalog search with cross-sell &amp; upsell logic</li>
-                  <li>Auto-generated PDF quotations, embeddable widget (2 lines of code)</li>
+                  <li data-i18n="landing.products.vioagents.highlights.item1">Arquitectura propia de orquestación de IA sin dependencia de LangChain</li>
+                  <li data-i18n="landing.products.vioagents.highlights.item2">Integración con Google Calendar para agendado real</li>
+                  <li data-i18n="landing.products.vioagents.highlights.item3">Búsqueda inteligente en catálogos CSV con lógica de cross-sell y upsell</li>
+                  <li data-i18n="landing.products.vioagents.highlights.item4">Cotizaciones PDF autogeneradas y widget embebible</li>
                 </ul>
 
                 <div class="product-stack">
@@ -227,9 +214,9 @@
 
                 <div class="product-actions">
                   <a href="https://ai-agents-vio-1-0-yqum.onrender.com/" target="_blank" class="product-btn-live">
-                    <i class="fas fa-external-link-alt"></i> Live Demo
+                    <i class="fas fa-external-link-alt"></i> <span data-i18n="landing.products.vioagents.liveDemo">Demo en vivo</span>
                   </a>
-                  <a href="proyectos/vioagents.html" class="product-btn-case">Case study →</a>
+                  <a href="proyectos/vioagents.html" class="product-btn-case" data-i18n="landing.common.caseStudy">Caso de estudio →</a>
                 </div>
               </div>
 
@@ -240,27 +227,24 @@
                     <i class="fas fa-paper-plane"></i>
                   </div>
                   <div class="product-status commercial">
-                    <span class="status-dot"></span> Commercial
+                    <span class="status-dot"></span> <span data-i18n="landing.products.status.commercial">Comercial</span>
                   </div>
                 </div>
 
                 <div>
                   <h3 class="product-name">MassMSG</h3>
-                  <p class="product-type">Desktop RPA &nbsp;·&nbsp; Browser Automation</p>
+                  <p class="product-type" data-i18n="landing.products.massmsg.type">RPA de escritorio · Automatización de navegador</p>
                 </div>
 
-                <p class="product-desc">
-                  Desktop automation platform for high-volume messaging workflows. Runs entirely
-                  locally using the user's own Chrome profile and residential IP — making it
-                  indistinguishable from manual operation. Integrates Electron, FastAPI, and
-                  Playwright through a "Dual Interface" architecture with zero cost per message.
+                <p class="product-desc" data-i18n="landing.products.massmsg.desc">
+                  Plataforma de automatización de escritorio para flujos de mensajería de alto volumen. Corre completamente en local usando el propio perfil de Chrome del usuario y su IP residencial, haciéndola indistinguible de una operación manual.
                 </p>
 
                 <ul class="product-highlights">
-                  <li>Stealth engine: variable typing speed, human error emulation, bio-pauses</li>
-                  <li>RSA + HWID cryptographic licensing (hardware-locked per device)</li>
-                  <li>Heartbeat system prevents zombie Python processes on crash</li>
-                  <li>Supports WhatsApp Web, Gmail, and Google Messages</li>
+                  <li data-i18n="landing.products.massmsg.highlights.item1">Motor stealth con velocidad variable, errores humanos simulados y bio-pausas</li>
+                  <li data-i18n="landing.products.massmsg.highlights.item2">Licenciamiento criptográfico RSA + HWID ligado por dispositivo</li>
+                  <li data-i18n="landing.products.massmsg.highlights.item3">Sistema heartbeat para evitar procesos zombie en caídas</li>
+                  <li data-i18n="landing.products.massmsg.highlights.item4">Soporte para WhatsApp Web, Gmail y Google Messages</li>
                 </ul>
 
                 <div class="product-stack">
@@ -273,7 +257,7 @@
                 </div>
 
                 <div class="product-actions">
-                  <a href="proyectos/massmsg.html" class="product-btn-case">Case study →</a>
+                  <a href="proyectos/massmsg.html" class="product-btn-case" data-i18n="landing.common.caseStudy">Caso de estudio →</a>
                 </div>
               </div>
 
@@ -284,27 +268,24 @@
                     <i class="fas fa-shield-alt"></i>
                   </div>
                   <div class="product-status commercial">
-                    <span class="status-dot"></span> Commercial
+                    <span class="status-dot"></span> <span data-i18n="landing.products.status.commercial">Comercial</span>
                   </div>
                 </div>
 
                 <div>
                   <h3 class="product-name">Forensic Data Extractor Suite</h3>
-                  <p class="product-type">Desktop Tool &nbsp;·&nbsp; Digital Forensics</p>
+                  <p class="product-type" data-i18n="landing.products.forensic.type">Herramienta de escritorio · Forense digital</p>
                 </div>
 
-                <p class="product-desc">
-                  Desktop application for legal-grade digital evidence acquisition. Extracts and
-                  cryptographically seals WhatsApp conversations and Android device content —
-                  producing court-admissible SHA-256 certified PDF reports. Built to international
-                  forensic standards (FBI guidelines, NOM-151-SCFI-2016).
+                <p class="product-desc" data-i18n="landing.products.forensic.desc">
+                  Aplicación de escritorio para adquisición de evidencia digital con validez legal. Extrae y sella criptográficamente conversaciones de WhatsApp y contenido Android, generando reportes PDF certificados con SHA-256 aptos para procesos judiciales.
                 </p>
 
                 <ul class="product-highlights">
-                  <li>SHA-256 hash integrity calculated immediately on extraction</li>
-                  <li>Auto-generated forensic PDF certificates with chain-of-custody data</li>
-                  <li>Dual extraction: WhatsApp Web via Playwright + Android storage via ADB</li>
-                  <li>100% local processing — zero data leaves the analyst's machine</li>
+                  <li data-i18n="landing.products.forensic.highlights.item1">Integridad SHA-256 calculada inmediatamente al extraer</li>
+                  <li data-i18n="landing.products.forensic.highlights.item2">Certificados PDF forenses autogenerados con cadena de custodia</li>
+                  <li data-i18n="landing.products.forensic.highlights.item3">Extracción dual: WhatsApp Web con Playwright y almacenamiento Android con ADB</li>
+                  <li data-i18n="landing.products.forensic.highlights.item4">Procesamiento 100% local sin sacar datos del equipo del analista</li>
                 </ul>
 
                 <div class="product-stack">
@@ -317,7 +298,7 @@
                 </div>
 
                 <div class="product-actions">
-                  <a href="proyectos/forensic-suite.html" class="product-btn-case">Case study →</a>
+                  <a href="proyectos/forensic-suite.html" class="product-btn-case" data-i18n="landing.common.caseStudy">Caso de estudio →</a>
                 </div>
               </div>
 
@@ -325,42 +306,38 @@
 
             <!-- Additional work -->
             <div class="additional-work">
-              <h3 class="additional-title">Additional Commercial Solutions</h3>
+              <h3 class="additional-title" data-i18n="landing.additional.title">Soluciones Comerciales Adicionales</h3>
               <div class="additional-grid">
 
                 <div class="additional-item">
                   <i class="fas fa-graduation-cap"></i>
                   <div>
-                    <strong>AI Assistant for Educational Institutions</strong>
-                    <p>Natural language SQL over institutional databases. Automated generation of
-                    certificates, student records, PDFs, and Excel exports.</p>
+                    <strong data-i18n="landing.additional.education.title">Asistente con IA para instituciones educativas</strong>
+                    <p data-i18n="landing.additional.education.desc">SQL en lenguaje natural sobre bases institucionales. Generación automática de constancias, expedientes, PDFs y exportaciones a Excel.</p>
                   </div>
                 </div>
 
                 <div class="additional-item">
                   <i class="fas fa-file-excel"></i>
                   <div>
-                    <strong>Enterprise Excel Validation Platform</strong>
-                    <p>Cross-table validation, subtotal verification, mathematical consistency
-                    checks. Reduced weeks of manual work to execution in seconds.</p>
+                    <strong data-i18n="landing.additional.excel.title">Plataforma empresarial de validación Excel</strong>
+                    <p data-i18n="landing.additional.excel.desc">Validación entre tablas, verificación de subtotales y consistencia matemática. Redujo semanas de trabajo manual a segundos.</p>
                   </div>
                 </div>
 
                 <div class="additional-item">
                   <i class="fas fa-search"></i>
                   <div>
-                    <strong>Lead Factory</strong>
-                    <p>Internal AI-powered lead generation platform. Combines scraping, data
-                    enrichment, and automated qualification. Currently used in production.</p>
+                    <strong data-i18n="landing.additional.leads.title">Lead Factory</strong>
+                    <p data-i18n="landing.additional.leads.desc">Plataforma interna de generación de leads con IA. Combina scraping, enriquecimiento de datos y calificación automatizada. Actualmente en producción.</p>
                   </div>
                 </div>
 
                 <div class="additional-item">
                   <i class="fas fa-server"></i>
                   <div>
-                    <strong>Web Development &amp; Infrastructure</strong>
-                    <p>15+ deployed commercial sites. Linux VPS management, Nginx, SSL/TLS,
-                    Cloudflare, DNS, Shopify, and WordPress legacy maintenance.</p>
+                    <strong data-i18n="landing.additional.web.title">Desarrollo web e infraestructura</strong>
+                    <p data-i18n="landing.additional.web.desc">Más de 15 sitios comerciales desplegados. Gestión de VPS Linux, Nginx, SSL/TLS, Cloudflare, DNS, Shopify y mantenimiento legacy en WordPress.</p>
                   </div>
                 </div>
 
@@ -378,153 +355,146 @@
           <div class="container">
 
             <div class="section-header">
-              <h2 class="section-title">Technical Projects</h2>
-              <p class="section-subtitle">
-                Selected engineering work demonstrating breadth across stacks and domains
+              <h2 class="section-title" data-i18n="landing.projects.title">Proyectos Técnicos</h2>
+              <p class="section-subtitle" data-i18n="landing.projects.subtitle">
+                Trabajo de ingeniería seleccionado que demuestra amplitud entre stacks y dominios
               </p>
             </div>
 
             <div class="filters-row" id="project-filters">
-              <button class="filter-btn active" data-filter="all">All</button>
-              <button class="filter-btn" data-filter="ai">AI</button>
-              <button class="filter-btn" data-filter="automation">Automation</button>
-              <button class="filter-btn" data-filter="desktop">Desktop</button>
-              <button class="filter-btn" data-filter="web">Web</button>
-              <button class="filter-btn" data-filter="mobile">Mobile</button>
+              <button class="filter-btn active" data-filter="all" data-i18n="landing.projects.filters.all">Todos</button>
+              <button class="filter-btn" data-filter="data" data-i18n="landing.projects.filters.data">Ingeniería de Datos</button>
+              <button class="filter-btn" data-filter="ai" data-i18n="landing.projects.filters.ai">Integración de IA</button>
+              <button class="filter-btn" data-filter="automation" data-i18n="landing.projects.filters.automation">Automatización Web</button>
+              <button class="filter-btn" data-filter="desktop" data-i18n="landing.projects.filters.desktop">Escritorio y Sistemas</button>
+              <button class="filter-btn" data-filter="web" data-i18n="landing.projects.filters.web">Desarrollo Web</button>
             </div>
 
             <div class="projects-grid" id="projects-container">
 
-              <div class="proj-card" data-categories="ai automation desktop">
+              <div class="proj-card" data-categories="ai desktop">
                 <div class="proj-icon"><i class="fas fa-graduation-cap"></i></div>
-                <h4>AI School Records System</h4>
-                <p>
-                  Desktop app with Master-Student AI architecture. Automates school record
-                  management with a conversational interface, intelligent intent routing, and
-                  automated PDF generation. In production at educational institutions.
+                <h4 data-i18n="landing.projects.cards.school.title">Sistema escolar con IA</h4>
+                <p data-i18n="landing.projects.cards.school.desc">
+                  App de escritorio con arquitectura IA Master-Student. Automatiza gestión escolar con interfaz conversacional, enrutamiento inteligente y generación automática de PDFs. En producción en instituciones educativas.
                 </p>
                 <div class="proj-stack">
                   <span>Python</span><span>PyQt5</span>
                   <span>Google Gemini</span><span>SQLite</span>
                 </div>
                 <a href="proyectos/constancias-escolares-ia.html" class="proj-link">
-                  View project →
+                  <span data-i18n="landing.common.viewProject">Ver proyecto →</span>
                 </a>
               </div>
 
-              <div class="proj-card" data-categories="automation desktop web">
+              <div class="proj-card" data-categories="data desktop">
                 <div class="proj-icon"><i class="fas fa-file-excel"></i></div>
-                <h4>Excel Validation System</h4>
-                <p>
-                  Hybrid platform (PyQt + React) for automated extraction, cross-table validation,
-                  and visualization of complex Excel data. Custom bidimensional algorithm handles
-                  merged cells and multi-sheet relationships.
+                <h4 data-i18n="landing.projects.cards.excel.title">Sistema de validación Excel</h4>
+                <p data-i18n="landing.projects.cards.excel.desc">
+                  Plataforma híbrida (PyQt + React) para extracción automatizada, validación entre tablas y visualización de datos Excel complejos. Un algoritmo bidimensional propio maneja celdas combinadas y relaciones multihoja.
                 </p>
                 <div class="proj-stack">
                   <span>Python</span><span>React</span>
                   <span>Flask</span><span>PyQt5</span><span>pandas</span>
                 </div>
                 <a href="proyectos/excel-scraper.html" class="proj-link">
-                  View project →
+                  <span data-i18n="landing.common.viewProject">Ver proyecto →</span>
                 </a>
               </div>
 
-              <div class="proj-card" data-categories="automation web">
+              <div class="proj-card" data-categories="data automation">
+                <div class="proj-icon"><i class="fas fa-network-wired"></i></div>
+                <h4 data-i18n="landing.projects.cards.enterprise.title">Pipeline empresarial de e-commerce</h4>
+                <p data-i18n="landing.projects.cards.enterprise.desc">
+                  Pipeline masivo de extracción de datos sobre más de 40 sitios oficiales de fabricantes. Incluye ingeniería inversa de APIs JSON, crawling multimarcas y limpieza dinámica lista para WooCommerce.
+                </p>
+                <div class="proj-stack">
+                  <span>Python</span><span>Selenium</span><span>Network Analysis</span>
+                </div>
+                <a href="proyectos/enterprise-scraper.html" class="proj-link">
+                  <span data-i18n="landing.common.viewProject">Ver proyecto →</span>
+                </a>
+              </div>
+
+              <div class="proj-card" data-categories="data automation">
                 <div class="proj-icon"><i class="fas fa-chart-bar"></i></div>
-                <h4>RTX Price Monitor</h4>
-                <p>
-                  Automated web scraper for GPU price tracking across multiple stores. Scheduled
-                  monitoring, SQLite storage, and price alert system with data export.
+                <h4 data-i18n="landing.projects.cards.rtx.title">Monitor de precios RTX</h4>
+                <p data-i18n="landing.projects.cards.rtx.desc">
+                  Scraper automatizado para monitoreo de precios GPU en múltiples tiendas. Incluye seguimiento programado, almacenamiento en SQLite y alertas con exportación de datos.
                 </p>
                 <div class="proj-stack">
                   <span>Python</span><span>BeautifulSoup</span><span>SQLite</span>
                 </div>
                 <a href="proyectos/scraping-productos.html" class="proj-link">
-                  View project →
+                  <span data-i18n="landing.common.viewProject">Ver proyecto →</span>
                 </a>
               </div>
 
-              <div class="proj-card" data-categories="mobile desktop">
+              <div class="proj-card" data-categories="desktop">
                 <div class="proj-icon"><i class="fas fa-mouse-pointer"></i></div>
-                <h4>Remote Mouse</h4>
-                <p>
-                  Mobile app for ultra-low latency PC control via WebSockets. Multi-touch gestures,
-                  virtual keyboard, and customizable shortcuts. Sub-8ms latency — optimized for
-                  live presentations.
+                <h4 data-i18n="landing.projects.cards.mouse.title">Mouse remoto</h4>
+                <p data-i18n="landing.projects.cards.mouse.desc">
+                  App móvil para control de PC con ultra baja latencia vía WebSockets. Gestos multitáctiles, teclado virtual y accesos rápidos personalizables. Latencia menor a 8 ms.
                 </p>
                 <div class="proj-stack">
                   <span>Flutter</span><span>Python</span><span>WebSockets</span>
                 </div>
-                <a href="proyectos/mouse-remoto.html" class="proj-link">
-                  View project →
+                <a href="proyectos/remote-mouse.html" class="proj-link">
+                  <span data-i18n="landing.common.viewProject">Ver proyecto →</span>
                 </a>
               </div>
 
-              <div class="proj-card" data-categories="automation desktop ai">
+              <div class="proj-card" data-categories="finance">
                 <div class="proj-icon"><i class="fas fa-file-medical"></i></div>
-                <h4>Medical License Automation</h4>
-                <p>
-                  Automation system for official medical license form completion. Voice recognition,
-                  multi-source input capture, and automatic document generation — eliminating manual
-                  data entry errors entirely.
+                <h4 data-i18n="landing.projects.cards.medical.title">Automatización de licencias médicas</h4>
+                <p data-i18n="landing.projects.cards.medical.desc">
+                  Sistema de automatización para llenado de formatos oficiales de licencias médicas. Reconocimiento de voz, captura multifuente y generación automática de documentos.
                 </p>
                 <div class="proj-stack">
                   <span>Python</span><span>python-docx</span><span>Voice Recognition</span>
                 </div>
                 <a href="proyectos/licencias-medicas.html" class="proj-link">
-                  View project →
+                  <span data-i18n="landing.common.viewProject">Ver proyecto →</span>
                 </a>
               </div>
 
-              <div class="proj-card" data-categories="web">
-                <div class="proj-icon"><i class="fas fa-palette"></i></div>
-                <h4>Commercial Web Portfolio</h4>
-                <p>
-                  15+ deployed commercial sites, landing pages, and corporate sites. Responsive
-                  design, SEO optimization, performance-first development. Shopify &amp; WordPress
-                  included.
-                </p>
-                <div class="proj-stack">
-                  <span>HTML/CSS</span><span>JavaScript</span>
-                  <span>WordPress</span><span>Shopify</span>
-                </div>
-                <a href="https://angeliteh.github.io/portfolio_webs/" target="_blank" class="proj-link">
-                  View portfolio →
-                </a>
-              </div>
-
-              <div class="proj-card" data-categories="web automation">
-                <div class="proj-icon"><i class="fas fa-download"></i></div>
-                <h4>Social Media Downloader</h4>
-                <p>
-                  Web platform for downloading social media videos without watermarks. Multi-format
-                  support, parallel processing pipeline, and clean modern interface.
+              <div class="proj-card" data-categories="tools">
+                <div class="proj-icon"><i class="fas fa-video"></i></div>
+                <h4 data-i18n="landing.projects.cards.downloader.title">Descargador de redes sociales</h4>
+                <p data-i18n="landing.projects.cards.downloader.desc">
+                  Plataforma web para descargar videos de redes sociales sin marcas de agua. Soporte multiformato, procesamiento paralelo e interfaz moderna.
                 </p>
                 <div class="proj-stack">
                   <span>JavaScript</span><span>Python</span><span>React</span>
                 </div>
                 <a href="proyectos/social-media-downloader.html" class="proj-link">
-                  View project →
+                  <span data-i18n="landing.common.viewProject">Ver proyecto →</span>
                 </a>
               </div>
 
               <div class="proj-card" data-categories="web">
-                <div class="proj-icon"><i class="fas fa-map-marker-alt"></i></div>
-                <h4>Distance Matrix Calculator</h4>
-                <p>
-                  Web tool for multi-point distance matrix calculation via Google Maps API. Route
-                  optimization for logistics teams, with real-time traffic estimates and Excel
-                  export.
+                <div class="proj-icon"><i class="fas fa-palette"></i></div>
+                <h4 data-i18n="landing.projects.cards.webPortfolio.title">Portafolio web comercial</h4>
+                <p data-i18n="landing.projects.cards.webPortfolio.desc">
+                  Más de 15 sitios comerciales desplegados, landing pages y sitios corporativos. Diseño responsive, optimización SEO y desarrollo orientado a rendimiento.
                 </p>
                 <div class="proj-stack">
-                  <span>JavaScript</span><span>Google Maps API</span><span>Node.js</span>
+                  <span>HTML/CSS</span><span>JavaScript</span><span>WordPress</span><span>Shopify</span>
                 </div>
-                <a href="proyectos/calculadora-distancias.html" class="proj-link">
-                  View project →
+                <a href="proyectos/web-portfolio.html" class="proj-link">
+                  <span data-i18n="landing.common.viewPortfolio">Ver portafolio →</span>
                 </a>
               </div>
 
             </div><!-- /projects-grid -->
+
+            <div class="projects-mobile-ui" aria-hidden="true">
+              <div class="projects-mobile-hint">
+                <span data-i18n="landing.projects.mobileHint">Desliza para ver más</span>
+                <i class="fas fa-arrow-right"></i>
+              </div>
+              <div class="projects-mobile-dots" id="projects-mobile-dots"></div>
+            </div>
 
           </div>
         </section>
@@ -537,16 +507,16 @@
           <div class="container">
 
             <div class="section-header">
-              <h2 class="section-title">Technical Skills</h2>
-              <p class="section-subtitle">
-                A stack built through years of shipping real products, not tutorials
+              <h2 class="section-title" data-i18n="landing.skills.title">Habilidades Técnicas</h2>
+              <p class="section-subtitle" data-i18n="landing.skills.subtitle">
+                Un stack construido a través de años entregando productos reales, no tutoriales
               </p>
             </div>
 
             <div class="skills-grid">
 
               <div class="skill-group">
-                <h4 class="skill-group-title">Languages</h4>
+                <h4 class="skill-group-title" data-i18n="landing.skills.groups.languages">Lenguajes</h4>
                 <div class="skill-tags">
                   <span>Python</span>
                   <span>JavaScript</span>
@@ -559,7 +529,7 @@
               </div>
 
               <div class="skill-group">
-                <h4 class="skill-group-title">Frameworks &amp; Libraries</h4>
+                <h4 class="skill-group-title" data-i18n="landing.skills.groups.frameworks">Frameworks y Librerías</h4>
                 <div class="skill-tags">
                   <span>FastAPI</span>
                   <span>Flask</span>
@@ -574,7 +544,7 @@
               </div>
 
               <div class="skill-group">
-                <h4 class="skill-group-title">Artificial Intelligence</h4>
+                <h4 class="skill-group-title" data-i18n="landing.skills.groups.ai">Inteligencia Artificial</h4>
                 <div class="skill-tags">
                   <span>OpenAI API</span>
                   <span>OpenRouter</span>
@@ -587,7 +557,7 @@
               </div>
 
               <div class="skill-group">
-                <h4 class="skill-group-title">Databases</h4>
+                <h4 class="skill-group-title" data-i18n="landing.skills.groups.databases">Bases de Datos</h4>
                 <div class="skill-tags">
                   <span>PostgreSQL</span>
                   <span>Supabase</span>
@@ -597,7 +567,7 @@
               </div>
 
               <div class="skill-group">
-                <h4 class="skill-group-title">Infrastructure &amp; DevOps</h4>
+                <h4 class="skill-group-title" data-i18n="landing.skills.groups.infrastructure">Infraestructura y DevOps</h4>
                 <div class="skill-tags">
                   <span>Linux / VPS</span>
                   <span>Docker</span>
@@ -611,7 +581,7 @@
               </div>
 
               <div class="skill-group">
-                <h4 class="skill-group-title">Automation &amp; Data</h4>
+                <h4 class="skill-group-title" data-i18n="landing.skills.groups.automation">Automatización y Datos</h4>
                 <div class="skill-tags">
                   <span>Playwright</span>
                   <span>Browser Automation</span>
@@ -638,9 +608,9 @@
             <div class="contact-block">
 
               <div class="section-header">
-                <h2 class="section-title">Get in Touch</h2>
-                <p class="section-subtitle">
-                  Open to full-time roles, freelance projects, and interesting conversations
+                <h2 class="section-title" data-i18n="landing.contact.title">Contacto</h2>
+                <p class="section-subtitle" data-i18n="landing.contact.subtitle">
+                  Abierto a roles de tiempo completo, proyectos freelance y conversaciones interesantes
                 </p>
               </div>
 
@@ -685,54 +655,45 @@
                   </a>
                 </div>
 
-                <!-- Form -->
-                <form
-                  id="contact"
-                  class="contact-form"
-                  action="https://formspree.io/f/mjuannangell"
-                  method="POST"
-                >
-                  <div class="form-row">
-                    <div class="form-field">
-                      <label for="name">Name</label>
-                      <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        placeholder="Your name"
-                        required
-                      />
+                <!-- Direct CTAs -->
+                <div class="contact-cta-block">
+                  <p class="contact-cta-intro" data-i18n="contact.ctaIntro">Prefiero responder rápido. Escríbeme directamente:</p>
+
+                  <a
+                    id="whatsapp-cta"
+                    href="https://wa.me/526182582819?text=Hola%20Angel%2C%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20hablar%20contigo."
+                    target="_blank"
+                    class="cta-channel whatsapp"
+                  >
+                    <div class="cta-channel-icon"><i class="fab fa-whatsapp"></i></div>
+                    <div>
+                      <div class="cta-channel-label">WhatsApp</div>
+                      <div class="cta-channel-value">+52 618 258 2819</div>
                     </div>
-                    <div class="form-field">
-                      <label for="email">Email</label>
-                      <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="your@email.com"
-                        required
-                      />
+                    <i class="fas fa-arrow-right cta-channel-arrow"></i>
+                  </a>
+
+                  <a
+                    id="email-cta"
+                    href="mailto:angelpayanm@gmail.com?subject=Oportunidad%20-%20Portfolio&body=Hola%20Angel%2C%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20hablar%20contigo."
+                    class="cta-channel email"
+                  >
+                    <div class="cta-channel-icon"><i class="fas fa-envelope"></i></div>
+                    <div>
+                      <div class="cta-channel-label">Email</div>
+                      <div class="cta-channel-value">angelpayanm@gmail.com</div>
                     </div>
-                  </div>
-                  <div class="form-field">
-                    <label for="message">Message</label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      rows="5"
-                      placeholder="Tell me about your project, role, or idea..."
-                      required
-                    ></textarea>
-                  </div>
-                  <button type="submit" id="form-submit" class="btn-primary">
-                    <i class="fas fa-paper-plane"></i> Send Message
-                  </button>
-                </form>
+                    <i class="fas fa-arrow-right cta-channel-arrow"></i>
+                  </a>
+
+                  <p class="contact-cta-note" data-i18n="contact.responseTime"><i class="fas fa-clock"></i> Respondo en menos de 24 horas</p>
+                </div>
 
               </div>
             </div>
           </div>
         </section>
+
 
         <!-- Footer -->
         <footer class="site-footer">
@@ -790,6 +751,61 @@
         // ── Project filters ──
         const filterBtns = document.querySelectorAll('.filter-btn');
         const projCards  = document.querySelectorAll('.proj-card');
+        const projectsContainer = document.getElementById('projects-container');
+        const mobileDots = document.getElementById('projects-mobile-dots');
+
+        function getVisibleProjectCards() {
+          return Array.from(projCards).filter(card => card.style.display !== 'none');
+        }
+
+        function renderProjectMobileDots(activeIndex = 0) {
+          if (!mobileDots) return;
+          const visibleCards = getVisibleProjectCards();
+          mobileDots.innerHTML = '';
+          visibleCards.forEach((_, index) => {
+            const dot = document.createElement('button');
+            dot.type = 'button';
+            dot.className = `projects-mobile-dot${index === activeIndex ? ' active' : ''}`;
+            dot.setAttribute('aria-label', `Ir al proyecto ${index + 1}`);
+            dot.addEventListener('click', () => {
+              const targetCard = visibleCards[index];
+              if (!targetCard) return;
+              targetCard.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+            });
+            mobileDots.appendChild(dot);
+          });
+        }
+
+        function updateProjectMobileDots() {
+          if (!projectsContainer || window.innerWidth > 600) return;
+          const visibleCards = getVisibleProjectCards();
+          if (!visibleCards.length) return;
+
+          const containerRect = projectsContainer.getBoundingClientRect();
+          let activeIndex = 0;
+          let closestDistance = Number.POSITIVE_INFINITY;
+
+          visibleCards.forEach((card, index) => {
+            const cardRect = card.getBoundingClientRect();
+            const distance = Math.abs((cardRect.left + cardRect.width / 2) - (containerRect.left + containerRect.width / 2));
+            if (distance < closestDistance) {
+              closestDistance = distance;
+              activeIndex = index;
+            }
+          });
+
+          Array.from(mobileDots?.children || []).forEach((dot, index) => {
+            dot.classList.toggle('active', index === activeIndex);
+          });
+        }
+
+        if (projectsContainer) {
+          projectsContainer.addEventListener('scroll', updateProjectMobileDots, { passive: true });
+          window.addEventListener('resize', () => {
+            renderProjectMobileDots();
+            updateProjectMobileDots();
+          });
+        }
 
         filterBtns.forEach(btn => {
           btn.addEventListener('click', function () {
@@ -805,8 +821,14 @@
                 card.style.display = cats.includes(filter) ? 'flex' : 'none';
               }
             });
+
+            renderProjectMobileDots();
+            updateProjectMobileDots();
           });
         });
+
+        renderProjectMobileDots();
+        updateProjectMobileDots();
 
         // ── Active nav highlight on scroll ──
         const sections = document.querySelectorAll('.section');

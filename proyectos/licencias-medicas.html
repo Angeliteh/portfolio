@@ -3,49 +3,58 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project - Angel</title>
+    <meta name="description" content="Licencias Médicas - Angel Payan - Caso de estudio de ingeniería de software por Angel Payan.">
+    <title>Licencias Médicas - Angel Payan</title>
+    
     <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
+    
     <link rel="stylesheet" href="../assets/css/fontawesome.css">
     <link rel="stylesheet" href="../assets/css/portfolio.css">
     <link rel="stylesheet" href="../assets/css/project.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   </head>
+
   <body class="project-page">
     <div id="sidebar-container"></div>
+    
     <div id="main-content">
       <div class="container">
         
+        <!-- Hero Section -->
         <div class="proj-hero">
           <a href="../index.html#section3" class="proj-hero-back">
             <i class="fas fa-arrow-left"></i> <span data-i18n="medicalLicenseProject.navigation.backToPortfolio">Volver al Portafolio</span>
           </a>
+          
           <div class="proj-hero-meta">
-            <span class="proj-category-badge orange">RPA & Automation</span>
+            <span class="proj-category-badge purple">Desktop & Systems</span>
           </div>
-          <h1 class="proj-hero-title" data-i18n="medicalLicenseProject.title">Título</h1>
-          <p class="proj-hero-tagline" data-i18n="medicalLicenseProject.subtitle">Subtítulo</p>
+          
+          <h1 class="proj-hero-title" data-i18n="medicalLicenseProject.title">Sistema de Automatización de Licencias Médicas</h1>
+          <p class="proj-hero-tagline" data-i18n="medicalLicenseProject.subtitle">Herramienta de automatización para generar licencias médicas oficiales</p>
+          
           <div class="proj-hero-actions">
-            <a href="https://github.com/angeliteh" target="_blank" class="btn-secondary">
-              <i class="fab fa-github"></i> <span data-i18n="medicalLicenseProject.resourceLinks.sourceCode">Ver Código</span>
-            </a>
+            <!-- Project is private/internal, no source code link -->
           </div>
 
+          <!-- Hero Metrics -->
           <div class="proj-meta-row">
             <div class="proj-meta-item">
-              <div class="proj-meta-label">Role</div>
-              <div class="proj-meta-value">RPA Developer</div>
+              <div class="proj-meta-label">Impacto</div>
+              <div class="proj-meta-value" data-i18n="medicalLicenseProject.metrics.timeReduction">95% reducción tiempo</div>
             </div>
             <div class="proj-meta-item">
-              <div class="proj-meta-label">Timeline</div>
-              <div class="proj-meta-value">2 Weeks</div>
+              <div class="proj-meta-label">Complejidad</div>
+              <div class="proj-meta-value" data-i18n="medicalLicenseProject.metrics.fields">18 campos diferentes</div>
+            </div>
+            <div class="proj-meta-item">
+              <div class="proj-meta-label">Precisión</div>
+              <div class="proj-meta-value" data-i18n="medicalLicenseProject.metrics.errorFree">100% sin errores</div>
             </div>
             <div class="proj-meta-item">
               <div class="proj-meta-label">Tech</div>
-              <div class="proj-meta-value">Python, Docx</div>
-            </div>
-            <div class="proj-meta-item">
-              <div class="proj-meta-label">Impact</div>
-              <div class="proj-meta-value">100% Precisión</div>
+              <div class="proj-meta-value">Python, python-docx</div>
             </div>
           </div>
         </div>
@@ -54,133 +63,212 @@
           <div class="proj-content-grid">
             <main class="proj-main">
               
+              <!-- Carousel -->
               <div class="proj-carousel-wrap">
                 <div class="carousel-container">
-                  <div class="carousel-slides count-2" id="carousel-slides">
-                    <div class="carousel-slide active"><img src="../assets/images/projects/licencias-medicas/image_1.png" alt="Screenshot"></div>
-<div class="carousel-slide"><img src="../assets/images/projects/licencias-medicas/image_2.png" alt="Screenshot"></div>
-
+                  <div class="carousel-slides count-1" id="carousel-slides">
+                    <div class="carousel-slide active"><img loading="lazy" src="../assets/images/projects/licencias-medicas/main-preview.png" alt="Sistema de Licencias Médicas"></div>
                   </div>
-                  <button class="carousel-btn prev" id="carousel-prev"><i class="fas fa-chevron-left"></i></button>
-                  <button class="carousel-btn next" id="carousel-next"><i class="fas fa-chevron-right"></i></button>
+                  <!-- No arrows needed for 1 image -->
                   <button class="carousel-fullscreen-btn" id="carousel-fullscreen"><i class="fas fa-expand"></i></button>
-                  <div class="carousel-counter"><span id="current-slide">1</span> / 2</div>
-                </div>
-                <div class="carousel-indicators-row" id="carousel-indicators">
-                  <button class="carousel-dot active" data-slide="0"></button>
-<button class="carousel-dot" data-slide="1"></button>
-
+                  <div class="carousel-counter"><span id="current-slide">1</span> / 1</div>
                 </div>
               </div>
 
+              <!-- Overview -->
               <div class="content-block">
-                <div class="content-block-title" data-i18n="medicalLicenseProject.sections.overview">Overview</div>
-                <p data-i18n="medicalLicenseProject.sections.overviewText">Descripción</p>
+                <div class="content-block-title" data-i18n="medicalLicenseProject.sections.overview">Descripción General</div>
+                <p data-i18n="medicalLicenseProject.sections.overviewText">Sistema desarrollado para una oficina del sector salud que automatiza el proceso de llenado de formatos de licencias médicas. Elimina la captura manual de datos repetitivos, reduce errores humanos y acelera significativamente el proceso de generación de documentos oficiales. El sistema procesa plantillas de Word con campos predefinidos y genera documentos completos listos para firma y entrega.</p>
+                
+                <h3 style="margin-top:2rem; font-size:1.1rem; color:var(--text); margin-bottom:1rem;">Características Principales</h3>
+                <div class="feature-list" style="display: flex; flex-direction: column; gap: 1rem;">
+                  <div class="feature-item" style="display: flex; gap: 1rem; align-items: flex-start;">
+                    <div style="background: rgba(59, 130, 246, 0.1); color: #3b82f6; width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                      <i class="fas fa-microphone"></i>
+                    </div>
+                    <div>
+                      <strong data-i18n="medicalLicenseProject.features.multipleInterfaces.title" style="color: var(--text); display: block; margin-bottom: 0.25rem;">Múltiples Interfaces de Captura</strong>
+                      <p data-i18n="medicalLicenseProject.features.multipleInterfaces.desc" style="margin: 0; color: var(--text-muted); font-size: 0.95rem; line-height: 1.5;">Comandos, modo guiado, reconocimiento de voz y diccionarios predefinidos</p>
+                    </div>
+                  </div>
+                  
+                  <div class="feature-item" style="display: flex; gap: 1rem; align-items: flex-start;">
+                    <div style="background: rgba(163, 113, 247, 0.1); color: #a371f7; width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                      <i class="fas fa-file-word"></i>
+                    </div>
+                    <div>
+                      <strong data-i18n="medicalLicenseProject.features.intelligentProcessing.title" style="color: var(--text); display: block; margin-bottom: 0.25rem;">Procesamiento Inteligente de Plantillas</strong>
+                      <p data-i18n="medicalLicenseProject.features.intelligentProcessing.desc" style="margin: 0; color: var(--text-muted); font-size: 0.95rem; line-height: 1.5;">Detección automática de campos con preservación del formato original</p>
+                    </div>
+                  </div>
+
+                  <div class="feature-item" style="display: flex; gap: 1rem; align-items: flex-start;">
+                    <div style="background: rgba(16, 185, 129, 0.1); color: #10b981; width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                      <i class="fas fa-notes-medical"></i>
+                    </div>
+                    <div>
+                      <strong data-i18n="medicalLicenseProject.features.medicalDataManagement.title" style="color: var(--text); display: block; margin-bottom: 0.25rem;">Gestión de Datos Médicos Especializados</strong>
+                      <p data-i18n="medicalLicenseProject.features.medicalDataManagement.desc" style="margin: 0; color: var(--text-muted); font-size: 0.95rem; line-height: 1.5;">Campos específicos para diagnósticos, períodos y información administrativa</p>
+                    </div>
+                  </div>
+                </div>
               </div>
 
+              <!-- Demo & Arch Tabs -->
               <div class="demo-tabs-wrap">
                 <div class="demo-tabs-header">
                   <button class="demo-tab-btn active" data-tab="demo"><i class="fas fa-play-circle"></i> <span data-i18n="medicalLicenseProject.sections.videoDemo">Video Demo</span></button>
-                  <button class="demo-tab-btn" data-tab="arch"><i class="fas fa-layer-group"></i> Architecture</button>
+                  <button class="demo-tab-btn" data-tab="arch"><i class="fas fa-layer-group"></i> <span>Arquitectura General</span></button>
                 </div>
+                
+                <!-- Demo Pane -->
                 <div class="demo-tab-pane active" id="pane-demo">
                   <div class="youtube-wrap">
-                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/XVJ6pKblMXc" allowfullscreen></iframe>
                   </div>
                   <div class="video-caption">
-                    <h4 data-i18n="medicalLicenseProject.video.title">Demostración</h4>
-                    <p data-i18n="medicalLicenseProject.video.description">Observa el sistema en acción.</p>
+                    <h4 data-i18n="medicalLicenseProject.sections.videoDemo">Demostración en Video</h4>
+                    <p data-i18n="medicalLicenseProject.sections.videoDescription">Demostración de automatización de licencias médicas en acción</p>
                   </div>
                 </div>
+
+                <!-- Arch Pane -->
                 <div class="demo-tab-pane" id="pane-arch">
                   <div class="arch-block">
                     <pre>
-<span class="purple">Core Layer</span>
-    └─ Backend & Analytics
+<span class="purple">Interfaz de Usuario</span>
+    └─ Input de Comandos / Guiado
+    └─ Procesamiento de Voz (SpeechRecognition)
 
-<span class="blue">Service Layer</span>
-    └─ API & Processing
+<span class="blue">Módulo de Procesamiento Principal</span>
+    └─ Extractor de Entidades
+    └─ Mapeo con Diccionarios de Diagnósticos
+    └─ Cálculo de Períodos de Licencia
 
-<span class="accent">Presentation Layer</span>
-    └─ Frontend & Interfaces</pre>
+<span class="accent">Generación de Documentos</span>
+    └─ Motor Python-Docx
+    └─ Búsqueda y Reemplazo Preservando Formato
+    └─ Exportación Lista para Firma</pre>
                   </div>
                 </div>
               </div>
 
+              <!-- Challenges -->
               <div class="content-block">
-                <div class="content-block-title" data-i18n="medicalLicenseProject.sections.challenges">Technical Challenges</div>
+                <div class="content-block-title" data-i18n="medicalLicenseProject.sections.challenges">Desafíos Técnicos y Soluciones</div>
                 <div class="challenges-list">
                   <div class="challenge-card">
                     <div class="challenge-header">
-                      <i class="fas fa-exclamation-triangle"></i>
-                      <h4 data-i18n="medicalLicenseProject.challengesList.challenge1.title">Desafío 1</h4>
+                      <i class="fas fa-file-alt"></i>
+                      <h4 data-i18n="medicalLicenseProject.challengesList.complexFieldDetection.title">Detección de Campos Complejos</h4>
                     </div>
                     <div class="challenge-body">
                       <div class="challenge-problem">
                         <span class="challenge-label">Problem</span>
-                        <p data-i18n="medicalLicenseProject.challengesList.challenge1.problem">Problema</p>
+                        <p data-i18n="medicalLicenseProject.challengesList.complexFieldDetection.problem">Los campos pueden estar en párrafos o tablas con formato complejo.</p>
                       </div>
                       <div class="challenge-solution">
                         <span class="challenge-label">Solution</span>
-                        <p data-i18n="medicalLicenseProject.challengesList.challenge1.solution">Solución</p>
+                        <p data-i18n="medicalLicenseProject.challengesList.complexFieldDetection.solution">Búsqueda recursiva en todos los elementos del documento (párrafos, tablas, celdas).</p>
                       </div>
                     </div>
                   </div>
                   <div class="challenge-card">
                     <div class="challenge-header">
-                      <i class="fas fa-exclamation-triangle"></i>
-                      <h4 data-i18n="medicalLicenseProject.challengesList.challenge2.title">Desafío 2</h4>
+                      <i class="fas fa-users"></i>
+                      <h4 data-i18n="medicalLicenseProject.challengesList.nonTechnicalInterface.title">Interfaz para Personal No Técnico</h4>
                     </div>
                     <div class="challenge-body">
                       <div class="challenge-problem">
                         <span class="challenge-label">Problem</span>
-                        <p data-i18n="medicalLicenseProject.challengesList.challenge2.problem">Problema</p>
+                        <p data-i18n="medicalLicenseProject.challengesList.nonTechnicalInterface.problem">El personal médico necesitaba una interfaz simple e intuitiva.</p>
                       </div>
                       <div class="challenge-solution">
                         <span class="challenge-label">Solution</span>
-                        <p data-i18n="medicalLicenseProject.challengesList.challenge2.solution">Solución</p>
+                        <p data-i18n="medicalLicenseProject.challengesList.nonTechnicalInterface.solution">Múltiples interfaces (guiada, por voz, comandos) adaptadas a diferentes niveles.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="challenge-card">
+                    <div class="challenge-header">
+                      <i class="fas fa-magic"></i>
+                      <h4 data-i18n="medicalLicenseProject.challengesList.formatPreservation.title">Preservación del Formato</h4>
+                    </div>
+                    <div class="challenge-body">
+                      <div class="challenge-problem">
+                        <span class="challenge-label">Problem</span>
+                        <p data-i18n="medicalLicenseProject.challengesList.formatPreservation.problem">Los documentos generados deben mantener exactamente el mismo formato que los oficiales.</p>
+                      </div>
+                      <div class="challenge-solution">
+                        <span class="challenge-label">Solution</span>
+                        <p data-i18n="medicalLicenseProject.challengesList.formatPreservation.solution">Uso avanzado de python-docx para modificar solo el texto de los "Runs" específicos.</p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
 
+              <!-- Navigation -->
               <div class="proj-navigation">
-                <a href="scraping-productos.html" class="proj-nav-link">
+                <!-- Relevance order: Distance Calculator is deleted, so previous is Remote Mouse, next is Web Portfolio or similar -->
+                <a href="remote-mouse.html" class="proj-nav-link">
                   <i class="fas fa-arrow-left"></i>
-                  <div><span class="proj-nav-label">Previous</span>RTX Scraper</div>
+                  <div><span class="proj-nav-label">Previous</span>Remote Mouse</div>
                 </a>
-                <a href="mouse-remoto.html" class="proj-nav-link next">
+                <a href="web-portfolio.html" class="proj-nav-link next">
                   <i class="fas fa-arrow-right"></i>
-                  <div><span class="proj-nav-label">Next</span>Remote Mouse</div>
+                  <div><span class="proj-nav-label" data-i18n="medicalLicenseProject.navigation.nextProject">Next</span>Web Portfolio</div>
                 </a>
               </div>
             </main>
 
+            <!-- Sidebar -->
             <aside class="proj-sidebar">
               <div class="sidebar-widget">
                 <div class="sidebar-widget-title" data-i18n="medicalLicenseProject.sections.techStack">Tech Stack</div>
                 <div class="stack-list">
-                  <div class="stack-row"><span class="label">Main Tech</span><span class="value">Python, Docx</span></div>
+                  <div class="stack-row">
+                    <span class="label">Lenguaje</span>
+                    <span class="value">Python 3</span>
+                  </div>
+                  <div class="stack-row">
+                    <span class="label">Documentos</span>
+                    <span class="value">python-docx</span>
+                  </div>
+                  <div class="stack-row">
+                    <span class="label">Entrada</span>
+                    <span class="value">Speech Recognition</span>
+                  </div>
                 </div>
               </div>
+
+              <div class="sidebar-widget">
+                <div class="sidebar-widget-title" data-i18n="medicalLicenseProject.techDetails.architecture.title">Arquitectura</div>
+                <ul class="product-highlights" style="margin-top: 10px;">
+                  <li data-i18n="medicalLicenseProject.techDetails.architecture.items.0">Patrón modular con separación de responsabilidades</li>
+                  <li data-i18n="medicalLicenseProject.techDetails.architecture.items.1">Módulos especializados por tipo de interfaz</li>
+                  <li data-i18n="medicalLicenseProject.techDetails.architecture.items.2">Procesamiento secuencial con validación</li>
+                  <li data-i18n="medicalLicenseProject.techDetails.architecture.items.3">Manejo de diccionarios Python para mapeo</li>
+                </ul>
+              </div>
             </aside>
+            
           </div>
         </div>
       </div>
     </div>
 
+    <!-- Carousel Modal -->
     <div class="carousel-modal" id="carousel-modal">
       <button class="carousel-modal-close" id="carousel-modal-close"><i class="fas fa-times"></i></button>
-      <button class="carousel-modal-nav carousel-modal-prev" id="carousel-modal-prev"><i class="fas fa-chevron-left"></i></button>
-      <button class="carousel-modal-nav carousel-modal-next" id="carousel-modal-next"><i class="fas fa-chevron-right"></i></button>
-      <div class="carousel-modal-counter"><span id="modal-current-slide">1</span> / 2</div>
-      <img id="carousel-modal-img" src="" alt="Fullscreen view">
+      <div class="carousel-modal-counter"><span id="modal-current-slide">1</span> / 1</div>
+      <img loading="lazy" id="carousel-modal-img" src="" alt="Fullscreen view">
     </div>
 
     <!-- Scripts -->
     <script src="../vendor/jquery/jquery.min.js"></script>
     <script src="../assets/js/template-loader.js"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/22.4.9/i18next.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next-http-backend/2.1.1/i18nextHttpBackend.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-i18next/1.2.1/jquery-i18next.min.js"></script>
@@ -191,39 +279,12 @@
       document.addEventListener('DOMContentLoaded', async () => {
         await TemplateLoader.loadSidebar();
         
-        // Carousel Logic
-        const slides = document.getElementById('carousel-slides');
-        const dots = document.querySelectorAll('.carousel-dot');
-        const counter = document.getElementById('current-slide');
-        let index = 0; const total = 2;
-
-        function update() {
-          slides.style.transform = `translateX(-${index * (100/total)}%)`;
-          dots.forEach((d, i) => d.classList.toggle('active', i === index));
-          counter.textContent = index + 1;
-        }
-        document.getElementById('carousel-next')?.addEventListener('click', () => { index = (index + 1) % total; update(); });
-        document.getElementById('carousel-prev')?.addEventListener('click', () => { index = (index - 1 + total) % total; update(); });
-        dots.forEach((d, i) => d.addEventListener('click', () => { index = i; update(); }));
-
-        // Tabs Logic
-        document.querySelectorAll('.demo-tab-btn').forEach(btn => {
-          btn.addEventListener('click', () => {
-            document.querySelectorAll('.demo-tab-btn').forEach(b => b.classList.remove('active'));
-            document.querySelectorAll('.demo-tab-pane').forEach(p => p.classList.remove('active'));
-            btn.classList.add('active');
-            document.getElementById('pane-' + btn.dataset.tab).classList.add('active');
-          });
-        });
-
-        // Fullscreen Modal Logic
+        // Single slide, no carousel logic needed for next/prev
         const modal = document.getElementById('carousel-modal');
         const modalImg = document.getElementById('carousel-modal-img');
-        const modalCounter = document.getElementById('modal-current-slide');
         
         function updateModal() {
-          modalImg.src = document.querySelectorAll('.carousel-slide img')[index].src;
-          modalCounter.textContent = index + 1;
+          modalImg.src = document.querySelector('.carousel-slide.active img').src;
         }
 
         document.getElementById('carousel-fullscreen')?.addEventListener('click', () => {
@@ -235,16 +296,14 @@
           modal.classList.remove('active');
         });
 
-        document.getElementById('carousel-modal-next')?.addEventListener('click', () => {
-          index = (index + 1) % total;
-          updateModal();
-          update();
-        });
-
-        document.getElementById('carousel-modal-prev')?.addEventListener('click', () => {
-          index = (index - 1 + total) % total;
-          updateModal();
-          update();
+        // Tabs Logic
+        document.querySelectorAll('.demo-tab-btn').forEach(btn => {
+          btn.addEventListener('click', () => {
+            document.querySelectorAll('.demo-tab-btn').forEach(b => b.classList.remove('active'));
+            document.querySelectorAll('.demo-tab-pane').forEach(p => p.classList.remove('active'));
+            btn.classList.add('active');
+            document.getElementById('pane-' + btn.dataset.tab).classList.add('active');
+          });
         });
       });
     </script>
