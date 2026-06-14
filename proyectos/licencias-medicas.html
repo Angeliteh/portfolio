@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Licencias Médicas - Angel Payan - Caso de estudio de ingeniería de software por Angel Payan.">
-    <title>Licencias Médicas - Angel Payan</title>
+    <meta name="description" data-i18n="[content]medicalLicenseProject.sections.overviewText" content="Licencias Medicas - Angel Payan - Caso de estudio de ingenieria de software por Angel Payan.">
+    <title data-i18n="medicalLicenseProject.title">Licencias Medicas</title>
     
     <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
@@ -28,7 +28,7 @@
           </a>
           
           <div class="proj-hero-meta">
-            <span class="proj-category-badge purple">Desktop & Systems</span>
+            <span class="proj-category-badge purple" data-i18n="medicalLicenseProject.badges.category">Desktop & Systems</span>
           </div>
           
           <h1 class="proj-hero-title" data-i18n="medicalLicenseProject.title">Sistema de Automatización de Licencias Médicas</h1>
@@ -41,20 +41,20 @@
           <!-- Hero Metrics -->
           <div class="proj-meta-row">
             <div class="proj-meta-item">
-              <div class="proj-meta-label">Impacto</div>
+              <div class="proj-meta-label" data-i18n="medicalLicenseProject.meta.impact">Impacto</div>
               <div class="proj-meta-value" data-i18n="medicalLicenseProject.metrics.timeReduction">95% reducción tiempo</div>
             </div>
             <div class="proj-meta-item">
-              <div class="proj-meta-label">Complejidad</div>
+              <div class="proj-meta-label" data-i18n="medicalLicenseProject.meta.complexity">Complejidad</div>
               <div class="proj-meta-value" data-i18n="medicalLicenseProject.metrics.fields">18 campos diferentes</div>
             </div>
             <div class="proj-meta-item">
-              <div class="proj-meta-label">Precisión</div>
+              <div class="proj-meta-label" data-i18n="medicalLicenseProject.meta.precision">Precisión</div>
               <div class="proj-meta-value" data-i18n="medicalLicenseProject.metrics.errorFree">100% sin errores</div>
             </div>
             <div class="proj-meta-item">
-              <div class="proj-meta-label">Tech</div>
-              <div class="proj-meta-value">Python, python-docx</div>
+              <div class="proj-meta-label" data-i18n="medicalLicenseProject.meta.tech">Tech</div>
+              <div class="proj-meta-value" data-i18n="medicalLicenseProject.meta.techValue">Python, python-docx</div>
             </div>
           </div>
         </div>
@@ -80,7 +80,7 @@
                 <div class="content-block-title" data-i18n="medicalLicenseProject.sections.overview">Descripción General</div>
                 <p data-i18n="medicalLicenseProject.sections.overviewText">Sistema desarrollado para una oficina del sector salud que automatiza el proceso de llenado de formatos de licencias médicas. Elimina la captura manual de datos repetitivos, reduce errores humanos y acelera significativamente el proceso de generación de documentos oficiales. El sistema procesa plantillas de Word con campos predefinidos y genera documentos completos listos para firma y entrega.</p>
                 
-                <h3 style="margin-top:2rem; font-size:1.1rem; color:var(--text); margin-bottom:1rem;">Características Principales</h3>
+                <h3 style="margin-top:2rem; font-size:1.1rem; color:var(--text); margin-bottom:1rem;" data-i18n="medicalLicenseProject.sections.features">Características Principales</h3>
                 <div class="feature-list" style="display: flex; flex-direction: column; gap: 1rem;">
                   <div class="feature-item" style="display: flex; gap: 1rem; align-items: flex-start;">
                     <div style="background: rgba(59, 130, 246, 0.1); color: #3b82f6; width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
@@ -118,7 +118,7 @@
               <div class="demo-tabs-wrap">
                 <div class="demo-tabs-header">
                   <button class="demo-tab-btn active" data-tab="demo"><i class="fas fa-play-circle"></i> <span data-i18n="medicalLicenseProject.sections.videoDemo">Video Demo</span></button>
-                  <button class="demo-tab-btn" data-tab="arch"><i class="fas fa-layer-group"></i> <span>Arquitectura General</span></button>
+                  <button class="demo-tab-btn" data-tab="arch"><i class="fas fa-layer-group"></i> <span data-i18n="medicalLicenseProject.sections.generalArchitecture">Arquitectura General</span></button>
                 </div>
                 
                 <!-- Demo Pane -->
@@ -136,19 +136,19 @@
                 <div class="demo-tab-pane" id="pane-arch">
                   <div class="arch-block">
                     <pre>
-<span class="purple">Interfaz de Usuario</span>
-    └─ Input de Comandos / Guiado
-    └─ Procesamiento de Voz (SpeechRecognition)
+<span class="purple" data-i18n="medicalLicenseProject.archDiagram.userInterface.title">Interfaz de Usuario</span>
+    <span data-i18n="medicalLicenseProject.archDiagram.userInterface.item1">└─ Input de Comandos / Guiado</span>
+    <span data-i18n="medicalLicenseProject.archDiagram.userInterface.item2">└─ Procesamiento de Voz (SpeechRecognition)</span>
 
-<span class="blue">Módulo de Procesamiento Principal</span>
-    └─ Extractor de Entidades
-    └─ Mapeo con Diccionarios de Diagnósticos
-    └─ Cálculo de Períodos de Licencia
+<span class="blue" data-i18n="medicalLicenseProject.archDiagram.coreModule.title">Módulo de Procesamiento Principal</span>
+    <span data-i18n="medicalLicenseProject.archDiagram.coreModule.item1">└─ Extractor de Entidades</span>
+    <span data-i18n="medicalLicenseProject.archDiagram.coreModule.item2">└─ Mapeo con Diccionarios de Diagnósticos</span>
+    <span data-i18n="medicalLicenseProject.archDiagram.coreModule.item3">└─ Cálculo de Períodos de Licencia</span>
 
-<span class="accent">Generación de Documentos</span>
-    └─ Motor Python-Docx
-    └─ Búsqueda y Reemplazo Preservando Formato
-    └─ Exportación Lista para Firma</pre>
+<span class="accent" data-i18n="medicalLicenseProject.archDiagram.documents.title">Generación de Documentos</span>
+    <span data-i18n="medicalLicenseProject.archDiagram.documents.item1">└─ Motor Python-Docx</span>
+    <span data-i18n="medicalLicenseProject.archDiagram.documents.item2">└─ Búsqueda y Reemplazo Preservando Formato</span>
+    <span data-i18n="medicalLicenseProject.archDiagram.documents.item3">└─ Exportación Lista para Firma</span></pre>
                   </div>
                 </div>
               </div>
@@ -164,11 +164,11 @@
                     </div>
                     <div class="challenge-body">
                       <div class="challenge-problem">
-                        <span class="challenge-label">Problem</span>
+                        <span class="challenge-label" data-i18n="medicalLicenseProject.challenges.problemLabel">Problem</span>
                         <p data-i18n="medicalLicenseProject.challengesList.complexFieldDetection.problem">Los campos pueden estar en párrafos o tablas con formato complejo.</p>
                       </div>
                       <div class="challenge-solution">
-                        <span class="challenge-label">Solution</span>
+                        <span class="challenge-label" data-i18n="medicalLicenseProject.challenges.solutionLabel">Solution</span>
                         <p data-i18n="medicalLicenseProject.challengesList.complexFieldDetection.solution">Búsqueda recursiva en todos los elementos del documento (párrafos, tablas, celdas).</p>
                       </div>
                     </div>
@@ -180,11 +180,11 @@
                     </div>
                     <div class="challenge-body">
                       <div class="challenge-problem">
-                        <span class="challenge-label">Problem</span>
+                        <span class="challenge-label" data-i18n="medicalLicenseProject.challenges.problemLabel">Problem</span>
                         <p data-i18n="medicalLicenseProject.challengesList.nonTechnicalInterface.problem">El personal médico necesitaba una interfaz simple e intuitiva.</p>
                       </div>
                       <div class="challenge-solution">
-                        <span class="challenge-label">Solution</span>
+                        <span class="challenge-label" data-i18n="medicalLicenseProject.challenges.solutionLabel">Solution</span>
                         <p data-i18n="medicalLicenseProject.challengesList.nonTechnicalInterface.solution">Múltiples interfaces (guiada, por voz, comandos) adaptadas a diferentes niveles.</p>
                       </div>
                     </div>
@@ -196,11 +196,11 @@
                     </div>
                     <div class="challenge-body">
                       <div class="challenge-problem">
-                        <span class="challenge-label">Problem</span>
+                        <span class="challenge-label" data-i18n="medicalLicenseProject.challenges.problemLabel">Problem</span>
                         <p data-i18n="medicalLicenseProject.challengesList.formatPreservation.problem">Los documentos generados deben mantener exactamente el mismo formato que los oficiales.</p>
                       </div>
                       <div class="challenge-solution">
-                        <span class="challenge-label">Solution</span>
+                        <span class="challenge-label" data-i18n="medicalLicenseProject.challenges.solutionLabel">Solution</span>
                         <p data-i18n="medicalLicenseProject.challengesList.formatPreservation.solution">Uso avanzado de python-docx para modificar solo el texto de los "Runs" específicos.</p>
                       </div>
                     </div>
@@ -213,11 +213,11 @@
                 <!-- Relevance order: Distance Calculator is deleted, so previous is Remote Mouse, next is Web Portfolio or similar -->
                 <a href="remote-mouse.html" class="proj-nav-link">
                   <i class="fas fa-arrow-left"></i>
-                  <div><span class="proj-nav-label">Previous</span>Remote Mouse</div>
+                  <div><span class="proj-nav-label" data-i18n="medicalLicenseProject.navigation.previous">Anterior</span><span data-i18n="medicalLicenseProject.navigation.previousName">Remote Mouse</span></div>
                 </a>
                 <a href="web-portfolio.html" class="proj-nav-link next">
                   <i class="fas fa-arrow-right"></i>
-                  <div><span class="proj-nav-label" data-i18n="medicalLicenseProject.navigation.nextProject">Next</span>Web Portfolio</div>
+                  <div><span class="proj-nav-label" data-i18n="medicalLicenseProject.navigation.nextProject">Siguiente</span><span data-i18n="medicalLicenseProject.navigation.nextName">Web Portfolio</span></div>
                 </a>
               </div>
             </main>
@@ -228,16 +228,16 @@
                 <div class="sidebar-widget-title" data-i18n="medicalLicenseProject.sections.techStack">Tech Stack</div>
                 <div class="stack-list">
                   <div class="stack-row">
-                    <span class="label">Lenguaje</span>
+                    <span class="label" data-i18n="medicalLicenseProject.sidebar.language">Lenguaje</span>
                     <span class="value">Python 3</span>
                   </div>
                   <div class="stack-row">
-                    <span class="label">Documentos</span>
+                    <span class="label" data-i18n="medicalLicenseProject.sidebar.documents">Documentos</span>
                     <span class="value">python-docx</span>
                   </div>
                   <div class="stack-row">
-                    <span class="label">Entrada</span>
-                    <span class="value">Speech Recognition</span>
+                    <span class="label" data-i18n="medicalLicenseProject.sidebar.input">Entrada</span>
+                    <span class="value" data-i18n="medicalLicenseProject.sidebar.inputValue">Speech Recognition</span>
                   </div>
                 </div>
               </div>

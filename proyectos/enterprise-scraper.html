@@ -28,7 +28,7 @@
           </a>
           
           <div class="proj-hero-meta">
-            <span class="proj-category-badge purple">Data Engineering</span>
+            <span class="proj-category-badge purple" data-i18n="enterpriseScraperProject.badges.category">Data Engineering</span>
           </div>
           
           <h1 class="proj-hero-title" data-i18n="enterpriseScraperProject.title">Enterprise E-Commerce Data Pipeline</h1>
@@ -41,20 +41,20 @@
           <!-- Hero Metrics -->
           <div class="proj-meta-row">
             <div class="proj-meta-item">
-              <div class="proj-meta-label">Cobertura</div>
+              <div class="proj-meta-label" data-i18n="enterpriseScraperProject.meta.coverage">Cobertura</div>
               <div class="proj-meta-value" data-i18n="enterpriseScraperProject.metrics.scale">40+ Sitios Web</div>
             </div>
             <div class="proj-meta-item">
-              <div class="proj-meta-label">Volumen</div>
+              <div class="proj-meta-label" data-i18n="enterpriseScraperProject.meta.volume">Volumen</div>
               <div class="proj-meta-value" data-i18n="enterpriseScraperProject.metrics.speed">Miles de productos/semana</div>
             </div>
             <div class="proj-meta-item">
-              <div class="proj-meta-label">Legado</div>
+              <div class="proj-meta-label" data-i18n="enterpriseScraperProject.meta.legacy">Legado</div>
               <div class="proj-meta-value" data-i18n="enterpriseScraperProject.metrics.impact">Originó CSV Analyst</div>
             </div>
             <div class="proj-meta-item">
-              <div class="proj-meta-label">Tech</div>
-              <div class="proj-meta-value">Python, Selenium, APIs</div>
+              <div class="proj-meta-label" data-i18n="enterpriseScraperProject.meta.tech">Tech</div>
+              <div class="proj-meta-value" data-i18n="enterpriseScraperProject.meta.techValue">Python, Selenium, APIs</div>
             </div>
           </div>
         </div>
@@ -87,7 +87,7 @@
                 <div class="content-block-title" data-i18n="enterpriseScraperProject.sections.overview">Descripción General</div>
                 <p data-i18n="enterpriseScraperProject.sections.overviewText">Un pipeline de ingeniería de datos masivo desarrollado para alimentar un e-commerce con inventario de más de 30 marcas. El proceso consistió en dos fases: primero, ingeniería inversa de las APIs privadas (red/XHR) de un proveedor central para obtener el catálogo base a alta velocidad. Segundo, la creación de scrapers dinámicos (1 a 3 diarios) que navegaban los sitios oficiales de los fabricantes, evadiendo protecciones anti-bot mediante inyección JS, para extraer especificaciones enriquecidas e imágenes. La complejidad de normalizar miles de productos ambiguos extraídos fue lo que me inspiró a crear el sistema CSV Analyst con IA.</p>
                 
-                <h3 style="margin-top:2rem; font-size:1.1rem; color:var(--text); margin-bottom:1rem;">Características Principales</h3>
+                <h3 style="margin-top:2rem; font-size:1.1rem; color:var(--text); margin-bottom:1rem;" data-i18n="enterpriseScraperProject.sections.features">Características Principales</h3>
                 <div class="feature-list" style="display: flex; flex-direction: column; gap: 1rem;">
                   <div class="feature-item" style="display: flex; gap: 1rem; align-items: flex-start;">
                     <div class="feature-item-icon blue" style="background: rgba(59, 130, 246, 0.1); color: #3b82f6; width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
@@ -132,11 +132,11 @@
                     </div>
                     <div class="challenge-body">
                       <div class="challenge-problem">
-                        <span class="challenge-label">Problem</span>
+                        <span class="challenge-label" data-i18n="enterpriseScraperProject.challenges.problemLabel">Problem</span>
                         <p data-i18n="enterpriseScraperProject.challengesList.networkInterception.problem">El proveedor central tenía un inventario inmenso protegido tras una interfaz web lenta.</p>
                       </div>
                       <div class="challenge-solution">
-                        <span class="challenge-label">Solution</span>
+                        <span class="challenge-label" data-i18n="enterpriseScraperProject.challenges.solutionLabel">Solution</span>
                         <p data-i18n="enterpriseScraperProject.challengesList.networkInterception.solution">Ingeniería inversa usando DevTools para interceptar las llamadas API y obtener los JSON puros.</p>
                       </div>
                     </div>
@@ -148,11 +148,11 @@
                     </div>
                     <div class="challenge-body">
                       <div class="challenge-problem">
-                        <span class="challenge-label">Problem</span>
+                        <span class="challenge-label" data-i18n="enterpriseScraperProject.challenges.problemLabel">Problem</span>
                         <p data-i18n="enterpriseScraperProject.challengesList.uniqueArchitectures.problem">Cada fabricante oficial tenía una estructura web, protecciones y formatos diferentes.</p>
                       </div>
                       <div class="challenge-solution">
-                        <span class="challenge-label">Solution</span>
+                        <span class="challenge-label" data-i18n="enterpriseScraperProject.challenges.solutionLabel">Solution</span>
                         <p data-i18n="enterpriseScraperProject.challengesList.uniqueArchitectures.solution">Desarrollo ágil de 1-3 scrapers adaptables por día, usando selectores dinámicos y Selenium.</p>
                       </div>
                     </div>
@@ -164,11 +164,11 @@
                     </div>
                     <div class="challenge-body">
                       <div class="challenge-problem">
-                        <span class="challenge-label">Problem</span>
+                        <span class="challenge-label" data-i18n="enterpriseScraperProject.challenges.problemLabel">Problem</span>
                         <p data-i18n="enterpriseScraperProject.challengesList.dataNormalization.problem">Los datos venían con formatos ambiguos imposibles de mapear con reglas tradicionales.</p>
                       </div>
                       <div class="challenge-solution">
-                        <span class="challenge-label">Solution</span>
+                        <span class="challenge-label" data-i18n="enterpriseScraperProject.challenges.solutionLabel">Solution</span>
                         <p data-i18n="enterpriseScraperProject.challengesList.dataNormalization.solution">Esto evidenció la necesidad de IA para categorización, naciendo así el sistema CSV Analyst.</p>
                       </div>
                     </div>
@@ -181,11 +181,11 @@
                 <!-- Relevance order: Excel Validation -> Enterprise Scraper -> Remote Mouse -->
                 <a href="excel-scraper.html" class="proj-nav-link">
                   <i class="fas fa-arrow-left"></i>
-                  <div><span class="proj-nav-label">Previous</span>Excel Validation</div>
+                  <div><span class="proj-nav-label" data-i18n="enterpriseScraperProject.navigation.previous">Anterior</span><span data-i18n="enterpriseScraperProject.navigation.previousName">Excel Validation</span></div>
                 </a>
                 <a href="scraping-productos.html" class="proj-nav-link next">
                   <i class="fas fa-arrow-right"></i>
-                  <div><span class="proj-nav-label" data-i18n="enterpriseScraperProject.navigation.nextProject">Next</span>RTX Scraper</div>
+                  <div><span class="proj-nav-label" data-i18n="enterpriseScraperProject.navigation.nextProject">Siguiente</span><span data-i18n="enterpriseScraperProject.navigation.nextName">RTX Scraper</span></div>
                 </a>
               </div>
             </main>
@@ -196,19 +196,19 @@
                 <div class="sidebar-widget-title" data-i18n="enterpriseScraperProject.sections.techStack">Tech Stack</div>
                 <div class="stack-list">
                   <div class="stack-row">
-                    <span class="label">Extracción Dinámica</span>
+                    <span class="label" data-i18n="enterpriseScraperProject.sidebar.dynamicExtraction">Extracción Dinámica</span>
                     <span class="value">Selenium, Playwright</span>
                   </div>
                   <div class="stack-row">
-                    <span class="label">Procesamiento</span>
+                    <span class="label" data-i18n="enterpriseScraperProject.sidebar.processing">Procesamiento</span>
                     <span class="value">Python, Pandas</span>
                   </div>
                   <div class="stack-row">
-                    <span class="label">Integración</span>
+                    <span class="label" data-i18n="enterpriseScraperProject.sidebar.integration">Integración</span>
                     <span class="value">WooCommerce API</span>
                   </div>
                   <div class="stack-row">
-                    <span class="label">Análisis</span>
+                    <span class="label" data-i18n="enterpriseScraperProject.sidebar.analysis">Análisis</span>
                     <span class="value">DevTools, XHR, JSON</span>
                   </div>
                 </div>

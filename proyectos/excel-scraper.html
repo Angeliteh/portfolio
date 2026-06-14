@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sistema Universal de Validación Excel - Angel Payan - Caso de estudio de ingeniería de software por Angel Payan.">
-    <title>Sistema Universal de Validación Excel - Angel Payan</title>
+    <meta name="description" data-i18n="[content]excelProject.sections.overviewText" content="Sistema Universal de Validacion Excel - Angel Payan - Caso de estudio de ingenieria de software por Angel Payan.">
+    <title data-i18n="excelProject.title">Sistema Universal de Validacion Excel</title>
     
     <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
@@ -28,7 +28,7 @@
           </a>
           
           <div class="proj-hero-meta">
-            <span class="proj-category-badge green">Desktop & Web</span>
+            <span class="proj-category-badge green" data-i18n="excelProject.badges.category">Desktop & Web</span>
           </div>
           
           <h1 class="proj-hero-title" data-i18n="excelProject.title">Sistema Universal de Validación Excel</h1>
@@ -43,20 +43,20 @@
           <!-- Hero Metrics -->
           <div class="proj-meta-row">
             <div class="proj-meta-item">
-              <div class="proj-meta-label">Escala</div>
+              <div class="proj-meta-label" data-i18n="excelProject.meta.scale">Escala</div>
               <div class="proj-meta-value" data-i18n="excelProject.metrics.automation">100% Automatizado</div>
             </div>
             <div class="proj-meta-item">
-              <div class="proj-meta-label">Arquitectura</div>
+              <div class="proj-meta-label" data-i18n="excelProject.meta.architecture">Arquitectura</div>
               <div class="proj-meta-value" data-i18n="excelProject.metrics.hybrid">Híbrido Desktop/Web</div>
             </div>
             <div class="proj-meta-item">
-              <div class="proj-meta-label">Precisión</div>
+              <div class="proj-meta-label" data-i18n="excelProject.meta.precision">Precisión</div>
               <div class="proj-meta-value" data-i18n="excelProject.metrics.validation">Validación Inteligente</div>
             </div>
             <div class="proj-meta-item">
-              <div class="proj-meta-label">Tech</div>
-              <div class="proj-meta-value">PyQt5, React, Flask, Pandas</div>
+              <div class="proj-meta-label" data-i18n="excelProject.meta.tech">Tech</div>
+              <div class="proj-meta-value" data-i18n="excelProject.meta.techValue">PyQt5, React, Flask, Pandas</div>
             </div>
           </div>
         </div>
@@ -90,7 +90,7 @@
                 <div class="content-block-title" data-i18n="excelProject.sections.overview">Descripción General</div>
                 <p data-i18n="excelProject.sections.overviewText">Sistema híbrido que automatiza completamente el procesamiento de tablas Excel educativas complejas. Arquitectura compartida entre desktop (PyQt) y web (React + Flask) con algoritmo bidimensional de detección de celdas combinadas. Reduce 90-95% el tiempo de procesamiento manual.</p>
                 
-                <h3 style="margin-top:2rem; font-size:1.1rem; color:var(--text); margin-bottom:1rem;">Características Principales</h3>
+                <h3 style="margin-top:2rem; font-size:1.1rem; color:var(--text); margin-bottom:1rem;" data-i18n="excelProject.sections.features">Características Principales</h3>
                 <div class="feature-list" style="display: flex; flex-direction: column; gap: 1rem;">
                   <div class="feature-item" style="display: flex; gap: 1rem; align-items: flex-start;">
                     <div class="feature-item-icon green" style="background: rgba(16, 185, 129, 0.1); color: #10b981; width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
@@ -146,17 +146,17 @@
                 <div class="demo-tab-pane" id="pane-arch">
                   <div class="arch-block">
                     <pre>
-<span class="purple">Frontend Layer (React / PyQt5)</span>
-    └─ Controlador especializado por UI
-    └─ Visualización tipo Excel con selección de rangos
+<span class="purple" data-i18n="excelProject.archDiagram.frontend.title">Frontend Layer (React / PyQt5)</span>
+    <span data-i18n="excelProject.archDiagram.frontend.item1">└─ Controlador especializado por UI</span>
+    <span data-i18n="excelProject.archDiagram.frontend.item2">└─ Visualización tipo Excel con selección de rangos</span>
 
-<span class="blue">Core Shared Engine (Python)</span>
-    └─ Algoritmo bidimensional de celdas combinadas
-    └─ Validaciones universales puros (sin dependencias UI)
+<span class="blue" data-i18n="excelProject.archDiagram.core.title">Core Shared Engine (Python)</span>
+    <span data-i18n="excelProject.archDiagram.core.item1">└─ Algoritmo bidimensional de celdas combinadas</span>
+    <span data-i18n="excelProject.archDiagram.core.item2">└─ Validaciones universales puros (sin dependencias UI)</span>
 
-<span class="accent">Data Layer (Pandas + OpenPyXL)</span>
-    └─ Extracción y limpieza
-    └─ Evidencia de estados y reportes</pre>
+<span class="accent" data-i18n="excelProject.archDiagram.data.title">Data Layer (Pandas + OpenPyXL)</span>
+    <span data-i18n="excelProject.archDiagram.data.item1">└─ Extracción y limpieza</span>
+    <span data-i18n="excelProject.archDiagram.data.item2">└─ Evidencia de estados y reportes</span></pre>
                   </div>
                 </div>
               </div>
@@ -203,11 +203,11 @@
                     </div>
                     <div class="challenge-body">
                       <div class="challenge-problem">
-                        <span class="challenge-label">Problem</span>
+                        <span class="challenge-label" data-i18n="excelProject.challenges.problemLabel">Problem</span>
                         <p data-i18n="excelProject.challenges.challenge1.problem.desc">Excel no proporciona información directa sobre celdas combinadas en archivos complejos</p>
                       </div>
                       <div class="challenge-solution">
-                        <span class="challenge-label">Solution</span>
+                        <span class="challenge-label" data-i18n="excelProject.challenges.solutionLabel">Solution</span>
                         <p data-i18n="excelProject.challenges.challenge1.solution.desc">Algoritmo bidimensional que detecta patrones [valor] y calcula spans automáticamente</p>
                       </div>
                     </div>
@@ -219,11 +219,11 @@
                     </div>
                     <div class="challenge-body">
                       <div class="challenge-problem">
-                        <span class="challenge-label">Problem</span>
+                        <span class="challenge-label" data-i18n="excelProject.challenges.problemLabel">Problem</span>
                         <p data-i18n="excelProject.challenges.challenge2.problem.desc">Mantener consistencia entre interfaces desktop y web sin duplicar lógica</p>
                       </div>
                       <div class="challenge-solution">
-                        <span class="challenge-label">Solution</span>
+                        <span class="challenge-label" data-i18n="excelProject.challenges.solutionLabel">Solution</span>
                         <p data-i18n="excelProject.challenges.challenge2.solution.desc">Core de negocio compartido con controladores especializados por plataforma</p>
                       </div>
                     </div>
@@ -235,11 +235,11 @@
                     </div>
                     <div class="challenge-body">
                       <div class="challenge-problem">
-                        <span class="challenge-label">Problem</span>
+                        <span class="challenge-label" data-i18n="excelProject.challenges.problemLabel">Problem</span>
                         <p data-i18n="excelProject.challenges.challenge3.problem.desc">Validar coherencia en tablas con estructuras variables y datos complejos</p>
                       </div>
                       <div class="challenge-solution">
-                        <span class="challenge-label">Solution</span>
+                        <span class="challenge-label" data-i18n="excelProject.challenges.solutionLabel">Solution</span>
                         <p data-i18n="excelProject.challenges.challenge3.solution.desc">Sistema de validaciones automáticas con evidencia de estados y reportes detallados</p>
                       </div>
                     </div>
@@ -287,11 +287,11 @@
                 <!-- Relevance order: Forensic Suite -> Excel Scraper -> RTX Scraper (scraping-productos.html) -->
                 <a href="forensic-suite.html" class="proj-nav-link">
                   <i class="fas fa-arrow-left"></i>
-                  <div><span class="proj-nav-label">Previous</span>Forensic Suite</div>
+                  <div><span class="proj-nav-label" data-i18n="excelProject.navigation.previous">Anterior</span><span data-i18n="excelProject.navigation.previousName">Forensic Suite</span></div>
                 </a>
                 <a href="scraping-productos.html" class="proj-nav-link next">
                   <i class="fas fa-arrow-right"></i>
-                  <div><span class="proj-nav-label">Next</span>RTX Scraper</div>
+                  <div><span class="proj-nav-label" data-i18n="excelProject.navigation.next">Siguiente</span><span data-i18n="excelProject.navigation.nextName">RTX Scraper</span></div>
                 </a>
               </div>
             </main>
@@ -311,11 +311,11 @@
                   </div>
                   <div class="stack-row">
                     <span class="label" data-i18n="excelProject.techStack.processing.title">Procesamiento</span>
-                    <span class="value">OpenPyXL, Algoritmos Propios</span>
+                    <span class="value" data-i18n="excelProject.techStack.processing.value">OpenPyXL, Algoritmos Propios</span>
                   </div>
                   <div class="stack-row">
                     <span class="label" data-i18n="excelProject.techStack.architecture.title">Arquitectura</span>
-                    <span class="value">Híbrida, Core Compartido</span>
+                    <span class="value" data-i18n="excelProject.techStack.architecture.value">Híbrida, Core Compartido</span>
                   </div>
                 </div>
               </div>

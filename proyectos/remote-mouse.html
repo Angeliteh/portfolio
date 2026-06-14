@@ -28,7 +28,7 @@
           </a>
           
           <div class="proj-hero-meta">
-            <span class="proj-category-badge blue">Mobile & Desktop</span>
+            <span class="proj-category-badge blue" data-i18n="remoteMouseProject.badges.platform">Mobile & Desktop</span>
           </div>
           
           <h1 class="proj-hero-title" data-i18n="remoteMouseProject.title">Remote Mouse</h1>
@@ -43,20 +43,20 @@
           <!-- Hero Metrics -->
           <div class="proj-meta-row">
             <div class="proj-meta-item">
-              <div class="proj-meta-label">Desempeño</div>
+              <div class="proj-meta-label" data-i18n="remoteMouseProject.meta.performance">Desempeño</div>
               <div class="proj-meta-value" data-i18n="remoteMouseProject.metrics.latency">Latencia < 8ms</div>
             </div>
             <div class="proj-meta-item">
-              <div class="proj-meta-label">Soporte</div>
+              <div class="proj-meta-label" data-i18n="remoteMouseProject.meta.support">Soporte</div>
               <div class="proj-meta-value" data-i18n="remoteMouseProject.metrics.platforms">6 plataformas</div>
             </div>
             <div class="proj-meta-item">
-              <div class="proj-meta-label">Confiabilidad</div>
+              <div class="proj-meta-label" data-i18n="remoteMouseProject.meta.reliability">Confiabilidad</div>
               <div class="proj-meta-value" data-i18n="remoteMouseProject.metrics.accuracy">99.9% precisión</div>
             </div>
             <div class="proj-meta-item">
-              <div class="proj-meta-label">Tech</div>
-              <div class="proj-meta-value">Flutter, Python, WebSockets</div>
+              <div class="proj-meta-label" data-i18n="remoteMouseProject.meta.tech">Tech</div>
+              <div class="proj-meta-value" data-i18n="remoteMouseProject.meta.techValue">Flutter, Python, WebSockets</div>
             </div>
           </div>
         </div>
@@ -90,7 +90,7 @@
                 <div class="content-block-title" data-i18n="remoteMouseProject.sections.overview">Descripción General</div>
                 <p data-i18n="remoteMouseProject.sections.overviewText">Aplicación multiplataforma que permite controlar el mouse y teclado de una PC desde un dispositivo móvil usando comunicación WebSocket en tiempo real. Incluye un servidor Python con interfaz gráfica para PC y una aplicación Flutter para dispositivos móviles con soporte para Android, iOS, Web, Windows, macOS y Linux. Ofrece control preciso del cursor, clics, scroll, escritura de texto y combinaciones de teclas con retroalimentación háptica y configuración personalizable.</p>
                 
-                <h3 style="margin-top:2rem; font-size:1.1rem; color:var(--text); margin-bottom:1rem;">Características Principales</h3>
+                <h3 style="margin-top:2rem; font-size:1.1rem; color:var(--text); margin-bottom:1rem;" data-i18n="remoteMouseProject.sections.features">Características Principales</h3>
                 <div class="feature-list" style="display: flex; flex-direction: column; gap: 1rem;">
                   <div class="feature-item" style="display: flex; gap: 1rem; align-items: flex-start;">
                     <div class="feature-item-icon blue" style="background: rgba(59, 130, 246, 0.1); color: #3b82f6; width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
@@ -135,11 +135,11 @@
                     </div>
                     <div class="challenge-body">
                       <div class="challenge-problem">
-                        <span class="challenge-label">Problem</span>
+                        <span class="challenge-label" data-i18n="remoteMouseProject.challenges.problemLabel">Problem</span>
                         <p data-i18n="remoteMouseProject.challengesList.latencyMovements.problem">Los movimientos individuales del mouse generaban demasiados comandos WebSocket.</p>
                       </div>
                       <div class="challenge-solution">
-                        <span class="challenge-label">Solution</span>
+                        <span class="challenge-label" data-i18n="remoteMouseProject.challenges.solutionLabel">Solution</span>
                         <p data-i18n="remoteMouseProject.challengesList.latencyMovements.solution">Buffer de movimientos con timer de 8ms para acumular y enviar deltas optimizados.</p>
                       </div>
                     </div>
@@ -151,11 +151,11 @@
                     </div>
                     <div class="challenge-body">
                       <div class="challenge-problem">
-                        <span class="challenge-label">Problem</span>
+                        <span class="challenge-label" data-i18n="remoteMouseProject.challenges.problemLabel">Problem</span>
                         <p data-i18n="remoteMouseProject.challengesList.textSync.problem">Detectar cambios de texto (añadir/borrar) sin perder sincronización.</p>
                       </div>
                       <div class="challenge-solution">
-                        <span class="challenge-label">Solution</span>
+                        <span class="challenge-label" data-i18n="remoteMouseProject.challenges.solutionLabel">Solution</span>
                         <p data-i18n="remoteMouseProject.challengesList.textSync.solution">Sistema de tracking con comparación de longitudes y envío diferencial de comandos.</p>
                       </div>
                     </div>
@@ -167,11 +167,11 @@
                     </div>
                     <div class="challenge-body">
                       <div class="challenge-problem">
-                        <span class="challenge-label">Problem</span>
+                        <span class="challenge-label" data-i18n="remoteMouseProject.challenges.problemLabel">Problem</span>
                         <p data-i18n="remoteMouseProject.challengesList.crossPlatform.problem">Diferentes comportamientos de SO para control de mouse/teclado.</p>
                       </div>
                       <div class="challenge-solution">
-                        <span class="challenge-label">Solution</span>
+                        <span class="challenge-label" data-i18n="remoteMouseProject.challenges.solutionLabel">Solution</span>
                         <p data-i18n="remoteMouseProject.challengesList.crossPlatform.solution">Abstracción con PyAutoGUI y configuración específica por plataforma.</p>
                       </div>
                     </div>
@@ -184,11 +184,11 @@
                 <!-- Relevance order: RTX Scraper -> Remote Mouse -> Social Media Downloader -->
                 <a href="scraping-productos.html" class="proj-nav-link">
                   <i class="fas fa-arrow-left"></i>
-                  <div><span class="proj-nav-label">Previous</span>RTX Scraper</div>
+                  <div><span class="proj-nav-label" data-i18n="remoteMouseProject.navigation.previous">Anterior</span><span data-i18n="remoteMouseProject.navigation.previousName">RTX Scraper</span></div>
                 </a>
                 <a href="licencias-medicas.html" class="proj-nav-link next">
                   <i class="fas fa-arrow-right"></i>
-                  <div><span class="proj-nav-label" data-i18n="remoteMouseProject.navigation.nextProject">Next</span>Medical License</div>
+                  <div><span class="proj-nav-label" data-i18n="remoteMouseProject.navigation.nextProject">Siguiente</span><span data-i18n="remoteMouseProject.navigation.nextName">Medical License</span></div>
                 </a>
               </div>
             </main>
@@ -199,19 +199,19 @@
                 <div class="sidebar-widget-title" data-i18n="remoteMouseProject.sections.techStack">Tech Stack</div>
                 <div class="stack-list">
                   <div class="stack-row">
-                    <span class="label">App Móvil</span>
+                    <span class="label" data-i18n="remoteMouseProject.sidebar.mobileApp">App Móvil</span>
                     <span class="value">Flutter, Dart</span>
                   </div>
                   <div class="stack-row">
-                    <span class="label">Servidor</span>
+                    <span class="label" data-i18n="remoteMouseProject.sidebar.server">Servidor</span>
                     <span class="value">Python, WebSockets</span>
                   </div>
                   <div class="stack-row">
-                    <span class="label">Interfaz Servidor</span>
+                    <span class="label" data-i18n="remoteMouseProject.sidebar.serverUi">Interfaz Servidor</span>
                     <span class="value">CustomTkinter</span>
                   </div>
                   <div class="stack-row">
-                    <span class="label">Protocolo</span>
+                    <span class="label" data-i18n="remoteMouseProject.sidebar.protocol">Protocolo</span>
                     <span class="value">JSON sobre WS</span>
                   </div>
                 </div>

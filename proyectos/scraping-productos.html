@@ -28,7 +28,7 @@
           </a>
           
           <div class="proj-hero-meta">
-            <span class="proj-category-badge purple">Web Automation</span>
+            <span class="proj-category-badge purple" data-i18n="rtxProject.badges.category">Web Automation</span>
           </div>
           
           <h1 class="proj-hero-title" data-i18n="rtxProject.title">RTX Web Scraper - Monitor de Precios de GPUs</h1>
@@ -43,20 +43,20 @@
           <!-- Hero Metrics -->
           <div class="proj-meta-row">
             <div class="proj-meta-item">
-              <div class="proj-meta-label">Velocidad</div>
+              <div class="proj-meta-label" data-i18n="rtxProject.meta.speed">Velocidad</div>
               <div class="proj-meta-value" data-i18n="rtxProject.metrics.products">51 productos en <30s</div>
             </div>
             <div class="proj-meta-item">
-              <div class="proj-meta-label">Cobertura</div>
+              <div class="proj-meta-label" data-i18n="rtxProject.meta.coverage">Cobertura</div>
               <div class="proj-meta-value" data-i18n="rtxProject.metrics.platforms">2 plataformas principales</div>
             </div>
             <div class="proj-meta-item">
-              <div class="proj-meta-label">Efectividad</div>
+              <div class="proj-meta-label" data-i18n="rtxProject.meta.effectiveness">Efectividad</div>
               <div class="proj-meta-value" data-i18n="rtxProject.metrics.accuracy">95% precisión</div>
             </div>
             <div class="proj-meta-item">
-              <div class="proj-meta-label">Tech</div>
-              <div class="proj-meta-value">Python, Selenium, SQLite</div>
+              <div class="proj-meta-label" data-i18n="rtxProject.meta.tech">Tech</div>
+              <div class="proj-meta-value" data-i18n="rtxProject.meta.techValue">Python, Selenium, SQLite</div>
             </div>
           </div>
         </div>
@@ -88,7 +88,7 @@
                 <div class="content-block-title" data-i18n="rtxProject.sections.overview">Descripción General</div>
                 <p data-i18n="rtxProject.sections.overviewText">Aplicación web completa que automatiza el monitoreo de precios de tarjetas gráficas NVIDIA RTX en Amazon México y MercadoLibre. Incluye scraping inteligente, base de datos histórica, interfaz web responsiva con filtros avanzados, gráficos de tendencias de precios y sistema de alertas. Diseñada para ayudar a usuarios a encontrar las mejores ofertas y tomar decisiones informadas de compra.</p>
                 
-                <h3 style="margin-top:2rem; font-size:1.1rem; color:var(--text); margin-bottom:1rem;">Características Principales</h3>
+                <h3 style="margin-top:2rem; font-size:1.1rem; color:var(--text); margin-bottom:1rem;" data-i18n="rtxProject.sections.features">Características Principales</h3>
                 <div class="feature-list" style="display: flex; flex-direction: column; gap: 1rem;">
                   <div class="feature-item" style="display: flex; gap: 1rem; align-items: flex-start;">
                     <div class="feature-item-icon blue" style="background: rgba(59, 130, 246, 0.1); color: #3b82f6; width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
@@ -164,11 +164,11 @@
                     </div>
                     <div class="challenge-body">
                       <div class="challenge-problem">
-                        <span class="challenge-label">Problem</span>
+                        <span class="challenge-label" data-i18n="rtxProject.challenges.problemLabel">Problem</span>
                         <p data-i18n="rtxProject.challengesList.antiBotProtection.problem">Amazon y MercadoLibre bloquean requests automatizados.</p>
                       </div>
                       <div class="challenge-solution">
-                        <span class="challenge-label">Solution</span>
+                        <span class="challenge-label" data-i18n="rtxProject.challenges.solutionLabel">Solution</span>
                         <p data-i18n="rtxProject.challengesList.antiBotProtection.solution">User-agents rotativos, delays aleatorios, headers realistas y Selenium para sitios complejos.</p>
                       </div>
                     </div>
@@ -180,11 +180,11 @@
                     </div>
                     <div class="challenge-body">
                       <div class="challenge-problem">
-                        <span class="challenge-label">Problem</span>
+                        <span class="challenge-label" data-i18n="rtxProject.challenges.problemLabel">Problem</span>
                         <p data-i18n="rtxProject.challengesList.productFiltering.problem">Búsquedas devuelven cables, soportes y accesorios no deseados.</p>
                       </div>
                       <div class="challenge-solution">
-                        <span class="challenge-label">Solution</span>
+                        <span class="challenge-label" data-i18n="rtxProject.challenges.solutionLabel">Solution</span>
                         <p data-i18n="rtxProject.challengesList.productFiltering.solution">Lista de palabras prohibidas configurable y validación por modelo RTX específico.</p>
                       </div>
                     </div>
@@ -196,11 +196,11 @@
                     </div>
                     <div class="challenge-body">
                       <div class="challenge-problem">
-                        <span class="challenge-label">Problem</span>
+                        <span class="challenge-label" data-i18n="rtxProject.challenges.problemLabel">Problem</span>
                         <p data-i18n="rtxProject.challengesList.pythonCompatibility.problem">Python 3.13 no compatible con psycopg2-binary precompilado.</p>
                       </div>
                       <div class="challenge-solution">
-                        <span class="challenge-label">Solution</span>
+                        <span class="challenge-label" data-i18n="rtxProject.challenges.solutionLabel">Solution</span>
                         <p data-i18n="rtxProject.challengesList.pythonCompatibility.solution">Importaciones condicionales y configuración flexible de base de datos.</p>
                       </div>
                     </div>
@@ -213,11 +213,11 @@
                 <!-- Relevance order: Excel Scraper -> RTX Scraper -> Remote Mouse -->
                 <a href="enterprise-scraper.html" class="proj-nav-link">
                   <i class="fas fa-arrow-left"></i>
-                  <div><span class="proj-nav-label">Previous</span>Enterprise Scraper</div>
+                  <div><span class="proj-nav-label" data-i18n="rtxProject.navigation.previous">Anterior</span><span data-i18n="rtxProject.navigation.previousName">Enterprise Scraper</span></div>
                 </a>
                 <a href="remote-mouse.html" class="proj-nav-link next">
                   <i class="fas fa-arrow-right"></i>
-                  <div><span class="proj-nav-label" data-i18n="rtxProject.navigation.nextProject">Next</span>Remote Mouse</div>
+                  <div><span class="proj-nav-label" data-i18n="rtxProject.navigation.nextProject">Siguiente</span><span data-i18n="rtxProject.navigation.nextName">Remote Mouse</span></div>
                 </a>
               </div>
             </main>
@@ -228,19 +228,19 @@
                 <div class="sidebar-widget-title" data-i18n="rtxProject.sections.techStack">Tech Stack</div>
                 <div class="stack-list">
                   <div class="stack-row">
-                    <span class="label">Backend</span>
+                    <span class="label" data-i18n="rtxProject.sidebar.backend">Backend</span>
                     <span class="value">Python, Flask</span>
                   </div>
                   <div class="stack-row">
-                    <span class="label">Automation</span>
+                    <span class="label" data-i18n="rtxProject.sidebar.automation">Automation</span>
                     <span class="value">Selenium, BeautifulSoup</span>
                   </div>
                   <div class="stack-row">
-                    <span class="label">Frontend</span>
+                    <span class="label" data-i18n="rtxProject.sidebar.frontend">Frontend</span>
                     <span class="value">HTML5, CSS3, JS</span>
                   </div>
                   <div class="stack-row">
-                    <span class="label">Database</span>
+                    <span class="label" data-i18n="rtxProject.sidebar.database">Database</span>
                     <span class="value">SQLite</span>
                   </div>
                 </div>

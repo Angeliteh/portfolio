@@ -9,7 +9,7 @@ window.i18nextInitialized = new Promise(async (resolve) => {
     const savedLang = window.langStorage.get() || 'es';
     const applyTranslations = () => {
         document.documentElement.lang = i18next.language || savedLang || 'es';
-        $('body').localize();
+        $('html').localize();
     };
 
     // Detectar ruta base para GitHub Pages

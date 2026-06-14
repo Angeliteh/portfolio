@@ -28,7 +28,7 @@
           </a>
           
           <div class="proj-hero-meta">
-            <span class="proj-category-badge cyan">Web Automation</span>
+            <span class="proj-category-badge cyan" data-i18n="socialMediaProject.badges.category">Web Automation</span>
           </div>
           
           <h1 class="proj-hero-title" data-i18n="socialMediaProject.title">Videos Downloader - Descargador Universal de Videos</h1>
@@ -43,20 +43,20 @@
           <!-- Hero Metrics -->
           <div class="proj-meta-row">
             <div class="proj-meta-item">
-              <div class="proj-meta-label">Velocidad</div>
+              <div class="proj-meta-label" data-i18n="socialMediaProject.meta.speed">Velocidad</div>
               <div class="proj-meta-value" data-i18n="socialMediaProject.metrics.speed">&lt; 2s promedio</div>
             </div>
             <div class="proj-meta-item">
-              <div class="proj-meta-label">Plataformas</div>
+              <div class="proj-meta-label" data-i18n="socialMediaProject.meta.platforms">Plataformas</div>
               <div class="proj-meta-value" data-i18n="socialMediaProject.metrics.platforms">3 plataformas</div>
             </div>
             <div class="proj-meta-item">
-              <div class="proj-meta-label">Éxito</div>
+              <div class="proj-meta-label" data-i18n="socialMediaProject.meta.success">Éxito</div>
               <div class="proj-meta-value" data-i18n="socialMediaProject.metrics.successRate">99% tasa de éxito</div>
             </div>
             <div class="proj-meta-item">
-              <div class="proj-meta-label">Tech</div>
-              <div class="proj-meta-value">Python, Flask, yt-dlp</div>
+              <div class="proj-meta-label" data-i18n="socialMediaProject.meta.tech">Tech</div>
+              <div class="proj-meta-value" data-i18n="socialMediaProject.meta.techValue">Python, Flask, yt-dlp</div>
             </div>
           </div>
         </div>
@@ -88,7 +88,7 @@
                 <div class="content-block-title" data-i18n="socialMediaProject.sections.overview">Descripción General</div>
                 <p data-i18n="socialMediaProject.sections.overviewText">Aplicación web desarrollada en Flask que permite descargar videos de las principales redes sociales (Instagram, TikTok, Facebook) con múltiples opciones de calidad. Incluye una interfaz web moderna y responsiva, sistema de historial de descargas, y arquitectura modular con múltiples métodos de descarga para garantizar alta disponibilidad. La aplicación maneja automáticamente la normalización de URLs, expansión de enlaces acortados, y proporciona una API REST completa para integración con aplicaciones móviles.</p>
                 
-                <h3 style="margin-top:2rem; font-size:1.1rem; color:var(--text); margin-bottom:1rem;">Características Principales</h3>
+                <h3 style="margin-top:2rem; font-size:1.1rem; color:var(--text); margin-bottom:1rem;" data-i18n="socialMediaProject.sections.features">Características Principales</h3>
                 <div class="feature-list" style="display: flex; flex-direction: column; gap: 1rem;">
                   <div class="feature-item" style="display: flex; gap: 1rem; align-items: flex-start;">
                     <div style="background: rgba(59,130,246,0.1); color: #3b82f6; width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
@@ -133,11 +133,11 @@
                     </div>
                     <div class="challenge-body">
                       <div class="challenge-problem">
-                        <span class="challenge-label">Problem</span>
+                        <span class="challenge-label" data-i18n="socialMediaProject.challenges.problemLabel">Problem</span>
                         <p data-i18n="socialMediaProject.challengesList.urlVariations.problem">TikTok usa múltiples formatos de URL (vm.tiktok.com, vt.tiktok.com).</p>
                       </div>
                       <div class="challenge-solution">
-                        <span class="challenge-label">Solution</span>
+                        <span class="challenge-label" data-i18n="socialMediaProject.challenges.solutionLabel">Solution</span>
                         <p data-i18n="socialMediaProject.challengesList.urlVariations.solution">Sistema de normalización con expansión automática usando requests.head().</p>
                       </div>
                     </div>
@@ -149,11 +149,11 @@
                     </div>
                     <div class="challenge-body">
                       <div class="challenge-problem">
-                        <span class="challenge-label">Problem</span>
+                        <span class="challenge-label" data-i18n="socialMediaProject.challenges.problemLabel">Problem</span>
                         <p data-i18n="socialMediaProject.challengesList.multiPlatformReliability.problem">APIs de redes sociales cambian frecuentemente, causando fallos.</p>
                       </div>
                       <div class="challenge-solution">
-                        <span class="challenge-label">Solution</span>
+                        <span class="challenge-label" data-i18n="socialMediaProject.challenges.solutionLabel">Solution</span>
                         <p data-i18n="socialMediaProject.challengesList.multiPlatformReliability.solution">Arquitectura de múltiples métodos de respaldo con fallback automático.</p>
                       </div>
                     </div>
@@ -165,11 +165,11 @@
                     </div>
                     <div class="challenge-body">
                       <div class="challenge-problem">
-                        <span class="challenge-label">Problem</span>
+                        <span class="challenge-label" data-i18n="socialMediaProject.challenges.problemLabel">Problem</span>
                         <p data-i18n="socialMediaProject.challengesList.fileManagement.problem">Manejo eficiente de archivos descargados y limpieza de storage.</p>
                       </div>
                       <div class="challenge-solution">
-                        <span class="challenge-label">Solution</span>
+                        <span class="challenge-label" data-i18n="socialMediaProject.challenges.solutionLabel">Solution</span>
                         <p data-i18n="socialMediaProject.challengesList.fileManagement.solution">Sistema de historial JSON con límite de 50 entradas y nombres únicos UUID.</p>
                       </div>
                     </div>
@@ -182,11 +182,11 @@
                 <!-- Relevance order: Medical License -> Social Media DL -> Web Portfolio -->
                 <a href="licencias-medicas.html" class="proj-nav-link">
                   <i class="fas fa-arrow-left"></i>
-                  <div><span class="proj-nav-label">Previous</span>Medical License</div>
+                  <div><span class="proj-nav-label" data-i18n="socialMediaProject.navigation.previous">Anterior</span><span data-i18n="socialMediaProject.navigation.previousName">Medical License</span></div>
                 </a>
                 <a href="web-portfolio.html" class="proj-nav-link next">
                   <i class="fas fa-arrow-right"></i>
-                  <div><span class="proj-nav-label">Next</span>Web Portfolio</div>
+                  <div><span class="proj-nav-label" data-i18n="socialMediaProject.navigation.next">Siguiente</span><span data-i18n="socialMediaProject.navigation.nextName">Web Portfolio</span></div>
                 </a>
               </div>
             </main>
@@ -197,37 +197,37 @@
                 <div class="sidebar-widget-title" data-i18n="socialMediaProject.sections.techStack">Tech Stack</div>
                 <div class="stack-list">
                   <div class="stack-row">
-                    <span class="label">Backend</span>
+                    <span class="label" data-i18n="socialMediaProject.sidebar.backend">Backend</span>
                     <span class="value">Python, Flask</span>
                   </div>
                   <div class="stack-row">
-                    <span class="label">Descarga</span>
+                    <span class="label" data-i18n="socialMediaProject.sidebar.download">Descarga</span>
                     <span class="value">yt-dlp, requests</span>
                   </div>
                   <div class="stack-row">
-                    <span class="label">Frontend</span>
+                    <span class="label" data-i18n="socialMediaProject.sidebar.frontend">Frontend</span>
                     <span class="value">HTML5, CSS3, JS</span>
                   </div>
                   <div class="stack-row">
-                    <span class="label">Storage</span>
+                    <span class="label" data-i18n="socialMediaProject.sidebar.storage">Storage</span>
                     <span class="value">JSON, UUID</span>
                   </div>
                 </div>
               </div>
 
               <div class="sidebar-widget">
-                <div class="sidebar-widget-title">Key Facts</div>
+                <div class="sidebar-widget-title" data-i18n="socialMediaProject.sections.keyFacts">Datos clave</div>
                 <div class="metric-list">
                   <div class="metric-row">
-                    <div class="metric-label">Velocidad</div>
+                    <div class="metric-label" data-i18n="socialMediaProject.sidebarFacts.speed">Velocidad</div>
                     <div class="metric-value">&lt; 2s</div>
                   </div>
                   <div class="metric-row">
-                    <div class="metric-label">Plataformas</div>
+                    <div class="metric-label" data-i18n="socialMediaProject.sidebarFacts.platforms">Plataformas</div>
                     <div class="metric-value">IG, TikTok, FB</div>
                   </div>
                   <div class="metric-row">
-                    <div class="metric-label">Disponibilidad</div>
+                    <div class="metric-label" data-i18n="socialMediaProject.sidebarFacts.availability">Disponibilidad</div>
                     <div class="metric-value">99% éxito</div>
                   </div>
                 </div>

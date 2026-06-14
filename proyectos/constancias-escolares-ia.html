@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -31,43 +31,41 @@
           <div class="container">
 
             <a href="../index.html" class="proj-hero-back">
-              <i class="fas fa-arrow-left"></i> Back to portfolio
+              <i class="fas fa-arrow-left"></i> <span data-i18n="schoolRecordsProject.navigation.backToPortfolio">Volver al portafolio</span>
             </a>
 
             <div class="proj-hero-meta">
-              <span class="proj-category-badge orange">Desktop App</span>
-              <span class="proj-category-badge orange">AI Orchestration</span>
-              <span class="proj-category-badge green">In Production</span>
+              <span class="proj-category-badge orange" data-i18n="schoolRecordsProject.badges.desktopApp">App de escritorio</span>
+              <span class="proj-category-badge orange" data-i18n="schoolRecordsProject.badges.aiOrchestration">Orquestación IA</span>
+              <span class="proj-category-badge green" data-i18n="schoolRecordsProject.badges.inProduction">En producción</span>
             </div>
 
-            <h1 class="proj-hero-title">AI School Records System</h1>
+            <h1 class="proj-hero-title" data-i18n="schoolRecordsProject.title">Sistema Escolar con IA</h1>
 
-            <p class="proj-hero-tagline">
-              Desktop application with Master-Student AI architecture that automates school
-              certificate management — from conversational search to PDF generation.
-              In production at educational institutions in Mexico.
+            <p class="proj-hero-tagline" data-i18n="schoolRecordsProject.subtitle">
+              Aplicación de escritorio con arquitectura IA Master-Student que automatiza la gestión de constancias escolares, desde búsqueda conversacional hasta generación PDF. En producción en instituciones educativas de México.
             </p>
 
             <div class="proj-hero-actions">
-              <a href="../index.html#section3" class="btn-secondary">← All projects</a>
+              <a href="../index.html#section3" class="btn-secondary" data-i18n="schoolRecordsProject.actions.allProjects">← Todos los proyectos</a>
             </div>
 
             <div class="proj-meta-row">
               <div class="proj-meta-item">
-                <div class="proj-meta-label">Type</div>
-                <div class="proj-meta-value">Desktop App (PyQt5)</div>
+                <div class="proj-meta-label" data-i18n="schoolRecordsProject.meta.typeLabel">Tipo</div>
+                <div class="proj-meta-value" data-i18n="schoolRecordsProject.meta.typeValue">App de escritorio (PyQt5)</div>
               </div>
               <div class="proj-meta-item">
-                <div class="proj-meta-label">Status</div>
-                <div class="proj-meta-value">✦ In Production</div>
+                <div class="proj-meta-label" data-i18n="schoolRecordsProject.meta.statusLabel">Estado</div>
+                <div class="proj-meta-value" data-i18n="schoolRecordsProject.meta.statusValue">✦ En producción</div>
               </div>
               <div class="proj-meta-item">
-                <div class="proj-meta-label">AI Architecture</div>
-                <div class="proj-meta-value">Master → Student → Help</div>
+                <div class="proj-meta-label" data-i18n="schoolRecordsProject.meta.aiArchitectureLabel">Arquitectura IA</div>
+                <div class="proj-meta-value" data-i18n="schoolRecordsProject.meta.aiArchitectureValue">Master → Student → Help</div>
               </div>
               <div class="proj-meta-item">
-                <div class="proj-meta-label">Built by</div>
-                <div class="proj-meta-value">Solo — end to end</div>
+                <div class="proj-meta-label" data-i18n="schoolRecordsProject.meta.builtByLabel">Construido por</div>
+                <div class="proj-meta-value" data-i18n="schoolRecordsProject.meta.builtByValue">Solo, end to end</div>
               </div>
             </div>
 
@@ -84,7 +82,7 @@
 
                 <!-- Screenshot carousel -->
                 <div class="content-block">
-                  <div class="content-block-title">Screenshots</div>
+                  <div class="content-block-title" data-i18n="schoolRecordsProject.sections.screenshots">Capturas</div>
 
                   <div class="proj-carousel-wrap" id="proj-carousel">
                     <div class="carousel-container">
@@ -132,15 +130,15 @@
 
                 <!-- Demo video + technical guide -->
                 <div class="content-block">
-                  <div class="content-block-title">Demo &amp; Technical Guide</div>
+                  <div class="content-block-title" data-i18n="schoolRecordsProject.sections.demoGuide">Demo y guía técnica</div>
 
                   <div class="demo-tabs-wrap">
                     <div class="demo-tabs-header">
                       <button class="demo-tab-btn active" data-tab="video">
-                        <i class="fas fa-play-circle"></i> Video Demo
+                        <i class="fas fa-play-circle"></i> <span data-i18n="schoolRecordsProject.tabs.video">Video demo</span>
                       </button>
                       <button class="demo-tab-btn" data-tab="guide">
-                        <i class="fas fa-book-open"></i> Technical Guide
+                        <i class="fas fa-book-open"></i> <span data-i18n="schoolRecordsProject.tabs.guide">Guía técnica</span>
                       </button>
                     </div>
 
@@ -154,42 +152,36 @@
                         </iframe>
                       </div>
                       <div class="video-caption">
-                        <h4>Full System Demo — 18 minutes</h4>
-                        <p>
-                          End-to-end walkthrough: Classic management interface → AI chat mode →
-                          natural language student search with progressive filters → PDF certificate
-                          generation → document transformation from external PDFs.
+                        <h4 data-i18n="schoolRecordsProject.video.title">Demo completa del sistema — 18 minutos</h4>
+                        <p data-i18n="schoolRecordsProject.video.description">
+                          Recorrido end to end: interfaz clásica de gestión, modo chat IA, búsqueda natural de alumnos con filtros progresivos, generación de constancias PDF y transformación de PDFs externos.
                         </p>
                       </div>
                     </div>
 
                     <div class="demo-tab-pane" id="tab-guide">
                       <div class="content-block">
-                        <h3>System Overview</h3>
-                        <p>
-                          Hybrid production-ready system combining a conversational AI assistant
-                          with a traditional administrative interface. School principals query in
-                          natural language for searches, statistics, and official certificates —
-                          while administrators maintain full CRUD control. 100% local (SQLite),
-                          distributed as a compiled PyInstaller executable.
+                        <h3 data-i18n="schoolRecordsProject.guide.overviewTitle">Visión general del sistema</h3>
+                        <p data-i18n="schoolRecordsProject.guide.overviewDesc">
+                          Sistema híbrido listo para producción que combina asistente conversacional con interfaz administrativa tradicional. Directivos consultan en lenguaje natural búsquedas, estadísticas y constancias oficiales, mientras administración mantiene control CRUD completo. Todo corre 100% local con SQLite y se distribuye como ejecutable compilado con PyInstaller.
                         </p>
 
-                        <h3 style="margin-top: 20px;">Demo Flow (mirrors the 18-min video)</h3>
-                        <p><strong>Part A — Classic Management</strong></p>
+                        <h3 style="margin-top: 20px;" data-i18n="schoolRecordsProject.guide.flowTitle">Flujo de demo</h3>
+                        <p><strong data-i18n="schoolRecordsProject.guide.partATitle">Parte A — Gestión clásica</strong></p>
                         <ul style="color: var(--text-muted); font-size: 13.5px; line-height: 2; padding-left: 20px;">
-                          <li>Open Classic Management → show student records (name, CURP, matricula, grade, group, shift)</li>
-                          <li><strong>Transform card:</strong> select external PDF → extract data → generate correctly formatted certificate</li>
-                          <li><strong>Search card:</strong> find by name, grade, group, shift, matricula, CURP</li>
-                          <li><strong>Management card (CRUD):</strong> edit, validate, save with visual control</li>
+                          <li data-i18n="schoolRecordsProject.guide.partA.item1">Abrir gestión clásica y mostrar expedientes con nombre, CURP, matrícula, grado, grupo y turno.</li>
+                          <li data-i18n="schoolRecordsProject.guide.partA.item2"><strong>Tarjeta Transformar:</strong> seleccionar PDF externo, extraer datos y generar constancia formateada correctamente.</li>
+                          <li data-i18n="schoolRecordsProject.guide.partA.item3"><strong>Tarjeta Buscar:</strong> localizar por nombre, grado, grupo, turno, matrícula o CURP.</li>
+                          <li data-i18n="schoolRecordsProject.guide.partA.item4"><strong>Tarjeta Gestión (CRUD):</strong> editar, validar y guardar con control visual.</li>
                         </ul>
-                        <p style="margin-top: 12px;"><strong>Part B — AI Chat (automated)</strong></p>
+                        <p style="margin-top: 12px;"><strong data-i18n="schoolRecordsProject.guide.partBTitle">Parte B — Chat IA</strong></p>
                         <ul style="color: var(--text-muted); font-size: 13.5px; line-height: 2; padding-left: 20px;">
-                          <li>"Find students with last name García" → list results</li>
-                          <li>Contextual follow-up: "From that list, only evening shift" → filtered</li>
-                          <li>Progressive refinement: "Now third grade" → "Now group A"</li>
-                          <li>"How many students are in third grade?" → count + distribution</li>
-                          <li>"Generate school certificate for [Name]" → PDF opens automatically</li>
-                          <li>Attach external PDF → "Transform this PDF to official certificate" → extracted + new PDF</li>
+                          <li data-i18n="schoolRecordsProject.guide.partB.item1">“Buscar alumnos con apellido García” → lista de resultados.</li>
+                          <li data-i18n="schoolRecordsProject.guide.partB.item2">Seguimiento contextual: “De esa lista, solo turno vespertino” → filtrado.</li>
+                          <li data-i18n="schoolRecordsProject.guide.partB.item3">Refinamiento progresivo: “Ahora tercero” → “Ahora grupo A”.</li>
+                          <li data-i18n="schoolRecordsProject.guide.partB.item4">“¿Cuántos alumnos hay en tercer grado?” → conteo y distribución.</li>
+                          <li data-i18n="schoolRecordsProject.guide.partB.item5">“Genera la constancia para [Nombre]” → el PDF se abre automáticamente.</li>
+                          <li data-i18n="schoolRecordsProject.guide.partB.item6">Adjuntar PDF externo y pedir “Transforma este PDF a constancia oficial” → extracción más PDF nuevo.</li>
                         </ul>
                       </div>
                     </div>
@@ -198,25 +190,20 @@
 
                 <!-- Problem -->
                 <div class="content-block">
-                  <div class="content-block-title">The Problem</div>
-                  <h3>School secretaries spent 15–20 minutes per certificate. Manually.</h3>
-                  <p>
-                    In Mexican primary schools, generating a student certificate (constancia de estudios)
-                    requires locating the physical file, verifying CURP and matricula data, filling a
-                    formatted document, and printing — often with errors. For a school handling 200+
-                    certificates per month, this consumed days of administrative work.
+                  <div class="content-block-title" data-i18n="schoolRecordsProject.problem.title">El problema</div>
+                  <h3 data-i18n="schoolRecordsProject.problem.heading">Secretaría escolar gastaba 15 a 20 minutos por constancia. A mano.</h3>
+                  <p data-i18n="schoolRecordsProject.problem.p1">
+                    En primarias mexicanas, generar una constancia exige localizar el expediente, verificar CURP y matrícula, llenar un formato y enviarlo a impresión, muchas veces con errores. En escuelas con cientos de constancias al mes, eso consume días completos de trabajo administrativo.
                   </p>
-                  <p>
-                    Existing school management software was either too expensive, too complex to deploy
-                    locally, or simply didn't include AI-powered natural language interaction — forcing
-                    staff to navigate complex menus for basic queries.
+                  <p data-i18n="schoolRecordsProject.problem.p2">
+                    El software escolar existente era demasiado caro, demasiado complejo para desplegar localmente o no incluía interacción en lenguaje natural, obligando al personal a navegar menús complicados para consultas básicas.
                   </p>
                 </div>
 
                 <!-- Architecture -->
                 <div class="content-block">
-                  <div class="content-block-title">AI Architecture: Master → Student → Help</div>
-                  <h3>Intent-based routing with conversational memory.</h3>
+                  <div class="content-block-title" data-i18n="schoolRecordsProject.architecture.title">Arquitectura IA: Master → Student → Help</div>
+                  <h3 data-i18n="schoolRecordsProject.architecture.heading">Routing por intención con memoria conversacional.</h3>
 
                   <div class="arch-block">
                     <pre>
@@ -246,44 +233,38 @@
 
                 <!-- Features -->
                 <div class="content-block">
-                  <div class="content-block-title">Key Features</div>
+                  <div class="content-block-title" data-i18n="schoolRecordsProject.features.title">Funciones clave</div>
 
                   <div class="feature-list">
                     <div class="feature-item">
                       <div class="feature-item-icon orange"><i class="fas fa-brain"></i></div>
                       <div class="feature-item-text">
-                        <strong>Dual Interface — AI Chat + Classic Management</strong>
-                        <p>Two complementary views sharing the same SQLite backend. Chat for speed,
-                        CRUD for precision. Users switch between them without losing context.</p>
+                        <strong data-i18n="schoolRecordsProject.features.items.dual.title">Interfaz dual: chat IA y gestión clásica</strong>
+                        <p data-i18n="schoolRecordsProject.features.items.dual.desc">Dos vistas complementarias comparten el mismo backend SQLite. Chat para velocidad, CRUD para precisión. El usuario cambia entre ambas sin perder contexto.</p>
                       </div>
                     </div>
 
                     <div class="feature-item">
                       <div class="feature-item-icon orange"><i class="fas fa-file-pdf"></i></div>
                       <div class="feature-item-text">
-                        <strong>Certificate Generation &amp; Transformation</strong>
-                        <p>Generates official PDF certificates from templates in 1–5 seconds.
-                        Can also receive an external PDF, extract its data with pdfplumber,
-                        and reformat it into the official institution template.</p>
+                        <strong data-i18n="schoolRecordsProject.features.items.certificate.title">Generación y transformación de constancias</strong>
+                        <p data-i18n="schoolRecordsProject.features.items.certificate.desc">Genera constancias oficiales PDF desde plantillas en 1 a 5 segundos. También puede recibir un PDF externo, extraer datos con pdfplumber y reformatearlo al template oficial.</p>
                       </div>
                     </div>
 
                     <div class="feature-item">
                       <div class="feature-item-icon orange"><i class="fas fa-filter"></i></div>
                       <div class="feature-item-text">
-                        <strong>Progressive Natural Language Filtering</strong>
-                        <p>Chain queries conversationally: "García" → "evening shift" → "third grade" →
-                        "group A". Each message refines the previous result without resetting context.</p>
+                        <strong data-i18n="schoolRecordsProject.features.items.filtering.title">Filtrado progresivo en lenguaje natural</strong>
+                        <p data-i18n="schoolRecordsProject.features.items.filtering.desc">Permite encadenar consultas conversacionales como “García” → “turno vespertino” → “tercero” → “grupo A”, refinando el resultado sin resetear contexto.</p>
                       </div>
                     </div>
 
                     <div class="feature-item">
                       <div class="feature-item-icon orange"><i class="fas fa-box"></i></div>
                       <div class="feature-item-text">
-                        <strong>Zero-dependency Distribution</strong>
-                        <p>Ships as a single compiled executable via PyInstaller.
-                        Includes custom monkey-patch for google-generativeai compatibility,
-                        bundled wkhtmltopdf, and automatic .env loading.</p>
+                        <strong data-i18n="schoolRecordsProject.features.items.distribution.title">Distribución sin dependencias</strong>
+                        <p data-i18n="schoolRecordsProject.features.items.distribution.desc">Se entrega como ejecutable compilado con PyInstaller. Incluye monkey-patch para google-generativeai, wkhtmltopdf embebido y carga automática de `.env`.</p>
                       </div>
                     </div>
                   </div>
@@ -291,22 +272,22 @@
 
                 <!-- Challenges -->
                 <div class="content-block">
-                  <div class="content-block-title">Technical Challenges &amp; Solutions</div>
+                  <div class="content-block-title" data-i18n="schoolRecordsProject.challenges.title">Desafíos técnicos y soluciones</div>
 
                   <div class="challenges-list">
                     <div class="challenge-card">
                       <div class="challenge-header">
                         <i class="fas fa-exclamation-triangle"></i>
-                        <h4>google-generativeai + PyInstaller</h4>
+                        <h4 data-i18n="schoolRecordsProject.challenges.items.pyinstaller.title">google-generativeai + PyInstaller</h4>
                       </div>
                       <div class="challenge-body">
                         <div class="challenge-problem">
-                          <span class="challenge-label">Problem</span>
-                          <p>Import paths and runtime broken after freezing. .env variables inaccessible. AI library imports incompatible with PyInstaller's module collection.</p>
+                          <span class="challenge-label" data-i18n="schoolRecordsProject.challenges.problemLabel">Problema</span>
+                          <p data-i18n="schoolRecordsProject.challenges.items.pyinstaller.problem">Se rompían imports y runtime después del freeze. Variables `.env` inaccesibles e incompatibilidades entre la librería IA y la recolección de módulos de PyInstaller.</p>
                         </div>
                         <div class="challenge-solution">
-                          <span class="challenge-label">Solution</span>
-                          <p>Early monkey-patch before any AI imports. Manual .env loading within the compiled executable. Custom hooks + resource paths with multi-level model fallback.</p>
+                          <span class="challenge-label" data-i18n="schoolRecordsProject.challenges.solutionLabel">Solución</span>
+                          <p data-i18n="schoolRecordsProject.challenges.items.pyinstaller.solution">Monkey-patch temprano antes de cualquier import IA, carga manual de `.env` dentro del ejecutable y hooks personalizados con fallback multinivel de modelos.</p>
                         </div>
                       </div>
                     </div>
@@ -314,16 +295,16 @@
                     <div class="challenge-card">
                       <div class="challenge-header">
                         <i class="fas fa-exclamation-triangle"></i>
-                        <h4>Intent Routing + Conversational Context</h4>
+                        <h4 data-i18n="schoolRecordsProject.challenges.items.routing.title">Routing por intención y contexto conversacional</h4>
                       </div>
                       <div class="challenge-body">
                         <div class="challenge-problem">
-                          <span class="challenge-label">Problem</span>
-                          <p>Ambiguous references ("him", "the second one", "from those..."), deciding when to use context and how to resolve pronoun references across turns.</p>
+                          <span class="challenge-label" data-i18n="schoolRecordsProject.challenges.problemLabel">Problema</span>
+                          <p data-i18n="schoolRecordsProject.challenges.items.routing.problem">Referencias ambiguas como “él”, “el segundo” o “de esos…”, y la decisión de cuándo usar contexto y cómo resolver pronombres entre turnos.</p>
                         </div>
                         <div class="challenge-solution">
-                          <span class="challenge-label">Solution</span>
-                          <p>Unified analysis via MasterPromptManager. conversation_stack with "awaiting" states. Intelligent continuation logic that compares current vs. previous intent.</p>
+                          <span class="challenge-label" data-i18n="schoolRecordsProject.challenges.solutionLabel">Solución</span>
+                          <p data-i18n="schoolRecordsProject.challenges.items.routing.solution">Análisis unificado vía `MasterPromptManager`, `conversation_stack` con estados `awaiting` y lógica inteligente de continuación comparando intención actual vs anterior.</p>
                         </div>
                       </div>
                     </div>
@@ -331,16 +312,16 @@
                     <div class="challenge-card">
                       <div class="challenge-header">
                         <i class="fas fa-exclamation-triangle"></i>
-                        <h4>Data Consistency Across Modules</h4>
+                        <h4 data-i18n="schoolRecordsProject.challenges.items.consistency.title">Consistencia de datos entre módulos</h4>
                       </div>
                       <div class="challenge-body">
                         <div class="challenge-problem">
-                          <span class="challenge-label">Problem</span>
-                          <p>Name and field variants across manually entered records broke searches and broke PDF templates with incorrect field values.</p>
+                          <span class="challenge-label" data-i18n="schoolRecordsProject.challenges.problemLabel">Problema</span>
+                          <p data-i18n="schoolRecordsProject.challenges.items.consistency.problem">Variantes de nombres y campos en registros manuales rompían búsquedas y plantillas PDF con valores incorrectos.</p>
                         </div>
                         <div class="challenge-solution">
-                          <span class="challenge-label">Solution</span>
-                          <p>Centralized normalization layer in Config class. Validation with user-visible warnings before save. Sort order configurable per-institution.</p>
+                          <span class="challenge-label" data-i18n="schoolRecordsProject.challenges.solutionLabel">Solución</span>
+                          <p data-i18n="schoolRecordsProject.challenges.items.consistency.solution">Capa centralizada de normalización en la clase `Config`, validaciones con advertencias visibles antes de guardar y orden configurable por institución.</p>
                         </div>
                       </div>
                     </div>
@@ -349,57 +330,55 @@
 
                 <!-- Workflow -->
                 <div class="content-block">
-                  <div class="content-block-title">AI Workflow</div>
+                  <div class="content-block-title" data-i18n="schoolRecordsProject.workflow.title">Flujo IA</div>
 
                   <div class="workflow-steps">
                     <div class="workflow-step">
                       <div class="workflow-step-num">01</div>
                       <div class="workflow-step-icon"><i class="fas fa-comments"></i></div>
-                      <h4>Chat Engine</h4>
-                      <p>Receives natural language request from user</p>
+                      <h4 data-i18n="schoolRecordsProject.workflow.steps.chat.title">Motor de chat</h4>
+                      <p data-i18n="schoolRecordsProject.workflow.steps.chat.desc">Recibe la solicitud en lenguaje natural del usuario.</p>
                     </div>
                     <div class="workflow-step">
                       <div class="workflow-step-num">02</div>
                       <div class="workflow-step-icon"><i class="fas fa-brain"></i></div>
-                      <h4>Master Interpreter</h4>
-                      <p>Detects intent + sub-intents, manages context stack</p>
+                      <h4 data-i18n="schoolRecordsProject.workflow.steps.master.title">Master Interpreter</h4>
+                      <p data-i18n="schoolRecordsProject.workflow.steps.master.desc">Detecta intención y sub-intenciones, y administra la pila de contexto.</p>
                     </div>
                     <div class="workflow-step">
                       <div class="workflow-step-num">03</div>
                       <div class="workflow-step-icon"><i class="fas fa-route"></i></div>
-                      <h4>Specialist Routing</h4>
-                      <p>Routes to Student or Help specialist</p>
+                      <h4 data-i18n="schoolRecordsProject.workflow.steps.routing.title">Routing de especialistas</h4>
+                      <p data-i18n="schoolRecordsProject.workflow.steps.routing.desc">Enruta al especialista Student o Help según la intención.</p>
                     </div>
                     <div class="workflow-step">
                       <div class="workflow-step-num">04</div>
                       <div class="workflow-step-icon"><i class="fas fa-cogs"></i></div>
-                      <h4>Action Executor</h4>
-                      <p>Runs SQL query or PDF generation, returns response</p>
+                      <h4 data-i18n="schoolRecordsProject.workflow.steps.executor.title">Ejecutor de acción</h4>
+                      <p data-i18n="schoolRecordsProject.workflow.steps.executor.desc">Ejecuta consulta SQL o generación PDF y devuelve la respuesta.</p>
                     </div>
                   </div>
                 </div>
 
                 <!-- Testimonials -->
                 <div class="content-block">
-                  <div class="content-block-title">Production Impact</div>
+                  <div class="content-block-title" data-i18n="schoolRecordsProject.impact.title">Impacto en producción</div>
 
                   <div class="testimonials-grid">
                     <div class="testimonial-card">
                       <div class="testimonial-header">
                         <div class="testimonial-avatar"><i class="fas fa-user-tie"></i></div>
                         <div>
-                          <div class="testimonial-name">Academic Director</div>
-                          <div class="testimonial-role">Escuela Primaria "Benito Juárez"</div>
+                          <div class="testimonial-name" data-i18n="schoolRecordsProject.impact.cards.director.name">Director académico</div>
+                          <div class="testimonial-role" data-i18n="schoolRecordsProject.impact.cards.director.role">Escuela Primaria "Benito Juárez"</div>
                         </div>
                       </div>
                       <p class="testimonial-quote">
-                        "Before, we spent 15–20 minutes per certificate searching physical files.
-                        Now the system generates everything in under 2 minutes just by typing
-                        the student's name."
+                        <span data-i18n="schoolRecordsProject.impact.cards.director.quote">Antes se invertían 15 a 20 minutos por constancia buscando expedientes físicos. Ahora el sistema genera todo en menos de 2 minutos con solo escribir el nombre del alumno.</span>
                       </p>
                       <div class="testimonial-metrics">
-                        <span class="metric-badge">85% less time</span>
-                        <span class="metric-badge orange">200+ certificates/month</span>
+                        <span class="metric-badge" data-i18n="schoolRecordsProject.impact.cards.director.metric1">85% menos tiempo</span>
+                        <span class="metric-badge orange" data-i18n="schoolRecordsProject.impact.cards.director.metric2">200+ constancias/mes</span>
                       </div>
                     </div>
 
@@ -407,18 +386,16 @@
                       <div class="testimonial-header">
                         <div class="testimonial-avatar"><i class="fas fa-user"></i></div>
                         <div>
-                          <div class="testimonial-name">School Secretary</div>
-                          <div class="testimonial-role">Primary user of the system</div>
+                          <div class="testimonial-name" data-i18n="schoolRecordsProject.impact.cards.secretary.name">Secretaria escolar</div>
+                          <div class="testimonial-role" data-i18n="schoolRecordsProject.impact.cards.secretary.role">Usuaria principal del sistema</div>
                         </div>
                       </div>
                       <p class="testimonial-quote">
-                        "The AI perfectly understands when I say 'I need the certificate for
-                        Juan from 5th grade B'. I don't have to remember complicated procedures —
-                        I just speak naturally."
+                        <span data-i18n="schoolRecordsProject.impact.cards.secretary.quote">La IA entiende perfecto cuando digo “necesito la constancia de Juan de 5to B”. Ya no tengo que recordar procedimientos complicados, solo hablo natural.</span>
                       </p>
                       <div class="testimonial-metrics">
-                        <span class="metric-badge blue">95% satisfaction</span>
-                        <span class="metric-badge purple">98% AI accuracy</span>
+                        <span class="metric-badge blue" data-i18n="schoolRecordsProject.impact.cards.secretary.metric1">95% satisfacción</span>
+                        <span class="metric-badge purple" data-i18n="schoolRecordsProject.impact.cards.secretary.metric2">98% precisión IA</span>
                       </div>
                     </div>
                   </div>
@@ -429,15 +406,15 @@
                   <a href="../index.html#section3" class="proj-nav-link">
                     <i class="fas fa-arrow-left"></i>
                     <div>
-                      <span class="proj-nav-label">Back to</span>
-                      All Projects
+                      <span class="proj-nav-label" data-i18n="schoolRecordsProject.navigation.backTo">Volver a</span>
+                      <span data-i18n="schoolRecordsProject.navigation.allProjects">Todos los proyectos</span>
                     </div>
                   </a>
                   <a href="excel-scraper.html" class="proj-nav-link next">
                     <i class="fas fa-arrow-right"></i>
                     <div>
-                      <span class="proj-nav-label">Next project</span>
-                      Excel Validation System
+                      <span class="proj-nav-label" data-i18n="schoolRecordsProject.navigation.nextProject">Siguiente proyecto</span>
+                      <span data-i18n="schoolRecordsProject.navigation.nextProjectName">Sistema de Validación Excel</span>
                     </div>
                   </a>
                 </div>
@@ -448,40 +425,40 @@
               <aside class="proj-sidebar">
 
                 <div class="sidebar-widget">
-                  <div class="sidebar-widget-title">Tech Stack</div>
+                  <div class="sidebar-widget-title" data-i18n="schoolRecordsProject.sidebar.techStack">Tech Stack</div>
                   <div class="stack-list">
-                    <div class="stack-row"><span class="label">UI</span><span class="value">PyQt5</span></div>
-                    <div class="stack-row"><span class="label">Backend</span><span class="value">Python 3.12</span></div>
-                    <div class="stack-row"><span class="label">Database</span><span class="value">SQLite</span></div>
-                    <div class="stack-row"><span class="label">AI</span><span class="value">Google Gemini 2.0-flash</span></div>
-                    <div class="stack-row"><span class="label">PDFs</span><span class="value">wkhtmltopdf · pdfplumber</span></div>
-                    <div class="stack-row"><span class="label">Distribution</span><span class="value">PyInstaller</span></div>
-                    <div class="stack-row"><span class="label">Pattern</span><span class="value">Master-Specialist</span></div>
+                    <div class="stack-row"><span class="label" data-i18n="schoolRecordsProject.sidebar.stack.ui">UI</span><span class="value">PyQt5</span></div>
+                    <div class="stack-row"><span class="label" data-i18n="schoolRecordsProject.sidebar.stack.backend">Backend</span><span class="value">Python 3.12</span></div>
+                    <div class="stack-row"><span class="label" data-i18n="schoolRecordsProject.sidebar.stack.database">Base de datos</span><span class="value">SQLite</span></div>
+                    <div class="stack-row"><span class="label" data-i18n="schoolRecordsProject.sidebar.stack.ai">IA</span><span class="value">Google Gemini 2.0-flash</span></div>
+                    <div class="stack-row"><span class="label" data-i18n="schoolRecordsProject.sidebar.stack.pdfs">PDFs</span><span class="value">wkhtmltopdf · pdfplumber</span></div>
+                    <div class="stack-row"><span class="label" data-i18n="schoolRecordsProject.sidebar.stack.distribution">Distribución</span><span class="value">PyInstaller</span></div>
+                    <div class="stack-row"><span class="label" data-i18n="schoolRecordsProject.sidebar.stack.pattern">Patrón</span><span class="value">Master-Specialist</span></div>
                   </div>
                 </div>
 
                 <div class="sidebar-widget">
-                  <div class="sidebar-widget-title">Key Facts</div>
+                  <div class="sidebar-widget-title" data-i18n="schoolRecordsProject.sidebar.keyFacts">Datos clave</div>
                   <div class="metric-list">
                     <div class="metric-row">
-                      <div class="metric-label">Time per certificate</div>
-                      <div class="metric-value">1–5 seconds</div>
+                      <div class="metric-label" data-i18n="schoolRecordsProject.sidebar.metrics.timePerCertificate">Tiempo por constancia</div>
+                      <div class="metric-value" data-i18n="schoolRecordsProject.sidebar.metrics.timePerCertificateValue">1–5 segundos</div>
                     </div>
                     <div class="metric-row">
-                      <div class="metric-label">Before the system</div>
-                      <div class="metric-value">15–20 minutes</div>
+                      <div class="metric-label" data-i18n="schoolRecordsProject.sidebar.metrics.beforeSystem">Antes del sistema</div>
+                      <div class="metric-value" data-i18n="schoolRecordsProject.sidebar.metrics.beforeSystemValue">15–20 minutos</div>
                     </div>
                     <div class="metric-row">
-                      <div class="metric-label">AI accuracy</div>
+                      <div class="metric-label" data-i18n="schoolRecordsProject.sidebar.metrics.aiAccuracy">Precisión IA</div>
                       <div class="metric-value">98%</div>
                     </div>
                     <div class="metric-row">
-                      <div class="metric-label">Cloud dependency</div>
-                      <div class="metric-value">Zero (local SQLite)</div>
+                      <div class="metric-label" data-i18n="schoolRecordsProject.sidebar.metrics.cloudDependency">Dependencia cloud</div>
+                      <div class="metric-value" data-i18n="schoolRecordsProject.sidebar.metrics.cloudDependencyValue">Cero (SQLite local)</div>
                     </div>
                     <div class="metric-row">
-                      <div class="metric-label">Code repo</div>
-                      <div class="metric-value">Private (student data)</div>
+                      <div class="metric-label" data-i18n="schoolRecordsProject.sidebar.metrics.codeRepo">Repositorio</div>
+                      <div class="metric-value" data-i18n="schoolRecordsProject.sidebar.metrics.codeRepoValue">Privado (datos estudiantiles)</div>
                     </div>
                   </div>
                 </div>
@@ -503,7 +480,7 @@
 
         <footer class="site-footer">
           <div class="container">
-            <p>Angel Payan &nbsp;·&nbsp; <a href="../index.html">Portfolio</a></p>
+            <p>Angel Payan &nbsp;·&nbsp; <a href="../index.html" data-i18n="schoolRecordsProject.footer.portfolio">Portafolio</a></p>
           </div>
         </footer>
 
